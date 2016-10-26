@@ -3,8 +3,8 @@ Contributors: nirjhar_lo
 Donate Link: http://gogretel.com/
 Tags: seo checker, seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
 Requires at Least: 4.0
-Tested Up To: 4.3.1
-Stable tag: 2.4
+Tested Up To: 4.4
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
