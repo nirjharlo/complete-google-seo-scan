@@ -14,12 +14,15 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 
 //delete post meta data if exists at all
 $post_types = get_post_types( '', 'names' );
-foreach( $post_types as $val ) {
-	$get_posts = array( 'posts_per_page' => -1, 'post_type' => $val );
-	$post_data = get_posts( $get_posts );
-	foreach ( $post_data as $key ) {
-		if ( get_post_meta( $key->ID, 'cgss_scan_result', true ) ) {
-			delete_post_meta( $key->ID, 'cgss_scan_result' );
+$remove_names = array( 'cgss_scan_compete', 'cgss_scan_result' );
+foreach ( $remove_names as $name ) {
+	foreach( $post_types as $val ) {
+		$get_posts = array( 'posts_per_page' => -1, 'post_type' => $val );
+		$post_data = get_posts( $get_posts );
+		foreach ( $post_data as $key ) {
+			if ( get_post_meta( $key->ID, $name, true ) ) {
+				delete_post_meta( $key->ID, $name );
+			}
 		}
 	}
 }

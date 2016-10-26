@@ -15,7 +15,7 @@
 	if ( ! $server or ! $design ) :
 	?>
 		<div class="error notice is-dismissible">
-			<p class="danger-icon"><?php _e( 'Before You Proceed, please complete scaning for <i>Server Seo Status</i> and <i>Theme and Plugins Design Seo</i>.', 'cgss' ); ?> <a href="<?php echo admin_url() . 'admin.php?page=seo-scan'; ?>"><?php echo _e( 'You will find them here.', 'cgss' ); ?></a></p>
+			<p class="danger-icon"><?php _e( 'Before You Proceed, please complete scaning for <i>Server Seo Status</i> and <i>Design Seo Status</i>.', 'cgss' ); ?> <a href="<?php echo admin_url() . 'admin.php?page=seo-scan'; ?>"><?php echo _e( 'You will find them here.', 'cgss' ); ?></a></p>
 		</div>
 	<?php endif; ?>
 
@@ -98,9 +98,9 @@
 							</p>
 						</div>
 						<div class="plugin-card-bottom">
-							<a id="<?php echo get_permalink( $post_id ); ?>" class="scan-now button" href="#<?php echo $post_id; ?>"><?php _e( 'SCAN', 'cgss' ); ?></a>
+							<a id="<?php echo get_permalink( $post_id ); ?>" class="scan-now button button-small" href="#<?php echo $post_id; ?>"><?php _e( 'SCAN', 'cgss' ); ?></a>
+								<a id="<?php echo get_permalink( $post_id ); ?>" name="<?php echo $post_id; ?>" class="compete-now button button-small" href="#<?php echo $post_id; ?>"><?php _e( 'COMPETE', 'cgss' ); ?></a>
 							<div class="column-updated">
-
 								<!--Error Messages-->
 								<a href="#" id="ViewAgain-<?php echo $post_id; ?>" class="view-again">
 									<?php echo $elem->dashicon( 'editor-expand' ); ?>
@@ -114,7 +114,7 @@
 										<?php echo ( $score['stars'] != null ? $score['stars'] : $elem->dashicon( 'heart danger-icon' ) ); ?>
 									</span>
 								</span>
-								<?php echo $elem->gaps( 3 ); ?>
+								<?php echo $elem->gaps( 1 ); ?>
 								<span class="time-in-form">
 									<span id="time-<?php echo $post_id; ?>">
 										<?php echo $elem->dashicon( 'clock' ) . ' ' . ( $time_diff['since'] != null ? $time_diff['since'] : __( 'NEVER', 'cgss' ) ); ?>
@@ -141,4 +141,7 @@
 
 	<!--Display Report-->
 	<?php require_once('report-display.php'); ?>
+
+	<!--Display Competative intel-->
+	<?php require_once('compete-display.php'); ?>
 </div>

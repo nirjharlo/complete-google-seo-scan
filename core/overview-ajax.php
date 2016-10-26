@@ -1,6 +1,6 @@
 <?php
 /**
- * @/core/lib/overview-ajax.php
+ * @/core/overview-ajax.php
  * on: 16.07.2015
  * @since 2.1
  *
@@ -30,6 +30,9 @@ if ( $request_type == 'scan' ) {
 
 	//require front end library to execute this function
 	require_once( 'ajax-handle.php' );
+
+	//Export result to front end.
+	echo json_encode( $output_result, JSON_FORCE_OBJECT );
 }
 
 //Server seo scan

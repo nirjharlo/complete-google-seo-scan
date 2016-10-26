@@ -21,6 +21,20 @@
  * BASE
  */
 
+//see if xtended plugin is installed or not
+function cgss_plugin_xtend() {
+	$xtend = false;
+	$all_plugins = get_option('active_plugins');
+	if ( $all_plugins ) {
+		foreach ( $all_plugins as $key => $plug ) {
+			if ( $plug == 'xtend-complete-google-seo-scan/xtend-complete-google-seo-scan.php' ) {
+				$xtend = true;
+			}
+		}
+	}
+	return $xtend;
+}
+
 //Get screen options value
 function cgss_nav_init() {
 	$user = get_current_user_id();
@@ -114,10 +128,26 @@ class cgss_group_btn {
 
 	//button group for sharing: google+, facebook, twitter
 	public function share() {
-		$this->gbtn = new CGSS_BTN( 'ShareGp', 'googleplus', false, 'https://plus.google.com/share?url=http%3A%2F%2Fgogretel.com%2Fcomplete-google-seo-scan-plugin%2F" target="_blank', ' push-icon-top' );
-		$this->fbbtn = new CGSS_BTN( 'ShareFb', 'facebook', false, 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgogretel.com%2Fcomplete-google-seo-scan-plugin%2F&t=Complete-Google-Seo-Scan-Plugin-for-WordPress" target="_blank', ' push-icon-top' );
-		$this->twbtn = new CGSS_BTN( 'ShareTw', 'twitter', false, 'https://twitter.com/share?url=http%3A%2F%2Fgogretel.com%2Fcomplete-google-seo-scan-plugin%2F&via=gogretel&text=Complete-Google-Seo-Scan-Plugin-for-WordPress" target="_blank', ' push-icon-top' );
+		$this->gbtn = new CGSS_BTN( 'ShareGp', 'googleplus', false, 'https://plus.google.com/share?url=http%3A%2F%2Fgogretel.com%2F" target="_blank', ' push-icon-top' );
+		$this->fbbtn = new CGSS_BTN( 'ShareFb', 'facebook', false, 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgogretel.com%2F&t=Complete-Google-Seo-Scan-Plugin-for-WordPress" target="_blank', ' push-icon-top' );
+		$this->twbtn = new CGSS_BTN( 'ShareTw', 'twitter', false, 'https://twitter.com/share?url=http%3A%2F%2Fgogretel.com%2F&via=gogretel&text=Complete-Google-Seo-Scan-Plugin-for-WordPress" target="_blank', ' push-icon-top' );
 		return $this->gbtn->display() . $this->fbbtn->display() . $this->twbtn->display();
+	}
+
+	//button group for report
+	public function compete_on() {
+		$this->twobtn = new CGSS_BTN( 'EditPage', 'edit', false, '', false );
+		$this->onebtn = new CGSS_BTN( 'ViewPageCompete', 'external', false, '', false );
+		$this->btns = $this->onebtn->display() . $this->twobtn->display();
+		return '<div class="result-btns"><br />' . $this->btns .	'</div>';
+	}
+
+	//button group for report
+	public function compete_off() {
+		$this->onebtn = new CGSS_BTN( 'BuyNowBtn', 'awards', ' ' . __( 'BUY NOW | $64', 'cgss' ), 'http://gogretel.com/checkout-2?edd_action=straight_to_gateway&download_id=570" target="_blank', false );
+		$this->twobtn = new CGSS_BTN( 'ViewNowBtn', 'tablet', ' ' . __( 'VIEW ON SITE', 'cgss' ), 'http://gogretel.com/extension" target="_blank', false );
+		$this->btns = $this->onebtn->display() . $this->twobtn->display();
+		return '<div class="result-btns"><br />' . $this->btns . ' <a href="http://gogretel.com/checkout-2?edd_action=straight_to_gateway&download_id=570" class="hide-if-no-js add-new-h2 buy-now-btn-mobile">' . __( 'BUY FOR', 'cgss' ) . ' $64</a><a class="learn-more-btn-mobile" href="http://gogretel.com/extension">' . __( 'LEARN MORE', 'cgss' ) . '</a></div>';
 	}
 }
 
@@ -127,50 +157,22 @@ class cgss_do_table {
 	//for server features in overview table
 	public function show_keys() {
 
-			$this->tbl_hd_data = array(
-				array(
+			$input_hd = array( __( 'Heading', 'cgss' ), __( 'Alt', 'cgss' ), __( 'Anchor', 'cgss' ), __( 'Title', 'cgss' ), __( 'Description', 'cgss' ), __( 'Url', 'cgss' ) );
+			$this->tbl_hd_data = array();
+			foreach( $input_hd as $key ) {
+				$this->tbl_hd_data[] = array(
 					'id' => false,
 					'class' => 'show-key aligncenter',
 					'icon_class' => false,
-					'val' => __( 'Heading', 'cgss' ),
-				),
-				array(
-					'id' => false,
-					'class' => 'show-key aligncenter',
-					'icon_class' => false,
-					'val' => __( 'Alt', 'cgss' ),
-				),
-				array(
-					'id' => false,
-					'class' => 'show-key aligncenter',
-					'icon_class' => false,
-					'val' => __( 'Anchor', 'cgss' ),
-				),
-				array(
-					'id' => false,
-					'class' => 'show-key aligncenter',
-					'icon_class' => false,
-					'val' => __( 'Title', 'cgss' ),
-				),
-				array(
-					'id' => false,
-					'class' => 'show-key aligncenter',
-					'icon_class' => false,
-					'val' => __( 'Description', 'cgss' ),
-				),
-				array(
-					'id' => false,
-					'class' => 'show-key aligncenter',
-					'icon_class' => false,
-					'val' => __( 'Url', 'cgss' ),
-				),
-			);
+					'val' => $key,
+				);
+			}
 
 			//create input array for table content
-			$tbl_data = array();
+			$this->tbl_data = array();
 			$input_data = array( 'HeadingChk', 'AltChk', 'AnchorChk', 'TitleChk', 'MetaDescChk', 'UrlChk' );
 			foreach ( $input_data as $val ) {
-				$tbl_data[] = array(
+				$this->tbl_data[] = array(
 										'id' => false,
 										'class' => 'aligncenter',
 										'val' => '<span id="' . $val . '"></span>',
@@ -178,7 +180,7 @@ class cgss_do_table {
 			}
 
 			//instantiate the table
-			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table fixed pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, array( $tbl_data ) );
+			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table fixed pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, array( $this->tbl_data ) );
 			return $this->tbl->display( false );
 	}
 
@@ -201,7 +203,7 @@ class cgss_do_table {
 			);
 
 			//create input array for table content
-			$tbl_data_type = array();
+			$this->tbl_data_type = array();
 			$input_data = array(
 								array( __( 'SSL security', 'cgss' ), 'SSLChk', '<strong>https://</strong> prefix is present or not in url', 'http://searchengineland.com/google-starts-giving-ranking-boost-secure-httpsssl-sites-199446' ),
 								array( __( 'WWW Resolve', 'cgss' ), 'WWWChk', 'Redirects to same url with and without <strong>www</strong> prefix', 'https://moz.com/learn/seo/duplicate-content' ),
@@ -212,23 +214,116 @@ class cgss_do_table {
 								array( __( 'Response Time', 'cgss' ) . '<span id="ResVal"></span> ' . __( 'miliseconds', 'cgss' ), 'ResTChk', 'Time to get response to header request. Good if kept under 500 ms', 'https://moz.com/blog/how-website-speed-actually-impacts-search-ranking' ),
 							);
 			foreach ( $input_data as $val ) {
-				$tbl_data_type[] = array(
-										array(
-											'id' => false,
-											'class' => false,
-											'val' => $val[0] . '<div class="row-actions little-dark-text">' . $val[2] . '. <a href="' . $val[3] . '">' . __( 'More', 'cgss' ) . '</a></div>',
-										),
-										array(
-											'id' => false,
-											'class' => 'comments column-comments aligncenter',
-											'val' => '<span id="' . $val[1] . '"></span>',
-										),
-									);
+				$this->tbl_data_type[] = array(
+											array(
+												'id' => false,
+												'class' => false,
+												'val' => $val[0] . '<div class="row-actions little-dark-text">' . $val[2] . '. <a href="' . $val[3] . '">' . __( 'More', 'cgss' ) . '</a></div>',
+											),
+											array(
+												'id' => false,
+												'class' => 'comments column-comments aligncenter',
+												'val' => '<span id="' . $val[1] . '"></span>',
+											),
+										);
 			}
 
 			//instantiate the table
-			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $tbl_data_type );
+			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data_type );
 			return $this->tbl->display( true );
+	}
+
+	//for multiple competative table
+	//@array $value, $max, $avg, $min, $you
+	public function comp_multi( $heads, $max, $min, $avg, $you, $id ) {
+
+			$this->tbl_hd_data = array();
+			foreach ( $heads as $val ) {
+				$this->tbl_hd_data[] = array(
+											'id' => false,
+											'class' => false,
+											'icon_class' => false,
+											'val' => $val,
+										);
+			}
+
+			//create input array for table content
+			$this->tbl_data = array();
+			$input_data = array(
+								array( __( 'Maximum', 'cgss' ), $max ),
+								array( __( 'Minimum', 'cgss' ), $min ),
+								array( __( 'Optimum Range', 'cgss' ), $avg ),
+								array( __( 'Yours', 'cgss' ), $you ),
+							);
+			foreach ( $input_data as $val ) {
+				$this->tbl_cols = array();
+				$this->tbl_cols[] = array(
+										'id' => false,
+										'class' => false,
+										'val' => $val[0],
+									);
+				foreach ( $val[1] as $key ) {
+					$this->tbl_cols[] = array(
+											'id' => false,
+											'class' => false,
+											'val' => '<span id="' . $key . '"></span>',
+										);
+				}
+				$this->tbl_data[] = $this->tbl_cols;
+			}
+
+			//instantiate the table
+			$this->tbl = new  CGSS_TABLE( $id, 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data );
+			return $this->tbl->display( false );
+	}
+
+	//specially for keywords in multiple competative table
+	//@array $value, $max, $avg, $min, $you
+	public function comp_key_snip( $heads, $domain, $title, $url, $desc, $alt, $anch, $htag, $bold, $txt ) {
+
+			$this->tbl_hd_data = array();
+			foreach ( $heads as $val ) {
+				$this->tbl_hd_data[] = array(
+											'id' => false,
+											'class' => false,
+											'icon_class' => false,
+											'val' => $val,
+										);
+			}
+
+			//create input array for table content
+			$this->tbl_data = array();
+			$input_data = array(
+								array( __( 'Domain', 'cgss' ), $domain ),
+								array( __( 'Title Tag', 'cgss' ), $title ),
+								array( __( 'Url', 'cgss' ), $url ),
+								array( __( 'Meta Description', 'cgss' ), $desc ),
+								array( __( 'Image Alt Tag', 'cgss' ), $alt ),
+								array( __( 'Anchor text', 'cgss' ), $anch ),
+								array( __( 'Heading tags', 'cgss' ), $htag ),
+								array( __( 'Plain Text', 'cgss' ), $txt ),
+								array( __( '<strong>Bold Keyword</strong>', 'cgss' ), $bold ),
+							);
+			foreach ( $input_data as $val ) {
+				$this->tbl_cols = array();
+				$this->tbl_cols[] = array(
+										'id' => false,
+										'class' => false,
+										'val' => $val[0],
+									);
+				foreach ( $val[1] as $key ) {
+					$this->tbl_cols[] = array(
+											'id' => false,
+											'class' => false,
+											'val' => '<span id="' . $key . '"></span>',
+										);
+				}
+				$this->tbl_data[] = $this->tbl_cols;
+			}
+
+			//instantiate the table
+			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data );
+			return $this->tbl->display( false );
 	}
 }
 
@@ -310,7 +405,7 @@ class cgss_elements {
 					array( 'KeyAct', __( 'Long tail keywords are helpful for seo. Use them with percistance but don\'t spam.', 'cgss' ), '', 'text' ),
 					array( 'CountWordAct', __( 'Write a minimum of 200 words atleast.', 'cgss' ), '', 'text' ),
 					array( 'RatioAct', __( 'Use enough text in comparison of HTML. But also don\'t use too much text.', 'cgss' ), '', 'text' ),
-					array( 'HrchyAct', __( 'Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</code>, <code>h3</code>.', 'cgss' ), '', 'text' ),
+					array( 'HrchyAct', __( 'Text should have hierarchy with heading tags like <code>h1</code>, <code>h2</code>, <code>h3</code>.', 'cgss' ), '', 'text' ),
 					array( 'ImgLnAct', __( 'Crawler robots can not read image links. Please use some text inside links also.', 'cgss' ), '', 'text' ),
 					array( 'NofLnAct', __( 'Use nofollow links and dofollow links in a reasonable propotion.', 'cgss' ), '', 'text' ),
 					array( 'ExtLnAct', __( 'Use external links and internal links in a reasonable propotion.', 'cgss' ), '', 'text' ),
@@ -331,7 +426,7 @@ class cgss_elements {
 					array( 'GzipAct', __( 'Enable gZip compression.', 'cgss' ), 'https://developers.google.com/speed/docs/insights/EnableCompression', 'clock' ),
 					array( 'CacheAct', __( 'Enable Browser Caching.', 'cgss' ), 'https://developers.google.com/speed/docs/insights/LeverageBrowserCaching', 'clock' ),
 					array( 'FNumAct', __( 'Reduce number of HTTP requests made by .css and .js files.', 'cgss' ), '', 'clock' ),
-					array( 'CompAct', __( 'Compress resorce files and increase loading speed.', 'cgss' ), '', 'clock' ),
+					array( 'CompAct', __( 'Compress resource files and increase loading speed.', 'cgss' ), '', 'clock' ),
 					array( 'StagOgpAct', __( 'Complete all Open Graph Protocol <code>meta</code> tags, needed for social sharing.', 'cgss' ), '', 'marker' ),
 		);
 		$action = '';
@@ -369,7 +464,7 @@ class cgss_elements {
 					<div class="col-3">' .
 						$this->slide( 'words', '<span id="WordsSwitch"></span> ' . __( 'Number of words', 'cgss' ), 'WordsNum', __( 'Minimum 200 words in a webpage is required. Write enough words to describe the page well.', 'cgss' ), false ) .
 						$this->slide( 'thratio', '<span id="TratioSwitch"></span> ' . __( 'Text to html ratio', 'cgss' ), 'Tratio', __( 'There must be enough text in webpage as compared with total size. About 15% to 70%', 'cgss' ), false ) .
-						$this->slide( 'thrcy', '<span id="ThrchySwitch"></span> ' . __( 'Text hiarerchy', 'cgss' ), 'Thrchy', __( 'A bulk of text is not useful, rather text content with proper heading tags are needed.', 'cgss' ), false ) .
+						$this->slide( 'thrcy', '<span id="ThrchySwitch"></span> ' . __( 'Text hierarchy', 'cgss' ), 'Thrchy', __( 'A bulk of text is not useful, rather text content with proper heading tags are needed.', 'cgss' ), false ) .
 					'</div>
 					<div class="col-3">' .
 						$this->slide( 'imglink', '<span id="ImgLinkTick"></span> ' . __( 'Image Links', 'cgss' ), 'ImgLink', __( 'Links that conatin only image but no text is considered poorly optimized.', 'cgss' ), false ) .
@@ -654,6 +749,7 @@ function url_params() {
 //Initiate basic session details
 $params = url_params();
 
+$xtend_install = cgss_plugin_xtend();
 $post_types = post_types();
 $time_now = current_time( 'timestamp' );
 $btns = new cgss_group_btn();

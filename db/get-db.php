@@ -7,7 +7,7 @@
  * An object for fetching and cleaning up database stored meta array and to convert it to an usable
  * array along with a custom function on time consumed. It is also used for intel data delivary.
  *
- * There are 2 more objects for design seo and server seo.
+ * There are 3 more objects for get compete data, design seo and server seo.
  *
  * 3 properties.
  * @prop string $name name of the post meta
@@ -397,6 +397,48 @@ class CGSS_GET_DB {
 		}
 		return $output;
 	}
+}
+
+//get compete data
+class CGSS_GET_COMPETE_DB {
+
+	//define properties
+	private $name;
+	private $post_id;
+
+	//construct the object
+	public function __construct( $name, $post_id ) {
+		$this->name = $name;
+		$this->post_id = $post_id;
+	}
+
+	//generate individual words from text content
+	public function filter() {
+		$result = $this->fetch();
+		if ( $result ) {
+			$output = array( 'ping' => 'valid' );
+
+			$list_of_keys = array( 'id', 'comp_key', 'comp_url', 'ssl', 'mobile', 'words', 'links', 'links_ext', 'links_nof', 'thr', 'images', 'speed', 'key_count', 'key_per', 'gplus', 'fb', 'tw', 'domain', 'title', 'url', 'desc', 'alt', 'anch', 'plain', 'bold' );
+			foreach ( $list_of_keys as $key ) {
+				if ( array_key_exists( $key, $result ) ) {
+					$output = array_merge( $output, array( $key => $result[$key] ) );
+				}
+			}
+		} else {
+			$output = array( 'ping' => 'invalid' );
+		}
+		return $output;
+	}
+
+	//generate individual words from text content
+	public function fetch() {
+		$output = false;
+		if ( $this->post_id and $this->name ) {
+			$output = get_post_meta( $this->post_id, $this->name, true );
+		}
+		return $output;
+	}
+
 }
 
 //get server data

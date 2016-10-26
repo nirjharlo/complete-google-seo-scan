@@ -4,7 +4,7 @@
  * @on 12.07.2015
  * @since 2.0
  *
- * An object with compilation of text and link, ready to be used in help section.
+ * 2 objects with compilation of text and link, ready to be used in help section.
  *
  * It has 2 methods
  * @method Tab docs data
@@ -42,7 +42,7 @@ class CGSS_HELP {
 			array(
 				'id' => 'cgss_help_limit',
 				'title' => __( 'Do\'s and Don\'ts', 'cgss' ),
-				'content' => '<p>' . __( 'This plugin is built to help you understand search engine optimization status of your website only. It doesn\'t allow you to scan any webpage from any domain, other than where it is installed. We request you not to tweek the code in any way such that this plugin becomes able to scan pages from various other domains.', 'cgss' ) . '</p><p>' . __( 'We can\'t force you, so if you do such a thing, the plugin author will not be responsible for any legal and security consequences that may come. Otherwise, the code is under GPL License, you can do anything you like.', 'cgss' ) . '</p>',
+				'content' => '<p>' . __( 'This plugin is built to help you understand search engine optimization status of your website only. It doesn\'t allow you to scan any webpage from any domain, other than where it is installed. We request you not to tweek the code in any way such that this plugin becomes able to scan pages from various other domains.', 'cgss' ) . '</p><p>' . __( 'We can\'t force you, so if you do such a thing, the plugin author will not be responsible for any legal and security consequences that may come. Otherwise, the code is under GPL License, you can do anything you like.', 'cgss' ) . '</p><p>' . __( '<strong>For Extension</strong> this plugin conditionally allows scanning of other domains to show data in a restrictive fashion. If you scan pages of other domain(s) too much, their owner(s) may not want it. In such case(s) you should not scan pages from specific complaining domain(s). Here, it is also requested not to tweak the extension as explained in previous paragraphs.', 'cgss' ) . '</p>',
 			),
 			array(
 				'id' => 'cgss_help_update',
@@ -56,4 +56,25 @@ class CGSS_HELP {
 	public function links() {
 		return '<p><a href="https://wordpress.org/support/plugin/complete-google-seo-scan/" target="_blank">' . __( 'Support Forum', 'cgss' ) . '</a></p><p><a href="http://gogretel.com/resource/" rel="nofollow" target="_blank">' . __( 'Free Seo Resource', 'cgss' ) . '</a></p>';
 	}
-}?>
+
+	//docs specially for extension
+	public function ext_data() {
+		return array(
+			array(
+				'id' => 'cgss_help_xtend',
+				'title' => __( 'Extension', 'cgss' ),
+				'content' => '<p><strong>' . __( 'Data Input:', 'cgss' ) . '</strong> ' . __( 'You may use long tail target keyword with competitor urls (up to 100 at a time) and find out optimum range of various parameters.', 'cgss' ) . '</p><p><strong>' . __( 'Report Display:', 'cgss' ) . '</strong> ' . __( 'Resulting report will have 8 tables, each with maximum, minimum, optimum range and your status. This tables are about usage of words, links, text/html ratio, images, loading time, social shares and keyword usage counts and keyword positions.', 'cgss' ) . '</p><p></p>' . __( 'Optimum range of resulting report is calculated from statistical standard deviation from average line. then it\'s approximated.', 'cgss' ) . '<p><strong>' . __( 'Saving Reports:', 'cgss' ) . '</strong> ' . __( 'With a click you can fetch and save report. This is useful in postponing and restarting the scan. you may save a report and then restart the scan with more new urls, after you fetch previous report.', 'cgss' ) . '</p><p><strong>' . __( 'Help & Support:', 'cgss' ) . '</strong> ' . __( 'The user interface is very intuitive for easy understanding. You will see notices for various instances. If you have <i>any trouble</i> using it, get quick support after seeing Extension FAQ tab of this Help section.', 'cgss' ) . '</p><p><strong>' . __( 'DISCLAIMER: Read following paragraphs before you use this extension.', 'cgss' ) . '</strong></p><p>' . __( 'This extension is intended to be used in a limited fashion and the report is only for on-page search engine optimization of your webpages in the domain, where it is installed.', 'cgss' ) . '</p><p>' . __( 'If you use this tool to spam or to do harm to other domain(s) in any way, the plugin and extension author will not be responsible in any manner. In such case you alone have to face whatever consequences, that may come.', 'cgss' ) . '</p><p>' . __( 'This is just a software, which is expected to be used with responsibility by it\'s user. See "Do\'s and Don\'ts" tab of this Help section for more.', 'cgss' ) . '</p>',
+			),
+			array(
+				'id' => 'cgss_help_xtend_faq',
+				'title' => __( 'Extension FAQ', 'cgss' ),
+				'content' => '<p><strong>' . __( 'What is Target Keyword?', 'cgss' ) . '</strong></p><p>' . __( 'Generally a particular phrase, that you want your webpage to rank for. Some people call it focus keyword. It is different for different pages of your website.', 'cgss' ) . '</p><p>' . __( 'After doing keyword research you can find target keyword. <a href="https://moz.com/beginners-guide-to-seo/keyword-research">More details</a>.', 'cgss' ) . '</p><p><strong>' . __( 'What is the limit of target keyword?', 'cgss' ) . '</strong></p><p>' . __( 'Maximum 32 words, with maximum size 130 letters per word. But that\'s theory. Practically 3 to 8 words are standard for an optimized target keyword.', 'cgss' ) . '</p><p><strong>' . __( 'Why I see red borders surrounding my input fields, when I click SCAN button?', 'cgss' ) . '</strong></p><p>' . __( 'That\'s because you have entered something wrong in those input fields. If the input field is for keyword. Make sure it\'s a has only or is a combination of plain text, special characters and numbers.', 'cgss' ) . '<p></p>' . __( 'If the input is for competitor url, check 2 things. It has either http:// or https:// at the begining and it\'s a proper url structure.', 'cgss' ) . '</p><p>' . __( 'If the problem persists, click RESET button to restore to initial situation.', 'cgss' ) . '</p><p><strong>' . __( 'Why I see faliure notices, when I click SCAN button?', 'cgss' ) . '</strong></p><p>' . __( 'Because the server of url you are attempting to scan has blocked your IP address or it has some server problems. Anyway the cause it mentioned in notice itself.', 'cgss' ) . '</p><p><strong>' . __( 'Do you scan urls, blocked by meta robot and robots.txt?', 'cgss' ) . '</strong></p><p>' . __( 'Yes, for now it\'s allowed. But in future it will be blocked.', 'cgss' ) . '</p><p><strong>' . __( 'Why I see Keyword not found notice, after scan?', 'cgss' ) . '</strong></p><p>' . __( 'It\'s a wrning to tell you that you might be targeting wrong keyword. But some suggested variants are also shown as suggestion. You may RESET the screen and try with some other variants.', 'cgss' ) . '</p><p><strong>' . __( 'When I fetch previous report, why it says No reports to fetch?', 'cgss' ) . '</strong></p><p>' . __( 'Because there are no saved reports. It\'s <strong>important to note</strong>, the reports are not automatically saved. You need to click SAVE REPORT button in report area.', 'cgss' ) . '</p><p><strong>' . __( 'Why I see "Some problem occured" alert?', 'cgss' ) . '</strong></p><p>' . __( 'That\'s very unlikely to happen. It must be some special case, contact support tell me about your situation.', 'cgss' ) . '</p>',
+			),
+		);
+	}
+
+	//Sidebar links in help section for extension
+	public function ext_links() {
+		return '<p><a href="https://gogretel.zendesk.com/" target="_blank">' . __( 'Help for Extension', 'cgss' ) . '</a></p>';
+	}
+} ?>

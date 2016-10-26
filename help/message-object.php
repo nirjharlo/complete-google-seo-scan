@@ -104,6 +104,86 @@ class CGSS_MSG {
 				);
 	}
 
+	//for compete in scan status.
+	public function compete() {
+		return array(
+					'admin' => admin_url(),
+					'ok' => $this->ok(),
+					'flag' => $this->flag(),
+					'no' => $this->no(),
+					'up' => $this->up(),
+					'down' => $this->down(),
+					'avg' => __( 'Average', 'cgss' ),
+					'all' => __( 'All', 'cgss' ),
+					'none' => __( 'None', 'cgss' ),
+					'err_note' => $this->err_notice( '' ),
+					'same_domain' => $this->err_notice( __( 'Competitors should be from different domain.', 'cgss' ) ),
+					'fetch' => array(
+									'ok' => $this->suc_notice( __( 'Report fetched and shown.', 'cgss' ) ),
+									'no' => $this->err_notice( __( 'Report fetch failed.', 'cgss' ) ),
+									'no_data' => $this->err_notice( __( 'No saved report to fetch.', 'cgss' ) ),
+								),
+					'key_block' => array(
+										'empty' => $this->err_notice( __( 'Please enter a focus keyword.', 'cgss' ) ),
+										'long' => $this->err_notice( __( 'Focus keyword is too long. 32 words are allowed.', 'cgss' ) ),
+										'long_char' => $this->err_notice( __( 'Word in focus keyword is too long. 129 characters per word are allowed.', 'cgss' ) ),
+									),
+					'no_key_tbl' => '<th><strong>' . __( 'Keyword', 'cgss' ) . '</strong></th><th><strong>' . __( 'Count', 'cgss' ) . '</strong></th><th><strong>' . __( 'Percent', 'cgss' ) . '</strong></th>',
+					'saved' => $this->suc_notice( __( 'Report Saved.', 'cgss' ) ),
+					'no_saved' => $this->err_notice( __( 'Report not Saved.', 'cgss' ) ),
+					'var_key_none' => $this->war_notice( __( 'That keyword is not found in content. You may RESET and scan with other keywords.', 'cgss' ) ),
+					'var_key' => $this->war_notice( __( 'That keyword is not found in content. You may RESET and scan with other variants.', 'cgss' ) ),
+					'fail' => $this->err_notice( __( 'Scan Failed. Check your network, make sure that page exists and try again.', 'cgss' ) ),
+					'word' => array(
+									'ok' => __( 'Words and HTML seems adequate.', 'cgss' ),
+									'num_ok' => __( 'Number of words are enough, but optimize HTML amount.', 'cgss' ),
+									'ratio_ok' => __( 'Optimize number of words, while amount of HTML is ok.', 'cgss' ),
+									'no' => __( 'Both number of words and amount of HTML need to be optimized.', 'cgss' ),
+								),
+					'links' => array(
+									'ok' => __( 'Using proper amount of links(both internal and external).', 'cgss' ),
+									'num_ok' => __( 'Amount of links are fine but optimize external and internal link ratio.', 'cgss' ),
+									'ext_ok' => __( 'Enough external links, but optimize internal link numbers.', 'cgss' ),
+									'no' => __( 'Number of links are not optimized.', 'cgss' ),
+								),
+					'images' => array(
+									'ok' => __( 'Number of images are satisfactory.', 'cgss' ),
+									'more' => __( 'More number of images will be good.', 'cgss' ),
+									'less' => __( 'Reduce of number of images will be ideal.', 'cgss' ),
+								),
+					'speed' => array(
+									'ok' => __( 'Loading time is balanced.', 'cgss' ),
+									'no' => __( 'You need to improve webpage speed.', 'cgss' ),
+								),
+					'social' => array(
+									'ok' => __( 'Focus social media network', 'cgss' ) . ': <span id="FamousSocial"></span>. ' . __( 'Social popularity is fine.', 'cgss' ),
+									'no' => __( 'Focus social media network', 'cgss' ) . ': <span id="FamousSocial"></span>. ' . __( 'Improve social popularity.', 'cgss' ),
+								),
+					'keys' => array(
+									'ok' => __( 'Repetation of keyword are ok. Important focus keyword usage area:', 'cgss' ) . ' <span id="FamousKeys"></span>.',
+									'more' => __( 'Use focus keyword more. Important focus keyword usage area:', 'cgss' ) . ' <span id="FamousKeys"></span>.',
+									'less' => __( 'Use focus keyword less. Important focus keyword usage area:', 'cgss' ) . ' <span id="FamousKeys"></span>.',
+								),
+					'bonus' => __( 'About <span id="NumOfSsl"></span> have SSL certificate and <span id="NumOfMobile"></span> have responsive design. These are 2 seo factors.', 'cgss' ),
+					'fail_opt' => __( 'Could not optimize.', 'cgss' ),
+				);
+	}
+
+	//success notice mark.
+	public function suc_notice( $txt ) {
+		return '<div class="updated notice is-dismissible cgss-comp-saved"><p>' . $txt . '</p><button type="button" class="notice-dismiss cgss-comp-saved-btn"><span class="screen-reader-text">Dismis</span></button></div>';
+	}
+
+	//warning notice mark.
+	public function war_notice( $txt ) {
+		return '<div class="notice notice-warning is-dismissible cgss-comp-saved"><p>' . $txt . '</p><button type="button" class="notice-dismiss cgss-comp-saved-btn"><span class="screen-reader-text">Dismis</span></button></div>';
+	}
+
+	//error notice mark.
+	public function err_notice( $txt ) {
+		return '<div class="error notice is-dismissible cgss-comp-saved"><p>' . $txt . '</p><button type="button" class="notice-dismiss cgss-comp-saved-btn"><span class="screen-reader-text">Dismis</span></button></div>';
+	}
+
 	//green tick mark.
 	public function enabled() {
 		return '<span class="success-back white">&nbsp;' . __( 'enabled', 'cgss' ) . '&nbsp;</span>';
@@ -164,4 +244,14 @@ class CGSS_MSG {
 		return '<span class="dashicons dashicons-' . $icon . '"></span>';
 	}
 
-}
+	//green tick mark.
+	public function up() {
+		return $this->dashicon( 'arrow-up warning-icon' );
+	}
+
+	//green tick mark.
+	public function down() {
+		return $this->dashicon( 'arrow-down warning-icon' );
+	}
+
+} ?>

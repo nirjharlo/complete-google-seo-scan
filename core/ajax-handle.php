@@ -1,6 +1,6 @@
 <?php
 /**
- * @/core/lib/ajax-handle.php
+ * @/core/ajax-handle.php
  * on: 23.06.2015
  * @since 2.0
  *
@@ -381,9 +381,20 @@ $fb_like = intval( $fb_like_count );
 
 
 
-//get server results
-$server_data = new CGSS_GET_SERVER();
-$server = $server_data->fetch();
+//get server results, if not for competative
+if ( $post_id and $post_id != ' ' ) {
+	$server_data = new CGSS_GET_SERVER();
+	$server = $server_data->fetch();
+} else {
+	$server = array(
+					'www' => false,
+					'ip' => false,
+					'gzip' => false,
+					'cache' => false,
+					'if_mod' => false,
+					'time_val' => false,
+				);
+}
 
 $www = $server['www'];
 if ( array_key_exists( 'ip', $server ) ) {
@@ -399,9 +410,24 @@ $if_mod = $server['if_mod'];
 $res_time = $server['time_val'];
 
 
-//get design results
-$design_data = new CGSS_GET_DESIGN();
-$design = $design_data->fetch();
+//get design results, if not for competative
+if ( $post_id and $post_id != ' ' ) {
+	$design_data = new CGSS_GET_DESIGN();
+	$design = $design_data->fetch();
+} else {
+	$design = array(
+					'css_num' => false,
+					'js_num' => false,
+					'css_import' => false,
+					'css_size' => false,
+					'js_size' => false,
+					'css_media' => false,
+					'css_compress_num' => false,
+					'js_compress_num' => false,
+					'css_compress_size' => false,
+					'js_compress_size' => false,
+				);
+}
 
 $css_num = $design['css_num'];
 $js_num = $design['js_num'];
@@ -560,7 +586,4 @@ $add_result = array(
 	'marks' => $exact,
 	'time' => round( ( $time_end - $time_start ), 3 ),
 );
-$output_result = array_replace( $result, $add_result );
-
-//Export result to front end.
-echo json_encode( $output_result, JSON_FORCE_OBJECT ); ?>
+$output_result = array_replace( $result, $add_result ); ?>

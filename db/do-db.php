@@ -15,40 +15,36 @@ class CGSS_DO_DB {
 
 	//generate individual words from text content
 	public function save( $post_id, $data, $option_name ) {
-		$save = false;
+		$saved = false;
 		$store = $data;
 		if ( $post_id and $store ) {
 			$pure_store = sanitize_meta ( $option_name, $store, 'post' );
 			if ( ! update_post_meta ( $post_id, $option_name, $pure_store ) ) {
 				$save = add_post_meta( $post_id, $option_name, $pure_store, true );
+				$saved = true;
 			} else {
 				$save = update_post_meta ( $post_id, $option_name, $pure_store );
+				$saved = true;
 			}
 		}
-		if ( $save ) {
-			return 'done';
-		} else {
-			return false;
-		}
+		return $saved;
 	}
 
 	//generate individual words from text content
 	public function xtra_save_option( $option_name, $data ) {
-		$save = false;
+		$saved = false;
 		$store = $data;
 		if ( $option_name and $store ) {
 			$pure_store = sanitize_meta( $option_name, $store, 'post' );
 			if ( ! update_option( $option_name, $pure_store, 'yes' ) ) {
 				$save = add_option( $option_name, $pure_store, '', 'yes' );
+				$saved = true;
 			} else {
 				$save = update_option( $option_name, $pure_store, 'yes' );
+				$saved = true;
 			}
 		}
-		if ( $save ) {
-			return 'done';
-		} else {
-			return false;
-		}
+		return $saved;
 	}
 
 	//Special function for updating option names used for category and tag scan result store.

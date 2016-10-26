@@ -137,12 +137,13 @@
 	overflow-y: scroll;
 }
 .cover-display-btn {
-	padding: 2px 5px 5px 5px;
+	padding: 5px 5px 7px 5px;
 	-webkit-transition: background 0.1s ease-in-out;
 	-moz-transition: background 0.1s ease-in-out;
 	-o-transition: background 0.1s ease-in-out;
 	transition: background 0.1s ease-in-out;
 	color: #666666;
+	border: 1px dotted #d4d4d4;
 }
 .cover-display-btn:hover {
 	color: #ffffff;
@@ -150,6 +151,23 @@
 }
 .little-dark-text {
 	color: #666666;
+}
+
+
+/*compete style*/
+.compete-form, .grey-border-box {
+	padding: 0px 20px 20px 20px;
+	margin-left: 10px;
+	border: 1px dotted #d4d4d4;
+}
+.view-url {
+	padding: 0px 5px 0px 5px;
+}
+.hide-scan-compete-ok {
+	display: none;
+}
+.compete-url-input-cover, .compete-url-input-cover-prev {
+	margin-bottom: 10px;
 }
 
 
@@ -271,7 +289,9 @@
 	color: #9197a3;
 	text-decoration: none;
 }
-#ScoreStarsAlt, .report-brief, .words-help-msg, .thratio-help-msg, .thrcy-help-msg, .imglink-help-msg, .noflink-help-msg, .exlink-help-msg, .nestb-help-msg, .style-help-msg, .media-help-msg, .vport-help-msg, .www-help-msg, .if-mod-help-msg, .cano-help-msg, .robo-help-msg, .ip-help-msg, .gzip-help-msg, .cache-help-msg, .loading-scan-extra, .loading-intel, .intel-content,.intel-extra, .facebook-intel, .googleplus-intel, .twitter-intel {
+
+
+#ScoreStarsAlt, .report-brief, .words-help-msg, .thratio-help-msg, .thrcy-help-msg, .imglink-help-msg, .noflink-help-msg, .exlink-help-msg, .nestb-help-msg, .style-help-msg, .media-help-msg, .vport-help-msg, .www-help-msg, .if-mod-help-msg, .cano-help-msg, .robo-help-msg, .ip-help-msg, .gzip-help-msg, .cache-help-msg, .focus-key-help-msg, .compete-url-help-msg, .loading-scan-extra, .loading-intel, .loading-compete, .loading-fetch-result, .loading-save-result, .loading-compete-scan, .intel-content,.intel-extra, .facebook-intel, .googleplus-intel, .twitter-intel, .scan-compete, .compete-save-msg {
 	display: none;
 	text-decoration: none;
 }
@@ -329,10 +349,10 @@
 	.hide-btn-text, .hide-mobile {
 		display: none;
 	}
-	.stars-top {
+	.stars-top, #BuyNowBtn, #LearnMoreBtn {
 		display: none;
 	}
-	#ScoreStarsAlt {
+	#ScoreStarsAlt, .buy-now-btn-mobile, .learn-more-btn-mobile {
 		display: block;
 	}
 }
@@ -340,7 +360,7 @@
 	.stars-top {
 		display: block;
 	}
-	#ScoreStarsAlt {
+	#ScoreStarsAlt, .buy-now-btn-mobile, .learn-more-btn-mobile {
 		display: none;
 	}
 }

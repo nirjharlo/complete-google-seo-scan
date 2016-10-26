@@ -59,7 +59,7 @@ class CGSS_KEYWORDS {
 		$phrs_count = count($phrs);
 		foreach( $phrs as $val ) {
 			$key_num = substr_count( $this->text, $val );
-			$key_per = round( ( ( $key_num / $phrs_count ) * 100 ), 3 );
+			$key_per = round( ( ( ( $key_num * $n ) / $phrs_count ) * 100 ), 3 );
 			if ( $key_num > 1 and $key_per > 0.2 and ! isset( $keys[$val] ) ) {
 				$keys[$val] = $key_per;
 			}

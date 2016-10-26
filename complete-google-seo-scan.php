@@ -3,7 +3,7 @@
  Plugin Name: Complete Google SEO Scan
  Plugin URI: http://gogretel.com/
  Description: Find issues, check status and get fixes for Seo of individual pages and whole website.
- Version: 2.2
+ Version: 2.3.1
  Author: Gogretel
  Author URI: http://gogretel.com/
  Text Domain: cgss
@@ -19,12 +19,14 @@
  * BUILD
  *   |
  *   | - GET MESSAGES FOR JAVASCRIPT --- /help/message-object.php
+ *   |
+ *   | - SCRIPTS --- /assets/css, /assets/js
+ *   |
+ *   | - SCREEN OPTIONS
  *
  * CALLBACKS
  *   |
  *   |
- *   |
- *   | - SCRIPTS --- /assets/css, /assets/js
  *   |
  *   |
  *   | | - OVERVIEW PAGE --- /user, /user/display
@@ -40,6 +42,11 @@
  *   | | |   | --- INSERT INTO DB --- /db
  *   | | |   |
  *   | | | - AJAX HANDLE --- /core, /core/lib
+ *   | | |
+ *   | | |
+ *   | | |   | - INSERT INTO DB --- /DB
+ *   | | |   |
+ *   | | | - COMPETE AJAX HANDLE --- /core/compete.php
  *   | |
  *   | |
  *   | |   | --- INSERT INTO DB --- /db
@@ -114,7 +121,8 @@ function cgss_scan_page_link( $links, $file ) {
 		$this_plugin = plugin_basename(__FILE__);
 	}
 	if ( $file == $this_plugin ) {
-		$shift_link = array( 
+		$shift_link = array(
+			'<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/admin.php?page=seo-scan-post">' . __( 'Scan Posts', 'cgss' ) . '</a>',
 			'<a href="' . get_bloginfo( 'wpurl' ) . '/wp-admin/admin.php?page=seo-scan">' . __( 'Start Here', 'cgss' ) . '</a>',
 		);
 		foreach( $shift_link as $val ) {
@@ -203,6 +211,7 @@ function cgss_admin_base_script() {
 	wp_enqueue_script( 'cgss-admin-base-callbacks', plugins_url() . '/complete-google-seo-scan/assets/js/callbacks.js', array( 'jquery' ), '', false );
 	wp_enqueue_script( 'cgss-admin-base-scan', plugins_url() . '/complete-google-seo-scan/assets/js/scan.js', array( 'jquery' ), '', false );
 	wp_enqueue_script( 'cgss-admin-base-script', plugins_url() . '/complete-google-seo-scan/assets/js/cgss-scan-script.js', array( 'jquery', 'cgss-admin-base-callbacks', 'cgss-admin-base-scan' ), '', false );
+	wp_enqueue_script( 'cgss-admin-compete', plugins_url() . '/complete-google-seo-scan/assets/js/compete.js', array( 'jquery', 'cgss-admin-base-script' ), '', false );
 	wp_enqueue_style( 'cgss-admin-grid-style', plugins_url() . '/complete-google-seo-scan/assets/css/grid.css', '', '2.0', 'all' );
 	wp_enqueue_style( 'cgss-admin-advanced-style', plugins_url() . '/complete-google-seo-scan/assets/css/cgss-style.css', '', '2.0', 'all' );
 	wp_enqueue_style( 'cgss-admin-loading-style', plugins_url() . '/complete-google-seo-scan/assets/css/loading-style.css', '', '2.0', 'all' );
@@ -213,13 +222,16 @@ function cgss_admin_base_script() {
 	$msg = new CGSS_MSG();
 	$scan_msg = $msg->scan();
 	$html_msg = $msg->html();
+	$compete_msg = $msg->compete();
 
 	// in JavaScript, object properties are accessed as ajax_object.ajax_url
 	wp_localize_script( 'cgss-admin-base-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'ajax_msg' => $scan_msg, 'ajax_html' => $html_msg ) );
+	wp_localize_script( 'cgss-admin-compete', 'compete_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ), 'ajax_compete' => $compete_msg ) );
 }
 
 //ajax callback hook for post types
 add_action( 'wp_ajax_cgss_core', 'cgss_core_callback' );
+add_action( 'wp_ajax_cgss_compete', 'cgss_compete_callback' );
 
 
 //add screen options
@@ -364,6 +376,9 @@ function cgss_core_callback() {
 	//Save reult to database
 	require_once( 'db/do-db.php' );
 
+	//Export result to front end.
+	echo json_encode( $output_result, JSON_FORCE_OBJECT );
+
 	//add current time for better user access, using wordpress time function. Following variable
 	//will return time in GMT, because if server location is changed, user won't be affected.
 	$time = current_time( 'timestamp' );
@@ -377,6 +392,42 @@ function cgss_core_callback() {
 
 	//important to store the option names, to be deleted upon uninstall
 	$data_option_name_save = $data->update_cgss_unique_ids( 'cgss_seo_option_ids', $output_result['id'] );
+	wp_die();
+}
+
+//compete ajax callback
+function cgss_compete_callback() {
+
+	//get server and design reult to database
+	require_once( 'db/get-db.php' );
+
+	//Save reult to database
+	require_once( 'db/do-db.php' );
+
+	//require front end library to execute this function
+	require_once( 'core/compete.php' );
+
+	if ( $request_type == 'save' ) {
+
+		$data = new CGSS_DO_DB();
+		$data_save = $data->save( $output_result['id'], $output_result, 'cgss_scan_compete' );
+
+		//Export result to front end.
+		if ( $data_save == 'done' ) {
+			$save_ping = array( 'ping' => 'valid' );
+		} else {
+			$save_ping = array( 'ping' => 'invalid' );
+		}
+		echo json_encode( $save_ping, JSON_FORCE_OBJECT );
+	}
+
+	if ( $request_type == 'fetch' ) {
+
+		$data = new CGSS_GET_COMPETE_DB( 'cgss_scan_compete', $post_id );
+		$data_fetch = $data->filter();
+
+		echo json_encode( $data_fetch, JSON_FORCE_OBJECT );
+	}
 	wp_die();
 }
 
@@ -425,6 +476,8 @@ function cgss_add_help_tab() {
 	$help = new CGSS_HELP();
 	$help_data = $help->data();
 	$help_links = $help->links();
+	$ext_help_data = $help->ext_data();
+	$ext_help_links = $help->ext_links();
 
 	// Add help docs
 	foreach ( $help_data as $key ) {
@@ -433,4 +486,18 @@ function cgss_add_help_tab() {
 
 	// Add help links
 	$screen->set_help_sidebar( $help_links );
+
+	//add sidebar docs and links for extension
+
+	$all_plugins = get_option('active_plugins');
+	if ( $all_plugins ) {
+		foreach ( $all_plugins as $key => $plug ) {
+			if ( $plug == 'xtend-complete-google-seo-scan/xtend-complete-google-seo-scan.php' ) {
+				foreach ( $ext_help_data as $key ) {
+					$screen->add_help_tab( $key );
+				}
+				$screen->set_help_sidebar( $help_links . $ext_help_links );
+			}
+		}
+	}
 } ?>

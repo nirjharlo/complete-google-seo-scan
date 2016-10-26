@@ -16,7 +16,7 @@
 	if ( ! $server or ! $design ) :
 	?>
 		<div class="error notice is-dismissible">
-			<p><?php _e( 'Before You Proceed, please complete scaning for <i>Server Seo Status</i> and <i>Theme and Plugins Design Seo</i>.', 'cgss' ); ?> <a href="#"><?php echo _e( 'You will see them bellow.', 'cgss' ); ?></a> <?php _e( 'Then reload the page.', 'cgss' ); ?></p>
+			<p><?php _e( 'Before You Proceed, please complete scaning for <i>Server Seo Status</i> and <i>Design Seo Status</i> bellow. Then reload the page.', 'cgss' ); ?></p>
 			<button type="button" class="notice-dismiss">
 				<span class="screen-reader-text">Dismis</span>
 			</button>

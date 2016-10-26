@@ -102,13 +102,17 @@ jQuery(document).ready(function($) {
 	 */
 	jQuery(".scan-now").click(function() {
 
+		if ( jQuery(this).attr("disabled") == 'disabled' ) {
+			return false;
+		}
+
 		//Fetch data for url from radio input and post id from id attribute of that input
 		var item = jQuery(this).attr("href").substring(1, this.length);
 		var url = jQuery(this).attr("id");
 
 		//Change display priority
 		jQuery(".loading-" + item + ",.scan-process").show();
-		jQuery(".scan-now").attr("disabled", "disabled");
+		jQuery(".scan-now, .compete-now").attr("disabled", "disabled");
 		jQuery(".view-again,.scan-failed,.show-msg").hide();
 
 		//Send Ajax request
@@ -121,7 +125,7 @@ jQuery(document).ready(function($) {
 
 				//Initiate reporting screen
 				jQuery("#loadingProgressG,.scan-process").hide();
-				jQuery(".scan-now").removeAttr("disabled");
+				jQuery(".scan-now, .compete-now").removeAttr("disabled");
 
 				//Get ping and respond accordingly.
 				var ping = data.ping;
@@ -179,7 +183,7 @@ jQuery(document).ready(function($) {
 			error: function() {
 				jQuery("#ScanFailed-" + item).show();
 				jQuery("#loadingProgressG,.scan-process,.scan-report,#ScanOver").hide();
-				jQuery(".scan-now").removeAttr("disabled");
+				jQuery(".scan-now, .compete-now").removeAttr("disabled");
 			}
 		});
 	});
