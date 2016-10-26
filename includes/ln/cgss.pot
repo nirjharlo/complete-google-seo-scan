@@ -1,0 +1,892 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-26 20:04+0530\n"
+"PO-Revision-Date: 2013-08-26 20:04+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <help@gogretel.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../scan-form.php:3
+msgid "Enter url of any webpage of your website to scan (Just copy and paste url from browser address bar)"
+msgstr ""
+
+#: ../scan-form.php:11
+msgid "Include robots.txt analysis in the report."
+msgstr ""
+
+#: ../scan-form.php:11
+msgid "This will take around 10 seconds more. If you are sure there is no blocking of this url by robots.txt, then you may skip this checkbox."
+msgstr ""
+
+#: ../scan-form.php:17
+msgid "Input sitemap.xml url for analysis."
+msgstr ""
+
+#: ../scan-form.php:17
+msgid "This will also take around 30 seconds  more. If you don't enter any url, no analysis on xml sitemap will take place."
+msgstr ""
+
+#: ../scan-form.php:17
+msgid "If you are sure that this page is included in xml sitemap, no need to recheck it."
+msgstr ""
+
+#: ../scan-form.php:23
+msgid "Time to show you results depends on your server and your website quality. Actual scanning process takes less than"
+msgstr ""
+
+#: ../scan-form.php:23
+msgid "seconds to complete."
+msgstr ""
+
+#: ../scan-html.php:15
+msgid "Content Scan Results"
+msgstr ""
+
+#: ../scan-html.php:20
+#: ../scan-html.php:57
+msgid "Name"
+msgstr ""
+
+#: ../scan-html.php:21
+#: ../scan-html.php:58
+msgid "Description"
+msgstr ""
+
+#: ../scan-html.php:22
+#: ../scan-html.php:59
+msgid "Result"
+msgstr ""
+
+#: ../scan-html.php:23
+#: ../scan-html.php:60
+msgid "Action"
+msgstr ""
+
+#: ../scan-html.php:40
+msgid "Content crawled from this webpage"
+msgstr ""
+
+#: ../scan-html.php:52
+msgid "Technical Scan Results"
+msgstr ""
+
+#: ../scan-result.php:2
+msgid "Google Search Engine Optimization Scan for your webpage is complete. Here are the results."
+msgstr ""
+
+#: ../scan-result.php:193
+msgid "This Web page's title is optimized."
+msgstr ""
+
+#: ../scan-result.php:194
+#: ../scan-result.php:240
+msgid "No Action is Required"
+msgstr ""
+
+#: ../scan-result.php:196
+#: ../scan-result.php:301
+msgid "Characters"
+msgstr ""
+
+#: ../scan-result.php:197
+msgid "Please optimize your title for character limit 70"
+msgstr ""
+
+#: ../scan-result.php:200
+msgid "There is no web page title."
+msgstr ""
+
+#: ../scan-result.php:201
+msgid "Please enter your webpage title."
+msgstr ""
+
+#: ../scan-result.php:205
+msgid "Total number of images"
+msgstr ""
+
+#: ../scan-result.php:205
+msgid "Use of \"alt\" attribute"
+msgstr ""
+
+#: ../scan-result.php:205
+msgid "Use of \"height\" attribute"
+msgstr ""
+
+#: ../scan-result.php:205
+msgid "Use of \"width\" attribute"
+msgstr ""
+
+#: ../scan-result.php:207
+msgid "Please insert the missing attributes."
+msgstr ""
+
+#: ../scan-result.php:209
+#: ../scan-result.php:215
+#: ../scan-result.php:231
+#: ../scan-result.php:263
+#: ../scan-result.php:277
+#: ../scan-result.php:285
+#: ../scan-result.php:303
+#: ../scan-result.php:318
+#: ../scan-result.php:335
+#: ../scan-result.php:400
+#: ../scan-result.php:447
+#: ../scan-result.php:469
+#: ../scan-result.php:487
+#: ../scan-result.php:502
+#: ../scan-result.php:513
+#: ../scan-result.php:525
+#: ../scan-result.php:537
+#: ../scan-result.php:550
+#: ../scan-result.php:559
+#: ../scan-result.php:571
+msgid "No action is required."
+msgstr ""
+
+#: ../scan-result.php:213
+msgid "Number of Links"
+msgstr ""
+
+#: ../scan-result.php:213
+msgid "Outgoing Links"
+msgstr ""
+
+#: ../scan-result.php:217
+msgid "Number of Links are large."
+msgstr ""
+
+#: ../scan-result.php:218
+msgid "Please try to reduce number of links."
+msgstr ""
+
+#: ../scan-result.php:220
+msgid "Number of Links are too much."
+msgstr ""
+
+#: ../scan-result.php:221
+msgid "Number of Links should be lowered."
+msgstr ""
+
+#: ../scan-result.php:225
+msgid "Links with rel attribute"
+msgstr ""
+
+#: ../scan-result.php:225
+msgid "Links with title attribute"
+msgstr ""
+
+#: ../scan-result.php:225
+msgid "Links with nofollow rel attibute"
+msgstr ""
+
+#: ../scan-result.php:229
+msgid "Put \"rel\" and \"title\" attributes to links."
+msgstr ""
+
+#: ../scan-result.php:236
+msgid "No heading tags of h1, h2, h3, h4, h5, h6 are present in the webpage. So, there is no text hierarchy present."
+msgstr ""
+
+#: ../scan-result.php:237
+#: ../scan-result.php:243
+msgid "Write your text in proper hierarchy."
+msgstr ""
+
+#: ../scan-result.php:239
+msgid "All heading tags h1, h2, h3, h4, h5, h6 are present in the webpage. So, there is text hierarchy present."
+msgstr ""
+
+#: ../scan-result.php:242
+msgid "One heading tag is present in the webpage."
+msgstr ""
+
+#: ../scan-result.php:242
+msgid "Which is"
+msgstr ""
+
+#: ../scan-result.php:245
+msgid "Some heading tags are present in the webpage."
+msgstr ""
+
+#: ../scan-result.php:245
+msgid "They are"
+msgstr ""
+
+#: ../scan-result.php:246
+msgid "Make sure your text is in hierarchy. If it is not please make it so."
+msgstr ""
+
+#: ../scan-result.php:250
+msgid "Following is the content, which is not auto generated. You can compare your actual page ( in your editor ) with this content to check if javascripts have generated more contents."
+msgstr ""
+
+#: ../scan-result.php:250
+msgid "Page content &darr;"
+msgstr ""
+
+#: ../scan-result.php:251
+msgid "No Action Required"
+msgstr ""
+
+#: ../scan-result.php:254
+msgid "Text to HTML ratio for this webpage is"
+msgstr ""
+
+#: ../scan-result.php:256
+msgid "Too much HTML in your webpage."
+msgstr ""
+
+#: ../scan-result.php:257
+msgid "Write more text, atleast"
+msgstr ""
+
+#: ../scan-result.php:259
+msgid "Too much text in your webpage."
+msgstr ""
+
+#: ../scan-result.php:260
+msgid "Make this page more appealing with more HTML. Or write less text, atleast"
+msgstr ""
+
+#: ../scan-result.php:262
+msgid "This ratio for this webpage is normal."
+msgstr ""
+
+#: ../scan-result.php:269
+msgid "Google may confuse this page as auto-generated. Please change your url type to plain text."
+msgstr ""
+
+#: ../scan-result.php:270
+msgid "Change your url to different type of permalink"
+msgstr ""
+
+#: ../scan-result.php:270
+msgid "here"
+msgstr ""
+
+#: ../scan-result.php:272
+msgid "The webpage url is really bad, unusable. Google may consider it spam."
+msgstr ""
+
+#: ../scan-result.php:273
+msgid "Change your url size and type at page or post editor. Make sure you are not using any session tracking."
+msgstr ""
+
+#: ../scan-result.php:276
+msgid "Great! This webpage url maintains guidelines."
+msgstr ""
+
+#: ../scan-result.php:282
+msgid "This webpage makes"
+msgstr ""
+
+#: ../scan-result.php:282
+msgid "HTTP requests."
+msgstr ""
+
+#: ../scan-result.php:284
+msgid "&nbsp;It's fine."
+msgstr ""
+
+#: ../scan-result.php:287
+msgid "&nbsp;It should be less."
+msgstr ""
+
+#: ../scan-result.php:288
+msgid "Try to make less HTTP requests."
+msgstr ""
+
+#: ../scan-result.php:288
+msgid "We have a solution &darr;"
+msgstr ""
+
+#: ../scan-result.php:290
+msgid "&nbsp;This is very high."
+msgstr ""
+
+#: ../scan-result.php:291
+msgid "Try to make less HTTP requests"
+msgstr ""
+
+#: ../scan-result.php:305
+msgid "Description is too long, write something within 155 characters. Altough it does not hamper ranking but it looks bad in search engine page result. Hence, may reduce click through rate (CTR)."
+msgstr ""
+
+#: ../scan-result.php:308
+msgid "No description can be found."
+msgstr ""
+
+#: ../scan-result.php:309
+#: ../scan-result.php:324
+msgid "This is not good."
+msgstr ""
+
+#: ../scan-result.php:310
+msgid "Please enter some meta description using any free plugin."
+msgstr ""
+
+#: ../scan-result.php:320
+msgid "Canonical URL of this webpage is different from its original url. Be sure you want your page to be indexed by canonical url."
+msgstr ""
+
+#: ../scan-result.php:323
+msgid "No canonical link value can be found."
+msgstr ""
+
+#: ../scan-result.php:325
+#: ../scan-result.php:395
+msgid "Please enter desired meta canonical link using any free plugin."
+msgstr ""
+
+#: ../scan-result.php:331
+msgid "Meta robot is having noindex nofollow value. This is not good."
+msgstr ""
+
+#: ../scan-result.php:332
+msgid "Uncheck"
+msgstr ""
+
+#: ../scan-result.php:332
+msgid "Search Engine Visibility settings"
+msgstr ""
+
+#: ../scan-result.php:332
+msgid "If already unchecked see if your SEO plugin is generating meta robot. If so contact the plugin provider."
+msgstr ""
+
+#: ../scan-result.php:334
+msgid "Meta robot does not have noindex nofollow value."
+msgstr ""
+
+#: ../scan-result.php:389
+msgid "No Meta description is found."
+msgstr ""
+
+#: ../scan-result.php:390
+msgid "Please enter a meta description tag. You can use any free SEO plugins available to do so."
+msgstr ""
+
+#: ../scan-result.php:394
+msgid "No canonical link meta tag can be found."
+msgstr ""
+
+#: ../scan-result.php:399
+msgid "No Meta robot is found."
+msgstr ""
+
+#: ../scan-result.php:406
+msgid "No website name found. It may be"
+msgstr ""
+
+#: ../scan-result.php:411
+msgid "No sharing url found. It may be"
+msgstr ""
+
+#: ../scan-result.php:416
+msgid "No application type name found. It may be \"website\" or \"blog\"."
+msgstr ""
+
+#: ../scan-result.php:421
+msgid "No sharing title was found."
+msgstr ""
+
+#: ../scan-result.php:426
+msgid "No sharing description was found."
+msgstr ""
+
+#: ../scan-result.php:431
+msgid "No image was found."
+msgstr ""
+
+#: ../scan-result.php:434
+#: ../scan-result.php:440
+msgid "Following are the meta tags for OGP."
+msgstr ""
+
+#: ../scan-result.php:435
+msgid "No Action Required."
+msgstr ""
+
+#: ../scan-result.php:437
+msgid "No Meta tags for Open Graph Protocol ( OGP ) is found. ALtough these are not ranking factors but they increases chances better social sharing if used properly."
+msgstr ""
+
+#: ../scan-result.php:438
+msgid "Please enter meta tags for following properties using a free plugin. og:site_name, og:type, og:title, og:description, og:image."
+msgstr ""
+
+#: ../scan-result.php:441
+msgid "Please enter remaining meta OGP tags, using any free SEO plugin."
+msgstr ""
+
+#: ../scan-result.php:446
+msgid "Great! If-Modified-Since header is On."
+msgstr ""
+
+#: ../scan-result.php:449
+msgid "If-Modified-Since header is Off"
+msgstr ""
+
+#: ../scan-result.php:450
+msgid "Ask your hosting provider to activate If-Modified-Since header."
+msgstr ""
+
+#: ../scan-result.php:455
+msgid "You have not approved this checking while filling up scaning form."
+msgstr ""
+
+#: ../scan-result.php:456
+msgid "If you are not sure about your robots.txt blocking, you can recheck this url while checking corrosponding checkbox."
+msgstr ""
+
+#: ../scan-result.php:459
+msgid "Your website do not have a robots.txt file. So, this parameter can not be judged."
+msgstr ""
+
+#: ../scan-result.php:460
+msgid "Create a robots.txt file using suitable free seo plugins available."
+msgstr ""
+
+#: ../scan-result.php:465
+msgid "This url may be blocked for search engines. Wnd part of the url is found in"
+msgstr ""
+
+#: ../scan-result.php:465
+msgid "robots.txt file"
+msgstr ""
+
+#: ../scan-result.php:466
+msgid "See the file and be sure that it is not disallowing the url."
+msgstr ""
+
+#: ../scan-result.php:468
+msgid "This url is not blocked for search engines by robots.txt file."
+msgstr ""
+
+#: ../scan-result.php:477
+msgid "Your website do not have a sitemaps.txt file at the url you specified, which is"
+msgstr ""
+
+#: ../scan-result.php:478
+msgid "Please give us correct sitemap.xml file url, next time you scan webpages."
+msgstr ""
+
+#: ../scan-result.php:483
+msgid "This webpage url is not found in xml sitemap you entered."
+msgstr ""
+
+#: ../scan-result.php:484
+msgid "Please enlist your webpage url in sitemap.xml file which is submitted to search engines."
+msgstr ""
+
+#: ../scan-result.php:486
+msgid "This url is in sitemaps.xml file."
+msgstr ""
+
+#: ../scan-result.php:491
+msgid "You have not approved sitemap.xml checking while filling up scanning form."
+msgstr ""
+
+#: ../scan-result.php:492
+msgid "You can input sitemap.xml url before scanning again."
+msgstr ""
+
+#: ../scan-result.php:501
+#: ../scan-result.php:512
+#: ../scan-result.php:524
+#: ../scan-result.php:536
+msgid "Microdata rich snippet is present at this webpage."
+msgstr ""
+
+#: ../scan-result.php:501
+#: ../scan-result.php:512
+#: ../scan-result.php:524
+#: ../scan-result.php:536
+msgid "Type of rich snippet is"
+msgstr ""
+
+#: ../scan-result.php:543
+msgid "There is no microdata rich snippet present in this webpage."
+msgstr ""
+
+#: ../scan-result.php:544
+msgid "Use any free SEO plugin to markup your webpage with microdata rich snippet."
+msgstr ""
+
+#: ../scan-result.php:549
+msgid "You are using WordPress version"
+msgstr ""
+
+#: ../scan-result.php:549
+msgid "This cms has no SEO optimization problem."
+msgstr ""
+
+#: ../scan-result.php:552
+msgid "You are not using WordPress, most probably it's a modified cms with wordpress core. We can not check it's current status of SEO compatibility."
+msgstr ""
+
+#: ../scan-result.php:553
+msgid "Please use proper WordPress software from"
+msgstr ""
+
+#: ../scan-result.php:553
+msgid "Wordpress website"
+msgstr ""
+
+#: ../scan-result.php:558
+msgid "Cache is active. This webpage has following cache parameters."
+msgstr ""
+
+#: ../scan-result.php:561
+msgid "Cache is inactive. This webpage don't returns cache parameters."
+msgstr ""
+
+#: ../scan-result.php:562
+msgid "Pse cache method for better user experience. Use any free cache plugin available."
+msgstr ""
+
+#: ../scan-result.php:567
+msgid "Keep Alive Connection is Off"
+msgstr ""
+
+#: ../scan-result.php:568
+msgid "Ask your hosting provider to activate Keep Alive Connection."
+msgstr ""
+
+#: ../scan-result.php:570
+msgid "Great! Keep Alive Connection On"
+msgstr ""
+
+#: ../scan-result.php:575
+msgid "Total size of webpage"
+msgstr ""
+
+#: ../scan-result.php:575
+msgid "kb."
+msgstr ""
+
+#: ../scan-result.php:575
+msgid "Comaritive content size is following."
+msgstr ""
+
+#: ../scan-result.php:575
+msgid "Size of css"
+msgstr ""
+
+#: ../scan-result.php:575
+msgid "Size of javascripts"
+msgstr ""
+
+#: ../scan-result.php:576
+msgid "No action required."
+msgstr ""
+
+#: ../scan-result.php:590
+msgid "Website Name"
+msgstr ""
+
+#: ../scan-result.php:591
+msgid "Scanned Webpage URL"
+msgstr ""
+
+#: ../scan-result.php:592
+msgid "Theme Name"
+msgstr ""
+
+#: ../scan-result.php:593
+msgid "Scanned for"
+msgstr ""
+
+#: ../scan-result.php:593
+msgid "Search Engine Compatibility (Standard is Google Webmaster Guidelines)"
+msgstr ""
+
+#: ../scan-result.php:594
+msgid "Time Taken"
+msgstr ""
+
+#: ../scan-result.php:594
+msgid "seconds for Scan"
+msgstr ""
+
+#: ../scan-result.php:594
+msgid "seconds for loading components"
+msgstr ""
+
+#: ../scan-result.php:595
+msgid "Note"
+msgstr ""
+
+#: ../scan-result.php:595
+msgid "If-Modified-Since, CMS, Caching and Keep Alive these 4 features are applicable to whole website. That means,"
+msgstr ""
+
+#: ../scan-result.php:595
+msgid "if you find any of them wrong here they are wrong for every webpage in your website."
+msgstr ""
+
+#: ../scan-result.php:598
+msgid "Title"
+msgstr ""
+
+#: ../scan-result.php:598
+msgid "This tells crawling robot about the content of the website. This should be descriptive and better be within 70 characters."
+msgstr ""
+
+#: ../scan-result.php:599
+msgid "Images"
+msgstr ""
+
+#: ../scan-result.php:599
+msgid "Usage of images must be optimized to balance visual look and amount of text. Used images should not be resized, should be height width specified and should have alt attribute. This will ensure better indexing and less document load time."
+msgstr ""
+
+#: ../scan-result.php:600
+msgid "Text Hierarchy"
+msgstr ""
+
+#: ../scan-result.php:600
+msgid "In a standard webpage text should be presented in a hierarchy of titles and body text. Proper use of h1, h2, h3, h4, h5, h6 tags ensures easier crawling."
+msgstr ""
+
+#: ../scan-result.php:601
+msgid "Auto generated Content"
+msgstr ""
+
+#: ../scan-result.php:601
+msgid "Content not written in html, but generated by javascript is not considered a good thing. Altough we have to use social, advertisement, feed, blogroll and other contents, these should be kept less in numbers."
+msgstr ""
+
+#: ../scan-result.php:602
+msgid "text/html Ratio"
+msgstr ""
+
+#: ../scan-result.php:602
+msgid "This ratio is important because it indicates that the webpage is content rich. Always try to keep it between 25 % to 70 %. This is not a ranking factor but good practice for less document load time."
+msgstr ""
+
+#: ../scan-result.php:603
+msgid "Link Numbers"
+msgstr ""
+
+#: ../scan-result.php:603
+msgid "Number of links plays an significant role in deciding pagerank. The numbers should be optimized and should not be very high."
+msgstr ""
+
+#: ../scan-result.php:604
+msgid "Link Attributes"
+msgstr ""
+
+#: ../scan-result.php:604
+msgid "There are 2 attributes \"rel\" and \"title\" for any webpage links. They defines the link and it's function."
+msgstr ""
+
+#: ../scan-result.php:607
+msgid "URL"
+msgstr ""
+
+#: ../scan-result.php:607
+msgid "This is address to your webpage. Search engines index your webpage content against this address. If this address has variable informations then search engines will consider it bad. Make sure your url size is less than 255 bytes, otherwise search engines consider it as spam."
+msgstr ""
+
+#: ../scan-result.php:608
+msgid "HTTP Requests"
+msgstr ""
+
+#: ../scan-result.php:608
+msgid "This is number of HTTP requests your web page makes to fetch content from server. This influences document load time, because more requests will call for more downloads. So, more is spent in downloading content."
+msgstr ""
+
+#: ../scan-result.php:609
+msgid "Meta Description "
+msgstr ""
+
+#: ../scan-result.php:609
+msgid "Meta description tag tells search engine robots about the webpage. It must be present and optimal length should be 155 characters. It is not a ranking factor, but it should be there to describe about your page."
+msgstr ""
+
+#: ../scan-result.php:610
+msgid "Meta Canonical "
+msgstr ""
+
+#: ../scan-result.php:610
+msgid "Canonicalization is the process of picking the best url when there are several choices. This meta tag \"canonical\" helps search engine crawlers to index a page which can be approached from different urls (like http://www.example.com/ and http://example.com/)."
+msgstr ""
+
+#: ../scan-result.php:611
+msgid "Meta Robots"
+msgstr ""
+
+#: ../scan-result.php:611
+msgid "Meta robots tag present at head section may request search engine robots to crawl or leave the webpage. If given a value of noindex and nofollow, webpage will not be indexed."
+msgstr ""
+
+#: ../scan-result.php:612
+msgid "Open Graph Protocol"
+msgstr ""
+
+#: ../scan-result.php:612
+msgid "These meta tags are used to carry values, whenever you share your webpage in social networks, they send webpage information. Useful in social media representation and has indirect influence on SEO."
+msgstr ""
+
+#: ../scan-result.php:613
+msgid "If-Modified-Since"
+msgstr ""
+
+#: ../scan-result.php:613
+msgid "This is a server feature. This automatically Informs search engine robots, whenever any change takes place in webpage content."
+msgstr ""
+
+#: ../scan-result.php:614
+msgid "robots.txt"
+msgstr ""
+
+#: ../scan-result.php:614
+msgid "This is a simple text file kept in website root directory. Search engine robot crawlers read this file to know which webpage will not be crawled. It should be here"
+msgstr ""
+
+#: ../scan-result.php:614
+msgid "Make sure robots are not blocking crawlers to come to this page."
+msgstr ""
+
+#: ../scan-result.php:615
+msgid "sitemap.xml"
+msgstr ""
+
+#: ../scan-result.php:615
+msgid "This is a xml file of sitemap. Search engine robot crawlers read this file to know which webpage to be indexed. Make sure your webpage url is enlisted in this file."
+msgstr ""
+
+#: ../scan-result.php:616
+msgid "Rich Snippet"
+msgstr ""
+
+#: ../scan-result.php:616
+msgid "This is a type of HTML markup which helps search engine pages to render search results. Google encourages it's use because this special search page formating increase click through rate (CTR)."
+msgstr ""
+
+#: ../scan-result.php:616
+msgid "We will search for microdata type markup as it is recommended by Google."
+msgstr ""
+
+#: ../scan-result.php:617
+msgid "CMS"
+msgstr ""
+
+#: ../scan-result.php:617
+msgid "Content Management System (cms) creates webpage from scripts kept in server. So, Google crawlers may consider this contents to be auto generated and may not index them. But, for WordPress users this is not a problem."
+msgstr ""
+
+#: ../scan-result.php:618
+msgid "Caching"
+msgstr ""
+
+#: ../scan-result.php:618
+msgid "Caching html, css, javascripts, images in users browsers can be very useful in reducing document load time. Search engine crawlers likes webpages with better document load time."
+msgstr ""
+
+#: ../scan-result.php:619
+msgid "Keep Alive"
+msgstr ""
+
+#: ../scan-result.php:619
+msgid "This is a server feature. This keeps the connection between server and browser active for a said amount of time. And saves time for excess communication. Hence it lowers document load time which is better."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:39
+msgid "Complete Google SEO Scan requires PHP 5.3+ and will not be activated, your current server configuration is running PHP version "
+msgstr ""
+
+#: ../complete-google-seo-scan.php:39
+msgid "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net and no longer receives bugfixes orsecurity updates. The official information on how to update and why at "
+msgstr ""
+
+#: ../complete-google-seo-scan.php:39
+msgid "php.net/eol.php"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:47
+msgid "SEO Scan"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:62
+msgid "Complete Google SEO Scan"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:76
+msgid "The url you have entered is invalid. Please enter a valid url of any webpage of your website"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:80
+#: ../complete-google-seo-scan.php:87
+msgid "We can not allow you send our scaning robot (user agent) to websites of other people. Because,"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:80
+#: ../complete-google-seo-scan.php:87
+msgid "It may give extra load on their server or it may be illegal according to their usage policy or"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:80
+#: ../complete-google-seo-scan.php:87
+msgid "they might think you reached the door way to hack their site, which is wrong."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:80
+#: ../complete-google-seo-scan.php:87
+msgid "We request you to scan webpages from your website only. If you have other WordPress websites, install this plugin on those websites and check them too."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:87
+msgid "This url re-directs to a url"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:92
+#: ../complete-google-seo-scan.php:96
+msgid "This url have already re-directed to a new url"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:92
+msgid "From that it is now redirected to."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:92
+msgid "We do not allow that kind of redirects. Please try with a good url."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:96
+msgid "The new url returns error : 404 Not Found, That means there is no indexable webpage and search engines will not index it. Enter existing webpage url of your website."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:106
+msgid "This url re-directs to a page with no location. This is confusing and we request you to re-enter a proper url."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:111
+msgid "The url returns error : 404 Not Found, That means there is no indexable webpage and search engines will not index it. Enter existing webpage url of your website."
+msgstr ""
+
+#: ../complete-google-seo-scan.php:126
+msgid "Brought to you by Gretel, Please give"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:126
+msgid "your feedback"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:139
+msgid "Scan Now"
+msgstr ""
+
