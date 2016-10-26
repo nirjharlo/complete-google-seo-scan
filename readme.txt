@@ -5,7 +5,7 @@ Plugin URL: http://gogretel.com/
 Requires at Least: 3.0
 Tested Up To: 3.6
 Tags: speed, seo, search optimization, tool, google guidelines, google, optimization, search engine, search engine optimization, page speed, webmaster guidelines, google search
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPL2
 
 

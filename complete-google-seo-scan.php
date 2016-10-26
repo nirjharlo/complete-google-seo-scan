@@ -3,11 +3,11 @@
 Plugin Name: Complete Google SEO Scan
 Plugin URI: http://gogretel.com/
 Description: Is your website maintains google guidelines and other SEO points? 82.35 % websites we checked missed some. See it for yourself. Go to Settings > Guides submenu page and take the quick scan for each page.<strong>It will find out SEO errors for you.</strong>
-Version: 1.5
+Version: 1.5.1
 Author: Nirjhar Lo
 Author URI: http://gogretel.com/about/
 License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 ?>
 <?php
@@ -57,7 +57,7 @@ function cgss_admin_base_script() {
 function cgss_scan_page_content() {
 	global $user_identity;
 	?>
-	  <style type="text/css">.inside-po { padding-top: 7px;padding-bottom: 8px;}#pagecontent,#advancedSETlink,#directlinkSELL{cursor:pointer;}small{line-height:80%;}.body-content{max-height:250px;overflow-y:scroll;}#advancedSETbody{display:none;}div.success-call{padding:0 .6em;border:2px solid #6495ed;}.center{text-align:center;}</style>
+	  <style type="text/css">.asadharon{border:1px solid #666666;padding:10px;}.inside-po{ padding-top: 7px;padding-bottom: 8px;}#pagecontent,#advancedSETlink,#directlinkSELL{cursor:pointer;}small{line-height:80%;}.body-content{max-height:250px;overflow-y:scroll;}#advancedSETbody{display:none;}div.success-call{padding:0 .6em;border:2px solid #6495ed;}.center{text-align:center;}.social-menu{list-style-type:none;}.social-menu li{display:inline;padding: 5px 25px 5px 10px;}</style>
 		<div class="wrap">
 		 <div id="icon-tools" class="icon32"><br /></div><h2><?php _e( 'Complete Google SEO Scan', 'cgss' ); ?></h2>
 		 <?php if ( isset( $_POST[ 'submit-cgss-url' ] ) ) : ?>
@@ -72,6 +72,7 @@ function cgss_scan_page_content() {
       $cgss_sitemap_command = $_POST[ 'cgss-sitemap-input'];
 		  $cgss_raw_url = $_POST[ 'cgss-url' ];
 		  $cgss_url_check = esc_url_raw( $cgss_raw_url );
+		  
 		  if ( ! filter_var( $cgss_url_check, FILTER_VALIDATE_URL ) or ! strpos( $cgss_url_check, '.' ) ) {
 		   echo '<div class="error"><p><strong>' . __( 'The url you have entered is invalid. Please enter a valid url of any webpage of your website', 'cgss' ) . ' ' . home_url() . '</strong></p></div>';
 		   require_once( 'scan-form.php' );
@@ -123,7 +124,23 @@ function cgss_scan_page_content() {
 		 <?php else : ?>
 		  <?php require_once( 'scan-form.php' ); ?>
 		 <?php endif; ?>
-		 <p><?php echo __( 'Brought to you by Gretel, Please give', 'cgss' ) . '&nbsp;' . '<a href="http://gogretel.com/feedback-page/" target="_blank">' . __( 'your feedback', 'cgss' ) . '</a>'; ?></p>
+		 <ul class="social-menu">
+      <li>
+       <div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://gogretel.com/"></div>
+       <script type="text/javascript">(function() { var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true; po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s); })();</script>
+      </li>
+      <li>
+       <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gogretel.com/" data-text="Scan your wordpress website for SEO with awesome free Plugin." data-via="nirjharlo" data-size="small">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+      <li>
+       <div id="fb-root"></div>
+       <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+       <div class="fb-like" data-href="http://gogretel.com/" data-width="450" data-layout="button_count" data-action="recommend" data-show-faces="false" data-send="false"></div>
+      </li>
+     </ul>
+		 <p><?php echo __( 'Brought to you by', 'cgss' ) . '&nbsp;<a href="http://gogretel.com/" target="_blank">' . __( 'GoGretel', 'cgss' ) . '</a>'; ?></p>
 		</div>
 	<?php
 }
