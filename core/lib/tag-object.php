@@ -2,25 +2,23 @@
 /**
  * @/core/lib/tag-object.php
  * on: 13.06.2015
+ * @since 2.0
+ *
  * Object to get tag values and tag attributes with different methods. Return values are in array()
  * with numeric indexes.
  *
  * 4 property:
- * $dom for  document object model as obtained from acctual url 
- * $tag for the tag to be analyzed
- * $specify for an array of 3 elements, for selecting attribute and it's value and decide attribute
- * to fetch. If unspecified use value "null". An example usage:
+ * @prop string $dom Document object model as obtained from acctual url 
+ * @prop string $tag The tag to be analyzed
+ * @prop array $specify An array of 3 elements, for selecting attribute and it's value and
+ * decide attribute to fetch. If unspecified use value "null". An example usage:
  *		$specify = array(
- * 			'att' => 'rel',
- * 			'val' => 'shortcut icon',
- * 			'get_att' => 'href',
+ * 			string 'att' => TEXT,
+ * 			string 'val' => TEXT,
+ * 			string 'get_att' => TEXT,
  * 		);
- * $atts for specification of attribute values of tags. For example usage:
- * 		$specify = array(
- * 					'rel',
- * 					'href',
- * 		);
- *
+ * @prop array $atts Specification of attribute values of tags. For example usage:
+ * 		$specify = array( string TEXT, ... );
  *
  * NOTE for fetch_tag() method: If $specify is there then I take individual object to get each
  * attribute. But in case of $specify is not there, we take whole object and not each of them to
@@ -45,20 +43,25 @@ class CGSS_FETCH {
 
 	//Fetch and scan tag values and return details as an array.
 	public function tag() {
+
 		$tag_obj = $this->dom->getElementsByTagName( $this->tag );
 		$num = 0;
 		$val = array();
+		$specify = $this->specify;
 		foreach ( $tag_obj as $obj ) {
-			if( $this->specify ) {
-				if ( $this->specify["att"] and $this->specify["val"] ) {
+			if ( $specify ) {
+				if ( $specify["att"] and $specify["val"] ) {
 
 					//individual_object->function_for_attribute
-					if ( $obj->getAttribute( $this->specify["att"] ) == $this->specify["val"] and $obj->getAttribute( $this->specify["get_att"] ) ) {
-						$val[] = $obj->getAttribute( $this->specify["get_att"] );
+					$get_att = $this->get_att( $obj, $specify["att"] );
+					$get_val = $this->get_att( $obj, $specify["get_att"] );
+					if ( strtolower( $get_att ) == $specify["val"] and $get_val ) {
+						$val[] = $get_val;
 					}
 				} else {
-					if ( $obj->getAttribute( $this->specify["get_att"] ) ) {
-						$val[] = $obj->getAttribute( $this->specify["get_att"] );
+					$get_val = $this->get_att( $obj, $specify["get_att"] );
+					if ( $get_val ) {
+						$val[] = $get_val;
 					}
 				}
 			} else {
@@ -86,7 +89,7 @@ class CGSS_FETCH {
 			foreach( $this->atts as $key ) {
 				$fetch = array();
 				foreach( $tag_obj as $obj ) {
-					$fetch[] = $obj->getAttribute( $key );
+					$fetch[] = $this->get_att( $obj, $key );
 				}
 				$val[$key] = $fetch;
 			}
@@ -94,6 +97,20 @@ class CGSS_FETCH {
 		} else {
 			return false;
 		}
+	}
+
+	// Fetch single attributes.
+	public function get_att( $obj, $val ) {
+
+		$data = false;
+		$data = $obj->getAttribute( strtolower( $val ) );
+		if ( ! $data ) {
+			$data = $obj->getAttribute( ucfirst( $val ) );
+		}
+		if ( ! $data ) {
+			$data = $obj->getAttribute( strtoupper( $val ) );
+		}
+		return $data;
 	}
 }
 ?>

@@ -1,0 +1,186 @@
+/**
+ * @/assets/loading-style.css
+ * on: 12.08.2015
+ * @since 2.1
+ *
+ * Stylesheet for loading animation.
+ */
+
+/*Processing Animation [ Credits: http://cssload.net/ ]*/
+#loadingProgressG{
+	width:100%;
+	height:3px;
+	overflow:hidden;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	border-radius:3px;
+}
+.loadingProgressG{
+	background-color:#6495ed;
+	margin-top:0;
+	margin-left:-77px;
+	-moz-animation-name:bounce_loadingProgressG;
+	-moz-animation-duration:2s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-timing-function:linear;
+	-webkit-animation-name:bounce_loadingProgressG;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-o-animation-name:bounce_loadingProgressG;
+	-o-animation-duration:2s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-timing-function:linear;
+	-ms-animation-name:bounce_loadingProgressG;
+	-ms-animation-duration:2s;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-timing-function:linear;
+	animation-name:bounce_loadingProgressG;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	width:150px;
+	height:6px;
+}
+@-moz-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-webkit-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-o-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-ms-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+
+/*Alternative Processing Animation*/
+#circleG {
+	width: 28px;
+	padding-top: 10px;
+	float: none;
+	margin: auto;
+}
+.circleG {
+	background-color: transparent;
+	float: left;
+	height: 6px;
+	margin-left: 3px;
+	width: 6px;
+	-moz-animation-name: bounce_circleG;
+	-moz-animation-duration: 1.9500000000000002s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: normal;
+	-moz-border-radius: 4px;
+	-webkit-animation-name: bounce_circleG;
+	-webkit-animation-duration: 1.9500000000000002s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-border-radius: 4px;
+	-ms-animation-name: bounce_circleG;
+	-ms-animation-duration: 1.9500000000000002s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-direction: normal;
+	-ms-border-radius: 4px;
+	-o-animation-name: bounce_circleG;
+	-o-animation-duration: 1.9500000000000002s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-direction: normal;
+	-o-border-radius: 4px;
+	animation-name: bounce_circleG;
+	animation-duration: 1.9500000000000002s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	border-radius: 4px;
+}
+#circleG_1 {
+	-moz-animation-delay: 0.39s;
+	-webkit-animation-delay: 0.39s;
+	-ms-animation-delay: 0.39s;
+	-o-animation-delay: 0.39s;
+	animation-delay: 0.39s;
+}
+#circleG_2{
+	-moz-animation-delay: 0.9099999999999999s;
+	-webkit-animation-delay: 0.9099999999999999s;
+	-ms-animation-delay: 0.9099999999999999s;
+	-o-animation-delay: 0.9099999999999999s;
+	animation-delay: 0.9099999999999999s;
+}
+#circleG_3{
+	-moz-animation-delay: 1.1700000000000002s;
+	-webkit-animation-delay: 1.1700000000000002s;
+	-ms-animation-delay: 1.1700000000000002s;
+	-o-animation-delay: 1.1700000000000002s;
+	animation-delay: 1.1700000000000002s;
+}
+@-moz-keyframes bounce_circleG {
+	0% {}
+	50% {
+		background-color:#6494ED
+		}
+	100% {}
+}
+@-webkit-keyframes bounce_circleG {
+	0% {}
+	50% {
+		background-color:#6494ED
+		}
+	100% {}
+}
+
+@-ms-keyframes bounce_circleG {
+	0% {}
+	50% {
+		background-color:#6494ED
+		}
+	100% {}
+}
+
+@-o-keyframes bounce_circleG {
+	0% {}
+	50% {
+		background-color:#6494ED
+		}
+	100% {}
+}
+
+@keyframes bounce_circleG {
+	0% {}
+	50% {
+		background-color:#6494ED
+		}
+	100% {}
+}

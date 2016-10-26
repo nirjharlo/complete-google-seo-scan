@@ -2,12 +2,14 @@
 /**
  * @/core/lib/image-object.php
  * on: 11.06.2015
+ * @since 2.0
+ *
  * A dependent object, which uses CGSS_URL class, to format the image array delivered from
  * CGSS_FETCH. It will deliver an image array with elements having src, width, height and alt values.
  *
  * 2 properties.
- * $img_details for input image array
- * $ssl for determining http or https
+ * @prop array $img_details for input image array
+ * @prop string $ssl for determining http or https
  */
 class CGSS_FORMAT_IMAGES {
 
@@ -23,16 +25,12 @@ class CGSS_FORMAT_IMAGES {
 
 	//output the manufatured images array
 	public function output() {
-		$width = $this->img_details['width'];
-		$height = $this->img_details['height'];
 		$alt = $this->img_details['alt'];
 		$images_out = array();
 		$key = 0;
 		foreach( $this->alter() as $val ) {
 			$images_out[$key] = array(
 									'src' => $val,
-									'width' => $width[$key],
-									'height' => $height[$key],
 									'alt' => $alt[$key],
 								);
 			$key = ( $key + 1 );

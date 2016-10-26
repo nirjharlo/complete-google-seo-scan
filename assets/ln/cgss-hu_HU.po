@@ -1,0 +1,2244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-08-21 00:36+0530\n"
+"PO-Revision-Date: 2015-08-21 00:36+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Hungarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../complete-google-seo-scan.php:93
+#, fuzzy
+msgid ""
+"Complete Google SEO Scan Plugin will not be activated because your PHP "
+"version"
+msgstr ""
+"A teljes Google SEO Scan igényel PHP 5.3 + , és nem aktiválódik , a "
+"jelenlegi szerver konfiguráció PHP verzió"
+
+#: ../complete-google-seo-scan.php:93
+msgid "is less than required 5.3. See more information:"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:118
+msgid "Start Here"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:154
+#, fuzzy
+msgid "Seo Scan Overview"
+msgstr "Szociális adatmegosztás áttekintés"
+
+#: ../complete-google-seo-scan.php:154 ../complete-google-seo-scan.php:164
+#, fuzzy
+msgid "Seo Scan"
+msgstr "SEO Scan"
+
+#: ../complete-google-seo-scan.php:244
+msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:275
+msgid "Choose Post types to show"
+msgstr ""
+
+#: ../core/ajax-handle.php:62 ../core/overview-ajax.php:16
+#, fuzzy
+msgid "Invalid Request"
+msgstr "HTTP kérések"
+
+#: ../core/ajax-handle.php:91
+#, fuzzy
+msgid "Server Issue"
+msgstr "Server pont"
+
+#: ../core/ajax-handle.php:112
+msgid "Can not Download the Webpage"
+msgstr ""
+
+#: ../core/overview-ajax.php:24 ../core/overview-ajax.php:78
+#: ../core/overview-ajax.php:88 ../core/overview-ajax.php:136
+#, fuzzy
+msgid "Improper Request"
+msgstr "HTTP kérések"
+
+#: ../core/overview-ajax.php:54
+msgid "Network Error"
+msgstr ""
+
+#: ../core/overview-ajax.php:64
+msgid "Failed, Server Issue"
+msgstr ""
+
+#: ../core/overview-ajax.php:97
+msgid "No Files Found"
+msgstr ""
+
+#: ../user/front-end.php:95
+msgid "OVERVIEW"
+msgstr ""
+
+#: ../user/front-end.php:101
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../user/front-end.php:108
+msgid "REPORT"
+msgstr ""
+
+#: ../user/front-end.php:109
+msgid "ACTIONS"
+msgstr ""
+
+#: ../user/front-end.php:134
+msgid "Heading"
+msgstr ""
+
+#: ../user/front-end.php:140
+msgid "Alt"
+msgstr ""
+
+#: ../user/front-end.php:146
+#, fuzzy
+msgid "Anchor"
+msgstr "Anchor Text"
+
+#: ../user/front-end.php:152
+msgid "Title"
+msgstr "cím"
+
+#: ../user/front-end.php:158
+msgid "Description"
+msgstr "leírás"
+
+#: ../user/front-end.php:164
+msgid "Url"
+msgstr ""
+
+#: ../user/front-end.php:192
+msgid "Name"
+msgstr "név"
+
+#: ../user/front-end.php:205 ../user/front-end.php:410
+msgid "SSL security"
+msgstr ""
+
+#: ../user/front-end.php:206
+msgid "WWW Resolve"
+msgstr ""
+
+#: ../user/front-end.php:207
+msgid "IP forwarding"
+msgstr ""
+
+#: ../user/front-end.php:208 ../user/front-end.php:435
+#, fuzzy
+msgid "Gzip Compression"
+msgstr "gzip tömörítés"
+
+#: ../user/front-end.php:209
+#, fuzzy
+msgid "Cache"
+msgstr "Gyorsítás"
+
+#: ../user/front-end.php:210 ../user/front-end.php:417
+#, fuzzy
+msgid "If modified since"
+msgstr "If- Modified-Since"
+
+#: ../user/front-end.php:211
+msgid "Response Time"
+msgstr ""
+
+#: ../user/front-end.php:211 ../user/front-end.php:430
+msgid "miliseconds"
+msgstr ""
+
+#: ../user/front-end.php:218 ../user/front-end.php:463
+#: ../user/front-end.php:470
+msgid "More"
+msgstr ""
+
+#: ../user/front-end.php:251
+msgid "Categories"
+msgstr ""
+
+#: ../user/front-end.php:266
+msgid "Tags"
+msgstr ""
+
+#: ../user/front-end.php:275
+msgid "All Time"
+msgstr ""
+
+#: ../user/front-end.php:276
+msgid "Today"
+msgstr ""
+
+#: ../user/front-end.php:277
+msgid "7 days"
+msgstr ""
+
+#: ../user/front-end.php:278
+msgid "30 days"
+msgstr ""
+
+#: ../user/front-end.php:279
+msgid "90 days"
+msgstr ""
+
+#: ../user/front-end.php:280
+msgid "Never"
+msgstr ""
+
+#: ../user/front-end.php:307
+msgid "<code>< title</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:308
+msgid ""
+"<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:309
+msgid ""
+"Long tail keywords are helpful for seo. Use them with percistance but don't "
+"spam."
+msgstr ""
+
+#: ../user/front-end.php:310
+msgid "Write a minimum of 200 words atleast."
+msgstr ""
+
+#: ../user/front-end.php:311
+msgid ""
+"Use enough text in comparison of HTML. But also don't use too much text."
+msgstr ""
+
+#: ../user/front-end.php:312
+msgid ""
+"Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</"
+"code>, <code>h3</code>."
+msgstr ""
+
+#: ../user/front-end.php:313
+msgid ""
+"Crawler robots can not read image links. Please use some text inside links "
+"also."
+msgstr ""
+
+#: ../user/front-end.php:314
+msgid "Use nofollow links and dofollow links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:315
+msgid "Use external links and internal links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:316
+#, fuzzy
+msgid "The webpage looks like a link farm. Reduce number of links."
+msgstr "Kérjük, próbálja meg csökkenteni linkek száma ."
+
+#: ../user/front-end.php:317
+msgid "Put proper <code>alt</code> tags in images."
+msgstr ""
+
+#: ../user/front-end.php:318
+msgid "Don't use nested tables, i.e. tables within table columns."
+msgstr ""
+
+#: ../user/front-end.php:319
+msgid "Remove style attributes from all HTML tags and use .css file instead."
+msgstr ""
+
+#: ../user/front-end.php:320
+msgid ""
+"<code>< meta name=\"viewport\"</code> tag should be present for scaling "
+"webpage with device size."
+msgstr ""
+
+#: ../user/front-end.php:321
+msgid ""
+"<code>@media</code> query is not found. The webpage should be mobile ready."
+msgstr ""
+
+#: ../user/front-end.php:322
+msgid "Get an SSL certificate and use url with <code>https://</code>."
+msgstr ""
+
+#: ../user/front-end.php:323
+msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
+msgstr ""
+
+#: ../user/front-end.php:324
+msgid "Url with and without WWW should redirect to same url. Resolve it."
+msgstr ""
+
+#: ../user/front-end.php:325
+#, fuzzy
+msgid "Put a canonical link."
+msgstr "Tegyél egy gyűjtő linket"
+
+#: ../user/front-end.php:326
+msgid "Enable If modified since header."
+msgstr ""
+
+#: ../user/front-end.php:327
+msgid ""
+"<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
+"value."
+msgstr ""
+
+#: ../user/front-end.php:328
+msgid "Put an IP address and forward to page url"
+msgstr ""
+
+#: ../user/front-end.php:329
+msgid "Header response time is too long. Improve website server."
+msgstr ""
+
+#: ../user/front-end.php:330
+#, fuzzy
+msgid "Enable gZip compression."
+msgstr "gzip tömörítés"
+
+#: ../user/front-end.php:331
+msgid "Enable Browser Caching."
+msgstr ""
+
+#: ../user/front-end.php:332
+msgid "Reduce number of HTTP requests made by .css and .js files."
+msgstr ""
+
+#: ../user/front-end.php:333
+msgid "Compress resorce files and increase loading speed."
+msgstr ""
+
+#: ../user/front-end.php:334
+msgid ""
+"Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
+"sharing."
+msgstr ""
+
+#: ../user/front-end.php:340
+msgid "Help"
+msgstr ""
+
+#: ../user/front-end.php:365
+msgid "Select popular words"
+msgstr ""
+
+#: ../user/front-end.php:369
+#, fuzzy
+msgid "Number of words"
+msgstr "Linkek száma"
+
+#: ../user/front-end.php:369
+msgid ""
+"Minimum 200 words in a webpage is required. Write enough words to describe "
+"the page well."
+msgstr ""
+
+#: ../user/front-end.php:370
+#, fuzzy
+msgid "Text to html ratio"
+msgstr "text / html arány"
+
+#: ../user/front-end.php:370
+msgid ""
+"There must be enough text in webpage as compared with total size. About 15% "
+"to 70%"
+msgstr ""
+
+#: ../user/front-end.php:371
+#, fuzzy
+msgid "Text hiarerchy"
+msgstr "text hierarchia"
+
+#: ../user/front-end.php:371
+msgid ""
+"A bulk of text is not useful, rather text content with proper heading tags "
+"are needed."
+msgstr ""
+
+#: ../user/front-end.php:374
+#, fuzzy
+msgid "Image Links"
+msgstr "Kép"
+
+#: ../user/front-end.php:374
+msgid ""
+"Links that conatin only image but no text is considered poorly optimized."
+msgstr ""
+
+#: ../user/front-end.php:375
+#, fuzzy
+msgid "Nofollow Links"
+msgstr "Linkek száma"
+
+#: ../user/front-end.php:375
+msgid ""
+"Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
+"all links from crawling."
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid "External Links"
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid ""
+"Links that points to other domain must be present, in a proportional number."
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid "Nested Tables"
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid ""
+"In markup of webpage, if table element is put inside a column of another "
+"table, it makes the page slow."
+msgstr ""
+
+#: ../user/front-end.php:395
+#, fuzzy
+msgid "Style Attributes"
+msgstr "style attribútum"
+
+#: ../user/front-end.php:395
+msgid ""
+"attribute present in markup tags is not a good practice and increases render "
+"time."
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid "Media Queries"
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid ""
+"For responsive web design, you need to have <code>@media</code> elements "
+"inside .css files."
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid "Viewport Tag"
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid ""
+"On <code>head</code> area of webpage, there is a tag which helps in scaling "
+"the dimensions according to display size."
+msgstr ""
+
+#: ../user/front-end.php:411
+msgid "Static url "
+msgstr ""
+
+#: ../user/front-end.php:412
+msgid "Use of underscores in Url"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid "www Resolve"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid ""
+"Check if url is showing same webpage for url with and without \"www.\" prefix"
+msgstr ""
+
+#: ../user/front-end.php:417
+msgid ""
+"Let web server tell Google whether your content has changed since google bot "
+"last crawled your site."
+msgstr ""
+
+#: ../user/front-end.php:420
+#, fuzzy
+msgid "Canonical Url"
+msgstr "Canonical link"
+
+#: ../user/front-end.php:420
+msgid ""
+"Let Google know, same content is available through multiple URL structures "
+"or via syndication."
+msgstr ""
+
+#: ../user/front-end.php:421
+#, fuzzy
+msgid "Meta Robot"
+msgstr "Meta Robots"
+
+#: ../user/front-end.php:421
+msgid ""
+"Visibility in search result stops on use of \"noindex\" value in robots meta "
+"tag."
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid "IP Forwarded"
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid ""
+"Check if server IP address (internet protocol) is forwarding to the same url "
+"or not."
+msgstr ""
+
+#: ../user/front-end.php:430
+msgid "Header response time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Loading time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Seconds"
+msgstr ""
+
+#: ../user/front-end.php:435
+msgid ""
+"Deliver page content in a compressed .gzip file to reduce bandwidth and "
+"loading time."
+msgstr ""
+
+#: ../user/front-end.php:436
+#, fuzzy
+msgid "Browser Caching"
+msgstr "Gyorsítás"
+
+#: ../user/front-end.php:436
+msgid ""
+"Store page assets in browser of user for specific time, to load it faster "
+"next time."
+msgstr ""
+
+#: ../user/front-end.php:439 ../user/front-end.php:440
+#, fuzzy
+msgid "requests"
+msgstr "HTTP kérések"
+
+#: ../user/front-end.php:463
+msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
+msgstr ""
+
+#: ../user/front-end.php:512
+msgid "And that's fine."
+msgstr ""
+
+#: ../user/front-end.php:513
+msgid "That's too much of text, please write less."
+msgstr ""
+
+#: ../user/front-end.php:514
+msgid "That's too little text, please write more."
+msgstr ""
+
+#: ../user/front-end.php:521
+msgid "Url is clean and tidy"
+msgstr ""
+
+#: ../user/front-end.php:522
+msgid "Url has underscore"
+msgstr ""
+
+#: ../user/front-end.php:523
+msgid "Url is dynamic"
+msgstr ""
+
+#: ../user/front-end.php:524
+msgid "Url is dynamic and has underscore"
+msgstr ""
+
+#: ../user/front-end.php:686
+msgid "items"
+msgstr ""
+
+#: ../user/front-end.php:691 ../user/display/overview-display.php:86
+msgid "of"
+msgstr ""
+
+#: ../user/front-end.php:706
+msgid "All Items Matched"
+msgstr ""
+
+#: ../user/front-end.php:709
+msgid "No Match Found"
+msgstr ""
+
+#: ../user/lib/btn-object.php:39
+msgid "Button Error"
+msgstr ""
+
+#: ../user/lib/accordion-object.php:21
+msgid "Click to toggle"
+msgstr ""
+
+#: ../user/lib/dropdown-object.php:55 ../user/lib/dropdown-object.php:72
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#: ../user/display/overview-display.php:4
+msgid "Scan Overview"
+msgstr ""
+
+#: ../user/display/overview-display.php:25 ../user/display/scan-display.php:24
+msgid ""
+"Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
+"<i>Theme and Plugins Design Seo</i>."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "You will see them bellow."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "Then reload the page."
+msgstr ""
+
+#: ../user/display/overview-display.php:45
+msgid "ARCHIVES"
+msgstr ""
+
+#: ../user/display/overview-display.php:69
+msgid "SCAN ARCHIVE PAGE"
+msgstr ""
+
+#: ../user/display/overview-display.php:78
+#, fuzzy
+msgid "Content Status"
+msgstr "tartalom kérdések"
+
+#: ../user/display/overview-display.php:79
+msgid "Fetch results from stored scan reports."
+msgstr ""
+
+#: ../user/display/overview-display.php:85
+#, fuzzy
+msgid "Fetch Intel"
+msgstr "eredmény"
+
+#: ../user/display/overview-display.php:86
+msgid "reports processed."
+msgstr ""
+
+#: ../user/display/overview-display.php:88
+msgid "No pages are scaned. Use top navigation to go to list of pages."
+msgstr ""
+
+#: ../user/display/overview-display.php:128
+#, fuzzy
+msgid "Server Seo Status"
+msgstr "Server pont"
+
+#: ../user/display/overview-display.php:133
+#: ../user/display/overview-display.php:153
+msgid "CHECK NOW"
+msgstr ""
+
+#: ../user/display/overview-display.php:146
+#, fuzzy
+msgid "Design Seo Status"
+msgstr "Server pont"
+
+#: ../user/display/report-display.php:26
+msgid "sec"
+msgstr ""
+
+#: ../user/display/report-display.php:42
+msgid "Text & Links"
+msgstr ""
+
+#: ../user/display/report-display.php:43
+msgid "Design"
+msgstr "tervezés"
+
+#: ../user/display/report-display.php:44
+msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
+msgstr ""
+
+#: ../user/display/report-display.php:60
+msgid "IT'S ALL GOOD. NO ACTIONS NEEDED"
+msgstr ""
+
+#: ../user/display/report-display.php:64
+msgid "TAKE <span id=\"ActNum\"></span> FOLLOWING ACTIONS"
+msgstr ""
+
+#: ../user/display/scan-display.php:3
+#, fuzzy
+msgid "Scan Status"
+msgstr "Scan oldal"
+
+#: ../user/display/scan-display.php:24
+msgid "You will find them here."
+msgstr ""
+
+#: ../user/display/scan-display.php:84 ../help/message-object.php:66
+msgid "words, focus is"
+msgstr ""
+
+#: ../user/display/scan-display.php:86
+#, fuzzy
+msgid "Not Scanned Yet"
+msgstr "beolvasott"
+
+#: ../user/display/scan-display.php:108
+msgid "SCAN"
+msgstr ""
+
+#: ../user/display/scan-display.php:116
+msgid "FAILED"
+msgstr ""
+
+#: ../user/display/scan-display.php:127
+msgid "NEVER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:19
+msgid "Introduction"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have not included backlinks analysis, traffic metrics, knowledge graph "
+"and brand signals, because the intention is primarily on-page search "
+"optimization only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"If you catch a bug or want to give any feedback or feature suggestion you "
+"are welcome to email the plugin author"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../help/plugin-help-object.php:24
+msgid "Overview"
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Starting page of this plugin is named \"Seo Overview\". There you can find 3 "
+"types of features to scan 3 different aspects of your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Server seo scan"
+msgstr "Server pont"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"will make a header request and find out 10 important points about the server "
+"and it's configuration. Practically, You can change them by using different "
+"plugins available."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Design seo scan"
+msgstr "tervezési pontok"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"gives an idea about numbers of HTTP requests made by your webpages and "
+"resource size it takes to load a webpage. They are takken from "
+"<code>_enqueued</code> styles and scripts. All hard coded links are ignored, "
+"because it is assumed that you are using WordPress compatable themes."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Content Overview"
+msgstr "A lap tartalmának áttekintése"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"After you are done with scans for your webpages, you will be able to complie "
+"those individual content reports to a single report and gather actionable "
+"intelligence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid "Set Screen Options."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"for showing various post types in WordPress admin menus. You can select them "
+"using checkboxes. This option is available only in \"Scan Overview\" page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Secondly, you may use numbers of pages to show in any post type \"Scan Status"
+"\" plugins page. This is available in all other \"Scan Status\" pages "
+"created by this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Close this \"Help\" tab and open \"Screen Options\" tab to explore more."
+msgstr ""
+
+#: ../help/plugin-help-object.php:29
+msgid "How to use?"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is mobile "
+"ready. So, for regular WordPress users it will be very intuitive. The usage "
+"process has 3 steps."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Before you start"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"make sure you have taken Design seo and Server seo scans available at "
+"Overview page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Select a Page"
+msgstr "Válasszon ki egy oldal a Scan"
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"from the individual list of webpage blocks, by clicking on corresponding "
+"\"SCAN\" button. Top navigation is to select posts from multiple post types "
+"and you may filter them according to time of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Wait for scan"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"to be completed. It will take a few seconds, approximately 2 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See results"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"in a pop up on the same page as soon as the scan is complete. The result "
+"will have 7 segments."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Overall score with social media counts."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Search engine snippet and highlighted keyword."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Use of Image and page design seo"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Required information on server and url."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "A sample Facebook snippet from social media tags."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See required actions"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"listed in the same pop-up. Just click the button with the word \"ACTION\" at "
+"bottom. You will find step by step guidence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"Scan result is displayed in an organized fashion with <strong>Hints</strong> "
+"and are easy to understand for someone with basic seo knowledge. For a "
+"primitive guideline of seo aspects see links at right sidebar of this area."
+msgstr ""
+
+#: ../help/plugin-help-object.php:34
+msgid "Performance"
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes less than 5 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"Átkutat idő függ a szerver és a honlap minőségét . A tényleges folyamat "
+"kevesebb mint 0,01 másodpercet vesz igénybe ."
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:39
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "privacy Policy."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "Data storage."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. Other than those, there are 4 custom data arrays stored in "
+"\"_options\" database. When the plugin is uninstalled all of those data will "
+"be removed from your server."
+msgstr ""
+
+#: ../help/plugin-help-object.php:44
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../help/plugin-help-object.php:49
+msgid "Updates"
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Future updates of this plugin is expected to contain more features and a new "
+"interface. Some of the features you may expect are Video Seo, Spam "
+"detection, Rich snippet calculation, Twitter v card, above the fold "
+"optimization, sitemap.xml check and robots.txt check. Internationalization "
+"and automatic scan are also desired property to be included."
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Tough the plugin author will take final decision about updates, you are free "
+"to inform about bugs and feature requests in support forum."
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Support Forum"
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../help/message-object.php:15
+msgid "Message"
+msgstr ""
+
+#: ../help/message-object.php:22
+msgid "Network error"
+msgstr ""
+
+#: ../help/message-object.php:23
+msgid "No .css or .js file"
+msgstr ""
+
+#: ../help/message-object.php:24
+msgid "is undefined"
+msgstr ""
+
+#: ../help/message-object.php:25
+msgid "View"
+msgstr ""
+
+#: ../help/message-object.php:26
+msgid "TITLE TAG"
+msgstr ""
+
+#: ../help/message-object.php:27
+msgid "META DESCRIPTION TAG"
+msgstr ""
+
+#: ../help/message-object.php:45
+msgid "NOT FOUND"
+msgstr "NEM TALÁLHATÓ"
+
+#: ../help/message-object.php:46
+msgid "SOCIAL MEDIA IMAGE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:47
+msgid "SOCIAL MEDIA TITLE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:48
+msgid "SOCIAL MEDIA DESCRIPTION TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:49
+#, fuzzy
+msgid "DOMAIN NAME NOT FOUND"
+msgstr "TAG NEM TALÁLHATÓ"
+
+#: ../help/message-object.php:50
+#, fuzzy
+msgid "TITLE TAG NOT FOUND"
+msgstr "TAG NEM TALÁLHATÓ"
+
+#: ../help/message-object.php:51
+#, fuzzy
+msgid "META DESCRIPTION TAG NOT FOUND"
+msgstr "TAG NEM TALÁLHATÓ"
+
+#: ../help/message-object.php:53 ../help/message-object.php:54
+#, fuzzy
+msgid "Compression"
+msgstr "gzip tömörítés"
+
+#: ../help/message-object.php:53
+msgid ".css and .js files can be more compressed to reduce"
+msgstr ""
+
+#: ../help/message-object.php:53
+msgid "in total size"
+msgstr ""
+
+#: ../help/message-object.php:54
+msgid "All .css and .js files are compressed enough."
+msgstr ""
+
+#: ../help/message-object.php:55
+msgid "All images are optimized."
+msgstr ""
+
+#: ../help/message-object.php:56
+msgid "Above images does not have <code>alt</code> tags."
+msgstr ""
+
+#: ../help/message-object.php:57
+#, fuzzy
+msgid "No images are present."
+msgstr "Néhány fej jelölés van jelen"
+
+#: ../help/message-object.php:58 ../help/message-object.php:59
+msgid "Links all total"
+msgstr ""
+
+#: ../help/message-object.php:58
+msgid "numbers are ok."
+msgstr ""
+
+#: ../help/message-object.php:59
+#, fuzzy
+msgid "Too much in number."
+msgstr "Túl sok HTML a web oldalon."
+
+#: ../help/message-object.php:64
+#, fuzzy
+msgid "NO KEYWORDS FOUND"
+msgstr "NEM TALÁLHATÓ"
+
+#: ../help/message-object.php:65
+msgid "SPAM"
+msgstr ""
+
+#: ../help/message-object.php:73
+msgid ""
+"Total <span id=\"WordsIntel\"></span> words used. <span id="
+"\"WordsPerPageIntel\"></span> per page. Avg text to html ratio is <span id="
+"\"WordsRatioIntel\"></span>"
+msgstr ""
+
+#: ../help/message-object.php:74
+msgid ""
+"<span id=\"LinksNumIntel\"></span> links per page, nearly <span id="
+"\"ExtLinksIntel\"></span> external and <span id=\"ImgLinksIntel\"></span> "
+"image links of them."
+msgstr ""
+
+#: ../help/message-object.php:75
+msgid ""
+"Long tail keywords (avg <span id=\"KeyWordsSizeIntel\"></span> words long) "
+"were found in <span id=\"KeyWordsIntel\"></span> webpages."
+msgstr ""
+
+#: ../help/message-object.php:77
+msgid "Almost all images seems to be optimized."
+msgstr ""
+
+#: ../help/message-object.php:78
+msgid ""
+"Nearly <span id=\"ImagesIntelPercent\"></span> of pages have images without "
+"alt tags."
+msgstr ""
+
+#: ../help/message-object.php:79
+msgid ""
+"This website images are <span class=\"danger-icon\">not optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:82
+msgid "Your website is mobile optimized."
+msgstr ""
+
+#: ../help/message-object.php:83
+msgid ""
+"Some of your webpages<span id=\"DesignIntelPercent\"></span> are not mobile "
+"optimized."
+msgstr ""
+
+#: ../help/message-object.php:84
+msgid ""
+"Your website is <span class=\"danger-icon\">not mobile optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:87
+msgid "All urls are neat and clean."
+msgstr ""
+
+#: ../help/message-object.php:88
+msgid ""
+"Some urls <span class=\"danger-icon\">are dynamic</span><span id="
+"\"UrlIntelPercent\"></span> and <span class=\"danger-icon\">have underscore</"
+"span><span id=\"UrlIntelPercentTwo\"></span>."
+msgstr ""
+
+#: ../help/message-object.php:89
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> are <span class=\"danger-icon"
+"\">dynamic and contains underscore</span>."
+msgstr ""
+
+#: ../help/message-object.php:90
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> <span class=\"danger-icon"
+"\">are dynamic</span>."
+msgstr ""
+
+#: ../help/message-object.php:91
+msgid ""
+"Some urls <span id=\"UrlIntelPercentTwo\"></span> <span class=\"danger-icon"
+"\">have underscores</span>."
+msgstr ""
+
+#: ../help/message-object.php:94
+msgid "Your website is fast, takes less than a second load."
+msgstr ""
+
+#: ../help/message-object.php:95
+msgid "Your website loads fine, may try a little faster."
+msgstr ""
+
+#: ../help/message-object.php:96
+msgid "Your website is slow, make it faster."
+msgstr ""
+
+#: ../help/message-object.php:97
+msgid ""
+"Your website is <span class=\"danger-icon\">too slow</span>, serious "
+"improvement needed."
+msgstr ""
+
+#: ../help/message-object.php:100
+#, fuzzy
+msgid "Social media tags are present. Optimized for social sharing."
+msgstr "Néhány fej jelölés van jelen"
+
+#: ../help/message-object.php:101
+msgid ""
+"Social media tags are <span class=\"danger-icon\">incomplete</span> in "
+"almost <span id=\"StagIntelNoPercent\"></span>% pages."
+msgstr ""
+
+#: ../help/message-object.php:102
+msgid ""
+"Social media tags are nearly <span class=\"danger-icon\">absent</span>. Use "
+"them for better sharing."
+msgstr ""
+
+#: ../help/message-object.php:109
+msgid "enabled"
+msgstr ""
+
+#: ../help/message-object.php:114
+msgid "disabled"
+msgstr ""
+
+#: ../db/get-db.php:102
+msgid "ms"
+msgstr ""
+
+#: ../db/get-db.php:104
+msgid "s"
+msgstr ""
+
+#~ msgid "Content"
+#~ msgstr "tartalom"
+
+#, fuzzy
+#~ msgid "Other Points"
+#~ msgstr "Server pont"
+
+#, fuzzy
+#~ msgid "Download Content"
+#~ msgstr "tartalom"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "Minden PHP verzió kevesebb 5.3.0 elérte \"End of Life\" a PHP.net és nem "
+#~ "kap hibajavításokat orsecurity frissítéseket. A hivatalos tájékoztatást "
+#~ "arról, hogyan frissítse , és miért"
+
+#~ msgid "Scan Now"
+#~ msgstr "Beolvasás"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "A teljes Google SEO Scan"
+
+#~ msgid "Brought to you by"
+#~ msgstr "Hozta neked"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO Blog"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "Google Search Engine Optimization Scan a weboldal teljes. Itt vannak az "
+#~ "eredmények ."
+
+#~ msgid "at line"
+#~ msgstr "sorban"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "A' s más szkennelt weboldal url"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr ""
+#~ "Győződjön meg róla , hogy szeretné az oldal , hogy indexelt a gyűjtő URL"
+
+#~ msgid "Recheck it"
+#~ msgstr "Ellenőrizze újra , hogy"
+
+#~ msgid "OK"
+#~ msgstr "rendben"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "Adja meg a Favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "hossz"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "karakterek ( megengedett legnagyobb 70 karakter)"
+
+#~ msgid "Length"
+#~ msgstr "hossz"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "Mivel több mint 70 karakter nem jelenik meg a találati"
+
+#~ msgid "Give shorter title"
+#~ msgstr "Adj rövidebb cím"
+
+#~ msgid "Give a title."
+#~ msgstr "Adj egy címet."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "karakterek ( megengedett legnagyobb 155 karakter)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "Írj néhány meta leírás a 155 karakter. Habár ez nem akadályozza a "
+#~ "rangsor, de úgy néz ki, rossz kereső oldalra eredményt. Így csökkentheti "
+#~ "átkattintási arány (CTR)"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "Legyen rövidebb."
+
+#~ msgid "This is not good."
+#~ msgstr "Ez nem jó."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "A tag a helyén van , most írj néhány meta leírás"
+
+#~ msgid "Give a description"
+#~ msgstr "SzÃts"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "Nem található."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "Adja meg a kulcsszavakat alkalmas a weboldal tartalmát , sok a "
+#~ "keresőprogramok használatát , de nem a Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "Adja meg a kulcsszavakat."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "Meta robot is, amelyek NOINDEX nofollow értéket. Ez nem jó."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "Változás a robotok meta értéket no- index , és / vagy nem követhető"
+
+#~ msgid "Fix this."
+#~ msgstr "Erősít ez ."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:locale meta tag"
+
+#~ msgid "Fill it"
+#~ msgstr "töltse ki"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:SITE_NAME meta tag"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:type meta tag"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:url meta tag"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:title meta tag"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:leírás meta tag"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "Tedd a megfelelő értéket a og:image meta tag"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "Használhatja bármelyik ingyenes SEO plugins elérhető, hogy lehetőség be "
+#~ "leírásokat"
+
+#~ msgid "Put the tag"
+#~ msgstr "Tegye a tag"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "Adja meg a kulcsszavakat alkalmas a weboldal tartalmát , sok a "
+#~ "keresőprogramok használatát , de nem a Google . Használhatja bármelyik "
+#~ "ingyenes SEO plugins elérhető, hogy lehetőség be ezt a címkét"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "Használhatja bármelyik ingyenes SEO plugins elérhető, hogy lehetőséget , "
+#~ "hogy belépjen a kívánt meta gyűjtő linket"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr "Sokkal jobb , hogy egy tag . Egyébként nem nagy gond"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "Tegyél egy favicon ico kép segítségével a parancsikon link tag"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:locale meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Fix it"
+#~ msgstr "Csináld meg"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:hely_nev meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:type meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:title meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:leírás meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:url meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr "Tedd ezt og:image meta tag a HEAD részben a megfelelő értéket"
+
+#~ msgid "Title Tag"
+#~ msgstr "Cím Tag"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr "Címe a honlapon. Ez legyen leíró és a 70 karakter ."
+
+#~ msgid "Meta Description"
+#~ msgstr "Meta Description"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Leírja a weboldalt. Optimális hossza 155 karakter, és nem a rangsor "
+#~ "tényező."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "Meta kulcsszavak"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "Említi használt kulcsszavakat a web oldalon . Ez nem egy rangsor tényező."
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Szabványosítás az a folyamat a szedés a legjobb url , ha több "
+#~ "választási . Ez a kanonikus meta tag segít a kereső robotjai az index egy "
+#~ "oldalt , amely lehet megközelíteni a különböző URL-eket ( mint például "
+#~ "http://www.example.com/ és http://example.com/ ) ."
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "Meta robots tag kéri, a kereső robotok feltérképezni , vagy hagyja el a "
+#~ "weboldalt. Ha adott értéket noindex és nofollow , web oldal nem indexelt ."
+
+#~ msgid "Favicon Link"
+#~ msgstr "favicon link"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "Megjelenít egy egyedi kép mellett címét tetején böngészőt. Jó SEO "
+#~ "gyakorlat"
+
+#~ msgid "Language"
+#~ msgstr "nyelv"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "Megosztása nyelvet fogja használni"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "Típusú alkalmazás megosztja . Itt van honlapja"
+
+#~ msgid "Site Name"
+#~ msgstr "webhely neve"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "Neve a honlapon. Itt van"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "Címe a megosztott tartalmat. Lehet, hogy nem lehet ugyanaz, mint a "
+#~ "weboldal címe"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "Teste a megosztott tartalmat. Általában ez a szöveg látható a közös "
+#~ "tartalom a szociális média hálózatok"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Adja weboldal link, ez url közös , és lesz kapcsolat előnyeit. De hogy "
+#~ "őszinte legyek."
+
+#~ msgid "Image"
+#~ msgstr "kép"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "Nagyon fontos, mert ez lesz a felhasználók figyelmét t a megosztott "
+#~ "tartalmat a szociális média ."
+
+#~ msgid "Total number of images"
+#~ msgstr "Az összes kép"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "Használja a \"alt\" attribútum"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "Használja a \"magas\" attribútum"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "Használja a \"width\" attribútum"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "Helyezze a hiányzó attribútumokat."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr ""
+#~ "Nem fejek címkék találhatók . Így nincs szöveg hierarchia jelen van."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "Szövegírás megfelelő hierarchiában."
+
+#~ msgid "All head tags are present"
+#~ msgstr "Minden fej címke jelen van"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "Szóval, van szöveg hierarchia jelen van."
+
+#~ msgid "One head tag is present"
+#~ msgstr "Egyik head tag jelen van"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "Győződjön meg róla, szöveg a hierarchiában. Ha nem , kérjük , hogy ez így "
+#~ "van."
+
+#~ msgid "Check again"
+#~ msgstr "ellenőrizze újra"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "Szöveg HTML aránya az internetes oldal"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "Írja meg több szöveg , atleast"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "Túl sok szöveget a weboldal ."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "Legyen ez az oldal vonzóbbá több HTML . Vagy írjon kevesebb szöveget, "
+#~ "atleast"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "Ez az arány ennek weboldal normális."
+
+#~ msgid "Outgoing Links"
+#~ msgstr "kimenő hivatkozások"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "Kapcsolatok száma nagy ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "Kapcsolatok száma túl sok ."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "Kapcsolatok száma csökkenteni kell"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Kapcsolatok rel attribútum"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "Kapcsolatok title attribútummal"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Kapcsolatok nofollow rel attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "Tedd rel és a cím attribútumokat linkek"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "Optimális felhasználása képet kell magassága, szélessége és alt "
+#~ "attribútum . Képek nem átméretezni a böngészőt."
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "Text prezentáció jobb hierarchikus címek és a test címkéket. Használata "
+#~ "H1 , H2 , H3, H4, H5 , H6 címkék megfelelően."
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Ez az arány határozza meg, hogy a weboldal optimális tartalomban gazdag "
+#~ "és vizuálisan bemutatható. Ez nem egy rangsorolási tényező között kell "
+#~ "lennie , és 20 %-ról 70%."
+
+#~ msgid "Link Numbers"
+#~ msgstr "Link számok"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "Kapcsolatok száma játszik jelentős szerepet játszik annak eldöntésében "
+#~ "pagerank . A számok optimalizálni kell , és nem kell nagyon magas."
+
+#~ msgid "Link Attributes"
+#~ msgstr "Link attribútumok"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "Van 2 attribútumok rel és címét bármilyen weboldalról linkek. Azt "
+#~ "határozza meg a kapcsolat , és ez's funkciót."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "Ez a weboldal teszi teljes"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTP kéréseket."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "típus"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "a javascript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "A stíluslap ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "Próbáld ki, hogy kevésbé HTTP kéréseket , mert ez magas. Használja "
+#~ "optimalizált téma és widgetek"
+
+#~ msgid "Reduce it"
+#~ msgstr "Csökkentse az"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "Próbáld ki, hogy kevésbé HTTP kéréseket , mert ez nagyon magas. Használja "
+#~ "optimalizált téma és widgetek"
+
+#~ msgid "Must Reduce"
+#~ msgstr "csökkenteniük kell a"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "Stíluslap HTTP kérések a @ import"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "Vegye ki a @ import url és helyezze belül head tag a kapcsolat stylesheet "
+#~ "rel attribútum"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "Stíluslap nem , hogy bármilyen belső HTTP kérés"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr ""
+#~ "Stílus attribútum jelen van a fent címkéket néhány vagy az összes "
+#~ "occurances ."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "Keresse meg és távolítsa stílus attribútumok osztály attribútumok és "
+#~ "tegye a stílus fő css fájlban"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "No style attribútum jelen van minden tag ."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "Nincs html hiba ezen a weboldalon ."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "vannak"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "hibák html a weboldal :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "Ásni a hibákat, és tudd meg, mi okozza a hibát , a téma vagy a dugó, és "
+#~ "oldja meg"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "%-a stíluslapok és JavaScript töltik fel head részben."
+
+#~ msgid "This is high"
+#~ msgstr "Ez magas"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr "Add tovább scriptek lábléc részt, és távolítsa el őket a fejlécben"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Mikroadatok gazdag részlet van jelen ezen a weboldalon ."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "Típusa gazdag részlet is"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "Nincs mikroadatokkal gazdag részlet jelen van ebben a weboldalon ."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "Használjon olyan ingyenes SEO plugin leíró weboldal mikroadatokkal "
+#~ "bővített kivonat ."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "Száma HTTP kérések a weboldal teszi letölteni tartalmat a szerverről "
+#~ "hatások dokumentum betöltési időt , mert több kérések felhívást több "
+#~ "letöltés és több időre lesz szükség"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "Stíluslap import url"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "@ import paraméter belső stíluslap köteles növelni felesleges dokumentum "
+#~ "terhelést. Ezt el kell kerülni"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "Ezzel minden elemét HTML weboldal csökken minőség növelésével böngészőt "
+#~ "renderelés idő"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Böngésző kompatibilitás"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "A Google azt akarja , hogy a weboldal kell keresni ok különböző "
+#~ "böngészőkben ( pl. Mozila Firefox, Chrome , az Internet Explorer , "
+#~ "Safari, Opera , stb ) , és az alapvető dolog, amit ellenőrizni a hibákat "
+#~ "benne yor html"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Visual Complition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "HTTP elvégzésére a fejlécben , mint a teljes HTTP kérések befolyásolja "
+#~ "vizuális complition , ami egy fontos tervezési paraméter szabványos"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "Rich Töredék"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "Ez a fajta a HTML markup több információt ad a kereső oldalakon "
+#~ "megjelenítve. Google ösztönzi mikroadatok típusú jelölést , mert ez "
+#~ "növeli a felhasználói élményt a Search Engine Rank oldal"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "Google megzavarja ezt az oldalt az automatikus generált ."
+
+#~ msgid "because of this part"
+#~ msgstr "azért, mert ez a rész"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "Változtasd meg a url a különböző típusú permalink"
+
+#~ msgid "Change it"
+#~ msgstr "Változás, hogy"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "Ez a weboldal URL fenntartja irányelveket."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "A weboldal url túl nagy. Google tartja spam."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "Változtasd meg a url méretét és típusát oldalon vagy postai szerkesztő. "
+#~ "Győződjön meg róla, hogy nem használ semmilyen folyamatkövetésre"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr "Last- Modified részt fejlécben található . If- Modified-Since Be."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "Last- Modified header részt nem található. If- Modified-Since kikapcsolva"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "Kérdezze meg a tárhely szolgáltató , hogy aktiválja If- Modified-Since "
+#~ "fejléc"
+
+#~ msgid "Ask for it"
+#~ msgstr "Kér"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "Cache aktív. Ez a weboldal a következő gyorsítótár paramétereket."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr ""
+#~ "Cache inaktív. Ez a weboldal don't ad vissza gyorsítótár paramétereket."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "Használja cache módszer a jobb felhasználói élményt. Használjon olyan "
+#~ "ingyenes cache plugint elérhető"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "Keep Alive kapcsolat kikapcsolva"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr ""
+#~ "Kérdezze meg a tárhely szolgáltató , hogy aktiválja a Keep Alive kapcsolat"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "Keep Alive Connection On"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "gzip tömörítés a weboldal fejlécét engedélyezve van."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "Nem tömörítési módszer található weboldal ."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "Engedélyezze a gzip tömörítés a jobb eredményeket. Használja ingyenes "
+#~ "plugin ."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "Használ WordPress verzió"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "Használ WordPress , valószínűleg a'sa módosított CMS wordpress mag ."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "Kérjük, használja a megfelelő WordPress szoftver"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "Ha url változtatható információk , vagy több, mint 255 bájt, a "
+#~ "keresőprogramok úgy, mint spam."
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "Ez egy szerver funkció. Ez automatikusan tájékoztatja a kereső robotok , "
+#~ "ha bármilyen változás történik a weboldal tartalmát ."
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "Caching html , css , JavaScript , képek felhasználók böngésző nagyon "
+#~ "hasznos lehet csökkenteni dokumentumban betöltési ideje. Kereső robotjai "
+#~ "szeret weboldalakat jobb dokumentum betöltési ideje."
+
+#~ msgid "Keep Alive"
+#~ msgstr "Keep Alive"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "Ez egy szerver funkció. Ez tartja a kapcsolatot a szerver és a böngésző "
+#~ "egy említett aktív ideig. És időt takarít meg a túlzott kommunikáció . "
+#~ "Ezért csökkenti dokumentum betöltési ideje , ami jobb."
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "Ez a szerver a funkció biztosítja a weboldal tartalmát, hogy a böngészőt "
+#~ "gzip tömörített formátumban. Ezért csökkenti a sávszélesség és a web "
+#~ "oldal mérete ."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "Content Management System (CMS ) létrehoz weboldalt szkriptek tartott "
+#~ "szerver . Szóval, a Google robotjai mérlegelheti a tartalom is "
+#~ "automatikusan generált . De WordPress felhasználóknak ez nem jelent "
+#~ "problémát ."
+
+#~ msgid "Web Page"
+#~ msgstr "Web oldal"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "Search Engine kompatibilitás , a Google webmestereknek standard"
+
+#~ msgid "Theme Used"
+#~ msgstr "használt téma"
+
+#~ msgid "Time Taken"
+#~ msgstr "idő"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "másodperc Scan"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "másodperc a betöltés alkatrészek"
+
+#~ msgid "Percentage"
+#~ msgstr "százalék"
+
+#~ msgid "Success"
+#~ msgstr "siker"
+
+#~ msgid "Failure"
+#~ msgstr "hiba"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Web oldal összességében SEO teljesítmény"
+
+#~ msgid "Complete"
+#~ msgstr "teljes"
+
+#~ msgid "Incomplete"
+#~ msgstr "befejezetlen"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Web oldal optimalizálva adatok áttekintése"
+
+#~ msgid "Required"
+#~ msgstr "kötelező"
+
+#~ msgid "Completed"
+#~ msgstr "befejezték"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "Összehasonlítása társadalmi adatok"
+
+#~ msgid "Actual"
+#~ msgstr "tényleges"
+
+#~ msgid "Ideal Case"
+#~ msgstr "ideális esetben"
+
+#~ msgid "none"
+#~ msgstr "semmi"
+
+#~ msgid "header"
+#~ msgstr "header"
+
+#~ msgid "body"
+#~ msgstr "test"
+
+#~ msgid "full"
+#~ msgstr "teljesen"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "Hozzávetőleges Pattern vizuális complition Index"
+
+#~ msgid "web page loading"
+#~ msgstr "weboldal betöltése"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "Visual complition százalék"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScriptek"
+
+#~ msgid "Styles"
+#~ msgstr "Stílusok"
+
+#~ msgid "Pure Text"
+#~ msgstr "Pure Text"
+
+#~ msgid "Alt Text"
+#~ msgstr "Alt Text"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "Összehasonlítása szerver teljesítményét"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "Műszaki szempontok áttekintése"
+
+#~ msgid "New Scan"
+#~ msgstr "New Scan"
+
+#~ msgid "Notes"
+#~ msgstr "Megjegyzések"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "Válaszd ki bármelyik oldalon, vagy postai úton, vagy adja meg egyedi URL-"
+#~ "t Scan"
+
+#~ msgid "OR"
+#~ msgstr "OR"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "Válassza ki a Post a Scan"
+
+#~ msgid "Scan Post"
+#~ msgstr "Scan hozzászólás"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "Adjon meg egy egyéni URL-t"
+
+#~ msgid "Scan URL"
+#~ msgstr "Scan URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Tudnivaló, mielőtt scaning"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "Az áttekintés diagramadatok hozzávetőleges számítás , és nem jelent "
+#~ "számításokat olyan kereső algoritmust ."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "Néhány paraméter megjelenített eredmények nem szerepelnek közvetlenül a "
+#~ "Google irányelveket. De befolyásolja közvetlenül ."
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr ""
+#~ "Vigye az egeret aláhúzott elemeket , hogy a magyarázatok találati oldalán."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "Nincs adat a honlapon, szerver vagy bármi elfogja minden szerver . "
+#~ "Átkutat történik teljes egészében a böngészőben ."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "Az url visszatér error : 404 Not Found , Ez azt jelenti, hogy nincs jelen "
+#~ "weboldal és a keresőmotorok nem fogja indexelni . Adja meg a létező "
+#~ "weboldal url weboldalán."
+
+#~ msgid "Print Report"
+#~ msgstr "Jelentés nyomtatása"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "SEO Tippek →"
+
+#~ msgid "Data"
+#~ msgstr "adat"
+
+#~ msgid "Technical"
+#~ msgstr "technikai"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "Szociális adatmegosztás ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Open Graph protokoll a Facebook és elfogadott szinte minden fontos "
+#~ "társadalmi média, többek között a Google +"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Weboldal adatok"
+
+#~ msgid "Remarks"
+#~ msgstr "Megjegyzés"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ mászott szöveges tartalom"
+
+#~ msgid "Total Text"
+#~ msgstr "Összes szöveges"
+
+#~ msgid "In page Style"
+#~ msgstr "A lap stílusa"
+
+#~ msgid "In page Script"
+#~ msgstr "A lap Script"
+
+#~ msgid "Scan by"
+#~ msgstr "Scan"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "akció"
+
+#~ msgid "Length "
+#~ msgstr "hossz"
+
+#~ msgid " for image "
+#~ msgstr "a képek"

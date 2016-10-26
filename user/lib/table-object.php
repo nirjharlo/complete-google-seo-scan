@@ -1,33 +1,35 @@
 <?php
 /**
- * @/user/lib/table-class.php
- * on: 08.06.2015
+ * @/user/lib/table-object.php
+ * @on 10.07.2015
+ * @since 2.0
+ *
  * Custom table object with thead-tfoot and tbody.
  *
  * 6 properties:
- * 1. $tbl_id for table id.
- * 2. $tbl_class for table class.
- * 3. $tbl_row_class for class of each table row.
- * 4. $tbl_init for 1st element of thead-tfoot and tbody. If set true, will return predefined value
- *    in 1st td of table body and blank in 1st td of table header.
- * 5. $tbl_hd_data for table header data. It is an array with following pattarn:
+ * @prop string $tbl_id Table id.
+ * @prop string $tbl_class Table class.
+ * @prop string $tbl_row_class Class of each table row.
+ * @boolean string $tbl_init 1st element of thead-tfoot and tbody. If set true, will return
+ * 			predefined value in 1st td of table body and blank in 1st td of table header-footer.
+ * @prop array $tbl_hd_data for table header data. It is an array with following pattarn:
  * 		array(
  *			array(
- *				'id' => true/false,
- *				'class' => true/false,
- *				'icon_class' => true/false,
- *				'val' => 'TEXT or HTML',
+ *				boolean 'id' => true/false,
+ *				boolean 'class' => true/false,
+ *				boolean 'icon_class' => true/false,
+ *				string 'val' => TEXT or HTML,
  *			), ...
  *		)
- * 6. $tbl_data for tbody display. Elements are like:
+ * @prop array $tbl_data for tbody display. Elements are like:
  * 		array(
  *			 array(
  *				array(
- *					'id' => true/false,
- *					'class' => 'CLASS',
- *					'val' => 'TEXT or HTML',
- *				), ... repeat till number of columns
- *			), ... repeat till number of rows
+ *					boolean 'id' => true/false,
+ *					string 'class' => TEXT,
+ *					string 'val' => TEXT or HTML,
+ *				), ... repeat for columns
+ *			), ... repeat for rows
  *		),
  */
 class CGSS_TABLE {
@@ -92,8 +94,8 @@ class CGSS_TABLE {
 	}
 
 	//define method: display() to output raw html
-	public function display() {
-		return '<table' . ( $this->tbl_id ? ' id="' . $this->tbl_id . '"' : '' ) . ( $this->tbl_class ? ' class="' . $this->tbl_class . '"' : '' ) . '><thead>' . $this->head_foot() . '</thead><tbody>' . $this->body() . '</tbody><tfoot>' . $this->head_foot() . '</tfoot></table>';
+	//$tfoot is true/false
+	public function display( $tfoot ) {
+		return '<table' . ( $this->tbl_id ? ' id="' . $this->tbl_id . '"' : '' ) . ( $this->tbl_class ? ' class="' . $this->tbl_class . '"' : '' ) . '><thead>' . $this->head_foot() . '</thead><tbody>' . $this->body() . '</tbody>' . ( $tfoot ? '<tfoot>' . $this->head_foot() . '</tfoot>' : '' ) . '</table>';
 	}
-}
-?>
+} ?>

@@ -2,11 +2,13 @@
 /**
  * @/core/lib/social-object.php
  * on: 22.06.2015
+ * @since 2.0
+ *
  * Object to fetch social meia information from various networks. Twitter, Google Plus and Facebook
  * from an input url.
  *
  * 1 property:
- * $url for input url, whose social value is to be counted
+ * @prop string $url Input url, whose social value is to be counted
  */
 class CGSS_SOCIAL {
 

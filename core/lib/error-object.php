@@ -2,10 +2,12 @@
 /**
  * @/core/lib/error-object.php
  * on: 09.06.2015
+ * @since 2.0
+ *
  * Object to check headers response if it's showing temporary and permanent errors of server.
  *
  * 1 property:
- * $header_respond for first element of total header.
+ * @prop string $header_respond for first element of total header.
  */
 class CGSS_HEADERS_ERROR {
 

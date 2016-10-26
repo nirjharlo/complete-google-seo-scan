@@ -1,0 +1,2261 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-08-21 00:36+0530\n"
+"PO-Revision-Date: 2015-08-21 00:36+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Japanese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../complete-google-seo-scan.php:93
+#, fuzzy
+msgid ""
+"Complete Google SEO Scan Plugin will not be activated because your PHP "
+"version"
+msgstr ""
+"完全にGoogleのSEOスキャンPHP 5.3を必要と+ 、アクティブ化されることはありませ"
+"ん、あなたの現在のサーバー構成では、 PHPのバージョンを実行している"
+
+#: ../complete-google-seo-scan.php:93
+msgid "is less than required 5.3. See more information:"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:118
+msgid "Start Here"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:154
+#, fuzzy
+msgid "Seo Scan Overview"
+msgstr "ソーシャル共有データの概要"
+
+#: ../complete-google-seo-scan.php:154 ../complete-google-seo-scan.php:164
+#, fuzzy
+msgid "Seo Scan"
+msgstr "SEOスキャン"
+
+#: ../complete-google-seo-scan.php:244
+msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:275
+msgid "Choose Post types to show"
+msgstr ""
+
+#: ../core/ajax-handle.php:62 ../core/overview-ajax.php:16
+#, fuzzy
+msgid "Invalid Request"
+msgstr "HTTPリクエスト"
+
+#: ../core/ajax-handle.php:91
+#, fuzzy
+msgid "Server Issue"
+msgstr "サーバーのポイント"
+
+#: ../core/ajax-handle.php:112
+msgid "Can not Download the Webpage"
+msgstr ""
+
+#: ../core/overview-ajax.php:24 ../core/overview-ajax.php:78
+#: ../core/overview-ajax.php:88 ../core/overview-ajax.php:136
+#, fuzzy
+msgid "Improper Request"
+msgstr "HTTPリクエスト"
+
+#: ../core/overview-ajax.php:54
+msgid "Network Error"
+msgstr ""
+
+#: ../core/overview-ajax.php:64
+msgid "Failed, Server Issue"
+msgstr ""
+
+#: ../core/overview-ajax.php:97
+msgid "No Files Found"
+msgstr ""
+
+#: ../user/front-end.php:95
+msgid "OVERVIEW"
+msgstr ""
+
+#: ../user/front-end.php:101
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../user/front-end.php:108
+msgid "REPORT"
+msgstr ""
+
+#: ../user/front-end.php:109
+msgid "ACTIONS"
+msgstr ""
+
+#: ../user/front-end.php:134
+msgid "Heading"
+msgstr ""
+
+#: ../user/front-end.php:140
+msgid "Alt"
+msgstr ""
+
+#: ../user/front-end.php:146
+#, fuzzy
+msgid "Anchor"
+msgstr "アンカーテキスト"
+
+#: ../user/front-end.php:152
+msgid "Title"
+msgstr "タイトル"
+
+#: ../user/front-end.php:158
+msgid "Description"
+msgstr "説明"
+
+#: ../user/front-end.php:164
+msgid "Url"
+msgstr ""
+
+#: ../user/front-end.php:192
+msgid "Name"
+msgstr "名前"
+
+#: ../user/front-end.php:205 ../user/front-end.php:410
+msgid "SSL security"
+msgstr ""
+
+#: ../user/front-end.php:206
+msgid "WWW Resolve"
+msgstr ""
+
+#: ../user/front-end.php:207
+msgid "IP forwarding"
+msgstr ""
+
+#: ../user/front-end.php:208 ../user/front-end.php:435
+#, fuzzy
+msgid "Gzip Compression"
+msgstr "gzipで圧縮"
+
+#: ../user/front-end.php:209
+#, fuzzy
+msgid "Cache"
+msgstr "キャッシング"
+
+#: ../user/front-end.php:210 ../user/front-end.php:417
+#, fuzzy
+msgid "If modified since"
+msgstr "もし修飾-以来"
+
+#: ../user/front-end.php:211
+msgid "Response Time"
+msgstr ""
+
+#: ../user/front-end.php:211 ../user/front-end.php:430
+msgid "miliseconds"
+msgstr ""
+
+#: ../user/front-end.php:218 ../user/front-end.php:463
+#: ../user/front-end.php:470
+msgid "More"
+msgstr ""
+
+#: ../user/front-end.php:251
+msgid "Categories"
+msgstr ""
+
+#: ../user/front-end.php:266
+msgid "Tags"
+msgstr ""
+
+#: ../user/front-end.php:275
+msgid "All Time"
+msgstr ""
+
+#: ../user/front-end.php:276
+msgid "Today"
+msgstr ""
+
+#: ../user/front-end.php:277
+msgid "7 days"
+msgstr ""
+
+#: ../user/front-end.php:278
+msgid "30 days"
+msgstr ""
+
+#: ../user/front-end.php:279
+msgid "90 days"
+msgstr ""
+
+#: ../user/front-end.php:280
+msgid "Never"
+msgstr ""
+
+#: ../user/front-end.php:307
+msgid "<code>< title</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:308
+msgid ""
+"<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:309
+msgid ""
+"Long tail keywords are helpful for seo. Use them with percistance but don't "
+"spam."
+msgstr ""
+
+#: ../user/front-end.php:310
+msgid "Write a minimum of 200 words atleast."
+msgstr ""
+
+#: ../user/front-end.php:311
+msgid ""
+"Use enough text in comparison of HTML. But also don't use too much text."
+msgstr ""
+
+#: ../user/front-end.php:312
+msgid ""
+"Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</"
+"code>, <code>h3</code>."
+msgstr ""
+
+#: ../user/front-end.php:313
+msgid ""
+"Crawler robots can not read image links. Please use some text inside links "
+"also."
+msgstr ""
+
+#: ../user/front-end.php:314
+msgid "Use nofollow links and dofollow links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:315
+msgid "Use external links and internal links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:316
+#, fuzzy
+msgid "The webpage looks like a link farm. Reduce number of links."
+msgstr "リンクの数を減らしてみてください。"
+
+#: ../user/front-end.php:317
+msgid "Put proper <code>alt</code> tags in images."
+msgstr ""
+
+#: ../user/front-end.php:318
+msgid "Don't use nested tables, i.e. tables within table columns."
+msgstr ""
+
+#: ../user/front-end.php:319
+msgid "Remove style attributes from all HTML tags and use .css file instead."
+msgstr ""
+
+#: ../user/front-end.php:320
+msgid ""
+"<code>< meta name=\"viewport\"</code> tag should be present for scaling "
+"webpage with device size."
+msgstr ""
+
+#: ../user/front-end.php:321
+msgid ""
+"<code>@media</code> query is not found. The webpage should be mobile ready."
+msgstr ""
+
+#: ../user/front-end.php:322
+msgid "Get an SSL certificate and use url with <code>https://</code>."
+msgstr ""
+
+#: ../user/front-end.php:323
+msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
+msgstr ""
+
+#: ../user/front-end.php:324
+msgid "Url with and without WWW should redirect to same url. Resolve it."
+msgstr ""
+
+#: ../user/front-end.php:325
+#, fuzzy
+msgid "Put a canonical link."
+msgstr "正規のリンクを張って下さい"
+
+#: ../user/front-end.php:326
+msgid "Enable If modified since header."
+msgstr ""
+
+#: ../user/front-end.php:327
+msgid ""
+"<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
+"value."
+msgstr ""
+
+#: ../user/front-end.php:328
+msgid "Put an IP address and forward to page url"
+msgstr ""
+
+#: ../user/front-end.php:329
+msgid "Header response time is too long. Improve website server."
+msgstr ""
+
+#: ../user/front-end.php:330
+#, fuzzy
+msgid "Enable gZip compression."
+msgstr "gzipで圧縮"
+
+#: ../user/front-end.php:331
+msgid "Enable Browser Caching."
+msgstr ""
+
+#: ../user/front-end.php:332
+msgid "Reduce number of HTTP requests made by .css and .js files."
+msgstr ""
+
+#: ../user/front-end.php:333
+msgid "Compress resorce files and increase loading speed."
+msgstr ""
+
+#: ../user/front-end.php:334
+msgid ""
+"Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
+"sharing."
+msgstr ""
+
+#: ../user/front-end.php:340
+msgid "Help"
+msgstr ""
+
+#: ../user/front-end.php:365
+msgid "Select popular words"
+msgstr ""
+
+#: ../user/front-end.php:369
+#, fuzzy
+msgid "Number of words"
+msgstr "リンク数"
+
+#: ../user/front-end.php:369
+msgid ""
+"Minimum 200 words in a webpage is required. Write enough words to describe "
+"the page well."
+msgstr ""
+
+#: ../user/front-end.php:370
+#, fuzzy
+msgid "Text to html ratio"
+msgstr "text / htmlに比"
+
+#: ../user/front-end.php:370
+msgid ""
+"There must be enough text in webpage as compared with total size. About 15% "
+"to 70%"
+msgstr ""
+
+#: ../user/front-end.php:371
+#, fuzzy
+msgid "Text hiarerchy"
+msgstr "テキスト階層"
+
+#: ../user/front-end.php:371
+msgid ""
+"A bulk of text is not useful, rather text content with proper heading tags "
+"are needed."
+msgstr ""
+
+#: ../user/front-end.php:374
+#, fuzzy
+msgid "Image Links"
+msgstr "イメージズ"
+
+#: ../user/front-end.php:374
+msgid ""
+"Links that conatin only image but no text is considered poorly optimized."
+msgstr ""
+
+#: ../user/front-end.php:375
+#, fuzzy
+msgid "Nofollow Links"
+msgstr "リンク数"
+
+#: ../user/front-end.php:375
+msgid ""
+"Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
+"all links from crawling."
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid "External Links"
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid ""
+"Links that points to other domain must be present, in a proportional number."
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid "Nested Tables"
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid ""
+"In markup of webpage, if table element is put inside a column of another "
+"table, it makes the page slow."
+msgstr ""
+
+#: ../user/front-end.php:395
+#, fuzzy
+msgid "Style Attributes"
+msgstr "style属性"
+
+#: ../user/front-end.php:395
+msgid ""
+"attribute present in markup tags is not a good practice and increases render "
+"time."
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid "Media Queries"
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid ""
+"For responsive web design, you need to have <code>@media</code> elements "
+"inside .css files."
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid "Viewport Tag"
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid ""
+"On <code>head</code> area of webpage, there is a tag which helps in scaling "
+"the dimensions according to display size."
+msgstr ""
+
+#: ../user/front-end.php:411
+msgid "Static url "
+msgstr ""
+
+#: ../user/front-end.php:412
+msgid "Use of underscores in Url"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid "www Resolve"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid ""
+"Check if url is showing same webpage for url with and without \"www.\" prefix"
+msgstr ""
+
+#: ../user/front-end.php:417
+msgid ""
+"Let web server tell Google whether your content has changed since google bot "
+"last crawled your site."
+msgstr ""
+
+#: ../user/front-end.php:420
+#, fuzzy
+msgid "Canonical Url"
+msgstr "Canonicalのリンク"
+
+#: ../user/front-end.php:420
+msgid ""
+"Let Google know, same content is available through multiple URL structures "
+"or via syndication."
+msgstr ""
+
+#: ../user/front-end.php:421
+#, fuzzy
+msgid "Meta Robot"
+msgstr "メタロボット"
+
+#: ../user/front-end.php:421
+msgid ""
+"Visibility in search result stops on use of \"noindex\" value in robots meta "
+"tag."
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid "IP Forwarded"
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid ""
+"Check if server IP address (internet protocol) is forwarding to the same url "
+"or not."
+msgstr ""
+
+#: ../user/front-end.php:430
+msgid "Header response time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Loading time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Seconds"
+msgstr ""
+
+#: ../user/front-end.php:435
+msgid ""
+"Deliver page content in a compressed .gzip file to reduce bandwidth and "
+"loading time."
+msgstr ""
+
+#: ../user/front-end.php:436
+#, fuzzy
+msgid "Browser Caching"
+msgstr "キャッシング"
+
+#: ../user/front-end.php:436
+msgid ""
+"Store page assets in browser of user for specific time, to load it faster "
+"next time."
+msgstr ""
+
+#: ../user/front-end.php:439 ../user/front-end.php:440
+#, fuzzy
+msgid "requests"
+msgstr "HTTPリクエスト"
+
+#: ../user/front-end.php:463
+msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
+msgstr ""
+
+#: ../user/front-end.php:512
+msgid "And that's fine."
+msgstr ""
+
+#: ../user/front-end.php:513
+msgid "That's too much of text, please write less."
+msgstr ""
+
+#: ../user/front-end.php:514
+msgid "That's too little text, please write more."
+msgstr ""
+
+#: ../user/front-end.php:521
+msgid "Url is clean and tidy"
+msgstr ""
+
+#: ../user/front-end.php:522
+msgid "Url has underscore"
+msgstr ""
+
+#: ../user/front-end.php:523
+msgid "Url is dynamic"
+msgstr ""
+
+#: ../user/front-end.php:524
+msgid "Url is dynamic and has underscore"
+msgstr ""
+
+#: ../user/front-end.php:686
+msgid "items"
+msgstr ""
+
+#: ../user/front-end.php:691 ../user/display/overview-display.php:86
+msgid "of"
+msgstr ""
+
+#: ../user/front-end.php:706
+msgid "All Items Matched"
+msgstr ""
+
+#: ../user/front-end.php:709
+msgid "No Match Found"
+msgstr ""
+
+#: ../user/lib/btn-object.php:39
+msgid "Button Error"
+msgstr ""
+
+#: ../user/lib/accordion-object.php:21
+msgid "Click to toggle"
+msgstr ""
+
+#: ../user/lib/dropdown-object.php:55 ../user/lib/dropdown-object.php:72
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#: ../user/display/overview-display.php:4
+msgid "Scan Overview"
+msgstr ""
+
+#: ../user/display/overview-display.php:25 ../user/display/scan-display.php:24
+msgid ""
+"Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
+"<i>Theme and Plugins Design Seo</i>."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "You will see them bellow."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "Then reload the page."
+msgstr ""
+
+#: ../user/display/overview-display.php:45
+msgid "ARCHIVES"
+msgstr ""
+
+#: ../user/display/overview-display.php:69
+msgid "SCAN ARCHIVE PAGE"
+msgstr ""
+
+#: ../user/display/overview-display.php:78
+#, fuzzy
+msgid "Content Status"
+msgstr "コンテンツの問題"
+
+#: ../user/display/overview-display.php:79
+msgid "Fetch results from stored scan reports."
+msgstr ""
+
+#: ../user/display/overview-display.php:85
+#, fuzzy
+msgid "Fetch Intel"
+msgstr "結果"
+
+#: ../user/display/overview-display.php:86
+msgid "reports processed."
+msgstr ""
+
+#: ../user/display/overview-display.php:88
+msgid "No pages are scaned. Use top navigation to go to list of pages."
+msgstr ""
+
+#: ../user/display/overview-display.php:128
+#, fuzzy
+msgid "Server Seo Status"
+msgstr "サーバーのポイント"
+
+#: ../user/display/overview-display.php:133
+#: ../user/display/overview-display.php:153
+msgid "CHECK NOW"
+msgstr ""
+
+#: ../user/display/overview-display.php:146
+#, fuzzy
+msgid "Design Seo Status"
+msgstr "サーバーのポイント"
+
+#: ../user/display/report-display.php:26
+msgid "sec"
+msgstr ""
+
+#: ../user/display/report-display.php:42
+msgid "Text & Links"
+msgstr ""
+
+#: ../user/display/report-display.php:43
+msgid "Design"
+msgstr "デザイン"
+
+#: ../user/display/report-display.php:44
+msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
+msgstr ""
+
+#: ../user/display/report-display.php:60
+msgid "IT'S ALL GOOD. NO ACTIONS NEEDED"
+msgstr ""
+
+#: ../user/display/report-display.php:64
+msgid "TAKE <span id=\"ActNum\"></span> FOLLOWING ACTIONS"
+msgstr ""
+
+#: ../user/display/scan-display.php:3
+#, fuzzy
+msgid "Scan Status"
+msgstr "ページをスキャンする"
+
+#: ../user/display/scan-display.php:24
+msgid "You will find them here."
+msgstr ""
+
+#: ../user/display/scan-display.php:84 ../help/message-object.php:66
+msgid "words, focus is"
+msgstr ""
+
+#: ../user/display/scan-display.php:86
+#, fuzzy
+msgid "Not Scanned Yet"
+msgstr "をスキャン"
+
+#: ../user/display/scan-display.php:108
+msgid "SCAN"
+msgstr ""
+
+#: ../user/display/scan-display.php:116
+msgid "FAILED"
+msgstr ""
+
+#: ../user/display/scan-display.php:127
+msgid "NEVER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:19
+msgid "Introduction"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have not included backlinks analysis, traffic metrics, knowledge graph "
+"and brand signals, because the intention is primarily on-page search "
+"optimization only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"If you catch a bug or want to give any feedback or feature suggestion you "
+"are welcome to email the plugin author"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../help/plugin-help-object.php:24
+msgid "Overview"
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Starting page of this plugin is named \"Seo Overview\". There you can find 3 "
+"types of features to scan 3 different aspects of your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Server seo scan"
+msgstr "サーバーのポイント"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"will make a header request and find out 10 important points about the server "
+"and it's configuration. Practically, You can change them by using different "
+"plugins available."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Design seo scan"
+msgstr "デザインのポイント"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"gives an idea about numbers of HTTP requests made by your webpages and "
+"resource size it takes to load a webpage. They are takken from "
+"<code>_enqueued</code> styles and scripts. All hard coded links are ignored, "
+"because it is assumed that you are using WordPress compatable themes."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Content Overview"
+msgstr "ページコンテンツの概要"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"After you are done with scans for your webpages, you will be able to complie "
+"those individual content reports to a single report and gather actionable "
+"intelligence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid "Set Screen Options."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"for showing various post types in WordPress admin menus. You can select them "
+"using checkboxes. This option is available only in \"Scan Overview\" page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Secondly, you may use numbers of pages to show in any post type \"Scan Status"
+"\" plugins page. This is available in all other \"Scan Status\" pages "
+"created by this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Close this \"Help\" tab and open \"Screen Options\" tab to explore more."
+msgstr ""
+
+#: ../help/plugin-help-object.php:29
+msgid "How to use?"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is mobile "
+"ready. So, for regular WordPress users it will be very intuitive. The usage "
+"process has 3 steps."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Before you start"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"make sure you have taken Design seo and Server seo scans available at "
+"Overview page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Select a Page"
+msgstr "スキャンするページを選択してください"
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"from the individual list of webpage blocks, by clicking on corresponding "
+"\"SCAN\" button. Top navigation is to select posts from multiple post types "
+"and you may filter them according to time of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Wait for scan"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"to be completed. It will take a few seconds, approximately 2 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See results"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"in a pop up on the same page as soon as the scan is complete. The result "
+"will have 7 segments."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Overall score with social media counts."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Search engine snippet and highlighted keyword."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Use of Image and page design seo"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Required information on server and url."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "A sample Facebook snippet from social media tags."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See required actions"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"listed in the same pop-up. Just click the button with the word \"ACTION\" at "
+"bottom. You will find step by step guidence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"Scan result is displayed in an organized fashion with <strong>Hints</strong> "
+"and are easy to understand for someone with basic seo knowledge. For a "
+"primitive guideline of seo aspects see links at right sidebar of this area."
+msgstr ""
+
+#: ../help/plugin-help-object.php:34
+msgid "Performance"
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes less than 5 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"時間はコントローラのスキャンすると、サーバとあなたのウェブサイトの品質に依存"
+"します。実際の処理を完了するには、以下の0.01秒かかります。"
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:39
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "privacy Policy."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "Data storage."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. Other than those, there are 4 custom data arrays stored in "
+"\"_options\" database. When the plugin is uninstalled all of those data will "
+"be removed from your server."
+msgstr ""
+
+#: ../help/plugin-help-object.php:44
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../help/plugin-help-object.php:49
+msgid "Updates"
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Future updates of this plugin is expected to contain more features and a new "
+"interface. Some of the features you may expect are Video Seo, Spam "
+"detection, Rich snippet calculation, Twitter v card, above the fold "
+"optimization, sitemap.xml check and robots.txt check. Internationalization "
+"and automatic scan are also desired property to be included."
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Tough the plugin author will take final decision about updates, you are free "
+"to inform about bugs and feature requests in support forum."
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Support Forum"
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../help/message-object.php:15
+msgid "Message"
+msgstr ""
+
+#: ../help/message-object.php:22
+msgid "Network error"
+msgstr ""
+
+#: ../help/message-object.php:23
+msgid "No .css or .js file"
+msgstr ""
+
+#: ../help/message-object.php:24
+msgid "is undefined"
+msgstr ""
+
+#: ../help/message-object.php:25
+msgid "View"
+msgstr ""
+
+#: ../help/message-object.php:26
+msgid "TITLE TAG"
+msgstr ""
+
+#: ../help/message-object.php:27
+msgid "META DESCRIPTION TAG"
+msgstr ""
+
+#: ../help/message-object.php:45
+msgid "NOT FOUND"
+msgstr "FOUND NOT"
+
+#: ../help/message-object.php:46
+msgid "SOCIAL MEDIA IMAGE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:47
+msgid "SOCIAL MEDIA TITLE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:48
+msgid "SOCIAL MEDIA DESCRIPTION TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:49
+#, fuzzy
+msgid "DOMAIN NAME NOT FOUND"
+msgstr "TAG FOUND NOT"
+
+#: ../help/message-object.php:50
+#, fuzzy
+msgid "TITLE TAG NOT FOUND"
+msgstr "TAG FOUND NOT"
+
+#: ../help/message-object.php:51
+#, fuzzy
+msgid "META DESCRIPTION TAG NOT FOUND"
+msgstr "TAG FOUND NOT"
+
+#: ../help/message-object.php:53 ../help/message-object.php:54
+#, fuzzy
+msgid "Compression"
+msgstr "gzipで圧縮"
+
+#: ../help/message-object.php:53
+msgid ".css and .js files can be more compressed to reduce"
+msgstr ""
+
+#: ../help/message-object.php:53
+msgid "in total size"
+msgstr ""
+
+#: ../help/message-object.php:54
+msgid "All .css and .js files are compressed enough."
+msgstr ""
+
+#: ../help/message-object.php:55
+msgid "All images are optimized."
+msgstr ""
+
+#: ../help/message-object.php:56
+msgid "Above images does not have <code>alt</code> tags."
+msgstr ""
+
+#: ../help/message-object.php:57
+#, fuzzy
+msgid "No images are present."
+msgstr "いくつかのヘッドタグが存在している"
+
+#: ../help/message-object.php:58 ../help/message-object.php:59
+msgid "Links all total"
+msgstr ""
+
+#: ../help/message-object.php:58
+msgid "numbers are ok."
+msgstr ""
+
+#: ../help/message-object.php:59
+#, fuzzy
+msgid "Too much in number."
+msgstr "あまりにも多くのHTMLウェブページである。"
+
+#: ../help/message-object.php:64
+#, fuzzy
+msgid "NO KEYWORDS FOUND"
+msgstr "FOUND NOT"
+
+#: ../help/message-object.php:65
+msgid "SPAM"
+msgstr ""
+
+#: ../help/message-object.php:73
+msgid ""
+"Total <span id=\"WordsIntel\"></span> words used. <span id="
+"\"WordsPerPageIntel\"></span> per page. Avg text to html ratio is <span id="
+"\"WordsRatioIntel\"></span>"
+msgstr ""
+
+#: ../help/message-object.php:74
+msgid ""
+"<span id=\"LinksNumIntel\"></span> links per page, nearly <span id="
+"\"ExtLinksIntel\"></span> external and <span id=\"ImgLinksIntel\"></span> "
+"image links of them."
+msgstr ""
+
+#: ../help/message-object.php:75
+msgid ""
+"Long tail keywords (avg <span id=\"KeyWordsSizeIntel\"></span> words long) "
+"were found in <span id=\"KeyWordsIntel\"></span> webpages."
+msgstr ""
+
+#: ../help/message-object.php:77
+msgid "Almost all images seems to be optimized."
+msgstr ""
+
+#: ../help/message-object.php:78
+msgid ""
+"Nearly <span id=\"ImagesIntelPercent\"></span> of pages have images without "
+"alt tags."
+msgstr ""
+
+#: ../help/message-object.php:79
+msgid ""
+"This website images are <span class=\"danger-icon\">not optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:82
+msgid "Your website is mobile optimized."
+msgstr ""
+
+#: ../help/message-object.php:83
+msgid ""
+"Some of your webpages<span id=\"DesignIntelPercent\"></span> are not mobile "
+"optimized."
+msgstr ""
+
+#: ../help/message-object.php:84
+msgid ""
+"Your website is <span class=\"danger-icon\">not mobile optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:87
+msgid "All urls are neat and clean."
+msgstr ""
+
+#: ../help/message-object.php:88
+msgid ""
+"Some urls <span class=\"danger-icon\">are dynamic</span><span id="
+"\"UrlIntelPercent\"></span> and <span class=\"danger-icon\">have underscore</"
+"span><span id=\"UrlIntelPercentTwo\"></span>."
+msgstr ""
+
+#: ../help/message-object.php:89
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> are <span class=\"danger-icon"
+"\">dynamic and contains underscore</span>."
+msgstr ""
+
+#: ../help/message-object.php:90
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> <span class=\"danger-icon"
+"\">are dynamic</span>."
+msgstr ""
+
+#: ../help/message-object.php:91
+msgid ""
+"Some urls <span id=\"UrlIntelPercentTwo\"></span> <span class=\"danger-icon"
+"\">have underscores</span>."
+msgstr ""
+
+#: ../help/message-object.php:94
+msgid "Your website is fast, takes less than a second load."
+msgstr ""
+
+#: ../help/message-object.php:95
+msgid "Your website loads fine, may try a little faster."
+msgstr ""
+
+#: ../help/message-object.php:96
+msgid "Your website is slow, make it faster."
+msgstr ""
+
+#: ../help/message-object.php:97
+msgid ""
+"Your website is <span class=\"danger-icon\">too slow</span>, serious "
+"improvement needed."
+msgstr ""
+
+#: ../help/message-object.php:100
+#, fuzzy
+msgid "Social media tags are present. Optimized for social sharing."
+msgstr "いくつかのヘッドタグが存在している"
+
+#: ../help/message-object.php:101
+msgid ""
+"Social media tags are <span class=\"danger-icon\">incomplete</span> in "
+"almost <span id=\"StagIntelNoPercent\"></span>% pages."
+msgstr ""
+
+#: ../help/message-object.php:102
+msgid ""
+"Social media tags are nearly <span class=\"danger-icon\">absent</span>. Use "
+"them for better sharing."
+msgstr ""
+
+#: ../help/message-object.php:109
+msgid "enabled"
+msgstr ""
+
+#: ../help/message-object.php:114
+msgid "disabled"
+msgstr ""
+
+#: ../db/get-db.php:102
+msgid "ms"
+msgstr ""
+
+#: ../db/get-db.php:104
+msgid "s"
+msgstr ""
+
+#~ msgid "Content"
+#~ msgstr "コンテンツ"
+
+#, fuzzy
+#~ msgid "Other Points"
+#~ msgstr "サーバーのポイント"
+
+#, fuzzy
+#~ msgid "Download Content"
+#~ msgstr "コンテンツ"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "5.3.0より、任意のPHPのバージョンより少ないが\"に達している人生の終わり\" "
+#~ "PHP.net 、もはやからorsecurity更新をバグ修正受け取る。更新すると、なぜにす"
+#~ "る方法についての公式情報"
+
+#~ msgid "Scan Now"
+#~ msgstr "今すぐにスキャン"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "完全にGoogleのSEOスキャン"
+
+#~ msgid "Brought to you by"
+#~ msgstr "によってあなたに持って来ら"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEOブログ"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "あなたのWebページのGoogle検索エンジン最適化のスキャンが完了しました。ここ"
+#~ "では結果があります。"
+
+#~ msgid "at line"
+#~ msgstr "ラインで"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "それ'sのスキャンされたウェブページのURLとは異なる"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "あなたのページが、この正規のURLでインデックスさせたい必ず"
+
+#~ msgid "Recheck it"
+#~ msgstr "それを再確認"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "ファビコンを入力してください"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "長さ"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "文字（最大70文字が許されます）"
+
+#~ msgid "Length"
+#~ msgstr "長さ"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "70以上の文字が検索結果に表示されませんように"
+
+#~ msgid "Give shorter title"
+#~ msgstr "短いタイトルを与える"
+
+#~ msgid "Give a title."
+#~ msgstr "タイトルを付けます。"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "文字（最大155文字を許可された）"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "155文字以内で、一部のメタ記述を書く。 Altoughそれはランキング阻害しない"
+#~ "が、それは検索エンジンのページの結果に悪いよう。したがって、レート（CTR ）"
+#~ "クリックスルーを減らすことができ"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "それを短くする。"
+
+#~ msgid "This is not good."
+#~ msgstr "これは良くありません。"
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "タグが配置され、今ではいくつかのメタ記述を書く"
+
+#~ msgid "Give a description"
+#~ msgstr "説明を与える"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "が見つかりません。"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "あなたのウェブページの内容に適したキーワードを入力して、多くの検索エンジン"
+#~ "には、それを使用しますが、グーグルではない"
+
+#~ msgid "Enter keywords."
+#~ msgstr "キーワードを入力します。"
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr ""
+#~ "メタロボットはNOINDEX nofollowの値を持っています。これは良くありません。"
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr ""
+#~ "ノーインデックスおよび/またはノーショーフォローからロボットのメタ値を変更"
+
+#~ msgid "Fix this."
+#~ msgstr "これを修正。"
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "このOGに適切な値を入れて：ロケールメタタグ"
+
+#~ msgid "Fill it"
+#~ msgstr "それを埋める"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "このOGに適切な値を入れて： SITE_NAMEメタタグ"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "このOGに適切な値を入れて：タイプメタタグ"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "このOGに適切な値を入れます。urlメタタグ"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "このOGに適切な値を入れて：タイトルメタタグ"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "このOGに適切な値を入れます。説明メタタグ"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "このOGに適切な値を入れて：イメージメタタグ"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "あなたは、オプションの説明を入力するように取得するには使用可能な任意の無料"
+#~ "のSEOのプラグインを使用することができます"
+
+#~ msgid "Put the tag"
+#~ msgstr "タグを入れて"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "あなたのウェブページの内容に適したキーワードを入力して、多くの検索エンジン"
+#~ "はそれを使用しますが、グーグルではない。このタグを入力するためのオプション"
+#~ "を取得することが可能な任意の無料SEOのプラグインを使用することができます"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "あなたが希望するメタ正規のリンクを入力するためのオプションを取得するには使"
+#~ "用可能な任意の無料のSEOのプラグインを使用することができます"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr ""
+#~ "これは、タグを置くことをお勧めします。それ以外の場合は大きな心配ない"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "ショートカットアイコンのリンクタグを使用してファビコンICO画像を入れ"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr "適切な値でヘッド部にロケールmetaタグ：このOGを入れ"
+
+#~ msgid "Fix it"
+#~ msgstr "それを修正する"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr "適切な値をheadセクションにSITE_NAMEメタタグ：このOGを入れ"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr "適切な値を使用してヘッド部のtype metaタグ：このOGを入れ"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr "これOGを入れて：適切な値を使用してヘッド部のタイトル、メタタグ"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr "適切な値をheadセクションに記述のmetaタグ：このOGを入れ"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr "このOGを入れて：適切な値を使用してヘッド部のURLメタタグ"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr "このOGを入れて：適切な値を使用してヘッド部の画像メタタグ"
+
+#~ msgid "Title Tag"
+#~ msgstr "タイトルタグ"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr ""
+#~ "ウェブサイトのタイトル。これは、わかりやすいと70文字以内でなければなりませ"
+#~ "ん。"
+
+#~ msgid "Meta Description"
+#~ msgstr "メタ記述"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Webページを記述します。最適な長さは155文字で、ランキングの要因ではない。"
+
+#~ msgid "Meta Keywords"
+#~ msgstr "メタキーワード"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "ウェブページで使用されるキーワードに言及している。これは、ランキングの要因"
+#~ "ではない。"
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "正規化には幾つかの選択肢があります最高のURLをピッキングするプロセスです。"
+#~ "この正規のメタタグは、インデックス（ http://www.example.com/とhttp://"
+#~ "example.com/のような）別のURLからアプローチすることができるページには、検"
+#~ "索エンジンのクローラに役立ちます。"
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "メタロボットタグを要求する検索エンジンのロボットは、Webページをクロールま"
+#~ "たは終了します。 NOINDEXとnofollowのの値が与えられた場合は、ウェブページの"
+#~ "インデックスは作成されません。"
+
+#~ msgid "Favicon Link"
+#~ msgstr "ファビコンのリンク"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "ブラウザの上部にあるタイトルの横に独自の画像を表示します。良いSEOの実践"
+
+#~ msgid "Language"
+#~ msgstr "言語"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "あなたが使用する共有言語"
+
+#~ msgid "Type"
+#~ msgstr "タイプ"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr ""
+#~ "アプリケーションの種類あなたは共有しています。ここでは、ウェブサイトです"
+
+#~ msgid "Site Name"
+#~ msgstr "サイトの名前"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "ウェブサイトの名前。ここにある"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "共有コンテンツのタイトル。たり、 Webページのタイトルと同じでないかもしれな"
+#~ "い"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "共有コンテンツの本体。通常、このテキストは、ソーシャルメディアネットワーク"
+#~ "内の共有コンテンツに見られる"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Webページのリンクを指定し、このURLが共有され、リンクの利点を持つことになり"
+#~ "ます。しかし、正直なところ。"
+
+#~ msgid "Image"
+#~ msgstr "画像"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "非常に重要な、これはユーザが注目トンソーシャルメディア上の共有コンテンツを"
+#~ "取得しているため。"
+
+#~ msgid "Total number of images"
+#~ msgstr "画像総数"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "\"ALT\"属性の使用"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "\"高さ\"属性の使用"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "\"幅\"属性の使用"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "不足している属性を挿入します。"
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr ""
+#~ "いいえ頭タグは見つかりませんでした。したがって、全くテキスト階層は存在しな"
+#~ "い。"
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "適切な階層内のテキストを書く。"
+
+#~ msgid "All head tags are present"
+#~ msgstr "すべての頭部タグは存在している"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "したがって、テキスト階層存在がある。"
+
+#~ msgid "One head tag is present"
+#~ msgstr "One headタグが存在している"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "テキストが階層になっていることを確認してください。そう、それを確認してくだ"
+#~ "さいされていない場合。"
+
+#~ msgid "Check again"
+#~ msgstr "もう一度確認してください"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "このWebページのHTML比率へのテキストです"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "、少なくともより多くのテキストを書く"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "あなたのWebページでも多くのテキスト。"
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "より多くのHTMLを使用してこのページがより魅力的にします。または、少なくとも"
+#~ "をより少ないテキストを書き込む"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "このWebページは、この比は正常です。"
+
+#~ msgid "Outgoing Links"
+#~ msgstr "発信リンク"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "リンク数が大きい。"
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "リンクの数が多すぎる。"
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "リンク数を低下させることが必要があります"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "RELとのリンクは、属性"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "title属性とリンク"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "nofollowをREL attibuteとリンク"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "リンクをRELとtitle属性を入れて"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "画像の最適な使用は、高さ、幅、 ALT属性を持つ必要があります。画像は、ブラウ"
+#~ "ザでサイズ変更するべきではありません。"
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "テキストプレゼンテーションはタイトルやbodyタグの階層に優れています。 H1、"
+#~ "H2、H3、H4 、 H5 、 H6タグを適切に使用してください。"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Webページが豊富で視覚的に見栄え最適な内容である場合には、この比率が決定さ"
+#~ "れます。これは、ランキングの要因ではない、20％ 〜70％の間でなければなりま"
+#~ "せん。"
+
+#~ msgid "Link Numbers"
+#~ msgstr "リンク番号"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "リンクの数は、ページランクの決定において重要な役割を果たしている。番号は、"
+#~ "最適化すべきと非常に高くすべきではない。"
+
+#~ msgid "Link Attributes"
+#~ msgstr "リンク属性"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "2 REL属性と任意のWebページへのリンク用のタイトルがあります。彼らはリンクを"
+#~ "定義し、それ'sの機能。"
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "このWebページには、合計になります"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTPリクエスト。"
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "タイプがあります。"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "javascriptのための"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "スタイルシートのために。"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "これが高いので少ないHTTP要求を行うようにしてください。最適化されたテーマと"
+#~ "ウィジェットを使用"
+
+#~ msgid "Reduce it"
+#~ msgstr "それを減らす"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "これは非常に高いので少ないHTTP要求を行うようにしてください。最適化された"
+#~ "テーマとウィジェットを使用"
+
+#~ msgid "Must Reduce"
+#~ msgstr "削減しなければならない"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "スタイルシートは@インポートを通じてHTTP要求を行っている"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "@インポートURLを削除し、スタイルシートrel属性を持つリンクを介してheadタグ"
+#~ "内に配置"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "スタイルシートは、内部で任意のHTTP要求を行っていません"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr ""
+#~ "style属性は、一部またはすべてのoccurancesで上記のタグに存在している。"
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "見つけて削除するクラス属性とスタイル属性を、メインのCSSファイルにスタイル"
+#~ "を入れて"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "いいえstyle属性は、任意のタグに存在していません。"
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "このWebページにはHTMLエラーはありません。"
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "があります"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "あなたのWebページのHTML内のエラー："
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "エラー掘り下げるとエラー、あなたのテーマや、任意のプラグインを引き起こして"
+#~ "いる何かを見つけると、それを解決する"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "スタイルシートとJavaScriptのの％は、ヘッド部にロードされます。"
+
+#~ msgid "This is high"
+#~ msgstr "これは高い"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr ""
+#~ "フッターセクションに複数のスクリプトを追加して、ヘッダー·セクションから削"
+#~ "除"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "ミクロ豊富なスニペットは、このWebページに存在している。"
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "豊富なスニペットのタイプです"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "このWebページにはミクロ豊富スニペット存在はありません。"
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "マークアップミクロ豊かスニペットを使用してWebページに任意の無料SEOプラグイ"
+#~ "ンを使用してください。"
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "より多くの要求がよりダウンロードを呼び出しますとより多くの時間を取るた"
+#~ "め、 HTTP要求あなたのWebページの数は、サーバーに影響の文書のロード時間から"
+#~ "コンテンツをフェッチできるようになり"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "スタイルシートのインポートURL"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "スタイルシートの内側の@ importパラメータが不要な文書の負荷を増加させるにバ"
+#~ "インドされています。これは避けるべきである"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "WebページのHTMLの任意の要素でこれを使用すると、増大ブラウザレンダリング時"
+#~ "間で品質を低下させる"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "ブラウザの互換性"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "GoogleがあなたのWebページ（例えばmozila Firefoxの、クロム、インターネット"
+#~ "エクスプローラ、サファリ、オペラなど）が別のブラウザで、[OK]を調査すべきだ"
+#~ "とたい、と我々はチェックすることができます基本的な事はどうかとhtmlの内部エ"
+#~ "ラーです。"
+
+#~ msgid "Visual Complition"
+#~ msgstr "ビジュアルComplition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "総HTTP要求に比べて、ヘッダーで行われたHTTPリクエストは、重要な設計基準パラ"
+#~ "メータである視覚complitionを、影響を与える"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "リッチスニペット"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "HTMLマークアップのこのタイプは、レンダリングするために、エンジンのページを"
+#~ "検索するためのより多くの情報を提供します。 Googleはミクロ型マークアップを"
+#~ "奨励するために検索エンジンランクページでは、この増加のユーザーエクスペリエ"
+#~ "ンス"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr ""
+#~ "自動生成されたとして、 Googleのこのページを混乱させる可能性があります。"
+
+#~ msgid "because of this part"
+#~ msgstr "なぜならこの部分の"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "パーマリンクの別のタイプにあなたのURLを変更"
+
+#~ msgid "Change it"
+#~ msgstr "それを変更する"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "このWebページのURLは、ガイドラインを維持します。"
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "WebページのURLが大きすぎます。 Googleはスパム考えるかもしれません。"
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "あなたのURLのサイズとページまたはポストエディタでタイプを変更します。あな"
+#~ "たは、任意のセッショントラッキングを使用していないことを確認してください"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "ヘッダー内のLast-Modifiedの部分が発見された。もし修飾-SinceのはOnです。"
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "ヘッダー内のLast-Modifiedの一部が見つかりません。もし修飾-Sinceのではオフ"
+#~ "です"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "もし修飾- Sinceヘッダーをアクティブにするためにあなたのホスティングプロバ"
+#~ "イダにお問い合わせください"
+
+#~ msgid "Ask for it"
+#~ msgstr "自ら災難を招く"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr ""
+#~ "キャッシュが有効になっています。このWebページは、キャッシュ·パラメータを以"
+#~ "下ました。"
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr ""
+#~ "キャッシュが非アクティブです。このWebページには、ドン'tはキャッシュパラ"
+#~ "メータを返します。"
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "優れたユーザーエクスペリエンスのためのキャッシュ·メソッドを使用します。利"
+#~ "用可能な任意のフリーキャッシュプラグインを使用"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "アライブ接続がオフに保つ"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr ""
+#~ "アライブ接続を維持活性化するためにあなたのホスティングプロバイダにお問い合"
+#~ "わせください"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "でアライブ接続を維持"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "あなたのWebページのヘッダーのgzip圧縮が有効になっています。"
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "圧縮方法は、ウェブページに見出されていません。"
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "より良い結果のためにgzip圧縮を有効にします。無料のプラグインを使用してくだ"
+#~ "さい。"
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "あなたは、 WordPressのバージョンを使用している"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "あなたは、おそらくそれ' saの修正CMS wordpressのコアと、ワードプレスを使用"
+#~ "しています。"
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "適切なワードプレスのソフトウェアを使用してください"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "urlは変数の情報を持っているか、またはである場合以上の255バイトは、検索エン"
+#~ "ジンがそれをスパムとして検討していきます。"
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "これは、サーバーの機能です。変更は、ウェブページのコンテンツに行われるたび"
+#~ "に、これは自動的に、検索エンジンのロボットに通知します。"
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "キャッシング、HTML、CSS 、 JavaScriptは、ユーザーのブラウザ内の画像は、ド"
+#~ "キュメントのロード時間を減らすのに非常に役立ちます。検索エンジンのクローラ"
+#~ "は、より良いドキュメントのロード時間でWebページが好きです。"
+
+#~ msgid "Keep Alive"
+#~ msgstr "生き続ける"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "これは、サーバーの機能です。これは時間の言った額のサーバーとアクティブなブ"
+#~ "ラウザとの間の接続を維持します。と過剰コミュニケーションのための時間を節約"
+#~ "できます。したがって、それは良いです、ドキュメントのロード時間を削減しま"
+#~ "す。"
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "このサーバ機能は、 gzipで圧縮された形式でブラウザにWebページのコンテンツを"
+#~ "配信します。したがって、帯域幅やWebページサイズを低下させる。"
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "コンテンツ管理システム（CMS ）は、サーバに保管スクリプトからウェブページを"
+#~ "作成する。だから、 Googleのクローラは、この内容は、自動生成されたことを考"
+#~ "えるかもしれません。しかし、 WordPressのユーザーのために、これは問題ではあ"
+#~ "りません。"
+
+#~ msgid "Web Page"
+#~ msgstr "ウェブページ"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr ""
+#~ "検索エンジンとの互換性、標準としてGoogleウェブマスター向けガイドライン"
+
+#~ msgid "Theme Used"
+#~ msgstr "テーマは、使用される"
+
+#~ msgid "Time Taken"
+#~ msgstr "かかった時間"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "スキャン秒"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "コンポーネントをロードするための秒"
+
+#~ msgid "Percentage"
+#~ msgstr "パーセンテージ"
+
+#~ msgid "Success"
+#~ msgstr "成功"
+
+#~ msgid "Failure"
+#~ msgstr "失敗"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Webページ全体のSEOのパフォーマンス"
+
+#~ msgid "Complete"
+#~ msgstr "完成"
+
+#~ msgid "Incomplete"
+#~ msgstr "不完全"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Webページでは、データの概要最適"
+
+#~ msgid "Required"
+#~ msgstr "必須"
+
+#~ msgid "Completed"
+#~ msgstr "完成した"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "ソーシャルデータの比較"
+
+#~ msgid "Actual"
+#~ msgstr "実際"
+
+#~ msgid "Ideal Case"
+#~ msgstr "理想的なケース"
+
+#~ msgid "none"
+#~ msgstr "なし"
+
+#~ msgid "header"
+#~ msgstr "ヘッダ"
+
+#~ msgid "body"
+#~ msgstr "ボディ"
+
+#~ msgid "full"
+#~ msgstr "フル"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "視覚complition指数の近似パターン"
+
+#~ msgid "web page loading"
+#~ msgstr "ウェブページの読み込み"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "ビジュアルcomplition率"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScriptの"
+
+#~ msgid "Styles"
+#~ msgstr "スタイル"
+
+#~ msgid "Pure Text"
+#~ msgstr "純粋なテキスト"
+
+#~ msgid "Alt Text"
+#~ msgstr "altテキスト"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "サーバーのパフォーマンスの比較"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "技術的側面の概要"
+
+#~ msgid "New Scan"
+#~ msgstr "新規スキャン"
+
+#~ msgid "Notes"
+#~ msgstr "注釈"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "任意のページまたはポストまたはスキャンするためのカスタムURLを入力して選択"
+#~ "しました"
+
+#~ msgid "OR"
+#~ msgstr "OR"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "スキャンするためのポストを選択してください"
+
+#~ msgid "Scan Post"
+#~ msgstr "ポストをスキャン"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "カスタムURLを入力してください"
+
+#~ msgid "Scan URL"
+#~ msgstr "URLをスキャン"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "コントローラのスキャンの前に物事が知って"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "概要チャートデータは近似計算であり、任意の検索エンジンのアルゴリズムで計算"
+#~ "を表すものではありません。"
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "結果に表示されたいくつかのパラメータは、Googleのガイドラインに直接含まれて"
+#~ "いません。しかし、彼らは間接的に影響を与えます。"
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr "結果ページでの説明を見て下線の要素の上にカーソル。"
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "あなたのウェブサイト、サーバー、または何かからのデータは、任意のサーバーに"
+#~ "よってキャプチャされていません。コントローラのスキャンは、ブラウザ上で完全"
+#~ "に実行されます。"
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "urlはエラーを返します。 404見つかりません、それはウェブページが存在し、検"
+#~ "索エンジンが存在しないことを意味し、それをインデックスしない意志あなたの"
+#~ "ウェブサイトの既存のウェブページのURLを入力してください。"
+
+#~ msgid "Print Report"
+#~ msgstr "レポートを印刷する"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "SEOのヒント→"
+
+#~ msgid "Data"
+#~ msgstr "データ"
+
+#~ msgid "Technical"
+#~ msgstr "テクニカル"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "ソーシャル共有データ（"
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Facebookからグラフプロトコルを開き、グーグルなど、ほぼすべての主要なソー"
+#~ "シャルメディアによって受け入れ+"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Webページのデータ"
+
+#~ msgid "Remarks"
+#~ msgstr "備考"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→は、テキストの内容をクロール"
+
+#~ msgid "Total Text"
+#~ msgstr "合計のテキスト"
+
+#~ msgid "In page Style"
+#~ msgstr "ページのスタイルで"
+
+#~ msgid "In page Script"
+#~ msgstr "ページスクリプト内の"
+
+#~ msgid "Scan by"
+#~ msgstr "でスキャン"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "アクション"
+
+#~ msgid "Length "
+#~ msgstr "長さ"
+
+#~ msgid " for image "
+#~ msgstr "イメージのため"

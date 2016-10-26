@@ -1,0 +1,2384 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-08-21 00:35+0530\n"
+"PO-Revision-Date: 2015-08-21 00:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Bulgarian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../complete-google-seo-scan.php:93
+#, fuzzy
+msgid ""
+"Complete Google SEO Scan Plugin will not be activated because your PHP "
+"version"
+msgstr ""
+"Пълна Google SEO Scan изисква PHP 5.3 + и няма да се активира , текущата "
+"конфигурация работи сървъра PHP версия"
+
+#: ../complete-google-seo-scan.php:93
+msgid "is less than required 5.3. See more information:"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:118
+msgid "Start Here"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:154
+#, fuzzy
+msgid "Seo Scan Overview"
+msgstr "Социален обмен на данни преглед"
+
+#: ../complete-google-seo-scan.php:154 ../complete-google-seo-scan.php:164
+#, fuzzy
+msgid "Seo Scan"
+msgstr "SEO Scan"
+
+#: ../complete-google-seo-scan.php:244
+msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:275
+msgid "Choose Post types to show"
+msgstr ""
+
+#: ../core/ajax-handle.php:62 ../core/overview-ajax.php:16
+#, fuzzy
+msgid "Invalid Request"
+msgstr "Изпрати Заявка"
+
+#: ../core/ajax-handle.php:91
+#, fuzzy
+msgid "Server Issue"
+msgstr "Сървърни точки"
+
+#: ../core/ajax-handle.php:112
+msgid "Can not Download the Webpage"
+msgstr ""
+
+#: ../core/overview-ajax.php:24 ../core/overview-ajax.php:78
+#: ../core/overview-ajax.php:88 ../core/overview-ajax.php:136
+#, fuzzy
+msgid "Improper Request"
+msgstr "Изпрати Заявка"
+
+#: ../core/overview-ajax.php:54
+#, fuzzy
+msgid "Network Error"
+msgstr "текстовото поле грешка"
+
+#: ../core/overview-ajax.php:64
+msgid "Failed, Server Issue"
+msgstr ""
+
+#: ../core/overview-ajax.php:97
+msgid "No Files Found"
+msgstr ""
+
+#: ../user/front-end.php:95
+msgid "OVERVIEW"
+msgstr ""
+
+#: ../user/front-end.php:101
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../user/front-end.php:108
+msgid "REPORT"
+msgstr ""
+
+#: ../user/front-end.php:109
+msgid "ACTIONS"
+msgstr ""
+
+#: ../user/front-end.php:134
+msgid "Heading"
+msgstr ""
+
+#: ../user/front-end.php:140
+msgid "Alt"
+msgstr ""
+
+#: ../user/front-end.php:146
+#, fuzzy
+msgid "Anchor"
+msgstr "Котва текст"
+
+#: ../user/front-end.php:152
+msgid "Title"
+msgstr "заглавие"
+
+#: ../user/front-end.php:158
+msgid "Description"
+msgstr "описание"
+
+#: ../user/front-end.php:164
+msgid "Url"
+msgstr ""
+
+#: ../user/front-end.php:192
+msgid "Name"
+msgstr "име"
+
+#: ../user/front-end.php:205 ../user/front-end.php:410
+msgid "SSL security"
+msgstr ""
+
+#: ../user/front-end.php:206
+msgid "WWW Resolve"
+msgstr ""
+
+#: ../user/front-end.php:207
+msgid "IP forwarding"
+msgstr ""
+
+#: ../user/front-end.php:208 ../user/front-end.php:435
+#, fuzzy
+msgid "Gzip Compression"
+msgstr "GZIP компресия"
+
+#: ../user/front-end.php:209
+#, fuzzy
+msgid "Cache"
+msgstr "Кеширане"
+
+#: ../user/front-end.php:210 ../user/front-end.php:417
+#, fuzzy
+msgid "If modified since"
+msgstr "Ако - модифицирано Тъй като"
+
+#: ../user/front-end.php:211
+msgid "Response Time"
+msgstr ""
+
+#: ../user/front-end.php:211 ../user/front-end.php:430
+msgid "miliseconds"
+msgstr ""
+
+#: ../user/front-end.php:218 ../user/front-end.php:463
+#: ../user/front-end.php:470
+msgid "More"
+msgstr ""
+
+#: ../user/front-end.php:251
+msgid "Categories"
+msgstr ""
+
+#: ../user/front-end.php:266
+msgid "Tags"
+msgstr ""
+
+#: ../user/front-end.php:275
+msgid "All Time"
+msgstr ""
+
+#: ../user/front-end.php:276
+msgid "Today"
+msgstr ""
+
+#: ../user/front-end.php:277
+msgid "7 days"
+msgstr ""
+
+#: ../user/front-end.php:278
+msgid "30 days"
+msgstr ""
+
+#: ../user/front-end.php:279
+msgid "90 days"
+msgstr ""
+
+#: ../user/front-end.php:280
+msgid "Never"
+msgstr ""
+
+#: ../user/front-end.php:307
+msgid "<code>< title</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:308
+msgid ""
+"<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:309
+msgid ""
+"Long tail keywords are helpful for seo. Use them with percistance but don't "
+"spam."
+msgstr ""
+
+#: ../user/front-end.php:310
+msgid "Write a minimum of 200 words atleast."
+msgstr ""
+
+#: ../user/front-end.php:311
+msgid ""
+"Use enough text in comparison of HTML. But also don't use too much text."
+msgstr ""
+
+#: ../user/front-end.php:312
+msgid ""
+"Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</"
+"code>, <code>h3</code>."
+msgstr ""
+
+#: ../user/front-end.php:313
+msgid ""
+"Crawler robots can not read image links. Please use some text inside links "
+"also."
+msgstr ""
+
+#: ../user/front-end.php:314
+msgid "Use nofollow links and dofollow links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:315
+msgid "Use external links and internal links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:316
+#, fuzzy
+msgid "The webpage looks like a link farm. Reduce number of links."
+msgstr "Моля, опитайте се да се намали броя на връзките ."
+
+#: ../user/front-end.php:317
+msgid "Put proper <code>alt</code> tags in images."
+msgstr ""
+
+#: ../user/front-end.php:318
+msgid "Don't use nested tables, i.e. tables within table columns."
+msgstr ""
+
+#: ../user/front-end.php:319
+msgid "Remove style attributes from all HTML tags and use .css file instead."
+msgstr ""
+
+#: ../user/front-end.php:320
+msgid ""
+"<code>< meta name=\"viewport\"</code> tag should be present for scaling "
+"webpage with device size."
+msgstr ""
+
+#: ../user/front-end.php:321
+msgid ""
+"<code>@media</code> query is not found. The webpage should be mobile ready."
+msgstr ""
+
+#: ../user/front-end.php:322
+msgid "Get an SSL certificate and use url with <code>https://</code>."
+msgstr ""
+
+#: ../user/front-end.php:323
+msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
+msgstr ""
+
+#: ../user/front-end.php:324
+msgid "Url with and without WWW should redirect to same url. Resolve it."
+msgstr ""
+
+#: ../user/front-end.php:325
+#, fuzzy
+msgid "Put a canonical link."
+msgstr "Сложете един каноничен връзка"
+
+#: ../user/front-end.php:326
+msgid "Enable If modified since header."
+msgstr ""
+
+#: ../user/front-end.php:327
+msgid ""
+"<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
+"value."
+msgstr ""
+
+#: ../user/front-end.php:328
+msgid "Put an IP address and forward to page url"
+msgstr ""
+
+#: ../user/front-end.php:329
+msgid "Header response time is too long. Improve website server."
+msgstr ""
+
+#: ../user/front-end.php:330
+#, fuzzy
+msgid "Enable gZip compression."
+msgstr "GZIP компресия"
+
+#: ../user/front-end.php:331
+msgid "Enable Browser Caching."
+msgstr ""
+
+#: ../user/front-end.php:332
+msgid "Reduce number of HTTP requests made by .css and .js files."
+msgstr ""
+
+#: ../user/front-end.php:333
+msgid "Compress resorce files and increase loading speed."
+msgstr ""
+
+#: ../user/front-end.php:334
+msgid ""
+"Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
+"sharing."
+msgstr ""
+
+#: ../user/front-end.php:340
+msgid "Help"
+msgstr ""
+
+#: ../user/front-end.php:365
+msgid "Select popular words"
+msgstr ""
+
+#: ../user/front-end.php:369
+#, fuzzy
+msgid "Number of words"
+msgstr "Брой връзки"
+
+#: ../user/front-end.php:369
+msgid ""
+"Minimum 200 words in a webpage is required. Write enough words to describe "
+"the page well."
+msgstr ""
+
+#: ../user/front-end.php:370
+#, fuzzy
+msgid "Text to html ratio"
+msgstr "Текст към HTML съотношение за тази уеб страница е"
+
+#: ../user/front-end.php:370
+msgid ""
+"There must be enough text in webpage as compared with total size. About 15% "
+"to 70%"
+msgstr ""
+
+#: ../user/front-end.php:371
+#, fuzzy
+msgid "Text hiarerchy"
+msgstr "Текст Йерархия"
+
+#: ../user/front-end.php:371
+msgid ""
+"A bulk of text is not useful, rather text content with proper heading tags "
+"are needed."
+msgstr ""
+
+#: ../user/front-end.php:374
+#, fuzzy
+msgid "Image Links"
+msgstr "Снимки"
+
+#: ../user/front-end.php:374
+msgid ""
+"Links that conatin only image but no text is considered poorly optimized."
+msgstr ""
+
+#: ../user/front-end.php:375
+#, fuzzy
+msgid "Nofollow Links"
+msgstr "Брой връзки"
+
+#: ../user/front-end.php:375
+msgid ""
+"Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
+"all links from crawling."
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid "External Links"
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid ""
+"Links that points to other domain must be present, in a proportional number."
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid "Nested Tables"
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid ""
+"In markup of webpage, if table element is put inside a column of another "
+"table, it makes the page slow."
+msgstr ""
+
+#: ../user/front-end.php:395
+#, fuzzy
+msgid "Style Attributes"
+msgstr "Style Умение"
+
+#: ../user/front-end.php:395
+msgid ""
+"attribute present in markup tags is not a good practice and increases render "
+"time."
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid "Media Queries"
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid ""
+"For responsive web design, you need to have <code>@media</code> elements "
+"inside .css files."
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid "Viewport Tag"
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid ""
+"On <code>head</code> area of webpage, there is a tag which helps in scaling "
+"the dimensions according to display size."
+msgstr ""
+
+#: ../user/front-end.php:411
+msgid "Static url "
+msgstr ""
+
+#: ../user/front-end.php:412
+msgid "Use of underscores in Url"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid "www Resolve"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid ""
+"Check if url is showing same webpage for url with and without \"www.\" prefix"
+msgstr ""
+
+#: ../user/front-end.php:417
+msgid ""
+"Let web server tell Google whether your content has changed since google bot "
+"last crawled your site."
+msgstr ""
+
+#: ../user/front-end.php:420
+#, fuzzy
+msgid "Canonical Url"
+msgstr "Canonical Link"
+
+#: ../user/front-end.php:420
+msgid ""
+"Let Google know, same content is available through multiple URL structures "
+"or via syndication."
+msgstr ""
+
+#: ../user/front-end.php:421
+#, fuzzy
+msgid "Meta Robot"
+msgstr "мета роботи"
+
+#: ../user/front-end.php:421
+msgid ""
+"Visibility in search result stops on use of \"noindex\" value in robots meta "
+"tag."
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid "IP Forwarded"
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid ""
+"Check if server IP address (internet protocol) is forwarding to the same url "
+"or not."
+msgstr ""
+
+#: ../user/front-end.php:430
+msgid "Header response time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Loading time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Seconds"
+msgstr ""
+
+#: ../user/front-end.php:435
+msgid ""
+"Deliver page content in a compressed .gzip file to reduce bandwidth and "
+"loading time."
+msgstr ""
+
+#: ../user/front-end.php:436
+#, fuzzy
+msgid "Browser Caching"
+msgstr "Кеширане"
+
+#: ../user/front-end.php:436
+msgid ""
+"Store page assets in browser of user for specific time, to load it faster "
+"next time."
+msgstr ""
+
+#: ../user/front-end.php:439 ../user/front-end.php:440
+#, fuzzy
+msgid "requests"
+msgstr "Изпрати Заявка"
+
+#: ../user/front-end.php:463
+msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
+msgstr ""
+
+#: ../user/front-end.php:512
+msgid "And that's fine."
+msgstr ""
+
+#: ../user/front-end.php:513
+msgid "That's too much of text, please write less."
+msgstr ""
+
+#: ../user/front-end.php:514
+msgid "That's too little text, please write more."
+msgstr ""
+
+#: ../user/front-end.php:521
+msgid "Url is clean and tidy"
+msgstr ""
+
+#: ../user/front-end.php:522
+msgid "Url has underscore"
+msgstr ""
+
+#: ../user/front-end.php:523
+msgid "Url is dynamic"
+msgstr ""
+
+#: ../user/front-end.php:524
+msgid "Url is dynamic and has underscore"
+msgstr ""
+
+#: ../user/front-end.php:686
+msgid "items"
+msgstr ""
+
+#: ../user/front-end.php:691 ../user/display/overview-display.php:86
+msgid "of"
+msgstr ""
+
+#: ../user/front-end.php:706
+msgid "All Items Matched"
+msgstr ""
+
+#: ../user/front-end.php:709
+msgid "No Match Found"
+msgstr ""
+
+#: ../user/lib/btn-object.php:39
+msgid "Button Error"
+msgstr ""
+
+#: ../user/lib/accordion-object.php:21
+msgid "Click to toggle"
+msgstr ""
+
+#: ../user/lib/dropdown-object.php:55 ../user/lib/dropdown-object.php:72
+msgid "DROPDOWN ERROR"
+msgstr "Падащо ГРЕШКА"
+
+#: ../user/display/overview-display.php:4
+msgid "Scan Overview"
+msgstr ""
+
+#: ../user/display/overview-display.php:25 ../user/display/scan-display.php:24
+msgid ""
+"Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
+"<i>Theme and Plugins Design Seo</i>."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "You will see them bellow."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "Then reload the page."
+msgstr ""
+
+#: ../user/display/overview-display.php:45
+msgid "ARCHIVES"
+msgstr ""
+
+#: ../user/display/overview-display.php:69
+msgid "SCAN ARCHIVE PAGE"
+msgstr ""
+
+#: ../user/display/overview-display.php:78
+#, fuzzy
+msgid "Content Status"
+msgstr "съдържание"
+
+#: ../user/display/overview-display.php:79
+msgid "Fetch results from stored scan reports."
+msgstr ""
+
+#: ../user/display/overview-display.php:85
+#, fuzzy
+msgid "Fetch Intel"
+msgstr "Изважда Резултати"
+
+#: ../user/display/overview-display.php:86
+msgid "reports processed."
+msgstr ""
+
+#: ../user/display/overview-display.php:88
+msgid "No pages are scaned. Use top navigation to go to list of pages."
+msgstr ""
+
+#: ../user/display/overview-display.php:128
+#, fuzzy
+msgid "Server Seo Status"
+msgstr "Сървърни точки"
+
+#: ../user/display/overview-display.php:133
+#: ../user/display/overview-display.php:153
+msgid "CHECK NOW"
+msgstr ""
+
+#: ../user/display/overview-display.php:146
+#, fuzzy
+msgid "Design Seo Status"
+msgstr "Сървърни точки"
+
+#: ../user/display/report-display.php:26
+msgid "sec"
+msgstr ""
+
+#: ../user/display/report-display.php:42
+msgid "Text & Links"
+msgstr ""
+
+#: ../user/display/report-display.php:43
+msgid "Design"
+msgstr "дизайн"
+
+#: ../user/display/report-display.php:44
+msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
+msgstr ""
+
+#: ../user/display/report-display.php:60
+msgid "IT'S ALL GOOD. NO ACTIONS NEEDED"
+msgstr ""
+
+#: ../user/display/report-display.php:64
+msgid "TAKE <span id=\"ActNum\"></span> FOLLOWING ACTIONS"
+msgstr ""
+
+#: ../user/display/scan-display.php:3
+#, fuzzy
+msgid "Scan Status"
+msgstr "Сканиране Page"
+
+#: ../user/display/scan-display.php:24
+msgid "You will find them here."
+msgstr ""
+
+#: ../user/display/scan-display.php:84 ../help/message-object.php:66
+msgid "words, focus is"
+msgstr ""
+
+#: ../user/display/scan-display.php:86
+#, fuzzy
+msgid "Not Scanned Yet"
+msgstr "сканират за"
+
+#: ../user/display/scan-display.php:108
+msgid "SCAN"
+msgstr ""
+
+#: ../user/display/scan-display.php:116
+msgid "FAILED"
+msgstr ""
+
+#: ../user/display/scan-display.php:127
+msgid "NEVER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:19
+msgid "Introduction"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have not included backlinks analysis, traffic metrics, knowledge graph "
+"and brand signals, because the intention is primarily on-page search "
+"optimization only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"If you catch a bug or want to give any feedback or feature suggestion you "
+"are welcome to email the plugin author"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../help/plugin-help-object.php:24
+msgid "Overview"
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Starting page of this plugin is named \"Seo Overview\". There you can find 3 "
+"types of features to scan 3 different aspects of your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Server seo scan"
+msgstr "Сървърни точки"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"will make a header request and find out 10 important points about the server "
+"and it's configuration. Practically, You can change them by using different "
+"plugins available."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Design seo scan"
+msgstr "дизайн точки"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"gives an idea about numbers of HTTP requests made by your webpages and "
+"resource size it takes to load a webpage. They are takken from "
+"<code>_enqueued</code> styles and scripts. All hard coded links are ignored, "
+"because it is assumed that you are using WordPress compatable themes."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Content Overview"
+msgstr "В галерията съдържанието на страницата"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"After you are done with scans for your webpages, you will be able to complie "
+"those individual content reports to a single report and gather actionable "
+"intelligence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid "Set Screen Options."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"for showing various post types in WordPress admin menus. You can select them "
+"using checkboxes. This option is available only in \"Scan Overview\" page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Secondly, you may use numbers of pages to show in any post type \"Scan Status"
+"\" plugins page. This is available in all other \"Scan Status\" pages "
+"created by this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Close this \"Help\" tab and open \"Screen Options\" tab to explore more."
+msgstr ""
+
+#: ../help/plugin-help-object.php:29
+msgid "How to use?"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is mobile "
+"ready. So, for regular WordPress users it will be very intuitive. The usage "
+"process has 3 steps."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Before you start"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"make sure you have taken Design seo and Server seo scans available at "
+"Overview page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Select a Page"
+msgstr "Изберете Page"
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid ""
+"from the individual list of webpage blocks, by clicking on corresponding "
+"\"SCAN\" button. Top navigation is to select posts from multiple post types "
+"and you may filter them according to time of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+"от отделните плочи на уеб страници, като кликнете на съответния бутон за "
+"избор. Има две падащи менюта за избор на мненията от множество типове служба "
+"и да ги филтрирате според времето и на полувремето на последния сканиране. "
+"Не забравяйте, че само \"публикува\" мнения се показват."
+
+#: ../help/plugin-help-object.php:30
+msgid "Wait for scan"
+msgstr "Изчакайте сканиране"
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid ""
+"to be completed. It will take a few seconds, approximately 2 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+
+#: ../help/plugin-help-object.php:30
+msgid "See results"
+msgstr "Виж резултатите"
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid ""
+"in a pop up on the same page as soon as the scan is complete. The result "
+"will have 7 segments."
+msgstr ""
+"в поп в същата страница, веднага след като приключи сканирането. Резултатът "
+"ще има пет сегмента."
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Overall score with social media counts."
+msgstr "Преглед и основна информация, както и броя на социалните медии."
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Search engine snippet and highlighted keyword."
+msgstr "Откъс търсачката и свързана с тях информация."
+
+#: ../help/plugin-help-object.php:30
+msgid "Most used words Analysis and information from text"
+msgstr "Най-често използваните думи Анализ и информация от текст"
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Use of Image and page design seo"
+msgstr "Използване на Media или изображение и видео SEO"
+
+#: ../help/plugin-help-object.php:30
+msgid "Required information on server and url."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Page specific speed and usability analysis."
+msgstr "Page специфична скорост и анализ за ползваемост."
+
+#: ../help/plugin-help-object.php:30
+msgid "A sample Facebook snippet from social media tags."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See required actions"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"listed in the same pop-up. Just click the button with the word \"ACTION\" at "
+"bottom. You will find step by step guidence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid ""
+"Scan result is displayed in an organized fashion with <strong>Hints</strong> "
+"and are easy to understand for someone with basic seo knowledge. For a "
+"primitive guideline of seo aspects see links at right sidebar of this area."
+msgstr ""
+"Придвижване в рамките на сегменти с помощта на бутоните със стрелки нагоре. "
+"Резултат Scan се извежда по организиран начин и са е лесно да се разбере за "
+"някой, с основни познания SEO. За един примитивен насока на SEO аспекти виж "
+"връзки в полето на страничната лента на тази област."
+
+#: ../help/plugin-help-object.php:34
+msgid "Performance"
+msgstr "производителност"
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+"Този плъгин използва ресурси от вашия уеб сървър за обработка на заявки за "
+"сканиране. Така че, вие ще получите по-висока пропускателна способност и "
+"използването на база данни. В стандартните WordPress инсталира, това "
+"увеличение е незначително. Вие вероятно няма да го забележи."
+
+#: ../help/plugin-help-object.php:35
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes less than 5 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"зависи от вашия сървър и сайт на качеството. Жилищна процес отнема около 10 "
+"секунди, за да завършите. Но е необходимо повече време, за да проверите "
+"заглавна страница и изтегляне на уеб страници ресурси."
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+"Много е минимална, тъй като това е плъгин администратор ориентирани. Всички "
+"Javascripts (.js файлове) и Stylesheets (.css файл) се зареждат само в админ "
+"страна."
+
+#: ../help/plugin-help-object.php:35
+msgid "That means, it won't slow down your website."
+msgstr "Това означава, че той няма да забави вашия сайт."
+
+#: ../help/plugin-help-object.php:39
+msgid "Data & Privacy"
+msgstr "Данни и Декларация за"
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+"Ние ценим сигурността на вашия сайт. Всички файлове и получената информация "
+"се съхранява само в вашия уеб сървър."
+
+#: ../help/plugin-help-object.php:40
+msgid "privacy Policy."
+msgstr "Декларация за поверителност."
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+"Ако инсталирате и актуализирате този плъгин от wordpress.org плъгин "
+"хранилище и да го използвате, както е, след това авторът плъгин не събира "
+"данни, каквато. Въпреки, други софтуери, инсталирани на вашия сървър могат "
+"да използват файлове на този плъгин или събиране на данни, получени от "
+"използването на този плъгин."
+
+#: ../help/plugin-help-object.php:40
+msgid "Data storage."
+msgstr "Съхранение на данни."
+
+#: ../help/plugin-help-object.php:40
+#, fuzzy
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. Other than those, there are 4 custom data arrays stored in "
+"\"_options\" database. When the plugin is uninstalled all of those data will "
+"be removed from your server."
+msgstr ""
+"В момента този плъгин съхранява данни като многомерен масив за всяка уеб "
+"страница, която сканира. Много неща, които виждате на тази страница са взети "
+"от това, че съхраняваните данни. Когато приставката се деинсталира тези "
+"данни ще останат в сървъра ви, untill изтрит от специална операция. Те няма "
+"да създаде никакви проблеми, въпреки че."
+
+#: ../help/plugin-help-object.php:44
+msgid "Do's and Don'ts"
+msgstr "Упътвания"
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+"Този плъгин е построен, за да ви помогне да разберете търсите статут "
+"оптимизация на уеб сайтове само на вашия сайт. Тя не ви позволява да "
+"сканирате всяка уеб страница от всеки домейн, различен от където е "
+"инсталиран. Молим Ви да не tweek кода по никакъв начин, така че този плъгин "
+"става в състояние да сканира страници от различни други области."
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+"Ние не можем да ви принуди, така че ако се направи такова нещо, авторът "
+"плъгин няма да бъде отговорен за каквито и да било правни и сигурността "
+"последици, които могат да дойдат. В противен случай, кодът е под GPL лиценз, "
+"можете да направите всичко, което пожелаете."
+
+#: ../help/plugin-help-object.php:49
+msgid "Updates"
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Future updates of this plugin is expected to contain more features and a new "
+"interface. Some of the features you may expect are Video Seo, Spam "
+"detection, Rich snippet calculation, Twitter v card, above the fold "
+"optimization, sitemap.xml check and robots.txt check. Internationalization "
+"and automatic scan are also desired property to be included."
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Tough the plugin author will take final decision about updates, you are free "
+"to inform about bugs and feature requests in support forum."
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Support Forum"
+msgstr "Форум за поддръжка"
+
+#: ../help/plugin-help-object.php:57
+msgid "Free Seo Resource"
+msgstr "Безплатно оптимизация ресурс"
+
+#: ../help/message-object.php:15
+msgid "Message"
+msgstr ""
+
+#: ../help/message-object.php:22
+msgid "Network error"
+msgstr ""
+
+#: ../help/message-object.php:23
+msgid "No .css or .js file"
+msgstr ""
+
+#: ../help/message-object.php:24
+msgid "is undefined"
+msgstr ""
+
+#: ../help/message-object.php:25
+msgid "View"
+msgstr ""
+
+#: ../help/message-object.php:26
+msgid "TITLE TAG"
+msgstr ""
+
+#: ../help/message-object.php:27
+msgid "META DESCRIPTION TAG"
+msgstr ""
+
+#: ../help/message-object.php:45
+msgid "NOT FOUND"
+msgstr "NOT FOUND"
+
+#: ../help/message-object.php:46
+msgid "SOCIAL MEDIA IMAGE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:47
+msgid "SOCIAL MEDIA TITLE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:48
+msgid "SOCIAL MEDIA DESCRIPTION TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:49
+#, fuzzy
+msgid "DOMAIN NAME NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:50
+#, fuzzy
+msgid "TITLE TAG NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:51
+#, fuzzy
+msgid "META DESCRIPTION TAG NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:53 ../help/message-object.php:54
+#, fuzzy
+msgid "Compression"
+msgstr "GZIP компресия"
+
+#: ../help/message-object.php:53
+msgid ".css and .js files can be more compressed to reduce"
+msgstr ""
+
+#: ../help/message-object.php:53
+msgid "in total size"
+msgstr ""
+
+#: ../help/message-object.php:54
+msgid "All .css and .js files are compressed enough."
+msgstr ""
+
+#: ../help/message-object.php:55
+msgid "All images are optimized."
+msgstr ""
+
+#: ../help/message-object.php:56
+msgid "Above images does not have <code>alt</code> tags."
+msgstr ""
+
+#: ../help/message-object.php:57
+#, fuzzy
+msgid "No images are present."
+msgstr "Някои главата тагове са налични,"
+
+#: ../help/message-object.php:58 ../help/message-object.php:59
+msgid "Links all total"
+msgstr ""
+
+#: ../help/message-object.php:58
+msgid "numbers are ok."
+msgstr ""
+
+#: ../help/message-object.php:59
+#, fuzzy
+msgid "Too much in number."
+msgstr "Твърде много HTML в уеб страницата си ."
+
+#: ../help/message-object.php:64
+#, fuzzy
+msgid "NO KEYWORDS FOUND"
+msgstr "NOT FOUND"
+
+#: ../help/message-object.php:65
+msgid "SPAM"
+msgstr ""
+
+#: ../help/message-object.php:73
+msgid ""
+"Total <span id=\"WordsIntel\"></span> words used. <span id="
+"\"WordsPerPageIntel\"></span> per page. Avg text to html ratio is <span id="
+"\"WordsRatioIntel\"></span>"
+msgstr ""
+
+#: ../help/message-object.php:74
+msgid ""
+"<span id=\"LinksNumIntel\"></span> links per page, nearly <span id="
+"\"ExtLinksIntel\"></span> external and <span id=\"ImgLinksIntel\"></span> "
+"image links of them."
+msgstr ""
+
+#: ../help/message-object.php:75
+msgid ""
+"Long tail keywords (avg <span id=\"KeyWordsSizeIntel\"></span> words long) "
+"were found in <span id=\"KeyWordsIntel\"></span> webpages."
+msgstr ""
+
+#: ../help/message-object.php:77
+msgid "Almost all images seems to be optimized."
+msgstr ""
+
+#: ../help/message-object.php:78
+msgid ""
+"Nearly <span id=\"ImagesIntelPercent\"></span> of pages have images without "
+"alt tags."
+msgstr ""
+
+#: ../help/message-object.php:79
+msgid ""
+"This website images are <span class=\"danger-icon\">not optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:82
+msgid "Your website is mobile optimized."
+msgstr ""
+
+#: ../help/message-object.php:83
+msgid ""
+"Some of your webpages<span id=\"DesignIntelPercent\"></span> are not mobile "
+"optimized."
+msgstr ""
+
+#: ../help/message-object.php:84
+msgid ""
+"Your website is <span class=\"danger-icon\">not mobile optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:87
+msgid "All urls are neat and clean."
+msgstr ""
+
+#: ../help/message-object.php:88
+msgid ""
+"Some urls <span class=\"danger-icon\">are dynamic</span><span id="
+"\"UrlIntelPercent\"></span> and <span class=\"danger-icon\">have underscore</"
+"span><span id=\"UrlIntelPercentTwo\"></span>."
+msgstr ""
+
+#: ../help/message-object.php:89
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> are <span class=\"danger-icon"
+"\">dynamic and contains underscore</span>."
+msgstr ""
+
+#: ../help/message-object.php:90
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> <span class=\"danger-icon"
+"\">are dynamic</span>."
+msgstr ""
+
+#: ../help/message-object.php:91
+msgid ""
+"Some urls <span id=\"UrlIntelPercentTwo\"></span> <span class=\"danger-icon"
+"\">have underscores</span>."
+msgstr ""
+
+#: ../help/message-object.php:94
+msgid "Your website is fast, takes less than a second load."
+msgstr ""
+
+#: ../help/message-object.php:95
+msgid "Your website loads fine, may try a little faster."
+msgstr ""
+
+#: ../help/message-object.php:96
+msgid "Your website is slow, make it faster."
+msgstr ""
+
+#: ../help/message-object.php:97
+msgid ""
+"Your website is <span class=\"danger-icon\">too slow</span>, serious "
+"improvement needed."
+msgstr ""
+
+#: ../help/message-object.php:100
+#, fuzzy
+msgid "Social media tags are present. Optimized for social sharing."
+msgstr "Някои главата тагове са налични,"
+
+#: ../help/message-object.php:101
+msgid ""
+"Social media tags are <span class=\"danger-icon\">incomplete</span> in "
+"almost <span id=\"StagIntelNoPercent\"></span>% pages."
+msgstr ""
+
+#: ../help/message-object.php:102
+msgid ""
+"Social media tags are nearly <span class=\"danger-icon\">absent</span>. Use "
+"them for better sharing."
+msgstr ""
+
+#: ../help/message-object.php:109
+msgid "enabled"
+msgstr ""
+
+#: ../help/message-object.php:114
+msgid "disabled"
+msgstr ""
+
+#: ../db/get-db.php:102
+msgid "ms"
+msgstr ""
+
+#: ../db/get-db.php:104
+msgid "s"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Other Points"
+#~ msgstr "Сървърни точки"
+
+#~ msgid "Percentage"
+#~ msgstr "процент"
+
+#~ msgid "Success"
+#~ msgstr "успех"
+
+#~ msgid "Failure"
+#~ msgstr "провал"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Web Page цялостното представяне SEO"
+
+#~ msgid "Complete"
+#~ msgstr "пълен"
+
+#~ msgid "Incomplete"
+#~ msgstr "непълен"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Web Page Optimized Data Преглед"
+
+#~ msgid "Required"
+#~ msgstr "длъжен"
+
+#~ msgid "Completed"
+#~ msgstr "завършен"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "Сравнение на данните за социалното"
+
+#~ msgid "Actual"
+#~ msgstr "действителен"
+
+#~ msgid "Ideal Case"
+#~ msgstr "идеалния случай"
+
+#~ msgid "none"
+#~ msgstr "никой"
+
+#~ msgid "header"
+#~ msgstr "удар с глава"
+
+#~ msgid "body"
+#~ msgstr "тяло"
+
+#~ msgid "full"
+#~ msgstr "пълен"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "Приблизително Модела на визуална complition Index"
+
+#~ msgid "web page loading"
+#~ msgstr "Зарежда уеб страница"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "Visual complition процент"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScripts"
+
+#~ msgid "Styles"
+#~ msgstr "Styles"
+
+#~ msgid "Pure Text"
+#~ msgstr "Pure Текст"
+
+#~ msgid "Alt Text"
+#~ msgstr "Alt Текст"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "Сравнение на работата на сървъра"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "Техническа дейност Преглед"
+
+#, fuzzy
+#~ msgid "Focus Keyword"
+#~ msgstr "мета Ключови думи"
+
+#, fuzzy
+#~ msgid "Fix"
+#~ msgstr "Решете"
+
+#~ msgid "Language"
+#~ msgstr "език"
+
+#, fuzzy
+#~ msgid "Total Images"
+#~ msgstr "Снимки"
+
+#, fuzzy
+#~ msgid "Image Seo"
+#~ msgstr "изображение"
+
+#, fuzzy
+#~ msgid "Check"
+#~ msgstr "Проверете отново"
+
+#~ msgid "Type"
+#~ msgstr "тип"
+
+#~ msgid "Image"
+#~ msgstr "изображение"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "Alt Текст"
+
+#, fuzzy
+#~ msgid "List of Anchor text"
+#~ msgstr "Котва текст"
+
+#, fuzzy
+#~ msgid "alt and anchor text"
+#~ msgstr "Котва текст"
+
+#~ msgid "Meta Description"
+#~ msgstr "Meta Description"
+
+#, fuzzy
+#~ msgid "Main content"
+#~ msgstr "съдържание"
+
+#, fuzzy
+#~ msgid "Alt text"
+#~ msgstr "Alt Текст"
+
+#, fuzzy
+#~ msgid "Anchor text"
+#~ msgstr "Котва текст"
+
+#, fuzzy
+#~ msgid "This webpage has total"
+#~ msgstr "Тази уеб страница прави общо"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "Данните преглед диаграма е приблизително изчисляване и не представлява "
+#~ "изчисления от всеки алгоритъм за търсене ."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "Някои параметри, показвани в резултатите не са включени директно в Google "
+#~ "насоки . Но те се отразяват косвено."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "Няма данни от вашия сайт , сървър или нещо е заловен от всеки сървър . "
+#~ "Scaning се извършва изцяло на браузъра."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "URL адресът връща грешка: 404 Not Found , Това означава, че няма уеб "
+#~ "страница настоящето и търсачки няма да го индекс. Въведете съществуваща "
+#~ "уеб страница URL на вашия сайт."
+
+#, fuzzy
+#~ msgid ""
+#~ "The new url returns error : 404 Not Found, That means there is no "
+#~ "indexable webpage and search engines will not index it. Enter existing "
+#~ "webpage url of your website."
+#~ msgstr ""
+#~ "URL адресът връща грешка: 404 Not Found , Това означава, че няма уеб "
+#~ "страница настоящето и търсачки няма да го индекс. Въведете съществуваща "
+#~ "уеб страница URL на вашия сайт."
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "Google Търсене Scan Engine Optimization за вашия уеб страница е пълна. "
+#~ "Ето и резултатите ."
+
+#~ msgid "at line"
+#~ msgstr "на ред"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "Тя \"е различен от сканираното URL на уеб страница"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr ""
+#~ "Бъдете сигурни, че искате вашия сайт да бъде индексиран от този каноничен "
+#~ "URL"
+
+#~ msgid "Recheck it"
+#~ msgstr "Уверете се отново, че"
+
+#~ msgid "OK"
+#~ msgstr "добре"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "Въведете Favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "дължина"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "знака ( Максимално допустимо 70 символа )"
+
+#~ msgid "Length"
+#~ msgstr "дължина"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr ""
+#~ "Тъй като повече от 70 знака няма да се показва в резултатите от търсенето"
+
+#~ msgid "Give shorter title"
+#~ msgstr "Дайте кратко заглавие"
+
+#~ msgid "Give a title."
+#~ msgstr "Дайте титлата."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "знака ( Максимално допустимо 155 знака)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "Напиши някои мета описание в рамките на 155 символа. Altough да не "
+#~ "ограничава класиране , но тя изглежда зле в резултат от търсене на "
+#~ "двигателя страницата. Следователно, може да намали честота на кликване "
+#~ "(CTR)"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "Направете го по-кратък."
+
+#~ msgid "This is not good."
+#~ msgstr "Това не е добре ."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "Маркерът е на мястото си , сега пиша някакъв мета описание"
+
+#~ msgid "Give a description"
+#~ msgstr "Дайте описание"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "Не е намерен."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "Въведете ключови думи , подходящи за вашия съдържанието на уеб страница , "
+#~ "много търсачки да го използвате , но не и Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "Въведете ключови думи."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "Meta робот е като Noindex Nofollow стойност. Това не е добре ."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "Промяна на роботи мета стойност от не - индекс и / или не - следват"
+
+#~ msgid "Fix this."
+#~ msgstr "Решаване ."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : локал мета тагове"
+
+#~ msgid "Fill it"
+#~ msgstr "Запълнете го"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : SITE_NAME мета тагове"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : вид мета тагове"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : етикет URL мета"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : заглавието мета тагове"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : мета тагове описание"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "Сложете истинската стойност на този ог : изображение мета тагове"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "Можете да използвате всякакви свободни плъгини SEO разположение , за да "
+#~ "получите опции, за да въведете описания"
+
+#~ msgid "Put the tag"
+#~ msgstr "Сложете етикет"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "Въведете ключови думи , подходящи за вашия съдържанието на уеб страница , "
+#~ "много търсачки да го използвате , но не и Google . Можете да използвате "
+#~ "всякакви свободни плъгини SEO разположение , за да получите опции, за да "
+#~ "въведете този етикет"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "Можете да използвате всякакви свободни плъгини SEO разположение , за да "
+#~ "получите опции, за да въведете желаната мета канонична връзка"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr ""
+#~ "По-добре е да се сложи етикет . В противен случай без големи притеснения"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr ""
+#~ "Поставете Favicon ICO изображение с помощта на контекстното етикет "
+#~ "иконата връзка"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : локал мета тагове в главата раздел с подходяща "
+#~ "стойност"
+
+#~ msgid "Fix it"
+#~ msgstr "Решете"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : SITE_NAME мета тагове в главата раздел с подходяща "
+#~ "стойност"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : тип мета тагове в главата раздел с подходяща стойност"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : заглавието мета тагове в главата раздел с подходяща "
+#~ "стойност"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : описание мета тагове в главата раздел с подходяща "
+#~ "стойност"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : етикет URL мета в главата раздел с подходяща стойност"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Поставете този ог : етикет изображението мета в главата раздел с "
+#~ "подходяща стойност"
+
+#~ msgid "Title Tag"
+#~ msgstr "Заглавие Tag"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr ""
+#~ "Заглавие на сайта. Това трябва да бъде описателно и в рамките на 70 "
+#~ "символа ."
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Описва уеб страница. Оптимална дължина е 155 символа и не е класиране "
+#~ "фактор."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "мета Ключови думи"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "Споменава използвани ключови думи в уеб страница. Това не е класиране "
+#~ "фактор."
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Canonicalization е процес на избор на най-добрата URL , когато има "
+#~ "няколко възможности за избор. Това каноничен мета тагове помага "
+#~ "търсачките да индексират страницата , която може да се подходи от "
+#~ "различни URL адреси (като http://www.example.com/ и http://example."
+#~ "com/ ) ."
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "Мета тагове роботи заявления търсачките да пълзи или да напусне уеб "
+#~ "страница. Ако дадена стойност на Noindex и Nofollow , уеб страница , няма "
+#~ "да бъдат индексирани."
+
+#~ msgid "Favicon Link"
+#~ msgstr "Favicon Link"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "Показва уникален образ до заглавието в горната част на браузъра. Good SEO "
+#~ "практика"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "Споделяне на езика, който ще използвате"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "Тип на приложението, което споделяте. Ето това е сайта"
+
+#~ msgid "Site Name"
+#~ msgstr "Име на сайта"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "Име на сайта. Ето това е"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "Наименование на споделеното съдържание. Може или не може да бъде същото "
+#~ "като заглавието на уеб страница"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "Орган на споделеното съдържание. Обикновено този текст се вижда на "
+#~ "споделени съдържание в социални мрежи медии"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Посочете линк уеб страница, този адрес се споделя и ще има линк ползи. Но "
+#~ "да бъда честен ."
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "Много е важно , защото това получава вниманието на потребителите тона си "
+#~ "споделят съдържание в социалните медии."
+
+#~ msgid "Total number of images"
+#~ msgstr "Общ брой на изображенията"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "Използване на \"ALT\" атрибут"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "Използване на \"височина\" атрибут"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "Използването на \"широчина\" атрибут"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "Поставете липсващите атрибути."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr "Не глави тагове намерен. Следователно няма текст йерархия е налице."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "Писане на текст в правилното йерархия."
+
+#~ msgid "All head tags are present"
+#~ msgstr "Всички главата тагове са налични,"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "Така че , има настоящия текст йерархия."
+
+#~ msgid "One head tag is present"
+#~ msgstr "Една глава таг е наличен"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "Уверете се, че текстът е в йерархията . Ако не е , моля да го направи "
+#~ "така ."
+
+#~ msgid "Check again"
+#~ msgstr "Проверете отново"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "Текст към HTML съотношение за тази уеб страница е"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "Напиши по-дълъг текст , поне"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "Твърде много текст на вашата уеб страница."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "Направете тази страница по-привлекателни с повече HTML . Или пишете по-"
+#~ "малко текст , поне"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "Това съотношение за тази уеб страница е нормално."
+
+#~ msgid "Outgoing Links"
+#~ msgstr "изходящи връзки"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "Брой връзки са големи ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "Брой връзки са твърде много."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "Броя на връзките трябва да се намали"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Връзки с REL атрибут"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "Връзки с дял атрибут"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Връзки с Nofollow отн attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "Сложете Отн и заглавие атрибути връзки"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "Оптимално използване на снимки трябва да има височина, ширина и височина "
+#~ "атрибут. Изображенията не трябва да се живее в браузъра."
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "Текст представяне е по-добре в йерархията на заглавията и тялото тагове . "
+#~ "Използвайте h1 , h2 , h3 , h4 , h5 , H6 тагове правилно."
+
+#~ msgid "text/html Ratio"
+#~ msgstr "текст / HTML буталото"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Това съотношение определя дали уеб страницата е оптимално богато "
+#~ "съдържание и визуално приличен. Това не е класиране фактор и трябва да "
+#~ "бъде между 20% до 70%."
+
+#~ msgid "Link Numbers"
+#~ msgstr "линк Numbers"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "Брой връзки играе важна роля при вземането на решение PageRank . Номерата "
+#~ "трябва да се оптимизира и не трябва да бъде много висока ."
+
+#~ msgid "Link Attributes"
+#~ msgstr "линк атрибути"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "Има две качества Отн и заглавие за всички връзки уеб страница. Те "
+#~ "определя връзката и да го \"и функция."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "Тази уеб страница прави общо"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTP заявки."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "Видове са"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "за JavaScript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "за стилове ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "Опитайте се да направите по-малко HTTP искания , защото това е висока. "
+#~ "Използвайте оптимизиран тема и джаджи"
+
+#~ msgid "Reduce it"
+#~ msgstr "Намалете"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "Опитайте се да направите по-малко HTTP искания , защото това е много "
+#~ "висока. Използвайте оптимизиран тема и джаджи"
+
+#~ msgid "Must Reduce"
+#~ msgstr "трябва да намали"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "Stylesheet прави HTTP искания чрез @ внос"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "Извадете @ URL внос и го поставете в главата маркер чрез връзката с "
+#~ "стилове REL атрибут"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "Stylesheet не прави всяко искане HTTP вътрешно"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr ""
+#~ "Style атрибут присъства в над етикети на някои или всички occurances ."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "Откриване и премахване на стил атрибути с класа атрибути и отбеляза за "
+#~ "стил в главния файл CSS"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "Не стил атрибут присъства в нито един етикет ."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "Не е HTML грешки в тази уеб страница."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "има"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "грешки в HTML на вашата уеб страница :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "Копаят в грешки и да разберете какво причинява грешки, вашата тема или "
+#~ "плъгин и да го разреши"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "% от стилове и JavaScripts са заредени в главата раздел."
+
+#~ msgid "This is high"
+#~ msgstr "Това е високо"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr ""
+#~ "Добавете още скриптове в долния раздел и ги изважда от заглавието раздел"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Микроданни богат фрагмент присъства на тази уеб страница ."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "Тип на богата фрагмент е"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "Не е микроданни богат настоящото фрагмент в тази уеб страница."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "Използвайте всяка свободна плъгин SEO за маркиране вашата уеб страница с "
+#~ "богата фрагмент микроданни ."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "Брой на искания HTTP уеб страницата си прави при изтеглянето на "
+#~ "съдържание от сървъра влияния време документ натоварване , защото повече "
+#~ "молби ще призове за повече сваляния и ще отнеме повече време"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "Stylesheet внос URL"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "@ внос параметър вътре стилове ще нараства ненужно натоварване документ. "
+#~ "Това трябва да се избягва"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "Използването на този във всеки елемент на HTML уеб страница, намалява "
+#~ "качеството посредством повишаване времето браузър оказване"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Браузър"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "Google иска , че вашата уеб страница трябва да изглежда добре в различни "
+#~ "браузъри (напр. Mozila Firefox, Chrome , Internet Explorer , Safari , "
+#~ "Opera и т.н.) , и основно нещо, което може да се провери, е грешки вътре "
+#~ "Йор HTML"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Visual Complition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "HTTP искания, отправени в заглавието в сравнение с всички заявки за HTTP "
+#~ "влияе визуално complition , който е важен параметър дизайн стандарт"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "Rich Snippet"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "Този тип HTML маркиране дава повече информация на търсачката страници, за "
+#~ "да направят . Google насърчава микроданни вид маркиране , защото това "
+#~ "увеличава потребителския опит в търсене на двигателя Място"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr ""
+#~ "Google може да обърка тази страница, тъй като автоматично генерирани ."
+
+#~ msgid "because of this part"
+#~ msgstr "защото на тази част"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "Промяна на URL на различен вид постоянна връзка"
+
+#~ msgid "Change it"
+#~ msgstr "Променете я"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "Този URL адрес на уеб страница поддържа насоки ."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr ""
+#~ "URL адресът на уеб страницата е твърде голям . Google може да счете за "
+#~ "спам."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "Промяна на URL размера и вида на редактор страница или пост . Уверете се, "
+#~ "че не използвате някое проследяване на сесията"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "Последно модифициран участие в заглавието е намерен. Ако - модифицирано "
+#~ "Тъй като е On."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "Последно модифициран участие в заглавието не е намерена . Ако - "
+#~ "модифицирано Тъй като е Изключен"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "Посъветвайте се с Вашия доставчик на хостинг услуги , за да активирате "
+#~ "Ако - модифицирано От заглавието"
+
+#~ msgid "Ask for it"
+#~ msgstr "Търся си го"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "Cache е активна. Тази уеб страница е след кеш параметри."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr "Cache е неактивен. Тази уеб страница не'т връща кеш параметри."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "Използвайте метод кеш за по-добър потребителски опит. Използвайте всяка "
+#~ "свободна плъгин кеш на разположение"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "Дръжте Alive Connection е Изключен"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr ""
+#~ "Посъветвайте се с Вашия доставчик на хостинг услуги , за да активирате "
+#~ "запази жива Connection"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "Запази жива връзка на"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "GZIP компресия във вашите заглавия уеб страница е включен ."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "Не се извършва компресия метод е намерена в уеб страница."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "Активирайте GZIP компресия за по-добри резултати . Използвайте безплатни "
+#~ "плъгини ."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "Вие използвате WordPress версия"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "Вие използвате WordPress , най-вероятно го \" АД модифициран с CMS "
+#~ "WordPress ядро."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "Моля, не WordPress софтуер"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "Ако URL е променлива информации или е повече от 255 байта , търсачките ще "
+#~ "го разглежда като спам."
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "Това е сървър функция. Това автоматично информира търсачките , при всяка "
+#~ "промяна се извършва в съдържанието на уеб страница ."
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "Изчакват JavaScripts HTML, CSS, , изображения Потребителите браузъри "
+#~ "могат да бъдат много полезни за намаляване на времето документ "
+#~ "натоварване . Търсачките обича уеб страници с по-добро време документ "
+#~ "натоварване ."
+
+#~ msgid "Keep Alive"
+#~ msgstr "Дръжте Alive"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "Това е сървър функция. Това поддържа връзката между сървъра и сваляне "
+#~ "активно за споменатия период от време. И спестява време за излишната "
+#~ "комуникация. От това намалява времето документа натоварване, което е по-"
+#~ "добре ."
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "Този сървър функция доставя съдържанието на уеб страница за сваляне в "
+#~ "GZIP компресиран формат . Следователно той понижава връзка и размера на "
+#~ "уеб страница."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "Система за управление на съдържанието (CMS) създава уеб страница от "
+#~ "скриптове , съхранявани в сървър. Така че, Google роботите могат да "
+#~ "смятат, че това съдържание да бъде автоматично генериран . Но , за "
+#~ "потребители WordPress това не е проблем."
+
+#~ msgid "Web Page"
+#~ msgstr "уеб страница"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "Съвместимост търсачка , Google Webmaster насоки като стандарт"
+
+#~ msgid "Theme Used"
+#~ msgstr "палитрата, използвана"
+
+#~ msgid "Time Taken"
+#~ msgstr "Взети Time"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "секунди за сканиране"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "секунди за зареждане на компоненти"
+
+#~ msgid "Scan Now"
+#~ msgstr "Сканиране Сега"
+
+#, fuzzy
+#~ msgid "Keyword"
+#~ msgstr "мета Ключови думи"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "Всяка версия PHP 5.3.0 по-малко от е достигнал \"края на живота\" от PHP."
+#~ "net и не получава повече бъгове orsecurity актуализации. Официалната "
+#~ "информация за това как да се актуализират и защо най-"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "Пълна Google SEO Scan"
+
+#~ msgid "Brought to you by"
+#~ msgstr "Донесох ви от"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO Blog"
+
+#~ msgid "New Scan"
+#~ msgstr "New Scan"
+
+#~ msgid "Notes"
+#~ msgstr "отбелязва"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "Изберете всяка страница или служба или въведете обичай URL , за да "
+#~ "сканирате"
+
+#~ msgid "OR"
+#~ msgstr "ИЛИ"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "Изберете Post , за да сканирате"
+
+#~ msgid "Scan Post"
+#~ msgstr "Сканиране Post"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "Въведете потребителски URL"
+
+#~ msgid "Scan URL"
+#~ msgstr "Сканиране URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Какво да знаем преди Scaning"
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr ""
+#~ "Задръжте показалеца върху подчертаните елементи , за да видите "
+#~ "обясненията в резултат страница ."
+
+#~ msgid "Print Report"
+#~ msgstr "отчет за печата"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "SEO Съвети →"
+
+#~ msgid "Data"
+#~ msgstr "данни"
+
+#~ msgid "Technical"
+#~ msgstr "технически"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "Социални обмен на данни ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Open Graph протокол от Facebook и приета от почти всички водещи социални "
+#~ "медии, включително Google +"
+
+#~ msgid "OGP"
+#~ msgstr "ОГП"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Data уеб страница"
+
+#~ msgid "Remarks"
+#~ msgstr "Забележки"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ обходен Текст Content"
+
+#~ msgid "Total Text"
+#~ msgstr "Общо Текст"
+
+#~ msgid "In page Style"
+#~ msgstr "В страницата Style"
+
+#~ msgid "In page Script"
+#~ msgstr "В страницата Script"
+
+#~ msgid "Scan by"
+#~ msgstr "Сканиране от"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "действие"
+
+#~ msgid "Length "
+#~ msgstr "дължина"
+
+#~ msgid " for image "
+#~ msgstr "за изображението"

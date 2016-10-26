@@ -1,33 +1,46 @@
 <?php
 /**
- * @/user/lib/dropdown-class.php
- * on: 08.06.2015
+ * @/user/lib/dropdown-object.php
+ * @on 10.07.2015
+ * @since 2.0
+ *
  * Custom dropdown select input method for front end, using wordpress admin style.
  *
  * It has 5 properties:
- * 1. $dp_id for select id attribute.
- * 2. $dp_name for select name attribute.
- * 3. $dp_options for creating options inside select input. Required.
- *    It is an array with individual elements of format array( 'value', 'display text' );
- * 4. $dp_submit_name for submit type input name attribute.
- * 5. $dp_submit_text for submit type input value attribute.
+ * @prop string $dp_id Select id attribute.
+ * @prop string $dp_class Select class attribute.
+ * @prop string $dp_name Select name attribute.
+ * @prop array $dp_options Creating options inside select input. Required.
+ *	array(
+ *		array(
+ *			@string 'value',
+ *			@string 'display text'
+ *		), ...
+ *	);
+ * @prop string $dp_submit_name Submit type input name attribute.
+ * @prop string $dp_submit_text Submit type input value attribute.
+ * @prop boolean $dp_submit_switch Submit type input value attribute.
  */
 class CGSS_DROPDOWN {
 
 	//declare properties
 	private $dp_id;
+	private $dp_class;
 	private $dp_name;
 	private $dp_options;
 	private $dp_submit_name;
 	private $dp_submit_text;
+	private $dp_submit_switch;
 
 	//construct this properties
-	public function __construct( $dp_id, $dp_name, $dp_options, $dp_submit_name, $dp_submit_text ) {
+	public function __construct( $dp_id, $dp_class, $dp_name, $dp_options, $dp_submit_name, $dp_submit_text, $dp_submit_switch ) {
 		$this->dp_id = $dp_id;
+		$this->dp_class = $dp_class;
 		$this->dp_name = $dp_name;
 		$this->dp_options = $dp_options;
 		$this->dp_submit_name = $dp_submit_name;
 		$this->dp_submit_text = $dp_submit_text;
+		$this->dp_submit_switch = $dp_submit_switch;
 	}
 
 	//define method: display() to output raw html. If $dp_options is not provided show error.
@@ -37,7 +50,7 @@ class CGSS_DROPDOWN {
 		foreach ( $this->dp_options as $type ) :
 			$opts .= '<option value="' . $type[0] . '">' . $type[1] . '</option>';
 		endforeach;
-		return '<select' . ( $this->dp_id ? ' id="' . $this->dp_id . '"' : '' ) . 'type="dropdown"' . ( $this->dp_name ? ' name="' . $this->dp_name . '"' : '' ) . '>' . $opts . '</select>' . '<input type="submit"' . ( $this->dp_submit_name ? ' name="' . $this->dp_submit_name . '"' : '' ) . 'class="button action"' . ( $this->dp_submit_text ? ' value="' .  $this->dp_submit_text . '"' : '' ) . '/>';
+		return '<select' . ( $this->dp_id ? ' id="' . $this->dp_id . '"' : '' ) . ( $this->dp_class ? ' class="' . $this->dp_class . '"' : '' ) . 'type="dropdown"' . ( $this->dp_name ? ' name="' . $this->dp_name . '"' : '' ) . '>' . $opts . '</select>' . ( $this->dp_submit_name ? '<input type="submit"' . ( $this->dp_submit_name ? ' name="' . $this->dp_submit_name . '"' : '' ) . 'class="button action"' . ( $this->dp_submit_text ? ' value="' .  $this->dp_submit_text . '"' : '' ) . '/>' : '' );
 	else :
 		_e( 'DROPDOWN ERROR', 'cgss' );
 	endif;
@@ -59,5 +72,4 @@ class CGSS_DROPDOWN {
 		_e( 'DROPDOWN ERROR', 'cgss' );
 	endif;
 	}
-}
-?>
+} ?>

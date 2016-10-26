@@ -2,13 +2,15 @@
 /**
  * @/core/lib/image-object.php
  * on: 19.06.2015
+ * @since 2.0
+ *
  * An object for calculating link numbers with specific values. First, format links for hrefs. Then
  * pass them through foreach loops for and prepare the output.
  *
  * 3 properties.
- * $domain for domain name
- * $links for array of link attributes (hrefs and rels)
- * $anchors for array of link anchor texts
+ * @prop string $domain domain name
+ * @prop array $links link attributes (hrefs and rels)
+ * @prop array $anchors array of link anchor texts
  */
 class CGSS_FORMAT_LINKS {
 
@@ -75,8 +77,11 @@ class CGSS_FORMAT_LINKS {
 	public function anchors() {
 		$new_links = $this->format();
 		$anch = array();
-		foreach ( $new_links['anchor'] as $val ) {
-			$anch[] = filter_var( $val, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW );
+
+		if ( $new_links['anchor'] ) {
+			foreach ( $new_links['anchor'] as $val ) {
+				$anch[] = filter_var( $val, FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_LOW );
+			}
 		}
 		return $anch;
 	}
@@ -93,13 +98,15 @@ class CGSS_FORMAT_LINKS {
 				$pos = array_search( $key, $hrefs );
 				$del_hrefs = array_diff( $hrefs, array( $key ) );
 				$hrefs = array_values( $del_hrefs );
-				if ( array_key_exists ( $pos, $rels ) ) {
-					$del_rels = array_diff( $rels, array( $rels[$pos] ) );
-					$rels = array_values( $del_rels );
-				}
-				if ( array_key_exists ( $pos, $anchors ) ) {
-					$del_anch = array_diff( $anchors, array( $anchors[$pos] ) );
-					$anchors = array_values( $del_anch );
+				if ( $pos ) {
+					if ( is_array( $rels ) and array_key_exists( $pos, $rels ) ) {
+						$del_rels = array_diff( $rels, array( $rels[$pos] ) );
+						$rels = array_values( $del_rels );
+					}
+					if ( is_array( $anchors ) and array_key_exists( $pos, $anchors ) ) {
+						$del_anch = array_diff( $anchors, array( $anchors[$pos] ) );
+						$anchors = array_values( $del_anch );
+					}
 				}
 			}
 		}

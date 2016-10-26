@@ -2,11 +2,13 @@
 /**
  * @/core/lib/text-object.php
  * on: 17.06.2015
+ * @since 2.0
+ *
  * An object for treating text by using methods of xpath and generating array of words along with
  * text to html ration interms of bits size.
  *
  * 1 properties.
- * $dom for input document object model.
+ * @prop string $dom Input document object model.
  */
 class CGSS_TEXT_TREATMENT {
 

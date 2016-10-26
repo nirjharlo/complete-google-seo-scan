@@ -1,0 +1,2229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-08-21 00:36+0530\n"
+"PO-Revision-Date: 2015-08-21 00:36+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Finnish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../complete-google-seo-scan.php:93
+#, fuzzy
+msgid ""
+"Complete Google SEO Scan Plugin will not be activated because your PHP "
+"version"
+msgstr ""
+"Täydellinen Google SEO Scan vaatii PHP 5.3 + ja ei aktivoidu , nykyinen "
+"palvelimen kokoonpano on käynnissä PHP versio"
+
+#: ../complete-google-seo-scan.php:93
+msgid "is less than required 5.3. See more information:"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:118
+msgid "Start Here"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:154
+#, fuzzy
+msgid "Seo Scan Overview"
+msgstr "Sosiaalinen jakaminen Tietojen yleiskatsaus"
+
+#: ../complete-google-seo-scan.php:154 ../complete-google-seo-scan.php:164
+#, fuzzy
+msgid "Seo Scan"
+msgstr "SEO Scan"
+
+#: ../complete-google-seo-scan.php:244
+msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:275
+msgid "Choose Post types to show"
+msgstr ""
+
+#: ../core/ajax-handle.php:62 ../core/overview-ajax.php:16
+#, fuzzy
+msgid "Invalid Request"
+msgstr "HTTP-pyyntöjen"
+
+#: ../core/ajax-handle.php:91
+#, fuzzy
+msgid "Server Issue"
+msgstr "Server pistettä"
+
+#: ../core/ajax-handle.php:112
+msgid "Can not Download the Webpage"
+msgstr ""
+
+#: ../core/overview-ajax.php:24 ../core/overview-ajax.php:78
+#: ../core/overview-ajax.php:88 ../core/overview-ajax.php:136
+#, fuzzy
+msgid "Improper Request"
+msgstr "HTTP-pyyntöjen"
+
+#: ../core/overview-ajax.php:54
+msgid "Network Error"
+msgstr ""
+
+#: ../core/overview-ajax.php:64
+msgid "Failed, Server Issue"
+msgstr ""
+
+#: ../core/overview-ajax.php:97
+msgid "No Files Found"
+msgstr ""
+
+#: ../user/front-end.php:95
+msgid "OVERVIEW"
+msgstr ""
+
+#: ../user/front-end.php:101
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../user/front-end.php:108
+msgid "REPORT"
+msgstr ""
+
+#: ../user/front-end.php:109
+msgid "ACTIONS"
+msgstr ""
+
+#: ../user/front-end.php:134
+msgid "Heading"
+msgstr ""
+
+#: ../user/front-end.php:140
+msgid "Alt"
+msgstr ""
+
+#: ../user/front-end.php:146
+#, fuzzy
+msgid "Anchor"
+msgstr "Anchor teksti"
+
+#: ../user/front-end.php:152
+msgid "Title"
+msgstr "otsikko"
+
+#: ../user/front-end.php:158
+msgid "Description"
+msgstr "kuvaus"
+
+#: ../user/front-end.php:164
+msgid "Url"
+msgstr ""
+
+#: ../user/front-end.php:192
+msgid "Name"
+msgstr "nimi"
+
+#: ../user/front-end.php:205 ../user/front-end.php:410
+msgid "SSL security"
+msgstr ""
+
+#: ../user/front-end.php:206
+msgid "WWW Resolve"
+msgstr ""
+
+#: ../user/front-end.php:207
+msgid "IP forwarding"
+msgstr ""
+
+#: ../user/front-end.php:208 ../user/front-end.php:435
+#, fuzzy
+msgid "Gzip Compression"
+msgstr "gzip pakkausta"
+
+#: ../user/front-end.php:209
+#, fuzzy
+msgid "Cache"
+msgstr "Cachettava"
+
+#: ../user/front-end.php:210 ../user/front-end.php:417
+#, fuzzy
+msgid "If modified since"
+msgstr "If- Modified -Since"
+
+#: ../user/front-end.php:211
+msgid "Response Time"
+msgstr ""
+
+#: ../user/front-end.php:211 ../user/front-end.php:430
+msgid "miliseconds"
+msgstr ""
+
+#: ../user/front-end.php:218 ../user/front-end.php:463
+#: ../user/front-end.php:470
+msgid "More"
+msgstr ""
+
+#: ../user/front-end.php:251
+msgid "Categories"
+msgstr ""
+
+#: ../user/front-end.php:266
+msgid "Tags"
+msgstr ""
+
+#: ../user/front-end.php:275
+msgid "All Time"
+msgstr ""
+
+#: ../user/front-end.php:276
+msgid "Today"
+msgstr ""
+
+#: ../user/front-end.php:277
+msgid "7 days"
+msgstr ""
+
+#: ../user/front-end.php:278
+msgid "30 days"
+msgstr ""
+
+#: ../user/front-end.php:279
+msgid "90 days"
+msgstr ""
+
+#: ../user/front-end.php:280
+msgid "Never"
+msgstr ""
+
+#: ../user/front-end.php:307
+msgid "<code>< title</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:308
+msgid ""
+"<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:309
+msgid ""
+"Long tail keywords are helpful for seo. Use them with percistance but don't "
+"spam."
+msgstr ""
+
+#: ../user/front-end.php:310
+msgid "Write a minimum of 200 words atleast."
+msgstr ""
+
+#: ../user/front-end.php:311
+msgid ""
+"Use enough text in comparison of HTML. But also don't use too much text."
+msgstr ""
+
+#: ../user/front-end.php:312
+msgid ""
+"Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</"
+"code>, <code>h3</code>."
+msgstr ""
+
+#: ../user/front-end.php:313
+msgid ""
+"Crawler robots can not read image links. Please use some text inside links "
+"also."
+msgstr ""
+
+#: ../user/front-end.php:314
+msgid "Use nofollow links and dofollow links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:315
+msgid "Use external links and internal links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:316
+#, fuzzy
+msgid "The webpage looks like a link farm. Reduce number of links."
+msgstr "Yritä vähentää linkkien määrä."
+
+#: ../user/front-end.php:317
+msgid "Put proper <code>alt</code> tags in images."
+msgstr ""
+
+#: ../user/front-end.php:318
+msgid "Don't use nested tables, i.e. tables within table columns."
+msgstr ""
+
+#: ../user/front-end.php:319
+msgid "Remove style attributes from all HTML tags and use .css file instead."
+msgstr ""
+
+#: ../user/front-end.php:320
+msgid ""
+"<code>< meta name=\"viewport\"</code> tag should be present for scaling "
+"webpage with device size."
+msgstr ""
+
+#: ../user/front-end.php:321
+msgid ""
+"<code>@media</code> query is not found. The webpage should be mobile ready."
+msgstr ""
+
+#: ../user/front-end.php:322
+msgid "Get an SSL certificate and use url with <code>https://</code>."
+msgstr ""
+
+#: ../user/front-end.php:323
+msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
+msgstr ""
+
+#: ../user/front-end.php:324
+msgid "Url with and without WWW should redirect to same url. Resolve it."
+msgstr ""
+
+#: ../user/front-end.php:325
+#, fuzzy
+msgid "Put a canonical link."
+msgstr "Laitakanoninen linkki"
+
+#: ../user/front-end.php:326
+msgid "Enable If modified since header."
+msgstr ""
+
+#: ../user/front-end.php:327
+msgid ""
+"<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
+"value."
+msgstr ""
+
+#: ../user/front-end.php:328
+msgid "Put an IP address and forward to page url"
+msgstr ""
+
+#: ../user/front-end.php:329
+msgid "Header response time is too long. Improve website server."
+msgstr ""
+
+#: ../user/front-end.php:330
+#, fuzzy
+msgid "Enable gZip compression."
+msgstr "gzip pakkausta"
+
+#: ../user/front-end.php:331
+msgid "Enable Browser Caching."
+msgstr ""
+
+#: ../user/front-end.php:332
+msgid "Reduce number of HTTP requests made by .css and .js files."
+msgstr ""
+
+#: ../user/front-end.php:333
+msgid "Compress resorce files and increase loading speed."
+msgstr ""
+
+#: ../user/front-end.php:334
+msgid ""
+"Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
+"sharing."
+msgstr ""
+
+#: ../user/front-end.php:340
+msgid "Help"
+msgstr ""
+
+#: ../user/front-end.php:365
+msgid "Select popular words"
+msgstr ""
+
+#: ../user/front-end.php:369
+#, fuzzy
+msgid "Number of words"
+msgstr "Lukumäärä Linkit"
+
+#: ../user/front-end.php:369
+msgid ""
+"Minimum 200 words in a webpage is required. Write enough words to describe "
+"the page well."
+msgstr ""
+
+#: ../user/front-end.php:370
+#, fuzzy
+msgid "Text to html ratio"
+msgstr "text / html suhde"
+
+#: ../user/front-end.php:370
+msgid ""
+"There must be enough text in webpage as compared with total size. About 15% "
+"to 70%"
+msgstr ""
+
+#: ../user/front-end.php:371
+#, fuzzy
+msgid "Text hiarerchy"
+msgstr "teksti Hierarkia"
+
+#: ../user/front-end.php:371
+msgid ""
+"A bulk of text is not useful, rather text content with proper heading tags "
+"are needed."
+msgstr ""
+
+#: ../user/front-end.php:374
+#, fuzzy
+msgid "Image Links"
+msgstr "kuvat"
+
+#: ../user/front-end.php:374
+msgid ""
+"Links that conatin only image but no text is considered poorly optimized."
+msgstr ""
+
+#: ../user/front-end.php:375
+#, fuzzy
+msgid "Nofollow Links"
+msgstr "Lukumäärä Linkit"
+
+#: ../user/front-end.php:375
+msgid ""
+"Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
+"all links from crawling."
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid "External Links"
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid ""
+"Links that points to other domain must be present, in a proportional number."
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid "Nested Tables"
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid ""
+"In markup of webpage, if table element is put inside a column of another "
+"table, it makes the page slow."
+msgstr ""
+
+#: ../user/front-end.php:395
+#, fuzzy
+msgid "Style Attributes"
+msgstr "tyyliattribuutti"
+
+#: ../user/front-end.php:395
+msgid ""
+"attribute present in markup tags is not a good practice and increases render "
+"time."
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid "Media Queries"
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid ""
+"For responsive web design, you need to have <code>@media</code> elements "
+"inside .css files."
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid "Viewport Tag"
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid ""
+"On <code>head</code> area of webpage, there is a tag which helps in scaling "
+"the dimensions according to display size."
+msgstr ""
+
+#: ../user/front-end.php:411
+msgid "Static url "
+msgstr ""
+
+#: ../user/front-end.php:412
+msgid "Use of underscores in Url"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid "www Resolve"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid ""
+"Check if url is showing same webpage for url with and without \"www.\" prefix"
+msgstr ""
+
+#: ../user/front-end.php:417
+msgid ""
+"Let web server tell Google whether your content has changed since google bot "
+"last crawled your site."
+msgstr ""
+
+#: ../user/front-end.php:420
+#, fuzzy
+msgid "Canonical Url"
+msgstr "Canonical Link"
+
+#: ../user/front-end.php:420
+msgid ""
+"Let Google know, same content is available through multiple URL structures "
+"or via syndication."
+msgstr ""
+
+#: ../user/front-end.php:421
+#, fuzzy
+msgid "Meta Robot"
+msgstr "Meta Robotit"
+
+#: ../user/front-end.php:421
+msgid ""
+"Visibility in search result stops on use of \"noindex\" value in robots meta "
+"tag."
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid "IP Forwarded"
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid ""
+"Check if server IP address (internet protocol) is forwarding to the same url "
+"or not."
+msgstr ""
+
+#: ../user/front-end.php:430
+msgid "Header response time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Loading time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Seconds"
+msgstr ""
+
+#: ../user/front-end.php:435
+msgid ""
+"Deliver page content in a compressed .gzip file to reduce bandwidth and "
+"loading time."
+msgstr ""
+
+#: ../user/front-end.php:436
+#, fuzzy
+msgid "Browser Caching"
+msgstr "Cachettava"
+
+#: ../user/front-end.php:436
+msgid ""
+"Store page assets in browser of user for specific time, to load it faster "
+"next time."
+msgstr ""
+
+#: ../user/front-end.php:439 ../user/front-end.php:440
+#, fuzzy
+msgid "requests"
+msgstr "HTTP-pyyntöjen"
+
+#: ../user/front-end.php:463
+msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
+msgstr ""
+
+#: ../user/front-end.php:512
+msgid "And that's fine."
+msgstr ""
+
+#: ../user/front-end.php:513
+msgid "That's too much of text, please write less."
+msgstr ""
+
+#: ../user/front-end.php:514
+msgid "That's too little text, please write more."
+msgstr ""
+
+#: ../user/front-end.php:521
+msgid "Url is clean and tidy"
+msgstr ""
+
+#: ../user/front-end.php:522
+msgid "Url has underscore"
+msgstr ""
+
+#: ../user/front-end.php:523
+msgid "Url is dynamic"
+msgstr ""
+
+#: ../user/front-end.php:524
+msgid "Url is dynamic and has underscore"
+msgstr ""
+
+#: ../user/front-end.php:686
+msgid "items"
+msgstr ""
+
+#: ../user/front-end.php:691 ../user/display/overview-display.php:86
+msgid "of"
+msgstr ""
+
+#: ../user/front-end.php:706
+msgid "All Items Matched"
+msgstr ""
+
+#: ../user/front-end.php:709
+msgid "No Match Found"
+msgstr ""
+
+#: ../user/lib/btn-object.php:39
+msgid "Button Error"
+msgstr ""
+
+#: ../user/lib/accordion-object.php:21
+msgid "Click to toggle"
+msgstr ""
+
+#: ../user/lib/dropdown-object.php:55 ../user/lib/dropdown-object.php:72
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#: ../user/display/overview-display.php:4
+msgid "Scan Overview"
+msgstr ""
+
+#: ../user/display/overview-display.php:25 ../user/display/scan-display.php:24
+msgid ""
+"Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
+"<i>Theme and Plugins Design Seo</i>."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "You will see them bellow."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "Then reload the page."
+msgstr ""
+
+#: ../user/display/overview-display.php:45
+msgid "ARCHIVES"
+msgstr ""
+
+#: ../user/display/overview-display.php:69
+msgid "SCAN ARCHIVE PAGE"
+msgstr ""
+
+#: ../user/display/overview-display.php:78
+#, fuzzy
+msgid "Content Status"
+msgstr "sisältö kysymyksiä"
+
+#: ../user/display/overview-display.php:79
+msgid "Fetch results from stored scan reports."
+msgstr ""
+
+#: ../user/display/overview-display.php:85
+#, fuzzy
+msgid "Fetch Intel"
+msgstr "tulos"
+
+#: ../user/display/overview-display.php:86
+msgid "reports processed."
+msgstr ""
+
+#: ../user/display/overview-display.php:88
+msgid "No pages are scaned. Use top navigation to go to list of pages."
+msgstr ""
+
+#: ../user/display/overview-display.php:128
+#, fuzzy
+msgid "Server Seo Status"
+msgstr "Server pistettä"
+
+#: ../user/display/overview-display.php:133
+#: ../user/display/overview-display.php:153
+msgid "CHECK NOW"
+msgstr ""
+
+#: ../user/display/overview-display.php:146
+#, fuzzy
+msgid "Design Seo Status"
+msgstr "Server pistettä"
+
+#: ../user/display/report-display.php:26
+msgid "sec"
+msgstr ""
+
+#: ../user/display/report-display.php:42
+msgid "Text & Links"
+msgstr ""
+
+#: ../user/display/report-display.php:43
+msgid "Design"
+msgstr "suunnittelu"
+
+#: ../user/display/report-display.php:44
+msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
+msgstr ""
+
+#: ../user/display/report-display.php:60
+msgid "IT'S ALL GOOD. NO ACTIONS NEEDED"
+msgstr ""
+
+#: ../user/display/report-display.php:64
+msgid "TAKE <span id=\"ActNum\"></span> FOLLOWING ACTIONS"
+msgstr ""
+
+#: ../user/display/scan-display.php:3
+#, fuzzy
+msgid "Scan Status"
+msgstr "Scan Page"
+
+#: ../user/display/scan-display.php:24
+msgid "You will find them here."
+msgstr ""
+
+#: ../user/display/scan-display.php:84 ../help/message-object.php:66
+msgid "words, focus is"
+msgstr ""
+
+#: ../user/display/scan-display.php:86
+#, fuzzy
+msgid "Not Scanned Yet"
+msgstr "skannataan"
+
+#: ../user/display/scan-display.php:108
+msgid "SCAN"
+msgstr ""
+
+#: ../user/display/scan-display.php:116
+msgid "FAILED"
+msgstr ""
+
+#: ../user/display/scan-display.php:127
+msgid "NEVER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:19
+msgid "Introduction"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have not included backlinks analysis, traffic metrics, knowledge graph "
+"and brand signals, because the intention is primarily on-page search "
+"optimization only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"If you catch a bug or want to give any feedback or feature suggestion you "
+"are welcome to email the plugin author"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../help/plugin-help-object.php:24
+msgid "Overview"
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Starting page of this plugin is named \"Seo Overview\". There you can find 3 "
+"types of features to scan 3 different aspects of your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Server seo scan"
+msgstr "Server pistettä"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"will make a header request and find out 10 important points about the server "
+"and it's configuration. Practically, You can change them by using different "
+"plugins available."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Design seo scan"
+msgstr "pisteille"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"gives an idea about numbers of HTTP requests made by your webpages and "
+"resource size it takes to load a webpage. They are takken from "
+"<code>_enqueued</code> styles and scripts. All hard coded links are ignored, "
+"because it is assumed that you are using WordPress compatable themes."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Content Overview"
+msgstr "Vuonna sivun sisällön yleiskatsaus"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"After you are done with scans for your webpages, you will be able to complie "
+"those individual content reports to a single report and gather actionable "
+"intelligence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid "Set Screen Options."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"for showing various post types in WordPress admin menus. You can select them "
+"using checkboxes. This option is available only in \"Scan Overview\" page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Secondly, you may use numbers of pages to show in any post type \"Scan Status"
+"\" plugins page. This is available in all other \"Scan Status\" pages "
+"created by this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Close this \"Help\" tab and open \"Screen Options\" tab to explore more."
+msgstr ""
+
+#: ../help/plugin-help-object.php:29
+msgid "How to use?"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is mobile "
+"ready. So, for regular WordPress users it will be very intuitive. The usage "
+"process has 3 steps."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Before you start"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"make sure you have taken Design seo and Server seo scans available at "
+"Overview page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Select a Page"
+msgstr "ValitsePage Scan"
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"from the individual list of webpage blocks, by clicking on corresponding "
+"\"SCAN\" button. Top navigation is to select posts from multiple post types "
+"and you may filter them according to time of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Wait for scan"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"to be completed. It will take a few seconds, approximately 2 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See results"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"in a pop up on the same page as soon as the scan is complete. The result "
+"will have 7 segments."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Overall score with social media counts."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Search engine snippet and highlighted keyword."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Use of Image and page design seo"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Required information on server and url."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "A sample Facebook snippet from social media tags."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See required actions"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"listed in the same pop-up. Just click the button with the word \"ACTION\" at "
+"bottom. You will find step by step guidence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"Scan result is displayed in an organized fashion with <strong>Hints</strong> "
+"and are easy to understand for someone with basic seo knowledge. For a "
+"primitive guideline of seo aspects see links at right sidebar of this area."
+msgstr ""
+
+#: ../help/plugin-help-object.php:34
+msgid "Performance"
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes less than 5 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"Scaning riippuu palvelimen ja sivuston laatua . Itse prosessi kestää alle "
+"0,01 sekuntia."
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:39
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "privacy Policy."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "Data storage."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. Other than those, there are 4 custom data arrays stored in "
+"\"_options\" database. When the plugin is uninstalled all of those data will "
+"be removed from your server."
+msgstr ""
+
+#: ../help/plugin-help-object.php:44
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../help/plugin-help-object.php:49
+msgid "Updates"
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Future updates of this plugin is expected to contain more features and a new "
+"interface. Some of the features you may expect are Video Seo, Spam "
+"detection, Rich snippet calculation, Twitter v card, above the fold "
+"optimization, sitemap.xml check and robots.txt check. Internationalization "
+"and automatic scan are also desired property to be included."
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Tough the plugin author will take final decision about updates, you are free "
+"to inform about bugs and feature requests in support forum."
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Support Forum"
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../help/message-object.php:15
+msgid "Message"
+msgstr ""
+
+#: ../help/message-object.php:22
+msgid "Network error"
+msgstr ""
+
+#: ../help/message-object.php:23
+msgid "No .css or .js file"
+msgstr ""
+
+#: ../help/message-object.php:24
+msgid "is undefined"
+msgstr ""
+
+#: ../help/message-object.php:25
+msgid "View"
+msgstr ""
+
+#: ../help/message-object.php:26
+msgid "TITLE TAG"
+msgstr ""
+
+#: ../help/message-object.php:27
+msgid "META DESCRIPTION TAG"
+msgstr ""
+
+#: ../help/message-object.php:45
+msgid "NOT FOUND"
+msgstr "EI LÖYDY"
+
+#: ../help/message-object.php:46
+msgid "SOCIAL MEDIA IMAGE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:47
+msgid "SOCIAL MEDIA TITLE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:48
+msgid "SOCIAL MEDIA DESCRIPTION TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:49
+#, fuzzy
+msgid "DOMAIN NAME NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:50
+#, fuzzy
+msgid "TITLE TAG NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:51
+#, fuzzy
+msgid "META DESCRIPTION TAG NOT FOUND"
+msgstr "TAG NOT FOUND"
+
+#: ../help/message-object.php:53 ../help/message-object.php:54
+#, fuzzy
+msgid "Compression"
+msgstr "gzip pakkausta"
+
+#: ../help/message-object.php:53
+msgid ".css and .js files can be more compressed to reduce"
+msgstr ""
+
+#: ../help/message-object.php:53
+msgid "in total size"
+msgstr ""
+
+#: ../help/message-object.php:54
+msgid "All .css and .js files are compressed enough."
+msgstr ""
+
+#: ../help/message-object.php:55
+msgid "All images are optimized."
+msgstr ""
+
+#: ../help/message-object.php:56
+msgid "Above images does not have <code>alt</code> tags."
+msgstr ""
+
+#: ../help/message-object.php:57
+#, fuzzy
+msgid "No images are present."
+msgstr "Jotkut pään tunnisteet ovat läsnä"
+
+#: ../help/message-object.php:58 ../help/message-object.php:59
+msgid "Links all total"
+msgstr ""
+
+#: ../help/message-object.php:58
+msgid "numbers are ok."
+msgstr ""
+
+#: ../help/message-object.php:59
+#, fuzzy
+msgid "Too much in number."
+msgstr "Liian paljon HTML Web-sivun."
+
+#: ../help/message-object.php:64
+#, fuzzy
+msgid "NO KEYWORDS FOUND"
+msgstr "EI LÖYDY"
+
+#: ../help/message-object.php:65
+msgid "SPAM"
+msgstr ""
+
+#: ../help/message-object.php:73
+msgid ""
+"Total <span id=\"WordsIntel\"></span> words used. <span id="
+"\"WordsPerPageIntel\"></span> per page. Avg text to html ratio is <span id="
+"\"WordsRatioIntel\"></span>"
+msgstr ""
+
+#: ../help/message-object.php:74
+msgid ""
+"<span id=\"LinksNumIntel\"></span> links per page, nearly <span id="
+"\"ExtLinksIntel\"></span> external and <span id=\"ImgLinksIntel\"></span> "
+"image links of them."
+msgstr ""
+
+#: ../help/message-object.php:75
+msgid ""
+"Long tail keywords (avg <span id=\"KeyWordsSizeIntel\"></span> words long) "
+"were found in <span id=\"KeyWordsIntel\"></span> webpages."
+msgstr ""
+
+#: ../help/message-object.php:77
+msgid "Almost all images seems to be optimized."
+msgstr ""
+
+#: ../help/message-object.php:78
+msgid ""
+"Nearly <span id=\"ImagesIntelPercent\"></span> of pages have images without "
+"alt tags."
+msgstr ""
+
+#: ../help/message-object.php:79
+msgid ""
+"This website images are <span class=\"danger-icon\">not optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:82
+msgid "Your website is mobile optimized."
+msgstr ""
+
+#: ../help/message-object.php:83
+msgid ""
+"Some of your webpages<span id=\"DesignIntelPercent\"></span> are not mobile "
+"optimized."
+msgstr ""
+
+#: ../help/message-object.php:84
+msgid ""
+"Your website is <span class=\"danger-icon\">not mobile optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:87
+msgid "All urls are neat and clean."
+msgstr ""
+
+#: ../help/message-object.php:88
+msgid ""
+"Some urls <span class=\"danger-icon\">are dynamic</span><span id="
+"\"UrlIntelPercent\"></span> and <span class=\"danger-icon\">have underscore</"
+"span><span id=\"UrlIntelPercentTwo\"></span>."
+msgstr ""
+
+#: ../help/message-object.php:89
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> are <span class=\"danger-icon"
+"\">dynamic and contains underscore</span>."
+msgstr ""
+
+#: ../help/message-object.php:90
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> <span class=\"danger-icon"
+"\">are dynamic</span>."
+msgstr ""
+
+#: ../help/message-object.php:91
+msgid ""
+"Some urls <span id=\"UrlIntelPercentTwo\"></span> <span class=\"danger-icon"
+"\">have underscores</span>."
+msgstr ""
+
+#: ../help/message-object.php:94
+msgid "Your website is fast, takes less than a second load."
+msgstr ""
+
+#: ../help/message-object.php:95
+msgid "Your website loads fine, may try a little faster."
+msgstr ""
+
+#: ../help/message-object.php:96
+msgid "Your website is slow, make it faster."
+msgstr ""
+
+#: ../help/message-object.php:97
+msgid ""
+"Your website is <span class=\"danger-icon\">too slow</span>, serious "
+"improvement needed."
+msgstr ""
+
+#: ../help/message-object.php:100
+#, fuzzy
+msgid "Social media tags are present. Optimized for social sharing."
+msgstr "Jotkut pään tunnisteet ovat läsnä"
+
+#: ../help/message-object.php:101
+msgid ""
+"Social media tags are <span class=\"danger-icon\">incomplete</span> in "
+"almost <span id=\"StagIntelNoPercent\"></span>% pages."
+msgstr ""
+
+#: ../help/message-object.php:102
+msgid ""
+"Social media tags are nearly <span class=\"danger-icon\">absent</span>. Use "
+"them for better sharing."
+msgstr ""
+
+#: ../help/message-object.php:109
+msgid "enabled"
+msgstr ""
+
+#: ../help/message-object.php:114
+msgid "disabled"
+msgstr ""
+
+#: ../db/get-db.php:102
+msgid "ms"
+msgstr ""
+
+#: ../db/get-db.php:104
+msgid "s"
+msgstr ""
+
+#~ msgid "Content"
+#~ msgstr "pitoisuus"
+
+#, fuzzy
+#~ msgid "Other Points"
+#~ msgstr "Server pistettä"
+
+#, fuzzy
+#~ msgid "Download Content"
+#~ msgstr "pitoisuus"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "Kaikki PHP versio alle 5.3.0 on saavuttanut \"End of Life\" alkaen PHP."
+#~ "net ja ei saa enää bugikorjauksia orsecurity päivityksiä . Virallista "
+#~ "tietoa siitä, miten päivittää ja miksi at"
+
+#~ msgid "Scan Now"
+#~ msgstr "Tarkista nyt"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "Täydellinen Google SEO Scan"
+
+#~ msgid "Brought to you by"
+#~ msgstr "Tuonut sinulle"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO Blog"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "Google Hakukoneoptimointi Scan web- sivu on valmis . Tässä ovattulokset."
+
+#~ msgid "at line"
+#~ msgstr "rivillä"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "Se's eri skannatun sivun url"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "Olla varma, että haluat sivusi on indeksoitu tässä kanoninen url"
+
+#~ msgid "Recheck it"
+#~ msgstr "tarkistamme sen"
+
+#~ msgid "OK"
+#~ msgstr "kunnossa"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "Anna Favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "pituus"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "merkkiä ( Suurin sallittu 70 merkkiä )"
+
+#~ msgid "Length"
+#~ msgstr "pituus"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "Koska yli 70 merkkiä ei näy hakutuloksen"
+
+#~ msgid "Give shorter title"
+#~ msgstr "Anna lyhyempi otsikko"
+
+#~ msgid "Give a title."
+#~ msgstr "Annaotsikko."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "merkkiä ( Suurin sallittu 155 merkkiä)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "Kirjoittaa joitakin meta kuvaus sisällä 155 merkkiä. Altough se ei estä "
+#~ "sijoitusta, mutta se näyttää pahalta hakukoneen sivu tulos . Näin ollen "
+#~ "voi vähentää valitsemalla (CTR )"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "Tehdä lyhyempiä."
+
+#~ msgid "This is not good."
+#~ msgstr "Tämä ei ole hyvä."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "Tag on paikallaan , nyt kirjoittaa joitakin meta kuvaus"
+
+#~ msgid "Give a description"
+#~ msgstr "Annakuvaus"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "EI LÖYDY."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "Syötä hakusanat soveltuu web-sivun sisältöä , monet hakukoneet käyttävät "
+#~ "sitä, mutta ei Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "Syötä hakusanat."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "Meta robotti ottaa noindex nofollow arvo . Tämä ei ole hyvä."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "Vaihdarobotit meta arvo ei indeksin ja / tai ei seuraa"
+
+#~ msgid "Fix this."
+#~ msgstr "Korjaa tämä."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "Laita oikea arvo tähän og:maa meta"
+
+#~ msgid "Fill it"
+#~ msgstr "Täytä se"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "Laita oikea arvo tähän og:site_name meta"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "Laita oikea arvo tähän og:tyyppi meta"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "Laita oikea arvo tähän og:url meta"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "Laita oikea arvo tähän og:title meta tag"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "Laita oikea arvo tähän og:kuvaus sisällönkuvauskenttää"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "Laita oikea arvo tähän og:kuva meta tag"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "Voit käyttää mitä tahansa vapaa SEO plugins saatavilla saada vaihtoehtoja "
+#~ "tulla kuvauksia"
+
+#~ msgid "Put the tag"
+#~ msgstr "Laitatag"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "Syötä hakusanat soveltuu web-sivun sisältöä , monet hakukoneet käyttävät "
+#~ "sitä, mutta ei Google . Voit käyttää mitä tahansa vapaa SEO plugins "
+#~ "saatavilla saada vaihtoehtoja tulla tätä tunnistetta"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "Voit käyttää mitä tahansa vapaa SEO plugins saatavilla saada vaihtoehtoja "
+#~ "syöttää haluttu meta ensisijainen linkki"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr "On parempi laittaatag . Muuten ei ole suurta hätää"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "Laitafavicon ico kuvan käyttämälläpikakuvaketta link tag"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:maa metatunnistetta head osio oikea arvo"
+
+#~ msgid "Fix it"
+#~ msgstr "Korjaa se"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:site_name metatunnistetta head osio oikea arvo"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:tyyppi metatunnistetta head osio oikea arvo"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:title metatunnistetta head osio oikea arvo"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:kuvaus metatunnistetta head osio oikea arvo"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:url metatunnistetta head osio oikea arvo"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr "Laita tämä og:kuva metatunnistetta head osio oikea arvo"
+
+#~ msgid "Title Tag"
+#~ msgstr "Otsikko Tag"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr ""
+#~ "Nimiverkkosivuilla . Tämän pitäisi olla kuvaava ja enintään 70 merkkiä."
+
+#~ msgid "Meta Description"
+#~ msgstr "Meta Kuvaus"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Kuvaasivun . Optimaalinen pituus on 155 merkkiä ja eisijoitusta tekijä."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "Meta avainsanat"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr "Mainitsee käyttää avainsanoja www-sivulla. Se ei oleranking tekijä."
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Kanoninen on prosessi poiminta paras url kun on olemassa useita "
+#~ "vaihtoehtoja . Tämä kanoninen meta tag auttaa hakukoneindeksoijat "
+#~ "indeksoidasivun , joka voi lähestyä eri URL ( kuten http://www.example."
+#~ "com/ ja http://example.com/ )."
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "Meta robottien tag vierailua hakukoneiden robotit indeksoida tai "
+#~ "jättääweb-sivun . Jos annetaanarvo noindex ja nofollow , web- sivu ei "
+#~ "indeksoida."
+
+#~ msgid "Favicon Link"
+#~ msgstr "favicon Link"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "Näyttääainutlaatuisen kuvan vieressä otsikon yläosassa selaimen . Hyvä "
+#~ "SEO käytäntö"
+
+#~ msgid "Language"
+#~ msgstr "kieli"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "Jakaminen kieltä käytät"
+
+#~ msgid "Type"
+#~ msgstr "tyyppi"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "Tyyppinen sovellus jaat . Tässä se on sivusto"
+
+#~ msgid "Site Name"
+#~ msgstr "sivuston nimi"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "Nimiverkkosivuilla . Tässä se on"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "Otsikko jaetun sisällön . Voi tai ei voi olla sama kuin sivun otsikko"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "Body jaetun sisällön . Yleensä tämä teksti on nähty jaettua sisältöä "
+#~ "sosiaalisen median verkostot"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Määritä sivun linkki , tämä url jaetaan ja on linkki etuja . Mutta "
+#~ "ollakseni rehellinen."
+
+#~ msgid "Image"
+#~ msgstr "kuva"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "Erittäin tärkeä, koska tämä saa käyttäjät huomiota t jaettuja sisältöä "
+#~ "sosiaalisen median."
+
+#~ msgid "Total number of images"
+#~ msgstr "Kuvien kokonaismäärä"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "Käytä \"alt\" ominaisuus"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "Käytä \"height\" ominaisuus"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "Käytä \"leveys\" ominaisuus"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "Asetapuuttuu ominaisuuksia."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr "Ei päätä tageja löytynyt . Joten ei tekstiä hierarkia on läsnä."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "Kirjoita teksti asianmukaisen hierarkian."
+
+#~ msgid "All head tags are present"
+#~ msgstr "Kaikki pää tuntomerkit ovat mukana"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "Niin, siellä on teksti hierarkia läsnä."
+
+#~ msgid "One head tag is present"
+#~ msgstr "Yksi pää tuntomerkki on mukana"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr "Varmista, että teksti on hierarkiassa . Jos se ei tee niin."
+
+#~ msgid "Check again"
+#~ msgstr "Tarkista uudelleen"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "Teksti HTML suhde tällä sivulla on"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "Kirjoita lisää tekstiä, atleast"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "Liian paljon tekstiä Web-sivun."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "Tee tämä sivu houkuttelevampi enemmän HTML . Tai kirjoittaa vähemmän "
+#~ "tekstiä , atleast"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "Tämä suhde tähän web-sivu on normaalia."
+
+#~ msgid "Outgoing Links"
+#~ msgstr "lähtevä Linkit"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "Linkkien määrä on suuri."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "Linkkien määrä on liikaa."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "Linkkien määrä olisi alennettava"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Yhteydet suht Yhdistän"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "Yhteydet otsikkomääritteessä"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Yhteyksiä nofollow suht attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "Laita suht nimi ja määritteitä linkkejä"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "Optimaalinen Kuvien käyttö pitäisi olla korkeus, leveys ja korkeus "
+#~ "määrite. Kuvia ei saa kokoa on selain."
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "Teksti esitys on parempihierarkia otsikot ja kehon tageja . Käytä H1 , "
+#~ "H2, H3 , H4 , H5 , H6 tagit oikein."
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Tämä suhde määrittää,web-sivu on optimaalinen sisällön rikas ja "
+#~ "visuaalisesti mallikas . Tämä ei ole sijoitusta tekijä ja sen tulisi olla "
+#~ "välillä 20 % ja 70%."
+
+#~ msgid "Link Numbers"
+#~ msgstr "linkki numerot"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "Linkkien määrä soittaamerkittävä rooli päätettäessä PageRank . Numerot "
+#~ "olisi optimoitu ja ei pitäisi olla kovin korkea."
+
+#~ msgid "Link Attributes"
+#~ msgstr "linkki ominaisuudet"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "On 2 attribuutteja suht ja otsikko tahansa web- sivun linkit . Ne "
+#~ "määritelläänlinkkiä ja se's funktio."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "Tämä sivu tekee yhteensä"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTP-pyyntöjä."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "tyypit ovat"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "JavaScript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "varten tyylitiedoston."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "Yritä tehdä vähemmän HTTP-pyyntöjen koska tämä on korkea . Käytä "
+#~ "optimoitu teema ja widgetit"
+
+#~ msgid "Reduce it"
+#~ msgstr "vähentämiseksi"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "Yritä tehdä vähemmän HTTP-pyyntöjen koska tämä on erittäin korkea . Käytä "
+#~ "optimoitu teema ja widgetit"
+
+#~ msgid "Must Reduce"
+#~ msgstr "on vähennettävä"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "Tyylitaulukko tekee HTTP-pyyntöjen kautta @ import"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "Poista@ import url ja laita se pään tag kautta yhteys tyylitiedoston suht "
+#~ "ominaisuus"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "Tyylitaulukko ei tee HTTP-pyynnön sisäisesti"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr ""
+#~ "Tyyliattribuutti on läsnä yli tagit jossain tai kaikissa ongelmatilanne."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "Etsi ja poista tyyliattribuutteja luokan attribuutteja ja laitatyyli "
+#~ "tärkeimmät CSS-tiedosto"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "Ei tyyliattribuutti on läsnä tahansa tag."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "Ei ole html virheen tämän sivun."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "on olemassa"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "virheitä html Web-sivun :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "Kaivaavirheitä ja selvittää, mitä aiheuttaavirheitä , teeman tai plugin "
+#~ "ja ratkaisemiseksi"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "% of stylesheets ja JavaScript ladataan head-osioon."
+
+#~ msgid "This is high"
+#~ msgstr "Tämä on suuri"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr "Lisää skriptejä footer -osioon ja poistaa ne ylätunnisteeseen"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Mikrotiedot rikas pätkä on läsnä tällä sivulla."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "Tyyppi rikas pätkä on"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "Ei ole mikrotason runsaasti pätkä läsnä tällä sivulla."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "Käytä kaikkia vapaa SEO plugin markup Web-sivun mikrotiedoilla rikas "
+#~ "pätkä."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "Määrä HTTP-pyyntöjen Web-sivun avulla hakemaan sisältöä palvelimelta "
+#~ "vaikutteita asiakirjan latausaikaa , koska enemmän pyyntöjä vaativat "
+#~ "enemmän lataukset ja vie enemmän aikaa"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "Tyylitaulukon import url"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "@ import parametri sisällä Tyylitaulukko omiaan lisäämään tarpeetonta "
+#~ "asiakirja kuormitusta . Tämä olisi vältettävä"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "Käyttämällä tätä millään osa html sivun vähentää laatua lisäämällä selain "
+#~ "tekee aika"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "selaimen yhteensopivuus"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "Google haluaa , että Web- sivun pitäisi näyttää ok eri selaimissa ( esim. "
+#~ "Mozila Firefox, Chrome , Internet Explorer , Safari , Opera jne. ) , "
+#~ "japerus asia voimme tarkistaa, virheet sisällä yor html"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Visual Complition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "HTTP- pyyntöjen header verrattuna yhteensä HTTP-pyyntöjen vaikuttaa "
+#~ "visuaalisen complition , joka ontärkeä suunnittelun standardiparametri"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "Rich katkelmien"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "Tämäntyyppinen HTML markup antaa enemmän tietoa hakukoneen sivuilla "
+#~ "tehdä . Google kannustaa mikrotason tyyppi markup , koska se lisää "
+#~ "käyttäjän kokemus Hakukone Sijoitus Page"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "Google saattaa sekoittaa sivun automaattisesti luotu."
+
+#~ msgid "because of this part"
+#~ msgstr "koska tämä osa"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "Vaihda url erityyppistä permalink"
+
+#~ msgid "Change it"
+#~ msgstr "muuttaa sitä"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "Tämä sivu url ylläpitää ohjeita."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr ""
+#~ "Web-sivun URL-osoite on liian iso . Google voi pitävät sitä roskapostia."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "Vaihda url koko ja tyyppi sivulla tai tekstieditorin . Varmista et käytä "
+#~ "mitään istuntoon seuranta"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "Muokattu viimeksi- osa otsikko löytyy . If- Modified -Since on käytössä."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "Muokattu viimeksi- osa otsikkoa ei löytynyt . If- Modified -Since on Pois"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "Kysy hosting-palvelujen tarjoaja aktivoida If- Modified -Since header"
+
+#~ msgid "Ask for it"
+#~ msgstr "Kysy sitä"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "Cache on aktiivinen . Tämä sivu on seuraavat cache parametrit."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr "Cache ei ole aktiivinen . Tämä sivu don't palaa cache parametrit."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "Käytä välimuistin menetelmä paremman käyttökokemuksen . Käytä kaikkia "
+#~ "vapaa cache plugin saatavilla"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "Keep Alive Connection on Pois"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr "Kysy hosting-palvelujen tarjoaja aktivoida Keep Alive Connection"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "Keep Alive -yhteys"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "gzip pakkaus Web-sivun otsikot on käytössä."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "Ei pakkausmenetelmä löytyy web-sivulla."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr "Ota gzip pakkausta parempia tuloksia . Käytä ilmaisia ​​lisäosia."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "Käytät WordPress versio"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr "Käytät WordPress , luultavasti se'sa muokattu CMS WordPress ydin."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "Käytä asianmukaista WordPress -ohjelmiston"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "Jos url on muuttuja informations tai on yli 255 tavua , hakukoneet "
+#~ "pitävät sitä roskapostiksi."
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "Tämä onpalvelin ominaisuus . Tämä ilmoittaa automaattisesti hakukoneiden "
+#~ "robotit , kun muutoksia tapahtuu web-sivun sisällön."
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "Välimuistitilassa html , css , JavaScript , kuvat käyttäjät selaimet "
+#~ "voivat olla erittäin hyödyllisiä vähentämään asiakirjan latausajan . "
+#~ "Hakukoneindeksoijat tykkää verkkosivuja parempi asiakirja latausajan."
+
+#~ msgid "Keep Alive"
+#~ msgstr "pitää hengissä"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "Tämä onpalvelin ominaisuus . Tämä pitää yhteyden palvelimen ja selaimen "
+#~ "aktiivinenmainitun aikaa . Ja säästää aikaa liikaa viestintää . Näin se "
+#~ "alentaa asiakirja latausaika , joka on parempi."
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "Tämä palvelin ominaisuus tarjoaa web-sivun sisältöä selaimessa gzip- "
+#~ "pakatussa muodossa . Näin se alentaa kaistanleveys ja web-sivun koon."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "Content Management System (CMS ) luo web-sivun skriptit säilytetään "
+#~ "palvelimella . Joten Google indeksoijat saattavat pitää tätä sisältöä "
+#~ "voidaan auto syntyy . Mutta, WordPress käyttäjille tämä ei ole ongelma."
+
+#~ msgid "Web Page"
+#~ msgstr "Web-sivu"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "Hakukone yhteensopivuus , Google Verkkovastaavan ohjeet vakiona"
+
+#~ msgid "Theme Used"
+#~ msgstr "teeman"
+
+#~ msgid "Time Taken"
+#~ msgstr "aika"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "sekuntia Scan"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "sekuntia hoitokustannusosat"
+
+#~ msgid "Percentage"
+#~ msgstr "osuus"
+
+#~ msgid "Success"
+#~ msgstr "menestys"
+
+#~ msgid "Failure"
+#~ msgstr "vika"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Web Page Kaiken SEO Performance"
+
+#~ msgid "Complete"
+#~ msgstr "täydellinen"
+
+#~ msgid "Incomplete"
+#~ msgstr "epätäydellinen"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Web-sivu optimoitu Data yleiskatsaus"
+
+#~ msgid "Required"
+#~ msgstr "Pakollinen"
+
+#~ msgid "Completed"
+#~ msgstr "valmistunut"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "Vertailu sosiaalisen tietoja"
+
+#~ msgid "Actual"
+#~ msgstr "todellinen"
+
+#~ msgid "Ideal Case"
+#~ msgstr "Ideal Case"
+
+#~ msgid "none"
+#~ msgstr "ei mitään"
+
+#~ msgid "header"
+#~ msgstr "ylätunniste"
+
+#~ msgid "body"
+#~ msgstr "elin"
+
+#~ msgid "full"
+#~ msgstr "täysi"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "Arvioitu Pattern visuaalisen complition päävalikko"
+
+#~ msgid "web page loading"
+#~ msgstr "Web- sivun lataaminen"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "Visual complition prosenttiosuus"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScript"
+
+#~ msgid "Styles"
+#~ msgstr "tyylit"
+
+#~ msgid "Pure Text"
+#~ msgstr "Pure teksti"
+
+#~ msgid "Alt Text"
+#~ msgstr "alt teksti"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "Vertailu palvelimen suorituskykyä"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "Tekniset näkökohdat yleiskatsaus"
+
+#~ msgid "New Scan"
+#~ msgstr "uusi skannaus"
+
+#~ msgid "Notes"
+#~ msgstr "Huomautuksia"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "Valitsi minkä tahansa sivun tai postitse tai kirjoita mukautetun url Scan"
+
+#~ msgid "OR"
+#~ msgstr "TAI"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "ValitsePost Scan"
+
+#~ msgid "Scan Post"
+#~ msgstr "skannata Post"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "Annacustom url"
+
+#~ msgid "Scan URL"
+#~ msgstr "skannata URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Asiat tietää ennen scaning"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "Yhteenveto Kaavio ovat arvioita laskenta eikä edusta laskelmat tahansa "
+#~ "hakukoneen algoritmia."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "Jotkin parametrit näkyvät tulokset eivät sisälly suoraan google ohjeita . "
+#~ "Mutta ne vaikuttavat välillisesti."
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr ""
+#~ "Vie hiiren osoitin korosti elementtejä nähdäselitykset tulosta sivu."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "Ei tietoja sivuston , palvelimen tai mitään vangiksi tahansa "
+#~ "palvelimelle . Scaning tehdään kokonaan selaimessa."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "Url palauttaa virheen : 404 Not Found , joka tarkoittaa, ettei "
+#~ "verkkosivun läsnä ja hakukoneet eivät indeksoi sitä . Anna olemassa Web "
+#~ "sivuston osoite."
+
+#~ msgid "Print Report"
+#~ msgstr "Tulosta raportti"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "SEO Tips →"
+
+#~ msgid "Data"
+#~ msgstr "tiedot"
+
+#~ msgid "Technical"
+#~ msgstr "tekninen"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "Sosiaalinen Tiedon jakaminen ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Open Graph pöytäkirjan Facebook ja hyväksynyt lähes kaikki suuret "
+#~ "sosiaalisen median kuten Google +"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Web Page Data"
+
+#~ msgid "Remarks"
+#~ msgstr "Huomautuksia"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ Indeksoitujen Tekstisisältö"
+
+#~ msgid "Total Text"
+#~ msgstr "Yhteensä teksti"
+
+#~ msgid "In page Style"
+#~ msgstr "Page Style"
+
+#~ msgid "In page Script"
+#~ msgstr "Page Script"
+
+#~ msgid "Scan by"
+#~ msgstr "skannata"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "toiminta"
+
+#~ msgid "Length "
+#~ msgstr "pituus"
+
+#~ msgid " for image "
+#~ msgstr "kuvien"

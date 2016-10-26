@@ -1,0 +1,2218 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-21 00:35+0530\n"
+"PO-Revision-Date: 2015-08-21 00:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Bengali\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../complete-google-seo-scan.php:93
+#, fuzzy
+msgid ""
+"Complete Google SEO Scan Plugin will not be activated because your PHP "
+"version"
+msgstr ""
+"সম্পূর্ণ গুগল এসইও স্ক্যান পিএইচপি 5.3 প্রয়োজন + ও সক্রিয় করা হবে না , আপনার বর্তমান "
+"সার্ভার কনফিগারেশন পিএইচপি সংস্করণ চলছে"
+
+#: ../complete-google-seo-scan.php:93
+msgid "is less than required 5.3. See more information:"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:118
+msgid "Start Here"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:154
+#, fuzzy
+msgid "Seo Scan Overview"
+msgstr "সামাজিক ডেটা ভাগ ওভারভিউ"
+
+#: ../complete-google-seo-scan.php:154 ../complete-google-seo-scan.php:164
+#, fuzzy
+msgid "Seo Scan"
+msgstr "এসইও স্ক্যান"
+
+#: ../complete-google-seo-scan.php:244
+msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgstr ""
+
+#: ../complete-google-seo-scan.php:275
+msgid "Choose Post types to show"
+msgstr ""
+
+#: ../core/ajax-handle.php:62 ../core/overview-ajax.php:16
+#, fuzzy
+msgid "Invalid Request"
+msgstr "HTTP অনুরোধ"
+
+#: ../core/ajax-handle.php:91
+#, fuzzy
+msgid "Server Issue"
+msgstr "সার্ভার পয়েন্ট"
+
+#: ../core/ajax-handle.php:112
+msgid "Can not Download the Webpage"
+msgstr ""
+
+#: ../core/overview-ajax.php:24 ../core/overview-ajax.php:78
+#: ../core/overview-ajax.php:88 ../core/overview-ajax.php:136
+#, fuzzy
+msgid "Improper Request"
+msgstr "HTTP অনুরোধ"
+
+#: ../core/overview-ajax.php:54
+msgid "Network Error"
+msgstr ""
+
+#: ../core/overview-ajax.php:64
+msgid "Failed, Server Issue"
+msgstr ""
+
+#: ../core/overview-ajax.php:97
+msgid "No Files Found"
+msgstr ""
+
+#: ../user/front-end.php:95
+msgid "OVERVIEW"
+msgstr ""
+
+#: ../user/front-end.php:101
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../user/front-end.php:108
+msgid "REPORT"
+msgstr ""
+
+#: ../user/front-end.php:109
+msgid "ACTIONS"
+msgstr ""
+
+#: ../user/front-end.php:134
+msgid "Heading"
+msgstr ""
+
+#: ../user/front-end.php:140
+msgid "Alt"
+msgstr ""
+
+#: ../user/front-end.php:146
+#, fuzzy
+msgid "Anchor"
+msgstr "অ্যাঙ্কর শিরোনাম"
+
+#: ../user/front-end.php:152
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: ../user/front-end.php:158
+msgid "Description"
+msgstr "বর্ণনা"
+
+#: ../user/front-end.php:164
+msgid "Url"
+msgstr ""
+
+#: ../user/front-end.php:192
+msgid "Name"
+msgstr "নাম"
+
+#: ../user/front-end.php:205 ../user/front-end.php:410
+msgid "SSL security"
+msgstr ""
+
+#: ../user/front-end.php:206
+msgid "WWW Resolve"
+msgstr ""
+
+#: ../user/front-end.php:207
+msgid "IP forwarding"
+msgstr ""
+
+#: ../user/front-end.php:208 ../user/front-end.php:435
+#, fuzzy
+msgid "Gzip Compression"
+msgstr "Gzip কম্প্রেশন"
+
+#: ../user/front-end.php:209
+#, fuzzy
+msgid "Cache"
+msgstr "ক্যাশে সংক্রান্ত"
+
+#: ../user/front-end.php:210 ../user/front-end.php:417
+#, fuzzy
+msgid "If modified since"
+msgstr "যদি পরিবর্তিত - যেহেতু"
+
+#: ../user/front-end.php:211
+msgid "Response Time"
+msgstr ""
+
+#: ../user/front-end.php:211 ../user/front-end.php:430
+msgid "miliseconds"
+msgstr ""
+
+#: ../user/front-end.php:218 ../user/front-end.php:463
+#: ../user/front-end.php:470
+msgid "More"
+msgstr ""
+
+#: ../user/front-end.php:251
+msgid "Categories"
+msgstr ""
+
+#: ../user/front-end.php:266
+msgid "Tags"
+msgstr ""
+
+#: ../user/front-end.php:275
+msgid "All Time"
+msgstr ""
+
+#: ../user/front-end.php:276
+msgid "Today"
+msgstr ""
+
+#: ../user/front-end.php:277
+msgid "7 days"
+msgstr ""
+
+#: ../user/front-end.php:278
+msgid "30 days"
+msgstr ""
+
+#: ../user/front-end.php:279
+msgid "90 days"
+msgstr ""
+
+#: ../user/front-end.php:280
+msgid "Never"
+msgstr ""
+
+#: ../user/front-end.php:307
+msgid "<code>< title</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:308
+msgid ""
+"<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
+msgstr ""
+
+#: ../user/front-end.php:309
+msgid ""
+"Long tail keywords are helpful for seo. Use them with percistance but don't "
+"spam."
+msgstr ""
+
+#: ../user/front-end.php:310
+msgid "Write a minimum of 200 words atleast."
+msgstr ""
+
+#: ../user/front-end.php:311
+msgid ""
+"Use enough text in comparison of HTML. But also don't use too much text."
+msgstr ""
+
+#: ../user/front-end.php:312
+msgid ""
+"Text should have hiarerchy with heading tags like <code>h1</code>, <code>h2</"
+"code>, <code>h3</code>."
+msgstr ""
+
+#: ../user/front-end.php:313
+msgid ""
+"Crawler robots can not read image links. Please use some text inside links "
+"also."
+msgstr ""
+
+#: ../user/front-end.php:314
+msgid "Use nofollow links and dofollow links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:315
+msgid "Use external links and internal links in a reasonable propotion."
+msgstr ""
+
+#: ../user/front-end.php:316
+#, fuzzy
+msgid "The webpage looks like a link farm. Reduce number of links."
+msgstr "লিঙ্ক সংখ্যা কমাতে চেষ্টা করুন."
+
+#: ../user/front-end.php:317
+msgid "Put proper <code>alt</code> tags in images."
+msgstr ""
+
+#: ../user/front-end.php:318
+msgid "Don't use nested tables, i.e. tables within table columns."
+msgstr ""
+
+#: ../user/front-end.php:319
+msgid "Remove style attributes from all HTML tags and use .css file instead."
+msgstr ""
+
+#: ../user/front-end.php:320
+msgid ""
+"<code>< meta name=\"viewport\"</code> tag should be present for scaling "
+"webpage with device size."
+msgstr ""
+
+#: ../user/front-end.php:321
+msgid ""
+"<code>@media</code> query is not found. The webpage should be mobile ready."
+msgstr ""
+
+#: ../user/front-end.php:322
+msgid "Get an SSL certificate and use url with <code>https://</code>."
+msgstr ""
+
+#: ../user/front-end.php:323
+msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
+msgstr ""
+
+#: ../user/front-end.php:324
+msgid "Url with and without WWW should redirect to same url. Resolve it."
+msgstr ""
+
+#: ../user/front-end.php:325
+#, fuzzy
+msgid "Put a canonical link."
+msgstr "একটি ক্যানোনিকাল লিঙ্ক রাখুন"
+
+#: ../user/front-end.php:326
+msgid "Enable If modified since header."
+msgstr ""
+
+#: ../user/front-end.php:327
+msgid ""
+"<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
+"value."
+msgstr ""
+
+#: ../user/front-end.php:328
+msgid "Put an IP address and forward to page url"
+msgstr ""
+
+#: ../user/front-end.php:329
+msgid "Header response time is too long. Improve website server."
+msgstr ""
+
+#: ../user/front-end.php:330
+#, fuzzy
+msgid "Enable gZip compression."
+msgstr "Gzip কম্প্রেশন"
+
+#: ../user/front-end.php:331
+msgid "Enable Browser Caching."
+msgstr ""
+
+#: ../user/front-end.php:332
+msgid "Reduce number of HTTP requests made by .css and .js files."
+msgstr ""
+
+#: ../user/front-end.php:333
+msgid "Compress resorce files and increase loading speed."
+msgstr ""
+
+#: ../user/front-end.php:334
+msgid ""
+"Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
+"sharing."
+msgstr ""
+
+#: ../user/front-end.php:340
+msgid "Help"
+msgstr ""
+
+#: ../user/front-end.php:365
+msgid "Select popular words"
+msgstr ""
+
+#: ../user/front-end.php:369
+#, fuzzy
+msgid "Number of words"
+msgstr "লিংক সংখ্যা"
+
+#: ../user/front-end.php:369
+msgid ""
+"Minimum 200 words in a webpage is required. Write enough words to describe "
+"the page well."
+msgstr ""
+
+#: ../user/front-end.php:370
+#, fuzzy
+msgid "Text to html ratio"
+msgstr "টেক্সট / HTML অনুপাত"
+
+#: ../user/front-end.php:370
+msgid ""
+"There must be enough text in webpage as compared with total size. About 15% "
+"to 70%"
+msgstr ""
+
+#: ../user/front-end.php:371
+#, fuzzy
+msgid "Text hiarerchy"
+msgstr "শিরোনাম শ্রেণীক্রম"
+
+#: ../user/front-end.php:371
+msgid ""
+"A bulk of text is not useful, rather text content with proper heading tags "
+"are needed."
+msgstr ""
+
+#: ../user/front-end.php:374
+#, fuzzy
+msgid "Image Links"
+msgstr "চিত্র"
+
+#: ../user/front-end.php:374
+msgid ""
+"Links that conatin only image but no text is considered poorly optimized."
+msgstr ""
+
+#: ../user/front-end.php:375
+#, fuzzy
+msgid "Nofollow Links"
+msgstr "লিংক সংখ্যা"
+
+#: ../user/front-end.php:375
+msgid ""
+"Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
+"all links from crawling."
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid "External Links"
+msgstr ""
+
+#: ../user/front-end.php:376
+msgid ""
+"Links that points to other domain must be present, in a proportional number."
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid "Nested Tables"
+msgstr ""
+
+#: ../user/front-end.php:394
+msgid ""
+"In markup of webpage, if table element is put inside a column of another "
+"table, it makes the page slow."
+msgstr ""
+
+#: ../user/front-end.php:395
+#, fuzzy
+msgid "Style Attributes"
+msgstr "স্টাইল অ্যাট্রিবিউট"
+
+#: ../user/front-end.php:395
+msgid ""
+"attribute present in markup tags is not a good practice and increases render "
+"time."
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid "Media Queries"
+msgstr ""
+
+#: ../user/front-end.php:398
+msgid ""
+"For responsive web design, you need to have <code>@media</code> elements "
+"inside .css files."
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid "Viewport Tag"
+msgstr ""
+
+#: ../user/front-end.php:399
+msgid ""
+"On <code>head</code> area of webpage, there is a tag which helps in scaling "
+"the dimensions according to display size."
+msgstr ""
+
+#: ../user/front-end.php:411
+msgid "Static url "
+msgstr ""
+
+#: ../user/front-end.php:412
+msgid "Use of underscores in Url"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid "www Resolve"
+msgstr ""
+
+#: ../user/front-end.php:416
+msgid ""
+"Check if url is showing same webpage for url with and without \"www.\" prefix"
+msgstr ""
+
+#: ../user/front-end.php:417
+msgid ""
+"Let web server tell Google whether your content has changed since google bot "
+"last crawled your site."
+msgstr ""
+
+#: ../user/front-end.php:420
+#, fuzzy
+msgid "Canonical Url"
+msgstr "ক্যাননিকাল লিংক"
+
+#: ../user/front-end.php:420
+msgid ""
+"Let Google know, same content is available through multiple URL structures "
+"or via syndication."
+msgstr ""
+
+#: ../user/front-end.php:421
+#, fuzzy
+msgid "Meta Robot"
+msgstr "মেটা রোবট"
+
+#: ../user/front-end.php:421
+msgid ""
+"Visibility in search result stops on use of \"noindex\" value in robots meta "
+"tag."
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid "IP Forwarded"
+msgstr ""
+
+#: ../user/front-end.php:424
+msgid ""
+"Check if server IP address (internet protocol) is forwarding to the same url "
+"or not."
+msgstr ""
+
+#: ../user/front-end.php:430
+msgid "Header response time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Loading time"
+msgstr ""
+
+#: ../user/front-end.php:431
+msgid "Seconds"
+msgstr ""
+
+#: ../user/front-end.php:435
+msgid ""
+"Deliver page content in a compressed .gzip file to reduce bandwidth and "
+"loading time."
+msgstr ""
+
+#: ../user/front-end.php:436
+#, fuzzy
+msgid "Browser Caching"
+msgstr "ক্যাশে সংক্রান্ত"
+
+#: ../user/front-end.php:436
+msgid ""
+"Store page assets in browser of user for specific time, to load it faster "
+"next time."
+msgstr ""
+
+#: ../user/front-end.php:439 ../user/front-end.php:440
+#, fuzzy
+msgid "requests"
+msgstr "HTTP অনুরোধ"
+
+#: ../user/front-end.php:463
+msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
+msgstr ""
+
+#: ../user/front-end.php:512
+msgid "And that's fine."
+msgstr ""
+
+#: ../user/front-end.php:513
+msgid "That's too much of text, please write less."
+msgstr ""
+
+#: ../user/front-end.php:514
+msgid "That's too little text, please write more."
+msgstr ""
+
+#: ../user/front-end.php:521
+msgid "Url is clean and tidy"
+msgstr ""
+
+#: ../user/front-end.php:522
+msgid "Url has underscore"
+msgstr ""
+
+#: ../user/front-end.php:523
+msgid "Url is dynamic"
+msgstr ""
+
+#: ../user/front-end.php:524
+msgid "Url is dynamic and has underscore"
+msgstr ""
+
+#: ../user/front-end.php:686
+msgid "items"
+msgstr ""
+
+#: ../user/front-end.php:691 ../user/display/overview-display.php:86
+msgid "of"
+msgstr ""
+
+#: ../user/front-end.php:706
+msgid "All Items Matched"
+msgstr ""
+
+#: ../user/front-end.php:709
+msgid "No Match Found"
+msgstr ""
+
+#: ../user/lib/btn-object.php:39
+msgid "Button Error"
+msgstr ""
+
+#: ../user/lib/accordion-object.php:21
+msgid "Click to toggle"
+msgstr ""
+
+#: ../user/lib/dropdown-object.php:55 ../user/lib/dropdown-object.php:72
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#: ../user/display/overview-display.php:4
+msgid "Scan Overview"
+msgstr ""
+
+#: ../user/display/overview-display.php:25 ../user/display/scan-display.php:24
+msgid ""
+"Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
+"<i>Theme and Plugins Design Seo</i>."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "You will see them bellow."
+msgstr ""
+
+#: ../user/display/overview-display.php:25
+msgid "Then reload the page."
+msgstr ""
+
+#: ../user/display/overview-display.php:45
+msgid "ARCHIVES"
+msgstr ""
+
+#: ../user/display/overview-display.php:69
+msgid "SCAN ARCHIVE PAGE"
+msgstr ""
+
+#: ../user/display/overview-display.php:78
+#, fuzzy
+msgid "Content Status"
+msgstr "বিষয়বস্তু বিষয়"
+
+#: ../user/display/overview-display.php:79
+msgid "Fetch results from stored scan reports."
+msgstr ""
+
+#: ../user/display/overview-display.php:85
+#, fuzzy
+msgid "Fetch Intel"
+msgstr "ফলাফল"
+
+#: ../user/display/overview-display.php:86
+msgid "reports processed."
+msgstr ""
+
+#: ../user/display/overview-display.php:88
+msgid "No pages are scaned. Use top navigation to go to list of pages."
+msgstr ""
+
+#: ../user/display/overview-display.php:128
+#, fuzzy
+msgid "Server Seo Status"
+msgstr "সার্ভার পয়েন্ট"
+
+#: ../user/display/overview-display.php:133
+#: ../user/display/overview-display.php:153
+msgid "CHECK NOW"
+msgstr ""
+
+#: ../user/display/overview-display.php:146
+#, fuzzy
+msgid "Design Seo Status"
+msgstr "সার্ভার পয়েন্ট"
+
+#: ../user/display/report-display.php:26
+msgid "sec"
+msgstr ""
+
+#: ../user/display/report-display.php:42
+msgid "Text & Links"
+msgstr ""
+
+#: ../user/display/report-display.php:43
+msgid "Design"
+msgstr "ডিজাইন"
+
+#: ../user/display/report-display.php:44
+msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
+msgstr ""
+
+#: ../user/display/report-display.php:60
+msgid "IT'S ALL GOOD. NO ACTIONS NEEDED"
+msgstr ""
+
+#: ../user/display/report-display.php:64
+msgid "TAKE <span id=\"ActNum\"></span> FOLLOWING ACTIONS"
+msgstr ""
+
+#: ../user/display/scan-display.php:3
+#, fuzzy
+msgid "Scan Status"
+msgstr "পাতা স্ক্যান করুন"
+
+#: ../user/display/scan-display.php:24
+msgid "You will find them here."
+msgstr ""
+
+#: ../user/display/scan-display.php:84 ../help/message-object.php:66
+msgid "words, focus is"
+msgstr ""
+
+#: ../user/display/scan-display.php:86
+#, fuzzy
+msgid "Not Scanned Yet"
+msgstr "জন্য স্ক্যান করা"
+
+#: ../user/display/scan-display.php:108
+msgid "SCAN"
+msgstr ""
+
+#: ../user/display/scan-display.php:116
+msgid "FAILED"
+msgstr ""
+
+#: ../user/display/scan-display.php:127
+msgid "NEVER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:19
+msgid "Introduction"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"We have not included backlinks analysis, traffic metrics, knowledge graph "
+"and brand signals, because the intention is primarily on-page search "
+"optimization only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"If you catch a bug or want to give any feedback or feature suggestion you "
+"are welcome to email the plugin author"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../help/plugin-help-object.php:20
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../help/plugin-help-object.php:24
+msgid "Overview"
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Starting page of this plugin is named \"Seo Overview\". There you can find 3 "
+"types of features to scan 3 different aspects of your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Server seo scan"
+msgstr "সার্ভার পয়েন্ট"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"will make a header request and find out 10 important points about the server "
+"and it's configuration. Practically, You can change them by using different "
+"plugins available."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Design seo scan"
+msgstr "ডিজাইন পয়েন্ট"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"gives an idea about numbers of HTTP requests made by your webpages and "
+"resource size it takes to load a webpage. They are takken from "
+"<code>_enqueued</code> styles and scripts. All hard coded links are ignored, "
+"because it is assumed that you are using WordPress compatable themes."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+#, fuzzy
+msgid "Content Overview"
+msgstr "পৃষ্ঠা এড়িয়ে ওভারভিউ ইন"
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"After you are done with scans for your webpages, you will be able to complie "
+"those individual content reports to a single report and gather actionable "
+"intelligence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid "Set Screen Options."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"for showing various post types in WordPress admin menus. You can select them "
+"using checkboxes. This option is available only in \"Scan Overview\" page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Secondly, you may use numbers of pages to show in any post type \"Scan Status"
+"\" plugins page. This is available in all other \"Scan Status\" pages "
+"created by this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:25
+msgid ""
+"Close this \"Help\" tab and open \"Screen Options\" tab to explore more."
+msgstr ""
+
+#: ../help/plugin-help-object.php:29
+msgid "How to use?"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is mobile "
+"ready. So, for regular WordPress users it will be very intuitive. The usage "
+"process has 3 steps."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Before you start"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"make sure you have taken Design seo and Server seo scans available at "
+"Overview page."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+#, fuzzy
+msgid "Select a Page"
+msgstr "স্ক্যান করুন একটি পৃষ্ঠা নির্বাচন করুন"
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"from the individual list of webpage blocks, by clicking on corresponding "
+"\"SCAN\" button. Top navigation is to select posts from multiple post types "
+"and you may filter them according to time of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Wait for scan"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"to be completed. It will take a few seconds, approximately 2 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See results"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"in a pop up on the same page as soon as the scan is complete. The result "
+"will have 7 segments."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Overall score with social media counts."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Search engine snippet and highlighted keyword."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Use of Image and page design seo"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Required information on server and url."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "A sample Facebook snippet from social media tags."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid "See required actions"
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"listed in the same pop-up. Just click the button with the word \"ACTION\" at "
+"bottom. You will find step by step guidence."
+msgstr ""
+
+#: ../help/plugin-help-object.php:30
+msgid ""
+"Scan result is displayed in an organized fashion with <strong>Hints</strong> "
+"and are easy to understand for someone with basic seo knowledge. For a "
+"primitive guideline of seo aspects see links at right sidebar of this area."
+msgstr ""
+
+#: ../help/plugin-help-object.php:34
+msgid "Performance"
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes less than 5 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"সময় Scaning আপনার সার্ভার এবং আপনার ওয়েবসাইটের মানের উপর নির্ভর করে. প্রকৃত "
+"প্রক্রিয়া সম্পন্ন কম 0.01 সেকেন্ড লাগে ."
+
+#: ../help/plugin-help-object.php:35
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../help/plugin-help-object.php:35
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../help/plugin-help-object.php:39
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "privacy Policy."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid "Data storage."
+msgstr ""
+
+#: ../help/plugin-help-object.php:40
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. Other than those, there are 4 custom data arrays stored in "
+"\"_options\" database. When the plugin is uninstalled all of those data will "
+"be removed from your server."
+msgstr ""
+
+#: ../help/plugin-help-object.php:44
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../help/plugin-help-object.php:45
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../help/plugin-help-object.php:49
+msgid "Updates"
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Future updates of this plugin is expected to contain more features and a new "
+"interface. Some of the features you may expect are Video Seo, Spam "
+"detection, Rich snippet calculation, Twitter v card, above the fold "
+"optimization, sitemap.xml check and robots.txt check. Internationalization "
+"and automatic scan are also desired property to be included."
+msgstr ""
+
+#: ../help/plugin-help-object.php:50
+msgid ""
+"Tough the plugin author will take final decision about updates, you are free "
+"to inform about bugs and feature requests in support forum."
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Support Forum"
+msgstr ""
+
+#: ../help/plugin-help-object.php:57
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../help/message-object.php:15
+msgid "Message"
+msgstr ""
+
+#: ../help/message-object.php:22
+msgid "Network error"
+msgstr ""
+
+#: ../help/message-object.php:23
+msgid "No .css or .js file"
+msgstr ""
+
+#: ../help/message-object.php:24
+msgid "is undefined"
+msgstr ""
+
+#: ../help/message-object.php:25
+msgid "View"
+msgstr ""
+
+#: ../help/message-object.php:26
+msgid "TITLE TAG"
+msgstr ""
+
+#: ../help/message-object.php:27
+msgid "META DESCRIPTION TAG"
+msgstr ""
+
+#: ../help/message-object.php:45
+msgid "NOT FOUND"
+msgstr "খুঁজে পাওয়া যায় নি"
+
+#: ../help/message-object.php:46
+msgid "SOCIAL MEDIA IMAGE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:47
+msgid "SOCIAL MEDIA TITLE TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:48
+msgid "SOCIAL MEDIA DESCRIPTION TAG NOT FOUND"
+msgstr ""
+
+#: ../help/message-object.php:49
+#, fuzzy
+msgid "DOMAIN NAME NOT FOUND"
+msgstr "ট্যাগটি পাওয়া যায়নি"
+
+#: ../help/message-object.php:50
+#, fuzzy
+msgid "TITLE TAG NOT FOUND"
+msgstr "ট্যাগটি পাওয়া যায়নি"
+
+#: ../help/message-object.php:51
+#, fuzzy
+msgid "META DESCRIPTION TAG NOT FOUND"
+msgstr "ট্যাগটি পাওয়া যায়নি"
+
+#: ../help/message-object.php:53 ../help/message-object.php:54
+#, fuzzy
+msgid "Compression"
+msgstr "Gzip কম্প্রেশন"
+
+#: ../help/message-object.php:53
+msgid ".css and .js files can be more compressed to reduce"
+msgstr ""
+
+#: ../help/message-object.php:53
+msgid "in total size"
+msgstr ""
+
+#: ../help/message-object.php:54
+msgid "All .css and .js files are compressed enough."
+msgstr ""
+
+#: ../help/message-object.php:55
+msgid "All images are optimized."
+msgstr ""
+
+#: ../help/message-object.php:56
+msgid "Above images does not have <code>alt</code> tags."
+msgstr ""
+
+#: ../help/message-object.php:57
+#, fuzzy
+msgid "No images are present."
+msgstr "কিছু মাথা ট্যাগ উপস্থিত"
+
+#: ../help/message-object.php:58 ../help/message-object.php:59
+msgid "Links all total"
+msgstr ""
+
+#: ../help/message-object.php:58
+msgid "numbers are ok."
+msgstr ""
+
+#: ../help/message-object.php:59
+#, fuzzy
+msgid "Too much in number."
+msgstr "অত্যধিক HTML আপনার ওয়েব পেজ ."
+
+#: ../help/message-object.php:64
+#, fuzzy
+msgid "NO KEYWORDS FOUND"
+msgstr "খুঁজে পাওয়া যায় নি"
+
+#: ../help/message-object.php:65
+msgid "SPAM"
+msgstr ""
+
+#: ../help/message-object.php:73
+msgid ""
+"Total <span id=\"WordsIntel\"></span> words used. <span id="
+"\"WordsPerPageIntel\"></span> per page. Avg text to html ratio is <span id="
+"\"WordsRatioIntel\"></span>"
+msgstr ""
+
+#: ../help/message-object.php:74
+msgid ""
+"<span id=\"LinksNumIntel\"></span> links per page, nearly <span id="
+"\"ExtLinksIntel\"></span> external and <span id=\"ImgLinksIntel\"></span> "
+"image links of them."
+msgstr ""
+
+#: ../help/message-object.php:75
+msgid ""
+"Long tail keywords (avg <span id=\"KeyWordsSizeIntel\"></span> words long) "
+"were found in <span id=\"KeyWordsIntel\"></span> webpages."
+msgstr ""
+
+#: ../help/message-object.php:77
+msgid "Almost all images seems to be optimized."
+msgstr ""
+
+#: ../help/message-object.php:78
+msgid ""
+"Nearly <span id=\"ImagesIntelPercent\"></span> of pages have images without "
+"alt tags."
+msgstr ""
+
+#: ../help/message-object.php:79
+msgid ""
+"This website images are <span class=\"danger-icon\">not optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:82
+msgid "Your website is mobile optimized."
+msgstr ""
+
+#: ../help/message-object.php:83
+msgid ""
+"Some of your webpages<span id=\"DesignIntelPercent\"></span> are not mobile "
+"optimized."
+msgstr ""
+
+#: ../help/message-object.php:84
+msgid ""
+"Your website is <span class=\"danger-icon\">not mobile optimized</span>."
+msgstr ""
+
+#: ../help/message-object.php:87
+msgid "All urls are neat and clean."
+msgstr ""
+
+#: ../help/message-object.php:88
+msgid ""
+"Some urls <span class=\"danger-icon\">are dynamic</span><span id="
+"\"UrlIntelPercent\"></span> and <span class=\"danger-icon\">have underscore</"
+"span><span id=\"UrlIntelPercentTwo\"></span>."
+msgstr ""
+
+#: ../help/message-object.php:89
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> are <span class=\"danger-icon"
+"\">dynamic and contains underscore</span>."
+msgstr ""
+
+#: ../help/message-object.php:90
+msgid ""
+"Some urls <span id=\"UrlIntelPercent\"></span> <span class=\"danger-icon"
+"\">are dynamic</span>."
+msgstr ""
+
+#: ../help/message-object.php:91
+msgid ""
+"Some urls <span id=\"UrlIntelPercentTwo\"></span> <span class=\"danger-icon"
+"\">have underscores</span>."
+msgstr ""
+
+#: ../help/message-object.php:94
+msgid "Your website is fast, takes less than a second load."
+msgstr ""
+
+#: ../help/message-object.php:95
+msgid "Your website loads fine, may try a little faster."
+msgstr ""
+
+#: ../help/message-object.php:96
+msgid "Your website is slow, make it faster."
+msgstr ""
+
+#: ../help/message-object.php:97
+msgid ""
+"Your website is <span class=\"danger-icon\">too slow</span>, serious "
+"improvement needed."
+msgstr ""
+
+#: ../help/message-object.php:100
+#, fuzzy
+msgid "Social media tags are present. Optimized for social sharing."
+msgstr "কিছু মাথা ট্যাগ উপস্থিত"
+
+#: ../help/message-object.php:101
+msgid ""
+"Social media tags are <span class=\"danger-icon\">incomplete</span> in "
+"almost <span id=\"StagIntelNoPercent\"></span>% pages."
+msgstr ""
+
+#: ../help/message-object.php:102
+msgid ""
+"Social media tags are nearly <span class=\"danger-icon\">absent</span>. Use "
+"them for better sharing."
+msgstr ""
+
+#: ../help/message-object.php:109
+msgid "enabled"
+msgstr ""
+
+#: ../help/message-object.php:114
+msgid "disabled"
+msgstr ""
+
+#: ../db/get-db.php:102
+msgid "ms"
+msgstr ""
+
+#: ../db/get-db.php:104
+msgid "s"
+msgstr ""
+
+#~ msgid "Content"
+#~ msgstr "বিষয়বস্তু"
+
+#, fuzzy
+#~ msgid "Other Points"
+#~ msgstr "সার্ভার পয়েন্ট"
+
+#, fuzzy
+#~ msgid "Download Content"
+#~ msgstr "বিষয়বস্তু"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "5.3.0 আর কোন পিএইচপি সংস্করণ কম  পৌছয় জীবনের শেষ  PHP.net এবং আর এর থেকে "
+#~ "orsecurity আপডেট bugfixes পায়. আপডেট কেন কিভাবে সরকারী তথ্য"
+
+#~ msgid "Scan Now"
+#~ msgstr "এখনই স্ক্যান করুন"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "সম্পূর্ণ গুগল এসইও স্ক্যান"
+
+#~ msgid "Brought to you by"
+#~ msgstr "দ্বারা আপনার কাছে আনা হয়েছে"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel এসইও ব্লগ"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "আপনার ওয়েব পৃষ্ঠার জন্য Google সার্চ ইঞ্জিন অপ্টিমাইজেশান স্ক্যান সম্পূর্ণ. এখানে "
+#~ "ফলাফল ."
+
+#~ msgid "at line"
+#~ msgstr "লাইনে"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "এটি গুলি স্ক্যান ওয়েব পৃষ্ঠা URL থেকে ভিন্ন"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "আপনার পৃষ্ঠায় এই ক্যানোনিকাল URL দ্বারা সূচীবদ্ধ করা বিষয়ে নিশ্চিত হতে"
+
+#~ msgid "Recheck it"
+#~ msgstr "এটি পুনরায় যাচাই"
+
+#~ msgid "OK"
+#~ msgstr "ঠিক আছে"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "ফেভিকন লিখুন"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "দৈর্ঘ্য"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "অক্ষর ( সর্বাধিক 70 অক্ষর অনুমতি দেওয়া হয়েছে)"
+
+#~ msgid "Length"
+#~ msgstr "দৈর্ঘ্য"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "70 জনেরও বেশী অক্ষর অনুসন্ধানের ফলাফল প্রদর্শিত করা হবে না"
+
+#~ msgid "Give shorter title"
+#~ msgstr "সংক্ষিপ্ত শিরোনাম দিন"
+
+#~ msgid "Give a title."
+#~ msgstr "একটি শিরোনাম দিন."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "অক্ষর (সর্বোচ্চ 155 অক্ষর অনুমতি দেওয়া হয়েছে)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "155 টি অক্ষরের মধ্যে কিছু মেটা বিবরণ লিখুন. Altough এটি র্যাংকিং ব্যাহত না কিন্তু "
+#~ "সার্চ ইঞ্জিন পাতা ফলে খারাপ দেখায়. অতএব, হার ( CTR ) মাধ্যমে ক্লিক করুন কমাতে "
+#~ "পারে"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "এটা খাটো করুন."
+
+#~ msgid "This is not good."
+#~ msgstr "এই ভাল হয় না."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "ট্যাগ জায়গা হল, এখন কিছু মেটা বিবরণ লিখুন"
+
+#~ msgid "Give a description"
+#~ msgstr "একটি বর্ণনা দাও"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "খুঁজে পাওয়া যায়নি."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "আপনার ওয়েব পৃষ্ঠায় বিষয়বস্তুর জন্য উপযুক্ত কীওয়ার্ড লিখুন , অনেক সার্চ ইঞ্জিন এটি "
+#~ "ব্যবহার কিন্তু Google না"
+
+#~ msgid "Enter keywords."
+#~ msgstr "কীওয়ার্ড লিখুন."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "মেটা রোবট noindex nofollow মান আছে. এই ভাল হয় না."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "কোন সূচক এবং / অথবা কোন অনুসরণ থেকে রোবট মেটা মান পরিবর্তন করুন"
+
+#~ msgid "Fix this."
+#~ msgstr "এই স্থির করা."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "এই og সঠিক মান বসান : লোকেল মেটা ট্যাগ"
+
+#~ msgid "Fill it"
+#~ msgstr "এটা পূরণ করুন"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "এই og সঠিক মান বসান : SITE_NAME মেটা ট্যাগ"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "এই og সঠিক মান বসান : ধরন মেটা ট্যাগ"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "এই og সঠিক মান বসান : URL মেটা ট্যাগ"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "এই og সঠিক মান বসান : শিরোনাম মেটা ট্যাগ"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "এই og সঠিক মান বসান : বর্ণনা মেটা ট্যাগ"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "এই og সঠিক মান বসান : চিত্র মেটা ট্যাগ"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "অপশন বিবরণ লিখুন পেতে উপলব্ধ কোনো বিনামূল্যে এসইও প্লাগিন ব্যবহার করতে পারেন"
+
+#~ msgid "Put the tag"
+#~ msgstr "ট্যাগ রাখুন"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "আপনার ওয়েব পৃষ্ঠায় বিষয়বস্তুর জন্য উপযুক্ত কীওয়ার্ড লিখুন , অনেক সার্চ ইঞ্জিন এটি "
+#~ "ব্যবহার কিন্তু Google না . আপনি এই ট্যাগ প্রবেশ অপশন পেতে উপলব্ধ কোনো বিনামূল্যে "
+#~ "এসইও প্লাগিন ব্যবহার করতে পারেন"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "আপনি পছন্দসই মেটা ক্যানোনিকাল লিঙ্কটি লিখুন বিকল্পগুলি পেতে উপলব্ধ কোনো বিনামূল্যে "
+#~ "এসইও প্লাগিন ব্যবহার করতে পারেন"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr "এটি একটি ট্যাগ করা ভাল. অন্যথায় কোন মহান উদ্বেগ"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "একটি শর্টকাট আইকন লিঙ্ক ট্যাগ ব্যবহার করে একটি ফেভিকন ico ইমেজ রাখুন"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr "সঠিক মান সঙ্গে মাথা বিভাগে লোকেল মেটা ট্যাগ : এই og রাখুন"
+
+#~ msgid "Fix it"
+#~ msgstr "এটা ঠিক"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr "সঠিক মান সঙ্গে মাথা বিভাগে SITE_NAME মেটা ট্যাগ : এই og রাখুন"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr "সঠিক মান সঙ্গে মাথা বিভাগে টাইপ মেটা ট্যাগ : এই og রাখুন"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr "এই og করা: সঠিক মান সঙ্গে মাথা বিভাগে শিরোনাম মেটা ট্যাগ"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr "সঠিক মান সঙ্গে মাথা বিভাগে বর্ণনা মেটা ট্যাগ : এই og রাখুন"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr "এই og করা: সঠিক মান সঙ্গে মাথা অধ্যায় URL টি মেটা ট্যাগ"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr "এই og করা: সঠিক মান সঙ্গে মাথা বিভাগে ছবিটি মেটা ট্যাগ"
+
+#~ msgid "Title Tag"
+#~ msgstr "টাইটেল ট্যাগ"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr "ওয়েবসাইট শিরোনাম . এই বর্ণনামূলক এবং 70 অক্ষরের মধ্যে হতে হবে."
+
+#~ msgid "Meta Description"
+#~ msgstr "মেটা বিবরণ"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "ওয়েব পৃষ্ঠা আলোচনা করা হয়েছে. অনুকূল দৈর্ঘ্য 155 অক্ষর এবং একটি র্যাংকিং ফ্যাক্টর "
+#~ "নয়."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "মেটা কীওয়ার্ড"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr "ওয়েব পেজ ব্যবহার কীওয়ার্ড উল্লেখ করা হয়. এটি একটি র্যাংকিং ফ্যাক্টর নয়."
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Canonicalization অনেক বিকল্প আছে যখন সেরা URL টি অবচয় প্রক্রিয়া. এই "
+#~ "ক্যানোনিকাল মেটা ট্যাগ সূচী ( http://www.example.com/ এবং http://example."
+#~ "com/ মত) পৃথক URL থেকে তটস্থ করা যেতে পারে যা একটি পৃষ্ঠায় আপনি সার্চ ইঞ্জিন "
+#~ "ক্রলার সাহায্য করে."
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "মেটা রোবট ট্যাগ অনুরোধ সার্চ ইঞ্জিন রোবট ওয়েব পৃষ্ঠাটি ক্রল বা ছেড়ে চলে যেতে . "
+#~ "Noindex এবং nofollow একটি মান দেওয়া থাকলে, ওয়েব পৃষ্ঠা সূচীবদ্ধ করা হইনি."
+
+#~ msgid "Favicon Link"
+#~ msgstr "ফেভিকন লিংক"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "ব্রাউজারের উপরের শিরোনাম পাশে একটি অনন্য চিত্র প্রদর্শন করা হয়. ভাল এসইও অনুশীলন"
+
+#~ msgid "Language"
+#~ msgstr "ভাষা"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "আপনি ব্যবহার করতে হবে ভাগ করা ভাষা"
+
+#~ msgid "Type"
+#~ msgstr "প্রকার"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "আবেদন প্রকার আপনি ভাগাভাগি করে নিচ্ছে. এখানে ওয়েবসাইট"
+
+#~ msgid "Site Name"
+#~ msgstr "সাইট নাম"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "ওয়েবসাইটের নাম. এখানে এটা"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "শেয়ার্ড বিষয়বস্তুর শিরোনাম . পারে বা ওয়েব পৃষ্ঠা শিরোনাম হিসাবে একই হতে পারে না"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "শেয়ার্ড বিষয়বস্তুর দেহ . সাধারণত এই টেক্সট সামাজিক মিডিয়া নেটওয়ার্কে ভাগ "
+#~ "বিষয়বস্তু দেখা যায়"
+
+#~ msgid "URL"
+#~ msgstr "URL-এ"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "ওয়েব পৃষ্ঠার লিঙ্ক উল্লেখ করুন , এই URL-এ ভাগ করা হয় এবং লিঙ্ক লাভবান হবে. কিন্তু "
+#~ "সৎ হতে ."
+
+#~ msgid "Image"
+#~ msgstr "চিত্র"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "অত্যন্ত গুরুত্বপূর্ণ এই ব্যবহারকারীদের মনোযোগ T সামাজিক মিডিয়া আপনার ভাগ এড়িয়ে "
+#~ "পায় কারণ ."
+
+#~ msgid "Total number of images"
+#~ msgstr "ইমেজ সর্বমোট সংখ্যা"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "\"Alt\" অ্যাট্রিবিউট ব্যবহার"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "\"উচ্চতা\" অ্যাট্রিবিউট ব্যবহার"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "\"প্রস্থ \" অ্যাট্রিবিউট ব্যবহার"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "অনুপস্থিত বৈশিষ্ট্যাবলী প্রবেশ করান."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr "কোন মাথা ট্যাগ পাওয়া যায় নি. তাই কোন টেক্সট অনুক্রমের উপস্থিত."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "সঠিক অনুক্রমের টেক্সট লিখুন."
+
+#~ msgid "All head tags are present"
+#~ msgstr "সমস্ত মাথা ট্যাগ উপস্থিত"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "সুতরাং, টেক্সট অনুক্রমের উপস্থিত আছে."
+
+#~ msgid "One head tag is present"
+#~ msgstr "এক মাথা ট্যাগ উপস্থিত"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr "আপনার লেখা অনুক্রমের হয় তা নিশ্চিত করুন. তাই এটা করে না করা হয় ."
+
+#~ msgid "Check again"
+#~ msgstr "আবার পরীক্ষা করুন"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "এই ওয়েবপৃষ্ঠাটি জন্য HTML অনুপাত লেখা"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr ", Atleast আরো টেক্সট লিখুন"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "আপনার ওয়েব পেজ খুব টেক্সট."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr "আরো HTML এর এই পৃষ্ঠায় আরো আকর্ষণীয় করে তুলুন. বা, atleast কম টেক্সট লিখুন"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "এই ওয়েবপৃষ্ঠাটি জন্য এই অনুপাত স্বাভাবিক."
+
+#~ msgid "Outgoing Links"
+#~ msgstr "আউটগোয়িং লিংক"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "লিংক সংখ্যা বড় ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "লিংক সংখ্যা খুব বেশী হয়."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "লিংক সংখ্যা নত করা উচিত"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Rel সঙ্গে লিংক বৈশিষ্ট্যাবলী"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "শিরোনাম বৈশিষ্ট্য সঙ্গে লিংক"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Nofollow rel attibute সঙ্গে লিংক"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "লিঙ্কের rel এবং শিরোনাম বৈশিষ্ট্যাবলী রাখুন"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "ইমেজ ফলপ্রসু কর্মের উচ্চতা, প্রস্থ এবং Alt বৈশিষ্ট্য থাকা উচিত. চিত্র ব্রাউজার এ "
+#~ "মাপ পরিবর্তন করা উচিত নয়."
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "শিরোনাম উপস্থাপনা শিরোনাম এবং শরীরের ট্যাগ একটি অনুক্রমের মধ্যে ভাল. H1 , H2 , "
+#~ "h3 , h4 , h5 , h6 ট্যাগ সঠিকভাবে ব্যবহার করুন."
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "ওয়েব পৃষ্ঠা সমৃদ্ধ এবং চাক্ষুষরূপে presentable অনুকূল বিষয়বস্তু যদি এই অনুপাত নির্ধারণ "
+#~ "করে. এটি একটি র্যাংকিং ফ্যাক্টর না এবং 20% থেকে 70 % এর মধ্যে হতে হবে."
+
+#~ msgid "Link Numbers"
+#~ msgstr "লিংক নাম্বার"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "লিঙ্ক সংখ্যা PageRank মীমাংসাকারী একটি উল্লেখযোগ্য ভূমিকা পালন করে. সংখ্যার "
+#~ "অপ্টিমাইজ করতে হবে এবং খুব উচ্চ করা উচিত হবে না ."
+
+#~ msgid "Link Attributes"
+#~ msgstr "লিংক আরোপ করা"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "2 rel গুণাবলী এবং যেকোন ওয়েব পৃষ্ঠা লিঙ্কের জন্য শিরোনাম আছে. তারা লিঙ্ক "
+#~ "সংজ্ঞায়িত এবং এটি গুলি ফাংশন."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "এই ওয়েব পৃষ্ঠাটি মোট তোলে"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTP অনুরোধ ."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "ধরনের"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "JavaScript জন্য"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "স্টাইলশীট জন্য ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr "এই উচ্চ কারণ কম HTTP অনুরোধ করতে চেষ্টা করুন. অনুকূল থিম এবং উইজেট ব্যবহার"
+
+#~ msgid "Reduce it"
+#~ msgstr "এটি হ্রাস করুন"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "এই খুব বেশী , কারণ কম HTTP অনুরোধ করতে চেষ্টা করুন. অনুকূল থিম এবং উইজেট ব্যবহার"
+
+#~ msgid "Must Reduce"
+#~ msgstr "হ্রাস করা আবশ্যক"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "স্টাইলশীট @ আমদানি মাধ্যমে HTTP অনুরোধ করছে"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "@ আমদানি URL টি মুছে ফেলুন এবং স্টাইলশীট rel অ্যাট্রিবিউট সাথে লিঙ্ক দিয়ে মাথা "
+#~ "ট্যাগ ভিতরে রাখুন"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "স্টাইলশীট অভ্যন্তরীণভাবে কোনো HTTP অনুরোধের তৈরীর না হয়"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr "স্টাইল অ্যাট্রিবিউট কিছু বা সমস্ত occurances এ উপরোক্ত ট্যাগ উপস্থিত."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "এটি এবং অপসারণ বর্গ বৈশিষ্ট্যাবলী সঙ্গে শৈলী গুণাবলী এবং প্রধান CSS ফাইলে শৈলী "
+#~ "করা"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "কোন শৈলী বৈশিষ্ট্য কোন ট্যাগ উপস্থিত."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "এই ওয়েব পৃষ্ঠাটি কোন HTML ত্রুটি আছে."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "আছেন"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "আপনার ওয়েব পৃষ্ঠার HTML ত্রুটি :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "ত্রুটি মধ্যে খোঁচা এবং ত্রুটি , আপনার থিম বা প্লাগইন কোনো কারণ খুঁজে বের করতে কি "
+#~ "এবং এটি সমাধান করতে"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "স্টাইলশীট এবং JavaScripts এর% মাথা বিভাগে লোড করা হয়."
+
+#~ msgid "This is high"
+#~ msgstr "এই উচ্চ"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr "পাদচরণ বিভাগে আরো স্ক্রিপ্ট যোগ করুন এবং হেডার ধারা থেকে তাদের সরিয়ে"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Microdata সমৃদ্ধ স্নিপেট এই ওয়েবপৃষ্ঠাটি উপস্থিত হয়."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "সমৃদ্ধ স্নিপেট ধরন"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "এই ওয়েব পৃষ্ঠাটি কোন microdata সমৃদ্ধ স্নিপেট বর্তমানে উপস্থিত নেই."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "মার্কআপ microdata সমৃদ্ধ স্নিপেট সঙ্গে আপনার ওয়েব পৃষ্ঠা থেকে কোনো ফ্রি এসইও "
+#~ "প্লাগিন ব্যবহার করুন."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "আরো অনুরোধ আরো ডাউনলোডের জন্য ডাকা হবে এবং আরও অনেক সময় লাগবে কারণ HTTP "
+#~ "অনুরোধ আপনার ওয়েব পৃষ্ঠার সংখ্যা , সার্ভার প্রভাব ডকুমেন্ট লোড সময় থেকে সামগ্রী "
+#~ "সংগ্রহ করে তোলে"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "স্টাইলশীট আমদানি URL টি"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "স্টাইলশীট ভিতরে @ আমদানি পরামিতি অপ্রয়োজনীয় ডকুমেন্ট লোড বাড়াতে বাধ্য. এই "
+#~ "এড়িয়ে চলা উচিত"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "ওয়েব পৃষ্ঠার HTML কোন উপাদান এই ব্যবহার বৃদ্ধি ব্রাউজার রেন্ডারিং সময় গুণ হ্রাস করা"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "ব্রাউজার সামঞ্জস্যের"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "Google আপনার ওয়েব পাতা (যেমন mozila ফায়ারফক্স, ক্রোম, ইন্টারনেট এক্সপ্লোরার, "
+#~ "সাফারি, অপেরা ইত্যাদি) বিভিন্ন ব্রাউজারে ঠিক হওয়া উচিত যে চায়, এবং আমরা চেক "
+#~ "করতে পারেন মৌলিক জিনিস yor HTML অভ্যন্তরীণ ত্রুটি হয়"
+
+#~ msgid "Visual Complition"
+#~ msgstr "ভিসুয়াল Complition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "মোট HTTP অনুরোধের তুলনায় হেডার তৈরি HTTP অনুরোধ একটি গুরুত্বপূর্ণ নকশা স্ট্যান্ডার্ড "
+#~ "পরামিতি , যা চাক্ষুষ complition , প্রভাবিত করে"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "রিচ স্নিপেট"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "HTML মার্কআপ এই ধরনের রেন্ডার ইঞ্জিন পৃষ্ঠা অনুসন্ধান করার জন্য আরও তথ্য দেয়. গুগল "
+#~ "microdata টাইপ মার্কআপ উত্সাহ দেয় , কারণ সার্চ ইঞ্জিন মান পৃষ্ঠায় এই বৃদ্ধির "
+#~ "ব্যবহারকারীর অভিজ্ঞতা"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "স্বয়ংক্রিয় উত্পন্ন হিসাবে Google এই পাতা গুলান হতে পারে."
+
+#~ msgid "because of this part"
+#~ msgstr "কারণ এই অংশ"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "মাহবুব বিভিন্ন ধরনের আপনার URL টি পরিবর্তন করুন"
+
+#~ msgid "Change it"
+#~ msgstr "এটি পরিবর্তন"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "এই ওয়েব পৃষ্ঠা URL নির্দেশিকা বজায় রাখে."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "ওয়েব পেজের URL অত্যন্ত বড়. গুগল এটি স্প্যাম বিবেচনা করতে পারে."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "আপনার URL টি আকার এবং পাতা বা পোস্ট সম্পাদক এ টাইপ করুন পরিবর্তন করুন. আপনি যে "
+#~ "কোনো সময় ট্র্যাকিং ব্যবহার করছেন না তা নিশ্চিত করুন"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr "হেডারের মধ্যে শেষ পরিবর্তিত অংশ পাওয়া যায়. যদি পরিবর্তিত - যেহেতু হল."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "হেডারের মধ্যে শেষ পরিবর্তিত অংশ খুঁজে পাওয়া যায় নি . যদি পরিবর্তিত - যেহেতু বন্ধ "
+#~ "করা হয়"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "যদি পরিবর্তিত - যেহেতু শীর্ষচরণ সক্রিয় করতে আপনার হোস্টিং প্রদানকারী জিজ্ঞাসা করুন"
+
+#~ msgid "Ask for it"
+#~ msgstr "ঝামেলা ডাকিয়া আনা"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "ক্যাশে সক্রিয়. এই ওয়েবপৃষ্ঠা ক্যাশে পরামিতি অনুসরণ করেছে."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr "ক্যাশে সক্রিয় নেই. এই ওয়েবপৃষ্ঠা Don't ক্যাশে পরামিতি ধার্য করা হয়."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "আরও ভাল ব্যবহারকারীর অভিজ্ঞতা জন্য ক্যাশে পদ্ধতি ব্যবহার করুন. যে কোনো ধরনের "
+#~ "বিনামূল্যে ক্যাশে প্লাগিন ব্যবহার করুন"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "এলাইভ সংযোগ বন্ধ রাখুন"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr "এলাইভ সংযোগ রাখুন সক্রিয় করতে আপনার হোস্টিং প্রদানকারী জিজ্ঞাসা করুন"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "অন ​​এলাইভ সংযোগ রাখুন"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "আপনার ওয়েব পৃষ্ঠার হেডার মধ্যে Gzip কম্প্রেশন সক্রিয় করা হয়."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "কম্প্রেশন পদ্ধতি ওয়েবপৃষ্ঠা পাওয়া যায় নি."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "ভাল ফল পাওয়ার জন্য Gzip কম্প্রেশন সক্রিয় করুন. বিনামূল্যে প্লাগইন ব্যবহার করুন."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "আপনি ওয়ার্ডপ্রেস সংস্করণ ব্যবহার করছেন"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "আপনি সম্ভবত এসএ বার পরিমার্জিত সেমি ওয়ার্ডপ্রেস কোর সঙ্গে ওয়ার্ডপ্রেস ব্যবহার "
+#~ "করছেন."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "সঠিক ওয়ার্ডপ্রেস সফ্টওয়্যার ব্যবহার করুন"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "URL- পরিবর্তনশীল তথ্য আছে বা যদি অধিক 255 বাইট, সার্চ ইঞ্জিন এটি স্প্যাম হিসেবে "
+#~ "বিবেচনা করবে."
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "এটি একটি সার্ভার বৈশিষ্ট্য. কোন পরিবর্তন ওয়েবপৃষ্ঠাটি এড়িয়ে সঞ্চালিত যখনই এই "
+#~ "স্বয়ংক্রিয়ভাবে , সার্চ ইঞ্জিন রোবট সম্পর্কে অবগত করা ."
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "ক্যাশে সংক্রান্ত এইচটিএমএল, সিএসএস, JavaScripts , ব্যবহারকারীরা ব্রাউজারে ইমেজ "
+#~ "ডকুমেন্ট লোড সময় কমাতে খুব দরকারী হতে পারে. সার্চ ইঞ্জিন ক্রলার ভাল ডকুমেন্ট লোড "
+#~ "সময়ের সঙ্গে ওয়েব পেজ লেগেছে."
+
+#~ msgid "Keep Alive"
+#~ msgstr "এলাইভ রাখুন"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "এটি একটি সার্ভার বৈশিষ্ট্য. এই সময়ে একটি বলেন পরিমাণ জন্য সার্ভার ও ব্রাউজারের "
+#~ "মধ্যে সংযোগ সক্রিয় রাখে. ও অতিরিক্তের যোগাযোগের জন্য সময় সংরক্ষণ করা হবে. তাই "
+#~ "এটা ভালো যা ডকুমেন্ট লোড সময় কমে যায় ."
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "এই সার্ভারের বৈশিষ্ট্য Gzip সঙ্কুচিত বিন্যাসে ব্রাউজারে ওয়েব পৃষ্ঠার সামগ্রী বিতরণ "
+#~ "করে. তাই এটা ব্যান্ডউইথ এবং ওয়েব পেজের মাপ কমে যায় ."
+
+#~ msgid "CMS"
+#~ msgstr "সিএমএস"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "কনটেন্ট ম্যানেজমেন্ট সিস্টেম (CMS ) সার্ভারে রাখা স্ক্রিপ্ট থেকে ওয়েব পৃষ্ঠা তৈরি "
+#~ "করে. সুতরাং , গুগল ক্রলার এই বিষয়বস্তু স্বয়ংক্রিয় উত্পন্ন হতে বিবেচনা করতে পারে. "
+#~ "কিন্তু, ওয়ার্ডপ্রেস ব্যবহারকারীদের জন্য এই একটা সমস্যা হয় না."
+
+#~ msgid "Web Page"
+#~ msgstr "ওয়েব পৃষ্ঠা"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "সার্চ ইঞ্জিন সামঞ্জস্যের , আদর্শ হিসাবে Google ওয়েবমাস্টার নির্দেশিকা"
+
+#~ msgid "Theme Used"
+#~ msgstr "থিম ব্যবহৃত"
+
+#~ msgid "Time Taken"
+#~ msgstr "নিয়ে সময়"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "স্ক্যান জন্য যাও"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "উপাদান লোড যাও"
+
+#~ msgid "Percentage"
+#~ msgstr "শতকরা"
+
+#~ msgid "Success"
+#~ msgstr "সাফল্য"
+
+#~ msgid "Failure"
+#~ msgstr "ব্যর্থতা"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "ওয়েব পৃষ্ঠা সামগ্রিক এসইও পারফরমেন্স"
+
+#~ msgid "Complete"
+#~ msgstr "সম্পূর্ণ"
+
+#~ msgid "Incomplete"
+#~ msgstr "অসম্পূর্ণ"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "ওয়েব পৃষ্ঠা ডেটা সংক্ষিপ্ত অনুকূলকৃত"
+
+#~ msgid "Required"
+#~ msgstr "আবশ্যক"
+
+#~ msgid "Completed"
+#~ msgstr "সম্পন্ন"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "সামাজিক ডেটা তুলনা"
+
+#~ msgid "Actual"
+#~ msgstr "আসল"
+
+#~ msgid "Ideal Case"
+#~ msgstr "আদর্শ কেস"
+
+#~ msgid "none"
+#~ msgstr "কোনটি"
+
+#~ msgid "header"
+#~ msgstr "মাথা দিয়া মারা বল"
+
+#~ msgid "body"
+#~ msgstr "শরীর"
+
+#~ msgid "full"
+#~ msgstr "পুরো"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "চাক্ষুষ complition সূচক আনুমানিক প্যাটার্ন"
+
+#~ msgid "web page loading"
+#~ msgstr "ওয়েবপৃষ্ঠাটি লোড হচ্ছে"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "ভিসুয়াল complition শতাংশ"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScripts"
+
+#~ msgid "Styles"
+#~ msgstr "শৈলী"
+
+#~ msgid "Pure Text"
+#~ msgstr "বিশুদ্ধ শিরোনাম"
+
+#~ msgid "Alt Text"
+#~ msgstr "Alt পাঠ্য"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "সার্ভার কর্মক্ষমতা তুলনা"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "কারিগরী দিক অবলোকন"
+
+#~ msgid "New Scan"
+#~ msgstr "এক্সপ্লোর পরিচালনা স্ক্যান"
+
+#~ msgid "Notes"
+#~ msgstr "নোট"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "কোনো পৃষ্ঠা বা পোস্ট বা স্ক্যান করতে কাস্টম URL প্রবেশ করতে বেছে নেওয়া হয়েছে"
+
+#~ msgid "OR"
+#~ msgstr "বা"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "স্ক্যান করার একটি পোস্ট নির্বাচন করুন"
+
+#~ msgid "Scan Post"
+#~ msgstr "পোস্ট স্ক্যান করুন"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "একটা কাস্টম URL লিখুন"
+
+#~ msgid "Scan URL"
+#~ msgstr "URL-এ স্ক্যান করুন"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Scaning আগে জানার বিষয়"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "ওভারভিউ চার্ট তথ্য আনুমানিক হিসাব এবং কোনো সার্চ ইঞ্জিন আলগোরিদিম দ্বারা হিসাব "
+#~ "উপস্থাপন করা হয় না."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "ফলাফলে প্রদর্শিত কিছু প্যারামিটার Google নির্দেশাবলী মধ্যে সরাসরি অন্তর্ভুক্ত হয় "
+#~ "না. কিন্তু তারা পরোক্ষভাবে প্রভাবিত."
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr "ফলে পৃষ্ঠায় ব্যাখ্যা দেখতে আন্ডারলাইন উপাদানের উপর কার্সার রেখে ."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "আপনার ওয়েবসাইট , সার্ভার বা কিছু থেকে কোন তথ্য যে কোনো সার্ভার দ্বারা অধিকৃত "
+#~ "হয়. Scaning ব্রাউজারে সম্পূর্ণরূপে সম্পন্ন করা হয়."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "URL-এ ত্রুটি উত্পন্ন হবে: . 404 পাওয়া যায়নি , যে কোন ওয়েব পেজ বর্তমান এবং সার্চ "
+#~ "ইঞ্জিন আছে মানে সূচক এটি না করবে না আপনার ওয়েবসাইটের বিদ্যমান ওয়েবপেজ URL "
+#~ "লিখুন."
+
+#~ msgid "Print Report"
+#~ msgstr "রিপোর্ট প্রস্তুত করা"
+
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "এসইও টিপস &rarr;"
+
+#~ msgid "Data"
+#~ msgstr "তথ্য"
+
+#~ msgid "Technical"
+#~ msgstr "প্রযুক্তি"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "সামাজিক শেয়ারিং তথ্য ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "ফেসবুক দ্বারা গ্রাফ প্রোটোকল খুলুন এবং গুগল সহ প্রায় সব প্রধান সামাজিক মিডিয়া "
+#~ "দ্বারা গৃহীত + +"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "ওয়েব পৃষ্ঠা ডেটা"
+
+#~ msgid "Remarks"
+#~ msgstr "মন্তব্য সমূহ"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "&rarr; শিরোনাম বিষয়বস্তু ক্রল"
+
+#~ msgid "Total Text"
+#~ msgstr "মোট শিরোনাম"
+
+#~ msgid "In page Style"
+#~ msgstr "পৃষ্ঠা শৈলী"
+
+#~ msgid "In page Script"
+#~ msgstr "পাতা স্ক্রিপ্টের মধ্যে"
+
+#~ msgid "Scan by"
+#~ msgstr "দ্বারা স্ক্যান করুন"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "কর্ম"
+
+#~ msgid "Length "
+#~ msgstr "দৈর্ঘ্য"
+
+#~ msgid " for image "
+#~ msgstr "চিত্রের জন্য"

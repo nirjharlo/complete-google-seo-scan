@@ -2,15 +2,17 @@
 /**
  * @/core/lib/url-object.php
  * on: 19.06.2015
+ * @since 2.0
+ *
  * Get domain name from the url. For example from url http://www.gogretel.com/media-markup/
  * get www.gogretel.com only.
  *
- * First method, break and remove http:// or https://. Then, remove trailing part to get only domain
- * Second method, puts an https:// infront of url, conditionally
+ * @method 1 break and remove http:// or https://. Then, remove trailing part to get only domain
+ * @method 2 puts an https:// infront of url, conditionally
  *
  * 2 properties:
- * $url for input url, whose social value is to be counted
- * $ssl for condition of ssl security or https
+ * @prop string $url Input url, whose social value is to be counted
+ * @prop string $ssl Condition of ssl security or https
  */
 class CGSS_URL {
 
@@ -60,7 +62,7 @@ class CGSS_URL {
 
 	//Create a url with http:// or https:// depending on another parameter (basically ssl)
 	public function get_ssl() {
-		if ( strpos( $this->url, 'https://' ) !== false ) {
+		if ( substr_count( $this->url, 'https://' ) > 0 ) {
 			return 1;
 		} else {
 			return 0;
@@ -69,7 +71,7 @@ class CGSS_URL {
 
 	//see if the url is dynamic or not
 	public function dynamic() {
-		if ( strpos( $this->url, '?' ) !== false ) {
+		if ( substr_count( $this->url, '?' ) > 0 ) {
 			return 1;
 		} else {
 			return 0;
@@ -78,7 +80,7 @@ class CGSS_URL {
 
 	//see if the url is dynamic or not
 	public function underscore() {
-		if ( strpos( $this->url, '_' ) !== false ) {
+		if ( substr_count( $this->url, '_' ) > 0 ) {
 			return 1;
 		} else {
 			return 0;

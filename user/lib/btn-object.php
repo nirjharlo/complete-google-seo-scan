@@ -1,17 +1,19 @@
 <?php
 /**
- * @/user/lib/btn-class.php
- * on: 08.06.2015
+ * @/user/lib/btn-object.php
+ * @on 10.07.2015
+ * @since 2.0
+ *
  * Custom button method. css classes & icons taken from wordpress admin style.
  *
  * 5 properties:
- * 1. $btn_id for button id attribute.
- * 2. $btn_icon_class for button icon class attribute.
- * 3. $btn_text for button content. Required.
- * 4. $btn_href for button link href.
- * 5. $btn_class for button main class [not for icon].
+ * @prop string $btn_id Button id attribute.
+ * @prop string $btn_icon_class Button icon class attribute.
+ * @prop string $btn_text Button content. Required.
+ * @prop string $btn_href Button link href.
+ * @prop string $btn_class Button main class [not for icon].
  *
- * Using custom css class: hide-btn-text, this button hides text content and shows  for small screen.
+ * NOTE: Using custom css class: hide-btn-text, this button hides text content and shows  for small screen.
  */
 class CGSS_BTN {
 
@@ -39,5 +41,4 @@ class CGSS_BTN {
 			return '<a' . ( $this->btn_id ? ' id="' . $this->btn_id . '"' : '' ) . ( $this->btn_href ? ' href="' . $this->btn_href . '"' : '' ) . ' class="hide-if-no-js add-new-h2' . ( $this->btn_class ? ' ' . $this->btn_class : '' ) . '"><span' . ( $this->btn_icon_class ? ' class="dashicons dashicons-' . $this->btn_icon_class . '"' : '' ) . '></span><span class="hide-btn-text">' . $this->btn_text . '</span></a>';
 		endif;
 	}
-}
-?>
+} ?>
