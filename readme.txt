@@ -1,11 +1,11 @@
 === Complete-Google-SEO-Scan ===
-Contributors: lo_nirjhar
+Contributors: nirjhar_lo
 Author URI: http://gogretel.com/about/
 Plugin URL: http://gogretel.com/
 Requires at Least: 3.0
 Tested Up To: 3.6
 Tags: speed, seo, template, tool, google guidelines, review, optimization, search engine, search engine optimization, robot, crawler, spider
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPL2
 
 
