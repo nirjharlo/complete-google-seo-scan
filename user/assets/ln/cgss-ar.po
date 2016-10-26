@@ -1,0 +1,1486 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: info@gogretel.com\n"
+"POT-Creation-Date: 2015-07-03 01:46+0530\n"
+"PO-Revision-Date: 2015-07-03 14:05+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <info@gogretel.com>\n"
+"Language: Arabic\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../front-end.php:27
+msgid "SHARE PLUGIN"
+msgstr "حصة المساعد"
+
+#: ../front-end.php:33
+msgid "EMAIL"
+msgstr "البريد الإلكتروني"
+
+#: ../front-end.php:54
+msgid "Seo Status"
+msgstr "سيو الحالة"
+
+#: ../front-end.php:54
+msgid "See overall and specific seo points of pages in"
+msgstr "رؤية نقاط سيو العامة والمحددة للصفحات"
+
+#: ../front-end.php:54
+msgid "Check for documentation in Help tab above."
+msgstr "تحقق من وجود وثائق في علامة التبويب تعليمات أعلاه."
+
+#: ../front-end.php:60
+msgid "Content"
+msgstr "محتوى"
+
+#: ../front-end.php:66
+msgid "Usability"
+msgstr "سهولة الاستخدام"
+
+#: ../front-end.php:92
+msgid "Title"
+msgstr "عنوان"
+
+#: ../front-end.php:142 ../front-end.php:428
+msgid "Never"
+msgstr "أبدا"
+
+#: ../front-end.php:304
+msgid "Send Request"
+msgstr "ارسل طلب"
+
+#: ../front-end.php:316
+msgid "Validate Request"
+msgstr "التحقق من صحة طلب"
+
+#: ../front-end.php:328
+msgid "Download Content"
+msgstr "تحميل المحتوى"
+
+#: ../front-end.php:340
+msgid "Analyze Data"
+msgstr "ارسل طلب"
+
+#: ../front-end.php:352
+msgid "Save Information"
+msgstr "حفظ معلومات"
+
+#: ../front-end.php:364
+msgid "Fetch Results"
+msgstr "جلب نتائج"
+
+#: ../front-end.php:393
+msgid "SHOW POST TYPES"
+msgstr "أنواع معرض الوظائف"
+
+#: ../front-end.php:399
+msgid "FILTER"
+msgstr "فلتر"
+
+#: ../front-end.php:406
+msgid "Score"
+msgstr "أحرز هدفا"
+
+#: ../front-end.php:407
+msgid "Star"
+msgstr "نجمة"
+
+#: ../front-end.php:408 ../front-end.php:409 ../front-end.php:410
+#: ../front-end.php:411 ../front-end.php:412 ../front-end.php:413
+#: ../front-end.php:414 ../front-end.php:415
+msgid "Stars"
+msgstr "نجوم"
+
+#: ../front-end.php:422
+msgid "Time"
+msgstr "مرة"
+
+#: ../front-end.php:423
+msgid "This hour"
+msgstr "هذه الساعة"
+
+#: ../front-end.php:424
+msgid "Today"
+msgstr "اليوم"
+
+#: ../front-end.php:425
+msgid "7 days"
+msgstr "7 ايام"
+
+#: ../front-end.php:426
+msgid "30 days"
+msgstr "30 يوما"
+
+#: ../front-end.php:427
+msgid "90 days"
+msgstr "90 يوما"
+
+#: ../lib/snippet-object.php:56
+msgid "SEARCH SNIPPET ERROR"
+msgstr "بحث مقتطف خطأ"
+
+#: ../lib/snippet-object.php:75
+msgid "OGP SNIPPET ERROR"
+msgstr "فتح بروتوكول الرسم البياني مقتطف خطأ"
+
+#: ../lib/btn-object.php:37
+msgid "Button Error"
+msgstr "زر خطأ"
+
+#: ../lib/heading-object.php:37
+msgid "HEADING ERROR"
+msgstr "العنوان خطأ"
+
+#: ../lib/help-object.php:16
+msgid "Overview"
+msgstr "نظرة عامة"
+
+#: ../lib/help-object.php:17
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan. We have not "
+"included backlinks analysis, traffic metrics, details on social media, "
+"knowledge graph and brand signals, because the intention is primarily on-"
+"page search optimization only. If you catch a bug or want to give any "
+"feedback or feature suggestion you are welcome to email the plugin author"
+msgstr ""
+"قمنا ببناء هذا الموقع لأي مستخدم وورد، والذي يريد أن تحقق استعداد سيو "
+"لممارسته أو صفحات الويب. إرشادات مشرفي المواقع من Google الأساسية والقواعد "
+"PageSpeed هي مبادئ بناءة من هذا سيو المسح الضوئي. ونحن لم شمل تحليل خلفية، "
+"مقاييس الحركة، وتفاصيل عن وسائل الاعلام الاجتماعية، والرسم البياني المعرفة "
+"وإشارات العلامة التجارية، وذلك لأن القصد من ذلك هو في المقام الأول على صفحة "
+"البحث الأمثل فقط. إذا قبض خلل أو تريد أن تعطي أي ردود فعل أو ميزة اقتراح "
+"انكم مدعوون الى البريد الالكتروني المؤلف المساعد"
+
+#: ../lib/help-object.php:17
+msgid "DISCLAIMER"
+msgstr "شروط"
+
+#: ../lib/help-object.php:17
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+"هذا البرنامج المساعد أو المؤلف المساعد في أي وسيلة تابعة لشركة جوجل كلمة "
+"\"جوجل\" في اسم هذا البرنامج المساعد يعني، هذا البرنامج المساعد بمسح صفحة "
+"ويب لبعض تكهنت المستوى المعلمات من محركات البحث مثل جوجل."
+
+#: ../lib/help-object.php:21
+msgid "How to use?"
+msgstr "كيفية الاستخدام؟"
+
+#: ../lib/help-object.php:22
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is almost "
+"mobile ready. So, for regular WordPress users it will be very intuitive. The "
+"usage process has 3 steps."
+msgstr ""
+"نظرة هذا البرنامج المساعد، ويشعر هو بنيت باستخدام وورد الادارية واجهة "
+"المستخدم ويكاد يكون جاهزا المحمول. لذلك، لمستخدمي وورد منتظم سيكون بديهية "
+"جدا. عملية استخدام ديها 3 خطوات."
+
+#: ../lib/help-object.php:22
+msgid "Select a Page"
+msgstr "حدد الصفحة"
+
+#: ../lib/help-object.php:22
+msgid ""
+"from the individual tables of webpages, by clicking on corresponding radio "
+"button. There are 2 dropdown menus to select posts from multiple post types "
+"and filter them according to time and score of last scan. Remember, only "
+"\"published\" posts are shown."
+msgstr ""
+"من الجداول الفردية من صفحات الويب، عن طريق النقر على زر الاختيار المناسب. "
+"هناك 2 ميناس المنسدلة لتحديد المشاركات من أنواع متعددة وظيفة تصفية لهم وفقا "
+"لآخر، ونتيجة الفحص الماضي. نتذكر، يتم عرض المشاركات المنشورة فقط."
+
+#: ../lib/help-object.php:22
+msgid "Wait for scan"
+msgstr "انتظر المسح الضوئي"
+
+#: ../lib/help-object.php:22
+msgid ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+"أن يكتمل. سوف يستغرق بضع ثوان، ما يقرب من 15 إلى 30 ثانية. الوقت يختلف أساسا "
+"بسبب محتوى صفحة ويب تحميل."
+
+#: ../lib/help-object.php:22
+msgid "See results"
+msgstr "رؤية النتائج"
+
+#: ../lib/help-object.php:22
+msgid ""
+"in a pop up in the same page as soon as the scan is complete. The result "
+"will have 5 segments."
+msgstr ""
+"في المنبثقة في نفس الصفحة في أقرب وقت اكتمال التفحص. ونتيجة لديك 5 قطاعات."
+
+#: ../lib/help-object.php:22
+msgid "Overview and basic information as well as social media counts."
+msgstr "نظرة عامة والمعلومات الأساسية، فضلا عن تهم وسائل الاعلام الاجتماعية."
+
+#: ../lib/help-object.php:22
+msgid "Search engine snippet and related information."
+msgstr "مقتطف محرك البحث والمعلومات ذات الصلة."
+
+#: ../lib/help-object.php:22
+msgid "Most used words Analysis and information from text"
+msgstr "الأكثر استخداما تحليل الكلمات والمعلومات من النص"
+
+#: ../lib/help-object.php:22
+msgid "Use of Media or Image and Video seo"
+msgstr "استخدام وسائل الإعلام أو صورة وسيو فيديو"
+
+#: ../lib/help-object.php:22
+msgid "Page specific speed and usability analysis."
+msgstr "الصفحة سرعة محددة وتحليل قابلية الاستخدام."
+
+#: ../lib/help-object.php:22
+msgid ""
+"Navigate within segments using top arrow buttons. Scan result is displayed "
+"in an organized fashion and are is easy to understand for someone with basic "
+"seo knowledge. For a primitive guideline of seo aspects see links at right "
+"sidebar of this area."
+msgstr ""
+"التنقل داخل شرائح باستخدام أعلى أزرار الأسهم. يتم عرض نتيجة الفحص في شكل "
+"منظم وهم من السهل أن نفهم لشخص ما مع كبار المسئولين الاقتصاديين والمعارف "
+"الأساسية. لتوجيهي بدائية من جوانب سيو رؤية الروابط في الشريط الجانبي الأيمن "
+"من هذه المنطقة."
+
+#: ../lib/help-object.php:26
+msgid "Performance"
+msgstr "أداء"
+
+#: ../lib/help-object.php:27
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+"يستخدم هذا البرنامج المساعد الموارد من خادم الويب الخاص بك لتجهيز طلبات "
+"الفحص. لذلك، سوف تحصل على عرض النطاق الترددي العالي واستخدام قاعدة البيانات. "
+"في التثبيت وورد القياسية، هذه الزيادة غير ذات أهمية. فلن ربما تلاحظ ذلك."
+
+#: ../lib/help-object.php:27
+msgid ""
+"depends on your server and website quality. Actual process takes around 10 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"يعتمد على خادم وموقع الويب الخاص بك الجودة. العملية الفعلية يستغرق حوالي 10 "
+"ثانية لإكمال. لكنه يأخذ وقتا أطول لتحقق رأس الصفحة وتحميل الموارد صفحة الويب."
+
+#: ../lib/help-object.php:27
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+"هو الحد الأدنى للغاية، حيث يتم توجيه هذا البرنامج المساعد المشرف. يتم تحميل "
+"جميع جافاسكريبتس (شبيبة الملفات) ومعدات الشكل (ملفات المغلق) فقط في الجانب "
+"مشرف."
+
+#: ../lib/help-object.php:27
+msgid "That means, it won't slow down your website."
+msgstr "وهذا يعني، فإنه لن تبطئ موقع الويب الخاص بك."
+
+#: ../lib/help-object.php:31
+msgid "Data & Privacy"
+msgstr "البيانات والخصوصية"
+
+#: ../lib/help-object.php:32
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+"نحن نقدر الحماية لموقع الويب الخاص بك. يتم تخزين كافة الملفات والبيانات "
+"الناتجة في خادم الويب الخاص بك فقط."
+
+#: ../lib/help-object.php:32
+msgid "privacy Policy."
+msgstr "سياسة الخصوصية."
+
+#: ../lib/help-object.php:32
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+"إذا قمت بتثبيت وتحديث هذا البرنامج المساعد من wordpress.org المساعد مستودع "
+"واستخدامه كما هو، ثم المؤلف المساعد لا تجمع أي بيانات على الإطلاق. ألطاف "
+"برامج أخرى مثبتة في الخادم الخاص بك قد تستخدم ملفات من هذا البرنامج المساعد "
+"أو جمع البيانات الناتجة عن استخدام هذا البرنامج المساعد."
+
+#: ../lib/help-object.php:32
+msgid "Data storage."
+msgstr "مخزن البيانات."
+
+#: ../lib/help-object.php:32
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. When the plugin is uninstalled these data will remain in your "
+"server, untill deleted by special operation. They will not create any "
+"problem although."
+msgstr ""
+"هذا البرنامج المساعد يخزن حاليا البيانات كصفيف متعددة الأبعاد لكل صفحة الويب "
+"التي تفحص. يتم أخذ العديد من الأشياء التي تراها في هذه الصفحة من أن البيانات "
+"المخزنة. عند إلغاء تثبيت البرنامج المساعد ستبقى هذه البيانات في الخادم الخاص "
+"بك أو حذفها حتى مجيء التي كتبها عملية خاصة. إنهم لن يخلق أي مشكلة على الرغم "
+"من."
+
+#: ../lib/help-object.php:36
+msgid "Do's and Don'ts"
+msgstr "ما يفعل وما يترك"
+
+#: ../lib/help-object.php:37
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+"تم بناء هذا البرنامج المساعد لمساعدتك على فهم بحث وضع المحرك الأمثل لموقع "
+"الويب الخاص بك فقط. فإنه لا يسمح لك لمسح أي صفحة ويب من أي مجال، بخلاف حيث "
+"يتم تثبيته. نطلب منكم أن لا tweek رمز بأي شكل من الأشكال مثل أن هذا البرنامج "
+"المساعد يصبح قادرا على مسح صفحات من مختلف المجالات الأخرى."
+
+#: ../lib/help-object.php:37
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+"لا يمكننا إجبار لك، لذلك إذا كنت تفعل شيء من هذا القبيل، فإن المؤلف المساعد "
+"لن تكون مسؤولة عن أي تبعات قانونية والأمنية التي قد تأتي. خلاف ذلك، رمز تحت "
+"رخصة GPL، يمكنك أن تفعل أي شيء تريد."
+
+#: ../lib/help-object.php:44
+msgid "Support Forum"
+msgstr "المنتدى الدعم"
+
+#: ../lib/help-object.php:44
+msgid "Free Seo Resource"
+msgstr "الموارد سيو مجانا"
+
+#: ../lib/textarea-object.php:33
+msgid "Textarea Error"
+msgstr "خطأ ناحية النص"
+
+#: ../lib/dropdown-object.php:42 ../lib/dropdown-object.php:59
+msgid "DROPDOWN ERROR"
+msgstr "خطأ المنسدلة"
+
+#, fuzzy
+#~ msgid "Image Seo"
+#~ msgstr "صورة"
+
+#, fuzzy
+#~ msgid "Check"
+#~ msgstr "التحقق مرة أخرى"
+
+#, fuzzy
+#~ msgid "tags and anchor text"
+#~ msgstr "مرساة النص"
+
+#, fuzzy
+#~ msgid "This webpage has total"
+#~ msgstr "هذه صفحة ويب يجعل مجموع"
+
+#~ msgid "Percentage"
+#~ msgstr "نسبة مئوية"
+
+#~ msgid "Success"
+#~ msgstr "نجاح"
+
+#~ msgid "Failure"
+#~ msgstr "فشل"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "صفحة ويب عموما SEO الأداء"
+
+#~ msgid "Complete"
+#~ msgstr "كامل"
+
+#~ msgid "Incomplete"
+#~ msgstr "غير كامل"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "صفحة ويب الأمثل لمحة البيانات"
+
+#~ msgid "Required"
+#~ msgstr "مطلوب"
+
+#~ msgid "Completed"
+#~ msgstr "الانتهاء"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "مقارنة البيانات الاجتماعية"
+
+#~ msgid "Social Sharing Data overview"
+#~ msgstr "تقاسم الاجتماعية نظرة عامة البيانات"
+
+#~ msgid "Actual"
+#~ msgstr "فعلي"
+
+#~ msgid "Ideal Case"
+#~ msgstr "الحالة المثالية"
+
+#~ msgid "none"
+#~ msgstr "لا شيء"
+
+#~ msgid "header"
+#~ msgstr "رأس"
+
+#~ msgid "body"
+#~ msgstr "هيئة"
+
+#~ msgid "full"
+#~ msgstr "كامل"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "نمط تقريبي من مؤشر complition البصرية"
+
+#~ msgid "web page loading"
+#~ msgstr "صفحة التحميل على شبكة الإنترنت"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "نسبة complition البصرية"
+
+#~ msgid "JavaScripts"
+#~ msgstr "جافاسكريبتس"
+
+#~ msgid "Styles"
+#~ msgstr "الأساليب"
+
+#~ msgid "Pure Text"
+#~ msgstr "نص نقي"
+
+#~ msgid "Alt Text"
+#~ msgstr "نص بديل"
+
+#~ msgid "Anchor Text"
+#~ msgstr "مرساة النص"
+
+#~ msgid "In page content overview"
+#~ msgstr "في صفحة نظرة عامة على محتوى"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "المقارنة بين أداء الخادم"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "الجوانب التقنية لمحة عامة"
+
+#, fuzzy
+#~ msgid "Focus Keyword"
+#~ msgstr "كلمات البحث التعريف"
+
+#~ msgid "Name"
+#~ msgstr "اسم"
+
+#, fuzzy
+#~ msgid "Fix"
+#~ msgstr "إصلاحه"
+
+#~ msgid "Canonical Link"
+#~ msgstr "الارتباط الكنسي"
+
+#~ msgid "Meta Robots"
+#~ msgstr "الروبوتات ميتا"
+
+#~ msgid "Language"
+#~ msgstr "لغة"
+
+#~ msgid "Text Hierarchy"
+#~ msgstr "التسلسل الهرمي النص"
+
+#, fuzzy
+#~ msgid "Text to HTML ratio"
+#~ msgstr "النص إلى نسبة HTML لهذه الصفحة على شبكة الإنترنت هو"
+
+#, fuzzy
+#~ msgid "Total Images"
+#~ msgstr "الصور"
+
+#~ msgid "Type"
+#~ msgstr "نوع"
+
+#~ msgid "Image"
+#~ msgstr "صورة"
+
+#, fuzzy
+#~ msgid "Text"
+#~ msgstr "نص بديل"
+
+#, fuzzy
+#~ msgid "List of Anchor text"
+#~ msgstr "مرساة النص"
+
+#~ msgid "Meta Description"
+#~ msgstr "ميتا الوصف"
+
+#, fuzzy
+#~ msgid "Main content"
+#~ msgstr "محتوى"
+
+#, fuzzy
+#~ msgid "Alt text"
+#~ msgstr "نص بديل"
+
+#, fuzzy
+#~ msgid "Anchor text"
+#~ msgstr "مرساة النص"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "بيانات التخطيط نظرة عامة هو حسابية تقريبية ولا تمثل الحسابات من قبل أي "
+#~ "محرك بحث خوارزمية ."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "لا يتم تضمين بعض المعلمات في عرض نتائج مباشرة في إرشادات Google . ولكنها "
+#~ "تؤثر بشكل غير مباشر ."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "يتم التقاط أية بيانات من موقع الويب الخاص بك ، والخادم أو أي شيء من قبل "
+#~ "أي ملقم . ويتم Scaning كليا على المتصفح."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "عنوان URL بإرجاع خطأ : لم يتم العثور على 404 ، وهذا يعني ليست هناك صفحة "
+#~ "ويب الحالية و محركات البحث سوف لا مؤشر عليه. أدخل عنوان URL صفحة ويب "
+#~ "الحالية لل موقع الويب الخاص بك ."
+
+#, fuzzy
+#~ msgid ""
+#~ "The new url returns error : 404 Not Found, That means there is no "
+#~ "indexable webpage and search engines will not index it. Enter existing "
+#~ "webpage url of your website."
+#~ msgstr ""
+#~ "عنوان URL بإرجاع خطأ : لم يتم العثور على 404 ، وهذا يعني ليست هناك صفحة "
+#~ "ويب الحالية و محركات البحث سوف لا مؤشر عليه. أدخل عنوان URL صفحة ويب "
+#~ "الحالية لل موقع الويب الخاص بك ."
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "جوجل محرك البحث الأمثل المسح الضوئي ل صفحة الويب الخاصة بك كاملة. وهنا "
+#~ "النتائج ."
+
+#~ msgid "at line"
+#~ msgstr "في السطر"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "انه 'ق مختلفة من الممسوحة ضوئيا URL صفحة ويب"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "كن متأكد من أنك تريد صفحة ليتم فهرستها من قبل هذا الرابط الكنسي"
+
+#~ msgid "Recheck it"
+#~ msgstr "إعادة فحص ذلك"
+
+#~ msgid "OK"
+#~ msgstr "حسنا"
+
+#~ msgid "NOT FOUND"
+#~ msgstr "NOT FOUND"
+
+#~ msgid "Put a canonical link"
+#~ msgstr "وضعت وصلة الكنسي"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "أدخل فافيكون"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "طول"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "حرفا ( الحد الأقصى المسموح 70 حرف)"
+
+#~ msgid "Length"
+#~ msgstr "طول"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "كما لن يظهر أكثر من 70 حرفا في نتائج البحث"
+
+#~ msgid "Give shorter title"
+#~ msgstr "منح لقب أقصر"
+
+#~ msgid "Give a title."
+#~ msgstr "إعطاء العنوان."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "حرفا ( الحد الأقصى المسموح 155 حرفا)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "كتابة بعض وصف ميتا داخل 155 حرفا. ألطاف أنها لا تعوق الترتيب لكنها تبدو "
+#~ "سيئة في صفحة نتائج محرك البحث . وبالتالي ، قد تقلل من خلال النقر معدل "
+#~ "(CTR )"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "جعله أقصر ."
+
+#~ msgid "This is not good."
+#~ msgstr "وهذا ليس جيدا ."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "البطاقة هي في مكان ، واكتب الآن بعض وصف ميتا"
+
+#~ msgid "Give a description"
+#~ msgstr "يقدم وصفا"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "غير موجود."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "أدخل كلمات مناسبة ل محتوى صفحة الويب الخاصة بك ، والعديد من محركات البحث "
+#~ "استخدام ذلك، ولكن ليس من Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "أدخل كلمات ."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "الفوقية الروبوت هو وجود منع الفهرسة قيمة نوفولو . وهذا ليس جيدا ."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "تغيير قيمة الفوقية الروبوتات من أي مؤشر و / أو عدم متابعة"
+
+#~ msgid "Fix this."
+#~ msgstr "إصلاح هذه ."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : لغة العلامة الوصفية"
+
+#~ msgid "Fill it"
+#~ msgstr "ملئه"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : SITE_NAME العلامة الوصفية"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : نوع العلامة الوصفية"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : URL العلامة الوصفية"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : لقب العلامة الوصفية"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : وصف العلامة الوصفية"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "وضع القيمة الصحيحة ل هذا OG : صورة العلامة الوصفية"
+
+#~ msgid "TAG NOT FOUND"
+#~ msgstr "TAG NOT FOUND"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "يمكنك استخدام أي الإضافات SEO الحرة المتاحة للحصول على خيارات لإدخال أوصاف"
+
+#~ msgid "Put the tag"
+#~ msgstr "وضع علامة"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "أدخل كلمات مناسبة ل محتوى صفحة الويب الخاصة بك ، والعديد من محركات البحث "
+#~ "استخدام ذلك، ولكن ليس جوجل . يمكنك استخدام أي الإضافات SEO الحرة المتاحة "
+#~ "للحصول على خيارات لدخول هذه العلامة"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "يمكنك استخدام أي الإضافات SEO الحرة المتاحة للحصول على خيارات لإدخال "
+#~ "المطلوب الفوقية الارتباط الكنسي"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr "فمن الأفضل لوضع العلامة. خلاف ذلك لا تقلق كبيرة"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "وضع ICO صورة فافيكون باستخدام اختصار رمز علامة صلة"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : لغة العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Fix it"
+#~ msgstr "إصلاحه"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : SITE_NAME العلامة الوصفية في قسم الرأس مع القيمة "
+#~ "الصحيحة"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : نوع العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : لقب العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : وصف العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : URL العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr ""
+#~ "ضع هذا خطأ في مرماه : صورة العلامة الوصفية في قسم الرأس مع القيمة الصحيحة"
+
+#~ msgid "Title Tag"
+#~ msgstr "علامة العنوان"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr "عنوان الموقع. وهذا ينبغي أن يكون وصفيا وضمن 70 حرفا."
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr "يصف صفحة ويب . طول الأمثل هو 155 حرفا و ليس عاملا الترتيب ."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "كلمات البحث التعريف"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "يذكر الكلمات الرئيسية المستخدمة في صفحة ويب . انها ليست عاملا الترتيب ."
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "التوافق هو عملية اختيار أفضل URL عندما يكون هناك العديد من الخيارات. هذه "
+#~ "العلامة الوصفية الكنسي يساعد محرك البحث الزواحف لفهرسة الصفحة والتي يمكن "
+#~ "تناولها من عناوين مختلفة ( مثل http://www.example.com/ و http://example."
+#~ "com/ ) ."
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "ميتا الروبوتات العلامة طلبات محرك البحث الروبوتات إلى الزحف أو ترك صفحة "
+#~ "ويب. إذا أعطيت قيمة لمنع الفهرسة و نوفولو ، لن يتم فهرسة صفحة على شبكة "
+#~ "الإنترنت ."
+
+#~ msgid "Favicon Link"
+#~ msgstr "فافيكون رابط"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "يعرض صورة فريدة من نوعها بجانب العنوان في أعلى المتصفح. كبار المسئولين "
+#~ "الاقتصاديين جيدة الممارسة"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "تقاسم اللغة التي سوف تستخدم"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "نوع التطبيق الذي تقوم بمشاركتها. ومن هنا الموقع"
+
+#~ msgid "Site Name"
+#~ msgstr "اسم الموقع"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "اسم الموقع . ومن هنا"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr "عنوان المحتوى المشترك . قد يكون أو لا يكون نفس عنوان صفحة ويب"
+
+#~ msgid "Description"
+#~ msgstr "وصف"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "الجسم من المحتوى المشترك . وعادة ما ينظر إلى هذا النص على محتويات مشترك "
+#~ "في شبكات وسائل الإعلام الاجتماعية"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "تحديد رابط الصفحة على شبكة الإنترنت ، ويشارك هذا العنوان و سوف تكون لها "
+#~ "فوائد الارتباط. ولكن أن نكون صادقين ."
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "مهم جدا لأن هذا يحصل المستخدمين اهتمام ر المحتوى الخاص بك المشتركة على "
+#~ "وسائل الاعلام الاجتماعية ."
+
+#~ msgid "Total number of images"
+#~ msgstr "إجمالي عدد الصور"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "استخدام \"البديل\" سمة"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "استخدام \" ارتفاع\" سمة"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "استخدام \"عرض\" سمة"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "إدراج سمات عداد المفقودين."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr "لا توجد بطاقات رؤساء . وبالتالي لا تدرج النص موجودا."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "كتابة النص في التسلسل الصحيح ."
+
+#~ msgid "All head tags are present"
+#~ msgstr "كافة العلامات الرأس موجودة"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "لذا، هل هناك نص التسلسل الهرمي الحالي ."
+
+#~ msgid "One head tag is present"
+#~ msgstr "واحدة سمة الرأس الآن"
+
+#~ msgid "Some head tags are present"
+#~ msgstr "بعض الكلمات الرأس موجودة"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "تأكد من أن النص الخاص بك في التسلسل الهرمي. إذا لم يتم يرجى تجعل من ذلك ."
+
+#~ msgid "Check again"
+#~ msgstr "التحقق مرة أخرى"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "النص إلى نسبة HTML لهذه الصفحة على شبكة الإنترنت هو"
+
+#~ msgid "Too much HTML in your web page."
+#~ msgstr "كثيرا HTML في صفحة الويب الخاصة بك ."
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "كتابة المزيد من النص ، أتلست"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "الكثير من النص في صفحة الويب الخاصة بك ."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr "جعل هذه الصفحة أكثر جاذبية مع أكثر HTML . أو كتابة نص أقل ، أتلست"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "هذه النسبة لهذه الصفحة على شبكة الإنترنت أمر طبيعي ."
+
+#~ msgid "Number of Links"
+#~ msgstr "عدد كبير من الروابط"
+
+#~ msgid "Outgoing Links"
+#~ msgstr "الروابط المنتهية ولايته"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "عدد كبير من الروابط كبيرة ."
+
+#~ msgid "Please try to reduce number of links."
+#~ msgstr "الرجاء في محاولة ل لحد من عدد كبير من الروابط ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "عدد كبير من الروابط هي أكثر من اللازم ."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "ينبغي تخفيض عدد كبير من الروابط"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "الروابط مع REL يعزو"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "الروابط مع سمة العنوان"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "الروابط مع نوفولو يختلط attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "وضع يختلط و لقب سمات الروابط"
+
+#~ msgid "Images"
+#~ msgstr "الصور"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "الاستخدام الأمثل لل صور يجب أن يكون الطول والعرض و ALT السمة. لا ينبغي أن "
+#~ "يكون حجمها الصور في المتصفح."
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "عرض النص هو أفضل في التسلسل الهرمي لل عناوين و به الجسم. استخدام H1، H2 ، "
+#~ "H3 ، H4 ، H5 ، H6 به بشكل صحيح ."
+
+#~ msgid "text/html Ratio"
+#~ msgstr "نص / HTML نسبة"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "هذه النسبة يحدد إذا كانت صفحة الويب هو المحتوى الأمثل الغنية و أنيق "
+#~ "بصريا . هذا ليس عاملا الترتيب و يجب أن يكون بين 20 ٪ إلى 70 ٪ ."
+
+#~ msgid "Link Numbers"
+#~ msgstr "أرقام صلة"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "عدد كبير من الروابط تلعب دورا هاما في تحديد رانك . يجب أن يكون الأمثل لل "
+#~ "أرقام ، وينبغي ألا تكون عالية جدا ."
+
+#~ msgid "Link Attributes"
+#~ msgstr "سمات صلة"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "هناك 2 سمات يختلط و عنوان ل أية ارتباطات صفحة ويب . أنها تعرف الرابط و "
+#~ "أنه 'ق وظيفة ."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "هذه صفحة ويب يجعل مجموع"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "طلبات HTTP ."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "أنواع هي"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "لجافا سكريبت"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "ل أنماط ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "في محاولة لجعل طلبات HTTP أقل لأن هذا هو عالية . استخدام موضوع الأمثل و "
+#~ "الحاجيات"
+
+#~ msgid "Reduce it"
+#~ msgstr "لحد منه"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "في محاولة لجعل طلبات HTTP أقل لأن هذه هي عالية جدا . استخدام موضوع الأمثل "
+#~ "و الحاجيات"
+
+#~ msgid "Must Reduce"
+#~ msgstr "يجب تقليل"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "الأنماط يتم تقديم طلبات HTTP من خلال استيراد @"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "إزالة عنوان URL استيراد @ ووضعه داخل علامة الرأس من خلال وصلة مع أنماط "
+#~ "يختلط السمة"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "الأنماط لا يجعل أي طلب HTTP داخليا"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr "سمة نمط موجود في الكلمات أعلاه في بعض أو كل occurances ."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "العثور على وإزالة سمات الاسلوب مع سمات الطبقة و وضع النمط في ملف CSS "
+#~ "الرئيسي"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "لا سمة نمط موجود في أي العلامة."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "ليس هناك خطأ في HTML صفحة الويب هذه ."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "يوجد"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "أخطاء في HTML من صفحة الويب الخاصة بك :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "حفر في الأخطاء ومعرفة ما يسبب أخطاء ، الموضوع الخاص بك أو أي المساعد و "
+#~ "حلها"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "يتم تحميل ٪ من معدات الشكل و JavaScripts في قسم الرأس."
+
+#~ msgid "This is high"
+#~ msgstr "هذا هو ارتفاع"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr "إضافة المزيد من النصوص في المقطع تذييل وإزالتها من مقطع الرأس"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "البيانات الجزئية مقتطف منسق موجود في هذه الصفحة على شبكة الإنترنت ."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "نوع من قصاصة الغنية"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr ""
+#~ "ليست هناك بيانات جزئية غنية قصاصة موجودة في هذه الصفحة على شبكة الإنترنت ."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "استخدام أي كبار المسئولين الاقتصاديين البرنامج المساعد الحرة ل ترميز صفحة "
+#~ "الويب الخاصة بك مع البيانات الجزئية المتكررة الغنية ."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "عدد طلبات HTTP صفحة الويب الخاصة بك يجعل لجلب المحتوى من خادم التأثيرات "
+#~ "ثيقة وقت التحميل، لأن أكثر طلبات سيدعو لمزيد من التنزيلات ، وسوف يستغرق "
+#~ "مزيدا من الوقت"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "الأنماط URL الاستيراد"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "منضما @ المعلمة داخل استيراد أنماط لزيادة حمولة الوثيقة لا لزوم لها . "
+#~ "وينبغي تجنب هذا"
+
+#~ msgid "Style Attribute"
+#~ msgstr "نمط المهاراة"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "باستخدام هذا في أي عنصر من عناصر HTML من صفحة ويب يقلل من الجودة من خلال "
+#~ "زيادة متصفح تقديم الوقت"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "متصفح التوافق"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "جوجل تريد أن صفحة الويب الخاصة بك ينبغي أن ننظر موافق في مختلف المتصفحات "
+#~ "(مثل موزيلا فايرفوكس، كروم ، وإنترنت إكسبلورر ، سفاري، أوبرا الخ ) ، و "
+#~ "الشيء الأساسي هو أننا يمكن أن تحقق أخطاء داخل تطعن HTML"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Complition البصرية"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "طلبات HTTP المحرز في رأس مقارنة مع مجموع الطلبات HTTP يؤثر complition "
+#~ "البصرية ، وهي مهمة تصميم معيار المعلمة"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "مقتطف الغنية"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "هذا النوع من العلامات HTML يعطي مزيدا من المعلومات للبحث صفحات محرك "
+#~ "لتقديم. جوجل تشجع البيانات الجزئية نوع ترميز لأن هذا تجربة المستخدم "
+#~ "الزيادات في محرك البحث قوقل الصفحة"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "جوجل قد تخلط هذه الصفحة كما إنشاؤه تلقائيا ."
+
+#~ msgid "because of this part"
+#~ msgstr "بسبب هذا الجزء"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "تغيير عنوان URL الخاص بك إلى نوع مختلف من الرابط الثابت"
+
+#~ msgid "Change it"
+#~ msgstr "تغييره"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "يحافظ هذا الرابط صفحة ويب المبادئ التوجيهية."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr ""
+#~ "عنوان URL صفحة ويب كبير جدا . يحق لشركة Google أن من البريد المزعج ."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "تغيير حجم عنوان URL الخاص بك و نوع في الصفحة أو محرر آخر . تأكد من أنك لا "
+#~ "تستخدم أي تتبع الدورة"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "تم العثور على الجزء الأخير وراثيا في الرأس. إذا وراثيا ، ومنذ is متاحة ."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "لم يتم العثور على الجزء الأخير وراثيا في الرأس. إذا وراثيا ، ومنذ معطلة"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr "نسأل مزود استضافة لتنشيط IF- معدلة ، ومنذ رأس"
+
+#~ msgid "Ask for it"
+#~ msgstr "بحث بشدة"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "مخبأ نشطة. هذه صفحة ويب تمت بعد المعلمات ذاكرة التخزين المؤقت."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr ""
+#~ "ذاكرة التخزين المؤقت غير نشط. هذه صفحة ويب دون 'ر بإرجاع المعلمات ذاكرة "
+#~ "التخزين المؤقت."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "استخدام أسلوب التخزين المؤقت ل تجربة أفضل للمستخدم . استخدام أي المساعد "
+#~ "مخبأ الحرة المتاحة"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "ابق على اتصال على قيد الحياة معطلة"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr "نسأل مزود استضافة لتنشيط الحفاظ على اتصال على قيد الحياة"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "ابق على اتصال على قيد الحياة على"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "يتم تمكين ضغط GZIP في رؤوس صفحة الويب الخاصة بك ."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "لا توجد وسيلة ضغط في صفحة ويب ."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr "تمكين ضغط GZIP لتحقيق نتائج أفضل . استخدام الإضافات المجانية."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "كنت تستخدم نسخة وورد"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr "كنت تستخدم وورد ، وعلى الأرجح أنه ' سا معدلة سم مع وورد الأساسية ."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "يرجى استخدام برنامج وورد السليم"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "إذا كان عنوان URL لديه المعلومات متغير أو أكثر من 255 بايت ، ومحركات "
+#~ "البحث سوف تعتبرها غير مرغوب فيها."
+
+#~ msgid "If-Modified-Since"
+#~ msgstr "إذا وراثيا ، ومنذ"
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "هذه هي ميزة الخادم. هذا بإعلام تلقائيا محركات البحث ، كلما يأخذ أي تغير "
+#~ "في محتوى صفحة ويب ."
+
+#~ msgid "Caching"
+#~ msgstr "التخزين المؤقت"
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "التخزين المؤقت HTML، CSS ، جافاسكريبتس ، يمكن للصور في متصفحات المستخدمين "
+#~ "أن تكون مفيدة جدا في الحد من وثيقة وقت التحميل. بحث الزواحف محرك يحب "
+#~ "صفحات الويب مع أفضل وثيقة وقت التحميل."
+
+#~ msgid "Keep Alive"
+#~ msgstr "تبقي على قيد الحياة"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "هذه هي ميزة الخادم. هذا يحافظ على العلاقة بين الخادم و المستعرض بالموقع "
+#~ "مقابل مبلغ قال من الزمن. و يوفر الوقت للاتصال الزائدة. وبالتالي فإنه يقلل "
+#~ "من وقت التحميل وثيقة أيهما أفضل ."
+
+#~ msgid "gzip compression"
+#~ msgstr "GZIP ضغط"
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "هذه الميزة خادم يسلم محتوى صفحة ويب إلى الصفحات في شكل مضغوط GZIP . "
+#~ "وبالتالي فإنه يقلل من عرض النطاق الترددي و حجم صفحة ويب ."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "نظام إدارة المحتوى (CMS ) بإنشاء صفحة على شبكة الإنترنت من البرامج النصية "
+#~ "أبقى في الخادم. لذلك ، قد زحف Google النظر في هذه المحتويات إلى أن تتولد "
+#~ "السيارات. ولكن ، بالنسبة للمستخدمين وورد هذا ليست مشكلة ."
+
+#~ msgid "Web Page"
+#~ msgstr "صفحة على الإنترنت"
+
+#~ msgid "Scanned for"
+#~ msgstr "فحصها لل"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "محرك بحث التوافق ، إرشادات مشرفي المواقع من Google وفقا لمعايير"
+
+#~ msgid "Theme Used"
+#~ msgstr "موضوع مستعملة"
+
+#~ msgid "Time Taken"
+#~ msgstr "الوقت الذي يستغرقه"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "ثانية ل مسح"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "ثانية لتحميل المكونات"
+
+#, fuzzy
+#~ msgid ""
+#~ "Complete Google SEO Scan Plugin requires PHP 5.3+ and will not be "
+#~ "activated because your current server has PHP version "
+#~ msgstr ""
+#~ "يتطلب كاملة جوجل SEO المسح الضوئي PHP 5.3 + و لن يتم تفعيلها، تكوين "
+#~ "الملقم الحالي الخاص بك يعمل بنظام التشغيل إصدار PHP"
+
+#~ msgid "Scan Now"
+#~ msgstr "مسح ضوئي الآن"
+
+#, fuzzy
+#~ msgid "Keyword"
+#~ msgstr "كلمات البحث التعريف"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "أي إصدار PHP أقل من 5.3.0 وصلت \"نهاية الحياة\" من PHP.net وأنه لم يعد "
+#~ "يتلقى بوجفيكسيس التحديثات orsecurity . المعلومات الرسمية حول كيفية تحديث "
+#~ "و السبب في"
+
+#~ msgid "SEO Scan"
+#~ msgstr "SEO المسح الضوئي"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "كاملة جوجل SEO المسح الضوئي"
+
+#~ msgid "Brought to you by"
+#~ msgstr "يقدمها لك"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO مدونة"
+
+#~ msgid "New Scan"
+#~ msgstr "جديد المسح الضوئي"
+
+#~ msgid "Notes"
+#~ msgstr "ملاحظات"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr "اختار أي صفحة أو آخر أو إدخال عنوان URL المخصص ل مسح"
+
+#~ msgid "Scan Page"
+#~ msgstr "تفحص الصفحة"
+
+#~ msgid "OR"
+#~ msgstr "أو"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "تحديد آخر لتفحص"
+
+#~ msgid "Scan Post"
+#~ msgstr "مسح آخر"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "أدخل عنوان URL مخصص"
+
+#~ msgid "Scan URL"
+#~ msgstr "مسح URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "الأشياء أن تعرف قبل scaning"
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr "ضع مؤشر الفأرة فوق العناصر وأكد أن نرى التفسيرات في صفحة نتائج ."
+
+#~ msgid "Print Report"
+#~ msgstr "طباعة تقرير"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "نصائح كبار المسئولين الاقتصاديين →"
+
+#~ msgid "Data"
+#~ msgstr "معطيات"
+
+#~ msgid "Design"
+#~ msgstr "تصميم"
+
+#~ msgid "Technical"
+#~ msgstr "تقني"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "مشاركة البيانات الاجتماعية ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "فتح بروتوكول الرسم البياني عن طريق الفيسبوك وقبلها تقريبا جميع وسائل "
+#~ "الإعلام الاجتماعية الكبرى بما في ذلك غوغل +"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "بيانات صفحة ويب"
+
+#~ msgid "Remarks"
+#~ msgstr "ملاحظات"
+
+#~ msgid "Design points"
+#~ msgstr "نقطة التصميم"
+
+#~ msgid "Server points"
+#~ msgstr "نقاط الخادم"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ تتبع ارتباطات المحتوى نص"
+
+#~ msgid "Total Text"
+#~ msgstr "مجموع النص"
+
+#~ msgid "In page Style"
+#~ msgstr "في الصفحة ستايل"
+
+#~ msgid "In page Script"
+#~ msgstr "في سيناريو الصفحة"
+
+#~ msgid "Scan by"
+#~ msgstr "تفحص من قبل"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Action"
+#~ msgstr "عمل"
+
+#~ msgid "Length "
+#~ msgstr "طول"
+
+#~ msgid " for image "
+#~ msgstr "للحصول على صورة"

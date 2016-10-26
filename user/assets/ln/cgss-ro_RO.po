@@ -1,0 +1,1435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-07-03 00:49+0530\n"
+"PO-Revision-Date: 2015-07-03 00:49+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../front-end.php:27
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../front-end.php:33
+msgid "EMAIL"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Seo Status"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "See overall and specific seo points of pages in"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Check for documentation in Help tab above."
+msgstr ""
+
+#: ../front-end.php:60
+msgid "Content"
+msgstr "conținut"
+
+#: ../front-end.php:66
+msgid "Usability"
+msgstr ""
+
+#: ../front-end.php:92
+msgid "Title"
+msgstr "titlu"
+
+#: ../front-end.php:142 ../front-end.php:428
+msgid "Never"
+msgstr ""
+
+#: ../front-end.php:304
+#, fuzzy
+msgid "Send Request"
+msgstr "cereri HTTP"
+
+#: ../front-end.php:316
+msgid "Validate Request"
+msgstr ""
+
+#: ../front-end.php:328
+#, fuzzy
+msgid "Download Content"
+msgstr "conținut"
+
+#: ../front-end.php:340
+msgid "Analyze Data"
+msgstr ""
+
+#: ../front-end.php:352
+msgid "Save Information"
+msgstr ""
+
+#: ../front-end.php:364
+#, fuzzy
+msgid "Fetch Results"
+msgstr "rezulta"
+
+#: ../front-end.php:393
+msgid "SHOW POST TYPES"
+msgstr ""
+
+#: ../front-end.php:399
+msgid "FILTER"
+msgstr ""
+
+#: ../front-end.php:406
+msgid "Score"
+msgstr ""
+
+#: ../front-end.php:407
+msgid "Star"
+msgstr ""
+
+#: ../front-end.php:408 ../front-end.php:409 ../front-end.php:410
+#: ../front-end.php:411 ../front-end.php:412 ../front-end.php:413
+#: ../front-end.php:414 ../front-end.php:415
+msgid "Stars"
+msgstr ""
+
+#: ../front-end.php:422
+msgid "Time"
+msgstr ""
+
+#: ../front-end.php:423
+msgid "This hour"
+msgstr ""
+
+#: ../front-end.php:424
+msgid "Today"
+msgstr ""
+
+#: ../front-end.php:425
+msgid "7 days"
+msgstr ""
+
+#: ../front-end.php:426
+msgid "30 days"
+msgstr ""
+
+#: ../front-end.php:427
+msgid "90 days"
+msgstr ""
+
+#: ../lib/snippet-object.php:56
+msgid "SEARCH SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/snippet-object.php:75
+msgid "OGP SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/btn-object.php:37
+msgid "Button Error"
+msgstr ""
+
+#: ../lib/heading-object.php:37
+msgid "HEADING ERROR"
+msgstr ""
+
+#: ../lib/help-object.php:16
+msgid "Overview"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan. We have not "
+"included backlinks analysis, traffic metrics, details on social media, "
+"knowledge graph and brand signals, because the intention is primarily on-"
+"page search optimization only. If you catch a bug or want to give any "
+"feedback or feature suggestion you are welcome to email the plugin author"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../lib/help-object.php:21
+msgid "How to use?"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is almost "
+"mobile ready. So, for regular WordPress users it will be very intuitive. The "
+"usage process has 3 steps."
+msgstr ""
+
+#: ../lib/help-object.php:22
+#, fuzzy
+msgid "Select a Page"
+msgstr "Selectați o pagină de scanare"
+
+#: ../lib/help-object.php:22
+msgid ""
+"from the individual tables of webpages, by clicking on corresponding radio "
+"button. There are 2 dropdown menues to select posts from multiple post types "
+"and filter them according to time and score of last scan. Remeber, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Wait for scan"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "See results"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"in a pop up in the same page as soon as the scan is complete. The result "
+"will have 5 segments."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Overview and basic information as well as social media counts."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Search engine snippet and related information."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Use of Media or Image and Video seo"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"Navigate within segments using top arrow buttons. Scan result is displayed "
+"in an organized fashion and are is easy to understand for someone with basic "
+"seo knowledge. For a primitive guideline of seo aspects see links at right "
+"sidebar of this area."
+msgstr ""
+
+#: ../lib/help-object.php:26
+msgid "Performance"
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../lib/help-object.php:27
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes around 10 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"Scanare timp depinde de server și de calitate site-ul dumneavoastră . "
+"Procesul efectiv durează mai puțin de 0,01 secunde pentru a finaliza ."
+
+#: ../lib/help-object.php:27
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../lib/help-object.php:31
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "privacy Policy."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "Data storage."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. When the plugin is uninstalled these data will remain in your "
+"server, untill deleted by special operation. They will not create any "
+"problem although."
+msgstr ""
+
+#: ../lib/help-object.php:36
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Support Forum"
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../lib/textarea-object.php:33
+msgid "Textarea Error"
+msgstr ""
+
+#: ../lib/dropdown-object.php:42 ../lib/dropdown-object.php:59
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "Complete Google SEO Scan requires PHP 5.3+ and will not be activated, "
+#~ "your current server configuration is running PHP version&nbsp;"
+#~ msgstr ""
+#~ "Complet Google SEO de scanare necesită PHP 5.3 + și nu va fi activat , "
+#~ "configurarea serverului curent se execută versiunea PHP"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "Orice versiune PHP mai puțin 5.3.0 a ajuns la \"End of Life\" de la PHP."
+#~ "net și nu mai primește corecții actualizări orsecurity . Informații "
+#~ "oficiale cu privire la modul de a actualiza și de ce la"
+
+#~ msgid "Scan Now"
+#~ msgstr "Scan Now"
+
+#~ msgid "SEO Scan"
+#~ msgstr "SEO Scan"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "Complet Google SEO Scan"
+
+#~ msgid "Brought to you by"
+#~ msgstr "Adus la tine de"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO Blog"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "Google Search Engine Optimization Scanare pentru pagina ta web este "
+#~ "completă . Aici sunt rezultatele ."
+
+#~ msgid "at line"
+#~ msgstr "la linia"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "Este's diferit de scanat URL-ul paginii web"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr ""
+#~ "Fii sigur că doriți pagina dvs. să fie indexate de către acest URL canonic"
+
+#~ msgid "Recheck it"
+#~ msgstr "Verificați din nou o"
+
+#~ msgid "OK"
+#~ msgstr "bine"
+
+#~ msgid "NOT FOUND"
+#~ msgstr "NOT FOUND"
+
+#~ msgid "Put a canonical link"
+#~ msgstr "Pune un link canonic"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "Introduceți Favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "lungime"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "caractere ( maximă permisă 70 de caractere )"
+
+#~ msgid "Length"
+#~ msgstr "lungime"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr ""
+#~ "Ca mai mult de 70 de caractere nu vor fi afișate în rezultatele căutării"
+
+#~ msgid "Give shorter title"
+#~ msgstr "Da titlul scurt"
+
+#~ msgid "Give a title."
+#~ msgstr "Da un titlu ."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "caractere ( maximă permisă de 155 de caractere)"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "Scrie un meta descriere în 155 de caractere . Desi aceasta nu împiedică "
+#~ "trafic , dar se pare rău în pagina motorului de căutare rezultat . Prin "
+#~ "urmare , se poate reduce prin rata de clic ( CTR )"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "Fă-o scurt."
+
+#~ msgid "This is not good."
+#~ msgstr "Acest lucru nu este bun ."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "Tag-ul este în loc , acum scrie unele meta descriere"
+
+#~ msgid "Give a description"
+#~ msgstr "Da o descriere"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "NOT FOUND ."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "Introduceți cuvinte cheie potrivite pentru conținutul paginii de web , "
+#~ "mai multe motoare de căutare -l folosească , dar nu Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "Introduceți cuvinte cheie ."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr ""
+#~ "Meta robotul are noindex valoare nofollow . Acest lucru nu este bun ."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "Schimbați valoarea meta roboți de nu - index și / sau nu - urmeze"
+
+#~ msgid "Fix this."
+#~ msgstr "Fix aceasta ."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : tag-ul meta locale"
+
+#~ msgid "Fill it"
+#~ msgstr "umple-l"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr ""
+#~ "Pune valoarea corespunzătoare a acestei OG : meta-etichetă SITE_NAME"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : meta-etichetă de tip"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : meta-etichetă url"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : tag-ul meta titlu"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : descriere meta tag-ul"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "Pune valoarea corespunzătoare a acestei OG : meta-etichetă imagine"
+
+#~ msgid "TAG NOT FOUND"
+#~ msgstr "TAG NOT FOUND"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "Puteți folosi orice plugin-uri SEO gratuite disponibile pentru a obține "
+#~ "opțiuni pentru a intra în descrierile"
+
+#~ msgid "Put the tag"
+#~ msgstr "Pune tag-ul"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "Introduceți cuvinte cheie potrivite pentru conținutul paginii de web , "
+#~ "mai multe motoare de căutare -l folosească , dar nu Google . Puteți "
+#~ "folosi orice plugin-uri SEO gratuite disponibile pentru a obține opțiuni "
+#~ "pentru a intra în această etichetă"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "Puteți folosi orice plugin-uri SEO gratuite disponibile pentru a obține "
+#~ "opțiuni pentru a intra dorit legătură canonică meta"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr ""
+#~ "Este mai bine pentru a pune o etichetă . În caz contrar, nu vă faceți "
+#~ "griji mari"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "Pune o imagine favicon ICO folosind un shortcut link tag-ul"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : tag-ul meta locale în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Fix it"
+#~ msgstr "Fix it"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : meta-etichetă SITE_NAME în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : meta-etichetă tip în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : titlu tag-ul meta în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : Descriere Meta Tag în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : meta-etichetă url în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Pune acest OG : meta tag-ul imagine în secțiunea cap cu o valoare "
+#~ "corespunzătoare"
+
+#~ msgid "Title Tag"
+#~ msgstr "titlu Tag"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr ""
+#~ "Titlul site-ului . Acest lucru ar trebui să fie descriptiv și în termen "
+#~ "de 70 de caractere."
+
+#~ msgid "Meta Description"
+#~ msgstr "meta Descriere"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Descrie pagina de web . Lungimea optimă este de 155 de caractere și nu "
+#~ "este un factor de clasament ."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "Cuvinte cheie Meta"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "Mențiuni cuvinte cheie utilizate în pagina web . Acesta nu este un factor "
+#~ "de clasament ."
+
+#~ msgid "Canonical Link"
+#~ msgstr "Link Canonical"
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Canonicalization este procesul de a alege cele mai bune URL-ul atunci "
+#~ "când există mai multe opțiuni . Aceasta eticheta canonic ajută crawlerele "
+#~ "motorului de căutare să indexeze o pagină care poate fi abordat din "
+#~ "diferite URL-uri ( cum ar fi http://www.example.com/ și http://example."
+#~ "com/ ) ."
+
+#~ msgid "Meta Robots"
+#~ msgstr "Robots meta"
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "Meta roboți tag-ul a cererilor robotii motoarelor de căutare să acceseze "
+#~ "cu crawlere sau de a părăsi pagina de web . Dacă dat o valoare de noindex "
+#~ "si nofollow , pagina web nu vor fi indexate ."
+
+#~ msgid "Favicon Link"
+#~ msgstr "favicon Link"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "Afișează o imagine unica pe lângă titlu în partea de sus a browser-ului . "
+#~ "Bune practici SEO"
+
+#~ msgid "Language"
+#~ msgstr "limbă"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "Schimbul de limba pe care o va folosi"
+
+#~ msgid "Type"
+#~ msgstr "tip"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "Tip de aplicație vă sunt de partajare . Aici este site-ul"
+
+#~ msgid "Site Name"
+#~ msgstr "Numele site-ului"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "Numele site-ului . Iată-l"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "Titlul conținut partajat . Poate sau nu poate fi aceeași ca și titlul "
+#~ "paginii web"
+
+#~ msgid "Description"
+#~ msgstr "descriere"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "Corpul de conținut partajat . De obicei, acest text se vede pe conținutul "
+#~ "partajate în rețele sociale mass-media"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Specifica link-ul paginii web , acest URL este împărtășită și va avea "
+#~ "beneficii link . Dar fii sincer ."
+
+#~ msgid "Image"
+#~ msgstr "imagine"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "Foarte important, deoarece aceasta devine utilizatorilor atentia t de "
+#~ "conținut partajat pe social media ."
+
+#~ msgid "Total number of images"
+#~ msgstr "Numărul total de imagini"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "Utilizarea \"alt\" atributul"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "Utilizarea \"inaltime\" atributul"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "Utilizarea \"lățime\" atributul"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "Introduceți atributele care lipsesc ."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr ""
+#~ "Nici o eticheta capete de gasit . Prin urmare, nici o ierarhie de text "
+#~ "este prezent ."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "Scrierea textului în ierarhia corectă ."
+
+#~ msgid "All head tags are present"
+#~ msgstr "Toate etichetele cap sunt prezente"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "Deci , există o ierarhie prezent textul ."
+
+#~ msgid "One head tag is present"
+#~ msgstr "O etichetă cap este prezent"
+
+#~ msgid "Some head tags are present"
+#~ msgstr "Unele tag-uri cap sunt prezente"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "Asigurați-vă că textul este în ierarhie . În cazul în care nu sunt vă "
+#~ "rugăm să -l așa ."
+
+#~ msgid "Check again"
+#~ msgstr "Verificați din nou"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "Textul de raport HTML pentru aceasta pagina de web este"
+
+#~ msgid "Too much HTML in your web page."
+#~ msgstr "Prea mult HTML in pagina ta web ."
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "Scrie mai mult text , cel putin"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "Prea mult text în pagina ta web ."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "Face această pagină mult mai atrăgătoare , cu mai mult HTML . Sau a scrie "
+#~ "mai puțin de text , cel putin"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "Acest raport pentru această pagină de web este normal ."
+
+#~ msgid "Number of Links"
+#~ msgstr "Numărul de link-uri"
+
+#~ msgid "Outgoing Links"
+#~ msgstr "Link-uri de ieșire"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "Numărul de link-uri sunt mari ."
+
+#~ msgid "Please try to reduce number of links."
+#~ msgstr "Vă rugăm să încercați să reducă numărul de link-uri ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "Numărul de link-uri sunt prea mult ."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "Numărul de link-uri ar trebui să fie redus"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Link-uri cu atributul rel"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "Link-uri cu atributul title"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Link-uri cu nofollow rel attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "Pune rel și titlul atribute de link-uri"
+
+#~ msgid "Images"
+#~ msgstr "imagini"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "Utilizarea optimă a imaginilor trebuie să aibă înălțimea , lățimea și alt "
+#~ "atribut . Imaginile nu trebuie să fie redimensionate la browser-ul ."
+
+#~ msgid "Text Hierarchy"
+#~ msgstr "Ierarhia Text"
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "Textul de prezentare este mai bine într- o ierarhie de titluri și tag-uri "
+#~ "corp . Utilizați H1 , H2, H3 , H4 , H5 , H6 tag-uri în mod corespunzător ."
+
+#~ msgid "text/html Ratio"
+#~ msgstr "Text / Raport HTML"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Acest raport determină dacă pagina web este conținut optim de bogat și "
+#~ "vizual prezentabil . Acest lucru nu este un factor de clasament și "
+#~ "trebuie să fie între 20 % și 70 % ."
+
+#~ msgid "Link Numbers"
+#~ msgstr "Legăturile numerele"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "Numărul de link-uri joacă un rol important în a decide PageRank . "
+#~ "Numerele trebuie să fie optimizate și nu ar trebui să fie foarte mare ."
+
+#~ msgid "Link Attributes"
+#~ msgstr "Atribute Link"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "Există două atribute rele și titlul pentru orice link-uri de pagini web . "
+#~ "Ei definește pe link-ul și -l's funcție ."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "Această pagină web face totală"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "cereri HTTP ."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "tipuri sunt"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "pentru JavaScript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "pentru stil ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "Încercați să facă cereri mai puțin HTTP , deoarece acest lucru este "
+#~ "mare . Utilizați tema optimizat și widget-uri"
+
+#~ msgid "Reduce it"
+#~ msgstr "ao reduce"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "Încercați să facă cereri mai puțin HTTP , deoarece acest lucru este "
+#~ "foarte mare . Utilizați tema optimizat și widget-uri"
+
+#~ msgid "Must Reduce"
+#~ msgstr "trebuie să reducă"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "Foaia de stil este de a face cereri HTTP prin @ import"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "Scoateți url @ import și puneți-l în interiorul tag- cap prin intermediul "
+#~ "link-ul cu atributul stil rel"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "Foaia de stil nu se face nici o cerere HTTP intern"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr ""
+#~ "Atribut de stil este prezent în tag-uri de mai sus , la unele sau toate "
+#~ "occurances ."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "Găsi și elimina atributele de stil cu caracteristici de clasă și să pună "
+#~ "stilul în principal CSS fișier"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "Nici un atribut de stil este prezentă în orice etichetă ."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "Nu există nici o eroare HTML în această pagină web ."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "există"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "erori în HTML al paginii dvs. web :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "Sape în erorile și de a afla ce este cauza erorilor , tema sau orice "
+#~ "plugin și rezolva aceasta"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "% din foi de stil și javascript sunt încărcate în secțiunea cap ."
+
+#~ msgid "This is high"
+#~ msgstr "Acest lucru este mare"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr ""
+#~ "Adăugați mai multe scripturi în secțiunea subsol și a le elimina de la "
+#~ "secțiunea antet"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Micro fragment bogat este prezent la aceasta pagina web ."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "Tip de fragment bogat este"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr ""
+#~ "Nu există nici o micro bogat fragment prezente în această pagină web ."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "Folosiți orice SEO plug-in gratuit pentru markup pagina web cu micro "
+#~ "fragment bogat ."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "Numărul de cereri HTTP pagina Web face pentru a prelua conținut de pe "
+#~ "serverul de influențe timp Încărcați documentul , deoarece mai multe "
+#~ "cereri va face apel pentru mai multe descărcări și va dura mai mult timp"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "URL-ul import de stil"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "@ parametru import in foaia de stil este obligat să crească sarcina "
+#~ "inutile documentul . Aceasta ar trebui să fie evitată"
+
+#~ msgid "Style Attribute"
+#~ msgstr "stil Caracteristica"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "Folosind acest lucru în orice element de HTML a paginii web reduce "
+#~ "calitate prin creșterea timpului de randare browser"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Compatibilitate browser"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "Google vrea ca pagina de web ar trebui să arate bine în browsere diferite "
+#~ "( de exemplu, Mozila Firefox, Chrome , Internet Explorer , Safari , "
+#~ "Opera , etc ) , iar lucrul de bază , putem verifica este erori interiorul "
+#~ "yor HTML"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Complition Visual"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "Cereri HTTP efectuate în afara comparație cu numărul total cereri HTTP "
+#~ "influențează complition vizual , care este un parametru important "
+#~ "standard de proiectare"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "fragment bogat"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "Acest tip de marcare HTML oferă mai multe informații pentru a căuta "
+#~ "paginile motorului pentru a face . Google încurajează micro tip de "
+#~ "marcare , deoarece această experiență de utilizare crește în Search "
+#~ "Engine Page Rank"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "Google poate confunda această pagină ca auto - generate ."
+
+#~ msgid "because of this part"
+#~ msgstr "din cauza acestei părți"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "Schimba URL-ul dvs. la alt tip de legătură permanentă"
+
+#~ msgid "Change it"
+#~ msgstr "schimba-l"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "Această pagină Web URL menține liniile directoare ."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "Pagina de URL -ul este prea mare . Google poate considera SPAM ."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "Schimba dimensiunea și tipul de URL-ul la pagina sau postul editor . "
+#~ "Asigurați-vă că nu sunt folosind orice sesiunea de tracking"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "Ultima parte , modificat în antet este găsit . Dacă - Modified-Since este "
+#~ "On ."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "Ultima parte , modificat antetul nu este găsit . Dacă - Modified-Since "
+#~ "este Off"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "Întrebați furnizorul dvs. de găzduire pentru a activa Dacă - Modified-"
+#~ "Since antetul"
+
+#~ msgid "Ask for it"
+#~ msgstr "Adresați-vă pentru o"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr ""
+#~ "Cache-ul este activ . Această pagină web a următorii parametri cache ."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr ""
+#~ "Cache este inactiv . Această pagină web nu't întoarce parametrii cache ."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "Utilizați metoda de cache pentru o experiență de utilizare mai bună . "
+#~ "Folosiți orice plugin cache disponibile gratuit"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "Păstrați Connection Alive este Off"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr ""
+#~ "Întrebați furnizorul dvs. de găzduire pentru a activa Păstrați Connection "
+#~ "Alive"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "Păstrați Connection Alive Pe"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "compresie gzip în dvs. anteturile de pagină web este activat ."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "Nici o metodă de compresie se găsește în pagina web ."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "Activare compresie gzip pentru rezultate mai bune . Utilizați plugin-uri "
+#~ "gratuite ."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "Sunteți folosind versiunea WordPress"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "Pe care îl utilizați WordPress , cel mai probabil'sa modificat CMS "
+#~ "WordPress de bază ."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "Va rugam sa folositi software-ul propriu WordPress"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "Dacă URL-ul are informatii variabile sau este mai mult de 255 de bytes , "
+#~ "motoarele de căutare ca spam-ul va lua în considerare ."
+
+#~ msgid "If-Modified-Since"
+#~ msgstr "Dacă - Modified-Since"
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "Aceasta este o caracteristică server. Aceasta informeaza automat robotii "
+#~ "motoarelor de cautare , ori de câte ori orice schimbare are loc în "
+#~ "conținutul paginii web ."
+
+#~ msgid "Caching"
+#~ msgstr "caching"
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "Caching HTML, CSS , JavaScript-uri , imagini din browsere utilizatorii "
+#~ "pot fi foarte utile în reducerea timpului de încărcare documentul . "
+#~ "Crawlerele motorului de căutare place pagini web cu mai bine timpul de "
+#~ "încărcare a documentului ."
+
+#~ msgid "Keep Alive"
+#~ msgstr "ține în viață"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "Aceasta este o caracteristică server. Acest lucru ține legătura între "
+#~ "server și browser-ul activ pentru o sumă spus de timp . Și economisește "
+#~ "timp pentru exces de comunicare . Prin urmare, se reduce timpul de "
+#~ "încărcare documentul care este mai bună ."
+
+#~ msgid "gzip compression"
+#~ msgstr "gzip comprimare"
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "Aceasta caracteristica server furnizează conținutul paginii web la "
+#~ "browser-ul în format comprimat gzip . Prin urmare, se reduce lățimea de "
+#~ "bandă și dimensiunea paginii web ."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "Content Management System ( CMS ) creează pagina Web de la script-uri "
+#~ "ținute pe server . Deci , crawlerele Google poate lua în considerare "
+#~ "acest conținut să fie generat automat . Dar , pentru utilizatorii "
+#~ "WordPress aceasta nu este o problemă ."
+
+#~ msgid "Web Page"
+#~ msgstr "pagină web"
+
+#~ msgid "Scanned for"
+#~ msgstr "scanate pentru"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr ""
+#~ "Compatibilitate motor de căutare , liniile directoare Google pentru "
+#~ "webmasteri ca standard"
+
+#~ msgid "Theme Used"
+#~ msgstr "tema utilizată"
+
+#~ msgid "Time Taken"
+#~ msgstr "timpul necesar"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "secunde pentru Scan"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "secunde pentru încărcarea componentelor"
+
+#~ msgid "Percentage"
+#~ msgstr "procent"
+
+#~ msgid "Success"
+#~ msgstr "succes"
+
+#~ msgid "Failure"
+#~ msgstr "eșec"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Web Page global de performanță SEO"
+
+#~ msgid "Complete"
+#~ msgstr "complet"
+
+#~ msgid "Incomplete"
+#~ msgstr "incomplet"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Pagina web Optimizat de date recapitulativ"
+
+#~ msgid "Required"
+#~ msgstr "necesar"
+
+#~ msgid "Completed"
+#~ msgstr "terminat"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "Compararea datelor sociale"
+
+#~ msgid "Social Sharing Data overview"
+#~ msgstr "Social privire de ansamblu privind schimbul de date"
+
+#~ msgid "Actual"
+#~ msgstr "real"
+
+#~ msgid "Ideal Case"
+#~ msgstr "cazul ideal"
+
+#~ msgid "none"
+#~ msgstr "nici unul"
+
+#~ msgid "header"
+#~ msgstr "antet"
+
+#~ msgid "body"
+#~ msgstr "corp"
+
+#~ msgid "full"
+#~ msgstr "complet"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "Model aproximativ de start complition vizuale"
+
+#~ msgid "web page loading"
+#~ msgstr "pagina web de încărcare"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "Procentul complition Visual"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScripts"
+
+#~ msgid "Styles"
+#~ msgstr "stiluri"
+
+#~ msgid "Pure Text"
+#~ msgstr "Text pur"
+
+#~ msgid "Alt Text"
+#~ msgstr "Alt Text"
+
+#~ msgid "Anchor Text"
+#~ msgstr "Anchor Text"
+
+#~ msgid "In page content overview"
+#~ msgstr "In ansamblu asupra conținutul paginii"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "Compararea performanțelor serverului"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "Aspecte tehnice Prezentare generală"
+
+#~ msgid "New Scan"
+#~ msgstr "New Scan"
+
+#~ msgid "Notes"
+#~ msgstr "notițe"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "Alege orice pagină sau poștă sau introduceți URL personalizat la scanare"
+
+#~ msgid "Scan Page"
+#~ msgstr "Page scanare"
+
+#~ msgid "OR"
+#~ msgstr "SAU"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "Selectați un post de scanare"
+
+#~ msgid "Scan Post"
+#~ msgstr "Scanare Mesaj"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "Introduceți un URL personalizat"
+
+#~ msgid "Scan URL"
+#~ msgstr "scanare URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Lucrurile să știți înainte de Scanare"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "Datele diagramă de ansamblu este calcul aproximativ și nu reprezintă "
+#~ "calcule de către orice algoritm motor de căutare ."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "Unii parametri afișate în rezultatele nu sunt incluse direct în liniile "
+#~ "directoare Google. Dar acestea afectează în mod indirect ."
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr ""
+#~ "Treceți peste elementele subliniate, pentru a vedea explicațiile din "
+#~ "pagina de rezultate ."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "Nu există date de la site-ul dvs. , server sau orice este capturat de "
+#~ "către orice server . Scanare se face în întregime pe browser-ul ."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "URL-ul returnează eroare : 404 Not Found , Asta înseamnă că nu este "
+#~ "prezent nici pagina de web și motoarele de căutare nu vor indexa . "
+#~ "Introduceți URL-ul pagină Web existentă de site-ul dumneavoastră ."
+
+#~ msgid "Print Report"
+#~ msgstr "imprima raportul"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "Sfaturi SEO →"
+
+#~ msgid "Data"
+#~ msgstr "datele"
+
+#~ msgid "Design"
+#~ msgstr "proiect"
+
+#~ msgid "Technical"
+#~ msgstr "tehnic"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "Schimbul de date sociale ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Deschideți Graph Protocolul de Facebook și acceptat de către aproape "
+#~ "toate mass-media sociale majore , inclusiv Google +"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Pagina de web date"
+
+#~ msgid "Remarks"
+#~ msgstr "Observații"
+
+#~ msgid "Content issues"
+#~ msgstr "probleme de conținut"
+
+#~ msgid "Design points"
+#~ msgstr "puncte de proiectare"
+
+#~ msgid "Server points"
+#~ msgstr "puncte Server"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ senile conținut Text"
+
+#~ msgid "Total Text"
+#~ msgstr "total text"
+
+#~ msgid "In page Style"
+#~ msgstr "In pagina Style"
+
+#~ msgid "In page Script"
+#~ msgstr "In pagina Script"
+
+#~ msgid "Scan by"
+#~ msgstr "Scanare către"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Name"
+#~ msgstr "nume"
+
+#~ msgid "Action"
+#~ msgstr "acțiune"
+
+#~ msgid "Length "
+#~ msgstr "lungime"
+
+#~ msgid " for image "
+#~ msgstr "pentru imagine"

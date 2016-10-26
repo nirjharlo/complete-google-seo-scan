@@ -1,0 +1,1415 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-07-03 00:46+0530\n"
+"PO-Revision-Date: 2015-07-03 00:46+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Indonesian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../front-end.php:27
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../front-end.php:33
+msgid "EMAIL"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Seo Status"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "See overall and specific seo points of pages in"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Check for documentation in Help tab above."
+msgstr ""
+
+#: ../front-end.php:60
+msgid "Content"
+msgstr "kadar"
+
+#: ../front-end.php:66
+msgid "Usability"
+msgstr ""
+
+#: ../front-end.php:92
+msgid "Title"
+msgstr "judul"
+
+#: ../front-end.php:142 ../front-end.php:428
+msgid "Never"
+msgstr ""
+
+#: ../front-end.php:304
+#, fuzzy
+msgid "Send Request"
+msgstr "HTTP Permintaan"
+
+#: ../front-end.php:316
+msgid "Validate Request"
+msgstr ""
+
+#: ../front-end.php:328
+#, fuzzy
+msgid "Download Content"
+msgstr "kadar"
+
+#: ../front-end.php:340
+msgid "Analyze Data"
+msgstr ""
+
+#: ../front-end.php:352
+msgid "Save Information"
+msgstr ""
+
+#: ../front-end.php:364
+#, fuzzy
+msgid "Fetch Results"
+msgstr "menghasilkan"
+
+#: ../front-end.php:393
+msgid "SHOW POST TYPES"
+msgstr ""
+
+#: ../front-end.php:399
+msgid "FILTER"
+msgstr ""
+
+#: ../front-end.php:406
+msgid "Score"
+msgstr ""
+
+#: ../front-end.php:407
+msgid "Star"
+msgstr ""
+
+#: ../front-end.php:408 ../front-end.php:409 ../front-end.php:410
+#: ../front-end.php:411 ../front-end.php:412 ../front-end.php:413
+#: ../front-end.php:414 ../front-end.php:415
+msgid "Stars"
+msgstr ""
+
+#: ../front-end.php:422
+msgid "Time"
+msgstr ""
+
+#: ../front-end.php:423
+msgid "This hour"
+msgstr ""
+
+#: ../front-end.php:424
+msgid "Today"
+msgstr ""
+
+#: ../front-end.php:425
+msgid "7 days"
+msgstr ""
+
+#: ../front-end.php:426
+msgid "30 days"
+msgstr ""
+
+#: ../front-end.php:427
+msgid "90 days"
+msgstr ""
+
+#: ../lib/snippet-object.php:56
+msgid "SEARCH SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/snippet-object.php:75
+msgid "OGP SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/btn-object.php:37
+msgid "Button Error"
+msgstr ""
+
+#: ../lib/heading-object.php:37
+msgid "HEADING ERROR"
+msgstr ""
+
+#: ../lib/help-object.php:16
+msgid "Overview"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan. We have not "
+"included backlinks analysis, traffic metrics, details on social media, "
+"knowledge graph and brand signals, because the intention is primarily on-"
+"page search optimization only. If you catch a bug or want to give any "
+"feedback or feature suggestion you are welcome to email the plugin author"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../lib/help-object.php:21
+msgid "How to use?"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is almost "
+"mobile ready. So, for regular WordPress users it will be very intuitive. The "
+"usage process has 3 steps."
+msgstr ""
+
+#: ../lib/help-object.php:22
+#, fuzzy
+msgid "Select a Page"
+msgstr "Pilih halaman yang Memindai"
+
+#: ../lib/help-object.php:22
+msgid ""
+"from the individual tables of webpages, by clicking on corresponding radio "
+"button. There are 2 dropdown menues to select posts from multiple post types "
+"and filter them according to time and score of last scan. Remeber, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Wait for scan"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "See results"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"in a pop up in the same page as soon as the scan is complete. The result "
+"will have 5 segments."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Overview and basic information as well as social media counts."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Search engine snippet and related information."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Use of Media or Image and Video seo"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"Navigate within segments using top arrow buttons. Scan result is displayed "
+"in an organized fashion and are is easy to understand for someone with basic "
+"seo knowledge. For a primitive guideline of seo aspects see links at right "
+"sidebar of this area."
+msgstr ""
+
+#: ../lib/help-object.php:26
+msgid "Performance"
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../lib/help-object.php:27
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes around 10 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"Scaning waktu tergantung pada server Anda dan kualitas website Anda . Proses "
+"yang sebenarnya terjadi kurang dari 0,01 detik untuk menyelesaikan ."
+
+#: ../lib/help-object.php:27
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../lib/help-object.php:31
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "privacy Policy."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "Data storage."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. When the plugin is uninstalled these data will remain in your "
+"server, untill deleted by special operation. They will not create any "
+"problem although."
+msgstr ""
+
+#: ../lib/help-object.php:36
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Support Forum"
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../lib/textarea-object.php:33
+msgid "Textarea Error"
+msgstr ""
+
+#: ../lib/dropdown-object.php:42 ../lib/dropdown-object.php:59
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "Complete Google SEO Scan requires PHP 5.3+ and will not be activated, "
+#~ "your current server configuration is running PHP version&nbsp;"
+#~ msgstr ""
+#~ "Lengkap SEO Google Pindai membutuhkan PHP 5.3 + , dan tidak akan "
+#~ "diaktifkan , konfigurasi server Anda saat ini yang menjalankan versi PHP"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "Versi PHP kurang dari versi 5.3.0 telah mencapai \"Akhir Kehidupan\" dari "
+#~ "PHP.net serta tidak lagi menerima perbaikan bug update orsecurity . "
+#~ "Informasi resmi mengenai cara memperbarui dan kenapa pada"
+
+#~ msgid "Scan Now"
+#~ msgstr "Scan Now"
+
+#~ msgid "SEO Scan"
+#~ msgstr "SEO Pindai"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "Lengkap SEO Google Pindai"
+
+#~ msgid "Brought to you by"
+#~ msgstr "Dibawa ke anda oleh"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO Blog"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr ""
+#~ "Google Search Engine Optimization Pindai halaman web Anda selesai . "
+#~ "Berikut adalah hasilnya."
+
+#~ msgid "at line"
+#~ msgstr "pada baris"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "It'ini berbeda dari halaman web scan url"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "Pastikan Anda ingin halaman Anda diindeks oleh url ini kanonik"
+
+#~ msgid "Recheck it"
+#~ msgstr "recheck itu"
+
+#~ msgid "OK"
+#~ msgstr "oke"
+
+#~ msgid "NOT FOUND"
+#~ msgstr "NOT FOUND"
+
+#~ msgid "Put a canonical link"
+#~ msgstr "Menempatkan link kanonik"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "Masukkan Favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "panjangnya"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "karakter ( maksimum yang diijinkan 70 Karakter )"
+
+#~ msgid "Length"
+#~ msgstr "panjangnya"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr ""
+#~ "Karena lebih dari 70 karakter ini tidak akan ditampilkan dalam hasil "
+#~ "pencarian"
+
+#~ msgid "Give shorter title"
+#~ msgstr "Berikan judul pendek"
+
+#~ msgid "Give a title."
+#~ msgstr "Berilah judul ."
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "karakter ( maksimum yang diijinkan 155 Karakter )"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "Menulis beberapa deskripsi meta dalam 155 karakter . Meskipun tidak "
+#~ "mengganggu tapi tampaknya peringkat buruk dalam hasil halaman mesin "
+#~ "pencari . Oleh karena itu , dapat mengurangi klik tayang ( RKT )"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "Membuatnya lebih pendek ."
+
+#~ msgid "This is not good."
+#~ msgstr "Ini tidak bagus ."
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "Tag ini di tempat , sekarang Menulis beberapa meta description"
+
+#~ msgid "Give a description"
+#~ msgstr "Berikan deskripsi"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "NOT FOUND ."
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr ""
+#~ "Masukkan kata kunci sesuai untuk konten halaman web Anda , banyak mesin "
+#~ "pencari menggunakannya tapi tidak Google"
+
+#~ msgid "Enter keywords."
+#~ msgstr "Masukkan kata kunci ."
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr ""
+#~ "Meta robot adalah memiliki nilai noindex nofollow . Ini tidak bagus ."
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "Mengubah nilai robot meta dari no- indeks dan / atau tidak diikuti"
+
+#~ msgid "Fix this."
+#~ msgstr "Memperbaikinya ."
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og ini : tag meta lokal"
+
+#~ msgid "Fill it"
+#~ msgstr "Isi"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "Memberikan nilai tepat untuk og hal ini: tag meta site_name"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og ini : meta tag Jenis"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og hal ini: tag meta url"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og ini : meta tag title"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og berikut: deskripsi meta tag"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "Masukan nilai yang tepat untuk og ini : meta tag gambar"
+
+#~ msgid "TAG NOT FOUND"
+#~ msgstr "TAG NOT FOUND"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr ""
+#~ "Anda dapat menggunakan SEO plugin gratis tersedia untuk mendapatkan opsi "
+#~ "untuk memasukkan deskripsi"
+
+#~ msgid "Put the tag"
+#~ msgstr "Pasang tag"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "Masukkan kunci cocok untuk konten web Anda halaman , banyak mesin pencari "
+#~ "menggunakannya tapi tidak Google . Anda dapat menggunakan plugin SEO "
+#~ "gratis tersedia untuk mendapatkan opsi untuk memasukkan tag ini"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr ""
+#~ "Anda dapat menggunakan plugin SEO gratis tersedia untuk mendapatkan "
+#~ "pilihan untuk memasukkan meta tautan kanonik yang diinginkan"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr ""
+#~ "Hal ini lebih baik untuk menempatkan tag . Jika jangan khawatir besar"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "Letakkan Gambar favicon ico menggunakan shortcut link icon tag"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : meta tag locale bagian kepala pada yang memiliki nilai "
+#~ "tepat"
+
+#~ msgid "Fix it"
+#~ msgstr "Perbaiki"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : site_name meta tag dalam bagian kepala dengan nilai yang "
+#~ "tepat"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : jenis meta tag di Bagian kepala dengan nilai yang tepat"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : Judul meta tag dalam bagian kepalanya dengan nilai yang "
+#~ "layak"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : deskripsi meta tag di bagian kepala dengan nilai tepat"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : url meta tag di kepala bagian dengan nilai yang benar"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr ""
+#~ "Masukan og ini : image meta tag dalam bagian kepala yang tepat dengan "
+#~ "nilai"
+
+#~ msgid "Title Tag"
+#~ msgstr "title Tag"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr "Judul website . Ini harus deskriptif dan karakter berjarak 70 ."
+
+#~ msgid "Meta Description"
+#~ msgstr "meta Description"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr ""
+#~ "Menjelaskan halaman web . Panjang optimal 155 karakter-karakter dan bukan "
+#~ "faktor ranking ."
+
+#~ msgid "Meta Keywords"
+#~ msgstr "meta Keywords"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr ""
+#~ "Menyebutkan kata kunci yang digunakan dalam halaman web . Ini bukan "
+#~ "faktor peringkat."
+
+#~ msgid "Canonical Link"
+#~ msgstr "Tautan Canonical"
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "Canonicalization merupakan proses memilih url terbaik bila ada beberapa "
+#~ "pilihan . Ini meta tag kanonik membantu crawler mesin pencari untuk "
+#~ "mengindeks halaman yang dapat didekati dari url yang berbeda ( seperti "
+#~ "http://www.example.com/ , dan http://example.com/ ) ."
+
+#~ msgid "Meta Robots"
+#~ msgstr "meta Robot"
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "Meta tag robot meminta robot mesin pencari untuk menjelajah keluar maupun "
+#~ "halaman web . Jika diberi nilai noindex nofollow dan , halaman web akan "
+#~ "tidak diindeks ."
+
+#~ msgid "Favicon Link"
+#~ msgstr "favicon Tautan"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr ""
+#~ "Menampilkan gambar yang unik di samping judul di bagian atas browser . "
+#~ "Baik praktek SEO"
+
+#~ msgid "Language"
+#~ msgstr "bahasa"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "Berbagi bahasa yang akan Anda gunakan"
+
+#~ msgid "Type"
+#~ msgstr "jenis"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "Jenis aplikasi Anda berbagi . Berikut ini adalah situs"
+
+#~ msgid "Site Name"
+#~ msgstr "Nama Situs"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "Nama website . Berikut ini adalah"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr ""
+#~ "Judul isi bersama . Mungkin atau mungkin tidak sama seperti judul halaman "
+#~ "web"
+
+#~ msgid "Description"
+#~ msgstr "deskripsi"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr ""
+#~ "Tubuh isi bersama . Biasanya naskah ini terlihat pada isi bersama di "
+#~ "jaringan media sosial"
+
+#~ msgid "URL"
+#~ msgstr "URL"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "Menentukan link halaman web , url ini dibagi dan akan memiliki manfaat "
+#~ "hubungan . Tapi jujur ​​."
+
+#~ msgid "Image"
+#~ msgstr "gambar"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr ""
+#~ "Karena sangat penting ini mendapat perhatian pengguna t berbagi konten "
+#~ "Anda di media sosial ."
+
+#~ msgid "Total number of images"
+#~ msgstr "Total jumlah gambar"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "Penggunaan \"alt\" atribut"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "Penggunaan \"height\" atribut"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "Penggunaan \"width\" atribut"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "Masukkan atribut kehilangan ."
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr ""
+#~ "Tidak ada tag kepalanya ditemukan . Oleh karena itu tidak hirarki teks "
+#~ "yang hadir ."
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "Menulis teks dalam hierarki tepat."
+
+#~ msgid "All head tags are present"
+#~ msgstr "All tag kepalanya hadir"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "Jadi , ada teks hirarki hadir ."
+
+#~ msgid "One head tag is present"
+#~ msgstr "Satu tag kepala hadir"
+
+#~ msgid "Some head tags are present"
+#~ msgstr "Beberapa tag pusat hadir"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr ""
+#~ "Pastikan bahwa teks Anda dalam hirarki . Jika tidak silahkan membuatnya "
+#~ "begitu ."
+
+#~ msgid "Check again"
+#~ msgstr "periksa lagi"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "Teks ke HTML untuk Rasio ini halaman web"
+
+#~ msgid "Too much HTML in your web page."
+#~ msgstr "Terlalu banyak di HTML halaman web Anda ."
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "Menulis lebih banyak teks , minimal"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "Terlalu banyak teks dalam halaman web Anda ."
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr ""
+#~ "Membuat halaman ini lebih menarik dan lebih HTML . Atau menulis teks "
+#~ "kurang, minimal"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "Rasio ini untuk halaman web ini adalah normal ."
+
+#~ msgid "Number of Links"
+#~ msgstr "Banyaknya Links"
+
+#~ msgid "Outgoing Links"
+#~ msgstr "Links outgoing"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "Jumlah Links besar ."
+
+#~ msgid "Please try to reduce number of links."
+#~ msgstr "Silakan coba untuk mengurangi jumlah Link ."
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "Jumlah Link terlalu banyak."
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "Jumlah Link harus diturunkan"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "Link dengan rel atribut"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "Link dengan atribut judul"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "Link dengan nofollow rel attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "Pasang rel atribut dan judul untuk link"
+
+#~ msgid "Images"
+#~ msgstr "gambar"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "Penggunaan optimal foto harus memiliki tinggi , lebar dan Atribut alt . "
+#~ "Gambar tidak boleh diubah ukurannya pada peramban ."
+
+#~ msgid "Text Hierarchy"
+#~ msgstr "teks Hierarchy"
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "Presentasi teks lebih baik dalam hierarki judul dan tag tubuh . Gunakan "
+#~ "h1 , h2 , h3 , h4 , h5 , h6 tag dengan benar ."
+
+#~ msgid "text/html Ratio"
+#~ msgstr "text / Rasio html"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "Rasio ini menentukan apakah halaman web adalah konten yang optimal secara "
+#~ "visual kaya dan layak . Ini bukan faktor peringkat dan harus antara 20 "
+#~ "sampai 70 % % ."
+
+#~ msgid "Link Numbers"
+#~ msgstr "Nomor tautan"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "Jumlah link memainkan peran penting dalam menentukan PageRank . Nomor-"
+#~ "nomor harus dioptimalkan dan tidak harus sangat besar ."
+
+#~ msgid "Link Attributes"
+#~ msgstr "Link Atribut"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr ""
+#~ "Ada 2 atribut rel , dan judul untuk setiap link halaman web . Mereka "
+#~ "mendefinisikan dan link's berfungsi."
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "Halaman web membuat jumlah"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "HTTP request ."
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "tipe yang"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "untuk javascript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "untuk stylesheet ."
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr ""
+#~ "Cobalah untuk membuat permintaan HTTP sedikit karena ini tinggi . Gunakan "
+#~ "tema dioptimalkan dan widget"
+
+#~ msgid "Reduce it"
+#~ msgstr "menguranginya"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr ""
+#~ "Cobalah untuk membuat permintaan kurang HTTP karena ini adalah sangat "
+#~ "tinggi . Menggunakan Tema dioptimalkan dan widget"
+
+#~ msgid "Must Reduce"
+#~ msgstr "harus Kurangi"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "Stylesheet membuat permintaan HTTP melalui @ import"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr ""
+#~ "Lepaskan import url @ serta menempatkannya dalam tag pusat melalui link "
+#~ "dengan atribut rel stylesheet"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "Stylesheet tidak membuat permintaan HTTP internal"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr "Gaya atribut hadir dalam atas tag di beberapa atau semua kejadian ."
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr ""
+#~ "Menemukan dan menghapus atribut gaya dengan atribut kelas dan meletakkan "
+#~ "gaya css dalam file utama"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "Tidak ada atribut gaya ini hadir dalam tag ."
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "Tidak ada kesalahan html dalam halaman web ."
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "ada"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "kesalahan dalam html dari halaman web Anda :"
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr ""
+#~ "Menggali kesalahan dan mencari tahu apa penyebab kesalahan , tema atau "
+#~ "plugin apapun , dan menyelesaikannya"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "stylesheet % dan javascripts dimuat pada bagian kepalaku ."
+
+#~ msgid "This is high"
+#~ msgstr "Ini tinggi"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr ""
+#~ "Tambahkan script lebih dalam bagian footer serta menghapusnya dari bagian "
+#~ "Header"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "Microdata potongan kaya hadir pada halaman web ini ."
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "Jenis potongan kaya"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "Tidak ada microdata kaya hadir potongan dalam halaman web ."
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr ""
+#~ "Menggunakan plugin SEO bebas untuk markup halaman web dengan microdata "
+#~ "potongan kaya ."
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "Jumlah permintaan HTTP halaman web Anda membuat untuk mengambil konten "
+#~ "dari server pengaruh waktu beban dokumen , karena permintaan lebih akan "
+#~ "panggilan untuk lebih download dan akan memerlukan waktu lebih lama"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "Stylesheet url impor"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr ""
+#~ "@ Parameter impor dalam stylesheet terikat untuk meningkatkan beban "
+#~ "dokumen yang tidak perlu . Ini harus dihindari"
+
+#~ msgid "Style Attribute"
+#~ msgstr "gaya Atribut"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr ""
+#~ "Menggunakan ini dalam elemen HTML halaman web menurunkan kualitas dengan "
+#~ "meningkatkan waktu browser rendering"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "Kompatibilitas Browser"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "Google ingin halaman web anda akan terlihat ok di browser yang berbeda "
+#~ "( misalnya Mozila firefox, chrome , internet explorer , safari , dll "
+#~ "opera ) , serta hal dasar yang kita dapat memeriksa adalah kesalahan "
+#~ "dalam Menunjuk html"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Visual Complition"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "HTTP permintaan yang dibuat pada header dibandingkan total mempengaruhi "
+#~ "permintaan HTTP complition visual, yang merupakan parameter standar "
+#~ "desain penting"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "cuplikan kaya"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "Tipe markup HTML memberikan lebih banyak informasi untuk halaman mesin "
+#~ "pencari untuk membuat . Google mendorong microdata jenis markup karena "
+#~ "hal pengalaman pengguna peningkatan Rank Search Engine Halaman"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "Google mungkin membingungkan laman ini sebagai auto - dihasilkan ."
+
+#~ msgid "because of this part"
+#~ msgstr "karena sebagian ini"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "Ubah url ke berbagai jenis permalink"
+
+#~ msgid "Change it"
+#~ msgstr "mengubahnya"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "Url halaman web ini mempertahankan pedoman ."
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "Halaman web url terlalu besar . Google dapat mempertimbangkan spam."
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr ""
+#~ "Ubah ukuran url anda dan ketik pada halaman atau posting Editor . "
+#~ "Pastikan Anda tidak menggunakan pelacakan sesi"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr ""
+#~ "Bagian terakhir - Modifikasi dalam header ditemukan . Jika - Diubah - "
+#~ "Sejak adalah Menyala."
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr ""
+#~ "Bagian Last-Modified pada header tidak ditemukan . Jika -Modified - Sejak "
+#~ "Off"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr ""
+#~ "Tanyakan penyedia hosting untuk mengaktifkan Jika - Diubah - Sejak header"
+
+#~ msgid "Ask for it"
+#~ msgstr "Mintalah untuk itu"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "Cache yang aktif . Halaman web telah mengikuti parameter tembolok ."
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr ""
+#~ "Cache nonaktif. Halaman web don't mengembalikan parameter tembolok ."
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr ""
+#~ "Menggunakan metode cache untuk pengalaman pengguna yang lebih baik . "
+#~ "Gunakan plugin Cache gratis yang tersedia"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "Jaga Koneksi Hidup adalah Off"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr "Tanyakan penyedia hosting untuk mengaktifkan Jauhkan Koneksi Hidup"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "Jaga Koneksi Hidup Di"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "gzip kompresi header halaman web Anda diaktifkan ."
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "Tidak ada metode kompresi ditemukan di halaman web ."
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr ""
+#~ "Aktifkan gzip kompresi untuk hasil yang lebih baik . Gunakan plugin "
+#~ "gratis ."
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "Anda menggunakan versi WordPress"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr ""
+#~ "Anda menggunakan WordPress , kemungkinan besar itu sa'diubah cms "
+#~ "wordpress inti."
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "Silakan gunakan software yang tepat WordPress"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "Jika url memiliki variabel atau informasi lebih dari 255 byte , mesin "
+#~ "pencari akan menganggapnya sebagai spam ."
+
+#~ msgid "If-Modified-Since"
+#~ msgstr "Jika - Diubah Sejak -"
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "Ini adalah fitur server yang . Ini secara otomatis Menginformasikan robot "
+#~ "mesin pencari , setiap kali perubahan terjadi dalam konten halaman web ."
+
+#~ msgid "Caching"
+#~ msgstr "caching"
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "Caching html , css , javascripts , gambar pada pengguna peramban dapat "
+#~ "sangat berguna dalam mengurangi waktu buka dokumen . Crawler mesin "
+#~ "pencari menyukai halaman web dengan waktu buka dokumen baik ."
+
+#~ msgid "Keep Alive"
+#~ msgstr "Jauhkan Hidup"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "Ini merupakan fitur server yang . Hal ini membuat hubungan antara server "
+#~ "dan browser yang aktif untuk jumlah kata waktu . Dan untuk menghemat "
+#~ "waktu kelebihan komunikasi. Karena itu menurunkan beban waktu dokumen "
+#~ "yang lebih baik ."
+
+#~ msgid "gzip compression"
+#~ msgstr "kompresi gzip"
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "Fitur ini Server memberikan konten halaman web ke browser dalam format "
+#~ "kompresi gzip . Karena itu bandwidth dan menurunkan ukurannya halaman "
+#~ "web ."
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "Content Management System ( cms ) menciptakan halaman web dari script "
+#~ "terus di server kami . Jadi , Google crawlers dapat mempertimbangkan isi "
+#~ "ini menjadi otomatis dihasilkan . Namun , bagi pengguna WordPress ini "
+#~ "tidak masalah ."
+
+#~ msgid "Web Page"
+#~ msgstr "Halaman Web"
+
+#~ msgid "Scanned for"
+#~ msgstr "dipindai untuk"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr ""
+#~ "Kompatibilitas mesin pencari , Google Webmaster Pedoman sebagai standar"
+
+#~ msgid "Theme Used"
+#~ msgstr "tema Digunakan"
+
+#~ msgid "Time Taken"
+#~ msgstr "waktu Diambil"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "detik untuk Pindai"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "detik untuk memuat komponen"
+
+#~ msgid "Percentage"
+#~ msgstr "persentase"
+
+#~ msgid "Success"
+#~ msgstr "keberhasilan"
+
+#~ msgid "Failure"
+#~ msgstr "kegagalan"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "Halaman Web Keseluruhan Kinerja SEO"
+
+#~ msgid "Complete"
+#~ msgstr "menyelesaikan"
+
+#~ msgid "Incomplete"
+#~ msgstr "lengkap"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "Halaman Web Optimized Ikhtisar data"
+
+#~ msgid "Required"
+#~ msgstr "wajib"
+
+#~ msgid "Completed"
+#~ msgstr "selesai"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "Perbandingan data sosial"
+
+#~ msgid "Social Sharing Data overview"
+#~ msgstr "Social Sharing ikhtisar data"
+
+#~ msgid "Actual"
+#~ msgstr "sebenarnya"
+
+#~ msgid "Ideal Case"
+#~ msgstr "Kasus Ideal"
+
+#~ msgid "none"
+#~ msgstr "tak satupun"
+
+#~ msgid "header"
+#~ msgstr "Header"
+
+#~ msgid "body"
+#~ msgstr "tubuh"
+
+#~ msgid "full"
+#~ msgstr "penuh"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "Pola Perkiraan Indeks complition rupa"
+
+#~ msgid "web page loading"
+#~ msgstr "loading halaman web"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "Persentase complition Visual"
+
+#~ msgid "JavaScripts"
+#~ msgstr "javascripts"
+
+#~ msgid "Styles"
+#~ msgstr "gaya"
+
+#~ msgid "Pure Text"
+#~ msgstr "Teks murni"
+
+#~ msgid "Alt Text"
+#~ msgstr "Alt Teks"
+
+#~ msgid "Anchor Text"
+#~ msgstr "anchor Teks"
+
+#~ msgid "In page content overview"
+#~ msgstr "Dalam halaman konten ikhtisar"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "Perbandingan kinerja server yang"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "Aspek Teknis Ikhtisar"
+
+#~ msgid "New Scan"
+#~ msgstr "New Pindai"
+
+#~ msgid "Notes"
+#~ msgstr "Catatan"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr ""
+#~ "Memilih setiap halaman atau posting maupun masukkan url kustom Memindai"
+
+#~ msgid "Scan Page"
+#~ msgstr "memindai Halaman"
+
+#~ msgid "OR"
+#~ msgstr "OR"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "Pilih Post Memindai"
+
+#~ msgid "Scan Post"
+#~ msgstr "Pindai Pasca"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "Masukkan url kustom"
+
+#~ msgid "Scan URL"
+#~ msgstr "memindai URL"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "Hal yang tahu sebelum scaning"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr ""
+#~ "Gambaran grafik data merupakan perhitungan perkiraan serta tidak mewakili "
+#~ "perhitungan oleh setiap algoritma mesin pencari ."
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr ""
+#~ "Beberapa parameter ditampilkan dalam hasil tidak dimasukkan langsung "
+#~ "dalam pedoman google . Tapi mereka tidak langsung mempengaruhi ."
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr ""
+#~ "Hover atas unsur-unsur digarisbawahi untuk melihat keterangan di halaman "
+#~ "hasil ."
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "Tidak ada data dari website Anda , server yang atau apapun ditangkap oleh "
+#~ "server apapun. Scaning yang dilakukan sepenuhnya pada browser ."
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "Url kembali kesalahan : Tidak Ditemukan 404 , Itu berarti belum ada hadir "
+#~ "halaman web serta search engine tidak akan mengindeks . Masukkan url "
+#~ "halaman web yang ada dari situs Anda ."
+
+#~ msgid "Print Report"
+#~ msgstr "mencetak Laporan"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "Tips SEO →"
+
+#~ msgid "Data"
+#~ msgstr "data"
+
+#~ msgid "Design"
+#~ msgstr "disain"
+
+#~ msgid "Technical"
+#~ msgstr "teknis"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "Sharing data sosial ("
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "Buka Protokol Grafik oleh Facebook dan diterima oleh hampir semua media "
+#~ "sosial utama termasuk Google +"
+
+#~ msgid "OGP"
+#~ msgstr "Kejaksaan Agung"
+
+#~ msgid "Web Page Data"
+#~ msgstr "Halaman Web data"
+
+#~ msgid "Remarks"
+#~ msgstr "Keterangan"
+
+#~ msgid "Content issues"
+#~ msgstr "masalah konten"
+
+#~ msgid "Design points"
+#~ msgstr "poin desain"
+
+#~ msgid "Server points"
+#~ msgstr "poin Server"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→ Isi Teks Merangkak"
+
+#~ msgid "Total Text"
+#~ msgstr "total Teks"
+
+#~ msgid "In page Style"
+#~ msgstr "Pada halaman Gaya"
+
+#~ msgid "In page Script"
+#~ msgstr "Dalam halaman Script"
+
+#~ msgid "Scan by"
+#~ msgstr "memindai dengan"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Name"
+#~ msgstr "nama"
+
+#~ msgid "Action"
+#~ msgstr "tindakan"
+
+#~ msgid "Length "
+#~ msgstr "lamanya"
+
+#~ msgid " for image "
+#~ msgstr "untuk gambar"

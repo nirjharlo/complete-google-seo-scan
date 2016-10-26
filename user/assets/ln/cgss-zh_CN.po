@@ -1,0 +1,1308 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: happy@gogretel.com\n"
+"POT-Creation-Date: 2015-07-03 00:49+0530\n"
+"PO-Revision-Date: 2015-07-03 00:49+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: Chinese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../front-end.php:27
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../front-end.php:33
+msgid "EMAIL"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Seo Status"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "See overall and specific seo points of pages in"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Check for documentation in Help tab above."
+msgstr ""
+
+#: ../front-end.php:60
+msgid "Content"
+msgstr "內容"
+
+#: ../front-end.php:66
+msgid "Usability"
+msgstr ""
+
+#: ../front-end.php:92
+msgid "Title"
+msgstr "標題"
+
+#: ../front-end.php:142 ../front-end.php:428
+msgid "Never"
+msgstr ""
+
+#: ../front-end.php:304
+#, fuzzy
+msgid "Send Request"
+msgstr "HTTP請求"
+
+#: ../front-end.php:316
+msgid "Validate Request"
+msgstr ""
+
+#: ../front-end.php:328
+#, fuzzy
+msgid "Download Content"
+msgstr "內容"
+
+#: ../front-end.php:340
+msgid "Analyze Data"
+msgstr ""
+
+#: ../front-end.php:352
+msgid "Save Information"
+msgstr ""
+
+#: ../front-end.php:364
+#, fuzzy
+msgid "Fetch Results"
+msgstr "導致"
+
+#: ../front-end.php:393
+msgid "SHOW POST TYPES"
+msgstr ""
+
+#: ../front-end.php:399
+msgid "FILTER"
+msgstr ""
+
+#: ../front-end.php:406
+msgid "Score"
+msgstr ""
+
+#: ../front-end.php:407
+msgid "Star"
+msgstr ""
+
+#: ../front-end.php:408 ../front-end.php:409 ../front-end.php:410
+#: ../front-end.php:411 ../front-end.php:412 ../front-end.php:413
+#: ../front-end.php:414 ../front-end.php:415
+msgid "Stars"
+msgstr ""
+
+#: ../front-end.php:422
+msgid "Time"
+msgstr ""
+
+#: ../front-end.php:423
+msgid "This hour"
+msgstr ""
+
+#: ../front-end.php:424
+msgid "Today"
+msgstr ""
+
+#: ../front-end.php:425
+msgid "7 days"
+msgstr ""
+
+#: ../front-end.php:426
+msgid "30 days"
+msgstr ""
+
+#: ../front-end.php:427
+msgid "90 days"
+msgstr ""
+
+#: ../lib/snippet-object.php:56
+msgid "SEARCH SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/snippet-object.php:75
+msgid "OGP SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/btn-object.php:37
+msgid "Button Error"
+msgstr ""
+
+#: ../lib/heading-object.php:37
+msgid "HEADING ERROR"
+msgstr ""
+
+#: ../lib/help-object.php:16
+msgid "Overview"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan. We have not "
+"included backlinks analysis, traffic metrics, details on social media, "
+"knowledge graph and brand signals, because the intention is primarily on-"
+"page search optimization only. If you catch a bug or want to give any "
+"feedback or feature suggestion you are welcome to email the plugin author"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../lib/help-object.php:21
+msgid "How to use?"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is almost "
+"mobile ready. So, for regular WordPress users it will be very intuitive. The "
+"usage process has 3 steps."
+msgstr ""
+
+#: ../lib/help-object.php:22
+#, fuzzy
+msgid "Select a Page"
+msgstr "選擇頁掃描"
+
+#: ../lib/help-object.php:22
+msgid ""
+"from the individual tables of webpages, by clicking on corresponding radio "
+"button. There are 2 dropdown menues to select posts from multiple post types "
+"and filter them according to time and score of last scan. Remeber, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Wait for scan"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "See results"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"in a pop up in the same page as soon as the scan is complete. The result "
+"will have 5 segments."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Overview and basic information as well as social media counts."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Search engine snippet and related information."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Use of Media or Image and Video seo"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"Navigate within segments using top arrow buttons. Scan result is displayed "
+"in an organized fashion and are is easy to understand for someone with basic "
+"seo knowledge. For a primitive guideline of seo aspects see links at right "
+"sidebar of this area."
+msgstr ""
+
+#: ../lib/help-object.php:26
+msgid "Performance"
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../lib/help-object.php:27
+#, fuzzy
+msgid ""
+"depends on your server and website quality. Actual process takes around 10 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+"掃描大時間取決於您的服務器和您的網站的質量。實際過程時間小於0.01秒完成。"
+
+#: ../lib/help-object.php:27
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../lib/help-object.php:31
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "privacy Policy."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "Data storage."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. When the plugin is uninstalled these data will remain in your "
+"server, untill deleted by special operation. They will not create any "
+"problem although."
+msgstr ""
+
+#: ../lib/help-object.php:36
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Support Forum"
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../lib/textarea-object.php:33
+msgid "Textarea Error"
+msgstr ""
+
+#: ../lib/dropdown-object.php:42 ../lib/dropdown-object.php:59
+msgid "DROPDOWN ERROR"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "Complete Google SEO Scan requires PHP 5.3+ and will not be activated, "
+#~ "your current server configuration is running PHP version&nbsp;"
+#~ msgstr ""
+#~ "完整的谷歌搜索引擎優化掃描需要PHP 5.3 +並不會被激活，您的當前服務器配置正"
+#~ "在運行的PHP版本"
+
+#, fuzzy
+#~ msgid ""
+#~ "Any PHP version less than 5.3.0 has reached \"End of Life\" from PHP.net "
+#~ "and no longer receives bug fixes or security updates. The official "
+#~ "information on how to update and why at&nbsp;"
+#~ msgstr ""
+#~ "任何PHP版本低於5.3.0已達 結束生命 從PHP.net不再接收錯誤修正更新"
+#~ "orsecurity。如何更新，以及為什麼在官方信息"
+
+#~ msgid "Scan Now"
+#~ msgstr "立即掃描"
+
+#~ msgid "SEO Scan"
+#~ msgstr "SEO掃描"
+
+#~ msgid "Complete Google SEO Scan"
+#~ msgstr "完整的谷歌搜索引擎優化掃描"
+
+#~ msgid "Brought to you by"
+#~ msgstr "給您帶來的"
+
+#~ msgid "GoGretel SEO Blog"
+#~ msgstr "GoGretel SEO博客"
+
+#~ msgid ""
+#~ "Google Search Engine Optimization Scan for your web page is complete. "
+#~ "Here are the results."
+#~ msgstr "谷歌搜索引擎優化掃描您的網頁是完整的。這裡的結果。"
+
+#~ msgid "at line"
+#~ msgstr "行"
+
+#~ msgid "It's different from scanned web page url"
+#~ msgstr "它 的不同掃描的網頁的URL"
+
+#~ msgid "Be sure you want your page to be indexed by this canonical url"
+#~ msgstr "確定要這個規範的URL索引頁面"
+
+#~ msgid "Recheck it"
+#~ msgstr "複檢"
+
+#~ msgid "OK"
+#~ msgstr "行"
+
+#~ msgid "NOT FOUND"
+#~ msgstr "NOT FOUND"
+
+#~ msgid "Put a canonical link"
+#~ msgstr "將規範的鏈接"
+
+#~ msgid "Enter Favicon"
+#~ msgstr "輸入的favicon"
+
+#, fuzzy
+#~ msgid "Length&nbsp;"
+#~ msgstr "長度"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 70 Characters )"
+#~ msgstr "字符（最大允許70個字符）"
+
+#~ msgid "Length"
+#~ msgstr "長度"
+
+#~ msgid "As more than 70 characters will not be shown in search result"
+#~ msgstr "由於超過70個字符將不會顯示在搜索結果"
+
+#~ msgid "Give shorter title"
+#~ msgstr "給較短的標題"
+
+#~ msgid "Give a title."
+#~ msgstr "舉一個標題。"
+
+#, fuzzy
+#~ msgid "&nbsp;characters ( Maximum allowed 155 Characters )"
+#~ msgstr "字符（最多允許155個字符）"
+
+#~ msgid ""
+#~ "Write some meta description within 155 characters. Although it does not "
+#~ "hamper ranking but it looks bad in search engine page result. Hence, may "
+#~ "reduce click through rate (CTR)"
+#~ msgstr ""
+#~ "寫一些meta描述，在155個字符之內。 ，雖然它不妨礙排名在搜索引擎頁面的結果，"
+#~ "但它看起來很糟糕。因此，可能會減少通過點擊率（CTR）"
+
+#~ msgid "Make it Shorter."
+#~ msgstr "使短。"
+
+#~ msgid "This is not good."
+#~ msgstr "這是不好的。"
+
+#~ msgid "The tag is in place, now Write some meta description"
+#~ msgstr "該標記的地方，現在寫一些meta描述"
+
+#~ msgid "Give a description"
+#~ msgstr "舉一個說明"
+
+#~ msgid "NOT FOUND."
+#~ msgstr "沒有找到。"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google"
+#~ msgstr "輸入關鍵字，適合您的網頁內容，很多搜索引擎使用它，但不是谷歌"
+
+#~ msgid "Enter keywords."
+#~ msgstr "輸入關鍵字。"
+
+#~ msgid "Meta robot is having noindex nofollow value. This is not good."
+#~ msgstr "梅塔機器人NOINDEX nofollow的價值。這是不好的。"
+
+#~ msgid "Change the robots meta value from no-index and/or no-follow"
+#~ msgstr "從指數和/或無後續更改robots元值"
+
+#~ msgid "Fix this."
+#~ msgstr "解決這個問題。"
+
+#~ msgid "Put proper value to this og:locale meta tag"
+#~ msgstr "將適當的值到本OG：語言環境的meta標籤"
+
+#~ msgid "Fill it"
+#~ msgstr "填寫"
+
+#~ msgid "Put proper value to this og:site_name meta tag"
+#~ msgstr "將適當的值到本OG：SITE_NAME meta標籤"
+
+#~ msgid "Put proper value to this og:type meta tag"
+#~ msgstr "將適當的值到這個噩：類型meta標籤"
+
+#~ msgid "Put proper value to this og:url meta tag"
+#~ msgstr "將適當的值到這個噩：URL meta標籤"
+
+#~ msgid "Put proper value to this og:title meta tag"
+#~ msgstr "將適當的值到這個噩：標題元標記"
+
+#~ msgid "Put proper value to this og:description meta tag"
+#~ msgstr "將適當的值到本OG：描述元標記"
+
+#~ msgid "Put proper value to this og:image meta tag"
+#~ msgstr "將適當的值到這個噩：圖像meta標籤"
+
+#~ msgid "TAG NOT FOUND"
+#~ msgstr "標籤信息不存在"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "descriptions"
+#~ msgstr "您可以使用任何免費的SEO插件選項，輸入描述"
+
+#~ msgid "Put the tag"
+#~ msgstr "將標籤"
+
+#~ msgid ""
+#~ "Enter keywords suitable for your web page content, many search engines "
+#~ "use it but not Google. You can use any free SEO plugins available to get "
+#~ "options to enter this tag"
+#~ msgstr ""
+#~ "輸入關鍵字，適合您的網頁內容，很多搜索引擎使用它，但不是谷歌。進入這個標"
+#~ "籤，你可以使用任何免費的SEO插件選項"
+
+#~ msgid ""
+#~ "You can use any free SEO plugins available to get options to enter "
+#~ "desired meta canonical link"
+#~ msgstr "您可以使用任何免費的SEO插件選項，輸入所需的元規範鏈接"
+
+#~ msgid "It is better to put a tag. Otherwise no great worries"
+#~ msgstr "這是更好地把標籤。否則沒有很大的憂慮"
+
+#~ msgid "Put a favicon ico image using a shortcut icon link tag"
+#~ msgstr "將一個圖標ICO圖像使用的快捷方式圖標的鏈接標籤"
+
+#~ msgid "Put this og:locale meta tag in head section with proper value"
+#~ msgstr "適當的值，將這個OG：頭部分區域設置meta標籤"
+
+#~ msgid "Fix it"
+#~ msgstr "修復它"
+
+#~ msgid "Put this og:site_name meta tag in head section with proper value"
+#~ msgstr "將這個OG：SITE_NAME meta標籤頭部分用適當的值"
+
+#~ msgid "Put this og:type meta tag in head section with proper value"
+#~ msgstr "將這個OG：頭部分用適當的值類型meta標籤"
+
+#~ msgid "Put this og:title meta tag in head section with proper value"
+#~ msgstr "將這個OG：標題元標記頭部分用適當的值"
+
+#~ msgid "Put this og:description meta tag in head section with proper value"
+#~ msgstr "將這個噩：描述元標記頭部分具有正確的價值"
+
+#~ msgid "Put this og:url meta tag in head section with proper value"
+#~ msgstr "將這個OG：URL meta標籤頭部分用適當的值"
+
+#~ msgid "Put this og:image meta tag in head section with proper value"
+#~ msgstr "將這個OG：圖像meta標籤頭部分用適當的值"
+
+#~ msgid "Title Tag"
+#~ msgstr "標題標籤"
+
+#~ msgid ""
+#~ "Title of the website. This should be descriptive and within 70 characters."
+#~ msgstr "網站的標題。這應該是描述性的，並在70個字符。"
+
+#~ msgid "Meta Description"
+#~ msgstr "Meta描述"
+
+#~ msgid ""
+#~ "Describes the web page. Optimal length is 155 characters and is not a "
+#~ "ranking factor."
+#~ msgstr "描述網頁。最佳長度為155個字符，是不是一個排名因素。"
+
+#~ msgid "Meta Keywords"
+#~ msgstr "Meta關鍵字"
+
+#~ msgid "Mentions used keywords in web page. It is not a ranking factor."
+#~ msgstr "提到二手關鍵字在網頁。它不是一個排名因素。"
+
+#~ msgid "Canonical Link"
+#~ msgstr "規範鏈接"
+
+#~ msgid ""
+#~ "Canonicalization is the process of picking the best url when there are "
+#~ "several choices. This canonical meta tag helps search engine crawlers to "
+#~ "index a page which can be approached from different urls (like http://www."
+#~ "example.com/ and http://example.com/)."
+#~ msgstr ""
+#~ "標準化是指將挑選最好的URL時，有幾個選擇的過程。此規範的meta標籤有助於搜索"
+#~ "引擎抓取索引頁面，可以從不同的URL（如http://www.example.com/和http://"
+#~ "example.com/）走近。"
+
+#~ msgid "Meta Robots"
+#~ msgstr "梅塔機器人"
+
+#~ msgid ""
+#~ "Meta robots tag requests search engine robots to crawl or leave the web "
+#~ "page. If given a value of noindex and nofollow, web page will not be "
+#~ "indexed."
+#~ msgstr ""
+#~ "元機器人標籤請求的搜索引擎機器人抓取網頁或離開。如果加入noindex和nofollow"
+#~ "的值，網頁將不會被索引。"
+
+#~ msgid "Favicon Link"
+#~ msgstr "網站圖標鏈接"
+
+#~ msgid ""
+#~ "Displays an unique image beside title at the top of browser. Good SEO "
+#~ "practice"
+#~ msgstr "在瀏覽器上方的標題旁邊顯示一個獨特的形象。良好的SEO實踐"
+
+#~ msgid "Language"
+#~ msgstr "語"
+
+#~ msgid "Sharing language you will use"
+#~ msgstr "您將使用的共享語言"
+
+#~ msgid "Type"
+#~ msgstr "類型"
+
+#~ msgid "Type of application you are sharing. Here it is website"
+#~ msgstr "您共享應用程序類型。在這裡，它是網站"
+
+#~ msgid "Site Name"
+#~ msgstr "網站名稱"
+
+#~ msgid "Name of the website. Here it is"
+#~ msgstr "該網站的名稱。在這裡，它是"
+
+#~ msgid ""
+#~ "Title of the shared content. May or may not be same as web page title"
+#~ msgstr "共享內容的標題。可能會或可能不會相同網頁標題"
+
+#~ msgid "Description"
+#~ msgstr "描述"
+
+#~ msgid ""
+#~ "Body of the shared content. Usually this text is seen on shared contents "
+#~ "in social media networks"
+#~ msgstr "體的共享的內容。通常共享內容在社交媒體網絡上看到這段文字"
+
+#~ msgid "URL"
+#~ msgstr "網址"
+
+#~ msgid ""
+#~ "Specify web page link, this url is shared and will have link benefits. "
+#~ "But be honest."
+#~ msgstr ""
+#~ "指定的網頁鏈接，這個網址是共享的，都會有鏈接的好處。但是一定要誠實。"
+
+#~ msgid "Image"
+#~ msgstr "圖像"
+
+#~ msgid ""
+#~ "Very important because this gets users attention t your shared content on "
+#~ "social media."
+#~ msgstr "非常重要的，因為這可以讓用戶關注你在社交媒體上共享內容。"
+
+#~ msgid "Total number of images"
+#~ msgstr "圖像的總數"
+
+#~ msgid "Use of \"alt\" attribute"
+#~ msgstr "屬性"
+
+#~ msgid "Use of \"height\" attribute"
+#~ msgstr "使用 高 屬性"
+
+#~ msgid "Use of \"width\" attribute"
+#~ msgstr "使用 寬 屬性"
+
+#~ msgid "Insert the missing attributes."
+#~ msgstr "插入失踪屬性。"
+
+#~ msgid "No heads tags found. Hence no text hierarchy is present."
+#~ msgstr "發現無頭標記。因此，沒有文本層次存在。"
+
+#~ msgid "Write text in proper hierarchy."
+#~ msgstr "寫文字在適當的層次。"
+
+#~ msgid "All head tags are present"
+#~ msgstr "所有的head標籤存在"
+
+#~ msgid "So, there is text hierarchy present."
+#~ msgstr "因此，有文本層次禮物。"
+
+#~ msgid "One head tag is present"
+#~ msgstr "單頭標籤"
+
+#~ msgid "Some head tags are present"
+#~ msgstr "有的頭頂標籤"
+
+#~ msgid "Make sure your text is in hierarchy. If it is not please make it so."
+#~ msgstr "請確保您的文字是在層次結構。如果它沒有這樣做。"
+
+#~ msgid "Check again"
+#~ msgstr "再次檢查"
+
+#~ msgid "Text to HTML ratio for this web page is"
+#~ msgstr "本網頁文本到HTML比"
+
+#~ msgid "Too much HTML in your web page."
+#~ msgstr "太多在你的網頁的HTML。"
+
+#~ msgid "Write more text, atleast"
+#~ msgstr "寫更多的文字，至少"
+
+#~ msgid "Too much text in your web page."
+#~ msgstr "太多文字在你的網頁。"
+
+#~ msgid ""
+#~ "Make this page more appealing with more HTML. Or write less text, atleast"
+#~ msgstr "請更多的HTML頁面更吸引人。或寫更少的文本，至少"
+
+#~ msgid "This ratio for this web page is normal."
+#~ msgstr "這個網頁的這一比例是正常的。"
+
+#~ msgid "Number of Links"
+#~ msgstr "鏈接"
+
+#~ msgid "Outgoing Links"
+#~ msgstr "外出的鏈接"
+
+#~ msgid "Number of Links are large."
+#~ msgstr "的鏈接數量都很大。"
+
+#~ msgid "Please try to reduce number of links."
+#~ msgstr "請盡量減少鏈接數量。"
+
+#~ msgid "Number of Links are too much."
+#~ msgstr "的鏈接數量太多。"
+
+#~ msgid "Number of Links should be lowered"
+#~ msgstr "鏈接數應降低"
+
+#~ msgid "Links with rel attribute"
+#~ msgstr "鏈接使用rel屬性"
+
+#~ msgid "Links with title attribute"
+#~ msgstr "title屬性的相關鏈接"
+
+#~ msgid "Links with nofollow rel attribute"
+#~ msgstr "鏈接nofollow的REL attibute"
+
+#~ msgid "Put rel and title attributes to links"
+#~ msgstr "把rel和title屬性鏈接"
+
+#~ msgid "Images"
+#~ msgstr "圖片"
+
+#~ msgid ""
+#~ "Optimal Use of images should have height, width and alt attribute. Images "
+#~ "should not be resized at browser."
+#~ msgstr ""
+#~ "圖像的最佳使用方式，應該有高度，寬度和alt屬性。圖像不應該在瀏覽器中調整大"
+#~ "小。"
+
+#~ msgid "Text Hierarchy"
+#~ msgstr "文本層次"
+
+#~ msgid ""
+#~ "Text presentation is better in a hierarchy of titles and body tags. Use "
+#~ "h1, h2, h3, h4, h5, h6 tags properly."
+#~ msgstr ""
+#~ "文字介紹是更好的層次結構中的標題和正文標籤。正確使用H1，H2，H3，H4，H5，H6"
+#~ "標籤。"
+
+#~ msgid "text/html Ratio"
+#~ msgstr "text / html的比例"
+
+#~ msgid ""
+#~ "This ratio determines if the web page is optimal content rich and "
+#~ "visually presentable. This is not a ranking factor and should be between "
+#~ "20 % to 70 %."
+#~ msgstr ""
+#~ "如果這個比率確定網頁是最佳的內容豐富，視覺像樣。這不是一個排名因素，應介於"
+#~ "20％至70％。"
+
+#~ msgid "Link Numbers"
+#~ msgstr "鏈接編號"
+
+#~ msgid ""
+#~ "Number of links plays an significant role in deciding pagerank. The "
+#~ "numbers should be optimized and should not be very high."
+#~ msgstr ""
+#~ "鏈接數決定的PageRank中扮演一個重要的角色。數字應能優化，不應該是非常高的。"
+
+#~ msgid "Link Attributes"
+#~ msgstr "鏈接屬性"
+
+#~ msgid ""
+#~ "There are 2 attributes rel and title for any web page links. They defines "
+#~ "the link and it's function."
+#~ msgstr "屬性有2 rel和任何網頁鏈接的標題。他們定義的鏈接，它 的功能。"
+
+#, fuzzy
+#~ msgid "This web page makes total&nbsp;"
+#~ msgstr "此網頁，使總"
+
+#, fuzzy
+#~ msgid "&nbsp;HTTP requests."
+#~ msgstr "的HTTP請求。"
+
+#, fuzzy
+#~ msgid "Types are&nbsp;"
+#~ msgstr "類型"
+
+#, fuzzy
+#~ msgid "&nbsp;for javascript&nbsp;"
+#~ msgstr "為JavaScript"
+
+#, fuzzy
+#~ msgid "&nbsp;for stylesheet."
+#~ msgstr "樣式表。"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is high. Use optimized theme "
+#~ "and widgets"
+#~ msgstr "盡量減HTTP請求，因為這是高。使用優化的主題和部件"
+
+#~ msgid "Reduce it"
+#~ msgstr "降低IT"
+
+#~ msgid ""
+#~ "Try to make less HTTP requests because this is very high. Use optimized "
+#~ "theme and widgets"
+#~ msgstr "盡量讓減HTTP請求，因為這是非常高的。使用優化的主題和部件"
+
+#~ msgid "Must Reduce"
+#~ msgstr "必須減少"
+
+#~ msgid "Stylesheet is making HTTP requests through @import"
+#~ msgstr "樣式表是通過HTTP請求的@ import"
+
+#~ msgid ""
+#~ "Remove the @import url and place it inside head tag through link with "
+#~ "stylesheet rel attribute"
+#~ msgstr "刪除@進口網址，並通過鏈接樣式表rel屬性，將它放在head標籤"
+
+#~ msgid "Stylesheet is not making any HTTP request internally"
+#~ msgstr "樣式表不作出任何HTTP請求的內部"
+
+#~ msgid "Style attribute is present in above tags at some or all occurances."
+#~ msgstr "風格屬性存在在上述標籤在某些或所有出現。"
+
+#~ msgid ""
+#~ "Find and remove style attributes with class attributes and put the style "
+#~ "in main css file"
+#~ msgstr "查找並刪除類屬性和樣式屬性把主css文件中的樣式"
+
+#~ msgid "No style attribute is present in any tag."
+#~ msgstr "沒有風格屬性存在任何標籤。"
+
+#~ msgid "There is no html error in this web page."
+#~ msgstr "有沒有在這個網頁的html錯誤。"
+
+#, fuzzy
+#~ msgid "There are&nbsp;"
+#~ msgstr "有"
+
+#, fuzzy
+#~ msgid "&nbsp;errors in html of your web page:"
+#~ msgstr "你的網頁HTML中的錯誤："
+
+#~ msgid ""
+#~ "Dig into the errors and find out what is causing the errors, your theme "
+#~ "or any plugin and resolve it"
+#~ msgstr "挖成的錯誤，並找出是什麼原因造成的錯誤，你的主題或任何插件和解決"
+
+#, fuzzy
+#~ msgid "&nbsp;% of stylesheets and javascripts are loaded in head section."
+#~ msgstr "％樣式表和JAVAScripts的加載頭部分。"
+
+#~ msgid "This is high"
+#~ msgstr "這是高"
+
+#~ msgid ""
+#~ "Add more scripts in footer section and remove them from header section"
+#~ msgstr "頁腳節中添加更多的腳本，並刪除它們從標題部分"
+
+#~ msgid "Microdata rich snippet is present at this web page."
+#~ msgstr "微觀數據豐富的片段在此網頁上。"
+
+#~ msgid "Type of rich snippet is"
+#~ msgstr "類型豐富的片段"
+
+#~ msgid "There is no microdata rich snippet present in this web page."
+#~ msgstr "是沒有微觀豐富的片段出席本網頁。"
+
+#~ msgid ""
+#~ "Use any free SEO plugin to markup your web page with microdata rich "
+#~ "snippet."
+#~ msgstr "使用任何免費的SEO插件標記您的網頁與微觀豐富片段。"
+
+#~ msgid ""
+#~ "Number of HTTP requests your web page makes to fetch content from server "
+#~ "influences document load time, because more requests will call for more "
+#~ "downloads and will take more time"
+#~ msgstr ""
+#~ "您的網頁的HTTP請求數使得獲取內容從服務器的影響文檔的加載時間，因為更多的請"
+#~ "求，將要求更多的下載需要更多的時間"
+
+#~ msgid "Stylesheet import url"
+#~ msgstr "樣式表進口網址"
+
+#~ msgid ""
+#~ "@import parameter inside stylesheet is bound to increase unnecessary "
+#~ "document load. This should be avoided"
+#~ msgstr "@進口參數樣式表內勢必會增加不必要的文件負載。這應該被避免"
+
+#~ msgid "Style Attribute"
+#~ msgstr "樣式屬性"
+
+#~ msgid ""
+#~ "Using this in any element of html of web page reduces quality by "
+#~ "increasing browser rendering time"
+#~ msgstr "使用在任何HTML元素的網頁提高瀏覽器的渲染時間降低質量"
+
+#~ msgid "Browser Compatibility"
+#~ msgstr "瀏覽器兼容性"
+
+#~ msgid ""
+#~ "Google wants that your web page should look ok in different browsers (e."
+#~ "g. mozila firefox, chrome, internet explorer, safari, opera etc.), and "
+#~ "the basic thing we can check is errors inside yor html"
+#~ msgstr ""
+#~ "谷歌希望，看起來應該確定您的網頁在不同的瀏覽器（如MOZILA火狐，鉻，IE瀏覽"
+#~ "器，Safari瀏覽器，Opera等），我們可以檢查是基本的東西裡面尤爾HTML錯誤"
+
+#~ msgid "Visual Complition"
+#~ msgstr "Visual Complition中"
+
+#~ msgid ""
+#~ "HTTP requests made in header compared to total HTTP requests influences "
+#~ "visual complition, which is a important design standard parameter"
+#~ msgstr ""
+#~ "相比，總的HTTP請求的報頭的HTTP請求，影響視覺complition的，這是一個重要的設"
+#~ "計標準參數"
+
+#~ msgid "Rich Snippet"
+#~ msgstr "豐富的片段"
+
+#~ msgid ""
+#~ "This type of HTML markup gives more information to search engine pages to "
+#~ "render. Google encourages microdata type markup because this increases "
+#~ "user experience in Search Engine Rank Page"
+#~ msgstr ""
+#~ "這種類型的HTML標記提供了更多的信息，搜索引擎網頁渲染。谷歌鼓勵微觀數據類型"
+#~ "的標記，因為這增加了用戶體驗，在搜索引擎排名"
+
+#~ msgid "Google may confuse this page as auto-generated."
+#~ msgstr "谷歌可能會擾亂本頁面自動生成。"
+
+#~ msgid "because of this part"
+#~ msgstr "因為這部分"
+
+#~ msgid "Change your url to different type of permalink"
+#~ msgstr "不同類型的一篇更改您的網址"
+
+#~ msgid "Change it"
+#~ msgstr "改變它"
+
+#~ msgid "This web page url maintains guidelines."
+#~ msgstr "該網頁的URL堅持的指導方針。"
+
+#~ msgid "The web page url is too big. Google may consider it spam."
+#~ msgstr "網頁的URL太大。谷歌可能認為它是垃圾郵件。"
+
+#~ msgid ""
+#~ "Change your url size and type at page or post editor. Make sure you are "
+#~ "not using any session tracking"
+#~ msgstr "更改您的網址頁面或文章編輯器的大小和類型。確保你不使用任何會話跟踪"
+
+#~ msgid "Last-Modified part in header is found. If-Modified-Since is On."
+#~ msgstr "的Last-Modified頭。如果修改既然是。"
+
+#~ msgid "Last-Modified part in header is not found. If-Modified-Since is Off"
+#~ msgstr "沒有發現的Last-Modified頭。如果修飾既然是關"
+
+#~ msgid "Ask your hosting provider to activate If-Modified-Since header"
+#~ msgstr "請激活您的託管服務提供商的If-Modified-Since頭"
+
+#~ msgid "Ask for it"
+#~ msgstr "詢問"
+
+#~ msgid "Cache is active. This web page has following cache parameters."
+#~ msgstr "高速緩存是積極的。此網頁緩存參數。"
+
+#~ msgid "Cache is inactive. This web page don't returns cache parameters."
+#~ msgstr "高速緩存是無效的。此網頁不'噸返回緩存參數。"
+
+#~ msgid ""
+#~ "Use cache method for better user experience. Use any free cache plugin "
+#~ "available"
+#~ msgstr "使用緩存更好的用戶體驗的方法。免費使用任何可用的緩存插件"
+
+#~ msgid "Keep Alive Connection is Off"
+#~ msgstr "保持活著連接關閉"
+
+#~ msgid "Ask your hosting provider to activate Keep Alive Connection"
+#~ msgstr "請激活您的託管服務提供商的Keep Alive連接"
+
+#~ msgid "Keep Alive Connection On"
+#~ msgstr "永葆連接"
+
+#~ msgid "gzip compression in your web page headers is enabled."
+#~ msgstr "啟用gzip壓縮在你的網頁標題。"
+
+#~ msgid "No compression method is found in web page."
+#~ msgstr "無壓縮方法，在網頁中找到。"
+
+#~ msgid "Enable gzip compression for better results. Use free plugins."
+#~ msgstr "啟用gzip壓縮，以取得更好的效果。使用免費的插件。"
+
+#~ msgid "You are using WordPress version"
+#~ msgstr "您正在使用的WordPress版本"
+
+#~ msgid ""
+#~ "You are using WordPress, most probably it's a modified cms with wordpress "
+#~ "core."
+#~ msgstr "您正在使用WordPress的，最可能的是，它'SA改性CMS與WordPress核心。"
+
+#~ msgid "Please use proper WordPress software"
+#~ msgstr "請使用適當的WordPress軟件"
+
+#~ msgid ""
+#~ "If url has variable informations or is more than 255 bytes, search "
+#~ "engines will consider it as spam."
+#~ msgstr ""
+#~ "如果url具有可變信息，或者是超過255個字節，搜索引擎會認為它為垃圾郵件。"
+
+#~ msgid "If-Modified-Since"
+#~ msgstr "如果修改自"
+
+#~ msgid ""
+#~ "This is a server feature. This automatically Informs search engine "
+#~ "robots, whenever any change takes place in web page content."
+#~ msgstr ""
+#~ "這是一個服務器功能。這自動通知搜索引擎機器人，網頁內容發生任何變化。"
+
+#~ msgid "Caching"
+#~ msgstr "緩存"
+
+#~ msgid ""
+#~ "Caching html, css, javascripts, images in users browsers can be very "
+#~ "useful in reducing document load time. Search engine crawlers likes web "
+#~ "pages with better document load time."
+#~ msgstr ""
+#~ "HTML，CSS，JavaScript的緩存，用戶的瀏覽器中的圖像可以減少文件加載時間是非"
+#~ "常有用的。搜索引擎爬蟲喜歡網頁更好的文檔的加載時間。"
+
+#~ msgid "Keep Alive"
+#~ msgstr "永葆"
+
+#~ msgid ""
+#~ "This is a server feature. This keeps the connection between server and "
+#~ "browser active for a said amount of time. And saves time for excess "
+#~ "communication. Hence it lowers document load time which is better."
+#~ msgstr ""
+#~ "這是一個服務器功能。這樣可以使活動服務器和瀏覽器之間的連接為所述的時間量。"
+#~ "額外的溝通並節省了時間。因此，它降低了，這是更好的文檔的加載時間。"
+
+#~ msgid "gzip compression"
+#~ msgstr "gzip壓縮"
+
+#~ msgid ""
+#~ "This server feature delivers web page content to browser in gzip "
+#~ "compressed format. Hence it lowers bandwidth and web page size."
+#~ msgstr ""
+#~ "此服務器功能提供gzip壓縮格式的瀏覽器中的網頁內容。因此，降低了帶寬和網頁的"
+#~ "大小。"
+
+#~ msgid "CMS"
+#~ msgstr "CMS"
+
+#~ msgid ""
+#~ "Content Management System (cms) creates web page from scripts kept in "
+#~ "server. So, Google crawlers may consider this contents to be auto "
+#~ "generated. But, for WordPress users this is not a problem."
+#~ msgstr ""
+#~ "內容管理系統（CMS）創建的網頁保存在服務器上的腳本。因此，谷歌爬蟲可能會考"
+#~ "慮這個內容是自動生成的。但是，對於WordPress用戶，這是沒有問題的。"
+
+#~ msgid "Web Page"
+#~ msgstr "網頁"
+
+#~ msgid "Scanned for"
+#~ msgstr "掃描"
+
+#~ msgid "Search Engine Compatibility, Google Webmaster Guidelines as standard"
+#~ msgstr "搜索引擎的兼容性，作為標準的谷歌網站管理員指南"
+
+#~ msgid "Theme Used"
+#~ msgstr "使用主題"
+
+#~ msgid "Time Taken"
+#~ msgstr "拍攝時間"
+
+#~ msgid "seconds for Scan"
+#~ msgstr "秒掃描"
+
+#~ msgid "seconds for loading components"
+#~ msgstr "秒加載組件"
+
+#~ msgid "Percentage"
+#~ msgstr "百分比"
+
+#~ msgid "Success"
+#~ msgstr "成功"
+
+#~ msgid "Failure"
+#~ msgstr "失敗"
+
+#~ msgid "Web Page Overall SEO Performance"
+#~ msgstr "網頁整體搜索引擎優化的性能"
+
+#~ msgid "Complete"
+#~ msgstr "完成"
+
+#~ msgid "Incomplete"
+#~ msgstr "殘缺"
+
+#~ msgid "Web Page Optimized Data Overview"
+#~ msgstr "網頁優化的數據概述"
+
+#~ msgid "Required"
+#~ msgstr "需要"
+
+#~ msgid "Completed"
+#~ msgstr "已完成"
+
+#~ msgid "Comparison of social data"
+#~ msgstr "社交數據的比較"
+
+#~ msgid "Social Sharing Data overview"
+#~ msgstr "社會共享的數據概述"
+
+#~ msgid "Actual"
+#~ msgstr "實際"
+
+#~ msgid "Ideal Case"
+#~ msgstr "理想的情況下"
+
+#~ msgid "none"
+#~ msgstr "沒有"
+
+#~ msgid "header"
+#~ msgstr "頭"
+
+#~ msgid "body"
+#~ msgstr "身體"
+
+#~ msgid "full"
+#~ msgstr "充分"
+
+#~ msgid "Approximate Pattern of visual complition Index"
+#~ msgstr "概約視覺complition指數模式"
+
+#~ msgid "web page loading"
+#~ msgstr "網頁加載"
+
+#~ msgid "Visual complition percentage"
+#~ msgstr "視覺complition百分比"
+
+#~ msgid "JavaScripts"
+#~ msgstr "JavaScript的"
+
+#~ msgid "Styles"
+#~ msgstr "樣式"
+
+#~ msgid "Pure Text"
+#~ msgstr "純文本"
+
+#~ msgid "Alt Text"
+#~ msgstr "alt文字"
+
+#~ msgid "Anchor Text"
+#~ msgstr "錨文本"
+
+#~ msgid "In page content overview"
+#~ msgstr "在頁面內容概述"
+
+#~ msgid "Comparison of server performance"
+#~ msgstr "服務器的性能比較"
+
+#~ msgid "Technical Aspects Overview"
+#~ msgstr "技術方面概述"
+
+#~ msgid "New Scan"
+#~ msgstr "新的掃描"
+
+#~ msgid "Notes"
+#~ msgstr "筆記"
+
+#~ msgid "Chose any page or post or enter custom url to Scan"
+#~ msgstr "選擇任何網頁或郵寄或輸入自定義URL掃描"
+
+#~ msgid "Scan Page"
+#~ msgstr "掃描頁面"
+
+#~ msgid "OR"
+#~ msgstr "或"
+
+#~ msgid "Select a Post to Scan"
+#~ msgstr "選擇一個郵政掃描"
+
+#~ msgid "Scan Post"
+#~ msgstr "掃描發表"
+
+#~ msgid "Enter a custom url"
+#~ msgstr "輸入一個自定義的URL"
+
+#~ msgid "Scan URL"
+#~ msgstr "掃描網址"
+
+#~ msgid "Things to know before scanning"
+#~ msgstr "掃描大事情之前知道"
+
+#~ msgid ""
+#~ "The overview chart data is approximate calculation and does not represent "
+#~ "calculations by any search engine algorithm."
+#~ msgstr "圖表數據是近似計算，並不代表任何搜索引擎算法的計算。"
+
+#~ msgid ""
+#~ "Some parameters displayed in results are not included directly in google "
+#~ "guidelines. But they affect indirectly."
+#~ msgstr "在結果中顯示的一些參數不包括直接在谷歌的指引。但他們間接影響。"
+
+#~ msgid ""
+#~ "Hover over underlined elements to see the explanations in result page."
+#~ msgstr "將鼠標懸停在下劃線的元素在結果頁中看到的解釋。"
+
+#~ msgid ""
+#~ "No data from your website, server or anything is captured by any server. "
+#~ "Scanning is done entirely on browser."
+#~ msgstr ""
+#~ "沒有數據從你的網站，服務器或任何被抓獲的任何服務器。完全在瀏覽器上進行掃描"
+#~ "法。"
+
+#~ msgid ""
+#~ "The url returns error : 404 Not Found, That means there is no webpage "
+#~ "present and search engines will not index it. Enter existing webpage url "
+#~ "of your website."
+#~ msgstr ""
+#~ "該URL將返回錯誤：404未找​​到，這意味著目前有沒有網頁和搜索引擎不會索引。輸入"
+#~ "現有的網頁您網站的網址。"
+
+#~ msgid "Print Report"
+#~ msgstr "打印報告"
+
+#, fuzzy
+#~ msgid "SEO Tips &rarr;"
+#~ msgstr "SEO技巧→"
+
+#~ msgid "Data"
+#~ msgstr "數據"
+
+#~ msgid "Design"
+#~ msgstr "設計"
+
+#~ msgid "Technical"
+#~ msgstr "技術"
+
+#~ msgid "Social Sharing Data ("
+#~ msgstr "社會共享的數據（"
+
+#~ msgid ""
+#~ "Open Graph Protocol by Facebook and accepted by almost all major social "
+#~ "media including Google +"
+#~ msgstr ""
+#~ "通過Facebook的Open Graph協議，並接受了幾乎所有主流的社會化媒體，包括谷歌+"
+
+#~ msgid "OGP"
+#~ msgstr "OGP"
+
+#~ msgid "Web Page Data"
+#~ msgstr "網頁數據"
+
+#~ msgid "Remarks"
+#~ msgstr "備註"
+
+#~ msgid "Content issues"
+#~ msgstr "內容問題"
+
+#~ msgid "Design points"
+#~ msgstr "設計要點"
+
+#~ msgid "Server points"
+#~ msgstr "服務器點"
+
+#, fuzzy
+#~ msgid "&rarr;&nbsp;Crawled Text Content"
+#~ msgstr "→抓取文本內容"
+
+#~ msgid "Total Text"
+#~ msgstr "共有文字"
+
+#~ msgid "In page Style"
+#~ msgstr "在頁面風格"
+
+#~ msgid "In page Script"
+#~ msgstr "在頁面腳本"
+
+#~ msgid "Scan by"
+#~ msgstr "進行掃描"
+
+#~ msgid "gogretel.com"
+#~ msgstr "gogretel.com"
+
+#~ msgid "Name"
+#~ msgstr "名"
+
+#~ msgid "Action"
+#~ msgstr "行動..."
+
+#~ msgid "Length "
+#~ msgstr "長度"
+
+#~ msgid " for image "
+#~ msgstr "用於圖像"

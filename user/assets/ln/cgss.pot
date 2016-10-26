@@ -1,0 +1,337 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-03 00:43+0530\n"
+"PO-Revision-Date: 2015-07-03 14:13+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <happy@gogretel.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../front-end.php:27
+msgid "SHARE PLUGIN"
+msgstr ""
+
+#: ../front-end.php:33
+msgid "EMAIL"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Seo Status"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "See overall and specific seo points of pages in"
+msgstr ""
+
+#: ../front-end.php:54
+msgid "Check for documentation in Help tab above."
+msgstr ""
+
+#: ../front-end.php:60
+msgid "Content"
+msgstr ""
+
+#: ../front-end.php:66
+msgid "Usability"
+msgstr ""
+
+#: ../front-end.php:92
+msgid "Title"
+msgstr ""
+
+#: ../front-end.php:142 ../front-end.php:428
+msgid "Never"
+msgstr ""
+
+#: ../front-end.php:304
+msgid "Send Request"
+msgstr ""
+
+#: ../front-end.php:316
+msgid "Validate Request"
+msgstr ""
+
+#: ../front-end.php:328
+msgid "Download Content"
+msgstr ""
+
+#: ../front-end.php:340
+msgid "Analyze Data"
+msgstr ""
+
+#: ../front-end.php:352
+msgid "Save Information"
+msgstr ""
+
+#: ../front-end.php:364
+msgid "Fetch Results"
+msgstr ""
+
+#: ../front-end.php:393
+msgid "SHOW POST TYPES"
+msgstr ""
+
+#: ../front-end.php:399
+msgid "FILTER"
+msgstr ""
+
+#: ../front-end.php:406
+msgid "Score"
+msgstr ""
+
+#: ../front-end.php:407
+msgid "Star"
+msgstr ""
+
+#: ../front-end.php:408 ../front-end.php:409 ../front-end.php:410
+#: ../front-end.php:411 ../front-end.php:412 ../front-end.php:413
+#: ../front-end.php:414 ../front-end.php:415
+msgid "Stars"
+msgstr ""
+
+#: ../front-end.php:422
+msgid "Time"
+msgstr ""
+
+#: ../front-end.php:423
+msgid "This hour"
+msgstr ""
+
+#: ../front-end.php:424
+msgid "Today"
+msgstr ""
+
+#: ../front-end.php:425
+msgid "7 days"
+msgstr ""
+
+#: ../front-end.php:426
+msgid "30 days"
+msgstr ""
+
+#: ../front-end.php:427
+msgid "90 days"
+msgstr ""
+
+#: ../lib/snippet-object.php:56
+msgid "SEARCH SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/snippet-object.php:75
+msgid "OGP SNIPPET ERROR"
+msgstr ""
+
+#: ../lib/btn-object.php:37
+msgid "Button Error"
+msgstr ""
+
+#: ../lib/heading-object.php:37
+msgid "HEADING ERROR"
+msgstr ""
+
+#: ../lib/help-object.php:16
+msgid "Overview"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"We have built this plugin for any WordPress user, who wants to check seo "
+"readiness of his or her webpages. Basic Google webmaster guidelines and "
+"PageSpeed rules are constructive principles of this seo scan. We have not "
+"included backlinks analysis, traffic metrics, details on social media, "
+"knowledge graph and brand signals, because the intention is primarily on-"
+"page search optimization only. If you catch a bug or want to give any "
+"feedback or feature suggestion you are welcome to email the plugin author"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid "DISCLAIMER"
+msgstr ""
+
+#: ../lib/help-object.php:17
+msgid ""
+"This plugin or the plugin author is in no way affiliated to Google Inc. The "
+"word \"Google\" in name of this plugin implies, this plugin scans a webpage "
+"for some speculated ranking parameters of search engines like Google."
+msgstr ""
+
+#: ../lib/help-object.php:21
+msgid "How to use?"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"This plugin's look and feel is built using WordPress Admin UI and is almost "
+"mobile ready. So, for regular WordPress users it will be very intuitive. The "
+"usage process has 3 steps."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Select a Page"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"from the individual tables of webpages, by clicking on corresponding radio "
+"button. There are 2 dropdown menues to select posts from multiple post types "
+"and filter them according to time and score of last scan. Remeber, only "
+"\"published\" posts are shown."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Wait for scan"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"to be completed. It will take a few seconds, approximately 15 to 30 seconds. "
+"Time varies mainly because of downloading webpage content."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "See results"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"in a pop up in the same page as soon as the scan is complete. The result "
+"will have 5 segments."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Overview and basic information as well as social media counts."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Search engine snippet and related information."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Most used words Analysis and information from text"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Use of Media or Image and Video seo"
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid "Page specific speed and usability analysis."
+msgstr ""
+
+#: ../lib/help-object.php:22
+msgid ""
+"Navigate within segments using top arrow buttons. Scan result is displayed "
+"in an organized fashion and are is easy to understand for someone with basic "
+"seo knowledge. For a primitive guideline of seo aspects see links at right "
+"sidebar of this area."
+msgstr ""
+
+#: ../lib/help-object.php:26
+msgid "Performance"
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"This plugin uses resources from your web server for processing scan "
+"requests. So, you will get higher bandwidth and database usage. In standard "
+"WordPress installs, this increment is insignificant. You won't probably "
+"notice it."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"depends on your server and website quality. Actual process takes around 10 "
+"seconds to complete. But it takes longer to check page header and download "
+"webpage resources."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid ""
+"is very minimal, as this plugin is admin oriented. All Javascripts (.js "
+"files) and Stylesheets (.css files) are loaded only in admin side."
+msgstr ""
+
+#: ../lib/help-object.php:27
+msgid "That means, it won't slow down your website."
+msgstr ""
+
+#: ../lib/help-object.php:31
+msgid "Data & Privacy"
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"We value security of your website. All files and resulting data is stored in "
+"your web server only."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "privacy Policy."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"If you install and update this plugin from wordpress.org plugin repository "
+"and use it as is, then the plugin author doesn't collect any data "
+"whatsoever. Altough other softwares installed in your server may use files "
+"of this plugin or collect data generated from usage of this plugin."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid "Data storage."
+msgstr ""
+
+#: ../lib/help-object.php:32
+msgid ""
+"This plugin currently stores data as an multidimensional array for each "
+"webpage you scan. Many things you see in this page are taken from that "
+"stored data. When the plugin is uninstalled these data will remain in your "
+"server, untill deleted by special operation. They will not create any "
+"problem although."
+msgstr ""
+
+#: ../lib/help-object.php:36
+msgid "Do's and Don'ts"
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"This plugin is built to help you understand search engine optimization "
+"status of your website only. It doesn't allow you to scan any webpage from "
+"any domain, other than where it is installed. We request you not to tweek "
+"the code in any way such that this plugin becomes able to scan pages from "
+"various other domains."
+msgstr ""
+
+#: ../lib/help-object.php:37
+msgid ""
+"We can't force you, so if you do such a thing, the plugin author will not be "
+"responsible for any legal and security consequences that may come. "
+"Otherwise, the code is under GPL License, you can do anything you like."
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Support Forum"
+msgstr ""
+
+#: ../lib/help-object.php:44
+msgid "Free Seo Resource"
+msgstr ""
+
+#: ../lib/textarea-object.php:33
+msgid "Textarea Error"
+msgstr ""
+
+#: ../lib/dropdown-object.php:42 ../lib/dropdown-object.php:59
+msgid "DROPDOWN ERROR"
+msgstr ""

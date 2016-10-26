@@ -1,45 +1,88 @@
 === Complete Google SEO Scan ===
 Contributors: nirjhar_lo
-Author URI: http://gogretel.com/about/
-Plugin URL: http://gogretel.com/
-Requires at Least: 3.0
-Tested Up To: 3.6
-Tags: speed, seo, search optimization, tool, google guidelines, google, optimization, search engine, search engine optimization, page speed, webmaster guidelines, google search
-Stable tag: 1.6
-License: GPL2
+Tags: seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, news sitemaps, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
+Requires at Least: 4.0
+Tested Up To: 4.2.2
+Stable tag: 2.0.3
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-
-Complete scan for Google search engine optimization for web pages of your website!
+Scan on-page seo factors and get insight of your website. Aligned with Google webmaster guidelines.
 
 == Description ==
 
-It is a great tool to scan all technical aspects of a web page for SEO. The plugin sends a robot user agent to webpage and crawls the content along with other related data. Of course you can only crawl webpage from your website only. This is a restriction to prevent misuse.
+Scan many on-page search engine optimization factors of your webpages. Scanning factors are mostly selected from Google webmaster guidelines, as it's standard.
 
-Results are displayed all at once and with clarity. In 2 distinct tables you can see results. First one is Content scan result and second one is technical scan result. Actions to be takes are there.
+When you request a scan, the plugin sends a crawler robot to webpages and crawls the content along with other related data.
 
-You can scan any of your webpage url in "SEO Scan" page under "tools" menu.
-We follow Google Webmaster Guidelines as standard for checking content, coding and server performance.
+The report will contain an overall analysis of the webpage in 3 aspects:
 
-There are 20 aspects of scaning and each of them have many points:
+1. `header` tags analysis.
 
-Content Scaning: Title, Images, Text Hierarchy, Auto generated Content, text/html Ratio, Link Numbers, Link Attributes.
+2. Text and image content analysis
 
-Technical Scaning: URL, HTTP Requests, Meta Description, Meta Canonical, Meta Robots, Open Graph Protocol, If-Modified-Since, robots.txt, sitemap.xml, Rich Snippet, CMS, Caching, Keep Alive
+3. Usability and speed analysis.
+
+Also overview in report is presented beautifully for easy understand. 'Social media popularity' can be found by counts of with Google +1s, Facebook shares and Tweets.
+
+NOTE: You can scan all published pages from various post types, including those you created by other plugins.
+
+More over, if you know little less about on-page seo, <a href="http://gogretel.com/resource/" title="seo tutorial on webmaster guidelines">check out free resources</a>.
+
+Otherwise, just use it and explore more about your website :-)
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+This section describes how to install the plugin and geting it work.
 
-e.g.
+Follow simple 3 steps
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to tools menu and select scan now submenu
+1.	Unzip and upload `complete-google-seo-scan.zip` to the `/wp-content/plugins/` directory.
+2.	Activate the plugin through the 'Plugins' menu in WordPress.
+3.	Go to 'Tools' menu and select 'Seo Scan' submenu.
+
+You will be able to use scan webpages and see report from 'Seo Scan' submenu page.
+
+== Screenshots ==
+
+1. Interface with list of pages of various post types. Here you can choose post types and see different posts under it.
+2. After you request a scan by clicking in checkbox, this screen will appear.
+3. You will see this report, that uses WordPress Admin UI with 3 segments.
+4. Seek for help when you are stuck. Lots of documentation is there in help tab at top right corner of the page.
+5. Use this plugin and see reports in mobile too. It's designed as mobile friendly.
 
 == Changelog ==
 
-= 26082013 =
-* First release.
+List of `Stable versions` with release date and purpose.
 
-= 29082013 =
-* Version 1.1.
+= Version 2.0.3 =
+`Release Date: July 9th, 2015`
+1. First version using Ajax for data-flow.
+2. Completely redesigned url input interface and report display.
+3. Fixed 4 bugs:
+
+	3.1. On database manipulation for calculating avarage scan time and.
+
+	3.2. On conditioning non-links in link formatting object.
+
+	3.3. On Social media object, counting likes and shares.
+
+	3.4. On link object, deleting non-links having href starting with #.
+4. It now Delets stored data upon uninstall.
+
+= Version 1.6 =
+`Release Date: October 2nd, 2013`
+1. New interface with improved url input, report display.
+2. Includes bootstrap tooltip and google charts in reports. 
+
+= Version 1.5.1 =
+`Release Date: August 29th, 2013`
+More improved scanning.
+
+= Version 1.1 =
+`Release Date: August 29th, 2013`
+First modified with new scanning features.
+
+= Version 1.0 =
+`Release Date: August 26th, 2013`
+First Release. For beta testing.

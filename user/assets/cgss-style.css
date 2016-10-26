@@ -1,0 +1,389 @@
+/**
+ * @/user/assets/cgss-style.css
+ * on: 02.07.2015
+ *
+ * Stylesheet for admin tools page for this plugin.
+ */
+
+
+/*Processing Animation [ Credits: http://cssload.net/ ]*/
+#loadingProgressG{
+	width:100%;
+	height:6px;
+	overflow:hidden;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	border-radius:3px;
+}
+.loadingProgressG{
+	background-color:#8CBA30;
+	margin-top:0;
+	margin-left:-77px;
+	-moz-animation-name:bounce_loadingProgressG;
+	-moz-animation-duration:2s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-timing-function:linear;
+	-webkit-animation-name:bounce_loadingProgressG;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+	-o-animation-name:bounce_loadingProgressG;
+	-o-animation-duration:2s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-timing-function:linear;
+	-ms-animation-name:bounce_loadingProgressG;
+	-ms-animation-duration:2s;
+	-ms-animation-iteration-count:infinite;
+	-ms-animation-timing-function:linear;
+	animation-name:bounce_loadingProgressG;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	width:150px;
+	height:6px;
+}
+@-moz-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-webkit-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-o-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@-ms-keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+@keyframes bounce_loadingProgressG{
+	0%{
+		margin-left:-77px;
+	}
+	100%{
+		margin-left:100%;
+	}
+}
+
+
+/*Custom Grid System [ Credits: http://j4n.co/ ]*/
+.grid-container{
+	width: 100%;   
+}
+.row:before, .row:after {
+	content:"";
+	display: table ;
+	clear:both;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	width: 16.66%;
+	padding: 30px 1px 30px 1px;
+}
+.col-1{
+	width: 16.33%;
+}
+.col-2{
+	width: 33%;
+}
+.col-3{
+	width: 49.33%;
+}
+.col-4{
+	width: 66.33%;
+}
+.col-5{
+	width: 83%;
+}
+.col-6{
+	width: 100%;
+}
+[class*='col-'] > p {
+	padding: 0;
+	margin: 0;
+	color: inherit;
+}
+@media all and (max-width: 900px){
+	.col-1 {
+		width: 33%;
+	}
+	.col-2 {
+		width: 49.66%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 100%;
+	}
+	.row .col-2:last-of-type {
+		width: 100%;
+	}
+	.row .col-5 ~ .col-1 {
+		width: 100%; 
+	}
+}
+@media all and (max-width: 640px){
+	.col-1 {
+		width: 49.8%;
+	}
+	.col-2 {
+		width: 100%;
+	}
+	.col-3 {
+		width: 100%;
+	}
+	.col-4 {
+		width: 100%;
+	}
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		width: 100%;
+	}
+}
+
+
+/*General Style*/
+.wrap .add-new-h2:hover, .view-again {
+	cursor: pointer;
+}
+.widefat .check-column, .process-push-left {
+	padding-left: 10px;
+}
+.widefat .check-column {
+	padding-top: 10px;
+}
+.scan-report {
+	padding-top: 20px;
+}
+.clear {
+	padding-top: 30px;
+}
+.attachments {
+	list-style-type: none;
+}
+.attachments li {
+	display: inline;
+	width: 150px;
+	height: 150px;
+	padding: 20px 10px 20px 10px;
+}
+.time-in-form {
+	color: #666666;
+}
+.result-btns {
+	padding-bottom: 15px;
+}
+.message-dismiss {
+	cursor: pointer;
+}
+
+
+/*Snippet Style*/
+.search-snippet {
+	float: none;
+	margin: auto;
+	background-color: #ffffff;
+	font-family: sans-serif;
+	padding: 30px 30px 15px 30px;
+	width: 512px;
+}
+.search-snippet #SnippetTitle {
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 21.6px;
+	font-weight: normal;
+	color: #1A0DAB;
+	text-decoration: none;
+}
+.search-snippet #SnippetTitle:hover {
+	text-decoration: underline;
+}
+.search-snippet span {
+	height: 17px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #006621;
+}
+.search-snippet p {
+	margin-top: 0px;
+	font-size: 16.0167px;
+	line-height: 1.4;
+	color: #545454;
+}
+.search-snippet-gap {
+	margin-bottom: 2px;
+}
+
+
+/*Custom Style*/
+.put-center {
+	text-align: center;
+}
+.danger-icon {
+	color: #ff644d;
+}
+.warning-icon {
+	color: #ffcc33;
+}
+.success-icon {
+	color: #8bba30;
+}
+.check-column input, .check-column .dashicons {
+	padding-left: 10px;
+}
+.push-icon-top {
+	padding-top: 25px;
+}
+.dark {
+	color: #333333;
+}
+.score-stars, .social {
+	text-align: center;
+}
+.well-points, .well-images {
+	border: 1px solid #d4d4d4;
+	background: #f9f9f9;
+	padding: 10px;
+	max-height: 100px;
+	overflow-y: scroll;
+}
+#ShowErrors, #ImagesList a {
+	cursor: pointer;
+	color: #6495ed;
+	text-decoration: underline;
+}
+
+
+/*Social buttons styles*/
+.facebook, .gplus, .twitter {
+	padding: 2px 5px 2px 5px;
+	-webkit-transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;
+	-o-transition: background 0.1s ease-in-out;
+	transition: background 0.1s ease-in-out;
+}
+.facebook {
+	color: #3b5998;
+	border: 1px solid #3b5998;
+}
+.gplus {
+	color: #dd4b39;
+	border: 1px solid #dd4b39;
+	margin: 10px 5px 0px 5px;
+}
+.twitter {
+	color: #00aced;
+	border: 1px solid #00aced;
+}
+.facebook:hover {
+	color: #ffffff;
+	background: #3b5998;
+}
+.gplus:hover {
+	color: #ffffff;
+	background: #dd4b39;
+}
+.twitter:hover {
+	color: #ffffff;
+	background: #00aced;
+}
+
+
+/*Css tricks styles*/
+.total-marks {
+	margin-top: 10px;
+	border-top: 1px solid #d4d4d4;
+	color: #d4d4d4;
+}
+.score-pie {
+	float: none;
+	margin: auto;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	background: #ffffff;
+	border: 10px solid #8bba30;
+}
+.score-pie h1 {
+	text-align: center;
+	font-size: 150px;
+	padding-left: 40px;
+	color: #8bba30;
+	z-index: 10;
+}
+
+
+/*Responsive Elements*/
+@media only screen and (max-width: 640px) {
+	.about-text {
+		display: none;
+	}
+	.snippet-container {
+		overflow-x: scroll;
+	}
+	.info-text {
+		line-height: 2.5;
+	}
+	.info-text .icon-click {
+		padding-top: 5px;
+	}
+	.hide-btn-text {
+		display: none;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.about-wrap h1, .about-wrap .about-text {
+		margin-right: 20px;
+	}
+}
+
+
+/*Print Style*/
+@media print {
+	#adminmenuback, #adminmenuwrap, .status-header, #screen-meta, #screen-meta-links, .status-header, #loadingProgressG, .scan-process, .scan-form, .theme-backdrop, .theme-header, .theme-actions {
+		display: none;
+	}
+	#wpbody-content {
+		width: 100%;
+		margin-left: 0px;
+	}
+	#adminmenuback, #adminmenuwrap {
+		margin-left: -40px;
+	}
+}
