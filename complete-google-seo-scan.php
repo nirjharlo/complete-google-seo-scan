@@ -3,7 +3,7 @@
 Plugin Name: Complete Google SEO Scan
 Plugin URI: http://gogretel.com/
 Description: Is your website maintains google guidelines and other SEO points? 82.35 % websites we checked missed some. See it for yourself. Go to Settings > Guides submenu page and take the quick scan for each page.<strong>It will find out SEO errors for you.</strong>
-Version: 1.0
+Version: 1.5
 Author: Nirjhar Lo
 Author URI: http://gogretel.com/about/
 License: GPLv2
