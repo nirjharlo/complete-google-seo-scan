@@ -96,7 +96,7 @@ class CGSS_HEADER_CHK {
 		$alive = $cut_header->alive();
 		$time = 0;
 		$response = round( ( $this->time_end - $this->time_start ), 3 ) * 1000;
-		if ( $response < 1000 ) {
+		if ( $response < 500 ) {
 			$time = 1;
 		}
 		$analyze = $this->analyze();

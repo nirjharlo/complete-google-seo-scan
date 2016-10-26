@@ -1,6 +1,6 @@
 /**
  * @/assets/compete.js
- * on: 21.08.2015
+ * on: 03.10.2015
  * @since 2.3
  *
  * Competative demo function
@@ -19,15 +19,20 @@ jQuery(document).ready(function($) {
 	var words = [];
 	var links = [];
 	var links_ext = [];
-	var links_nof = [];
 	var thr = [];
 	var images = [];
-	var speed = [];
 	var key_count = [];
 	var key_per = [];
 	var gplus = [];
 	var fb = [];
 	var tw = [];
+
+	var h1 = [];
+	var h2 = [];
+	var h3 = [];
+	var h4 = [];
+	var h5 = [];
+	var h6 = [];
 
 	var domain = [];
 	var title = [];
@@ -37,7 +42,10 @@ jQuery(document).ready(function($) {
 	var anch = [];
 	var htag = [];
 	var plain = [];
-	var bold = [];
+
+	var speed = [];
+
+	var hding = [];
 
 	var comp_key = '';
 	var client_free = '';
@@ -47,7 +55,7 @@ jQuery(document).ready(function($) {
 	var client_domain = '';
 
 	//initiate compete modal
-	jQuery(".compete-now").click(function(){
+	jQuery(".compete-now").click(function() {
 
 		if ( jQuery(this).attr("disabled") == 'disabled' ) {
 			return false;
@@ -86,15 +94,20 @@ jQuery(document).ready(function($) {
 		words = [];
 		links = [];
 		links_ext = [];
-		links_nof = [];
 		thr = [];
 		images = [];
-		speed = [];
 		key_count = [];
 		key_per = [];
 		gplus = [];
 		fb = [];
 		tw = [];
+
+		h1 = [];
+		h2 = [];
+		h3 = [];
+		h4 = [];
+		h5 = [];
+		h6 = [];
 
 		domain = [];
 		title = [];
@@ -104,7 +117,10 @@ jQuery(document).ready(function($) {
 		anch = [];
 		htag = [];
 		plain = [];
-		bold = [];
+
+		speed = [];
+
+		hding = [];
 	});
 
 	//start ajax for each url
@@ -148,15 +164,20 @@ jQuery(document).ready(function($) {
 		words = [];
 		links = [];
 		links_ext = [];
-		links_nof = [];
 		thr = [];
 		images = [];
-		speed = [];
 		key_count = [];
 		key_per = [];
 		gplus = [];
 		fb = [];
 		tw = [];
+
+		h1 = [];
+		h2 = [];
+		h3 = [];
+		h4 = [];
+		h5 = [];
+		h6 = [];
 
 		domain = [];
 		title = [];
@@ -166,7 +187,10 @@ jQuery(document).ready(function($) {
 		anch = [];
 		htag = [];
 		plain = [];
-		bold = [];
+
+		speed = [];
+
+		hding = [];
 	});
 
 	//scan competitor url
@@ -274,14 +298,20 @@ jQuery(document).ready(function($) {
 					filter_data( words, data.text.count );
 					filter_data( links, data.text.links.num );
 					filter_data( links_ext, data.text.links.external );
-					filter_data( links_nof, data.text.links.nofollow );
 					filter_data( thr, data.text.ratio );
 					filter_data( images, data.design.image.count );
-					filter_data( speed, data.speed.down_time / 1000 );
 
 					filter_data( gplus, data.social.gplus );
 					filter_data( fb, data.social.fb_share );
 					filter_data( tw, data.social.twitter );
+
+					hding = jQuery.map(data.text.htags.names, function(el) { return el; });
+					hd_entry( 'h1', h1, hding );
+					hd_entry( 'h2', h2, hding );
+					hd_entry( 'h3', h3, hding );
+					hd_entry( 'h4', h4, hding );
+					hd_entry( 'h5', h5, hding );
+					hd_entry( 'h6', h6, hding );
 
 					filter_data( key_count, data.compete.num );
 					filter_data( key_per, data.compete.per );
@@ -294,7 +324,8 @@ jQuery(document).ready(function($) {
 					filter_data( anch, data.compete.anch );
 					filter_data( htag, data.compete.htag );
 					filter_data( plain, data.compete.plain );
-					filter_data( bold, data.compete.bold );
+
+					filter_data( speed, data.speed.down_time / 1000 );
 
 					//if given keyword is not found, notify user
 					var key_count_sum = key_count.reduce(function(a, b) { return a + b; });
@@ -349,7 +380,7 @@ jQuery(document).ready(function($) {
 
 	//compare and show results
 	//also FETCH DATA TO SHOW RESULTS
-	jQuery(".submit-compete, .fetch-compete").click(function() {
+	jQuery(".submit-compete, .fetch-compete, .show-demo-result").click(function() {
 
 		var which_data = '';
 		if ( jQuery(this).attr("class").indexOf("submit-compete") != -1 ) {
@@ -358,11 +389,21 @@ jQuery(document).ready(function($) {
 		if ( jQuery(this).attr("class").indexOf("fetch-compete") != -1 ) {
 			which_data = 'fetch';
 		}
+		if ( jQuery(this).attr("class").indexOf("show-demo-result") != -1 ) {
+			which_data = 'demo';
+		}
 
 		//block for no keyword
 		comp_key = jQuery.trim(jQuery(".compete-focus-keyword").val());
 
-		if ( which_data == 'submit' ) {
+		if ( which_data == 'demo' ) {
+
+			//show demo result
+			jQuery(".compete-result").show();
+			jQuery(".compete-form-container").hide();
+			jQuery("#CompeteClose, #CompeteForm, #CompeteResult").removeAttr("disabled");
+
+		} else if ( which_data == 'submit' ) {
 
 			//block for no keyword
 			if ( comp_key == undefined || comp_key == '' ) {
@@ -409,14 +450,20 @@ jQuery(document).ready(function($) {
 						filter_data( words, data.text.count );
 						filter_data( links, data.text.links.num );
 						filter_data( links_ext, data.text.links.external );
-						filter_data( links_nof, data.text.links.nofollow );
 						filter_data( thr, data.text.ratio );
 						filter_data( images, data.design.image.count );
-						filter_data( speed, data.speed.down_time / 1000 );
 
 						filter_data( gplus, data.social.gplus );
 						filter_data( fb, data.social.fb_share );
 						filter_data( tw, data.social.twitter );
+
+						hding = jQuery.map(data.text.htags.names, function(el) { return el; });
+						hd_entry( 'h1', h1, hding );
+						hd_entry( 'h2', h2, hding );
+						hd_entry( 'h3', h3, hding );
+						hd_entry( 'h4', h4, hding );
+						hd_entry( 'h5', h5, hding );
+						hd_entry( 'h6', h6, hding );
 
 						filter_data( key_count, data.compete.num );
 						filter_data( key_per, data.compete.per );
@@ -429,7 +476,8 @@ jQuery(document).ready(function($) {
 						filter_data( anch, data.compete.anch );
 						filter_data( htag, data.compete.htag );
 						filter_data( plain, data.compete.plain );
-						filter_data( bold, data.compete.bold );
+
+						filter_data( speed, data.speed.down_time / 1000 );
 					}
 				},
 				error: function() {
@@ -487,15 +535,20 @@ jQuery(document).ready(function($) {
 						words = [];
 						links = [];
 						links_ext = [];
-						links_nof = [];
 						thr = [];
 						images = [];
-						speed = [];
 						key_count = [];
 						key_per = [];
 						gplus = [];
 						fb = [];
 						tw = [];
+
+						h1 = [];
+						h2 = [];
+						h3 = [];
+						h4 = [];
+						h5 = [];
+						h6 = [];
 
 						domain = [];
 						title = [];
@@ -505,7 +558,10 @@ jQuery(document).ready(function($) {
 						anch = [];
 						htag = [];
 						plain = [];
-						bold = [];
+
+						speed = [];
+
+						hding = [];
 
 						//reset compete form data
 						jQuery(".compete-focus-keyword").removeAttr("style");
@@ -530,10 +586,8 @@ jQuery(document).ready(function($) {
 						filter_data_eq( words, data.words );
 						filter_data_eq( links, data.links );
 						filter_data_eq( links_ext, data.links_ext );
-						filter_data_eq( links_nof, data.links_nof );
 						filter_data_eq( thr, data.thr );
 						filter_data_eq( images, data.images );
-						filter_data_eq( speed, data.speed );
 
 						filter_data_eq( gplus, data.gplus );
 						filter_data_eq( fb, data.fb );
@@ -541,6 +595,13 @@ jQuery(document).ready(function($) {
 
 						filter_data_eq( key_count, data.key_count );
 						filter_data_eq( key_per, data.key_per );
+
+						filter_data_eq( h1, data.hone );
+						filter_data_eq( h2, data.htwo );
+						filter_data_eq( h3, data.hthree );
+						filter_data_eq( h4, data.hfour );
+						filter_data_eq( h5, data.hfive );
+						filter_data_eq( h6, data.hsix );
 
 						filter_data_eq( domain, data.domain );
 						filter_data_eq( url, data.url );
@@ -550,7 +611,8 @@ jQuery(document).ready(function($) {
 						filter_data_eq( anch, data.anch );
 						filter_data_eq( htag, data.htag );
 						filter_data_eq( plain, data.plain );
-						filter_data_eq( bold, data.bold );
+
+						filter_data_eq( speed, data.speed );
 
 						fetch_comp_key = data.comp_key;
 
@@ -590,14 +652,20 @@ jQuery(document).ready(function($) {
 						filter_data( words, data.text.count );
 						filter_data( links, data.text.links.num );
 						filter_data( links_ext, data.text.links.external );
-						filter_data( links_nof, data.text.links.nofollow );
 						filter_data( thr, data.text.ratio );
 						filter_data( images, data.design.image.count );
-						filter_data( speed, data.speed.down_time / 1000 );
 
 						filter_data( gplus, data.social.gplus );
 						filter_data( fb, data.social.fb_share );
 						filter_data( tw, data.social.twitter );
+
+						hding = jQuery.map(data.text.htags.names, function(el) { return el; });
+						hd_entry( 'h1', h1, hding );
+						hd_entry( 'h2', h2, hding );
+						hd_entry( 'h3', h3, hding );
+						hd_entry( 'h4', h4, hding );
+						hd_entry( 'h5', h5, hding );
+						hd_entry( 'h6', h6, hding );
 
 						filter_data( key_count, data.compete.num );
 						filter_data( key_per, data.compete.per );
@@ -610,7 +678,8 @@ jQuery(document).ready(function($) {
 						filter_data( anch, data.compete.anch );
 						filter_data( htag, data.compete.htag );
 						filter_data( plain, data.compete.plain );
-						filter_data( bold, data.compete.bold );
+
+						filter_data( speed, data.speed.down_time / 1000 );
 					}
 				},
 				error: function() {
@@ -633,69 +702,74 @@ jQuery(document).ready(function($) {
 			jQuery("#CompeteResult").addClass("disabled").attr("disabled", "disabled");
 		}
 
-		opt_words = comp_out( words, "Word", cnote.up, cnote.down, 0 );
-		opt_links = comp_out( links, "Links", cnote.up, cnote.down, 0 );
-		opt_links_ext = comp_out( links_ext, "ExtLinks", cnote.up, cnote.down, 0 );
-		opt_links_nof = comp_out( links_nof, "NofLinks", cnote.up, cnote.down, 0 );
-		opt_thr = comp_out( thr, "Thr", cnote.up, cnote.down, 1 );
-		opt_images = comp_out( images, "Images", cnote.up, cnote.down, 0 );
-		opt_speed = comp_out( speed, "Speed", cnote.up, cnote.down, 1 );
-		opt_gplus = comp_out( gplus, "Gp", cnote.up, cnote.down, 0 );
-		opt_fb = comp_out( fb, "Fb", cnote.up, cnote.down, 0 );
-		opt_tw = comp_out( tw, "Tw", cnote.up, cnote.down, 0 );
-		opt_key_count = comp_out( key_count, "KeysCount", cnote.up, cnote.down, 0 );
-		opt_key_per = comp_out( key_per, "KeysPercent", cnote.up, cnote.down, 3 );
 
-		opt_domain = comp_key_out( domain, "Domain", cnote.ok, cnote.no );
-		opt_url = comp_key_out( url, "Url", cnote.ok, cnote.no );
-		opt_title = comp_key_out( title, "Title", cnote.ok, cnote.no );
-		opt_desc = comp_key_out( desc, "Desc", cnote.ok, cnote.no );
-		opt_alt = comp_key_out( alt, "Alt", cnote.ok, cnote.no );
-		opt_anch = comp_key_out( anch, "Anch", cnote.ok, cnote.no );
-		opt_htag = comp_key_out( htag, "Htag", cnote.ok, cnote.no );
-		opt_plain = comp_key_out( plain, "Txt", cnote.ok, cnote.no );
-		opt_bold = comp_key_out( bold, "Bold", cnote.ok, cnote.no );
+		if ( client_free != 'free' && which_data != 'demo' ) {
 
-		if ( client_free != 'free' ) {
+			comp_out( words, "Word", cnote.ok, cnote.up, cnote.down, 0 );
+			comp_out( thr, "Thr", cnote.ok, cnote.up, cnote.down, 1 );
+			comp_out( links, "Links", cnote.ok, cnote.up, cnote.down, 0 );
+			comp_out( links_ext, "ExtLinks", cnote.ok, cnote.up, cnote.down, 0 );
+			comp_out( images, "ImagesCount", cnote.ok, cnote.up, cnote.down, 0 );
+			comp_out( key_count, "KeysCount", cnote.ok, cnote.up, cnote.down, 0 );
+			comp_out( key_per, "Keysperc", cnote.ok, cnote.up, cnote.down, 0 );
+
+			comp_out_social( gplus, fb, tw, "Gp", "Fb", "Tw", cnote.not_found );
+
+			comp_key_out( domain, "Domain", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( url, "Url", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( title, "Title", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( desc, "Desc", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( alt, "Alt", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( anch, "Anch", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( htag, "Htag", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( plain, "Txt", cnote.ok, cnote.no, cnote.not_found );
+
+			comp_key_out( h1, "h1", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( h2, "h2", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( h3, "h3", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( h4, "h4", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( h5, "h5", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( h6, "h6", cnote.ok, cnote.no, cnote.not_found );
+
+			comp_key_out( mobile, "Responsive", cnote.ok, cnote.no, cnote.not_found );
+			comp_key_out( ssl, "SslSec", cnote.ok, cnote.no, cnote.not_found );
+
+			comp_out_speed( speed, "Speed", cnote.not_found );
+
 			jQuery("#CompNum, #CompNumResult").html(comp_url.length);
 
-			//intel conclusion
-			optimize( opt_words, opt_thr, "TextDecession", cnote.word.ok, cnote.word.num_ok, cnote.word.ratio_ok, cnote.word.no, cnote.fail_opt );
-			optimize( opt_links, opt_links_ext, "LinkDecession", cnote.links.ok, cnote.links.num_ok, cnote.links.ext_ok, cnote.links.no, cnote.fail_opt );
-			optimize_images( opt_images, "ImageDecession", cnote.images.ok, cnote.images.more, cnote.images.less, cnote.fail_opt );
-			optimize_speed( opt_speed, "SpeedDecession", cnote.speed.ok, cnote.speed.no, cnote.fail_opt );
-			optimize_social( opt_gplus + opt_fb + opt_tw, "SocialDecession", cnote.social.ok, cnote.social.no, cnote.fail_opt );
-			optimize_social_focus( gplus, fb, tw, "FamousSocial" );
-			optimize_keys( opt_key_per, "KeyDecession", cnote.keys.ok, cnote.keys.more, cnote.keys.less, cnote.fail_opt );
-			optimize_key_location( opt_domain, opt_url, opt_title, opt_desc, opt_alt, opt_anch, opt_htag, opt_plain, "FamousKeys" );
-			optimize_bonus( ssl, mobile, "BonusDecession", "NumOfSsl", "NumOfMobile", cnote.bonus, cnote.fail_opt, cnote.all, cnote.none );
 		} else {
 			jQuery("#CompNum, #CompNumResult").html("");
 		}
 
 		//remove last data element after comparing or fetching
-		ssl.splice(-1, 1);
-		mobile.splice(-1, 1);
-		words.splice(-1, 1);
-		links.splice(-1, 1);
-		links_ext.splice(-1, 1);
-		links_nof.splice(-1, 1);
-		thr.splice(-1, 1);
-		images.splice(-1, 1);
-		speed.splice(-1, 1);
-		key_count.splice(-1, 1);
-		key_per.splice(-1, 1);
-		gplus.splice(-1, 1);
-		fb.splice(-1, 1);
-		tw.splice(-1, 1);
-		domain.splice(-1, 1);
-		title.splice(-1, 1);
-		url.splice(-1, 1);
-		desc.splice(-1, 1);
-		alt.splice(-1, 1);
-		anch.splice(-1, 1);
-		plain.splice(-1, 1);
-		bold.splice(-1, 1);
+		ssl.splice(0, 1);
+		mobile.splice(0, 1);
+		words.splice(0, 1);
+		links.splice(0, 1);
+		links_ext.splice(0, 1);
+		thr.splice(0, 1);
+		images.splice(0, 1);
+		key_count.splice(0, 1);
+		key_per.splice(0, 1);
+		gplus.splice(0, 1);
+		fb.splice(0, 1);
+		tw.splice(0, 1);
+		domain.splice(0, 1);
+		url.splice(0, 1);
+		title.splice(0, 1);
+		desc.splice(0, 1);
+		alt.splice(0, 1);
+		anch.splice(0, 1);
+		htag.splice(0, 1);
+		plain.splice(0, 1);
+		speed.splice(0, 1);
+		h1.splice(0, 1);
+		h2.splice(0, 1);
+		h3.splice(0, 1);
+		h4.splice(0, 1);
+		h5.splice(0, 1);
+		h6.splice(0, 1);
 	});
 
 	//save required data
@@ -720,7 +794,7 @@ jQuery(document).ready(function($) {
 		jQuery.ajax({
 			type: 'POST',
 			url: compete_ajax_object.ajax_url,
-			data: {'action': 'cgss_compete', 'type': 'save', 'id': client_id, 'comp_key': comp_key, 'comp_url': toObject(comp_url), 'ssl': toObject(ssl), 'mobile': toObject(mobile), 'words': toObject(words), 'links': toObject(links), 'links_ext': toObject(links_ext), 'links_nof': toObject(links_nof), 'thr': toObject(thr), 'images': toObject(images), 'speed': toObject(speed), 'key_count': toObject(key_count), 'key_per': toObject(key_per), 'gplus': toObject(gplus), 'fb': toObject(fb), 'tw': toObject(tw), 'domain': toObject(domain), 'title': toObject(title), 'url': toObject(url), 'desc': toObject(desc), 'alt': toObject(alt), 'anch': toObject(anch), 'plain': toObject(plain), 'bold': toObject(bold)},
+			data: {'action': 'cgss_compete', 'type': 'save', 'id': client_id, 'comp_key': comp_key, 'comp_url': toObject(comp_url), 'ssl': toObject(ssl), 'mobile': toObject(mobile), 'words': toObject(words), 'links': toObject(links), 'links_ext': toObject(links_ext), 'thr': toObject(thr), 'images': toObject(images), 'key_count': toObject(key_count), 'key_per': toObject(key_per), 'gplus': toObject(gplus), 'fb': toObject(fb), 'tw': toObject(tw), 'domain': toObject(domain), 'title': toObject(title), 'url': toObject(url), 'desc': toObject(desc), 'alt': toObject(alt), 'anch': toObject(anch), 'htag': toObject(htag), 'plain': toObject(plain), 'speed': toObject(speed), 'h1': toObject(h1), 'h2': toObject(h2), 'h3': toObject(h3), 'h4': toObject(h4), 'h5': toObject(h5), 'h6': toObject(h6)},
 			dataType: 'json',
 			success: function(data) {
 				//If scan fails
@@ -766,32 +840,35 @@ jQuery(document).ready(function($) {
 
 	//toggle accordion
 	tog_accord( 'comp-word' );
-	tog_accord( 'comp-links' );
-	tog_accord( 'comp-thr' );
-	tog_accord( 'comp-keys' );
 	tog_accord( 'comp-images' );
-	tog_accord( 'comp-snippet' );
-	tog_accord( 'comp-speed' );
+	tog_accord( 'comp-links' );
+	tog_accord( 'comp-heads' );
 	tog_accord( 'comp-shares' );
-	tog_accord( 'comp-more' );
-	tog_accord( 'comp-variant' );
-
-	jQuery("#CompeteWords tr:nth-child(3), #CompeteLinks tr:nth-child(3), #CompeteThr tr:nth-child(3), #CompeteSpeed tr:nth-child(3), #CompeteShares tr:nth-child(3), #CompeteKeys tr:nth-child(3), #CompeteImages tr:nth-child(3)").css("background-color", "#dff0d8");
-	jQuery("#CompeteShares tr:nth-child(3) td:nth-child(1)").html(cnote.avg);
-	jQuery("#CompeteWords tr:nth-child(4), #CompeteLinks tr:nth-child(4), #CompeteThr tr:nth-child(4), #CompeteSpeed tr:nth-child(4), #CompeteShares tr:nth-child(4), #CompeteKeys tr:nth-child(4), #CompeteImages tr:nth-child(4)").css("background-color", "#fcf8e3");
+	tog_accord( 'comp-keys' );
+	tog_accord( 'comp-variants' );
+	tog_accord( 'comp-snippet' );
 
 	//hide accordion inside
 	jQuery("#inside-comp-word").hide();
-	jQuery("#inside-comp-links").hide();
-	jQuery("#inside-comp-thr").hide();
-	jQuery("#inside-comp-keys").hide();
 	jQuery("#inside-comp-images").hide();
-	jQuery("#inside-comp-speed").hide();
+	jQuery("#inside-comp-links").hide();
+	jQuery("#inside-comp-heads").hide();
 	jQuery("#inside-comp-shares").hide();
+	jQuery("#inside-comp-keys").hide();
+	jQuery("#inside-comp-variants").hide();
+	jQuery("#inside-comp-snippet").hide();
 
 	//toggle input lebel help
 	tog_help( 'focus-key' );
 	tog_help( 'compete-url' );
+
+	//toggle compete box help
+	tog_compete_help( 'Words' );
+	tog_compete_help( 'Links' );
+	tog_compete_help( 'Heads' );
+	tog_compete_help( 'Keys' );
+	tog_compete_help( 'Snip' );
+	tog_compete_help( 'Share' );
 
 	//notice hide
 	jQuery(document).on('click', '.cgss-scan-failed-btn', function() {

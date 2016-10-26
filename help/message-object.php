@@ -117,6 +117,8 @@ class CGSS_MSG {
 					'all' => __( 'All', 'cgss' ),
 					'none' => __( 'None', 'cgss' ),
 					'err_note' => $this->err_notice( '' ),
+					'not_found' => $this->i() . __( 'ERROR', 'cgss' ),
+					'have' => __( 'You have keyword here', 'cgss' ),
 					'same_domain' => $this->err_notice( __( 'Competitors should be from different domain.', 'cgss' ) ),
 					'fetch' => array(
 									'ok' => $this->suc_notice( __( 'Report fetched and shown.', 'cgss' ) ),
@@ -194,6 +196,11 @@ class CGSS_MSG {
 		return '<span class="danger-back white">&nbsp;' . __( 'disabled', 'cgss' ) . '&nbsp;</span>';
 	}
 
+	//i mark.
+	public function i() {
+		return $this->dashicon( 'info warning-icon' );
+	}
+
 	//green tick mark.
 	public function ok() {
 		return $this->dashicon( 'yes success-icon' );
@@ -239,19 +246,19 @@ class CGSS_MSG {
 		return $this->dashicon( 'images-alt2' );
 	}
 
-	//for html in any page.
-	public function dashicon( $icon ) {
-		return '<span class="dashicons dashicons-' . $icon . '"></span>';
-	}
-
 	//green tick mark.
 	public function up() {
-		return $this->dashicon( 'arrow-up warning-icon' );
+		return $this->dashicon( 'arrow-up danger-icon' );
 	}
 
 	//green tick mark.
 	public function down() {
-		return $this->dashicon( 'arrow-down warning-icon' );
+		return $this->dashicon( 'arrow-down danger-icon' );
+	}
+
+	//for html in any page.
+	public function dashicon( $icon ) {
+		return '<span class="dashicons dashicons-' . $icon . '"></span>';
 	}
 
 } ?>

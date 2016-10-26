@@ -3,8 +3,8 @@ Contributors: nirjhar_lo
 Donate Link: http://gogretel.com/
 Tags: seo checker, seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
 Requires at Least: 4.0
-Tested Up To: 4.3
-Stable tag: 2.3.1
+Tested Up To: 4.3.1
+Stable tag: 2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -196,6 +196,12 @@ Automatic updates from WordPress repository is very easy as always. Please ensur
 
 List of `Stable versions` with release date and purpose.
 
+= Version 2.4 =
+`Release Date: October 6th, 2015`
+1. New graphical data visualization on competitive analysis extension demo.
+2. Extension features for nofollow links, bold keywords removed.
+3. Response time bug fixed in Server Seo Status.
+
 = Version 2.3.1 =
 `Release Date: September 16th, 2015`
 1. 2 bugs fixed: Corrected keyword density formula and UI buttons behaviour, while scan in process.
@@ -256,4 +262,4 @@ First Release. For beta testing.
 
 == Upgrade Notice ==
 
-Correction of keyword density formula. Now comes with premium extension demo.
+Redefined interface of premium extension demo.

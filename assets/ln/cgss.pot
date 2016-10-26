@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Complete Google SEO Scan 2.3\n"
 "Report-Msgid-Bugs-To: info@gogretel.com\n"
-"POT-Creation-Date: 2015-09-16 00:39+0530\n"
-"PO-Revision-Date: 2015-09-16 00:39+0530\n"
+"POT-Creation-Date: 2015-10-05 14:34+0530\n"
+"PO-Revision-Date: 2015-10-05 14:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: GoGretel <info@gogretel.com>\n"
 "Language: en_US\n"
@@ -48,7 +48,7 @@ msgid "Seo Scan"
 msgstr ""
 
 #: ../complete-google-seo-scan.php:256
-msgid "For each post types, number of webpages per \"Seo Status\" page"
+msgid "For each post types, number of webpages per \"Scan Status\" page"
 msgstr ""
 
 #: ../complete-google-seo-scan.php:287
@@ -56,7 +56,7 @@ msgid "Choose Post types to show"
 msgstr ""
 
 #: ../core/ajax-handle.php:62 ../core/compete.php:12 ../core/compete.php:30
-#: ../core/compete.php:66 ../core/compete.php:105 ../core/overview-ajax.php:16
+#: ../core/compete.php:66 ../core/compete.php:108 ../core/overview-ajax.php:16
 msgid "Invalid Request"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: ../user/front-end.php:160 ../user/front-end.php:299
+#: ../user/front-end.php:160 ../user/display/compete-display.php:174
 msgid "Url"
 msgstr ""
 
@@ -146,7 +146,8 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: ../user/front-end.php:208 ../user/front-end.php:506
+#: ../user/front-end.php:208 ../user/front-end.php:474
+#: ../user/display/compete-display.php:227
 msgid "SSL security"
 msgstr ""
 
@@ -158,7 +159,7 @@ msgstr ""
 msgid "IP forwarding"
 msgstr ""
 
-#: ../user/front-end.php:211 ../user/front-end.php:531
+#: ../user/front-end.php:211 ../user/front-end.php:499
 msgid "Gzip Compression"
 msgstr ""
 
@@ -166,7 +167,7 @@ msgstr ""
 msgid "Cache"
 msgstr ""
 
-#: ../user/front-end.php:213 ../user/front-end.php:513
+#: ../user/front-end.php:213 ../user/front-end.php:481
 msgid "If modified since"
 msgstr ""
 
@@ -174,458 +175,430 @@ msgstr ""
 msgid "Response Time"
 msgstr ""
 
-#: ../user/front-end.php:214 ../user/front-end.php:526
+#: ../user/front-end.php:214 ../user/front-end.php:494
 msgid "miliseconds"
 msgstr ""
 
-#: ../user/front-end.php:221 ../user/front-end.php:559
-#: ../user/front-end.php:566
+#: ../user/front-end.php:221 ../user/front-end.php:527
+#: ../user/front-end.php:534
 msgid "More"
 msgstr ""
 
-#: ../user/front-end.php:253
-msgid "Maximum"
-msgstr ""
-
 #: ../user/front-end.php:254
-msgid "Minimum"
-msgstr ""
-
-#: ../user/front-end.php:255
-msgid "Optimum Range"
-msgstr ""
-
-#: ../user/front-end.php:256 ../user/display/compete-display.php:158
-msgid "Yours"
-msgstr ""
-
-#: ../user/front-end.php:297
-msgid "Domain"
-msgstr ""
-
-#: ../user/front-end.php:298
-msgid "Title Tag"
-msgstr ""
-
-#: ../user/front-end.php:300
-msgid "Meta Description"
-msgstr ""
-
-#: ../user/front-end.php:301
-msgid "Image Alt Tag"
-msgstr ""
-
-#: ../user/front-end.php:302
-msgid "Anchor text"
-msgstr ""
-
-#: ../user/front-end.php:303
-msgid "Heading tags"
-msgstr ""
-
-#: ../user/front-end.php:304
-msgid "Plain Text"
-msgstr ""
-
-#: ../user/front-end.php:305
-msgid "<strong>Bold Keyword</strong>"
-msgstr ""
-
-#: ../user/front-end.php:347
 msgid "Categories"
 msgstr ""
 
-#: ../user/front-end.php:362
+#: ../user/front-end.php:269
 msgid "Tags"
 msgstr ""
 
-#: ../user/front-end.php:371
+#: ../user/front-end.php:278
 msgid "All Time"
 msgstr ""
 
-#: ../user/front-end.php:372
+#: ../user/front-end.php:279
 msgid "Today"
 msgstr ""
 
-#: ../user/front-end.php:373
+#: ../user/front-end.php:280
 msgid "7 days"
 msgstr ""
 
-#: ../user/front-end.php:374
+#: ../user/front-end.php:281
 msgid "30 days"
 msgstr ""
 
-#: ../user/front-end.php:375
+#: ../user/front-end.php:282
 msgid "90 days"
 msgstr ""
 
-#: ../user/front-end.php:376
+#: ../user/front-end.php:283
 msgid "Never"
 msgstr ""
 
-#: ../user/front-end.php:403
+#: ../user/front-end.php:324
+msgid "Min"
+msgstr ""
+
+#: ../user/front-end.php:325
+msgid "Max"
+msgstr ""
+
+#: ../user/front-end.php:335
+msgid "Avg"
+msgstr ""
+
+#: ../user/front-end.php:336
+msgid "Optimum"
+msgstr ""
+
+#: ../user/front-end.php:337
+msgid "Your"
+msgstr ""
+
+#: ../user/front-end.php:371
 msgid "<code>< title</code> tag is not found. Put a proper tag."
 msgstr ""
 
-#: ../user/front-end.php:404
+#: ../user/front-end.php:372
 msgid ""
 "<code>< meta name=\"description\"</code> tag is not found. Put a proper tag."
 msgstr ""
 
-#: ../user/front-end.php:405
+#: ../user/front-end.php:373
 msgid ""
 "Long tail keywords are helpful for seo. Use them with percistance but don't "
 "spam."
 msgstr ""
 
-#: ../user/front-end.php:406
+#: ../user/front-end.php:374
 msgid "Write a minimum of 200 words atleast."
 msgstr ""
 
-#: ../user/front-end.php:407
+#: ../user/front-end.php:375
 msgid ""
 "Use enough text in comparison of HTML. But also don't use too much text."
 msgstr ""
 
-#: ../user/front-end.php:408
+#: ../user/front-end.php:376
 msgid ""
 "Text should have hierarchy with heading tags like <code>h1</code>, <code>h2</"
 "code>, <code>h3</code>."
 msgstr ""
 
-#: ../user/front-end.php:409
+#: ../user/front-end.php:377
 msgid ""
 "Crawler robots can not read image links. Please use some text inside links "
 "also."
 msgstr ""
 
-#: ../user/front-end.php:410
+#: ../user/front-end.php:378
 msgid "Use nofollow links and dofollow links in a reasonable propotion."
 msgstr ""
 
-#: ../user/front-end.php:411
+#: ../user/front-end.php:379
 msgid "Use external links and internal links in a reasonable propotion."
 msgstr ""
 
-#: ../user/front-end.php:412
+#: ../user/front-end.php:380
 msgid "The webpage looks like a link farm. Reduce number of links."
 msgstr ""
 
-#: ../user/front-end.php:413
+#: ../user/front-end.php:381
 msgid "Put proper <code>alt</code> tags in images."
 msgstr ""
 
-#: ../user/front-end.php:414
+#: ../user/front-end.php:382
 msgid "Don't use nested tables, i.e. tables within table columns."
 msgstr ""
 
-#: ../user/front-end.php:415
+#: ../user/front-end.php:383
 msgid "Remove style attributes from all HTML tags and use .css file instead."
 msgstr ""
 
-#: ../user/front-end.php:416
+#: ../user/front-end.php:384
 msgid ""
 "<code>< meta name=\"viewport\"</code> tag should be present for scaling "
 "webpage with device size."
 msgstr ""
 
-#: ../user/front-end.php:417
+#: ../user/front-end.php:385
 msgid ""
 "<code>@media</code> query is not found. The webpage should be mobile ready."
 msgstr ""
 
-#: ../user/front-end.php:418
+#: ../user/front-end.php:386
 msgid "Get an SSL certificate and use url with <code>https://</code>."
 msgstr ""
 
-#: ../user/front-end.php:419
+#: ../user/front-end.php:387
 msgid "Url is not clean and tidy. Don't use underscores and dynamic url."
 msgstr ""
 
-#: ../user/front-end.php:420
+#: ../user/front-end.php:388
 msgid "Url with and without WWW should redirect to same url. Resolve it."
 msgstr ""
 
-#: ../user/front-end.php:421
+#: ../user/front-end.php:389
 msgid "Put a canonical link."
 msgstr ""
 
-#: ../user/front-end.php:422
+#: ../user/front-end.php:390
 msgid "Enable If modified since header."
 msgstr ""
 
-#: ../user/front-end.php:423
+#: ../user/front-end.php:391
 msgid ""
 "<code>< meta name=\"robots\"</code> should not have <code>noindex</code> as "
 "value."
 msgstr ""
 
-#: ../user/front-end.php:424
+#: ../user/front-end.php:392
 msgid "Put an IP address and forward to page url"
 msgstr ""
 
-#: ../user/front-end.php:425
+#: ../user/front-end.php:393
 msgid "Header response time is too long. Improve website server."
 msgstr ""
 
-#: ../user/front-end.php:426
+#: ../user/front-end.php:394
 msgid "Enable gZip compression."
 msgstr ""
 
-#: ../user/front-end.php:427
+#: ../user/front-end.php:395
 msgid "Enable Browser Caching."
 msgstr ""
 
-#: ../user/front-end.php:428
+#: ../user/front-end.php:396
 msgid "Reduce number of HTTP requests made by .css and .js files."
 msgstr ""
 
-#: ../user/front-end.php:429
+#: ../user/front-end.php:397
 msgid "Compress resource files and increase loading speed."
 msgstr ""
 
-#: ../user/front-end.php:430
+#: ../user/front-end.php:398
 msgid ""
 "Complete all Open Graph Protocol <code>meta</code> tags, needed for social "
 "sharing."
 msgstr ""
 
-#: ../user/front-end.php:436
+#: ../user/front-end.php:404
 msgid "Help"
 msgstr ""
 
-#: ../user/front-end.php:461
+#: ../user/front-end.php:429
 msgid "Select popular words"
 msgstr ""
 
-#: ../user/front-end.php:465
+#: ../user/front-end.php:433
 msgid "Number of words"
 msgstr ""
 
-#: ../user/front-end.php:465
+#: ../user/front-end.php:433
 msgid ""
 "Minimum 200 words in a webpage is required. Write enough words to describe "
 "the page well."
 msgstr ""
 
-#: ../user/front-end.php:466
+#: ../user/front-end.php:434
 msgid "Text to html ratio"
 msgstr ""
 
-#: ../user/front-end.php:466
+#: ../user/front-end.php:434
 msgid ""
 "There must be enough text in webpage as compared with total size. About 15% "
 "to 70%"
 msgstr ""
 
-#: ../user/front-end.php:467
+#: ../user/front-end.php:435
 msgid "Text hierarchy"
 msgstr ""
 
-#: ../user/front-end.php:467
+#: ../user/front-end.php:435
 msgid ""
 "A bulk of text is not useful, rather text content with proper heading tags "
 "are needed."
 msgstr ""
 
-#: ../user/front-end.php:470
+#: ../user/front-end.php:438
 msgid "Image Links"
 msgstr ""
 
-#: ../user/front-end.php:470
+#: ../user/front-end.php:438
 msgid ""
 "Links that conatin only image but no text is considered poorly optimized."
 msgstr ""
 
-#: ../user/front-end.php:471
+#: ../user/front-end.php:439
 msgid "Nofollow Links"
 msgstr ""
 
-#: ../user/front-end.php:471
+#: ../user/front-end.php:439
 msgid ""
 "Use <code>rel=\"nofollow\"</code> links as many as you want, but don't block "
 "all links from crawling."
 msgstr ""
 
-#: ../user/front-end.php:472
+#: ../user/front-end.php:440 ../user/display/compete-display.php:115
 msgid "External Links"
 msgstr ""
 
-#: ../user/front-end.php:472
+#: ../user/front-end.php:440
 msgid ""
 "Links that points to other domain must be present, in a proportional number."
 msgstr ""
 
-#: ../user/front-end.php:490
+#: ../user/front-end.php:458
 msgid "Nested Tables"
 msgstr ""
 
-#: ../user/front-end.php:490
+#: ../user/front-end.php:458
 msgid ""
 "In markup of webpage, if table element is put inside a column of another "
 "table, it makes the page slow."
 msgstr ""
 
-#: ../user/front-end.php:491
+#: ../user/front-end.php:459
 msgid "Style Attributes"
 msgstr ""
 
-#: ../user/front-end.php:491
+#: ../user/front-end.php:459
 msgid ""
 "attribute present in markup tags is not a good practice and increases render "
 "time."
 msgstr ""
 
-#: ../user/front-end.php:494
+#: ../user/front-end.php:462
 msgid "Media Queries"
 msgstr ""
 
-#: ../user/front-end.php:494
+#: ../user/front-end.php:462
 msgid ""
 "For responsive web design, you need to have <code>@media</code> elements "
 "inside .css files."
 msgstr ""
 
-#: ../user/front-end.php:495
+#: ../user/front-end.php:463
 msgid "Viewport Tag"
 msgstr ""
 
-#: ../user/front-end.php:495
+#: ../user/front-end.php:463
 msgid ""
 "On <code>head</code> area of webpage, there is a tag which helps in scaling "
 "the dimensions according to display size."
 msgstr ""
 
-#: ../user/front-end.php:507
+#: ../user/front-end.php:475
 msgid "Static url "
 msgstr ""
 
-#: ../user/front-end.php:508
+#: ../user/front-end.php:476
 msgid "Use of underscores in Url"
 msgstr ""
 
-#: ../user/front-end.php:512
+#: ../user/front-end.php:480
 msgid "www Resolve"
 msgstr ""
 
-#: ../user/front-end.php:512
+#: ../user/front-end.php:480
 msgid ""
 "Check if url is showing same webpage for url with and without \"www.\" prefix"
 msgstr ""
 
-#: ../user/front-end.php:513
+#: ../user/front-end.php:481
 msgid ""
 "Let web server tell Google whether your content has changed since google bot "
 "last crawled your site."
 msgstr ""
 
-#: ../user/front-end.php:516
+#: ../user/front-end.php:484
 msgid "Canonical Url"
 msgstr ""
 
-#: ../user/front-end.php:516
+#: ../user/front-end.php:484
 msgid ""
 "Let Google know, same content is available through multiple URL structures "
 "or via syndication."
 msgstr ""
 
-#: ../user/front-end.php:517
+#: ../user/front-end.php:485
 msgid "Meta Robot"
 msgstr ""
 
-#: ../user/front-end.php:517
+#: ../user/front-end.php:485
 msgid ""
 "Visibility in search result stops on use of \"noindex\" value in robots meta "
 "tag."
 msgstr ""
 
-#: ../user/front-end.php:520
+#: ../user/front-end.php:488
 msgid "IP Forwarded"
 msgstr ""
 
-#: ../user/front-end.php:520
+#: ../user/front-end.php:488
 msgid ""
 "Check if server IP address (internet protocol) is forwarding to the same url "
 "or not."
 msgstr ""
 
-#: ../user/front-end.php:526
+#: ../user/front-end.php:494
 msgid "Header response time"
 msgstr ""
 
-#: ../user/front-end.php:527
+#: ../user/front-end.php:495
 msgid "Loading time"
 msgstr ""
 
-#: ../user/front-end.php:527 ../user/display/compete-display.php:127
+#: ../user/front-end.php:495
 msgid "Seconds"
 msgstr ""
 
-#: ../user/front-end.php:531
+#: ../user/front-end.php:499
 msgid ""
 "Deliver page content in a compressed .gzip file to reduce bandwidth and "
 "loading time."
 msgstr ""
 
-#: ../user/front-end.php:532
+#: ../user/front-end.php:500
 msgid "Browser Caching"
 msgstr ""
 
-#: ../user/front-end.php:532
+#: ../user/front-end.php:500
 msgid ""
 "Store page assets in browser of user for specific time, to load it faster "
 "next time."
 msgstr ""
 
-#: ../user/front-end.php:535 ../user/front-end.php:536
+#: ../user/front-end.php:503 ../user/front-end.php:504
 msgid "requests"
 msgstr ""
 
-#: ../user/front-end.php:559
+#: ../user/front-end.php:527
 msgid "Sample Facebook Snippet, by Open Graph Protocol Data"
 msgstr ""
 
-#: ../user/front-end.php:608
+#: ../user/front-end.php:576
 msgid "And that's fine."
 msgstr ""
 
-#: ../user/front-end.php:609
+#: ../user/front-end.php:577
 msgid "That's too much of text, please write less."
 msgstr ""
 
-#: ../user/front-end.php:610
+#: ../user/front-end.php:578
 msgid "That's too little text, please write more."
 msgstr ""
 
-#: ../user/front-end.php:617
+#: ../user/front-end.php:585
 msgid "Url is clean and tidy"
 msgstr ""
 
-#: ../user/front-end.php:618
+#: ../user/front-end.php:586
 msgid "Url has underscore"
 msgstr ""
 
-#: ../user/front-end.php:619
+#: ../user/front-end.php:587
 msgid "Url is dynamic"
 msgstr ""
 
-#: ../user/front-end.php:620
+#: ../user/front-end.php:588
 msgid "Url is dynamic and has underscore"
 msgstr ""
 
-#: ../user/front-end.php:783
+#: ../user/front-end.php:761
 msgid "items"
 msgstr ""
 
-#: ../user/front-end.php:788 ../user/display/overview-display.php:79
+#: ../user/front-end.php:766 ../user/display/overview-display.php:78
 msgid "of"
 msgstr ""
 
-#: ../user/front-end.php:803
+#: ../user/front-end.php:781
 msgid "All Items Matched"
 msgstr ""
 
-#: ../user/front-end.php:806
+#: ../user/front-end.php:784
 msgid "No Match Found"
 msgstr ""
 
@@ -645,51 +618,63 @@ msgstr ""
 msgid "Scan Overview"
 msgstr ""
 
-#: ../user/display/overview-display.php:19
+#: ../user/display/overview-display.php:18
 msgid ""
 "Before You Proceed, please complete scaning for <i>Server Seo Status</i> and "
 "<i>Design Seo Status</i> bellow. Then reload the page."
 msgstr ""
 
-#: ../user/display/overview-display.php:38
+#: ../user/display/overview-display.php:37
 msgid "ARCHIVES"
 msgstr ""
 
-#: ../user/display/overview-display.php:62
+#: ../user/display/overview-display.php:61
 msgid "SCAN ARCHIVE PAGE"
 msgstr ""
 
-#: ../user/display/overview-display.php:71
+#: ../user/display/overview-display.php:70
 msgid "Content Status"
 msgstr ""
 
-#: ../user/display/overview-display.php:72
+#: ../user/display/overview-display.php:71
 msgid "Fetch results from stored scan reports."
 msgstr ""
 
-#: ../user/display/overview-display.php:78
+#: ../user/display/overview-display.php:77
 msgid "Fetch Intel"
 msgstr ""
 
-#: ../user/display/overview-display.php:79
+#: ../user/display/overview-display.php:78
 msgid "reports processed."
 msgstr ""
 
-#: ../user/display/overview-display.php:81
+#: ../user/display/overview-display.php:80
 msgid "No pages are scaned. Use top navigation to go to list of pages."
 msgstr ""
 
-#: ../user/display/overview-display.php:121
+#: ../user/display/overview-display.php:120
 msgid "Server Seo Status"
 msgstr ""
 
-#: ../user/display/overview-display.php:126
-#: ../user/display/overview-display.php:146
+#: ../user/display/overview-display.php:125
+#: ../user/display/overview-display.php:145
 msgid "CHECK NOW"
 msgstr ""
 
-#: ../user/display/overview-display.php:139
+#: ../user/display/overview-display.php:138
 msgid "Design Seo Status"
+msgstr ""
+
+#: ../user/display/overview-display.php:163
+msgid "Know your competitors and easily take optimum seo measures to excel."
+msgstr ""
+
+#: ../user/display/overview-display.php:163
+msgid "Go here"
+msgstr ""
+
+#: ../user/display/overview-display.php:163
+msgid "and click any COMPETE button to see demo."
 msgstr ""
 
 #: ../user/display/compete-display.php:9
@@ -706,215 +691,281 @@ msgid ""
 "This is an an extension of Complete Google Seo Scan Plugin for WordPress"
 msgstr ""
 
-#: ../user/display/compete-display.php:24
+#: ../user/display/compete-display.php:23
 msgid "Get it for"
 msgstr ""
 
-#: ../user/display/compete-display.php:24
+#: ../user/display/compete-display.php:23
 msgid ""
 "install and activate this extension as a seperate plugin. Then you can use "
 "this feature here."
 msgstr ""
 
-#: ../user/display/compete-display.php:31
+#: ../user/display/compete-display.php:30
 msgid "Target Keyword"
 msgstr ""
 
-#: ../user/display/compete-display.php:33
+#: ../user/display/compete-display.php:32
 msgid ""
 "In real life seo, people target a specific long tail keyword for each "
 "webpage. So, put your long tail targeted Keyword here, say for example: red "
 "hot pizza"
 msgstr ""
 
-#: ../user/display/compete-display.php:37
+#: ../user/display/compete-display.php:36
 msgid "Competitor Urls"
 msgstr ""
 
-#: ../user/display/compete-display.php:39
+#: ../user/display/compete-display.php:38
 msgid ""
 "Search in Google for pages with higher ranks than your webpage for that "
 "focus keyword. Then enter those webpage urls one by one. Upto 100 "
 "competitors per analysis are allowed."
 msgstr ""
 
-#: ../user/display/compete-display.php:39
+#: ../user/display/compete-display.php:38
 msgid ""
 "Enter url with <code>http://</code> or <code>https://</code> as prefix, "
 "whichever is suitable. Sequence of entry doesn't matter."
 msgstr ""
 
-#: ../user/display/compete-display.php:45 ../user/display/scan-display.php:101
+#: ../user/display/compete-display.php:44 ../user/display/scan-display.php:101
 msgid "SCAN"
 msgstr ""
 
-#: ../user/display/compete-display.php:49
+#: ../user/display/compete-display.php:48
 msgid "MORE"
 msgstr ""
 
-#: ../user/display/compete-display.php:55
+#: ../user/display/compete-display.php:54
 msgid "COMPARE AND OPTIMIZE"
 msgstr ""
 
-#: ../user/display/compete-display.php:56
+#: ../user/display/compete-display.php:55
 msgid "RESET"
 msgstr ""
 
-#: ../user/display/compete-display.php:62
+#: ../user/display/compete-display.php:61
 msgid ""
 "Help documentation and support request link are made available, when you "
-"install and activate this feature."
+"install and activate this feature. Check out"
 msgstr ""
 
-#: ../user/display/compete-display.php:64
+#: ../user/display/compete-display.php:61
+msgid "terms of use"
+msgstr ""
+
+#: ../user/display/compete-display.php:61
+msgid "of our website, before you place an order."
+msgstr ""
+
+#: ../user/display/compete-display.php:63
 msgid ""
 "Take a look at <strong>Extension</strong> and <strong>Extension FAQ</strong> "
 "tab in inbuilt <strong>Help section</strong> (at top right corner of this "
 "page) for help."
 msgstr ""
 
-#: ../user/display/compete-display.php:69
+#: ../user/display/compete-display.php:68
 msgid "From Last Report"
 msgstr ""
 
-#: ../user/display/compete-display.php:70
+#: ../user/display/compete-display.php:69
 msgid "Fetch last competitive analysis results for this page."
 msgstr ""
 
-#: ../user/display/compete-display.php:71
+#: ../user/display/compete-display.php:70
 msgid "SHOW REPORT"
 msgstr ""
 
-#: ../user/display/compete-display.php:82
-msgid "COMPARATIVE RESULTS"
+#: ../user/display/compete-display.php:73
+#: ../user/display/compete-display.php:246
+msgid "Available with original extension"
 msgstr ""
 
-#: ../user/display/compete-display.php:83
+#: ../user/display/compete-display.php:80
+msgid "Find out how the result will help you?"
+msgstr ""
+
+#: ../user/display/compete-display.php:81
+msgid "Show Demo Result"
+msgstr ""
+
+#: ../user/display/compete-display.php:91
 msgid ""
 "This is a <strong>sample result</strong> for demo purpose only. After "
-"activating premium extension you can see original result."
+"activating original extension you can generate original result."
 msgstr ""
 
-#: ../user/display/compete-display.php:85
+#: ../user/display/compete-display.php:93
+msgid ""
+"RESEARCH COMPETITORS USING GOOGLE SEARCH AND TAKE 10 CRUCIAL SEO DECISIONS"
+msgstr ""
+
+#: ../user/display/compete-display.php:97
 msgid "RESULTS FROM <span id=\"CompNumResult\"></span> COMPETITORS"
 msgstr ""
 
-#: ../user/display/compete-display.php:89
-msgid "Words"
-msgstr ""
-
-#: ../user/display/compete-display.php:89
-#: ../user/display/compete-display.php:118
-#: ../user/display/compete-display.php:147 ../help/message-object.php:131
-msgid "Count"
-msgstr ""
-
-#: ../user/display/compete-display.php:95
+#: ../user/display/compete-display.php:105
 msgid "Number of Words"
 msgstr ""
 
-#: ../user/display/compete-display.php:98
-msgid "Links"
+#: ../user/display/compete-display.php:107
+msgid "Text to HTML ratio"
 msgstr ""
 
-#: ../user/display/compete-display.php:98
-msgid "Total Count"
-msgstr ""
-
-#: ../user/display/compete-display.php:98
-msgid "External"
-msgstr ""
-
-#: ../user/display/compete-display.php:98
-msgid "Nofollow"
-msgstr ""
-
-#: ../user/display/compete-display.php:104
-msgid "Number of Links"
+#: ../user/display/compete-display.php:108
+msgid ""
+"Words in content and text to html ratio in terms of size is shown. You may "
+"optimize the ratio by writing more words."
 msgstr ""
 
 #: ../user/display/compete-display.php:109
-msgid "Text/HTML"
+msgid "How many words to write?"
 msgstr ""
 
-#: ../user/display/compete-display.php:109
-#: ../user/display/compete-display.php:147 ../help/message-object.php:131
-msgid "Percent"
+#: ../user/display/compete-display.php:113
+msgid "Total Links"
 msgstr ""
 
-#: ../user/display/compete-display.php:115
-msgid "Text/HTML Ratio"
+#: ../user/display/compete-display.php:116
+msgid ""
+"First make sure number of total links are optimized. Then balance external "
+"links as compared to total links."
 msgstr ""
 
-#: ../user/display/compete-display.php:118
-msgid "Images"
+#: ../user/display/compete-display.php:117
+msgid "How many links to include?"
 msgstr ""
 
-#: ../user/display/compete-display.php:124
-msgid "Number of Images"
+#: ../user/display/compete-display.php:129
+msgid "means you have that heading tag"
 msgstr ""
 
-#: ../user/display/compete-display.php:127
-#: ../user/display/report-display.php:45
-msgid "Speed"
+#: ../user/display/compete-display.php:142
+msgid ""
+"Percentage based on total number of each heading tags, found in all "
+"competitors.<br />For example, if <code>h4</code> is mentaioned once or more "
+"in any competitor, +1 has been added to total number of <code>h4</code>."
 msgstr ""
 
-#: ../user/display/compete-display.php:133
-msgid "Loading Time"
+#: ../user/display/compete-display.php:143
+msgid "What are the necessary heading tags?"
 msgstr ""
 
-#: ../user/display/compete-display.php:138
-msgid "Shares"
+#: ../user/display/compete-display.php:154
+msgid "Keyword frrequency in"
 msgstr ""
 
-#: ../user/display/compete-display.php:144
-msgid "Number of Shares"
+#: ../user/display/compete-display.php:160
+msgid "keyword count in content"
 msgstr ""
 
-#: ../user/display/compete-display.php:147
-msgid "Keywords"
+#: ../user/display/compete-display.php:164
+msgid ""
+"Target keyword frequency represents use of keyword in total content. It must "
+"kept optimum even if number of keywords are not."
 msgstr ""
 
-#: ../user/display/compete-display.php:153
-msgid "Amount of Keyword"
-msgstr ""
-
-#: ../user/display/compete-display.php:158
-msgid "Parts"
-msgstr ""
-
-#: ../user/display/compete-display.php:158
-msgid "Among <span id=\"CompNum\"></span> Competitors"
-msgstr ""
-
-#: ../user/display/compete-display.php:169
-msgid "Usage of Keyword"
+#: ../user/display/compete-display.php:165
+msgid "How many times to use keyword?"
 msgstr ""
 
 #: ../user/display/compete-display.php:172
-msgid "Save this Report"
+msgid "Domain Name"
 msgstr ""
 
 #: ../user/display/compete-display.php:173
+msgid "Title tag"
+msgstr ""
+
+#: ../user/display/compete-display.php:175
+msgid "Meta description tag"
+msgstr ""
+
+#: ../user/display/compete-display.php:176
+msgid "Alt tag"
+msgstr ""
+
+#: ../user/display/compete-display.php:177
+msgid "Anchor text"
+msgstr ""
+
+#: ../user/display/compete-display.php:178
+msgid "Heading Tag"
+msgstr ""
+
+#: ../user/display/compete-display.php:179
+msgid "Plain text"
+msgstr ""
+
+#: ../user/display/compete-display.php:180
+msgid "means you have keyword there"
+msgstr ""
+
+#: ../user/display/compete-display.php:193
+msgid ""
+"Importance percentage of areas, according to target keyword found in those "
+"areas of all competitors.<br />For example, if target keyword is found once "
+"or more in total anchor text of any competitor, +1 is added to importance "
+"number for anchor text."
+msgstr ""
+
+#: ../user/display/compete-display.php:194
+msgid "Which area to focus for Keyword usage?"
+msgstr ""
+
+#: ../user/display/compete-display.php:218
+msgid ""
+"Each chart shows percentage share of each social networks among total "
+"shares, taken from all competitors.<br />In Google+ share means +1s. In "
+"Facebook and Twitter share means number of likes and tweets respectively."
+msgstr ""
+
+#: ../user/display/compete-display.php:219
+msgid "Which social network to focus?"
+msgstr ""
+
+#: ../user/display/compete-display.php:226
+msgid "Competitors having ..."
+msgstr ""
+
+#: ../user/display/compete-display.php:227
+msgid "Responsive design"
+msgstr ""
+
+#: ../user/display/compete-display.php:232
+msgid "How many images will suit?"
+msgstr ""
+
+#: ../user/display/compete-display.php:241
+msgid "Save this Report"
+msgstr ""
+
+#: ../user/display/compete-display.php:242
 msgid "Store this competitive analysis result for future use."
 msgstr ""
 
-#: ../user/display/compete-display.php:174
+#: ../user/display/compete-display.php:243
 msgid "SAVE REPORT"
 msgstr ""
 
-#: ../user/display/compete-display.php:196
-msgid "Intel to take optimization decession"
+#: ../user/display/compete-display.php:253
+msgid "Average speed of competitors"
 msgstr ""
 
-#: ../user/display/compete-display.php:198
-msgid "In conclusion"
+#: ../user/display/compete-display.php:254
+msgid "seconds"
 msgstr ""
 
-#: ../user/display/compete-display.php:204
+#: ../user/display/compete-display.php:255
+msgid "compared to slowest that's faster by"
+msgstr ""
+
+#: ../user/display/compete-display.php:260
 msgid ""
-"Optimum range is calculated based on average and statistical standard "
-"deviation of data."
+"<strong>Optimum range</strong> is calculated based on average and "
+"statistical standard deviation of data."
 msgstr ""
 
 #: ../user/display/report-display.php:26
@@ -931,6 +982,10 @@ msgstr ""
 
 #: ../user/display/report-display.php:44
 msgid "Crawl"
+msgstr ""
+
+#: ../user/display/report-display.php:45
+msgid "Speed"
 msgstr ""
 
 #: ../user/display/report-display.php:60
@@ -973,6 +1028,12 @@ msgstr ""
 
 #: ../user/display/scan-display.php:120
 msgid "NEVER"
+msgstr ""
+
+#: ../user/display/scan-display.php:151
+msgid ""
+"Know your competitors and easily take optimum seo measures to excel. Click "
+"any COMPETE button to see demo."
 msgstr ""
 
 #: ../help/plugin-help-object.php:19
@@ -1315,10 +1376,15 @@ msgstr ""
 
 #: ../help/plugin-help-object.php:66
 msgid ""
-"Resulting report will have 8 tables, each with maximum, minimum, optimum "
-"range and your status. This tables are about usage of words, links, text/"
-"html ratio, images, loading time, social shares and keyword usage counts and "
-"keyword positions."
+"Resulting report will have 6 collapsible tables. 3 of them will graphical "
+"plot with maximum, minimum, optimum range and your status. Rest 3 tables "
+"will have percentage bar charts to answer questions."
+msgstr ""
+
+#: ../help/plugin-help-object.php:66
+msgid ""
+"More to these questions responsive design, SSL security, image usage and "
+"average speed are other points, you can learn about."
 msgstr ""
 
 #: ../help/plugin-help-object.php:66
@@ -1712,153 +1778,169 @@ msgid "None"
 msgstr ""
 
 #: ../help/message-object.php:120
-msgid "Competitors should be from different domain."
+msgid "ERROR"
+msgstr ""
+
+#: ../help/message-object.php:121
+msgid "You have keyword here"
 msgstr ""
 
 #: ../help/message-object.php:122
-msgid "Report fetched and shown."
-msgstr ""
-
-#: ../help/message-object.php:123
-msgid "Report fetch failed."
+msgid "Competitors should be from different domain."
 msgstr ""
 
 #: ../help/message-object.php:124
+msgid "Report fetched and shown."
+msgstr ""
+
+#: ../help/message-object.php:125
+msgid "Report fetch failed."
+msgstr ""
+
+#: ../help/message-object.php:126
 msgid "No saved report to fetch."
 msgstr ""
 
-#: ../help/message-object.php:127
+#: ../help/message-object.php:129
 msgid "Please enter a focus keyword."
 msgstr ""
 
-#: ../help/message-object.php:128
+#: ../help/message-object.php:130
 msgid "Focus keyword is too long. 32 words are allowed."
 msgstr ""
 
-#: ../help/message-object.php:129
+#: ../help/message-object.php:131
 msgid "Word in focus keyword is too long. 129 characters per word are allowed."
 msgstr ""
 
-#: ../help/message-object.php:131
+#: ../help/message-object.php:133
 msgid "Keyword"
 msgstr ""
 
-#: ../help/message-object.php:132
-msgid "Report Saved."
+#: ../help/message-object.php:133
+msgid "Count"
 msgstr ""
 
 #: ../help/message-object.php:133
-msgid "Report not Saved."
+msgid "Percent"
 msgstr ""
 
 #: ../help/message-object.php:134
+msgid "Report Saved."
+msgstr ""
+
+#: ../help/message-object.php:135
+msgid "Report not Saved."
+msgstr ""
+
+#: ../help/message-object.php:136
 msgid ""
 "That keyword is not found in content. You may RESET and scan with other "
 "keywords."
 msgstr ""
 
-#: ../help/message-object.php:135
+#: ../help/message-object.php:137
 msgid ""
 "That keyword is not found in content. You may RESET and scan with other "
 "variants."
 msgstr ""
 
-#: ../help/message-object.php:136
+#: ../help/message-object.php:138
 msgid ""
 "Scan Failed. Check your network, make sure that page exists and try again."
 msgstr ""
 
-#: ../help/message-object.php:138
+#: ../help/message-object.php:140
 msgid "Words and HTML seems adequate."
 msgstr ""
 
-#: ../help/message-object.php:139
+#: ../help/message-object.php:141
 msgid "Number of words are enough, but optimize HTML amount."
 msgstr ""
 
-#: ../help/message-object.php:140
+#: ../help/message-object.php:142
 msgid "Optimize number of words, while amount of HTML is ok."
 msgstr ""
 
-#: ../help/message-object.php:141
+#: ../help/message-object.php:143
 msgid "Both number of words and amount of HTML need to be optimized."
 msgstr ""
 
-#: ../help/message-object.php:144
+#: ../help/message-object.php:146
 msgid "Using proper amount of links(both internal and external)."
 msgstr ""
 
-#: ../help/message-object.php:145
+#: ../help/message-object.php:147
 msgid "Amount of links are fine but optimize external and internal link ratio."
 msgstr ""
 
-#: ../help/message-object.php:146
+#: ../help/message-object.php:148
 msgid "Enough external links, but optimize internal link numbers."
 msgstr ""
 
-#: ../help/message-object.php:147
+#: ../help/message-object.php:149
 msgid "Number of links are not optimized."
 msgstr ""
 
-#: ../help/message-object.php:150
+#: ../help/message-object.php:152
 msgid "Number of images are satisfactory."
 msgstr ""
 
-#: ../help/message-object.php:151
+#: ../help/message-object.php:153
 msgid "More number of images will be good."
 msgstr ""
 
-#: ../help/message-object.php:152
+#: ../help/message-object.php:154
 msgid "Reduce of number of images will be ideal."
 msgstr ""
 
-#: ../help/message-object.php:155
+#: ../help/message-object.php:157
 msgid "Loading time is balanced."
 msgstr ""
 
-#: ../help/message-object.php:156
+#: ../help/message-object.php:158
 msgid "You need to improve webpage speed."
 msgstr ""
 
-#: ../help/message-object.php:159 ../help/message-object.php:160
+#: ../help/message-object.php:161 ../help/message-object.php:162
 msgid "Focus social media network"
 msgstr ""
 
-#: ../help/message-object.php:159
+#: ../help/message-object.php:161
 msgid "Social popularity is fine."
 msgstr ""
 
-#: ../help/message-object.php:160
+#: ../help/message-object.php:162
 msgid "Improve social popularity."
 msgstr ""
 
-#: ../help/message-object.php:163
+#: ../help/message-object.php:165
 msgid "Repetation of keyword are ok. Important focus keyword usage area:"
 msgstr ""
 
-#: ../help/message-object.php:164
+#: ../help/message-object.php:166
 msgid "Use focus keyword more. Important focus keyword usage area:"
 msgstr ""
 
-#: ../help/message-object.php:165
+#: ../help/message-object.php:167
 msgid "Use focus keyword less. Important focus keyword usage area:"
 msgstr ""
 
-#: ../help/message-object.php:167
+#: ../help/message-object.php:169
 msgid ""
 "About <span id=\"NumOfSsl\"></span> have SSL certificate and <span id="
 "\"NumOfMobile\"></span> have responsive design. These are 2 seo factors."
 msgstr ""
 
-#: ../help/message-object.php:168
+#: ../help/message-object.php:170
 msgid "Could not optimize."
 msgstr ""
 
-#: ../help/message-object.php:189
+#: ../help/message-object.php:191
 msgid "enabled"
 msgstr ""
 
-#: ../help/message-object.php:194
+#: ../help/message-object.php:196
 msgid "disabled"
 msgstr ""
 

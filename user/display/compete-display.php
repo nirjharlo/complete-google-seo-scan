@@ -20,8 +20,7 @@
 							<?php if ( ! $xtend_install ) : ?>
 							<h3 class="theme-name"><?php _e( 'Competative Intelligence for On-page Optimization <strong>Demo</strong>', 'cgss' ); ?></h3>
 							<span class="theme-version">
-								<p><span class="success-icon"><?php echo $elem->dashicon( 'welcome-learn-more' ); ?></span> <?php _e( 'This is an an extension of Complete Google Seo Scan Plugin for WordPress', 'cgss' ); ?>.<br />
-								<a href="http://gogretel.com/checkout-2?edd_action=straight_to_gateway&download_id=570" target="_blank"><?php _e( 'Get it for', 'cgss' ); ?> $64</a>, <?php _e( 'install and activate this extension as a seperate plugin. Then you can use this feature here.', 'cgss' ); ?></p>
+								<p><span class="success-icon"><?php echo $elem->dashicon( 'welcome-learn-more' ); ?></span> <?php _e( 'This is an an extension of Complete Google Seo Scan Plugin for WordPress', 'cgss' ); ?>. <a href="http://gogretel.com/checkout-2?edd_action=straight_to_gateway&download_id=570" target="_blank"><?php _e( 'Get it for', 'cgss' ); ?> $64</a>, <?php _e( 'install and activate this extension as a seperate plugin. Then you can use this feature here.', 'cgss' ); ?></p>
 							</span>
 							<?php endif; ?>
 							<div class="compete-form-container">
@@ -59,19 +58,29 @@
 											</p>
 										</form>
 										<?php if ( ! $xtend_install ) : ?>
-											<p class="parent-theme"><?php _e( 'Help documentation and support request link are made available, when you install and activate this feature.', 'cgss' ); ?></p>
+											<p class="parent-theme"><?php _e( 'Help documentation and support request link are made available, when you install and activate this feature. Check out', 'cgss' ); ?> <a href="http://gogretel.com/terms/" target="_blank"><?php _e( 'terms of use', 'cgss' ); ?></a> <?php _e( 'of our website, before you place an order.', 'cgss' ); ?></p>
 										<?php else : ?>
 											<p class="parent-theme"><?php _e( 'Take a look at <strong>Extension</strong> and <strong>Extension FAQ</strong> tab in inbuilt <strong>Help section</strong> (at top right corner of this page) for help.', 'cgss' ); ?></p>
 										<?php endif; ?>
 									</div>
 									<div class="col-2">
 										<div class="grey-border-box">
-											<h4 class="success-icon"><?php _e( 'From Last Report', 'cgss' ); ?></h4>
+											<h4><?php _e( 'From Last Report', 'cgss' ); ?></h4>
 											<span><?php _e( 'Fetch last competitive analysis results for this page.', 'cgss' ); ?></p></span>
 											<button type="button" class="button fetch-compete"<?php echo ( ! $xtend_install ? ' disabled="disabled"' : '' ); ?>><?php _e( 'SHOW REPORT', 'cgss' ); ?></button>
 											<?php echo $elem->loading( 'fetch-result' ); ?>
+											<?php if ( ! $xtend_install ) : ?>
+												<br /><small><?php _e( 'Available with original extension', 'cgss' ); ?></small>
+											<?php endif; ?>
 										</div>
 										<span class="compete-fetch-msg"></span>
+										<?php if ( ! $xtend_install ) : ?>
+											<div class="clear"></div>
+											<div class="grey-border-box">
+												<p><?php _e( 'Find out how the result will help you?', 'cgss' ); ?></p>
+												<button class="button button-primary show-demo-result"><?php _e( 'Show Demo Result', 'cgss' ); ?></button>
+											</div>
+										<?php endif; ?>
 									</div>
 								</div>
 							</div>
@@ -79,129 +88,176 @@
 							<!--Compete Results-->
 							<div class="compete-result">
 								<?php if ( ! $xtend_install ) : ?>
-									<h4 class="theme-update"><?php _e( 'COMPARATIVE RESULTS', 'cgss' ); ?></h4>
-									<p class="parent-theme"><?php _e( 'This is a <strong>sample result</strong> for demo purpose only. After activating premium extension you can see original result.', 'cgss' ); ?></p>
-								<?php else : ?>
-									<h4 class="theme-update"><?php _e( 'RESULTS FROM <span id="CompNumResult"></span> COMPETITORS', 'cgss' ); ?></h4>
-								<?php endif; ?>
-								<div class="row">
-									<div class="col-2">
-										<?php $heads = array( __( 'Words', 'cgss' ), __( 'Count', 'cgss' ) );
-											$max = array( 'MaxWord' );
-											$min = array( 'MinWord' );
-											$avg = array( 'AvgWord' );
-											$you = array( 'YouWord' );
-											$word_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteWords' );
-											echo $accord->display( 'comp-word', __( 'Number of Words', 'cgss' ), $elem->dashicon( 'editor-alignleft' ), $word_table ); ?>
+									<p class="parent-theme"><?php _e( 'This is a <strong>sample result</strong> for demo purpose only. After activating original extension you can generate original result.', 'cgss' ); ?></p>
+									<div class="aligncenter">
+										<h4 class="theme-update"><?php _e( 'RESEARCH COMPETITORS USING GOOGLE SEARCH AND TAKE 10 CRUCIAL SEO DECISIONS', 'cgss' ); ?></h4>
 									</div>
+									<?php else : ?>
+									<div class="aligncenter">
+										<h4 class="theme-update"><?php _e( 'RESULTS FROM <span id="CompNumResult"></span> COMPETITORS', 'cgss' ); ?></h4>
+									</div>
+									<?php endif; ?>
+								<div class="clear"></div>
+								<div class="row">
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-2">
+										<?php $word_table = $elem->compiled_progress_bar( 'Word', array( 360, '1.5k', 452, '500 - 985', 608 . $elem->ok() ) ) .
+										'<span>' . __( 'Number of Words', 'cgss' ) . '</span><hr /><br />' .
+										$elem->compiled_progress_bar( 'Thr', array( 11, 26, 18.8, '14 - 20', 15 . $elem->ok() ) ) .
+										'<span>' . __( 'Text to HTML ratio', 'cgss' ) . '</span><hr /><br />' .
+										$elem->comp_help( 'Words', __( 'Words in content and text to html ratio in terms of size is shown. You may optimize the ratio by writing more words.', 'cgss' ) );
+										echo $accord->display( 'comp-word', __( 'How many words to write?', 'cgss' ), $elem->dashicon( 'editor-alignleft' ), $word_table ); ?>
+									</div>
+									<div class="col-2">
+										<?php $links_table = $elem->compiled_progress_bar( 'Links', array( 9, 36, 19, '16 - 29', 26 . $elem->ok() ) ) .
+										'<span>' . __( 'Total Links', 'cgss' ) . '</span><hr /><br />' .
+										$elem->compiled_progress_bar( 'ExtLinks', array( 5, 21, 12, '10 - 15', 9 . $elem->down() ) ) .
+										'<span>' . __( 'External Links', 'cgss' ) . '</span><hr /><br />' .
+										$elem->comp_help( 'Links', __( 'First make sure number of total links are optimized. Then balance external links as compared to total links.', 'cgss' ) );
+										echo $accord->display( 'comp-links', __( 'How many links to include?', 'cgss' ), $elem->dashicon( 'networking' ), $links_table ); ?>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-1 hide-mobile"></div>
 									<div class="col-4">
-										<?php $heads = array( __( 'Links', 'cgss' ), __( 'Total Count', 'cgss' ), __( 'External', 'cgss' ), __( 'Nofollow', 'cgss' ) );
-											$max = array( 'MaxLinks', 'MaxExtLinks', 'MaxNofLinks' );
-											$min = array( 'MinLinks', 'MinExtLinks', 'MinNofLinks' );
-											$avg = array( 'AvgLinks', 'AvgExtLinks', 'AvgNofLinks' );
-											$you = array( 'YouLinks', 'YouExtLinks', 'YouNofLinks' );
-											$links_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteLinks' );
-											echo $accord->display( 'comp-links', __( 'Number of Links', 'cgss' ), $elem->dashicon( 'networking' ), $links_table ); ?>
+										<?php $h1 = $elem->progress_bar( 'Comph1', 'h1' . '<span id="Youh1"></span>', '8' );
+											$h2 = $elem->progress_bar( 'Comph2', 'h2' . '<span id="Youh2">' . $elem->ok() . '</span>', '30' );
+											$h3 = $elem->progress_bar( 'Comph3', 'h3' . '<span id="Youh3"></span>', '80' );
+											$h4 = $elem->progress_bar( 'Comph4', 'h4' . '<span id="Youh4">' . $elem->ok() . '</span>', '62' );
+											$h5 = $elem->progress_bar( 'Comph5', 'h5' . '<span id="Youh5">' . $elem->ok() . '</span>', '11' );
+											$h6 = $elem->progress_bar( 'Comph6', 'h6' . '<span id="Youh6"></span>', '20' );
+											$snip_table = $elem->sign_blocks( __( 'means you have that heading tag', 'cgss' ), false, false ) .
+											'<div class="row">
+												<div class="col-3">
+													<div style="padding-right: 10px;">' .
+														$h1 . $h2 . $h3 .
+													'</div>
+												</div>
+												<div class="col-3">
+													<div style="padding-left: 10px;">' .
+														$h4 . $h5 . $h6 .
+													'</div>
+												</div>
+											</div>' .
+											$elem->comp_help( 'Heads', __( 'Percentage based on total number of each heading tags, found in all competitors.<br />For example, if <code>h4</code> is mentaioned once or more in any competitor, +1 has been added to total number of <code>h4</code>.', 'cgss' ) );
+											echo $accord->display( 'comp-heads', __( 'What are the necessary heading tags?', 'cgss' ), $elem->dashicon( 'tagcloud' ), $snip_table ); ?>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-2">
-										<?php $heads = array( __( 'Text/HTML', 'cgss' ), __( 'Percent', 'cgss' ) );
-											$max = array( 'MaxThr' );
-											$min = array( 'MinThr' );
-											$avg = array( 'AvgThr' );
-											$you = array( 'YouThr' );
-											$thr_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteThr' );
-											echo $accord->display( 'comp-thr', __( 'Text/HTML Ratio', 'cgss' ), $elem->dashicon( 'chart-pie' ), $thr_table ); ?>
-									</div>
-									<div class="col-2">
-										<?php $heads = array( __( 'Images', 'cgss' ), __( 'Count', 'cgss' ) );
-											$max = array( 'MaxImages' );
-											$min = array( 'MinImages' );
-											$avg = array( 'AvgImages' );
-											$you = array( 'YouImages' );
-											$images_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteImages' );
-											echo $accord->display( 'comp-images', __( 'Number of Images', 'cgss' ), $elem->dashicon( 'format-image' ), $images_table ); ?>
-									</div>
-									<div class="col-2">
-										<?php $heads = array( __( 'Speed', 'cgss' ), __( 'Seconds', 'cgss' ) );
-											$max = array( 'MaxSpeed' );
-											$min = array( 'MinSpeed' );
-											$avg = array( 'AvgSpeed' );
-											$you = array( 'YouSpeed' );
-											$speed_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteSpeed' );
-											echo $accord->display( 'comp-speed', __( 'Loading Time', 'cgss' ), $elem->dashicon( 'clock' ), $speed_table ); ?>
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-4">
+										<?php $keys_table = '
+										<div class="row">
+											<div class="col-3">
+												<div style="padding-left: 10px;">' .
+													$elem->compiled_progress_bar( 'Keysperc', array( 0, 2.142, 1.1, '0.7 - 1.5', 1.78 . $elem->up() ) ) .
+													'<span>' . __( 'Keyword frrequency in', 'cgss' ) . ' %</span><hr />' .
+												'</div>
+											</div>
+											<div class="col-3">
+												<div style="padding-right: 10px;">' .
+													$elem->compiled_progress_bar( 'KeysCount', array( 0, 14, 5, '4 - 9', 6 . $elem->ok() ) ) .
+													'<span>' . __( 'keyword count in content', 'cgss' ) . '</span><hr />
+												</div>
+											</div>
+										</div>' .
+										$elem->comp_help( 'Keys', __( 'Target keyword frequency represents use of keyword in total content. It must kept optimum even if number of keywords are not.', 'cgss' ) );
+										echo $accord->display( 'comp-keys', __( 'How many times to use keyword?', 'cgss' ), $elem->dashicon( 'text' ), $keys_table ); ?>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-3">
-										<?php $heads = array( __( 'Shares', 'cgss' ), $elem->dashicon( 'googleplus' ), $elem->dashicon( 'facebook-alt' ), $elem->dashicon( 'twitter' ) );
-											$max = array( 'MaxGp', 'MaxFb', 'MaxTw' );
-											$min = array( 'MinGp', 'MinFb', 'MinTw' );
-											$avg = array( 'AvgGp', 'AvgFb', 'AvgTw' );
-											$you = array( 'YouGp', 'YouFb', 'YouTw' );
-											$share_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteShares' );
-											echo $accord->display( 'comp-shares', __( 'Number of Shares', 'cgss' ), $elem->dashicon( 'share' ), $share_table ); ?>
-									</div>
-									<div class="col-3">
-										<?php $heads = array( __( 'Keywords', 'cgss' ), __( 'Count', 'cgss' ), __( 'Percent', 'cgss' ) );
-											$max = array( 'MaxKeysCount', 'MaxKeysPercent' );
-											$min = array( 'MinKeysCount', 'MinKeysPercent' );
-											$avg = array( 'AvgKeysCount', 'AvgKeysPercent' );
-											$you = array( 'YouKeysCount', 'YouKeysPercent' );
-											$keys_table = $tables->comp_multi( $heads, $max, $min, $avg, $you, 'CompeteKeys' );
-											echo $accord->display( 'comp-keys', __( 'Amount of Keyword', 'cgss' ), $elem->dashicon( 'text' ), $keys_table ); ?>
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-4">
+										<?php
+											$domain = $elem->progress_bar( 'CompDomain', __( 'Domain Name', 'cgss' ) . '<span id="YouDomain"></span>', '8' );
+											$title = $elem->progress_bar( 'CompTitle', __( 'Title tag', 'cgss' ) . '<span id="YouTitle"></span>', '30' );
+											$url = $elem->progress_bar( 'CompUrl', __( 'Url', 'cgss' ) . '<span id="YouUrl">' . $elem->ok() . '</span>', '80' );
+											$desc = $elem->progress_bar( 'CompDesc', __( 'Meta description tag', 'cgss' ) . '<span id="YouDesc">' . $elem->ok() . '</span>', '62' );
+											$alt = $elem->progress_bar( 'CompAlt', __( 'Alt tag', 'cgss' ) . '<span id="YouAlt"></span>', '11' );
+											$anch = $elem->progress_bar( 'CompAnch', __( 'Anchor text', 'cgss' ) . '<span id="YouAnch"></span>', '20' );
+											$htag = $elem->progress_bar( 'CompHtag', __( 'Heading Tag', 'cgss' ) . '<span id="YouHtag"></span>', '50' );
+											$txt = $elem->progress_bar( 'CompTxt', __( 'Plain text', 'cgss' ) . '<span id="YouTxt">' . $elem->ok() . '</span>', '74' );
+											$snip_parts = $elem->sign_blocks( __( 'means you have keyword there', 'cgss' ), false, false ) .
+											'<div class="row">
+												<div class="col-3">
+													<div style="padding-right: 10px;">' .
+														$domain . $title . $url . $desc .
+													'</div>
+												</div>
+												<div class="col-3">
+													<div style="padding-left: 10px;">' .
+														$alt . $anch . $htag . $txt .
+													'</div>
+												</div>
+											</div>' .
+											$elem->comp_help( 'Snip', __( 'Importance percentage of areas, according to target keyword found in those areas of all competitors.<br />For example, if target keyword is found once or more in total anchor text of any competitor, +1 is added to importance number for anchor text.', 'cgss' ) );
+											echo $accord->display( 'comp-snippet', __( 'Which area to focus for Keyword usage?', 'cgss' ), $elem->dashicon( 'layout' ), $snip_parts ); ?>
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-3">
-										<?php $heads = array( __( 'Parts', 'cgss' ), __( 'Among <span id="CompNum"></span> Competitors', 'cgss' ), __( 'Yours', 'cgss' ), );
-											$domain = array( 'CompDomain', 'YouDomain' );
-											$title = array( 'CompTitle', 'YouTitle' );
-											$url = array( 'CompUrl', 'YouUrl' );
-											$desc = array( 'CompDesc', 'YouDesc' );
-											$alt = array( 'CompAlt', 'YouAlt' );
-											$anch = array( 'CompAnch', 'YouAnch' );
-											$htag = array( 'CompHtag', 'YouHtag' );
-											$txt = array( 'CompTxt', 'YouTxt' );
-											$bold = array( 'CompBold', 'YouBold' );
-											$snip_table = $tables->comp_key_snip( $heads, $domain, $title, $url, $desc, $alt, $anch, $htag, $bold, $txt );
-											echo $accord->display( 'comp-snippet', __( 'Usage of Keyword', 'cgss' ), $elem->dashicon( 'layout' ), $snip_table ); ?>
-									<div class="clear"></div>
-									<div class="grey-border-box">
-										<h4 class="success-icon"><?php _e( 'Save this Report', 'cgss' ); ?></h4>
-										<span><?php _e( 'Store this competitive analysis result for future use.', 'cgss' ); ?></p></span>
-										<button type="button" class="button save-compete"<?php echo ( ! $xtend_install ? ' disabled="disabled"' : '' ); ?>><?php _e( 'SAVE REPORT', 'cgss' ); ?></button>
-										<?php echo $elem->loading( 'save-result' ); ?>
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-4">
+										<?php $social_bars = '
+										<div class="row">
+											<div class="col-2">
+												<div style="padding-right: 10px; padding-left: 10px;">' . 
+													$elem->progress_bar( 'Gp', $elem->dashicon( 'googleplus' ) . ' <span id="TotalGp" class="gplus">82</span>', 35 ) .
+												'</div>
+											</div>
+											<div class="col-2">
+												<div style="padding-right: 10px; padding-left: 10px;">' .
+													$elem->progress_bar( 'Fb', $elem->dashicon( 'facebook-alt' ) . ' <span id="TotalFb" class="facebook">120</span>', 40 ) .
+												'</div>
+											</div>
+											<div class="col-2">
+												<div style="padding-right: 10px; padding-left: 10px;">' .
+													$elem->progress_bar( 'Tw', $elem->dashicon( 'twitter' ) . ' <span id="TotalTw" class="twitter">75</span>', 25 ) .
+												'</div>
+											</div>
+										</div>';
+										$share_table = $social_bars . $elem->comp_help( 'Share', __( 'Each chart shows percentage share of each social networks among total shares, taken from all competitors.<br />In Google+ share means +1s. In Facebook and Twitter share means number of likes and tweets respectively.', 'cgss' ) );
+										echo $accord->display( 'comp-shares', __( 'Which social network to focus?', 'cgss' ), $elem->dashicon( 'share' ), $share_table ); ?>
 									</div>
-									<span class="compete-save-msg"></span>
+								</div>
+								<div class="row">
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-2">
+										<div class="grey-border-box">
+											<h4><?php _e( 'Competitors having ...', 'cgss' ); ?></h4>
+											<?php echo $elem->progress_bar( 'CompResponsive', __( 'Responsive design', 'cgss' ), '74' ) . '<hr />' . $elem->progress_bar( 'CompSslSec', __( 'SSL security', 'cgss' ), '22' ); ?>
+										</div>
 									</div>
-									<div class="col-3">
-										<?php $mor_con = array(
-															array( 'TextDecession', 'Should you write more words or use more HTML markup?.', 'chart-bar' ),
-															array( 'LinkDecession', 'Do you need to link more to outside resources or inside pages?', 'chart-bar' ),
-															array( 'ImageDecession', 'Use of images vary greatly based on your niche. How many to use?', 'chart-bar' ),
-															array( 'SpeedDecession', 'Is this webpage fast enough to suit your users expectation?', 'chart-bar' ),
-															array( 'SocialDecession', 'How much social popularity will be adequate? Which network to focus?', 'chart-bar' ),
-															array( 'KeyDecession', 'How many times and where you should use focus keyword?', 'chart-bar' ),
-															array( 'BonusDecession', 'Bonus: How many sites are using ssl security and mobile responsive design?', 'chart-bar' ),
-														);
-											$more_table = '';
-											foreach ( $mor_con as $val ) {
-												$more_table .= '<div class="cgss-actions-comment">' .
-																'<span class="success-icon">' . $elem->dashicon( $val[2] ) . '</span> <span id="' . $val[0] . '">' . ( ! $xtend_install ? $val[1] : '' ) . '</span>
-															</div>';
-											}
-											if ( ! $xtend_install ) {
-												$concu = __( 'Intel to take optimization decession', 'cgss' );
-											} else {
-												$concu = __( 'In conclusion', 'cgss' );
-											}
-											echo $accord->display( 'comp-more', $concu, $elem->dashicon( 'screenoptions' ), $more_table ); ?>
+									<div class="col-2">
+										<div class="grey-border-box">
+											<h4><?php _e( 'How many images will suit?', 'cgss' ); ?></h4>
+											<?php echo $elem->compiled_progress_bar( 'ImagesCount', array( 5, 19, 12, '8 - 16', 12 . $elem->ok() ) ); ?>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-1 hide-mobile"></div>
+									<div class="col-2">
+										<div class="grey-border-box">
+											<h4><?php _e( 'Save this Report', 'cgss' ); ?></h4>
+											<span><?php _e( 'Store this competitive analysis result for future use.', 'cgss' ); ?></p></span>
+											<button type="button" class="button save-compete"<?php echo ( ! $xtend_install ? ' disabled="disabled"' : '' ); ?>><?php _e( 'SAVE REPORT', 'cgss' ); ?></button>
+											<?php echo $elem->loading( 'save-result' ); ?>
+											<?php if ( ! $xtend_install ) : ?>
+												<br /><small><?php _e( 'Available with original extension', 'cgss' ); ?></small>
+											<?php endif; ?>
+										</div>
+										<span class="compete-save-msg"></span>
+									</div>
+									<div class="col-2">
+										<div class="grey-border-box">
+											<h4><?php _e( 'Average speed of competitors', 'cgss' ); ?></h4>
+											<p><span id="AvgSpeed">2.361</span> <?php _e( 'seconds', 'cgss' ); ?></p>
+											<?php echo $elem->progress_bar( 'CompSpeed', __( 'compared to slowest that\'s faster by', 'cgss' ), '34' ); ?>
+										</div>
 									</div>
 								</div>
 								<?php if ( ! $xtend_install ) : ?>
-									<p class="parent-theme"><?php _e( 'Optimum range is calculated based on average and statistical standard deviation of data.', 'cgss' ); ?></p>
+									<p class="parent-theme"><?php _e( '<strong>Optimum range</strong> is calculated based on average and statistical standard deviation of data.', 'cgss' ); ?></p>
 								<?php endif; ?>
 							</div>
 						</div>

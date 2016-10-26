@@ -3,7 +3,7 @@
  Plugin Name: Complete Google SEO Scan
  Plugin URI: http://gogretel.com/
  Description: Find issues, check status and get fixes for Seo of individual pages and whole website.
- Version: 2.3.1
+ Version: 2.4
  Author: Gogretel
  Author URI: http://gogretel.com/
  Text Domain: cgss
@@ -253,7 +253,7 @@ function cgss_add_screen_options() {
 		return;
 
 	$args = array(
-			'label' => __('For each post types, number of webpages per "Seo Status" page', 'cgss'),
+			'label' => __('For each post types, number of webpages per "Scan Status" page', 'cgss'),
 			'default' => 20,
 			'option' => 'cgss_per_page'
 	);

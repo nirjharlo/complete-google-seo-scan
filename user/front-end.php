@@ -1,7 +1,7 @@
 <?php
 /**
  * @/user/front-end.php
- * on: 02.07.2015
+ * on: 03.10.2015
  * @since 2.0
  *
  * A compilation of classes and derived display classes for scan form and report display.
@@ -232,99 +232,6 @@ class cgss_do_table {
 			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data_type );
 			return $this->tbl->display( true );
 	}
-
-	//for multiple competative table
-	//@array $value, $max, $avg, $min, $you
-	public function comp_multi( $heads, $max, $min, $avg, $you, $id ) {
-
-			$this->tbl_hd_data = array();
-			foreach ( $heads as $val ) {
-				$this->tbl_hd_data[] = array(
-											'id' => false,
-											'class' => false,
-											'icon_class' => false,
-											'val' => $val,
-										);
-			}
-
-			//create input array for table content
-			$this->tbl_data = array();
-			$input_data = array(
-								array( __( 'Maximum', 'cgss' ), $max ),
-								array( __( 'Minimum', 'cgss' ), $min ),
-								array( __( 'Optimum Range', 'cgss' ), $avg ),
-								array( __( 'Yours', 'cgss' ), $you ),
-							);
-			foreach ( $input_data as $val ) {
-				$this->tbl_cols = array();
-				$this->tbl_cols[] = array(
-										'id' => false,
-										'class' => false,
-										'val' => $val[0],
-									);
-				foreach ( $val[1] as $key ) {
-					$this->tbl_cols[] = array(
-											'id' => false,
-											'class' => false,
-											'val' => '<span id="' . $key . '"></span>',
-										);
-				}
-				$this->tbl_data[] = $this->tbl_cols;
-			}
-
-			//instantiate the table
-			$this->tbl = new  CGSS_TABLE( $id, 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data );
-			return $this->tbl->display( false );
-	}
-
-	//specially for keywords in multiple competative table
-	//@array $value, $max, $avg, $min, $you
-	public function comp_key_snip( $heads, $domain, $title, $url, $desc, $alt, $anch, $htag, $bold, $txt ) {
-
-			$this->tbl_hd_data = array();
-			foreach ( $heads as $val ) {
-				$this->tbl_hd_data[] = array(
-											'id' => false,
-											'class' => false,
-											'icon_class' => false,
-											'val' => $val,
-										);
-			}
-
-			//create input array for table content
-			$this->tbl_data = array();
-			$input_data = array(
-								array( __( 'Domain', 'cgss' ), $domain ),
-								array( __( 'Title Tag', 'cgss' ), $title ),
-								array( __( 'Url', 'cgss' ), $url ),
-								array( __( 'Meta Description', 'cgss' ), $desc ),
-								array( __( 'Image Alt Tag', 'cgss' ), $alt ),
-								array( __( 'Anchor text', 'cgss' ), $anch ),
-								array( __( 'Heading tags', 'cgss' ), $htag ),
-								array( __( 'Plain Text', 'cgss' ), $txt ),
-								array( __( '<strong>Bold Keyword</strong>', 'cgss' ), $bold ),
-							);
-			foreach ( $input_data as $val ) {
-				$this->tbl_cols = array();
-				$this->tbl_cols[] = array(
-										'id' => false,
-										'class' => false,
-										'val' => $val[0],
-									);
-				foreach ( $val[1] as $key ) {
-					$this->tbl_cols[] = array(
-											'id' => false,
-											'class' => false,
-											'val' => '<span id="' . $key . '"></span>',
-										);
-				}
-				$this->tbl_data[] = $this->tbl_cols;
-			}
-
-			//instantiate the table
-			$this->tbl = new  CGSS_TABLE( 'PostTypeData', 'wp-list-table widefat fixed striped pages', 'iedit author-self type-post status-publish format-standard has-post-thumbnail hentry', false, $this->tbl_hd_data, $this->tbl_data );
-			return $this->tbl->display( false );
-	}
 }
 
 //Get list of post types with nick-name and visible name
@@ -380,6 +287,67 @@ class cgss_do_dpd {
 
 //Create required elements for display
 class cgss_elements {
+
+	//compete help
+	public function comp_help( $id, $txt ) {
+		return '<div id="' . $id . 'Help" class="' . $id . '-comp-help"><span>' . $txt . '</span></div><a href="#" id="' . $id . 'HelpTrigger" class="alignright" style="display: block;">' . __( 'Help', 'cgss' ) . '</a><br />';
+	}
+
+	//bar signatures
+	public function bar_blocks( $success, $medium, $failed ) {
+		return '<br /><p>
+					<div class="cover-bar-block">
+						<div class="success-block success-back"></div>&nbsp;<small>' . $success . '</small>
+					</div>
+					<div class="cover-bar-block">
+						<div class="warning-block warning-back"></div>&nbsp;<small>' . $medium . '</small>
+					</div>
+					<div class="cover-bar-block">
+						<div class="faliure-block danger-back"></div>&nbsp;<small>' . $failed . '</small>
+					</div>
+				</p><br />';
+	}
+
+	//bar signatures
+	public function sign_blocks( $success, $medium, $failed ) {
+		return '<p>' .
+					( $success ? '<div class="cover-bar-block">' . $this->ok() . '&nbsp;<small>' . $success . '</small></div>' : '' ) .
+					( $medium ? '<div class="cover-bar-block">' . $this->flag() . '&nbsp;<small>' . $medium . '</small></div>' : '' ) .
+					( $failed ? '<div class="cover-bar-block">' . $this->no() . '&nbsp;<small>' . $failed . '</small></div>' : '' ) .
+				'</p><br />';
+	}
+
+	//progress bar
+	public function compiled_progress_bar( $id, $sample ) {
+		return '<div class="clear"></div>
+				<div class="part-colors">
+					<small class="cgss-box-num cover-bar-block alignleft">' . __( 'Min', 'cgss' ) . ' <small id="Min' . $id . '">' . $sample[0] . '</small></small>
+					<small class="cgss-box-num cover-bar-block alignright">' . __( 'Max', 'cgss' ) . ' <small id="Max' . $id . '">' . $sample[1] . '</small></small>
+					<div class="part-colors-cover-optimum">
+						<div class="part-colors-fill" style="width: 99%; background: #ffffff;">
+							<div id="StartOpt' . $id . '" class="part-colors-fill" style="width: 70%; background: #8bba30;">
+								<div id="EndOpt' . $id . '" class="part-colors-fill" style="width: 30%; background: #ffffff;">
+									<div class="part-colors-fill" style="width: 3px; background: #6495ed;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cover-bar-block alignleft"><small>' . __( 'Avg', 'cgss' ) . ' <small id="Avg' . $id . '">' . $sample[2] . '</small></small></div>
+					<div class="cover-bar-block-opt alignleft"><small>' . __( 'Optimum', 'cgss' ) . ' <small id="Opt' . $id . '">' . $sample[3] . '</small></small></div>
+					<div class="cover-bar-block alignleft"><small>' . __( 'Your', 'cgss' ) . ' <small id="You' . $id . '">' . $sample[4] . '</small></small></div>
+				</div>
+				<div class="clear"></div>';
+	}
+
+	//progress bar
+	public function progress_bar( $id, $txt, $len ) {
+		return '<div id="' . $id . '" class="part-colors">' .
+					'<small>' . $txt . '</small><small class="alignright">' . $len . '%</small>' .
+					'<div class="part-colors-cover">
+						<div class="part-colors-fill" style="width: ' . $len . '%; background: #6495ed;"></div>
+					</div>
+				</div>';
+	}
 
 	//Help data for report display
 	public function report_show() {
@@ -664,6 +632,16 @@ class cgss_elements {
 	//Create danger icon 
 	public function no() {
 		return $this->dashicon( 'no-alt danger-icon' );
+	}
+
+	//green tick mark.
+	public function up() {
+		return $this->dashicon( 'arrow-up danger-icon' );
+	}
+
+	//green tick mark.
+	public function down() {
+		return $this->dashicon( 'arrow-down danger-icon' );
 	}
 
 	//@param string $class_part Rest part of class to complete 

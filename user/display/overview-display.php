@@ -13,8 +13,7 @@
 	$design_data = new CGSS_GET_DESIGN();
 	$design = $design_data->fetch();
 
-	if ( ! $server or ! $design ) :
-	?>
+	if ( ! $server or ! $design ) :	?>
 		<div class="error notice is-dismissible">
 			<p><?php _e( 'Before You Proceed, please complete scaning for <i>Server Seo Status</i> and <i>Design Seo Status</i> bellow. Then reload the page.', 'cgss' ); ?></p>
 			<button type="button" class="notice-dismiss">
@@ -158,4 +157,13 @@
 	</div>
 	<!--Display Report-->
 	<?php require_once('report-display.php'); ?>
+
+	<?php if ( ! $xtend_install ) : ?>
+		<div class="updated notice is-dismissible">
+			<p><?php echo $elem->dashicon('chart-line'); ?> <?php _e( 'Know your competitors and easily take optimum seo measures to excel.', 'cgss' ); ?> <a href="<?php echo admin_url() . 'admin.php?page=seo-scan-post'; ?>"><?php _e( 'Go here', 'cgss' ); ?></a> <?php _e( 'and click any COMPETE button to see demo.', 'cgss' ); ?></p>
+			<button type="button" class="notice-dismiss">
+				<span class="screen-reader-text">Dismis</span>
+			</button>
+		</div>
+	<?php endif; ?>
 </div>

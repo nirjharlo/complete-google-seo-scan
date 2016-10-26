@@ -76,10 +76,8 @@ if ( $request_type == 'save' ) {
 						'words' => $_POST['words'],
 						'links' => $_POST['links'],
 						'links_ext' => $_POST['links_ext'],
-						'links_nof' => $_POST['links_nof'],
 						'thr' => $_POST['thr'],
 						'images' => $_POST['images'],
-						'speed' => $_POST['speed'],
 						'key_count' => $_POST['key_count'],
 						'key_per' => $_POST['key_per'],
 						'gplus' => $_POST['gplus'],
@@ -91,8 +89,15 @@ if ( $request_type == 'save' ) {
 						'desc' => $_POST['desc'],
 						'alt' => $_POST['alt'],
 						'anch' => $_POST['anch'],
+						'htag' => $_POST['htag'],
 						'plain' => $_POST['plain'],
-						'bold' => $_POST['bold'],
+						'speed' => $_POST['speed'],
+						'hone' => $_POST['h1'],
+						'htwo' => $_POST['h2'],
+						'hthree' => $_POST['h3'],
+						'hfour' => $_POST['h4'],
+						'hfive' => $_POST['h5'],
+						'hsix' => $_POST['h6'],
 					);
 	//continue to save it on main plugin page
 }

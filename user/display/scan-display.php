@@ -99,7 +99,7 @@
 						</div>
 						<div class="plugin-card-bottom">
 							<a id="<?php echo get_permalink( $post_id ); ?>" class="scan-now button button-small" href="#<?php echo $post_id; ?>"><?php _e( 'SCAN', 'cgss' ); ?></a>
-								<a id="<?php echo get_permalink( $post_id ); ?>" name="<?php echo $post_id; ?>" class="compete-now button button-small" href="#<?php echo $post_id; ?>"><?php _e( 'COMPETE', 'cgss' ); ?></a>
+							<a id="<?php echo get_permalink( $post_id ); ?>" name="<?php echo $post_id; ?>" class="compete-now button button-small" href="#<?php echo $post_id; ?>"><?php _e( 'COMPETE', 'cgss' ); ?></a>
 							<div class="column-updated">
 								<!--Error Messages-->
 								<a href="#" id="ViewAgain-<?php echo $post_id; ?>" class="view-again">
@@ -142,6 +142,16 @@
 	<!--Display Report-->
 	<?php require_once('report-display.php'); ?>
 
-	<!--Display Competative intel-->
+	<!--Display Compete Report-->
 	<?php require_once('compete-display.php'); ?>
+
+	<?php if ( ! $xtend_install ) : ?>
+		<div class="clear"></div>
+		<div class="updated notice is-dismissible">
+			<p><?php echo $elem->dashicon('chart-line'); ?> <?php _e( 'Know your competitors and easily take optimum seo measures to excel. Click any COMPETE button to see demo.', 'cgss' ); ?></p>
+			<button type="button" class="notice-dismiss">
+				<span class="screen-reader-text">Dismis</span>
+			</button>
+		</div>
+	<?php endif; ?>
 </div>

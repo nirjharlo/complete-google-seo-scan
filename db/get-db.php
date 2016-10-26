@@ -418,7 +418,7 @@ class CGSS_GET_COMPETE_DB {
 		if ( $result ) {
 			$output = array( 'ping' => 'valid' );
 
-			$list_of_keys = array( 'id', 'comp_key', 'comp_url', 'ssl', 'mobile', 'words', 'links', 'links_ext', 'links_nof', 'thr', 'images', 'speed', 'key_count', 'key_per', 'gplus', 'fb', 'tw', 'domain', 'title', 'url', 'desc', 'alt', 'anch', 'plain', 'bold' );
+			$list_of_keys = array( 'id', 'comp_key', 'comp_url', 'ssl', 'mobile', 'words', 'links', 'links_ext', 'links_nof', 'thr', 'images', 'speed', 'key_count', 'key_per', 'gplus', 'fb', 'tw', 'domain', 'title', 'url', 'desc', 'alt', 'anch', 'htag', 'plain', 'speed', 'hone', 'htwo', 'hthree', 'hfour', 'hfive', 'hsix' );
 			foreach ( $list_of_keys as $key ) {
 				if ( array_key_exists( $key, $result ) ) {
 					$output = array_merge( $output, array( $key => $result[$key] ) );
