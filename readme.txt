@@ -1,10 +1,10 @@
-=== Complete Google SEO Scan ===
+=== Complete Google Seo Scan ===
 Contributors: nirjhar_lo
 Donate Link: http://gogretel.com/
 Tags: seo checker, seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
-Requires at Least: 4.0
-Tested Up To: 4.4
-Stable tag: 2.4.1
+Requires at Least: 4.5
+Tested Up To: 4.5.3
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -143,7 +143,7 @@ Thanks for giving it a thought. But a 5 star rating and shares will be more love
 
 == Installation ==
 
-How to install <a href="https://wordpress.org/plugins/complete-google-seo-scan/changelog/" title="see changelog for overview of versions">latest stable version</a> of plugin and geting it started?
+How to install <a href="https://wordpress.org/plugins/onpage-seo-checker/changelog/" title="see changelog for overview of versions">latest stable version</a> of plugin and geting it started?
 
 Just as regular procedure for any plugin, please backup your website before you install. It's just a precaution.
 
@@ -196,70 +196,21 @@ Automatic updates from WordPress repository is very easy as always. Please ensur
 
 List of `Stable versions` with release date and purpose.
 
-= Version 2.4 =
-`Release Date: October 6th, 2015`
-1. New graphical data visualization on competitive analysis extension demo.
-2. Extension features for nofollow links, bold keywords removed.
-3. Response time bug fixed in Server Seo Status.
+= Onpage Seo Checker - v2.5 =
+`Release Date: July 31th, 2016`
+1. Name change for avoiding any legal conflict from <a href="http://gogretel.com/resource/" target="_blank" title="complete google seo scan">Complete Google Seo Scan</a>.
+2. New scan page to check posts type items.
+3. Analysis page to analyze data fetched from checks and produce intelligence.
+4. Actions page to create Todo list for each website page.
+5. Monitor page to monitor status metrices.
+6. Settings page to optimize functionality.
+7. New extensions along with Xtend Competative Extension.
+8. New reporting interface.
+9. New crawlers functionality inside.
+10. Usage of database tables started.
 
-= Version 2.3.1 =
-`Release Date: September 16th, 2015`
-1. 2 bugs fixed: Corrected keyword density formula and UI buttons behaviour, while scan in process.
-2. Competitive analysis extension demo inclusion.
-
-= Version 2.2 =
-`Release Date: August 21st, 2015`
-1. User experience improvements:
-    - Scan archive pages also
-    - New report interface with hints
-    - Removed score filter, chaged time filter
-    - Changed processing animation
-    - New web page listing style
-    - Addition of screen options
-2. Increased scaning points from 16 to 29
-3. New Notification page for overview
-4. Enhanced Code architecture and documentation
-5. Includes 5 bug fixes
-    - To corectly show shares count in webpage listings
-    - Now supports uppercase tags and attributes
-	- Server cache and www resolve is improved
-	- Canonical link extraction and display bug fixed
-	- After scan, keyword display in page listing change
-	- snippet keywords applicable on captialized words
-	- Server scan help suggestions included and report suggestions improved
-6. Enhanced focus keyword finding
-7. Redesigned content intelligence in "Seo Overview" page interface
-8. Screen options for post types included in menu
-
-= Version 2.0.3 =
-`Release Date: July 9th, 2015`
-1. Use of Ajax for data-flow.
-2. Completely redesigned url input interface and report display.
-3. It now Deletes stored data upon uninstall.
-4. Includes 4 bug fixes
-    - On database manipulation for calculating avarage scan time and.
-    - On conditioning non-links in link formatting object.
-    - On Social media object, counting likes and shares.
-    - On link object, deleting non-links having href starting with #.
-
-= Version 1.6 =
-`Release Date: October 2nd, 2013`
-1. New interface with improved url input, report display.
-2. Includes bootstrap tooltip and google charts in reports. 
-
-= Version 1.5.1 =
-`Release Date: August 29th, 2013`
-More improved scanning.
-
-= Version 1.1 =
-`Release Date: August 29th, 2013`
-First modified with new scanning features.
-
-= Version 1.0 =
-`Release Date: August 26th, 2013`
-First Release. For beta testing.
-
+See on <a href="https://github.com/nirjharlo/complete-google-seo-scan/releases">Github</a>
 
 == Upgrade Notice ==
 
-Redefined interface of premium extension demo.
+Co9debase revamped.
