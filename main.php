@@ -51,17 +51,19 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		 */
 		public function __construct() {
 
-			$this->db_path = ONSEOCHECK_DB_PATH . 'db.php';
-			$this->core_path = ONSEOCHECK_CORE_PATH . 'core.php';
-			$this->user_path = ONSEOCHECK_USER_PATH . 'user.php';
-			$this->admin_path = ONSEOCHECK_ADMIN_PATH . 'admin.php';
-			$this->dependencies( $this->db_path, $this->core_path, $this->admin_path, $this->user_path );
+
+			$this->table = array(
+							'onseocheck_general',
+							'onseocheck_scan',
+							'onseocheck_compete',
+							);
+
+			$this->helpers();
 
 			register_activation_hook( ONSEOCHECK_FILE, array( $this, 'db_install' ) );
 			register_uninstall_hook( ONSEOCHECK_FILE, array( 'ONPAGE_SEO_CHECKER', 'db_uninstall' ) );
 
 			$this->notice = new ONSEOCHECK_NOTICE();
-			$this->db_exist = get_option( '_onseocheck_total_db_exist' );
 
 			if ( $this->db_exist != 3 ) { echo $this->notice->db_fail; return; }
 
@@ -70,14 +72,31 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		}
 
 
+		//Call the dependency files
+		public function helpers() {
+
+			require_once ('helper/db.php');
+
+
+			require_once( 'helper/notice.php' );
+			require_once( 'helper/help.php' );
+			require_once( 'helper/tabs.php' );
+
+
+			require_once ('helper/scan.php');
+
+
+			require_once ('helper/settings.php');
+			require_once ('helper/scripts.php');			
+
+		}
+
 
 		/**
 		 *
 		 * 1. Add settings page and then add the scripts
 		 * 2. Add styles, css and js to the settings page
 		 * 3. Build and handle AJAX for scan
-		 *
-		 * Calls in /user and /core objects in the included classes
 		 *
 		 */
 		public function functionality() {
@@ -104,12 +123,27 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		/**
 		 *
 		 * Uninstall the database vars
-		 * Defined_in: onpage-seo-checker/db/lib/uninstall.php
 		 *
 		 */
 		public function db_uninstall() {
 
-			if ( class_exists( 'ONSEOCHECK_DB_UNINSTALL' ) ) new ONSEOCHECK_DB_UNINSTALL();
+			//Important table name declarition
+			$tableName = array(
+							'onseocheck_general',
+							'onseocheck_scan',
+							'onseocheck_compete',
+							);
+
+			global $wpdb;
+			foreach ($$tableName as $value) {
+				$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}$value" );
+			}
+			$optionNames = array(
+								'_onseocheck_total_db_exist'
+							);
+			foreach ($optionNames as $value) {
+				delete_option($value);
+			}
 		}
 
 
@@ -117,38 +151,59 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		/**
 		 *
 		 * Install the database vars for pages and settings
-		 * Defined_in: onpage-seo-checker/db/lib/install.php
 		 *
 		 */
 		public function db_install() {
 
-			if ( class_exists( 'ONSEOCHECK_DB_INSTALL' ) ) new ONSEOCHECK_DB_INSTALL();
+			
+			foreach ($this->table as $tName) {
+
+				$db = new ONSEOCHECK_DB();
+				$db->table = $tName;
+
+				switch ($tName) {
+					case 'onseocheck_general':
+						$db->sql = "ID mediumint(9) NOT NULL AUTO_INCREMENT,
+									post_id mediumint(6) NOT NULL,
+									responseCode mediumint(3) NOT NULL,
+									post_type smallint(1) NOT NULL,
+									last_crawled datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+									first_detected datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+									marks smallint(4) NOT NULL,
+									score decimal(3,1) NOT NULL,
+									UNIQUE KEY ID (ID)";
+						break;
+					case 'onseocheck_scan':
+						$db->sql = "ID mediumint(9) NOT NULL AUTO_INCREMENT,
+									post_id mediumint(6) NOT NULL,
+									json_key varchar(256) NOT NULL,
+									data text NOT NULL,
+									UNIQUE KEY ID (ID)";
+						break;
+					case 'onseocheck_compete':
+						$db->sql = "ID mediumint(9) NOT NULL AUTO_INCREMENT,
+									post_id mediumint(6) NOT NULL,
+									json_key varchar(256) NOT NULL,
+									data text NOT NULL,
+									UNIQUE KEY ID (ID)";
+						break;
+
+				}
+				$db->build();
+				if (get_option('_onseocheck_total_db_exist') == '0') {
+					add_action( 'admin_notices', 'dbErrorMsg' );
+				}
+			}
 		}
 
 
+		//Notice of DB
+		public function dbErrorMsg() { ?>
 
-		/**
-		 *
-		 * Call dependent objets into main object
-		 * Following 4 front objects are called for this.
-		 *
-		 * Defined_in: onpage-seo-checker/db/db.php
-		 * onpage-seo-checker/core/core.php
-		 * onpage-seo-checker/user/user.php
-		 * onpage-seo-checker/admin/admin.php
-		 *
-		 */
-		private function dependencies( $db, $core, $admin, $user ) {
-
-			require_once( $db );
-			require_once( $core );
-			require_once( $admin );
-			require_once( $user );
-
-			if ( class_exists( 'ONSEOCHECK_DB' ) ) new ONSEOCHECK_DB();
-			if ( class_exists( 'ONSEOCHECK_USER' ) ) new ONSEOCHECK_USER();
-			if ( class_exists( 'ONSEOCHECK_CORE' ) ) new ONSEOCHECK_CORE();
-			if ( class_exists( 'ONSEOCHECK_ADMIN' ) ) new ONSEOCHECK_ADMIN();
+			<div class="notice notice-error is-dismissible">
+				<p><?php _e( 'Database table Not installed correctly.', 'onseocheck' ); ?></p>
+ 			</div>
+			<?php
 		}
 	}
 } ?>
