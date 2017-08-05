@@ -18,11 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Mother object to define OnPage Seo Checker plugin.
  *
  * 4 properties:
- * 1. $db_path		(string)	db.php path
- * 2. $core_path	(string)	core.php path
- * 3. $user_path	(string)	user.php path
- * 4. $admin_path	(string)	admin.php path
- * 5. $db_exist		(string)	db installed
  * 6. $notice		(obj)		notice object
  *
  */
@@ -31,11 +26,6 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 	final class ONPAGE_SEO_CHECKER {
 
 
-		private $db_path;
-		private $core_path;
-		private $user_path;
-		private $admin_path;
-		private $db_exist;
 		private $notice;
 
 
@@ -48,6 +38,9 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		 * 3. If database tables are not found, show database failure notice
 		 * 4. Execute WordPress actions
 		 *
+		 */
+		/**
+		 * [__construct ONPAGE_SEO_CHECKER constructure]
 		 */
 		public function __construct() {
 
@@ -65,14 +58,15 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 
 			$this->notice = new ONSEOCHECK_NOTICE();
 
-			if ( $this->db_exist != 3 ) { echo $this->notice->db_fail; return; }
-
 			add_action( 'init', array( $this, 'installation' ) );
 			add_action( 'init', array( $this, 'functionality' ) );
 		}
 
 
-		//Call the dependency files
+		/**
+		 * [helpers require modules]
+		 * 
+		 */
 		public function helpers() {
 
 			require_once ('helper/db.php');
@@ -147,12 +141,10 @@ if ( ! class_exists( 'ONPAGE_SEO_CHECKER' ) ) {
 		}
 
 
-
 		/**
-		 *
-		 * Install the database vars for pages and settings
-		 *
-		 */
+		* [db_install install the database vars for pages and settings]
+		* 
+		*/
 		public function db_install() {
 
 			
