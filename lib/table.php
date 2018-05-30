@@ -17,7 +17,6 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 	final class CGSS_TABLE extends WP_List_Table {
 
 
-
 		public function __construct() {
 
 			parent::__construct( [
@@ -30,16 +29,15 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 
 		//fetch the data using custom named method function
-		public static function get_Table( $per_page = 5, $page_number = 1 ) {
+		public static function get_posts( $per_page = 5, $page_number = 1 ) {
 
 			global $wpdb;
 
-			//Take pivotal from URL
-			$link = ( isset( $_GET['link'] ) ? $_GET['link'] : 'link' );
+			$page = isset($_GET['page']) ? substr($_GET['page'], 9) : 'post';
 
 			//Build the db query base
-			$sql = "SELECT * FROM {$wpdb->prefix}wordpress_table";
-			$sql .= " QUERIES with $link'";
+			$sql = "SELECT * FROM {$wpdb->prefix}posts";
+			$sql .= " QUERIES WHERE post_status='publish' AND post_type='$page'";
 
 			//Set filters in the query using $_REQUEST
 			if ( ! empty( $_REQUEST['orderby'] ) ) {
@@ -57,19 +55,10 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 
 
-		//Delete individual data
-		public static function delete_url( $id ) {
-
-			global $wpdb;
-			$wpdb->delete("{$wpdb->prefix}wordpress_table", array( 'ID' => $id ), array( '%s' ) );
-		}
-
-
-
 		//If there is no data to show
 		public function no_items() {
 
-			_e( 'No Items Added yet.', 'myPlugintextDomain' );
+			_e( 'No Items Added yet.', 'cgss' );
 		}
 
 
@@ -82,9 +71,11 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 			//Take pivotal from URL
 			$link = ( isset( $_GET['link'] ) ? $_GET['link'] : 'link' );
 
+			$page = isset($_GET['page']) ? substr($_GET['page'], 9) : 'post';
+
 			//Build the db query base
-			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}wordpress_table";
-			$sql .= " QUERIES with $link'";
+			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}posts";
+			$sql .= " QUERIES WHERE post_status='publish' AND post_type='$page'";
 
 			return $wpdb->get_var( $sql );
 		}
@@ -111,14 +102,15 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			switch ( $column_name ) {
 
-				case 'name':
+				case 'post_title':
 					//This is the first column
 					return $this->column_name( $item );
+				/**
 				case 'caseOne':
 				case 'caseTwo':
 				case 'caseThree':
 				return $item[ $column_name ];
-
+				*/
 			default:
 
 				//Show the whole array for troubleshooting purposes
@@ -141,10 +133,12 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			$columns = array(
 							'cb'		=> '<input type="checkbox" />',
-							'name'	=> __( 'Name', 'textdomain' ),
+							'post_title'	=> __( 'Title', 'cgss' ),
+							/**
 							'caseOne'	=> __( 'Case One', 'textdomain' ),
 							'caseTwo'	=> __( 'Case Two', 'textdomain' ),
 							'caseThree'	=> __( 'Case Three', 'textdomain' ),
+							*/
 						);
 			return $columns;
 		}
@@ -155,9 +149,11 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 		public function get_sortable_columns() {
 
 			$sortable_columns = array(
-				'name' => array( 'name', true ),
+				'post_title' => array( 'post_title', true ),
+				/**
 				'caseOne' => array( 'caseOne', false ),
 				'caseTwo' => array( 'caseTwo', false ),
+				*/
 			);
 			return $sortable_columns;
 		}
@@ -188,7 +184,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 				'per_page'    => $per_page,
 			) );
 
-			$this->items = self::get_Console( $per_page, $current_page );
+			$this->items = self::get_posts( $per_page, $current_page );
 		}
 
 

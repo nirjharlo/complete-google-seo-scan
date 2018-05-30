@@ -10,25 +10,19 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 		public function installation() {
 
-			/**
-			*
-			* Plugin installation
-			*
 			if (class_exists('CGSS_INSTALL')) {
 
 				$install = new CGSS_INSTALL();
-				$install->textDomin = 'textdomain';
-				$install->phpVerAllowed = '';
+				$install->textDomin = 'cgss';
+				$install->phpVerAllowed = '5.4';
 				$install->pluginPageLinks = array(
 												array(
-													'slug' => '',
-													'label' => ''
+													'slug' => '/wp-admin/admin.php?page=seo-scan',
+													'label' => __( 'Dashboard', 'cgss' )
 												),
 											);
 				$install->do();
 			}
-			*
-			*/
 		}
 
 
@@ -99,11 +93,10 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			$this->helpers();
 			$this->customization();
 
-			register_activation_hook( PLUGIN_FILE, array( $this, 'db_install' ) );
-			register_uninstall_hook( PLUGIN_FILE, array( 'CGSS_BUILD', 'db_uninstall' ) ); //$this won't work here.
+			register_activation_hook( CGSS_FILE, array( $this, 'db_install' ) );
+			register_uninstall_hook( CGSS_FILE, array( 'CGSS_BUILD', 'db_uninstall' ) ); //$this won't work here.
 
 			add_action('init', array($this, 'installation'));
-			add_action('init', array($this, 'functionality'));
 
 			$this->settings();
 		}

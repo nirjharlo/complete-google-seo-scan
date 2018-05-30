@@ -35,7 +35,7 @@ if ( ! class_exists( 'CGSS_INSTALL' ) ) {
 		//Load plugin textdomain
 		public function text_domain_cb() {
 
-			load_plugin_textdomain( $this->textDomin, false, PLUGIN_LN );
+			load_plugin_textdomain( $this->textDomin, false, CGSS_LN );
 		}
 
 
@@ -60,7 +60,7 @@ if ( ! class_exists( 'CGSS_INSTALL' ) ) {
 			if ($this->pluginPageLinks) {
 				static $this_plugin;
 				if ( ! $this_plugin ) {
-					$this_plugin = PLUGIN_FILE;
+					$this_plugin = CGSS_FILE;
 				}
 				if ( $file == $this_plugin ) {
 					$shift_link = array();

@@ -11,6 +11,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		public $capability;
 		public $menuPage;
 		public $subMenuPage;
+		public $subMenuPageCpt;
 		public $help;
 		public $screen;
 
@@ -20,15 +21,21 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		public function __construct() {
 
 			$this->capability = 'manage_options';
-			$this->menuPage = array( 'name' => '', 'heading' => '', 'slug' => '' );
+			$this->menuPage = array(
+								'name' => __( 'SEO Scan', 'cgss' ),
+								'heading' => __( 'SEO Scan', 'cgss' ),
+								'slug' => 'seo-scan'
+							);
 			$this->subMenuPage = array(
-									'name' => '',
-									'heading' => '',
-									'slug' => '',
-									'parent_slug' => '',
-									'help' => '',//true/false,
-									'screen' => '',//true/false
+									'name' => __( 'Overview', 'cgss' ),
+									'heading' => __( 'Overview', 'cgss' ),
+									'slug' => 'seo-scan',
+									'parent_slug' => 'seo-scan',
+									'help' => true,
+									'screen' => false
 								);
+			$this->subMenuPageCpt = $this->get_post_type_menus();
+
 			$this->helpData = array(
 								array(
 								'slug' => '',
@@ -49,12 +56,42 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			add_action( 'admin_menu', array( $this, 'add_settings' ) );
 			add_action( 'admin_menu', array( $this, 'menu_page' ) );
 			add_action( 'admin_menu', array( $this, 'sub_menu_page' ) );
+			add_action( 'admin_menu', array( $this, 'cpt_sub_menu_page' ) );
 			add_filter( 'set-screen-option', array( $this, 'set_screen' ), 10, 3 );
 		}
 
 
 
-		// Add a sample main menu page callback
+		// Get post type data to form menu variables
+		public function get_post_type_menus() {
+
+			$menu_vars = array();
+
+			$post_types = get_post_types( array( 'public' => true, ), 'names' );
+			unset( $post_types['attachment'] );
+
+			foreach ( $post_types as $type ) {
+
+				$count_posts = wp_count_posts( $type );
+				if ( $count_posts->publish > 0 ) {
+
+					$type_name = ucwords( get_post_type_object( $type )->labels->singular_name );
+					$menu_vars[] = array(
+									'name' => $type_name . ' ' . __( 'Seo Scan', 'cgss' ),
+									'heading' => $type_name,
+									'slug' => 'seo-scan-' . $type,
+									'parent_slug' => 'seo-scan',
+									'help' => true,
+									'screen' => true
+							);
+				}
+			}
+
+			return $menu_vars;
+		}
+
+
+		// Add main menu page callback
 		public function menu_page() {
 
 			if ($this->menuPage) {
@@ -63,35 +100,56 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 					$this->menuPage['heading'],
 					$this->capability,
 					$this->menuPage['slug'],
-					array( $this, 'menu_page_callback' )
+					array( $this, 'overview_content_cb' ),
+					'dashicons-search'
 				);
 			}
 		}
 
 
 
-		//Add a sample Submenu page callback
+		//Add a Submenu page callback
 		public function sub_menu_page() {
 
 			if ($this->subMenuPage) {
 				$hook = add_submenu_page(
-							$this->subMenuPage['parent'],
+							$this->subMenuPage['parent_slug'],
 							$this->subMenuPage['name'],
 							$this->subMenuPage['heading'],
 							$this->capability,
-							// For the first submenu page, slug should be same as menupage.
 							$this->subMenuPage['slug'],
-							// For the first submenu page, callback should be same as menupage.
-							array( $this, 'menu_page_callback' )
+							array( $this, 'overview_content_cb' )
 						);
 					if ($this->subMenuPage['help']) {
 						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
 					}
-					if ($this->subMenuPage['screen']) {
+				}
+			}
+
+
+
+		// Add Submenu page callback for cpts
+		public function cpt_sub_menu_page() {
+
+			if ($this->subMenuPageCpt) {
+				foreach ($this->subMenuPageCpt as $value) {
+					$hook = add_submenu_page(
+							$value['parent_slug'],
+							$value['name'],
+							$value['heading'],
+							$this->capability,
+							$value['slug'],
+							array( $this, 'cpt_content_cb' )
+						);
+					if ($value['help']) {
+						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
+					}
+					if ($value['screen']) {
 						add_action( 'load-' . $hook, array( $this, 'screen_option' ) );
 					}
 				}
 			}
+		}
 
 
 
@@ -120,31 +178,34 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 
 		// Menu page callback
-		public function menu_page_callback() { ?>
+		public function overview_content_cb() { ?>
 
 			<div class="wrap">
 				<h1><?php echo get_admin_page_title(); ?></h1>
 				<br class="clear">
-				<?php settings_errors();
+				<?php settings_errors(); ?>
 
-					/**
-					 * Following is the settings form
-					 */ ?>
+				<br class="clear">
+			</div>
+		<?php
+		}
+
+
+
+		// Add submenu page callback
+		public function cpt_content_cb() { ?>
+
+			<div class="wrap">
+				<h1><?php echo get_admin_page_title(); ?></h1>
+				<br class="clear">
+				<?php settings_errors(); ?>
 					<form method="post" action="">
-						<?php settings_fields("addPdfsId");
-						do_settings_sections("addPdfs");
-						submit_button( __( 'Save', 'textdomain' ), 'primary', 'id' ); ?>
-					</form>
-
 					<?php
-					/**
-					 * Following is the data table class
-					 */ ?>
-					<form method="post" action="">
-					<?php // Data table class is brought from /vendor/table.php
-						$this->Table = new PLUGIN_TABLE();
-						$this->Table->prepare_items();
-						$this->Table->display(); ?>
+							// Source: /lib/table.php
+							$table = new CGSS_TABLE();
+							$table->prepare_items();
+							$table->display();
+						?>
 					</form>
 				<br class="clear">
 			</div>
