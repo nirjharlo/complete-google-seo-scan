@@ -2,17 +2,12 @@
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
  * 
- * $myPluginNameTable = new myPluginNameTable();
+ * $myPluginNameTable = new CGSS_TABLE();
  * $myPluginNameTable->prepare_items();
  * $myPluginNameTable->display();
  *
  */
 if ( ! class_exists( 'CGSS_TABLE' ) ) {
-
-if ( ! class_exists( 'WP_List_Table' ) ) {
-    require_once( ABSPATH . 'wp-admin/includes/screen.php' );
-    require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
-}
 
 	final class CGSS_TABLE extends WP_List_Table {
 
@@ -29,7 +24,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 
 		//fetch the data using custom named method function
-		public static function get_posts( $per_page = 5, $page_number = 1 ) {
+		public static function get_posts( $per_page = 10, $page_number = 1 ) {
 
 			global $wpdb;
 
@@ -61,7 +56,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 		//If there is no data to show
 		public function no_items() {
 
-			_e( 'No Items Added yet.', 'cgss' );
+			_e( 'No Published Posts are available.', 'cgss' );
 		}
 
 
@@ -72,8 +67,6 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 			global $wpdb;
 
 			//Take pivotal from URL
-			$link = ( isset( $_GET['link'] ) ? $_GET['link'] : 'link' );
-
 			$page = isset($_GET['page']) ? substr($_GET['page'], 9) : 'post';
 
 			//Build the db query base
@@ -88,12 +81,12 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 		//Display columns content
 		public function column_name( $item ) {
 
-			$delete_nonce = wp_create_nonce( 'delete_url' );
 			$title = sprintf( '<strong>%s</strong>', $item['post_title'] );
 
 			//Change the page instruction where you want to show it
 			$actions = array(
-					'delete' => sprintf( '<a href="?page=%s&action=%s&instruction=%s&_wpnonce=%s">%s</a>', esc_attr( $_REQUEST['page'] ), 'delete', absint( $item['ID'] ), $delete_nonce, __( 'Delete', 'textdomain' ) )
+					'scan' => sprintf( '<a href=#>%s</a>', __( 'Scan', 'cgss' ) ),
+					'compete' => sprintf( '<a href=#>%s</a>', __( 'Compete', 'cgss' ) )
 					);
 			return $title . $this->row_actions( $actions );
 		}
@@ -124,26 +117,17 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 
 
-		//Set checkboxes to delete
-		public function column_cb( $item ) {
-
-			return sprintf( '<input type="checkbox" name="bulk-select[]" value="%s" />', $item['ID'] );
-		}
-
-
-
 		//Columns callback
 		public function get_columns() {
 
 			$columns = array(
-							'cb'		=> '<input type="checkbox" />',
 							'post_title'	=> __( 'Post', 'cgss' ),
-							'focus'	=> 'Focus',
-							'word'	=> 'Words',
-							'link'	=> 'Links',
-							'image'	=> 'Images',
-							'share'	=> 'Shares',
-							'time'	=> 'Time(ms)',
+							'focus'	=> __( 'Focus', 'cgss' ),
+							'word'	=> __( 'Words', 'cgss' ),
+							'link'	=> __( 'Links', 'cgss' ),
+							'image'	=> __( 'Images', 'cgss' ),
+							'share'	=> __( 'Shares', 'cgss' ),
+							'time'	=> __( 'Time(ms)', 'cgss' ),
 							
 						);
 			return $columns;
@@ -162,22 +146,12 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 
 
-		//Determine bulk actions in the table dropdown
-		public function get_bulk_actions() {
-
-			$actions = array( 'bulk-delete' => 'Delete'	);
-			return $actions;
-		}
-
-
-
 		//Prapare the display variables for screen options
 		public function prepare_items() {
 
 			$this->_column_headers = $this->get_column_info();
 
 			/** Process bulk action */
-			$this->process_bulk_action();
 			$per_page     = $this->get_items_per_page( 'post_per_page', 5 );
 			$current_page = $this->get_pagenum();
 			$total_items  = self::record_count();
@@ -187,35 +161,6 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 			) );
 
 			$this->items = self::get_posts( $per_page, $current_page );
-		}
-
-
-
-		//process bulk action
-		public function process_bulk_action() {
-
-			//Detect when a bulk action is being triggered...
-			if ( 'delete' === $this->current_action() ) {
-
-				//In our file that handles the request, verify the nonce.
-				$nonce = esc_attr( $_REQUEST['_wpnonce'] );
-
-				if ( ! wp_verify_nonce( $nonce, 'delete_url' ) ) {
-					die( 'Go get a live script kiddies' );
-				} else {
-					self::delete_url( absint( $_GET['instruction'] ) ); //Remember the instruction param from column_name method
-				}
-			}
-
-			//If the delete bulk action is triggered
-			if ( isset( $_POST['action'] ) ) {
-				if ( ( isset( $_POST['action'] ) && $_POST['action'] == 'bulk-delete' ) ) {
-					$delete_ids = esc_sql( $_POST['bulk-select'] );
-					foreach ( $delete_ids as $id ) {
-						self::delete_url( $id );
-					}
-				}
-			}
 		}
 
 

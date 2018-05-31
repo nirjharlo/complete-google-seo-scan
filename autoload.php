@@ -17,7 +17,7 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 				$install->phpVerAllowed = '5.4';
 				$install->pluginPageLinks = array(
 												array(
-													'slug' => '/wp-admin/admin.php?page=seo-scan',
+													'slug' => home_url().'/wp-admin/admin.php?page=seo-scan',
 													'label' => __( 'Dashboard', 'cgss' )
 												),
 											);
@@ -29,34 +29,25 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 		public function db_install() {
 
-			/**
-			*
-			* Install DB options
-			*
-			$options = array(
-							array( 'option_name', '__value__' ),
-						);
-			foreach ($options as $value) {
-				update_option( $value[0], $value[1] );
+			if ( class_exists( 'CGSS_DB' ) ) {
+				$db = new CGSS_DB();
+				$db->table = 'cgss_insight';
+				$db->sql = "ID mediumint(9) NOT NULL AUTO_INCREMENT,
+							item varchar(256) NOT NULL,
+							remark varchar(512) NOT NULL,
+							UNIQUE KEY ID (ID)";
+				$db->build();
 			}
-			*
-			*/
 		}
 
 
 
 		public function db_uninstall() {
 
-			/**
-			*
-			$options = array(
-								'_plugin_db_exist'
-							);
-			foreach ($options as $value) {
-				delete_option($value);
-			}
-			*
-			*/
+			$tableName = 'cgss_insight';
+
+			global $wpdb;
+			$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}$tableName" );
 		}
 
 
@@ -80,6 +71,7 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 		//Add customization files
 		public function customization() {
 
+			require_once ('src/db.php');
 			require_once ('src/install.php');
 			require_once ('src/settings.php');
 		}
@@ -89,7 +81,13 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 		//Call the dependency files
 		public function helpers() {
 
+			if ( ! class_exists( 'WP_List_Table' ) ) {
+    			require_once( ABSPATH . 'wp-admin/includes/screen.php' );
+    			require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
+			}
+
 			require_once ('lib/table.php');
+			require_once ('lib/overview-table.php');
 			require_once ('lib/ajax.php');
 			require_once ('lib/script.php');
 		}

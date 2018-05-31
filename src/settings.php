@@ -27,12 +27,12 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 								'slug' => 'seo-scan'
 							);
 			$this->subMenuPage = array(
-									'name' => __( 'Overview', 'cgss' ),
+									'name' => __( 'Seo Scan Overview', 'cgss' ),
 									'heading' => __( 'Overview', 'cgss' ),
 									'slug' => 'seo-scan',
 									'parent_slug' => 'seo-scan',
 									'help' => true,
-									'screen' => false
+									'screen' => true
 								);
 			$this->subMenuPageCpt = $this->get_post_type_menus();
 
@@ -120,6 +120,9 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 							$this->subMenuPage['slug'],
 							array( $this, 'overview_content_cb' )
 						);
+					if ($this->subMenuPage['screen']) {
+						add_action( 'load-' . $hook, array( $this, 'overview_screen_option' ) );
+					}
 					if ($this->subMenuPage['help']) {
 						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
 					}
@@ -141,11 +144,11 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 							$value['slug'],
 							array( $this, 'cpt_content_cb' )
 						);
-					if ($value['help']) {
-						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
-					}
 					if ($value['screen']) {
 						add_action( 'load-' . $hook, array( $this, 'screen_option' ) );
+					}
+					if ($value['help']) {
+						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
 					}
 				}
 			}
@@ -163,6 +166,21 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 
 		//Set screen option for Items table
+		public function overview_screen_option() {
+
+			$option = 'per_page';
+			$args   = array(
+						'label'   => __( 'Show per page', '' ),
+						'default' => 10,
+						'option'  => 'item_per_page' // Related to PLUGIN_TABLE()
+						);
+			add_screen_option( $option, $args );
+			$this->overview = new CGSS_OVERVIEW_TABLE();
+		}
+
+
+
+		//Set screen option for Items table
 		public function screen_option() {
 
 			$option = 'per_page';
@@ -172,7 +190,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 						'option'  => 'post_per_page' // Related to PLUGIN_TABLE()
 						);
 			add_screen_option( $option, $args );
-			$this->Table = new CGSS_TABLE();
+			$this->table = new CGSS_TABLE();
 		}
 
 
@@ -181,10 +199,16 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		public function overview_content_cb() { ?>
 
 			<div class="wrap">
-				<h1><?php echo get_admin_page_title(); ?></h1>
+				<h1><?php echo get_admin_page_title(); ?>
+					&nbsp;<a href="#" class="button button-secondary"><?php _e( 'Fetch Insight', 'cgss' ); ?></a>
+				</h1>
 				<br class="clear">
-				<?php settings_errors(); ?>
-
+				<?php
+					// Source: /lib/overview-table.php
+					$this->overview = new CGSS_OVERVIEW_TABLE();
+					$this->overview->prepare_items();
+					$this->overview->display();
+				?>
 				<br class="clear">
 			</div>
 		<?php
@@ -198,14 +222,13 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			<div class="wrap">
 				<h1><?php echo get_admin_page_title(); ?></h1>
 				<br class="clear">
-				<?php settings_errors(); ?>
 					<form method="post" action="">
 					<?php
-							// Source: /lib/table.php
-							$table = new CGSS_TABLE();
-							$table->prepare_items();
-							$table->display();
-						?>
+						// Source: /lib/table.php
+						$this->table = new CGSS_TABLE();
+						$this->table->prepare_items();
+						$this->table->display();
+					?>
 					</form>
 				<br class="clear">
 			</div>

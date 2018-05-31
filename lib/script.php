@@ -21,9 +21,6 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 		// Table css for settings page data tables
 		public function data_table_css() {
 
-			// Set condition to add script
-			// if ( ! isset( $_GET['page'] ) || $_GET['page'] != 'pageName' ) return;
-
 			$table_css = '<style type="text/css">
 							.wp-list-table .column-post_title { width: 30%; }
 							.wp-list-table .column-focus { width: 15%; }
@@ -34,7 +31,13 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 							.wp-list-table .column-column-time { width: 15%; }
 						</style>';
 
+			$overview_table_css = '<style type="text/css">
+							.wp-list-table .column-item { width: 20%; }
+							.wp-list-table .column-remark { width: 80%; }
+						</style>';
+
 			echo $table_css;
+			echo $overview_table_css;
 		}
 
 
