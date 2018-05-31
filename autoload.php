@@ -61,6 +61,14 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 
 
+		//Include scripts
+		public function scripts() {
+
+			if ( class_exists( 'CGSS_SCRIPT' ) ) new CGSS_SCRIPT();
+		}
+
+
+
 		//Include settings pages
 		public function settings() {
 
@@ -97,6 +105,8 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			register_uninstall_hook( CGSS_FILE, array( 'CGSS_BUILD', 'db_uninstall' ) ); //$this won't work here.
 
 			add_action('init', array($this, 'installation'));
+
+			$this->scripts();
 
 			$this->settings();
 		}

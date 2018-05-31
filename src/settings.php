@@ -156,7 +156,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		//Set screen option
 		public function set_screen($status, $option, $value) {
  
-    		if ( 'option_name_per_page' == $option ) return $value; // Related to PLUGIN_TABLE()
+    		if ( 'post_per_page' == $option ) return $value; // Related to PLUGIN_TABLE()
     			//return $status; 
 		}
 
@@ -169,10 +169,10 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			$args   = array(
 						'label'   => __( 'Show per page', '' ),
 						'default' => 10,
-						'option'  => 'option_name_per_page' // Related to PLUGIN_TABLE()
+						'option'  => 'post_per_page' // Related to PLUGIN_TABLE()
 						);
 			add_screen_option( $option, $args );
-			$this->Table = new PLUGIN_TABLE();
+			$this->Table = new CGSS_TABLE();
 		}
 
 

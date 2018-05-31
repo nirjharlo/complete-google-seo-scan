@@ -20,8 +20,8 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 		public function __construct() {
 
 			parent::__construct( [
-				'singular' => __( 'Name', 'textdomain' ),
-				'plural'   => __( 'Names', 'textdomain' ),
+				'singular' => __( 'Post', 'cgss' ),
+				'plural'   => __( 'Posts', 'cgss' ),
 				'ajax'     => false,
 			] );
 		}
@@ -49,6 +49,9 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			//get the data from database
 			$result = $wpdb->get_results( $sql, 'ARRAY_A' );
+
+			// FETCH POST META DATA AND MERGE IT WITH RESULTS
+			$result = SELF::get_post_meta_data($result);
 
 			return $result;
 		}
@@ -86,7 +89,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 		public function column_name( $item ) {
 
 			$delete_nonce = wp_create_nonce( 'delete_url' );
-			$title = sprintf( '<strong>%s</strong>', $item['URL'] );
+			$title = sprintf( '<strong>%s</strong>', $item['post_title'] );
 
 			//Change the page instruction where you want to show it
 			$actions = array(
@@ -105,16 +108,17 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 				case 'post_title':
 					//This is the first column
 					return $this->column_name( $item );
-				/**
-				case 'caseOne':
-				case 'caseTwo':
-				case 'caseThree':
-				return $item[ $column_name ];
-				*/
-			default:
-
-				//Show the whole array for troubleshooting purposes
-				return print_r( $item, true );
+				case 'focus':
+				case 'word':
+				case 'link':
+				case 'image':
+				case 'share':
+					return $item[ $column_name ];
+				case 'time':
+					return $item[ $column_name ];
+				default:
+					//Show the whole array for troubleshooting purposes
+					return print_r( $item, true );
 			}
 		}
 
@@ -133,12 +137,14 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			$columns = array(
 							'cb'		=> '<input type="checkbox" />',
-							'post_title'	=> __( 'Title', 'cgss' ),
-							/**
-							'caseOne'	=> __( 'Case One', 'textdomain' ),
-							'caseTwo'	=> __( 'Case Two', 'textdomain' ),
-							'caseThree'	=> __( 'Case Three', 'textdomain' ),
-							*/
+							'post_title'	=> __( 'Post', 'cgss' ),
+							'focus'	=> 'Focus',
+							'word'	=> 'Words',
+							'link'	=> 'Links',
+							'image'	=> 'Images',
+							'share'	=> 'Shares',
+							'time'	=> 'Time(ms)',
+							
 						);
 			return $columns;
 		}
@@ -150,10 +156,6 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			$sortable_columns = array(
 				'post_title' => array( 'post_title', true ),
-				/**
-				'caseOne' => array( 'caseOne', false ),
-				'caseTwo' => array( 'caseTwo', false ),
-				*/
 			);
 			return $sortable_columns;
 		}
@@ -176,7 +178,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 			/** Process bulk action */
 			$this->process_bulk_action();
-			$per_page     = $this->get_items_per_page( 'option_name_per_page', 5 );
+			$per_page     = $this->get_items_per_page( 'post_per_page', 5 );
 			$current_page = $this->get_pagenum();
 			$total_items  = self::record_count();
 			$this->set_pagination_args( array(
@@ -214,6 +216,64 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 					}
 				}
 			}
+		}
+
+
+
+		public static function get_post_meta_data($result) {
+
+			$IDs = array_column($result, 'ID');
+			$titles = array_column($result, 'post_title');
+
+			$empty_metas = array(
+							'text' => array(
+										'count' => '--',
+										'top_key' => '--',
+										'links' => array( 'num' => '--' ),
+										),
+							'design' => array(
+										'image' => array( 'count' => '--' )
+										),
+							'social' => array('num' => '--' ),
+							'speed' => array( 'res_time' => '--' ),
+							);
+
+			$metas = array();
+			foreach ($IDs as $post_id) {
+				$meta = get_post_meta( $post_id, 'cgss_scan_result', true );
+				$metas[] = is_array($meta) ? $meta : $empty_metas;
+			}
+			$text = array_column($metas, 'text');
+			$words = array_column($text, 'count');
+			$focus = array_column($text, 'top_key');
+			$link = array_column($text, 'links');
+			$link_count = array_column($link, 'num');
+
+			$design = array_column($metas, 'design');
+			$image = array_column($design, 'image');
+			$image_count = array_column($image, 'count');
+
+			$social = array_column($metas, 'social');
+			$share = array_column($social, 'num');
+
+			$speed = array_column($metas, 'speed');
+			$res_time = array_column($speed, 'res_time');
+
+			$result = array();
+			foreach ($IDs as $key => $ID) {
+				$temp = array();
+				$temp['ID'] = $ID;
+				$temp['post_title'] = $titles[$key];
+				$temp['focus'] = $focus[$key];
+				$temp['word'] = $words[$key];
+				$temp['link'] = $link_count[$key];
+				$temp['image'] = $image_count[$key];
+				$temp['share'] = $share[$key];
+				$temp['time'] = $res_time[$key];
+
+				$result[] = $temp;
+			}
+			return $result;
 		}
 	}
 } ?>
