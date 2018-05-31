@@ -53,7 +53,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 							);
 			$this->screen = ''; // true/false
 
-			add_action( 'admin_menu', array( $this, 'add_settings' ) );
 			add_action( 'admin_menu', array( $this, 'menu_page' ) );
 			add_action( 'admin_menu', array( $this, 'sub_menu_page' ) );
 			add_action( 'admin_menu', array( $this, 'cpt_sub_menu_page' ) );
@@ -200,9 +199,12 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 			<div class="wrap">
 				<h1><?php echo get_admin_page_title(); ?>
-					&nbsp;<a href="#" class="button button-secondary"><?php _e( 'Fetch Insight', 'cgss' ); ?></a>
+					&nbsp;<a href="?page=seo-scan&fetch=true" class="button button-secondary"><?php _e( 'Fetch Insight', 'cgss' ); ?></a>
 				</h1>
 				<br class="clear">
+				<?php if (isset($_GET['fetch'])) : ?>
+					<?php do_action( 'cgss_fetch_insight' ); ?>
+				<?php endif; ?>
 				<?php
 					// Source: /lib/overview-table.php
 					$this->overview = new CGSS_OVERVIEW_TABLE();
@@ -222,14 +224,20 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			<div class="wrap">
 				<h1><?php echo get_admin_page_title(); ?></h1>
 				<br class="clear">
-					<form method="post" action="">
-					<?php
-						// Source: /lib/table.php
-						$this->table = new CGSS_TABLE();
-						$this->table->prepare_items();
-						$this->table->display();
-					?>
-					</form>
+					<?php if (isset($_GET['scan'])) : ?>
+						<?php do_action( 'cgss_scan' ); ?>
+					<?php elseif (isset($_GET['compete'])) : ?>
+						<?php do_action( 'cgss_compete' ); ?>
+					<?php else : ?>
+						<form method="post" action="">
+						<?php
+							// Source: /lib/table.php
+							$this->table = new CGSS_TABLE();
+							$this->table->prepare_items();
+							$this->table->display();
+						?>
+						</form>
+					<?php endif; ?>
 				<br class="clear">
 			</div>
 		<?php
@@ -249,32 +257,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 					$this->screen->set_help_sidebar( $value['link'] );
 				}
 			}
-		}
-
-
-
-		//Add different types of settings and corrosponding sections
-		public function add_settings() {
-
-			add_settings_section( 'SettingsId', __( 'Section Name', 'textdomain' ), array( $this,'SectionCb' ), 'SettingsName' );
-			register_setting( 'SettingsId', 'SettingsField' );
-			add_settings_field( 'SettingsFieldName', __( 'Field Name', 'textdomain' ), array( $this, 'SettingsFieldCb' ), 'SettingsName', 'SettingsId' );
-		}
-
-
-
-		//Section description
-		public function SectionCb() {
-
-			echo '<p class="description">' . __( 'Set up settings', 'textdomain' ) . '</p>';
-		}
-
-
-
-		//Field explanation
-		public function SettingsFieldCb() {
-
-			echo '<input type="text" class="medium-text" name="SettingsFieldName" id="SettingsFieldName" value="' . get_option('SettingsFieldName') . '" placeholder="' . __( 'Enter Value', 'textdomain' ) . '" required />';
 		}
 	}
 } ?>

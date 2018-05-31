@@ -68,8 +68,40 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 
 
-		//Add customization files
-		public function customization() {
+		// Add custom insight action
+		public function insight() {
+
+			if ( class_exists( 'CGSS_INSIGHT' ) ) new CGSS_INSIGHT();
+		}
+
+
+
+		// Add custom insight action
+		public function compete() {
+
+			if ( class_exists( 'CGSS_COMPETE' ) ) new CGSS_COMPETE();
+		}
+
+
+
+		// Add custom insight action
+		public function scan() {
+
+			if ( class_exists( 'CGSS_SCAN' ) ) new CGSS_SCAN();
+		}
+
+
+
+		//Add external files for crawling
+		public function vendor() {
+
+			require_once ('vendor/crawl.php');
+		}
+
+
+
+		//Add functionality files
+		public function functionality() {
 
 			require_once ('src/db.php');
 			require_once ('src/install.php');
@@ -88,16 +120,20 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 			require_once ('lib/table.php');
 			require_once ('lib/overview-table.php');
-			require_once ('lib/ajax.php');
 			require_once ('lib/script.php');
+
+			require_once ('lib/action/scan.php');
+			require_once ('lib/action/compete.php');
+			require_once ('lib/action/insight.php');
 		}
 
 
 
 		public function __construct() {
 
+			$this->vendor();
 			$this->helpers();
-			$this->customization();
+			$this->functionality();
 
 			register_activation_hook( CGSS_FILE, array( $this, 'db_install' ) );
 			register_uninstall_hook( CGSS_FILE, array( 'CGSS_BUILD', 'db_uninstall' ) ); //$this won't work here.
@@ -107,6 +143,11 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			$this->scripts();
 
 			$this->settings();
+
+			// Add custom actions, defined in settings
+			add_action( 'cgss_scan', array( $this, 'scan' ) );
+			add_action( 'cgss_compete', array( $this, 'compete' ) );
+			add_action( 'cgss_fetch_insight', array( $this, 'insight' ) );
 		}
 	}
 } ?>

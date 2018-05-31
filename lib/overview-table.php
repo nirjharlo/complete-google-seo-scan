@@ -48,15 +48,6 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 
 
 
-		//Delete individual data
-		public static function delete_url( $id ) {
-
-			global $wpdb;
-			$wpdb->delete("{$wpdb->prefix}cgss_insight", array( 'ID' => $id ), array( '%s' ) );
-		}
-
-
-
 		//If there is no data to show
 		public function no_items() {
 
