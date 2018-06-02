@@ -17,7 +17,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			if (class_exists('CGSS_CRAWL')) {
 
 				$crawl = new CGSS_CRAWL();
-				$crawl->set_url = $url;
+				$crawl->url = esc_url_raw($url);
 				$crawl->do();
 				$result = $crawl->result();
 

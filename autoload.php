@@ -95,6 +95,7 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 		//Add external files for crawling
 		public function vendor() {
 
+			require_once ('vendor/lib/tags.php');
 			require_once ('vendor/crawl.php');
 		}
 
