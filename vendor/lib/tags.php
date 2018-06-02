@@ -31,13 +31,6 @@ class CGSS_FETCH {
 
 
 
-	// Get value from attributes
-	public function value($val) {
-
-		$value = $val[count($val) - 1];
-		return sanitize_text_field($value);
-	}
-
 
 	//Fetch and scan tag values and return details as an array.
 	public function tag() {
@@ -73,7 +66,7 @@ class CGSS_FETCH {
 
 		//Format output result for easy usage
 		if ( count( $val ) != 0 ) {
-			return $this->value($val);
+			return $val;
 		} else {
 			return false;
 		}

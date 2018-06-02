@@ -44,7 +44,22 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->robot = $this->get_robot();
 					$this->canonical = $this->get_canonical();
 					$this->viewport = $this->get_viewport();
-					$this->social_tags = $this->social_tags();
+					$this->social_tags = $this->get_social_tags();
+					$this->links = $this->get_links();
+					$this->images = $this->get_images();
+					$this->iframe = $this->get_iframes();
+					$this->tag_css = $this->get_tag_css();
+					$this->headings = $this->get_headings();
+					$this->table = $this->get_nested_table();
+
+					$this->text = $this->get_text_vars();
+					$this->keywords = $this->get_keywords();
+
+					$this->social_data = $this->get_social_data();
+
+					//$this->css = $this->get_style();
+					//$this->js = $this->get_javascript();
+
 
 				}
 			}
@@ -67,44 +82,22 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 								'url' => $this->parsed_url['val'],
 								'desc' => $this->desc,
 								);
-			$result['social'] = array(
-									'num' => $gplus + $twitter + $fb_share,
-									'gplus' => $gplus,
-									'twitter' => $twitter,
-									'fb_share' => $fb_share,
-									'fb_like' => $fb_like,
-								);
+			$result['social'] = $this->social_data;
 			$result['text'] = array(
-								'count' => $words_count,
-								'size' => $text_size,
-								'ratio' => $ratio,
-								'links' => array(
-											'num' => $link_num,
-											'nofollow' => $link_nofollow,
-											'external' => $link_ext,
-											'no_text' => $link_no_text,
-											'anchors' => $link_anchors_content,
-											),
-								'htags' => array(
-											'names' => $headings_tags,
-											'content' => $headings_content,
-											),
-								'keys' => $keys_out,
-								'top_key' => $top_key,
+								'count' => $this->text['count'],
+								'size' => $this->text['size'],
+								'ratio' => $this->text['ratio'],
+								'keys' => $this->keywords,
+								'top_key' => $this->keywords[0],
+								'links' => $this->links,
+								'htags' => $this->headings,
 							);
 			$result['design'] = array(
-									'iframe' => $iframe_output,
-									'image' => array(
-												'count' => $count_img,
-												'alt' => $alt_collect,
-												'no_alt_src' => $no_alt_src_collect,
-												),
-									'nested_table' => $nest_table,
-									'tag_style' => array(
-													'num' => $tg_count,
-													'list' => $tg_collect,
-													),
-									'vport' => $this->viewport['ok'],
+									'iframe' => $this->iframe,
+									'image' => $this->images,
+									'nested_table' => $this->table,
+									'tag_style' => $this->tag_css,
+									'vport' => $this->viewport,
 									'media' => array(
 												'ok' => $css_media,
 												'num' => $css_media_num,
@@ -125,8 +118,8 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 									'meta_robot' => $this->robot,
 								);
 			$result['speed'] = array(
-								'res_time' => $res_time,
-								'down_time' => $down_time,
+								'res_time' => $this->header['time'],
+								'down_time' => $this->body['time'],
 								'gzip' => $gzip,
 								'cache' => $cache,
 								'css' => array(
@@ -148,22 +141,269 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 													),
 											),
 								);
-			$result['social_tags'] = array(
-										'ogp' => array(
-													'title' => $this->social_tags['title'],
-													'desc' => $this->social_tags['description'],
-													'url' => $this->social_tags['url'],
-													'img' => $this->social_tags['image'],
-												),
-										);
+			$result['social_tags'] = $this->social_tags;
 
+var_dump($result);
 			return $result;
+		}
+
+
+		//Get social data from 3rd party API
+		public function get_social_data() {
+
+			$social = new CGSS_SOCIAL();
+			$social->url = $this->url;
+
+			$social_data['gplus'] = $social->gplus();
+			$facebook = $social->fb();
+			$social_data['fb_share'] = $facebook['share'];
+			$social_data['fb_like'] = $facebook['like'];
+
+			return $social_data;
+		}
+
+
+		// Get keywords data from text
+		public function get_keywords() {
+
+			$keys = new CGSS_KEYWORDS();
+			$keys->words = $this->text['words'];
+			$keys->text = $this->text['text'];
+			$keys_data = $keys->output();
+
+			return $keys_data;
+		}
+
+
+		//Get text from dom
+		public function get_text_vars() {
+
+			$text = new CGSS_TEXT_TREATMENT();
+			$text->dom =  $this->dom;
+			$text->body_size = $this->body['size'];
+			$text->do();
+			$text_string = $text->text();
+			$words = $text->words();
+
+			$text_data = array();
+
+			$words = $text->words();
+			$text_data['words'] = $words;
+			$text_data['text'] = $text_string;
+			$text_data['count'] = count( $words );
+			$size = $text->size();
+			$text_data['size'] = round( ( $size / 1024 ), 1 );
+			$text_data['ratio'] = $text->ratio();
+			
+			return $text_data;
+		}
+
+
+		//Get nested table
+		public function get_nested_table() {
+
+			$table = $this->dom->getElementsByTagName( 'table' );
+
+			$nested_table_count = 0;
+			if ( $table ) {
+				foreach ( $table as $obj ) {
+					$nested_table = $obj->getElementsByTagName( 'table' );
+					$nested_table_count = ( $nest_table ? $nested_table_count + 1 : $nested_table_count );
+				}
+			}
+
+			return $nested_table_count;
+		}
+
+
+		//Get heading tags
+		public function get_headings() {
+
+			$all_headings = array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6' );
+
+			$headings = array();
+			foreach ( $all_headings as $value ) {
+
+				$head = new CGSS_FETCH();
+				$head->dom = $this->dom;
+				$head->tag = $value;
+				$head_tag = $head->tag();
+
+				$headings[$value] = $head_tag;
+			}
+
+			$headings_filtered = array_filter( $headings );
+
+			$heading = array();
+			$heading['names'] = array_keys( $headings_filtered );
+			$heading['content'] = $headings_filtered;
+
+			return $heading;
+		}
+
+
+		//Get style attribute in tags
+		public function get_tag_css() {
+
+			$tags = array(
+						'a', 'abbr', 'acronym', 'address', 'applet', 'area',
+						'b', 'base', 'basefont', 'bdo', 'bgsound', 'big', 'blockquote', 'blink', 'body', 'br', 'button',
+						'caption', 'center', 'cite', 'code', 'col', 'colgroup',
+						'dd', 'dfn', 'del', 'dir', 'dl', 'div', 'dt',
+						'embed', 'em',
+						'fieldset', 'font', 'from', 'frame', 'frameset',
+						'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'hr', 'html',
+						'iframe', 'img', 'input', 'ins', 'isindex', 'i',
+						'kbd',
+						'label', 'legend', 'li', 'link',
+						'marquee', 'menu', 'meta',
+						'noframe', 'noscript',
+						'optgroup', 'option', 'ol',
+						'p', 'pre',
+						'q',
+						's', 'samp', 'script', 'select', 'small', 'span', 'strike', 'strong', 'style', 'sub', 'sup',
+						'table', 'td', 'th', 'tr', 'tbody', 'textarea', 'tfoot', 'thead', 'title', 'tt',
+						'u', 'ul', 
+						'var'
+					);
+
+			$tag_style_value = array();
+			foreach( $tags as $value ) {
+
+				$tag = new CGSS_FETCH();
+				$tag->dom = $this->dom;
+				$tag->tag = $value;
+				$tag->specify =  array( 'att' => null, 'val' => null, 'get_att' => 'style', );
+
+				$tag_style = $tag->tag();
+				$tag_style_value[] = ( $tag_style ? $value : false );
+			}
+
+			$tag_style_filtered = array_filter($tag_style_value);
+
+			$tag_css['count'] = count($tag_style_filtered);
+			$tag_css['tags'] = $tag_style_filtered;
+
+			return $tag_css;
+		}
+
+
+
+/**
+		public function get_javascript() {
+
+			$js = new CGSS_FETCH();
+			$js->dom = $this->dom;
+			$js->tag = 'script';
+			$js->atts = array( 'src' );
+
+			$js_list = $js->tag();
+		}
+*/
+
+/**
+		//Get the Stylesheets
+		public function get_style() {
+
+			$css = new CGSS_FETCH();
+			$css->dom = $this->dom;
+			$css->tag = 'iframe';
+			$css->specify = array( 'att' => 'rel', 'val' => 'stylesheet', 'get_att' => 'href' );
+
+			$css_list = $css->tag();
+
+		}
+*/
+
+		//Get the iframes
+		public function get_iframes() {
+
+			$iframes = new CGSS_FETCH();
+			$iframes->dom = $this->dom;
+			$iframes->tag = 'iframe';
+			$iframes->specify = array( 'att' => null, 'val' => null, 'get_att' => 'src' );
+
+			$get_iframe = $iframes->tag();
+
+			return $get_iframe;
+		}
+
+
+		//Get the images
+		public function get_images() {
+
+			$images = new CGSS_FETCH();
+			$images->dom = $this->dom;
+			$images->tag = 'img';
+			$images->atts = array( 'src', 'alt' );
+
+			$attributes = $images->atts();
+
+			$alts = $attributes['alt'];
+			$srcs = $attributes['src'];
+			$pure_alt = array_filter($alts);
+
+			$image_data = array();
+			$image_data['count'] = count($srcs);
+			$image_data['alt_value'] = $pure_alt;
+			$image_data['no_alt_count'] = count($srcs) - count($pure_alt);
+
+			return $image_data;
+		}
+
+
+		// Get the links
+		public function get_links() {
+
+			$links = new CGSS_FETCH();
+			$links->dom = $this->dom;
+			$links->tag = 'a';
+			$links->atts = array( 'rel', 'href' );
+
+			$attributes = $links->atts();
+			$anchors = $links->tag();
+
+			$rels = $attributes['rel'];
+			$hrefs = $attributes['href'];
+
+			$domain = $this->parsed_url['domain'];
+
+			$link_num = 0;
+			$ext_link_num = 0;
+			foreach ($hrefs as $value) {
+				if (filter_var($value, FILTER_VALIDATE_URL)) {
+					$link_num = $link_num + 1;
+
+					if( parse_url($value, PHP_URL_HOST) == $domain ) {
+						$ext_link_num = $ext_link_num + 1;
+					}
+				}
+			}
+
+			$nofollow_link_num = 0;
+			foreach ($rels as $value) {
+				if( strpos($value, 'nofollow') !== false ) {
+					$nofollow_link_num = $nofollow_link_num +1;
+				}
+			}
+
+			$no_txt_link_num = count($anchors) - count(array_filter($anchors));
+			$anchor_text = implode(' ', $anchors);
+
+			$link_data = array();
+			$link_data['count'] = $link_num;
+			$link_data['nofollow'] = $nofollow_link_num;
+			$link_data['external'] = $link_num - $ext_link_num;
+			$link_data['no_text'] = $no_txt_link_num;
+			$link_data['anchors'] = $anchor_text;
+
+			return $link_data;
 		}
 
 
 
 		// Get the OGP and Twitter card tags
-		public function social_tags() {
+		public function get_social_tags() {
 
 			$tags = array('title', 'description', 'url', 'image');
 			$social_tag_val = array();
@@ -173,9 +413,12 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 				$social_tag->dom = $this->dom;
 				$social_tag->tag = 'meta';
 				$social_tag->specify = array('att' => 'property', 'val' => 'og:'.$value, 'get_att' => 'content');
+				$social_tag_fetch = $social_tag->tag();
 
-				$social_tag_val[$value] = $social_tag->tag();
+				$social_tag_val[$value] = ( $social_tag_fetch ? array_pop($social_tag_fetch) : false );
 			}
+
+			return $social_tag_val;
 		}
 
 
@@ -183,15 +426,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get viewport tag
 		public function get_viewport() {
 
-			$meta_viewport = array();
-
 			$viewport = new CGSS_FETCH();
 			$viewport->dom = $this->dom;
 			$viewport->tag = 'meta';
 			$viewport->specify = array( 'att' => 'name', 'val' => 'viewport', 'get_att' => 'content' );
+			$viewport_tag = $viewport->tag();
 
-			$meta_viewport['val'] = esc_url_raw($viewport->tag());
-			$meta_viewport['ok'] = ( $meta_viewport['val'] && $meta_viewport['val'] != '' ) ? 1 : 0;
+			$meta_viewport_val = ( $viewport_tag ? array_pop($viewport_tag) : false );
+			$meta_viewport = ( $meta_viewport_val && $meta_viewport_val != '' ) ? 1 : 0;
 
 			return $meta_viewport;
 		}
@@ -207,8 +449,9 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$canonical->dom = $this->dom;
 			$canonical->tag = 'meta';
 			$canonical->specify = array( 'att' => 'rel', 'val' => 'canonical', 'get_att' => 'href' );
+			$canonical_tag = $canonical->tag();
 
-			$meta_canonical['val'] = esc_url_raw($canonical->tag());
+			$meta_canonical['val'] = ( $canonical_tag ? esc_url_raw(array_pop($canonical_tag)) : false );
 			$meta_canonical['ok'] = ( $meta_canonical['val'] && $meta_canonical['val'] != '' ) ? 1 : 0;
 
 			return $meta_canonical;
@@ -225,8 +468,9 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$robot->dom = $this->dom;
 			$robot->tag = 'meta';
 			$robot->specify = array( 'att' => 'name', 'val' => 'robots', 'get_att' => 'content' );
+			$robot_tag = $robot->tag();
 
-			$meta_robot['val'] = $robot->tag();
+			$meta_robot['val'] = ( $robot_tag ? array_pop($robot_tag) : false );
 			$meta_robot['ok'] = $meta_robot['val'] ? 1 : 0;
 
 			return $meta_robot;
@@ -241,8 +485,9 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$description->dom = $this->dom;
 			$description->tag = 'meta';
 			$description->specify = array( 'att' => 'name', 'val' => 'description', 'get_att' => 'content' );
+			$desc = $description->tag();
 
-			return $description->tag();
+			return ( $desc ? array_pop($desc) : false );
 		}
 
 
@@ -253,8 +498,9 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$title_fetch = new CGSS_FETCH();
 			$title_fetch->dom = $this->dom;
 			$title_fetch->tag = 'title';
+			$title = $title_fetch->tag();
 
-			return $title_fetch->tag();
+			return ( $title ? array_pop($title) : false );
 		}
 
 
@@ -308,7 +554,6 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 			return $parse;
 		}
-
 
 
 		// No scan possible notice
