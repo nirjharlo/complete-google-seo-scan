@@ -44,6 +44,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->robot = $this->get_robot();
 					$this->canonical = $this->get_canonical();
 					$this->viewport = $this->get_viewport();
+					$this->css_media = $this->get_css_media();
 					$this->social_tags = $this->get_social_tags();
 					$this->links = $this->get_links();
 					$this->images = $this->get_images();
@@ -51,14 +52,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->tag_css = $this->get_tag_css();
 					$this->headings = $this->get_headings();
 					$this->table = $this->get_nested_table();
-
 					$this->text = $this->get_text_vars();
 					$this->keywords = $this->get_keywords();
-
-					$this->social_data = $this->get_social_data();
+					//$this->social_data = $this->get_social_data();
+					$this->server = $this->get_server();
+					$this->design_data = $this->get_design_data();
 
 					//$this->css = $this->get_style();
-					//$this->js = $this->get_javascript();
+					$this->js = $this->get_javascript();
 
 
 				}
@@ -87,8 +88,8 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 								'count' => $this->text['count'],
 								'size' => $this->text['size'],
 								'ratio' => $this->text['ratio'],
-								'keys' => $this->keywords,
-								'top_key' => $this->keywords[0],
+								'keys' => $this->keywords['value'],
+								'top_key' => $this->keywords['top'],
 								'links' => $this->links,
 								'htags' => $this->headings,
 							);
@@ -114,14 +115,15 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 											),
 									'www' => $www,
 									'cano' => $this->canonical['ok'],
-									'if_mod' => $if_mod,
+									'if_mod' => $this->server['if_mod'],
+									'alive' => $this->server['alive'],
 									'meta_robot' => $this->robot,
 								);
 			$result['speed'] = array(
 								'res_time' => $this->header['time'],
 								'down_time' => $this->body['time'],
-								'gzip' => $gzip,
-								'cache' => $cache,
+								'gzip' => $this->server['gzip'],
+								'cache' => $this->server['cache'],
 								'css' => array(
 											'num' => $css_num + $css_import,
 											'size' => $css_size,
@@ -143,8 +145,59 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 								);
 			$result['social_tags'] = $this->social_tags;
 
-var_dump($result);
 			return $result;
+		}
+
+
+
+
+		public function get_javascript() {
+
+			$js = new CGSS_FETCH();
+			$js->dom = $this->dom;
+			$js->tag = 'script';
+			$js->atts = array( 'src' );
+
+			$js_list = $js->tag();
+			var_dump($js_list);
+		}
+
+
+/**
+		//Get the Stylesheets
+		public function get_style() {
+
+			$css = new CGSS_FETCH();
+			$css->dom = $this->dom;
+			$css->tag = 'iframe';
+			$css->specify = array( 'att' => 'rel', 'val' => 'stylesheet', 'get_att' => 'href' );
+
+			$css_list = $css->tag();
+
+		}
+*/
+
+
+		//Get design details
+		public function get_design_data() {
+
+
+		}
+
+
+		//Get server data
+		public function get_server() {
+
+			$server = new CGSS_SERVER();
+			$server->header = $this->header;
+
+			$server_data = array();
+			$server_data['gzip'] = $server->gzip();
+			$server_data['cache'] = $server->cache();
+			$server_data['if_mod'] = $server->if_mod();
+			$server_data['alive'] = $server->if_mod();
+
+			return $server_data;
 		}
 
 
@@ -169,7 +222,11 @@ var_dump($result);
 			$keys = new CGSS_KEYWORDS();
 			$keys->words = $this->text['words'];
 			$keys->text = $this->text['text'];
-			$keys_data = $keys->output();
+
+			$keys_data = array();
+			$keys_data['value'] = $keys->output();
+			$keywords = array_keys($keys_data['value']);
+			$keys_data['top'] = $keywords[0];
 
 			return $keys_data;
 		}
@@ -288,33 +345,6 @@ var_dump($result);
 		}
 
 
-
-/**
-		public function get_javascript() {
-
-			$js = new CGSS_FETCH();
-			$js->dom = $this->dom;
-			$js->tag = 'script';
-			$js->atts = array( 'src' );
-
-			$js_list = $js->tag();
-		}
-*/
-
-/**
-		//Get the Stylesheets
-		public function get_style() {
-
-			$css = new CGSS_FETCH();
-			$css->dom = $this->dom;
-			$css->tag = 'iframe';
-			$css->specify = array( 'att' => 'rel', 'val' => 'stylesheet', 'get_att' => 'href' );
-
-			$css_list = $css->tag();
-
-		}
-*/
-
 		//Get the iframes
 		public function get_iframes() {
 
@@ -421,6 +451,12 @@ var_dump($result);
 			return $social_tag_val;
 		}
 
+
+		//Get @import is CSS
+		public function get_css_media() {
+
+			
+		}
 
 
 		// Get viewport tag

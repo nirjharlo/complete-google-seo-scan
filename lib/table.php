@@ -2,9 +2,9 @@
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
  * 
- * $myPluginNameTable = new CGSS_TABLE();
- * $myPluginNameTable->prepare_items();
- * $myPluginNameTable->display();
+ * $Table = new CGSS_TABLE();
+ * $Table->prepare_items();
+ * $Table->display();
  *
  */
 if ( ! class_exists( 'CGSS_TABLE' ) ) {
@@ -86,7 +86,8 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 			//Change the page instruction where you want to show it
 			$actions = array(
 					'scan' => sprintf( '<a href="?page='.$_GET['page'].'&scan='.$item['ID'].'" target="_blank">%s</a>', __( 'Scan', 'cgss' ) ),
-					'compete' => sprintf( '<a href="?page='.$_GET['page'].'&compete='.$item['ID'].'" target="_blank">%s</a>', __( 'Compete', 'cgss' ) )
+					'compete' => sprintf( '<a href="?page='.$_GET['page'].'&compete='.$item['ID'].'" target="_blank">%s</a>', __( 'Compete', 'cgss' ) ),
+					'view' => sprintf( '<a href="'.get_permalink($item['ID']).'" target="_blank">%s</a>', __( 'View', 'cgss' ) )
 					);
 			return $title . $this->row_actions( $actions );
 		}
@@ -174,13 +175,13 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 							'text' => array(
 										'count' => '--',
 										'top_key' => '--',
-										'links' => array( 'num' => '--' ),
+										'links' => array( 'count' => '--' ),
 										),
 							'design' => array(
 										'image' => array( 'count' => '--' )
 										),
-							'social' => array('num' => '--' ),
-							'speed' => array( 'res_time' => '--' ),
+							'social' => '--',
+							'speed' => array( 'down_time' => '--' ),
 							);
 
 			$metas = array();
@@ -192,17 +193,17 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 			$words = array_column($text, 'count');
 			$focus = array_column($text, 'top_key');
 			$link = array_column($text, 'links');
-			$link_count = array_column($link, 'num');
+			$link_count = array_column($link, 'count');
 
 			$design = array_column($metas, 'design');
 			$image = array_column($design, 'image');
 			$image_count = array_column($image, 'count');
 
 			$social = array_column($metas, 'social');
-			$share = array_column($social, 'num');
+			$share = array_sum(array_filter($social));
 
 			$speed = array_column($metas, 'speed');
-			$res_time = array_column($speed, 'res_time');
+			$res_time = array_column($speed, 'down_time');
 
 			$result = array();
 			foreach ($IDs as $key => $ID) {

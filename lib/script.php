@@ -22,13 +22,13 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 		public function data_table_css() {
 
 			$table_css = '<style type="text/css">
-							.wp-list-table .column-post_title { width: 30%; }
+							.wp-list-table .column-post_title { width: 42.5%; }
 							.wp-list-table .column-focus { width: 15%; }
-							.wp-list-table .column-word { width: 10%; }
-							.wp-list-table .column-column-link { width: 10%; }
-							.wp-list-table .column-column-image { width: 10%; }
-							.wp-list-table .column-column-share { width: 10%; }
-							.wp-list-table .column-column-time { width: 15%; }
+							.wp-list-table .column-word { width: 7.5%; }
+							.wp-list-table .column-column-link { width: 7.5%; }
+							.wp-list-table .column-column-image { width: 7.5%; }
+							.wp-list-table .column-column-share { width: 7.5%; }
+							.wp-list-table .column-column-time { width: 12.5%; }
 						</style>';
 
 			$overview_table_css = '<style type="text/css">
