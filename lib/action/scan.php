@@ -31,7 +31,27 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 
 		public function render($result) {
 
-			echo 'HTML';
+			$this->box( 'content', __( 'Text & Links', 'cgss' ), $this->dashicon('text'), 'content', 'width: 49.5%' );
+		}
+
+
+		public function box($id, $icon, $title, $desc, $style) {
+
+			echo '<div id="dashboard_right_now" class="postbox" style="'.$style.'">
+				<div class="handlediv handlediv-' . $id . '">' . $icon . '</div>
+					<h3 id="hndle-' . $id . '" class="hndle ui-sortable-handle" title="' . __( 'Click to toggle', 'cgss' ) . '"><span>' . $title . '</span></h3>
+					<div id="inside-' . $id . '" class="inside">
+						<div class="main">' .
+							$desc .
+						'</div>
+					</div>
+				</div>';
+		}
+
+
+		public function dashicon($icon) {
+
+			echo '<span class="dashicon dashicon-'.$icon.'"></span>';
 		}
 	}
 } ?>

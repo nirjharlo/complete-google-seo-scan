@@ -16,7 +16,7 @@ class CGSS_SOCIAL {
 	public function gplus() {
 		$share = false;
 		$url_encode = urlencode( $this->url );
-		$plus_data =  file_get_contents( "https://plusone.google.com/_/+1/fastbutton?url=" . $url_encode );
+		$plus_data =  @file_get_contents( "https://plusone.google.com/_/+1/fastbutton?url=" . $url_encode );
 		if ( ! empty( $plus_data ) ) {
 			$plus_doc = new DOMDocument();
 			$plus_doc->loadHTML($plus_data);
@@ -33,7 +33,7 @@ class CGSS_SOCIAL {
 	//Facebook data for likes and shares
 	public function fb() {
 		$share = false;
-		$fb_data = file_get_contents( 'http://api.facebook.com/restserver.php?method=links.getStats&format=json&urls=' . $this->url );
+		$fb_data = @file_get_contents( 'http://api.facebook.com/restserver.php?method=links.getStats&format=json&urls=' . $this->url );
 		if ( ! empty( $fb_data ) ) {
 			$fb_shares = json_decode( $fb_data, true );
 			if ( array_key_exists ( 0, $fb_shares ) ) {

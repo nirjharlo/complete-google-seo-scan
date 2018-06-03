@@ -63,6 +63,8 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 					$this->css = $this->get_style();
 					$this->js = $this->get_javascript();
+
+					$this->score = $this->get_score();
 				}
 			}
 
@@ -72,72 +74,111 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		}
 
 
+		// Return snippet data
+		public function return_snippet() {
+
+			return array(
+				'title' => $this->title,
+				'url' => $this->parsed_url['val'],
+				'desc' => $this->desc
+				);
+		}
+
+
+		// Return text data
+		public function return_text() {
+
+			return array(
+				'count' => $this->text['count'],
+				'size' => $this->text['size'],
+				'ratio' => $this->text['ratio'],
+				'keys' => $this->keywords['value'],
+				'top_key' => $this->keywords['top'],
+				'links' => $this->links,
+				'htags' => $this->headings
+				);
+		}
+
+
+		//Return design data
+		public function return_design() {
+
+			return array(
+				'iframe' => $this->iframe,
+				'image' => $this->images,
+				'nested_table' => $this->table,
+				'tag_style' => $this->tag_css,
+				'vport' => $this->viewport,
+				'media' => $this->css['media']
+				);
+		}
+
+
+		//Return crawl data
+		public function return_crawl() {
+
+			return array(
+				'val' => $this->parsed_url['val'],
+				'ssl' => $this->parsed_url['ssl'],
+				'dynamic' => $this->parsed_url['dynamic'],
+				'underscore' => $this->parsed_url['underscore'],
+				'ip' => $this->server['ip'],
+				'cano' => $this->canonical['ok'],
+				'if_mod' => $this->server['if_mod'],
+				'alive' => $this->server['alive'],
+				'meta_robot' => $this->robot
+				);
+		}
+
+
+		//Return speed data
+		public function return_speed() {
+
+			return array(
+				'res_time' => $this->header['time'],
+				'down_time' => $this->body['time'],
+				'gzip' => $this->server['gzip'],
+				'cache' => $this->server['cache'],
+				'css' => $this->css,
+				'js' => $this->js['count']
+				);
+		}
+
 
 		// Output the result
 		public function result() {
 
 			$result = array();
 
+			$result['score'] = $this->get_score();
 			$result['domain'] = $this->parsed_url['domain'];
 			$result['time'] = $this->time;
-			$result['snip'] = array(
-								'title' => $this->title,
-								'url' => $this->parsed_url['val'],
-								'desc' => $this->desc,
-								);
+			$result['snip'] = $this->return_snippet();
 			$result['social'] = $this->social_data;
-			$result['text'] = array(
-								'count' => $this->text['count'],
-								'size' => $this->text['size'],
-								'ratio' => $this->text['ratio'],
-								'keys' => $this->keywords['value'],
-								'top_key' => $this->keywords['top'],
-								'links' => $this->links,
-								'htags' => $this->headings,
-							);
-			$result['design'] = array(
-									'iframe' => $this->iframe,
-									'image' => $this->images,
-									'nested_table' => $this->table,
-									'tag_style' => $this->tag_css,
-									'vport' => $this->viewport,
-									'media' => $this->css['media'],
-								);
-			$result['crawl'] = array(
-									'val' => $this->parsed_url['val'],
-									'ssl' => $this->parsed_url['ssl'],
-									'dynamic' => $this->parsed_url['dynamic'],
-									'underscore' => $this->parsed_url['underscore'],
-									'ip' => $this->server['ip'],
-									'cano' => $this->canonical['ok'],
-									'if_mod' => $this->server['if_mod'],
-									'alive' => $this->server['alive'],
-									'meta_robot' => $this->robot,
-								);
-			$result['speed'] = array(
-								'res_time' => $this->header['time'],
-								'down_time' => $this->body['time'],
-								'gzip' => $this->server['gzip'],
-								'cache' => $this->server['cache'],
-								'css' => $this->css,
-								'js' => $this->js['count'],
-								);
+			$result['text'] = $this->return_text();
+			$result['design'] = $this->return_design();
+			$result['crawl'] = $this->return_crawl();
+			$result['speed'] = $this->return_speed();
 			$result['social_tags'] = $this->social_tags;
 
 			return $result;
 		}
 
-/**
+
 		//Calculate score
 		public function get_score() {
 
 			$score = new CGSS_SCORE();
-			$score->result = $this->result;
+			$score->snippet = $this->return_snippet();
+			$score->text = $this->return_text();
+			$score->design = $this->return_design();
+			$score->crawl = $this->return_crawl();
+			$score->speed = $this->return_speed();
 
 			$rate = $score->calculate();
 			$exact = $score->exact();
 		}
-*/
+
 
 		// Analyze the JS
 		public function get_javascript() {
@@ -493,7 +534,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$robot_tag = $robot->tag();
 
 			$meta_robot['val'] = ( $robot_tag ? array_pop($robot_tag) : false );
-			$meta_robot['ok'] = $meta_robot['val'] ? 1 : 0;
+			$meta_robot['ok'] = $meta_robot['val'] && strpos($meta_robot['val'], 'index') !== false && strpos($meta_robot['val'], 'follow') !== false ? 1 : 0;
 
 			return $meta_robot;
 		}

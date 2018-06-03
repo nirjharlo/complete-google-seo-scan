@@ -9,7 +9,11 @@
 class CGSS_SCORE {
 
 
-	private $result;
+	public $snippet;
+	public $text;
+	public $design;
+	public $crawl;
+	public $speed;
 
 
 	public function exact() {
@@ -24,30 +28,33 @@ class CGSS_SCORE {
 		$star = 0;
 		switch ( true ) {
 			case ( $score >= 560 ):
-				$star = '5';
+				$star = '10';
 				break;
 			case ( $score >= 490 ):
-				$star = '4.5';
+				$star = '9';
 				break;
 			case ( $score >= 420 ):
-				$star = '4';
+				$star = '8';
 				break;
 			case ( $score >= 350 ):
-				$star = '3.5';
+				$star = '7';
 				break;
 			case ( $score >= 280 ):
-				$star = '3';
+				$star = '6';
 				break;
 			case ( $score >= 210 ):
-				$star = '2.5';
+				$star = '5';
 				break;
 			case ( $score >= 140 ):
-				$star = '2';
+				$star = '4';
 				break;
 			case ( $score >= 70 ):
-				$star = '1.5';
+				$star = '3';
 				break;
 			case ( $score >= 0 ):
+				$star = '2';
+				break;
+			case ( $score <= 0 ):
 				$star = '1';
 				break;
 		}
@@ -56,7 +63,7 @@ class CGSS_SCORE {
 
 	//Check snippet lengths and score it. Find most used word in them and score: 50, 50
 	public function snip() {
-		$data = $this->result['snip'];
+		$data = $this->snippet;
 		if ( $data ) {
 			$score = 0;
 			$arr = array( $data['title'], $data['desc'] );
@@ -79,7 +86,7 @@ class CGSS_SCORE {
 	//Analyze text for calculating score by words count, html/text ratio, link to word ratio,
 	//image link to all link ratio and usage of most used word in anchor texts and heading texts: 200, 75
 	public function text() {
-		$data = $this->result['text'];
+		$data = $this->text;
 		if ( $data ) {
 			$score = 0;
 			$count = $data['count'];
@@ -106,7 +113,7 @@ class CGSS_SCORE {
 			if ( $data['links'] ) {
 				$links = $data['links'];
 				if ( $count > 0 ) {
-					$link_ratio = ( ( $links['num'] / $count ) * 100 );
+					$link_ratio = ( ( $links['count'] / $count ) * 100 );
 					switch ( true ) {
 						case ( $link_ratio <= 50 ):
 							$score += 10;
@@ -128,15 +135,19 @@ class CGSS_SCORE {
 
 			//Check for keywords in various area: 60, 0
 			$anch = $links['anchors'];
-			$htags = $data['htags'];
-			$hds = $htags['content'];
-			$snip_data = $this->result['snip'];
-			$design_data = $this->result['design'];
+			$htags = $data['htags']['content'];
+			$hds = '';
+			foreach ($htags as $value) {
+				$hds .= ' ' . implode(' ', $value);
+			}
+			$snip_data = $this->snippet;
+			$design_data = $this->design;
 			$img_data = $design_data['image'];
+			$alts = implode(' ', $img_data['alt_value']);
 			$url = implode( " ", explode( "-", $snip_data['url'] ) );
-			$arr = array( $snip_data['title'], $snip_data['desc'], $img_data['alt'], $url, $anch, $hds );
+			$arr = array( $snip_data['title'], $snip_data['desc'], $alts, $url, $anch, $hds );
 			foreach ( $arr as $val ) {
-				if ( $val and $val != '' ) {
+				if ( $val && $val != '' ) {
 					$find_key = $this->key_chk( $val );
 					switch ( true ) {
 						case ( ! $find_key ):
@@ -156,11 +167,11 @@ class CGSS_SCORE {
 
 	//Score based on alt tags presence in images and top word found in those alt tags: 70, 45
 	public function design() {
-		$data = $this->result['design'];
+		$data = $this->design;
 		if ( $data ) {
 			$score = 0;
 			$img_data = $data['image'];
-			$no_alt_data = $img_data['no_alt_src'];
+			$no_alt_data = $img_data['no_alt_count'];
 			switch ( $no_alt_data ) {
 				case 0:
 					$score += 25;
@@ -181,7 +192,7 @@ class CGSS_SCORE {
 			}
 
 			$tag_style = $data['tag_style'];
-			switch ( $tag_style['num'] ) {
+			switch ( $tag_style['count'] ) {
 				case 0:
 					$score += 10;
 					break;
@@ -206,16 +217,17 @@ class CGSS_SCORE {
 
 	//determine score number of http requests and presence of code errors, viewport and social tags: 80, 40
 	public function crawl() {
-		$data = $this->result['crawl'];
+		$data = $this->crawl;
 		if ( $data ) {
 			$ip = $data['ip'];
 			$meta_robot = $data['meta_robot'];
+
 			if ( ! $data['cano'] or strlen( $data['cano'] ) != 0 ) {
 				$cano = 1;
 			} else {
 				$cano = 0;
 			}
-			$arr = array( $data['ssl'], $data['dynamic'], $data['underscore'], $cano, $data['www'], $ip['ok'], $data['if_mod'], $meta_robot['ok'] );
+			$arr = array( $data['ssl'], $data['dynamic'], $data['underscore'], $cano, $ip, $data['if_mod'], $meta_robot['ok'] );
 			$score = 0;
 			foreach ( $arr as $val ) {
 				switch ( $val ) {
@@ -235,7 +247,7 @@ class CGSS_SCORE {
 
 	//Overview score for url and canonical tag. Excluding robots tag,to be taken care of by jquery: 70, 35
 	public function speed() {
-		$data = $this->result['speed'];
+		$data = $this->speed;
 		if ( $data ) {
 			$score = 0;
 			$down_time = $data['down_time'];
@@ -263,7 +275,7 @@ class CGSS_SCORE {
 			}
 			$css = $data['css'];
 			$js = $data['js'];
-			$files_arr = array( $css['num'], $js['num'] );
+			$files_arr = array( $css['count'], $js['count'] );
 			foreach ( $files_arr as $val ) {
 				switch ( true ) {
 					case ( $val <= 10 ):
@@ -294,11 +306,11 @@ class CGSS_SCORE {
 	//Get the top word found
 	public function key_chk( $txt ) {
 		$show = 0;
-		$result = $this->result;
-		$data = $result['text'];
-		$keys = $data['keys'];
-		foreach ( $keys as $val ) {
-			$num = substr_count( $val, $txt );
+		$text = $this->text;
+		$keys = $text['keys'];
+		foreach ( $keys as $key => $val ) {
+
+			$num = substr_count( $key, $txt );
 			if ( $num > 0 ) {
 				$show = 1;
 			}

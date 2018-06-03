@@ -25,20 +25,12 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 
 
 		//fetch the data using custom named method function
-		public static function get_insight( $per_page = 5, $page_number = 1 ) {
+		public static function get_insight() {
 
 			global $wpdb;
 
 			//Build the db query base
 			$sql = "SELECT * FROM {$wpdb->prefix}cgss_insight";
-
-			//Set filters in the query using $_REQUEST
-			if ( ! empty( $_REQUEST['orderby'] ) ) {
-				$sql .= ' ORDER BY ' . esc_sql( $_REQUEST['orderby'] );
-				$sql .= ! empty( $_REQUEST['order'] ) ? ' ' . esc_sql( $_REQUEST['order'] ) : ' ASC';
-			}
-			$sql .= " LIMIT $per_page";
-			$sql .= ' OFFSET ' . ( $page_number - 1 ) * $per_page;
 
 			//get the data from database
 			$result = $wpdb->get_results( $sql, 'ARRAY_A' );
@@ -119,7 +111,7 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 			$this->_column_headers = $this->get_column_info();
 
 			/** Process bulk action */
-			$this->process_bulk_action();
+			/**
 			$per_page     = $this->get_items_per_page( 'item_per_page', 5 );
 			$current_page = $this->get_pagenum();
 			$total_items  = self::record_count();
@@ -127,8 +119,8 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 				'total_items' => $total_items,
 				'per_page'    => $per_page,
 			) );
-
-			$this->items = self::get_insight( $per_page, $current_page );
+*/
+			$this->items = self::get_insight();
 		}
 	}
 } ?>

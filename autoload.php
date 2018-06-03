@@ -26,7 +26,6 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 		}
 
 
-
 		public function db_install() {
 
 			if ( class_exists( 'CGSS_DB' ) ) {
@@ -37,9 +36,10 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 							remark varchar(512) NOT NULL,
 							UNIQUE KEY ID (ID)";
 				$db->build();
+
+				$insert_data = $this->insert_prelim_data();
 			}
 		}
-
 
 
 		public function db_uninstall() {
@@ -50,6 +50,34 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}$tableName" );
 		}
 
+
+		public function insert_prelim_data() {
+
+			global $wpdb;
+
+			$result = $wpdb->get_results("SELECT * from {$wpdb->prefix}cgss_insight");
+    		if(count($result) == 0) {
+
+			$init_insight = array(
+					__('Score','cgss'),
+					__('Text','cgss'),
+					__('Links','cgss'),
+					__('Keywords','cgss'),
+					__('Images','cgss'),
+					__('Responsive','cgss'),
+					__('URLs','cgss'),
+					__('Speed','cgss'),
+					__('Social','cgss')
+				);
+			$no_data = __( 'No scan reports are available yet', 'cgss' );
+			foreach ($init_insight as $key => $value) {
+				$sql = $wpdb->prepare(
+					"INSERT INTO {$wpdb->prefix}cgss_insight ( ID, item, remark ) VALUES ( %d, %s, %s )", ($key+1), $value, $no_data
+					);
+				$query = $wpdb->query($sql);
+			}
+			}
+		}
 
 
 		//Include scripts
