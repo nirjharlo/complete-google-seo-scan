@@ -9,7 +9,7 @@ class CGSS_SERVER {
 
 
 	public $header;
-
+	public $domain;
 
 	//check cache
 	public function cache() {
@@ -65,6 +65,14 @@ class CGSS_SERVER {
 			$gzip = 1;
 		}
 		return $gzip;
+	}
+
+
+	//Get the IP address
+	public function IP() {
+
+		$IP = gethostbyname( $this->domain );
+		return $IP;
 	}
 }
 ?>

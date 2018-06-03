@@ -101,6 +101,7 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			require_once ('vendor/lib/social.php');
 			require_once ('vendor/lib/server.php');
 			require_once ('vendor/lib/design.php');
+			require_once ('vendor/lib/score.php');
 			require_once ('vendor/crawl.php');
 		}
 

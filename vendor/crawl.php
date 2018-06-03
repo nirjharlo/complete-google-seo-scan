@@ -16,6 +16,8 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Execute the crawl
 		public function do() {
 
+			$tic = microtime(true);
+
 			$this->header = $this->header_check();
 			$ok = $this->header['ok'];
 			if (!$ok) {
@@ -44,7 +46,6 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->robot = $this->get_robot();
 					$this->canonical = $this->get_canonical();
 					$this->viewport = $this->get_viewport();
-					$this->css_media = $this->get_css_media();
 					$this->social_tags = $this->get_social_tags();
 					$this->links = $this->get_links();
 					$this->images = $this->get_images();
@@ -52,18 +53,22 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->tag_css = $this->get_tag_css();
 					$this->headings = $this->get_headings();
 					$this->table = $this->get_nested_table();
+					
 					$this->text = $this->get_text_vars();
 					$this->keywords = $this->get_keywords();
-					//$this->social_data = $this->get_social_data();
+
+					$this->social_data = $this->get_social_data();
+					
 					$this->server = $this->get_server();
-					$this->design_data = $this->get_design_data();
 
-					//$this->css = $this->get_style();
+					$this->css = $this->get_style();
 					$this->js = $this->get_javascript();
-
-
 				}
 			}
+
+			$toc = microtime(true);
+
+			$this->time = round( ( $toc - $tic ), 3 );
 		}
 
 
@@ -74,10 +79,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$result = array();
 
 			$result['domain'] = $this->parsed_url['domain'];
-			$result['score'] = null;
-			$result['marks'] = null;
-			$result['time'] = null;
-			$result['time_now'] = null;
+			$result['time'] = $this->time;
 			$result['snip'] = array(
 								'title' => $this->title,
 								'url' => $this->parsed_url['val'],
@@ -99,21 +101,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 									'nested_table' => $this->table,
 									'tag_style' => $this->tag_css,
 									'vport' => $this->viewport,
-									'media' => array(
-												'ok' => $css_media,
-												'num' => $css_media_num,
-												),
+									'media' => $this->css['media'],
 								);
 			$result['crawl'] = array(
-									'val' => $this->parsed_url['url'],
+									'val' => $this->parsed_url['val'],
 									'ssl' => $this->parsed_url['ssl'],
 									'dynamic' => $this->parsed_url['dynamic'],
-									'underscore' => $underscore,
-									'ip' => array(
-											'ok' => $ip,
-											'val' => $ip_addr,
-											),
-									'www' => $www,
+									'underscore' => $this->parsed_url['underscore'],
+									'ip' => $this->server['ip'],
 									'cano' => $this->canonical['ok'],
 									'if_mod' => $this->server['if_mod'],
 									'alive' => $this->server['alive'],
@@ -124,33 +119,27 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 								'down_time' => $this->body['time'],
 								'gzip' => $this->server['gzip'],
 								'cache' => $this->server['cache'],
-								'css' => array(
-											'num' => $css_num + $css_import,
-											'size' => $css_size,
-										),
-								'js' => array(
-										'num' => $js_num,
-										'size' => $js_size,
-										),
-								'comp' => array(
-											'css' => array(
-														'num' => $css_compress_num,
-														'size' => $css_compress_size,
-													),
-											'js' => array(
-														'num' => $js_compress_num,
-														'size' => $js_compress_size,
-													),
-											),
+								'css' => $this->css,
+								'js' => $this->js['count'],
 								);
 			$result['social_tags'] = $this->social_tags;
 
 			return $result;
 		}
 
+/**
+		//Calculate score
+		public function get_score() {
 
+			$score = new CGSS_SCORE();
+			$score->result = $this->result;
 
+			$rate = $score->calculate();
+			$exact = $score->exact();
+		}
+*/
 
+		// Analyze the JS
 		public function get_javascript() {
 
 			$js = new CGSS_FETCH();
@@ -159,29 +148,31 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$js->atts = array( 'src' );
 
 			$js_list = $js->tag();
-			var_dump($js_list);
+			
+			$js_data = new CGSS_DESIGN();
+			$js_data->js_url = $js_list;
+			$js_details = $js_data->analyze_js();
+
+			return $js_details;
 		}
 
 
-/**
+
 		//Get the Stylesheets
 		public function get_style() {
 
 			$css = new CGSS_FETCH();
 			$css->dom = $this->dom;
-			$css->tag = 'iframe';
+			$css->tag = 'link';
 			$css->specify = array( 'att' => 'rel', 'val' => 'stylesheet', 'get_att' => 'href' );
 
 			$css_list = $css->tag();
 
-		}
-*/
+			$css_data = new CGSS_DESIGN();
+			$css_data->css_url = $css_list;
+			$css_details = $css_data->analyze_css();
 
-
-		//Get design details
-		public function get_design_data() {
-
-
+			return $css_details;
 		}
 
 
@@ -190,12 +181,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 			$server = new CGSS_SERVER();
 			$server->header = $this->header;
+			$server->domain = $this->parsed_url['domain'];
 
 			$server_data = array();
 			$server_data['gzip'] = $server->gzip();
 			$server_data['cache'] = $server->cache();
 			$server_data['if_mod'] = $server->if_mod();
 			$server_data['alive'] = $server->if_mod();
+			$server_data['ip'] = $server->IP();
 
 			return $server_data;
 		}
@@ -452,13 +445,6 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		}
 
 
-		//Get @import is CSS
-		public function get_css_media() {
-
-			
-		}
-
-
 		// Get viewport tag
 		public function get_viewport() {
 
@@ -546,7 +532,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$response = array();
 
 			$start = microtime(true);
-			$body = file_get_contents( $this->url, FILE_USE_INCLUDE_PATH );
+			$body = @file_get_contents( $this->url, FILE_USE_INCLUDE_PATH );
 			$end = microtime(true);
 
 			$response['ok'] = !$body ? false : true;
@@ -587,6 +573,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$parse['domain'] = $parsed_url['host'];
 			$parse['ssl'] = $parsed_url['scheme'] == 'http' ? false : true;
 			$parse['dynamic'] = array_key_exists('query', $parsed_url) ? true : false;
+			$parse['underscore'] = ( strpos($this->url, '_') !== false ) ? true : false;
 
 			return $parse;
 		}
