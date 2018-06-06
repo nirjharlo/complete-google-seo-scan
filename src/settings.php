@@ -166,15 +166,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 		//Set screen option for Items table
 		public function overview_screen_option() {
-/**
-			$option = 'per_page';
-			$args   = array(
-						'label'   => __( 'Show per page', 'cgss' ),
-						'default' => 10,
-						'option'  => 'item_per_page' // Related to CGSS_OVERVIEW_TABLE()
-						);
-			add_screen_option( $option, $args );
-*/
+
 			$this->overview = new CGSS_OVERVIEW_TABLE();
 		}
 

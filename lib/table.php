@@ -128,7 +128,7 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 							'link'	=> __( 'Links', 'cgss' ),
 							'image'	=> __( 'Images', 'cgss' ),
 							'share'	=> __( 'Shares', 'cgss' ),
-							'time'	=> __( 'Time(ms)', 'cgss' ),
+							'time'	=> __( 'Time(s)', 'cgss' ),
 							
 						);
 			return $columns;

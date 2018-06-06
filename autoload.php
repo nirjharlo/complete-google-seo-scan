@@ -60,12 +60,12 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 			$init_insight = array(
 					__('Score','cgss'),
+					__('Snippet','cgss'),
 					__('Text','cgss'),
 					__('Links','cgss'),
 					__('Keywords','cgss'),
 					__('Images','cgss'),
 					__('Responsive','cgss'),
-					__('URLs','cgss'),
 					__('Speed','cgss'),
 					__('Social','cgss')
 				);

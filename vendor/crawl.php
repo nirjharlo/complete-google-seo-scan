@@ -577,7 +577,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$end = microtime(true);
 
 			$response['ok'] = !$body ? false : true;
-			$response['time'] = round( ( $end - $start ), 3 ) * 1000;
+			$response['time'] = round( ( $end - $start ), 3 );
 			$response['body'] = $body;
 			$response['size'] = mb_strlen( $body, '8bit' );
 
@@ -595,7 +595,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$header = get_headers( $this->url, 1 );
 			$end = microtime(true);
 
-			$response['time'] = round( ( $end - $start ), 3 ) * 1000;
+			$response['time'] = round( ( $end - $start ), 3 );
 			$response['response'] = $header[0];
 			$response['ok'] = (strchr($header[0], '200') != false) ? true : false;
 

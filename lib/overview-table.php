@@ -43,7 +43,7 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 		//If there is no data to show
 		public function no_items() {
 
-			_e( 'No insight available yet. Click the button on top to fetch insight.', 'cgss' );
+			_e( 'cgss_insight DB table is empty. Please reactivate the plugin.', 'cgss' );
 		}
 
 
