@@ -105,14 +105,6 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 
 		// Add custom insight action
-		public function compete() {
-
-			if ( class_exists( 'CGSS_COMPETE' ) ) new CGSS_COMPETE();
-		}
-
-
-
-		// Add custom insight action
 		public function scan() {
 
 			if ( class_exists( 'CGSS_SCAN' ) ) new CGSS_SCAN();
@@ -158,7 +150,6 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			require_once ('lib/script.php');
 
 			require_once ('lib/action/scan.php');
-			require_once ('lib/action/compete.php');
 			require_once ('lib/action/insight.php');
 		}
 
@@ -181,7 +172,6 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 
 			// Add custom actions, defined in settings
 			add_action( 'cgss_scan', array( $this, 'scan' ) );
-			add_action( 'cgss_compete', array( $this, 'compete' ) );
 			add_action( 'cgss_fetch_insight', array( $this, 'insight' ) );
 		}
 	}

@@ -86,7 +86,6 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 			//Change the page instruction where you want to show it
 			$actions = array(
 					'scan' => sprintf( '<a href="?page='.$_GET['page'].'&scan='.$item['ID'].'" target="_blank">%s</a>', __( 'Scan', 'cgss' ) ),
-					'compete' => sprintf( '<a href="?page='.$_GET['page'].'&compete='.$item['ID'].'" target="_blank">%s</a>', __( 'Compete', 'cgss' ) ),
 					'view' => sprintf( '<a href="'.get_permalink($item['ID']).'" target="_blank">%s</a>', __( 'View', 'cgss' ) )
 					);
 			return $title . $this->row_actions( $actions );

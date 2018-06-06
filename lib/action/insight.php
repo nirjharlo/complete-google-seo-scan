@@ -71,7 +71,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$external_percentage = round(($external/$count)*100, 0);
 			$nofollow_percentage = round(($nofollow/$count)*100, 0);
 
-			$output = sprintf(__('Avarage', 'cgss') . ' '.  _n( '%d link','%d links', $count, 'cgss' ) . ' ' . __('are found per page and %d percent are external and %d percent are nofollow among them.', 'cgss'),$count,$external_percentage,$nofollow_percentage);
+			$output = sprintf(__('Avarage', 'cgss') . ' '.  _n( '%d link is','%d links are', $count, 'cgss' ) . ' ' . __('found per page and %d percent are external and %d percent are nofollow among them.', 'cgss'),$count,$external_percentage,$nofollow_percentage);
 			return $output;
 		}
 
@@ -111,7 +111,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 			$avg_image = round(($image_count/$this->count), 0);
 
-			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n( '%d image', '%d images', $avg_image, 'cgss' ) . ' ' . __( 'are found per page and', 'cgss'),$avg_image) . ' ';
+			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n( '%d image is', '%d images are', $avg_image, 'cgss' ) . ' ' . __( 'found per page and', 'cgss'),$avg_image) . ' ';
 			if ($no_alt_image == 0) {
 				$output .= __('all of them are optimized', 'cgss');
 			} else {
@@ -178,7 +178,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$count = round(array_sum(array_column($text, 'count')) / $this->count, 0);
 			$ratio = round(array_sum(array_column($text, 'ratio')) / $this->count, 2);
 
-			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n('%d word','%d words',$count,'cgss') . ' ' . __( 'are found per page and avarage text to HTML ratio is %d percent', 'cgss'),$count,$ratio);
+			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n('%d word is','%d words are',$count,'cgss') . ' ' . __( 'found per page and avarage text to HTML ratio is %d percent', 'cgss'),$count,$ratio);
 			return $output;
 		}
 

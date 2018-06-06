@@ -28,30 +28,97 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 		}
 
 
+		//Display the score
+		public function score_html() {
 
-		public function render($result) {
+			$score_html = '';
 
-			$this->box( 'content', __( 'Text & Links', 'cgss' ), $this->dashicon('text'), 'content', 'width: 49.5%' );
+			return $score_html;
 		}
 
 
-		public function box($id, $icon, $title, $desc, $style) {
+		// Display the snippets
+		public function snippet_display() {
 
-			echo '<div id="dashboard_right_now" class="postbox" style="'.$style.'">
-				<div class="handlediv handlediv-' . $id . '">' . $icon . '</div>
-					<h3 id="hndle-' . $id . '" class="hndle ui-sortable-handle" title="' . __( 'Click to toggle', 'cgss' ) . '"><span>' . $title . '</span></h3>
-					<div id="inside-' . $id . '" class="inside">
-						<div class="main">' .
-							$desc .
-						'</div>
-					</div>
-				</div>';
+			$snippet_html = '';
+
+			return $snippet_html;
+		}
+
+
+		// Display text and link data
+		public function text_display() {
+
+			$text_html = '';
+
+			return $text_html;
+		}
+
+
+		// Display design data
+		public function design_display() {
+
+
+			$design_html = '';
+
+			return $design_html;
+		}
+
+
+		// Display crawl data
+		public function crawl_display() {
+
+			$crawl_html = '';
+
+			return $crawl_html;
+		}
+
+
+		// Display speed data
+		public function speed_display() {
+
+			$speed_html = '';
+
+			return $speed_html;
+		}
+
+
+		// Render the HTML
+		public function render($result) {
+
+			$this->score	= $this->score_html();
+			$this->snippets	= $this->snippet_display();
+			$this->text = $this->text_display();
+			$this->design = $this->design_display();
+			$this->crawl = $this->crawl_display();
+			$this->speed = $this->speed_display();
+
+			$this->box( null, null, $this->score );
+			$this->box( __( 'Snippets', 'cgss' ), $this->dashicon('align-none'), $this->snippets );
+			$this->box( __( 'Text & Links', 'cgss' ), $this->dashicon('text'), $this->text );
+			$this->box( __( 'Design', 'cgss' ), $this->dashicon('smartphone'), $this->design );
+			$this->box( __( 'Crawl', 'cgss' ), $this->dashicon('randomize'), $this->crawl );
+			$this->box( __( 'Speed', 'cgss' ), $this->dashicon('clock'), $this->speed );
+		}
+
+
+		public function box($title, $icon, $desc) {
+
+			echo 
+			'<div class="postbox">
+				<div class="inside">
+					<div class="main">' .
+						'<h3>' . $icon . ' ' . $title . '</h3>' .
+						$desc .
+					'</div>
+				</div>
+			</div>';
 		}
 
 
 		public function dashicon($icon) {
 
-			echo '<span class="dashicon dashicon-'.$icon.'"></span>';
+			return '<span class="dashicons dashicons-'.$icon.'"></span>';
 		}
 	}
 } ?>
