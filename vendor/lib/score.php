@@ -25,62 +25,61 @@ class CGSS_SCORE {
 	// Now devide it in a series of 8 segment, remember Gap, betwwen the fingers. Put approx values.
 	public function calculate() {
 		$score = $this->exact();
+
 		$star = 0;
 		switch ( true ) {
 			case ( $score >= 560 ):
-				$star = '10';
+				$star = 10;
 				break;
 			case ( $score >= 490 ):
-				$star = '9';
+				$star = 9;
 				break;
 			case ( $score >= 420 ):
-				$star = '8';
+				$star = 8;
 				break;
 			case ( $score >= 350 ):
-				$star = '7';
+				$star = 7;
 				break;
 			case ( $score >= 280 ):
-				$star = '6';
+				$star = 6;
 				break;
 			case ( $score >= 210 ):
-				$star = '5';
+				$star = 5;
 				break;
 			case ( $score >= 140 ):
-				$star = '4';
+				$star = 4;
 				break;
 			case ( $score >= 70 ):
-				$star = '3';
+				$star = 3;
 				break;
 			case ( $score >= 0 ):
-				$star = '2';
+				$star = 2;
 				break;
 			case ( $score <= 0 ):
-				$star = '1';
+				$star = 1;
 				break;
 		}
+
 		return $star;
 	}
 
 	//Check snippet lengths and score it. Find most used word in them and score: 50, 50
 	public function snip() {
 		$data = $this->snippet;
-		if ( $data ) {
-			$score = 0;
-			$arr = array( $data['title'], $data['desc'] );
-			foreach ( $arr as $key ) {
-				switch ( true ) {
-					case ( $key and $key != '' ):
-						$score += 25;
-						break;
-					case ( ! $key or $key == '' ):
-						$score -= 25;
-						break;
-				}
+		$score = 0;
+
+		$arr = array( $data['title'], $data['desc'] );
+		foreach ( $arr as $key ) {
+			switch ( true ) {
+				case ( $key && $key != '' ):
+					$score += 25;
+					break;
+				case ( ! $key || $key == '' ):
+					$score -= 25;
+					break;
 			}
-			return $score;
-		} else {
-			return 0;
 		}
+		return $score;
 	}
 
 	//Analyze text for calculating score by words count, html/text ratio, link to word ratio,

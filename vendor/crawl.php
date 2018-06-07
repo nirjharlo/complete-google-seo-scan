@@ -140,7 +140,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 				'gzip' => $this->server['gzip'],
 				'cache' => $this->server['cache'],
 				'css' => $this->css,
-				'js' => $this->js['count']
+				'js' => $this->js
 				);
 		}
 
@@ -175,8 +175,8 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$score->crawl = $this->return_crawl();
 			$score->speed = $this->return_speed();
 
-			$rate = $score->calculate();
-			$exact = $score->exact();
+			$score_obtained = $score->calculate();
+			return $score_obtained;
 		}
 
 

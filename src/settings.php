@@ -31,26 +31,11 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 									'heading' => __( 'Overview', 'cgss' ),
 									'slug' => 'seo-scan',
 									'parent_slug' => 'seo-scan',
-									'help' => true,
+									'help' => false,
 									'screen' => true
 								);
 			$this->subMenuPageCpt = $this->get_post_type_menus();
 
-			$this->helpData = array(
-								array(
-								'slug' => '',
-								'help' => array(
-											'info' => array(
-														array(
-															'id' => 'helpId',
-															'title' => __( 'Title', 'textdomain' ),
-															'content' => __( 'Description', 'textdomain' ),
-														),
-													),
-											'link' => '<p><a href="#">' . __( 'helpLink', 'textdomain' ) . '</a></p>',
-											)
-								)
-							);
 			$this->screen = ''; // true/false
 
 			add_action( 'admin_menu', array( $this, 'menu_page' ) );
@@ -80,7 +65,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 									'heading' => $type_name,
 									'slug' => 'seo-scan-' . $type,
 									'parent_slug' => 'seo-scan',
-									'help' => true,
+									'help' => false,
 									'screen' => true
 							);
 				}
@@ -122,9 +107,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 					if ($this->subMenuPage['screen']) {
 						add_action( 'load-' . $hook, array( $this, 'overview_screen_option' ) );
 					}
-					if ($this->subMenuPage['help']) {
-						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
-					}
 				}
 			}
 
@@ -145,9 +127,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 						);
 					if ($value['screen']) {
 						add_action( 'load-' . $hook, array( $this, 'screen_option' ) );
-					}
-					if ($value['help']) {
-						add_action( 'load-' . $hook, array( $this, 'help_tabs' ) );
 					}
 				}
 			}
@@ -234,22 +213,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 				<br class="clear">
 			</div>
 		<?php
-		}
-
-
-
-		// Add help tabs using help data
-		public function help_tabs() {
-
-			foreach ($this->helpData as $value) {
-				if ($_GET['page'] == $value['slug']) {
-					$this->screen = get_current_screen();
-					foreach( $value['info'] as $key ) {
-						$this->screen->add_help_tab( $key );
-					}
-					$this->screen->set_help_sidebar( $value['link'] );
-				}
-			}
 		}
 	}
 } ?>
