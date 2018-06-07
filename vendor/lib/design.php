@@ -1,6 +1,6 @@
 <?php
 /**
- * Donload and analyze content, based on an array of url. Used for .css or .js files.
+ * Download and analyze .css or .js files, based on an url.
  *
  * 2 properties:
  * @property array $css_url Input CSS urls
@@ -11,6 +11,7 @@ class CGSS_DESIGN {
 
 
 	public $css_url;
+	public $js_url;
 
 
 	//analyze those urls and their content
@@ -26,7 +27,7 @@ class CGSS_DESIGN {
 			$num = count($this->js_url);
 
 			//get files and check their bodies
-			foreach ( $this->css_url as $val ) {
+			foreach ( $this->js_url as $val ) {
 				$body = @file_get_contents( $val, FILE_USE_INCLUDE_PATH );
 				if ($body) {
 					$pre_size = mb_strlen( $body, '8bit' );

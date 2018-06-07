@@ -2,8 +2,9 @@
 /**
  * Get server features from header, taken from the url.
  *
- * 1 property:
- * @prop array $header Input header, whose social value is to be counted
+ * 2 properties:
+ * @property array $header Input header, whose social value is to be counted
+ * @property string $domain Domain name
  */
 class CGSS_SERVER {
 

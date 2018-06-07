@@ -3,8 +3,12 @@
  * From result data found in scan, analyze a score of on-page optimization. Using approximate values
  * from qualitative ideas of seo. Sometimes statistical approximation has been taken.
  *
- * 1 property:
- * @prop array $result The input resulting array from the scan.
+ * 5 properties:
+ * @property array $snippet
+ * @property array $text
+ * @property array $design
+ * @property array $crawl
+ * @property array $speed
  */
 class CGSS_SCORE {
 

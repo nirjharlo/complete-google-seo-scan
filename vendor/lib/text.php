@@ -1,7 +1,7 @@
 <?php
 /**
  * An object for treating text by using methods of xpath and generating array of words along with
- * text to html ration interms of bits size.
+ * text to html ratio in kb.
  *
  * 2 properties.
  * @property obj $dom document object model
@@ -15,7 +15,7 @@ class CGSS_TEXT_TREATMENT {
 
 
 	// Execute the xPath first, to prevent multiple execution
-	public function do() {
+	public function execute() {
 
 		$this->xpath = $this->xpath();
 		$this->text = $this->text();

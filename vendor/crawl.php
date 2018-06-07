@@ -14,7 +14,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 
 		// Execute the crawl
-		public function do() {
+		public function execute() {
 
 			$tic = microtime(true);
 
@@ -272,7 +272,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$text = new CGSS_TEXT_TREATMENT();
 			$text->dom =  $this->dom;
 			$text->body_size = $this->body['size'];
-			$text->do();
+			$text->execute();
 			$text_string = $text->text();
 			$words = $text->words();
 

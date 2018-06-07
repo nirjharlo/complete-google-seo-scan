@@ -18,7 +18,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 
 				$crawl = new CGSS_CRAWL();
 				$crawl->url = esc_url_raw($url);
-				$crawl->do();
+				$crawl->execute();
 				$this->result = $crawl->result();
 
 				update_post_meta( $post_id, 'cgss_scan_result', $this->result );

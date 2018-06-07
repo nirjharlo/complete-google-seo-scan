@@ -21,7 +21,7 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 													'label' => __( 'Dashboard', 'cgss' )
 												),
 											);
-				$install->do();
+				$install->execute();
 			}
 		}
 

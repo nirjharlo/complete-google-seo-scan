@@ -197,7 +197,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			}
 			$snip_fraction = $this->count - $snip_count;
 
-			$output = ($snip_fraction > 0) ? __( 'All snippets are ok', 'cgss' ) : sprintf(_n('%d page', '%d pages', $snip_fraction, 'cgss'), $snip_fraction) . ' ' . __( 'have incomplete snippets', 'cgss' );
+			$output = ($snip_fraction == 0) ? __( 'All snippets are ok', 'cgss' ) : sprintf(_n('%d page', '%d pages', $snip_fraction, 'cgss'), $snip_fraction) . ' ' . __( 'have incomplete snippets', 'cgss' );
 			return $output;
 		}
 

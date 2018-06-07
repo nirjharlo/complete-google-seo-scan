@@ -1,0 +1,405 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Complete Google SEO Scan 2.3\n"
+"Report-Msgid-Bugs-To: info@gogretel.com\n"
+"POT-Creation-Date: 2018-06-07 21:50+0530\n"
+"PO-Revision-Date: 2015-10-05 14:34+0530\n"
+"Last-Translator: \n"
+"Language-Team: GoGretel <info@gogretel.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals = 2; plural=n != 1;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../autoload.php:21
+msgid "Dashboard"
+msgstr ""
+
+#: ../autoload.php:62
+msgid "Score"
+msgstr ""
+
+#: ../autoload.php:63
+msgid "Snippet"
+msgstr ""
+
+#: ../autoload.php:64
+msgid "Text"
+msgstr ""
+
+#: ../autoload.php:65 ../lib/table.php:127
+msgid "Links"
+msgstr ""
+
+#: ../autoload.php:66
+msgid "Keywords"
+msgstr ""
+
+#: ../autoload.php:67 ../lib/table.php:128
+msgid "Images"
+msgstr ""
+
+#: ../autoload.php:68
+msgid "Responsive"
+msgstr ""
+
+#: ../autoload.php:69 ../lib/action/scan.php:216
+msgid "Speed"
+msgstr ""
+
+#: ../autoload.php:70
+msgid "Social"
+msgstr ""
+
+#: ../autoload.php:72
+msgid "No scan reports are available yet"
+msgstr ""
+
+#: ../lib/action/insight.php:50
+#, php-format
+msgid "Avarage SEO score is %d"
+msgstr ""
+
+#: ../lib/action/insight.php:74 ../lib/action/insight.php:114
+#: ../lib/action/insight.php:181
+msgid "Avarage"
+msgstr ""
+
+#: ../lib/action/insight.php:74
+#, php-format
+msgid ""
+"found per page and %d percent are external and %d percent are nofollow among "
+"them."
+msgstr ""
+
+#: ../lib/action/insight.php:97
+msgid "Avarage foucs keyword is"
+msgstr ""
+
+#: ../lib/action/insight.php:97
+#, php-format
+msgid "long with keywords frequency of %d percent"
+msgstr ""
+
+#: ../lib/action/insight.php:114
+msgid "found per page and"
+msgstr ""
+
+#: ../lib/action/insight.php:116
+msgid "all of them are optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:119
+#, php-format
+msgid "%d percent among them doesn't have alt tag"
+msgstr ""
+
+#: ../lib/action/insight.php:133
+msgid "All pages are mobile optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:136
+#, php-format
+msgid "%d percent pages aren't mobile optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:153
+#, php-format
+msgid "Average response time is %d s and average download time is %d s"
+msgstr ""
+
+#: ../lib/action/insight.php:168
+msgid "Total"
+msgstr ""
+
+#: ../lib/action/insight.php:168
+msgid "in g+ and"
+msgstr ""
+
+#: ../lib/action/insight.php:168
+msgid "in FB and"
+msgstr ""
+
+#: ../lib/action/insight.php:168
+msgid "are present"
+msgstr ""
+
+#: ../lib/action/insight.php:181
+#, php-format
+msgid "found per page and avarage text to HTML ratio is %d percent"
+msgstr ""
+
+#: ../lib/action/insight.php:200
+msgid "All snippets are ok"
+msgstr ""
+
+#: ../lib/action/insight.php:200
+msgid "have incomplete snippets"
+msgstr ""
+
+#: ../lib/action/scan.php:41
+#, php-format
+msgid ""
+"Overall SEO score %d out of 10. Total gPlus shares: %d Facebook shares: %d "
+"and likes: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:59
+msgid "NOT_FOUND"
+msgstr ""
+
+#: ../lib/action/scan.php:62
+msgid "Search snippet"
+msgstr ""
+
+#: ../lib/action/scan.php:64 ../lib/action/scan.php:70
+#, php-format
+msgid "Title: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:65 ../lib/action/scan.php:71
+#, php-format
+msgid "Description: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:68
+msgid "Social snippet(OGP)"
+msgstr ""
+
+#: ../lib/action/scan.php:72
+#, php-format
+msgid "Image: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:98
+#, php-format
+msgid "Keywords: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:99
+#, php-format
+msgid "Number of words: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:100
+#, php-format
+msgid "Text to html ratio: %s percent"
+msgstr ""
+
+#: ../lib/action/scan.php:101
+#, php-format
+msgid "Heading tags in text hierarchy: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:102
+#, php-format
+msgid "Total Links: %d, Nofollow Links %d, External Links: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:130
+#, php-format
+msgid "Total images: %d and images without alt tags: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:131
+#, php-format
+msgid "iframe: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:132
+#, php-format
+msgid "Nested Tables: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:133
+#, php-format
+msgid "Tags with style attribute: %s(%s)"
+msgstr ""
+
+#: ../lib/action/scan.php:134
+#, php-format
+msgid "Mobile optimization: Viewport Tag: %d, @media Queries: %d"
+msgstr ""
+
+#: ../lib/action/scan.php:156 ../lib/action/scan.php:185
+msgid "on"
+msgstr ""
+
+#: ../lib/action/scan.php:157 ../lib/action/scan.php:186
+msgid "off"
+msgstr ""
+
+#: ../lib/action/scan.php:161
+#, php-format
+msgid ""
+"Your URL parameters: SSL security: %s, Static url: %s, underscores in Url: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:162
+#, php-format
+msgid "If modified since header: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:163
+#, php-format
+msgid "Canonical Url: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:164
+#, php-format
+msgid "Meta Robot: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:165
+#, php-format
+msgid "IP Forward: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:166
+#, php-format
+msgid "Keep alive connection: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:190
+#, php-format
+msgid "Header response time %s s and page downloading time %s s"
+msgstr ""
+
+#: ../lib/action/scan.php:191
+#, php-format
+msgid "gZip compression: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:192
+#, php-format
+msgid "Browser caching: %s"
+msgstr ""
+
+#: ../lib/action/scan.php:193
+#, php-format
+msgid "Requests made by CSS is %s and by JS is %s"
+msgstr ""
+
+#: ../lib/action/scan.php:194
+#, php-format
+msgid "Resources can be compressed by %s kb for CSS and %s kb for JS"
+msgstr ""
+
+#: ../lib/action/scan.php:212
+msgid "Snippets"
+msgstr ""
+
+#: ../lib/action/scan.php:213
+msgid "Text & Links"
+msgstr ""
+
+#: ../lib/action/scan.php:214
+msgid "Design"
+msgstr ""
+
+#: ../lib/action/scan.php:215
+msgid "Crawl"
+msgstr ""
+
+#: ../lib/overview-table.php:19
+msgid "Insight"
+msgstr ""
+
+#: ../lib/overview-table.php:20
+msgid "Inssight"
+msgstr ""
+
+#: ../lib/overview-table.php:46
+msgid "cgss_insight DB table is empty. Please reactivate the plugin."
+msgstr ""
+
+#: ../lib/overview-table.php:100
+msgid "Item"
+msgstr ""
+
+#: ../lib/overview-table.php:101
+msgid "Remark"
+msgstr ""
+
+#: ../lib/table.php:18 ../lib/table.php:124
+msgid "Post"
+msgstr ""
+
+#: ../lib/table.php:19
+msgid "Posts"
+msgstr ""
+
+#: ../lib/table.php:59
+msgid "No Published Posts are available."
+msgstr ""
+
+#: ../lib/table.php:88
+msgid "Scan"
+msgstr ""
+
+#: ../lib/table.php:89
+msgid "View"
+msgstr ""
+
+#: ../lib/table.php:125
+msgid "Focus"
+msgstr ""
+
+#: ../lib/table.php:126
+msgid "Words"
+msgstr ""
+
+#: ../lib/table.php:129
+msgid "Shares"
+msgstr ""
+
+#: ../lib/table.php:130
+msgid "Time(s)"
+msgstr ""
+
+#: ../src/install.php:47
+msgid "The Plugin can't be activated because your PHP version"
+msgstr ""
+
+#: ../src/install.php:48
+msgid "is less than required 5.3. See more information"
+msgstr ""
+
+#: ../src/settings.php:25 ../src/settings.php:26
+msgid "SEO Scan"
+msgstr ""
+
+#: ../src/settings.php:30
+msgid "Seo Scan Overview"
+msgstr ""
+
+#: ../src/settings.php:31
+msgid "Overview"
+msgstr ""
+
+#: ../src/settings.php:64
+msgid "Seo Scan"
+msgstr ""
+
+#: ../src/settings.php:159
+msgid "Show per page"
+msgstr ""
+
+#: ../src/settings.php:174
+msgid "Fetch Insight"
+msgstr ""
+
+#: ../vendor/crawl.php:627
+msgid "The page could not be downloaded. Try again"
+msgstr ""
+
+#: ../vendor/crawl.php:637
+msgid "The header returned is not Ok. Try again"
+msgstr ""

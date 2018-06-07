@@ -8,7 +8,7 @@
  Author URI: http://nirjharlo.com/
  Text Domain: cgss
  Domain Path: /assets/ln
- License: GPLv2
+ License: GPLv3
  License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
 if (!defined('ABSPATH')) exit;

@@ -1,12 +1,12 @@
 === Complete Google Seo Scan ===
 Contributors: nirjhar_lo
-Donate Link: http://gogretel.com/
+Donate Link: http://nirjharlo.com/
 Tags: seo checker, seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
 Requires at Least: 4.5
-Tested Up To: 4.5.3
-Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested Up To: 4.9.6
+Stable tag: 2.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Check on-page seo factors and get content focused insight of your website. Aligned with Google webmaster guidelines.
 
@@ -15,7 +15,7 @@ Check on-page seo factors and get content focused insight of your website. Align
 
 Scan many on-page search engine optimization factors of your webpages, mostly selected from Google webmaster guidelines and PageSpeed rules, as standard.
 
-Where you begin, an overview report for website content, server and design is presented beautifully for easy understanding. To see content report you need to perform easy, one-click scans on your webpages. All published webpages are listed in different post type categories.
+Where you begin, an overview report for website content is presented for easy understanding. To see content report you need to perform easy, one-click scans on your webpages. All published webpages are listed in different post type categories.
 
 When you request a scan, the plugin sends a crawler robot to the webpages and crawls the content along with other related data. Then it processes data and displays a easy to understand report.
 
@@ -23,21 +23,21 @@ The report will contain an overall analysis of the webpage in 7 aspects:
 
 = Overall score with social media counts. =
 
-On top of everything a rating is given out of 5 stars. Score calculation dependds on matrices taken from popular seo blogs and services. You can change it any time, visiting settings panel. Also you can see Google +1s, Facebook shares and Tweets, and determine social media popularity.
+On top of everything a rating is given out of 5 stars. Score calculation dependds on matrices taken from popular seo blogs and services. You can change it any time, visiting settings panel. Also you can see Google +1s and Facebook shares, and determine social media popularity.
 
 = Search engine snippet with highlighted keyword. =
 
-A preview of your webpage in search engine rank page result, is given. Remember, Google is progressively reducing rich snippet usage in SERPs. Still it's included and most used, common keyword is highlighted in `tiltle`, `url` and `meta description`. If no keyword is found snippet looks same.
+Title and description of webpage snippet.
 
 = Most used keywords Analysis and information from text =
 
-To better understand your content, you can rely on the extracted keywords (upto 6 words long) and their density percentage. There is an option to enter your focus keyword and analyze it throughly. You can enter it and start the scan to figure out how it is used plain text, in headings, anchors and image alt tags.
+To better understand your content, you can rely on the extracted keywords (upto 6 words long).
 
-Along with that, learn about text to html ratio, text hiararchy and links. In terms of links see internal and external, dofollow and nofollow, text and image links. In that you will better understand if you have missed any content optimization point or not.
+Along with that, learn about text to html ratio, text hiararchy and links. In terms of links see external, nofollow links. In that you will better understand if you have missed any content optimization point or not.
 
 = Use of Image and page design seo =
 
-Search engine expects you have used optimized images in your webpage. This plugin finds out if you have missed any alt tags or not. Moreover, see deep into your image file names and alt tag content size and quality.
+Search engine expects you have used optimized images in your webpage. This plugin finds out if you have missed any alt tags or not.
 
 Mobile friendly webpages are rewarded by Google, this plugin check responsive webpages it by viewport tag and media queries.
 
@@ -51,38 +51,16 @@ Other server points are taken from Server scan made seperately and includes rele
 
 Header response time and page downloading time are important parameter and is affected by number of HTTP requests and size of resources to load. Get a detailed view of the factors and see if there is necessity to compress .css and .js files or not.
 
-= A sample Facebook snippet using social media tags. =
+= Facebook snippet using social media tags. =
 
-By using social media tags (`og:image`, `og:title`, `og:description`, `og:url`), this plugin shows you a sample facebook snippet.
-
-= Bonus Actions = 
-
-After all this checks are completed, you get a list of actions to be performed for improved seo for each webpage you scan. You just need to click the "ACTIONS" button
-at bottom of your webpage.
-
-= Expect More =
-
-In near future these features may be added: Video Seo, Spam detection, Rich snippet calculation, Twitter v card, above the fold optimization, sitemap.xml check and robots.txt check.
-
-= NOTE =
-
-1. You can scan all published pages from various post types, including those you created by other plugins.
-2. A well document tab is present in every admin page, created by this plugin. Just see them in case you are stuck. If problem is not solved, raise a support request.
-3. More over, if you know little less about on-page seo, <a href="http://gogretel.com/resource/" target="_blank" title="seo tutorial on webmaster guidelines">check out free resources -></a>.
-4. You can achive optimum balance in seo by analyzing your competitors using this <a href="http://gogretel.com/extension/">premium extension for competative intel</a>. The demo is included inside the plugin.
-
-Otherwise, just use it and explore more about your website :-)
+By using social media tags (`og:image`, `og:title`, `og:description`, `og:url`), this plugin gives you details of a sample facebook snippet.
 
 
 == Frequently Asked Questions ==
 
-= Where to find Help documentation? =
-
-It's available on all plugin pages at right top corner. All possible details are written there.
-
 = Where and when to contact support? =
 
-If you don't find answers in help documentation. Then after seeing following questions, you may contact plugin author in support forum.
+After seeing following questions, you may contact plugin author in support forum.
 
 = How to see page listing? =
 
@@ -90,7 +68,7 @@ For each post type menu there is a "Seo Status" submenu page by the name of a po
 
 = How to use the report? =
 
-The report is made user friendly with help suggestions. Also how to fix is included. Click links beside any reported point and see lots of help.
+The report is made user friendly with help suggestions. Also how to fix is included.
 
 = How do you calculate score? =
 
@@ -123,7 +101,7 @@ Almost none. Because this plugin works on admin side completely.
 
 Types of data is stored.
 
-1. Website wide <code>options</code> data.
+1. In DB <code>cgss_insight</code> table.
 2. Page specific <code>post_meta</code> data.
 
 On uninstall, the plugin delets all data. The plugin doesn't collects any data for third party. Everything is entirely on your server.
@@ -143,15 +121,15 @@ Thanks for giving it a thought. But a 5 star rating and shares will be more love
 
 == Installation ==
 
-How to install <a href="https://wordpress.org/plugins/onpage-seo-checker/changelog/" title="see changelog for overview of versions">latest stable version</a> of plugin and geting it started?
+How to install <a href="https://github.com/nirjharlo/complete-google-seo-scan/releases" title="see changelog for overview of versions">latest stable version</a> of plugin and geting it started?
 
 Just as regular procedure for any plugin, please backup your website before you install. It's just a precaution.
 
 = Minimum Requirements =
 
-* WordPress 4.0 or greater
+* WordPress 4.5 or greater
 
-* PHP version 5.3 or greater
+* PHP version 5.4 or greater
 
 * MySQL version 5.0 or greater
 
@@ -182,34 +160,11 @@ After you activate installed plugin, you will see 'Start Here' link in listed pl
 Automatic updates from WordPress repository is very easy as always. Please ensure a backup copy of your website before you update.
 
 
-== Screenshots ==
-
-1. Interface with menu of various post types. Here you can choose post types and see different posts under it.
-2. After you request a scan by clicking in button, You will see this report.
-3. See these list of actions (if any) for each webpage, you scan in report segment.
-4. Find out actionable intelligence on overview page, along with server seo and design seo scan.
-5. Seek for help when you are stuck. Lots of documentation is there in help tab at top right corner of the page.
-6. Use this plugin and see reports in mobile too. It's designed as mobile friendly.
-
-
 == Changelog ==
 
 List of `Stable versions` with release date and purpose.
 
-= Onpage Seo Checker - v2.5 =
-`Release Date: July 31th, 2016`
-1. Name change for avoiding any legal conflict from <a href="http://gogretel.com/resource/" target="_blank" title="complete google seo scan">Complete Google Seo Scan</a>.
-2. New scan page to check posts type items.
-3. Analysis page to analyze data fetched from checks and produce intelligence.
-4. Actions page to create Todo list for each website page.
-5. Monitor page to monitor status metrices.
-6. Settings page to optimize functionality.
-7. New extensions along with Xtend Competative Extension.
-8. New reporting interface.
-9. New crawlers functionality inside.
-10. Usage of database tables started.
-
-See on <a href="https://github.com/nirjharlo/complete-google-seo-scan/releases">Github</a>
+Check on <a href="https://github.com/nirjharlo/complete-google-seo-scan/releases">Github</a>
 
 == Upgrade Notice ==
 

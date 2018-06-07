@@ -9,12 +9,12 @@
  * @prop array $specify An array of 3 elements, for selecting attribute and it's value and
  * decide attribute to fetch. If unspecified use value "null". An example usage:
  *		$specify = array(
- * 			string 'att' => TEXT,
- * 			string 'val' => TEXT,
- * 			string 'get_att' => TEXT,
+ * 			string 'att' => string,
+ * 			string 'val' => string,
+ * 			string 'get_att' => string,
  * 		);
  * @prop array $atts Specification of attribute values of tags. For example usage:
- * 		$specify = array( string TEXT, ... );
+ * 		$specify = array( 'att' => string, 'val' => string );
  *
  * NOTE for fetch_tag() method: If $specify is there then I take individual object to get each
  * attribute. But in case of $specify is not there, we take whole object and not each of them to

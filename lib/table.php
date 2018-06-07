@@ -199,7 +199,7 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 			$image_count = array_column($image, 'count');
 
 			$social = array_column($metas, 'social');
-			$share = array_sum(array_filter($social));
+			$share = array_sum($social);
 
 			$speed = array_column($metas, 'speed');
 			$res_time = array_column($speed, 'down_time');

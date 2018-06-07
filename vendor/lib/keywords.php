@@ -4,12 +4,12 @@
  * But, for now we are using one word elements only.
  *
  * 2 properties.
- * @prop string $words Input words array
- * @prop string $text Input words array
+ * @property string $words Input words array
+ * @property string $text Input words array
  */
 class CGSS_KEYWORDS {
 
-	//define properties
+
 	public $words;
 	public $text;
 

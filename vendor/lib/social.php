@@ -14,6 +14,7 @@ class CGSS_SOCIAL {
 
 	//Google Plus data for g+ counts
 	public function gplus() {
+		
 		$share = false;
 		$url_encode = urlencode( $this->url );
 		$plus_data =  @file_get_contents( "https://plusone.google.com/_/+1/fastbutton?url=" . $url_encode );
@@ -27,11 +28,15 @@ class CGSS_SOCIAL {
 				}
 			}
 		}
+		if (!$share) {
+			$share = 0;
+		}
 		return $share;
 	}
 
 	//Facebook data for likes and shares
 	public function fb() {
+
 		$share = false;
 		$fb_data = @file_get_contents( 'http://api.facebook.com/restserver.php?method=links.getStats&format=json&urls=' . $this->url );
 		if ( ! empty( $fb_data ) ) {
@@ -45,6 +50,9 @@ class CGSS_SOCIAL {
 					);
 				}
 			}
+		}
+		if (!$share) {
+			$share = 0;
 		}
 		return $share;
 	}
