@@ -4,7 +4,7 @@ Donate Link: http://nirjharlo.com/
 Tags: seo checker, seo, SEO, google, meta, meta description, search engine optimization, robots meta, yahoo, bing, WordPress SEO, canonical, nofollow, noindex, keywords, description, page speed, pagespeed, search optimization, google webmaster guidelines, google guidelines, website optimization, search engine optimization, webmaster guidelines, google search
 Requires at Least: 4.5
 Tested Up To: 4.9.6
-Stable tag: 2.0
+Stable tag: 3.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

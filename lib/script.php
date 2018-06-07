@@ -12,8 +12,6 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 		public function __construct() {
 
 			add_action( 'admin_head', array( $this, 'data_table_css' ) );
-			add_action( 'admin_enqueue_scripts', array( $this, 'backend_scripts' ) );
-			add_action( 'wp_enqueue_scripts', array( $this, 'frontend_scripts' ) );
 		}
 
 
@@ -38,27 +36,6 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 
 			echo $table_css;
 			echo $overview_table_css;
-		}
-
-
-
-		// Enter scripts into pages
-		public function backend_scripts() {
-
-			// Set condition to add script
-			// if ( ! isset( $_GET['page'] ) || $_GET['page'] != 'pageName' ) return;
-
-			wp_enqueue_script( 'jsName', CGSS_JS . 'ui.js', array() );
-			wp_enqueue_style( 'cssName', CGSS_CSS . 'css.css' );
-		}
-
-
-
-		// Enter scripts into pages
-		public function frontend_scripts() {
-
-			wp_enqueue_script( 'jsName', CGSS_JS . 'ui.js', array() );
-			wp_enqueue_style( 'cssName', CGSS_CSS . 'css.css' );
 		}
 	}
 } ?>
