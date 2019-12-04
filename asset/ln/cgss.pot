@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Complete Google SEO Scan 2.3\n"
 "Report-Msgid-Bugs-To: info@gogretel.com\n"
-"POT-Creation-Date: 2018-06-07 21:50+0530\n"
+"POT-Creation-Date: 2019-12-04 20:48+0530\n"
 "PO-Revision-Date: 2015-10-05 14:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: GoGretel <info@gogretel.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals = 2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../autoload.php:21
@@ -64,84 +64,81 @@ msgstr ""
 
 #: ../lib/action/insight.php:50
 #, php-format
-msgid "Avarage SEO score is %d"
+msgid "Avarage SEO score is %d out of 10"
 msgstr ""
 
-#: ../lib/action/insight.php:74 ../lib/action/insight.php:114
-#: ../lib/action/insight.php:181
-msgid "Avarage"
-msgstr ""
-
-#: ../lib/action/insight.php:74
-#, php-format
-msgid ""
-"found per page and %d percent are external and %d percent are nofollow among "
-"them."
-msgstr ""
-
-#: ../lib/action/insight.php:97
-msgid "Avarage foucs keyword is"
-msgstr ""
-
-#: ../lib/action/insight.php:97
-#, php-format
-msgid "long with keywords frequency of %d percent"
-msgstr ""
-
-#: ../lib/action/insight.php:114
-msgid "found per page and"
-msgstr ""
-
-#: ../lib/action/insight.php:116
-msgid "all of them are optimized"
-msgstr ""
-
-#: ../lib/action/insight.php:119
-#, php-format
-msgid "%d percent among them doesn't have alt tag"
-msgstr ""
-
-#: ../lib/action/insight.php:133
-msgid "All pages are mobile optimized"
-msgstr ""
-
-#: ../lib/action/insight.php:136
-#, php-format
-msgid "%d percent pages aren't mobile optimized"
-msgstr ""
-
-#: ../lib/action/insight.php:153
-#, php-format
-msgid "Average response time is %d s and average download time is %d s"
-msgstr ""
-
-#: ../lib/action/insight.php:168
-msgid "Total"
-msgstr ""
-
-#: ../lib/action/insight.php:168
-msgid "in g+ and"
-msgstr ""
-
-#: ../lib/action/insight.php:168
-msgid "in FB and"
-msgstr ""
-
-#: ../lib/action/insight.php:168
-msgid "are present"
-msgstr ""
-
-#: ../lib/action/insight.php:181
-#, php-format
-msgid "found per page and avarage text to HTML ratio is %d percent"
-msgstr ""
-
-#: ../lib/action/insight.php:200
+#: ../lib/action/insight.php:76
 msgid "All snippets are ok"
 msgstr ""
 
-#: ../lib/action/insight.php:200
+#: ../lib/action/insight.php:76
 msgid "have incomplete snippets"
+msgstr ""
+
+#: ../lib/action/insight.php:88 ../lib/action/insight.php:104
+#: ../lib/action/insight.php:144
+msgid "Avarage"
+msgstr ""
+
+#: ../lib/action/insight.php:88
+#, php-format
+msgid "found per page and avarage text to HTML ratio is %d"
+msgstr ""
+
+#: ../lib/action/insight.php:104
+#, php-format
+msgid ""
+"found per page. %d&#37; are external and %d&#37; are nofollow among them."
+msgstr ""
+
+#: ../lib/action/insight.php:127
+msgid "Avarage foucs keyword is"
+msgstr ""
+
+#: ../lib/action/insight.php:127
+#, php-format
+msgid "long. Keyword frequency of %d&#37;"
+msgstr ""
+
+#: ../lib/action/insight.php:144
+msgid "found per page."
+msgstr ""
+
+#: ../lib/action/insight.php:146
+msgid "All of them are optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:149
+#, php-format
+msgid "%d&#37; among them doesn't have alt tag"
+msgstr ""
+
+#: ../lib/action/insight.php:163
+msgid "All pages are mobile optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:166
+#, php-format
+msgid "%d&#37; pages aren't mobile optimized"
+msgstr ""
+
+#: ../lib/action/insight.php:184
+#, php-format
+msgid ""
+"Average response time is %d miliseconds and average download time is %d "
+"miliseconds"
+msgstr ""
+
+#: ../lib/action/insight.php:199
+msgid "Total"
+msgstr ""
+
+#: ../lib/action/insight.php:199
+msgid "in g+"
+msgstr ""
+
+#: ../lib/action/insight.php:199
+msgid "in Facebook"
 msgstr ""
 
 #: ../lib/action/scan.php:41
@@ -317,7 +314,7 @@ msgid "Inssight"
 msgstr ""
 
 #: ../lib/overview-table.php:46
-msgid "cgss_insight DB table is empty. Please reactivate the plugin."
+msgid "Database is empty. Please reactivate the plugin."
 msgstr ""
 
 #: ../lib/overview-table.php:100
@@ -372,27 +369,27 @@ msgstr ""
 msgid "is less than required 5.3. See more information"
 msgstr ""
 
-#: ../src/settings.php:25 ../src/settings.php:26
+#: ../src/settings.php:23 ../src/settings.php:24
 msgid "SEO Scan"
 msgstr ""
 
-#: ../src/settings.php:30
+#: ../src/settings.php:28
 msgid "Seo Scan Overview"
 msgstr ""
 
-#: ../src/settings.php:31
+#: ../src/settings.php:29
 msgid "Overview"
 msgstr ""
 
-#: ../src/settings.php:64
+#: ../src/settings.php:71
 msgid "Seo Scan"
 msgstr ""
 
-#: ../src/settings.php:159
+#: ../src/settings.php:166
 msgid "Show per page"
 msgstr ""
 
-#: ../src/settings.php:174
+#: ../src/settings.php:183
 msgid "Fetch Insight"
 msgstr ""
 
