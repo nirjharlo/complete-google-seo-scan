@@ -1,7 +1,7 @@
 <?php
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
- * 
+ *
  * $myPluginNameTable = new CGSS_OVERVIEW_TABLE();
  * $myPluginNameTable->prepare_items();
  * $myPluginNameTable->display();
@@ -43,7 +43,7 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 		//If there is no data to show
 		public function no_items() {
 
-			_e( 'cgss_insight DB table is empty. Please reactivate the plugin.', 'cgss' );
+			_e( 'Database is empty. Please reactivate the plugin.', 'cgss' );
 		}
 
 
@@ -109,17 +109,6 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 		public function prepare_items() {
 
 			$this->_column_headers = $this->get_column_info();
-
-			/** Process bulk action */
-			/**
-			$per_page     = $this->get_items_per_page( 'item_per_page', 5 );
-			$current_page = $this->get_pagenum();
-			$total_items  = self::record_count();
-			$this->set_pagination_args( array(
-				'total_items' => $total_items,
-				'per_page'    => $per_page,
-			) );
-*/
 			$this->items = self::get_insight();
 		}
 	}

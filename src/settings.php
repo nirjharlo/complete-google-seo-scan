@@ -15,8 +15,6 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		public $help;
 		public $screen;
 
-
-
 		// Add basic actions for menu and settings
 		public function __construct() {
 
@@ -42,9 +40,18 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			add_action( 'admin_menu', array( $this, 'sub_menu_page' ) );
 			add_action( 'admin_menu', array( $this, 'cpt_sub_menu_page' ) );
 			add_filter( 'set-screen-option', array( $this, 'set_screen' ), 10, 3 );
+			add_filter('screen_options_show_screen', array( $this, 'remove_screen_options'));
 		}
 
 
+		public function remove_screen_options() {
+
+			if (isset($_GET['page']) && $_GET['page'] == 'seo-scan') {
+				return false;
+			} else {
+				return true;
+			}
+		}
 
 		// Get post type data to form menu variables
 		public function get_post_type_menus() {
@@ -103,12 +110,12 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 							$this->capability,
 							$this->subMenuPage['slug'],
 							array( $this, 'overview_content_cb' )
-						);
-					if ($this->subMenuPage['screen']) {
-						add_action( 'load-' . $hook, array( $this, 'overview_screen_option' ) );
-					}
+				);
+				if ($this->subMenuPage['screen']) {
+					add_action( 'load-' . $hook, array( $this, 'overview_screen_option' ) );
 				}
 			}
+		}
 
 
 
@@ -136,9 +143,9 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 		//Set screen option
 		public function set_screen($status, $option, $value) {
- 
+
     		if ( 'post_per_page' == $option ) return $value; // Related to PLUGIN_TABLE()
-    			//return $status; 
+    			//return $status;
 		}
 
 
@@ -171,7 +178,10 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
 			<div class="wrap">
 				<h1><?php echo get_admin_page_title(); ?>
-					&nbsp;<a href="?page=seo-scan&fetch=true" class="button button-secondary"><?php _e( 'Fetch Insight', 'cgss' ); ?></a>
+					&nbsp;
+					<a href="?page=seo-scan&fetch=true" class="button button-secondary">
+						<?php _e( 'Fetch Insight', 'cgss' ); ?>
+					</a>
 				</h1>
 				<br class="clear">
 				<?php if (isset($_GET['fetch'])) : ?>

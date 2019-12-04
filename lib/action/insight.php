@@ -10,7 +10,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 
 		public function __construct() {
-				
+
 				$this->data = $this->fetch();
 				$this->compile();
 				$this->save();
@@ -32,7 +32,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 				$this->responsive,
 				$this->speed,
 				$this->social,
-				);
+			);
 			foreach ($result as $key => $value) {
 				$sql = $wpdb->prepare("UPDATE {$wpdb->prefix}cgss_insight SET remark = %s WHERE ID = %d", $value, ($key+1));
 				$update = $wpdb->query($sql);
@@ -47,16 +47,46 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$this->count = count($score);
 			$avarage_score = round(array_sum($score)/count($score), 0);
 
-			$this->score = sprintf(__('Avarage SEO score is %d', 'cgss'),$avarage_score);
+			$this->score = sprintf(__('Avarage SEO score is %d out of 10', 'cgss'),$avarage_score);
 			$this->snippet = $this->snippet_analyze();
 			$this->text = $this->text_analyze();
 			$this->links = $this->link_analyze();
 			$this->keywords = $this->keyword_analyze();
 			$this->images = $this->image_analyze();
-			$this->responsive = $this->resposivity();
+			$this->responsive = $this->responsivity();
 			$this->speed = $this->speed_analyze();
 			$this->social = $this->social_analyze();
+		}
 
+
+		//Analyze snippets
+		public function snippet_analyze() {
+
+			$snippets = $this->data['snip'];
+			$snip_count = 0;
+			foreach ($snippets as $snippet) {
+				$title = $snippet['title'];
+				$desc = $snippet['desc'];
+				if (!empty($title) && !empty($desc)) {
+					$snip_count++;
+				}
+			}
+			$snip_fraction = $this->count - $snip_count;
+
+			$output = ($snip_fraction == 0) ? __( 'All snippets are ok', 'cgss' ) : sprintf(_n('%d page', '%d pages', $snip_fraction, 'cgss'), $snip_fraction) . ' ' . __( 'have incomplete snippets', 'cgss' );
+			return $output;
+		}
+
+
+		//Analyze text
+		public function text_analyze() {
+
+			$text = $this->data['text'];
+			$count = round(array_sum(array_column($text, 'count')) / $this->count, 0);
+			$ratio = round(array_sum(array_column($text, 'ratio')) / $this->count, 2);
+
+			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n('%d word is','%d words are',$count,'cgss') . ' ' . __( 'found per page and avarage text to HTML ratio is %d', 'cgss'),$count,$ratio) . '%';
+			return $output;
 		}
 
 
@@ -71,7 +101,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$external_percentage = round(($external/$count)*100, 0);
 			$nofollow_percentage = round(($nofollow/$count)*100, 0);
 
-			$output = sprintf(__('Avarage', 'cgss') . ' '.  _n( '%d link is','%d links are', $count, 'cgss' ) . ' ' . __('found per page and %d percent are external and %d percent are nofollow among them.', 'cgss'),$count,$external_percentage,$nofollow_percentage);
+			$output = sprintf(__('Avarage', 'cgss') . ' '.  _n( '%d link is','%d links are', $count, 'cgss' ) . ' ' . __('found per page. %d&#37; are external and %d&#37; are nofollow among them.', 'cgss'),$count,$external_percentage,$nofollow_percentage);
 			return $output;
 		}
 
@@ -94,7 +124,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$key_count = round(array_sum($key_collect) / $this->count, 1);
 			$percent = round(array_sum($percent_collect) / $this->count, 1);
 
-			$output = sprintf(__('Avarage foucs keyword is', 'cgss') . ' ' . _n( '%d word','%d words',$key_count, 'cgss' ) . ' ' . __('long with keywords frequency of %d percent','cgss'),$key_count,$percent);
+			$output = sprintf(__('Avarage foucs keyword is', 'cgss') . ' ' . _n( '%d word','%d words',$key_count, 'cgss' ) . ' ' . __('long. Keyword frequency of %d&#37;','cgss'),$key_count,$percent);
 
 			return $output;
 		}
@@ -111,12 +141,12 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 			$avg_image = round(($image_count/$this->count), 0);
 
-			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n( '%d image is', '%d images are', $avg_image, 'cgss' ) . ' ' . __( 'found per page and', 'cgss'),$avg_image) . ' ';
+			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n( '%d image is', '%d images are', $avg_image, 'cgss' ) . ' ' . __( 'found per page.', 'cgss'),$avg_image) . ' ';
 			if ($no_alt_image == 0) {
-				$output .= __('all of them are optimized', 'cgss');
+				$output .= ' ' . __('All of them are optimized', 'cgss');
 			} else {
 				$no_alt_percent = round(($no_alt_image/$image_count)*100, 0);
-				$output .= sprintf(__('%d percent among them doesn\'t have alt tag', 'cgss'),$no_alt_percent);
+				$output .= ' ' . sprintf(__('%d&#37; among them doesn\'t have alt tag', 'cgss'),$no_alt_percent);
 			}
 			return $output;
 
@@ -124,7 +154,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 
 		// Check mobile optimized
-		public function resposivity() {
+		public function responsivity() {
 
 			$design = $this->data['design'];
 			$vport = array_sum(array_column($design, 'vport'));
@@ -133,7 +163,7 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 				$output = __('All pages are mobile optimized', 'cgss');
 			} else {
 				$no_mobile_percent = round(($vport/$this->count)*100, 0);
-				$output = sprintf(__('%d percent pages aren\'t mobile optimized', 'cgss'),$no_mobile_percent);
+				$output = sprintf(__('%d&#37; pages aren\'t mobile optimized', 'cgss'),$no_mobile_percent);
 			}
 
 			return $output;
@@ -144,13 +174,14 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 		public function speed_analyze() {
 
 			$speed = $this->data['speed'];
+
 			$res_time = array_sum(array_column($speed, 'res_time'));
 			$down_time = array_sum(array_column($speed, 'down_time'));
 
-			$avg_res_time = round(($res_time/$this->count), 2);
-			$avg_down_time = round(($down_time/$this->count), 2);
+			$avg_res_time = round(($res_time/$this->count) * 1000, 0);
+			$avg_down_time = round(($down_time/$this->count) * 1000, 0);
 
-			$output = sprintf( __('Average response time is %d s and average download time is %d s', 'cgss'), $avg_res_time, $avg_down_time);
+			$output = sprintf( __('Average response time is %d miliseconds and average download time is %d miliseconds', 'cgss'), $avg_res_time, $avg_down_time);
 
 			return $output;
 		}
@@ -165,39 +196,8 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$fb_share = array_sum(array_column($social, 'fb_share'));
 			$fb_like = array_sum(array_column($social, 'fb_like'));
 
-			$output = sprintf( __('Total', 'cgss' ). ' ' . _n( '%d share', '%d shares', $gplus, 'cgss' ) . ' ' . __( 'in g+ and', 'cgss' ). ' ' . _n( '%d share', '%d shares', $fb_share, 'cgss' ) . ' ' . __( 'in FB and', 'cgss' ). ' ' . _n( '%d FB like', '%d FB likes', $fb_like, 'cgss' ) . ' ' . __( 'are present', 'cgss'), $gplus, $fb_share, $fb_like);
+			$output = sprintf( __('Total', 'cgss') . ': ' . _n( '%d share', '%d shares', $gplus, 'cgss' ) . ' ' . __( 'in g+', 'cgss' ). ' | ' . _n( '%d share', '%d shares', $fb_share, 'cgss' ) . ' ' . __( 'in Facebook', 'cgss' ). ' | ' . _n( '%d Facebook like', '%d Facebook likes', $fb_like, 'cgss' ), $gplus, $fb_share, $fb_like);
 
-			return $output;
-		}
-
-
-		//Analyze text
-		public function text_analyze() {
-
-			$text = $this->data['text'];
-			$count = round(array_sum(array_column($text, 'count')) / $this->count, 0);
-			$ratio = round(array_sum(array_column($text, 'ratio')) / $this->count, 2);
-
-			$output = sprintf(__('Avarage', 'cgss') . ' ' . _n('%d word is','%d words are',$count,'cgss') . ' ' . __( 'found per page and avarage text to HTML ratio is %d percent', 'cgss'),$count,$ratio);
-			return $output;
-		}
-
-
-		//Analyze snippets
-		public function snippet_analyze() {
-
-			$snippets = $this->data['snip'];
-			$snip_count = 0;
-			foreach ($snippets as $snippet) {
-				$title = $snippet['title'];
-				$desc = $snippet['desc'];
-				if (!empty($title) && !empty($desc)) {
-					$snip_count++;
-				}
-			}
-			$snip_fraction = $this->count - $snip_count;
-
-			$output = ($snip_fraction == 0) ? __( 'All snippets are ok', 'cgss' ) : sprintf(_n('%d page', '%d pages', $snip_fraction, 'cgss'), $snip_fraction) . ' ' . __( 'have incomplete snippets', 'cgss' );
 			return $output;
 		}
 

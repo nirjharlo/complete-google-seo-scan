@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 //Main plugin object to define the plugin
 if ( ! class_exists( 'CGSS_BUILD' ) ) {
-	
+
 	final class CGSS_BUILD {
 
 
@@ -167,7 +167,6 @@ if ( ! class_exists( 'CGSS_BUILD' ) ) {
 			add_action('init', array($this, 'installation'));
 
 			$this->scripts();
-
 			$this->settings();
 
 			// Add custom actions, defined in settings

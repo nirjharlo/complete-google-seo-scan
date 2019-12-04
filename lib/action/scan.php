@@ -37,7 +37,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$fb_share = $social['fb_share'];
 			$fb_like = $social['fb_like'];
 
-			$score_html = 
+			$score_html =
 			'<span>'.sprintf(__('Overall SEO score %d out of 10. Total gPlus shares: %d Facebook shares: %d and likes: %d', 'cgss' ), $score, $gplus, $fb_share, $fb_like ).'</span>';
 
 			return $score_html;
@@ -57,7 +57,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$social_image = $social_snippet['image'];
 
 			$not_found = __('NOT_FOUND', 'cgss');
-			$snippet_html = 
+			$snippet_html =
 			'<ul>
 				<li><strong>'.__('Search snippet', 'cgss').':</strong>
 					<ul>
@@ -93,7 +93,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$link_nofollow = $links['nofollow'];
 			$link_external = $links['external'];
 
-			$text_html = 
+			$text_html =
 			'<ul>
 				<li>'.sprintf(__('Keywords: %s','cgss'), $keys).'</li>
 				<li>'.sprintf(__('Number of words: %s','cgss'), $count).'</li>
@@ -125,7 +125,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$image_count = $image['count'];
 			$image_no_alt_count = $image['no_alt_count'];
 
-			$design_html = 
+			$design_html =
 			'<ul>
 				<li>'.sprintf(__('Total images: %d and images without alt tags: %d','cgss'), $image_count, $image_no_alt_count).'</li>
 				<li>'.sprintf(__('iframe: %d','cgss'), $iframe).'</li>
@@ -156,7 +156,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$on = __( 'on', 'cgss' );
 			$off = __( 'off', 'cgss' );
 
-			$crawl_html = 
+			$crawl_html =
 			'<ul>
 				<li>'.sprintf(__('Your URL parameters: SSL security: %s, Static url: %s, underscores in Url: %s','cgss'), (!$ssl ? $off : $on ), (!$dynamic ? $off : $on ), (!$underscore ? $off : $on )).'</li>
 				<li>'.sprintf(__('If modified since header: %s','cgss'), ($if_mod == 0 ? $off : $on )).'</li>
@@ -185,7 +185,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$on = __( 'on', 'cgss' );
 			$off = __( 'off', 'cgss' );
 
-			$speed_html = 
+			$speed_html =
 			'<ul>
 				<li>'. sprintf( __( 'Header response time %s s and page downloading time %s s', 'cgss' ), $res_time, $down_time ). '</li>
 				<li>'.sprintf(__('gZip compression: %s','cgss'), ($gzip ? $off : $on )).'</li>
@@ -219,7 +219,7 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 
 		public function box($title, $icon, $desc) {
 
-			echo 
+			echo
 			'<div class="postbox">
 				<div class="inside">
 					<div class="main">' .
