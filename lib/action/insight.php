@@ -44,8 +44,8 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 		public function compile() {
 
 			$score = $this->data['score'];
-			$this->count = count($score);
-			$avarage_score = round(array_sum($score)/count($score), 0);
+			$this->count = (count($score) == 0 ? 1 : count($score));
+			$avarage_score = (count($score) == 0 ? 0 : round(array_sum($score)/count($score), 0));
 
 			$this->score = sprintf(__('Avarage SEO score is %d out of 10', 'cgss'),$avarage_score);
 			$this->snippet = $this->snippet_analyze();
@@ -98,8 +98,8 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 			$count = round(array_sum(array_column($links, 'count')) / $this->count, 0);
 			$external = round(array_sum(array_column($links, 'external')) / $this->count, 0);
 			$nofollow = round(array_sum(array_column($links, 'external')) / $this->count, 0);
-			$external_percentage = round(($external/$count)*100, 0);
-			$nofollow_percentage = round(($nofollow/$count)*100, 0);
+			$external_percentage = ($count == 0 ? 0 : round(($external/$count)*100, 0));
+			$nofollow_percentage = ($count == 0 ? 0 : round(($nofollow/$count)*100, 0));
 
 			$output = sprintf(__('Avarage', 'cgss') . ' '.  _n( '%d link is','%d links are', $count, 'cgss' ) . ' ' . __('found per page. %d&#37; are external and %d&#37; are nofollow among them.', 'cgss'),$count,$external_percentage,$nofollow_percentage);
 			return $output;
@@ -192,11 +192,10 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 			$social = $this->data['social'];
 
-			$gplus = array_sum(array_column($social, 'gplus'));
 			$fb_share = array_sum(array_column($social, 'fb_share'));
 			$fb_like = array_sum(array_column($social, 'fb_like'));
 
-			$output = sprintf( __('Total', 'cgss') . ': ' . _n( '%d share', '%d shares', $gplus, 'cgss' ) . ' ' . __( 'in g+', 'cgss' ). ' | ' . _n( '%d share', '%d shares', $fb_share, 'cgss' ) . ' ' . __( 'in Facebook', 'cgss' ). ' | ' . _n( '%d Facebook like', '%d Facebook likes', $fb_like, 'cgss' ), $gplus, $fb_share, $fb_like);
+			$output = sprintf( __('Total', 'cgss') . ': ' . _n( '%d share', '%d shares', $fb_share, 'cgss' ) . ' ' . __( 'in Facebook', 'cgss' ). ' | ' . _n( '%d Facebook like', '%d Facebook likes', $fb_like, 'cgss' ), $fb_share, $fb_like);
 
 			return $output;
 		}

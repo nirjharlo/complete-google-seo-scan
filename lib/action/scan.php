@@ -33,12 +33,11 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 
 			$score = $this->result['score'];
 			$social = $this->result['social'];
-			$gplus = $social['gplus'];
 			$fb_share = $social['fb_share'];
 			$fb_like = $social['fb_like'];
 
 			$score_html =
-			'<span>'.sprintf(__('Overall SEO score %d out of 10. Total gPlus shares: %d Facebook shares: %d and likes: %d', 'cgss' ), $score, $gplus, $fb_share, $fb_like ).'</span>';
+			'<span>'.sprintf(__('Overall SEO score %d out of 10. Facebook shares: %d and likes: %d', 'cgss' ), $score, $fb_share, $fb_like ).'</span>';
 
 			return $score_html;
 		}
