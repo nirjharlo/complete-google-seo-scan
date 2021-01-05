@@ -16,8 +16,8 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 		public function __construct() {
 
 			parent::__construct( [
-				'singular' => __( 'Insight', 'textdomain' ),
-				'plural'   => __( 'Inssight', 'textdomain' ),
+				'singular' => __( 'Insight', 'cgss' ),
+				'plural'   => __( 'Inssight', 'cgss' ),
 				'ajax'     => false,
 			] );
 		}
@@ -97,8 +97,8 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 		public function get_columns() {
 
 			$columns = array(
-							'item'	=> __( 'Item', 'textdomain' ),
-							'remark'	=> __( 'Remark', 'textdomain' ),
+							'item'	=> __( 'Item', 'cgss' ),
+							'remark'	=> __( 'Remark', 'cgss' ),
 						);
 			return $columns;
 		}

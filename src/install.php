@@ -32,10 +32,10 @@ if ( ! class_exists( 'CGSS_INSTALL' ) ) {
 
 
 
-		//Load plugin textdomain
+		//Load plugin cgss
 		public function text_domain_cb() {
 
-			load_plugin_textdomain( $this->textDomin, false, CGSS_LN );
+			load_plugin_cgss( $this->textDomin, false, CGSS_LN );
 		}
 
 
