@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Complete Google SEO Scan 2.3\n"
 "Report-Msgid-Bugs-To: info@gogretel.com\n"
-"POT-Creation-Date: 2019-12-04 20:48+0530\n"
+"POT-Creation-Date: 2021-01-05 21:20+0530\n"
 "PO-Revision-Date: 2015-10-05 14:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: GoGretel <info@gogretel.com>\n"
@@ -15,7 +15,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals = 2; plural=n != 1;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../autoload.php:21
@@ -50,7 +50,7 @@ msgstr ""
 msgid "Responsive"
 msgstr ""
 
-#: ../autoload.php:69 ../lib/action/scan.php:216
+#: ../autoload.php:69 ../lib/action/scan.php:215
 msgid "Speed"
 msgstr ""
 
@@ -129,179 +129,173 @@ msgid ""
 "miliseconds"
 msgstr ""
 
-#: ../lib/action/insight.php:199
+#: ../lib/action/insight.php:198
 msgid "Total"
 msgstr ""
 
-#: ../lib/action/insight.php:199
-msgid "in g+"
-msgstr ""
-
-#: ../lib/action/insight.php:199
+#: ../lib/action/insight.php:198
 msgid "in Facebook"
 msgstr ""
 
-#: ../lib/action/scan.php:41
+#: ../lib/action/scan.php:40
 #, php-format
-msgid ""
-"Overall SEO score %d out of 10. Total gPlus shares: %d Facebook shares: %d "
-"and likes: %d"
+msgid "Overall SEO score %d out of 10. Facebook shares: %d and likes: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:59
+#: ../lib/action/scan.php:58
 msgid "NOT_FOUND"
 msgstr ""
 
-#: ../lib/action/scan.php:62
+#: ../lib/action/scan.php:61
 msgid "Search snippet"
 msgstr ""
 
-#: ../lib/action/scan.php:64 ../lib/action/scan.php:70
+#: ../lib/action/scan.php:63 ../lib/action/scan.php:69
 #, php-format
 msgid "Title: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:65 ../lib/action/scan.php:71
+#: ../lib/action/scan.php:64 ../lib/action/scan.php:70
 #, php-format
 msgid "Description: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:68
+#: ../lib/action/scan.php:67
 msgid "Social snippet(OGP)"
 msgstr ""
 
-#: ../lib/action/scan.php:72
+#: ../lib/action/scan.php:71
 #, php-format
 msgid "Image: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:98
+#: ../lib/action/scan.php:97
 #, php-format
 msgid "Keywords: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:99
+#: ../lib/action/scan.php:98
 #, php-format
 msgid "Number of words: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:100
+#: ../lib/action/scan.php:99
 #, php-format
 msgid "Text to html ratio: %s percent"
 msgstr ""
 
-#: ../lib/action/scan.php:101
+#: ../lib/action/scan.php:100
 #, php-format
 msgid "Heading tags in text hierarchy: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:102
+#: ../lib/action/scan.php:101
 #, php-format
 msgid "Total Links: %d, Nofollow Links %d, External Links: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:130
+#: ../lib/action/scan.php:129
 #, php-format
 msgid "Total images: %d and images without alt tags: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:131
+#: ../lib/action/scan.php:130
 #, php-format
 msgid "iframe: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:132
+#: ../lib/action/scan.php:131
 #, php-format
 msgid "Nested Tables: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:133
+#: ../lib/action/scan.php:132
 #, php-format
 msgid "Tags with style attribute: %s(%s)"
 msgstr ""
 
-#: ../lib/action/scan.php:134
+#: ../lib/action/scan.php:133
 #, php-format
 msgid "Mobile optimization: Viewport Tag: %d, @media Queries: %d"
 msgstr ""
 
-#: ../lib/action/scan.php:156 ../lib/action/scan.php:185
+#: ../lib/action/scan.php:155 ../lib/action/scan.php:184
 msgid "on"
 msgstr ""
 
-#: ../lib/action/scan.php:157 ../lib/action/scan.php:186
+#: ../lib/action/scan.php:156 ../lib/action/scan.php:185
 msgid "off"
 msgstr ""
 
-#: ../lib/action/scan.php:161
+#: ../lib/action/scan.php:160
 #, php-format
 msgid ""
 "Your URL parameters: SSL security: %s, Static url: %s, underscores in Url: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:162
+#: ../lib/action/scan.php:161
 #, php-format
 msgid "If modified since header: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:163
+#: ../lib/action/scan.php:162
 #, php-format
 msgid "Canonical Url: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:164
+#: ../lib/action/scan.php:163
 #, php-format
 msgid "Meta Robot: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:165
+#: ../lib/action/scan.php:164
 #, php-format
 msgid "IP Forward: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:166
+#: ../lib/action/scan.php:165
 #, php-format
 msgid "Keep alive connection: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:190
+#: ../lib/action/scan.php:189
 #, php-format
 msgid "Header response time %s s and page downloading time %s s"
 msgstr ""
 
-#: ../lib/action/scan.php:191
+#: ../lib/action/scan.php:190
 #, php-format
 msgid "gZip compression: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:192
+#: ../lib/action/scan.php:191
 #, php-format
 msgid "Browser caching: %s"
 msgstr ""
 
-#: ../lib/action/scan.php:193
+#: ../lib/action/scan.php:192
 #, php-format
 msgid "Requests made by CSS is %s and by JS is %s"
 msgstr ""
 
-#: ../lib/action/scan.php:194
+#: ../lib/action/scan.php:193
 #, php-format
 msgid "Resources can be compressed by %s kb for CSS and %s kb for JS"
 msgstr ""
 
-#: ../lib/action/scan.php:212
+#: ../lib/action/scan.php:211
 msgid "Snippets"
 msgstr ""
 
-#: ../lib/action/scan.php:213
+#: ../lib/action/scan.php:212
 msgid "Text & Links"
 msgstr ""
 
-#: ../lib/action/scan.php:214
+#: ../lib/action/scan.php:213
 msgid "Design"
 msgstr ""
 
-#: ../lib/action/scan.php:215
+#: ../lib/action/scan.php:214
 msgid "Crawl"
 msgstr ""
 
@@ -393,10 +387,10 @@ msgstr ""
 msgid "Fetch Insight"
 msgstr ""
 
-#: ../vendor/crawl.php:627
+#: ../vendor/crawl.php:626
 msgid "The page could not be downloaded. Try again"
 msgstr ""
 
-#: ../vendor/crawl.php:637
+#: ../vendor/crawl.php:636
 msgid "The header returned is not Ok. Try again"
 msgstr ""

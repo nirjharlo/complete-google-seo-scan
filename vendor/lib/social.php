@@ -10,29 +10,6 @@ class CGSS_SOCIAL {
 
 
 	public $url;
-	
-
-	//Google Plus data for g+ counts
-	public function gplus() {
-		
-		$share = false;
-		$url_encode = urlencode( $this->url );
-		$plus_data =  @file_get_contents( "https://plusone.google.com/_/+1/fastbutton?url=" . $url_encode );
-		if ( ! empty( $plus_data ) ) {
-			$plus_doc = new DOMDocument();
-			$plus_doc->loadHTML($plus_data);
-			$plus_counter = $plus_doc->getElementById('aggregateCount');
-			if (is_object($plus_counter)) {
-				if ( $plus_counter->nodeValue ) {
-					$share = $plus_counter->nodeValue;
-				}
-			}
-		}
-		if (!$share) {
-			$share = 0;
-		}
-		return $share;
-	}
 
 	//Facebook data for likes and shares
 	public function fb() {

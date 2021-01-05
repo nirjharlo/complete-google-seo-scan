@@ -53,12 +53,12 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 					$this->tag_css = $this->get_tag_css();
 					$this->headings = $this->get_headings();
 					$this->table = $this->get_nested_table();
-					
+
 					$this->text = $this->get_text_vars();
 					$this->keywords = $this->get_keywords();
 
 					$this->social_data = $this->get_social_data();
-					
+
 					$this->server = $this->get_server();
 
 					$this->css = $this->get_style();
@@ -189,7 +189,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$js->atts = array( 'src' );
 
 			$js_list = $js->tag();
-			
+
 			$js_data = new CGSS_DESIGN();
 			$js_data->js_url = $js_list;
 			$js_details = $js_data->analyze_js();
@@ -241,7 +241,6 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$social = new CGSS_SOCIAL();
 			$social->url = $this->url;
 
-			$social_data['gplus'] = $social->gplus();
 			$facebook = $social->fb();
 			$social_data['fb_share'] = $facebook['share'];
 			$social_data['fb_like'] = $facebook['like'];
@@ -285,7 +284,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$size = $text->size();
 			$text_data['size'] = round( ( $size / 1024 ), 1 );
 			$text_data['ratio'] = $text->ratio();
-			
+
 			return $text_data;
 		}
 
@@ -354,7 +353,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 						'q',
 						's', 'samp', 'script', 'select', 'small', 'span', 'strike', 'strong', 'style', 'sub', 'sup',
 						'table', 'td', 'th', 'tr', 'tbody', 'textarea', 'tfoot', 'thead', 'title', 'tt',
-						'u', 'ul', 
+						'u', 'ul',
 						'var'
 					);
 
