@@ -3,7 +3,7 @@
  Plugin Name: Complete Google SEO Scan
  Plugin URI: http://nirjharlo.com/
  Description: Find issues, check status and get fixes for Seo of individual pages and whole website.
- Version: 3.4
+ Version: 3.5
  Author: Nirjhar Lo
  Author URI: http://nirjharlo.com/
  Text Domain: cgss
