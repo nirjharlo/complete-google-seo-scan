@@ -1,4 +1,9 @@
 <?php
+
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 /**
  * An object to extract most used pharases in an array of phrases, containing one or more words.
  * But, for now we are using one word elements only.
@@ -7,7 +12,7 @@
  * @property string $words Input words array
  * @property string $text Input words array
  */
-class CGSS_KEYWORDS {
+class Keywords {
 
 
 	public $words;

@@ -1,10 +1,14 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 /**
  *
  * Object to get tag values and tag attributes with different methods. Return values are in array()
  *
  * 4 property:
- * @prop string $dom Document object model as obtained from acctual url 
+ * @prop string $dom Document object model as obtained from acctual url
  * @prop string $tag The tag to be analyzed
  * @prop array $specify An array of 3 elements, for selecting attribute and it's value and
  * decide attribute to fetch. If unspecified use value "null". An example usage:
@@ -21,16 +25,13 @@
  * take item and nodevalue. Because the proper function to extract nodevalue from individual object
  * is unknown.
  */
-class CGSS_FETCH {
+class Tags {
 
 
 	public $dom;
 	public $tag;
 	public $specify;
 	public $atts;
-
-
-
 
 	//Fetch and scan tag values and return details as an array.
 	public function tag() {

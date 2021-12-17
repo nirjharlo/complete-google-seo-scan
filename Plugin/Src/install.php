@@ -1,25 +1,20 @@
 <?php
+namespace NirjharLo\Cgss\Src;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 
 /**
  * Implimentation of WordPress inbuilt functions for plugin activation.
  */
-if ( ! class_exists( 'CGSS_INSTALL' ) ) {
 
-	final class CGSS_INSTALL {
+	final class Install {
 
 		//@string
 		public $textDomin;
 		//@string
 		public $phpVerAllowed;
-		/**
-		$pluginPageLinks = array(
-								array(
-									'slug' => '',
-									'label' => ''
-								),
-							);
-		*/
+
 		public $pluginPageLinks;
 
 
@@ -74,5 +69,4 @@ if ( ! class_exists( 'CGSS_INSTALL' ) ) {
 				return $links;
 			}
 		}
-	}
-} ?>
+	} ?>

@@ -1,12 +1,14 @@
 <?php
+namespace NirjharLo\Cgss\Src;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 
 /**
  * DB installation class
  */
-if ( ! class_exists( 'CGSS_DB' ) ) {
 
-	class CGSS_DB {
+	class Db {
 
 
 
@@ -71,5 +73,4 @@ if ( ! class_exists( 'CGSS_DB' ) ) {
 				update_option( '_plugin_db_exist', 1 );
 			}
 		}
-	}
-} ?>
+	} ?>

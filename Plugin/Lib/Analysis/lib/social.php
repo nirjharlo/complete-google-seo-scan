@@ -1,4 +1,9 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
 /**
  * Object to fetch social meia information from various networks. Twitter, Google Plus and Facebook
  * from an input url.
@@ -6,7 +11,7 @@
  * 1 property:
  * @prop string $url Input url, whose social value is to be counted
  */
-class CGSS_SOCIAL {
+class Social {
 
 
 	public $url;

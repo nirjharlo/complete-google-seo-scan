@@ -1,4 +1,9 @@
 <?php
+
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 /**
  * From result data found in scan, analyze a score of on-page optimization. Using approximate values
  * from qualitative ideas of seo. Sometimes statistical approximation has been taken.
@@ -10,7 +15,7 @@
  * @property array $crawl
  * @property array $speed
  */
-class CGSS_SCORE {
+class Score {
 
 
 	public $snippet;

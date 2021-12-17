@@ -1,7 +1,14 @@
 <?php
+namespace NirjharLo\Cgss\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
+use \WP_List_Table;
+
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
- * 
+ *
  * $Table = new CGSS_TABLE();
  * $Table->prepare_items();
  * $Table->display();
@@ -9,7 +16,7 @@
  */
 if ( ! class_exists( 'CGSS_TABLE' ) ) {
 
-	final class CGSS_TABLE extends WP_List_Table {
+	final class Table extends WP_List_Table {
 
 
 		public function __construct() {
@@ -128,7 +135,7 @@ if ( ! class_exists( 'CGSS_TABLE' ) ) {
 							'image'	=> __( 'Images', 'cgss' ),
 							'share'	=> __( 'Shares', 'cgss' ),
 							'time'	=> __( 'Time(s)', 'cgss' ),
-							
+
 						);
 			return $columns;
 		}

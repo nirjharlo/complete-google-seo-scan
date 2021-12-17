@@ -3,7 +3,7 @@
  Plugin Name: Complete Google SEO Scan
  Plugin URI: http://nirjharlo.com/
  Description: Find issues, check status and get fixes for Seo of individual pages and whole website.
- Version: 3.4
+ Version: 3.5
  Author: Nirjhar Lo
  Author URI: http://nirjharlo.com/
  Text Domain: cgss
@@ -31,6 +31,17 @@ defined('CGSS_CSS') or define('CGSS_CSS', plugins_url().'/complete-google-seo-sc
 defined('CGSS_IMAGE') or define('CGSS_IMAGE', plugins_url().'/complete-google-seo-scan/asset/img/');
 
 
-//The Plugin
-require_once('autoload.php');
-if ( class_exists( 'CGSS_BUILD' ) ) new CGSS_BUILD(); ?>
+
+require __DIR__ . '/vendor/autoload.php';
+
+/**
+ * The Plugin
+ */
+function cgss_build() {
+	if ( class_exists( 'NirjharLo\\Cgss\\Loader' ) ) {
+		return NirjharLo\Cgss\Loader::instance();
+	}
+}
+
+global $cgss_build;
+$cgss_build = cgss_build(); ?>

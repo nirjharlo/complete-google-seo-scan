@@ -1,12 +1,15 @@
 <?php
+
+namespace NirjharLo\Cgss\Lib\Action;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 /**
  * Perform scan action
  */
-if ( ! class_exists( 'CGSS_SCAN' ) ) {
-
-	final class CGSS_SCAN {
+	final class Scan {
 
 
 		public function __construct() {
@@ -14,17 +17,14 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 			$post_id = intval($_GET['scan']);
 			$url = get_permalink( $post_id );
 
-			if (class_exists('CGSS_CRAWL')) {
+			$crawl = new Crawl();
+			$crawl->url = esc_url_raw($url);
+			$crawl->execute();
+			$this->result = $crawl->result();
 
-				$crawl = new CGSS_CRAWL();
-				$crawl->url = esc_url_raw($url);
-				$crawl->execute();
-				$this->result = $crawl->result();
+			update_post_meta( $post_id, 'cgss_scan_result', $this->result );
 
-				update_post_meta( $post_id, 'cgss_scan_result', $this->result );
-
-				$this->render();
-			}
+			$this->render();
 		}
 
 
@@ -234,5 +234,4 @@ if ( ! class_exists( 'CGSS_SCAN' ) ) {
 
 			return '<span class="dashicons dashicons-'.$icon.'"></span>';
 		}
-	}
-} ?>
+	} ?>

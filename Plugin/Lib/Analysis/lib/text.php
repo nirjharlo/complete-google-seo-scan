@@ -1,4 +1,11 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
+use \DomXPath;
+
 /**
  * An object for treating text by using methods of xpath and generating array of words along with
  * text to html ratio in kb.
@@ -7,7 +14,7 @@
  * @property obj $dom document object model
  * @property string $body_size Size of complete HTML
  */
-class CGSS_TEXT_TREATMENT {
+class Text {
 
 
 	public $dom;

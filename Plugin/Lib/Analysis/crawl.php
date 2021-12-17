@@ -1,13 +1,22 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Tags;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Text;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Keywords;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Social;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Server;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Design;
+use \NirjharLo\Cgss\Lib\Analysis\Lib\Score;
+
+use \DOMDocument;
 
 /**
  * Crawls an URL
  */
-if ( ! class_exists( 'CGSS_CRAWL' ) ) {
-
-
-	final class CGSS_CRAWL {
+	final class Crawl {
 
 
 		public $url;
@@ -168,7 +177,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Calculate score
 		public function get_score() {
 
-			$score = new CGSS_SCORE();
+			$score = new Score();
 			$score->snippet = $this->return_snippet();
 			$score->text = $this->return_text();
 			$score->design = $this->return_design();
@@ -183,14 +192,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Analyze the JS
 		public function get_javascript() {
 
-			$js = new CGSS_FETCH();
+			$js = new Tags();
 			$js->dom = $this->dom;
 			$js->tag = 'script';
 			$js->atts = array( 'src' );
 
 			$js_list = $js->tag();
 
-			$js_data = new CGSS_DESIGN();
+			$js_data = new Design();
 			$js_data->js_url = $js_list;
 			$js_details = $js_data->analyze_js();
 
@@ -202,14 +211,14 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get the Stylesheets
 		public function get_style() {
 
-			$css = new CGSS_FETCH();
+			$css = new Tags();
 			$css->dom = $this->dom;
 			$css->tag = 'link';
 			$css->specify = array( 'att' => 'rel', 'val' => 'stylesheet', 'get_att' => 'href' );
 
 			$css_list = $css->tag();
 
-			$css_data = new CGSS_DESIGN();
+			$css_data = new Design();
 			$css_data->css_url = $css_list;
 			$css_details = $css_data->analyze_css();
 
@@ -220,7 +229,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get server data
 		public function get_server() {
 
-			$server = new CGSS_SERVER();
+			$server = new Server();
 			$server->header = $this->header;
 			$server->domain = $this->parsed_url['domain'];
 
@@ -238,7 +247,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get social data from 3rd party API
 		public function get_social_data() {
 
-			$social = new CGSS_SOCIAL();
+			$social = new Social();
 			$social->url = $this->url;
 
 			$facebook = $social->fb();
@@ -252,7 +261,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get keywords data from text
 		public function get_keywords() {
 
-			$keys = new CGSS_KEYWORDS();
+			$keys = new Keywords();
 			$keys->words = $this->text['words'];
 			$keys->text = $this->text['text'];
 
@@ -268,7 +277,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get text from dom
 		public function get_text_vars() {
 
-			$text = new CGSS_TEXT_TREATMENT();
+			$text = new Text();
 			$text->dom =  $this->dom;
 			$text->body_size = $this->body['size'];
 			$text->execute();
@@ -314,7 +323,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$headings = array();
 			foreach ( $all_headings as $value ) {
 
-				$head = new CGSS_FETCH();
+				$head = new Tags();
 				$head->dom = $this->dom;
 				$head->tag = $value;
 				$head_tag = $head->tag();
@@ -360,7 +369,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$tag_style_value = array();
 			foreach( $tags as $value ) {
 
-				$tag = new CGSS_FETCH();
+				$tag = new Tags();
 				$tag->dom = $this->dom;
 				$tag->tag = $value;
 				$tag->specify =  array( 'att' => null, 'val' => null, 'get_att' => 'style', );
@@ -381,7 +390,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get the iframes
 		public function get_iframes() {
 
-			$iframes = new CGSS_FETCH();
+			$iframes = new Tags();
 			$iframes->dom = $this->dom;
 			$iframes->tag = 'iframe';
 			$iframes->specify = array( 'att' => null, 'val' => null, 'get_att' => 'src' );
@@ -395,7 +404,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		//Get the images
 		public function get_images() {
 
-			$images = new CGSS_FETCH();
+			$images = new Tags();
 			$images->dom = $this->dom;
 			$images->tag = 'img';
 			$images->atts = array( 'src', 'alt' );
@@ -418,7 +427,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get the links
 		public function get_links() {
 
-			$links = new CGSS_FETCH();
+			$links = new Tags();
 			$links->dom = $this->dom;
 			$links->tag = 'a';
 			$links->atts = array( 'rel', 'href' );
@@ -472,7 +481,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			$social_tag_val = array();
 			foreach( $tags as $value ) {
 
-				$social_tag = new CGSS_FETCH();
+				$social_tag = new Tags();
 				$social_tag->dom = $this->dom;
 				$social_tag->tag = 'meta';
 				$social_tag->specify = array('att' => 'property', 'val' => 'og:'.$value, 'get_att' => 'content');
@@ -488,7 +497,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get viewport tag
 		public function get_viewport() {
 
-			$viewport = new CGSS_FETCH();
+			$viewport = new Tags();
 			$viewport->dom = $this->dom;
 			$viewport->tag = 'meta';
 			$viewport->specify = array( 'att' => 'name', 'val' => 'viewport', 'get_att' => 'content' );
@@ -507,7 +516,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 			$meta_canonical = array();
 
-			$canonical = new CGSS_FETCH();
+			$canonical = new Tags();
 			$canonical->dom = $this->dom;
 			$canonical->tag = 'meta';
 			$canonical->specify = array( 'att' => 'rel', 'val' => 'canonical', 'get_att' => 'href' );
@@ -526,7 +535,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 
 			$meta_robot = array();
 
-			$robot = new CGSS_FETCH();
+			$robot = new Tags();
 			$robot->dom = $this->dom;
 			$robot->tag = 'meta';
 			$robot->specify = array( 'att' => 'name', 'val' => 'robots', 'get_att' => 'content' );
@@ -543,7 +552,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get page description
 		public function get_desc() {
 
-			$description = new CGSS_FETCH();
+			$description = new Tags();
 			$description->dom = $this->dom;
 			$description->tag = 'meta';
 			$description->specify = array( 'att' => 'name', 'val' => 'description', 'get_att' => 'content' );
@@ -557,7 +566,7 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 		// Get the page title
 		public function get_title() {
 
-			$title_fetch = new CGSS_FETCH();
+			$title_fetch = new Tags();
 			$title_fetch->dom = $this->dom;
 			$title_fetch->tag = 'title';
 			$title = $title_fetch->tag();
@@ -637,5 +646,4 @@ if ( ! class_exists( 'CGSS_CRAWL' ) ) {
 			</div>
     	<?PHP
 		}
-	}
-} ?>
+	} ?>
