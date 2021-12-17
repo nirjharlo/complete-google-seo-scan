@@ -1,4 +1,10 @@
 <?php
+namespace NirjharLo\Cgss\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+use \WP_List_Table;
+
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
  *
@@ -7,9 +13,8 @@
  * $myPluginNameTable->display();
  *
  */
-if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 
-	final class CGSS_OVERVIEW_TABLE extends WP_List_Table {
+	final class OverviewTable extends WP_List_Table {
 
 
 
@@ -111,5 +116,4 @@ if ( ! class_exists( 'CGSS_OVERVIEW_TABLE' ) ) {
 			$this->_column_headers = $this->get_column_info();
 			$this->items = self::get_insight();
 		}
-	}
-} ?>
+	} ?>

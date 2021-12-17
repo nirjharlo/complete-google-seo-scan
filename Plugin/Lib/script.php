@@ -1,12 +1,13 @@
 <?php
+namespace NirjharLo\Cgss\Lib;
+
 /**
  * Add scripts to the plugin. CSS and JS.
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 
-	final class CGSS_SCRIPT {
+	final class Script {
 
 
 		public function __construct() {
@@ -37,5 +38,4 @@ if ( ! class_exists( 'CGSS_SCRIPT' ) ) {
 			echo $table_css;
 			echo $overview_table_css;
 		}
-	}
-} ?>
+	} ?>

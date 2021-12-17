@@ -1,12 +1,18 @@
 <?php
+
+namespace NirjharLo\Cgss\Src;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
+use \NirjharLo\Cgss\Lib\Table;
+use \NirjharLo\Cgss\Lib\OverviewTable;
+
 
 /**
  * Backend settings page class, can have settings fields or data table
  */
-if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 
-	final class CGSS_SETTINGS {
+	final class Settings {
 
 		public $capability;
 		public $menuPage;
@@ -153,7 +159,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 		//Set screen option for Items table
 		public function overview_screen_option() {
 
-			$this->overview = new CGSS_OVERVIEW_TABLE();
+			$this->overview = new OverviewTable();
 		}
 
 
@@ -165,10 +171,10 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			$args   = array(
 						'label'   => __( 'Show per page', 'cgss' ),
 						'default' => 10,
-						'option'  => 'post_per_page' // Related to CGSS_TABLE()
+						'option'  => 'post_per_page' // Related to TABLE()
 						);
 			add_screen_option( $option, $args );
-			$this->table = new CGSS_TABLE();
+			$this->table = new Table();
 		}
 
 
@@ -189,7 +195,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 				<?php endif; ?>
 				<?php
 					// Source: /lib/overview-table.php
-					$this->overview = new CGSS_OVERVIEW_TABLE();
+					$this->overview = new OverviewTable();
 					$this->overview->prepare_items();
 					$this->overview->display();
 				?>
@@ -214,7 +220,7 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 						<form method="post" action="">
 						<?php
 							// Source: /lib/table.php
-							$this->table = new CGSS_TABLE();
+							$this->table = new Table();
 							$this->table->prepare_items();
 							$this->table->display();
 						?>
@@ -224,5 +230,4 @@ if ( ! class_exists( 'CGSS_SETTINGS' ) ) {
 			</div>
 		<?php
 		}
-	}
-} ?>
+	} ?>

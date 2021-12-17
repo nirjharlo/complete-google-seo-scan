@@ -1,12 +1,13 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Action;
+
 if ( ! defined( 'ABSPATH' ) ) exit;
+
 
 /**
  * Perform fetch insight action
  */
-if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
-
-	final class CGSS_INSIGHT {
+	final class Insight {
 
 
 		public function __construct() {
@@ -229,5 +230,4 @@ if ( ! class_exists( 'CGSS_INSIGHT' ) ) {
 
 			return $data;
 		}
-	}
-} ?>
+	} ?>

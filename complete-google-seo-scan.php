@@ -31,6 +31,17 @@ defined('CGSS_CSS') or define('CGSS_CSS', plugins_url().'/complete-google-seo-sc
 defined('CGSS_IMAGE') or define('CGSS_IMAGE', plugins_url().'/complete-google-seo-scan/asset/img/');
 
 
-//The Plugin
-require_once('autoload.php');
-if ( class_exists( 'CGSS_BUILD' ) ) new CGSS_BUILD(); ?>
+
+require __DIR__ . '/vendor/autoload.php';
+
+/**
+ * The Plugin
+ */
+function cgss_build() {
+	if ( class_exists( 'NirjharLo\\Cgss\\Loader' ) ) {
+		return NirjharLo\Cgss\Loader::instance();
+	}
+}
+
+global $cgss_build;
+$cgss_build = cgss_build(); ?>

@@ -1,4 +1,9 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
 /**
  * Download and analyze .css or .js files, based on an url.
  *
@@ -7,7 +12,7 @@
  * @property array $js_url Input JS urls
  */
 
-class CGSS_DESIGN {
+class Design {
 
 
 	public $css_url;

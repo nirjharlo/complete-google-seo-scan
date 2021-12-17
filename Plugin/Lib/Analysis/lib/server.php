@@ -1,4 +1,9 @@
 <?php
+namespace NirjharLo\Cgss\Lib\Analysis\Lib;
+
+if ( ! defined( 'ABSPATH' ) ) exit;
+
+
 /**
  * Get server features from header, taken from the url.
  *
@@ -6,7 +11,7 @@
  * @property array $header Input header, whose social value is to be counted
  * @property string $domain Domain name
  */
-class CGSS_SERVER {
+class Server {
 
 
 	public $header;
