@@ -584,7 +584,7 @@ use \DOMDocument;
 			$body = @file_get_contents( $this->url, FILE_USE_INCLUDE_PATH );
 			$end = microtime(true);
 
-			$response['ok'] = !$body ? false : true;
+			$response['ok'] = empty($body) ? false : true;
 			$response['time'] = round( ( $end - $start ), 3 );
 			$response['body'] = $body;
 			$response['size'] = mb_strlen( $body, '8bit' );

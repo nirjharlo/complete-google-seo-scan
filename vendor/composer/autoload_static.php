@@ -22,15 +22,6 @@ class ComposerStaticInit524d1da76937931fea6ad2822bba0450
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'NirjharLo\\Cgss\\Lib\\Action\\Insight' => __DIR__ . '/../..' . '/Plugin/Lib/Action/Insight.php',
-        'NirjharLo\\Cgss\\Lib\\Action\\Scan' => __DIR__ . '/../..' . '/Plugin/Lib/Action/Scan.php',
-        'NirjharLo\\Cgss\\Lib\\OverviewTable' => __DIR__ . '/../..' . '/Plugin/Lib/OverviewTable.php',
-        'NirjharLo\\Cgss\\Lib\\Script' => __DIR__ . '/../..' . '/Plugin/Lib/Script.php',
-        'NirjharLo\\Cgss\\Lib\\Table' => __DIR__ . '/../..' . '/Plugin/Lib/Table.php',
-        'NirjharLo\\Cgss\\Loader' => __DIR__ . '/../..' . '/Plugin/Loader.php',
-        'NirjharLo\\Cgss\\Src\\Db' => __DIR__ . '/../..' . '/Plugin/Src/Db.php',
-        'NirjharLo\\Cgss\\Src\\Install' => __DIR__ . '/../..' . '/Plugin/Src/Install.php',
-        'NirjharLo\\Cgss\\Src\\Settings' => __DIR__ . '/../..' . '/Plugin/Src/Settings.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

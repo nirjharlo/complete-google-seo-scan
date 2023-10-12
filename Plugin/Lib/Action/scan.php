@@ -80,12 +80,12 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 		public function text_display() {
 
 			$text = $this->result['text'];
-			$keys = implode(', ', array_keys($text['keys']));
+			$keys = (!empty($text['keys']) ? implode(', ', array_keys($text['keys'])) : '');
 			$count = $text['count'];
 			$ratio = $text['ratio'];
 
 			$htags = $text['htags'];
-			$headings = implode( ', ', $htags['names'] );
+			$headings = (!empty($htags['names']) ? implode( ', ', $htags['names'] ) : '');
 
 			$links = $text['links'];
 			$link_count = $links['count'];

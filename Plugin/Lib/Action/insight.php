@@ -12,9 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 		public function __construct() {
 
+			try{
 				$this->data = $this->fetch();
 				$this->compile();
 				$this->save();
+			} catch(Exception $e) {
+				echo __( 'Something went wrong', 'cgss') . ' ' . $e->get_message();
+			}
 		}
 
 
@@ -116,7 +120,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			$key_collect = array();
 			$percent_collect = array();
 			foreach ($keywords as $keyword) {
-				$keys = array_keys($keyword);
+				$keys = (!empty($keyword) ? array_keys($keyword) : []);
 				$top_key = $keys[0];
 				$key_collect[] = count(explode(' ', $top_key));
 				$percent_collect[] = $keyword[$top_key];

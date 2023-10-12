@@ -151,7 +151,7 @@ class Score {
 			$snip_data = $this->snippet;
 			$design_data = $this->design;
 			$img_data = $design_data['image'];
-			$alts = implode(' ', $img_data['alt_value']);
+			$alts = (!empty($img_data['alt_value']) ? implode(' ', $img_data['alt_value']) : []);
 			$url = implode( " ", explode( "-", $snip_data['url'] ) );
 			$arr = array( $snip_data['title'], $snip_data['desc'], $alts, $url, $anch, $hds );
 			foreach ( $arr as $val ) {
