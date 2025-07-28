@@ -3,6 +3,8 @@ namespace NirjharLo\Cgss\Lib\Action;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
+use \NirjharLo\Cgss\Models\Insight as InsightModel;
+
 
 /**
  * Perform fetch insight action
@@ -23,26 +25,25 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 
 		//DB insert function
-		public function save() {
+                public function save() {
 
-			global $wpdb;
+                        $model = new InsightModel();
 
-			$result = array(
-				$this->score,
-				$this->snippet,
-				$this->text,
-				$this->links,
-				$this->keywords,
-				$this->images,
-				$this->responsive,
-				$this->speed,
-				$this->social,
-			);
-			foreach ($result as $key => $value) {
-				$sql = $wpdb->prepare("UPDATE {$wpdb->prefix}cgss_insight SET remark = %s WHERE ID = %d", $value, ($key+1));
-				$update = $wpdb->query($sql);
-			}
-		}
+                        $result = array(
+                                $this->score,
+                                $this->snippet,
+                                $this->text,
+                                $this->links,
+                                $this->keywords,
+                                $this->images,
+                                $this->responsive,
+                                $this->speed,
+                                $this->social,
+                        );
+                        foreach ($result as $key => $value) {
+                                $model->updateRemark($key + 1, $value);
+                        }
+                }
 
 
 		//Compile the result
