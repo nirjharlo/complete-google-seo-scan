@@ -29,7 +29,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		//Display the score
-		public function score_html() {
+                public function score_html(): string {
 
 			$score = $this->result['score'];
 			$social = $this->result['social'];
@@ -44,7 +44,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Display the snippets
-		public function snippet_display() {
+                public function snippet_display(): string {
 
 			$snippet = $this->result['snip'];
 			$title = $snippet['title'];
@@ -77,7 +77,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Display text and link data
-		public function text_display() {
+                public function text_display(): string {
 
 			$text = $this->result['text'];
 			$keys = (!empty($text['keys']) ? implode(', ', array_keys($text['keys'])) : '');
@@ -106,7 +106,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Display design data
-		public function design_display() {
+                public function design_display(): string {
 
 
 			$design = $this->result['design'];
@@ -138,7 +138,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Display crawl data
-		public function crawl_display() {
+                public function crawl_display(): string {
 
 			$crawl = $this->result['crawl'];
 
@@ -170,7 +170,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Display speed data
-		public function speed_display() {
+                public function speed_display(): string {
 
 			$speed = $this->result['speed'];
 
@@ -198,7 +198,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 
 
 		// Render the HTML
-		public function render() {
+                public function render(): void {
 
 			$this->score_html	= $this->score_html();
 			$this->snippets_html	= $this->snippet_display();
@@ -216,7 +216,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 		}
 
 
-		public function box($title, $icon, $desc) {
+                public function box($title, $icon, $desc): void {
 
 			echo
 			'<div class="postbox">
@@ -230,7 +230,7 @@ use \NirjharLo\Cgss\Lib\Analysis\Crawl;
 		}
 
 
-		public function dashicon($icon) {
+                public function dashicon($icon): string {
 
 			return '<span class="dashicons dashicons-'.$icon.'"></span>';
 		}

@@ -9,6 +9,8 @@ use \NirjharLo\Cgss\Lib\Script;
 use \NirjharLo\Cgss\Lib\Action\Scan;
 use \NirjharLo\Cgss\Lib\Action\Insight;
 
+use \NirjharLo\Cgss\Models\Insight as InsightModel;
+
 use \NirjharLo\Cgss\Src\Db;
 use \NirjharLo\Cgss\Src\Install;
 use \NirjharLo\Cgss\Src\Settings;
@@ -77,33 +79,29 @@ final class Loader {
 	}
 
 
-	public function insert_prelim_data() {
+        public function insert_prelim_data() {
 
-		global $wpdb;
+                $model = new InsightModel();
 
-		$result = $wpdb->get_results("SELECT * from {$wpdb->prefix}cgss_insight");
-  		if(count($result) == 0) {
+                if ($model->count() === 0) {
 
-		$init_insight = array(
-				__('Score','cgss'),
-				__('Snippet','cgss'),
-				__('Text','cgss'),
-				__('Links','cgss'),
-				__('Keywords','cgss'),
-				__('Images','cgss'),
-				__('Responsive','cgss'),
-				__('Speed','cgss'),
-				__('Social','cgss')
-			);
-		$no_data = __( 'No scan reports are available yet', 'cgss' );
-		foreach ($init_insight as $key => $value) {
-			$sql = $wpdb->prepare(
-				"INSERT INTO {$wpdb->prefix}cgss_insight ( ID, item, remark ) VALUES ( %d, %s, %s )", ($key+1), $value, $no_data
-				);
-			$query = $wpdb->query($sql);
-		}
-		}
-	}
+                $init_insight = array(
+                                __('Score','cgss'),
+                                __('Snippet','cgss'),
+                                __('Text','cgss'),
+                                __('Links','cgss'),
+                                __('Keywords','cgss'),
+                                __('Images','cgss'),
+                                __('Responsive','cgss'),
+                                __('Speed','cgss'),
+                                __('Social','cgss')
+                        );
+                $no_data = __( 'No scan reports are available yet', 'cgss' );
+                foreach ($init_insight as $key => $value) {
+                        $model->insert($value, $no_data, $key + 1);
+                }
+                }
+        }
 
 
 	//Include scripts

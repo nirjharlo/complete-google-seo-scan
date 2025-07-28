@@ -4,6 +4,7 @@ namespace NirjharLo\Cgss\Lib;
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 use \WP_List_Table;
+use \NirjharLo\Cgss\Models\Insight as InsightModel;
 
 /**
  * Implimentation of WordPress inbuilt functions for creating an extension of a default table class.
@@ -30,18 +31,12 @@ use \WP_List_Table;
 
 
 		//fetch the data using custom named method function
-		public static function get_insight() {
+                public static function get_insight() {
 
-			global $wpdb;
+                        $model = new InsightModel();
 
-			//Build the db query base
-			$sql = "SELECT * FROM {$wpdb->prefix}cgss_insight";
-
-			//get the data from database
-			$result = $wpdb->get_results( $sql, 'ARRAY_A' );
-
-			return $result;
-		}
+                        return $model->all();
+                }
 
 
 
@@ -54,15 +49,12 @@ use \WP_List_Table;
 
 
 		//How many rows are present there
-		public static function record_count() {
+                public static function record_count() {
 
-			global $wpdb;
+                        $model = new InsightModel();
 
-			//Build the db query base
-			$sql = "SELECT COUNT(*) FROM {$wpdb->prefix}cgss_insight";
-
-			return $wpdb->get_var( $sql );
-		}
+                        return $model->count();
+                }
 
 
 
